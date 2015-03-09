@@ -13,13 +13,26 @@ The basic structure of the landing page will be a graphic with an overview of th
 
 Initially, we aim to see the HTTPS page to be structured as follows: 
   * At the top of the page, an interactive graph displaying the performance across all websites for the metrics defined in the HTTPS subsection. 
-  * Below the graphic, a report-card-style table displaying all of the .gov domains measured, with one row for each domain. The columns will each measure a separate sub-metric. The list of sub-metrics is: 
+  * Below the graphic, a report-card-style table displaying all of the .gov domains measured, with one row for each domain. The columns will each measure a separate sub-metric. The following is a list of columns: 
+    * Domain name (index column)
+    * Agency
+    * Bureau/Component/Office (if applicable)
     * Is HTTPS Enforced?
     * Does the site use SSL?
     * How old is the site's certificate?
     * Does the site use HSTS? If so, HSTS Pre-Load?
-  * Each column in the table should have a mouseover tooltip with information about the metric, what it means, why it is important, and a link to a page that explains to CIOs what steps they can take to improve their agency's performance in the selected area
+  * Each column in the table should have a mouseover tooltip with information about the metric, what it means, why it is important, and a link to a page that explains to what steps users can take to improve their agency's performance in the selected area. The individual data points should be colored conditionally according to their values (following a system of conditional formatting rules to be developed later) so that users can immediately target poorly-performing websites. 
   * Additionally, the following filters should be available: 
     * Agency
+    * Bureau/Component/Office (if applicable)
     * Status (Live/Redirect/Inactive)
     * Domains/Subdomains
+
+The Analytics page should have a structure similar to the HTTPS page, including the graphic and table with a similar look and feel. The columns in the Analytics table should be: 
+ * Domain name (index column)
+ * Agency
+ * Bureau/Component/Office (if applicable)
+ * Whether or not the domain uses DAP. 
+ * Number of pages reported in the last 6 months.
+ * Percentage of subdomains with analytics
+ * Other analytics systems detected
