@@ -23,4 +23,13 @@ Things which we should do but aren't including in v1.0:
   * Automated Readability Index
     * US Grade level
     * Characters per word and words per sentence
+ * Use Responsive Design
+ * Use HTML5 and CSS3
+ * Metadata taging and SEO
+ * Open web development with CMS and CDN
+ * Gathering customer feedback
+ * URL Shortening
+ * Use only .gov or .mil
+ * Usability and Search Best Practices
+ * Content lifecycle management/no outdated content that is not archival
 
