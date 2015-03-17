@@ -18,7 +18,9 @@
   * Certificate Age
   * HSTS: Yes/No
   * HSTS Pre-Load: Yes/No
-  * Perhaps also an idea to include a measure of the encryption strenght (64, 128, 256-bit, etc)?
+  * Perhaps also an idea to include a measure of the encryption strength (64, 128, 256-bit, etc)?
+  * Outdated Cipher (RC4, etc)?
+  * Using outdated SSL (SSL2)?
   
 Include the following filters: 
 * Agency
