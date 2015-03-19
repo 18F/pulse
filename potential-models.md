@@ -11,12 +11,12 @@
 * Host the microsite [at a .gov URL](https://github.com/GSA/dotgov-dashboard/issues/5).  
 
 ### HTTPs page
-  * ####Agency
-  * ####Domain
-  * ####Redirect: Yes/No
-  * ####Live: Yes/No
-  * ####SSL: Yes/No
-  * ####HTTPS Enforced: Yes/No
+  * Agency
+  * Domain
+  * Redirect: Yes/No
+  * Live: Yes/No
+  * SSL: Yes/No
+  * HTTPS Enforced: Yes/No
   * Certificate Age
   * HSTS: Yes/No
   * HSTS Pre-Load: Yes/No
