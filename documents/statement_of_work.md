@@ -25,7 +25,7 @@ Initially, we aim to see the HTTPS page to be structured as follows:
      * Strong forward secrecy? 
      * Latest version of TLS? 
      * Using old SSL Version (3.0)? 
-     * Sha 1 vs Sha2?
+     * Sha 1 vs Sha 2? (Perhaps this should be relegated to v2)
   * Each column in the table should have a mouseover tooltip with information about the metric, what it means, why it is important, and a link to a page that explains to what steps users can take to improve their agency's performance in the selected area. The individual data points should be colored conditionally according to their values (following a system of conditional formatting rules to be developed later) so that users can immediately target poorly-performing websites. 
   * Additionally, the following filters should be available: 
     * Agency
