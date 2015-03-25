@@ -1,8 +1,4 @@
 
-## Needs
-* 1-2 short paragraphs 
-* Explains why OGP needs 18F to do X work 
-
 ## Draft
 In 2015, OMB released the memo entitled "Policies for Dot Gov Domain Issuance for Federal Agency Public Websites", in which it designated GSA's Office of Government-Wide Policy the official registrar of all .gov domains. The memo further lays out several policy requirements that new and existing federal government websites should adhere to, with the objective of creating a more customer-centric, modern, and secure paradigm for public-facing government websites. As the registrar of .gov domains, GSA is charged with ensuring that new websites meet the policy targets enumerated in the memo and with helping agencies develop consolidation plans for existing websites. 
 
