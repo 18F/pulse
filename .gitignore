@@ -1,0 +1,10 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Mac specific
+.DS_Store
