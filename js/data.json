@@ -1,0 +1,321 @@
+[
+  {
+    "endpoints": {
+      "https": {
+        "www": {
+          "https_valid": true,
+          "https_bad_chain": false,
+          "https_bad_name": false,
+          "status": 404,
+          "up": true,
+          "headers": {
+            "date": "Sat, 18 Apr 2015 07:28:30 GMT",
+            "server": "Apache",
+            "x-frame-options": "SAMEORIGIN",
+            "vary": "Accept-Encoding",
+            "content-length": "198",
+            "content-type": "text/html; charset=iso-8859-1"
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": false,
+          "redirect_immediately_to": null,
+          "redirect_immediately_to_www": false,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": null,
+          "redirect_external": false
+        },
+        "root": {
+          "https_valid": true,
+          "https_bad_chain": false,
+          "https_bad_name": false,
+          "status": 404,
+          "up": true,
+          "headers": {
+            "date": "Sat, 18 Apr 2015 07:28:31 GMT",
+            "server": "Apache",
+            "x-frame-options": "SAMEORIGIN",
+            "vary": "Accept-Encoding",
+            "content-length": "198",
+            "content-type": "text/html; charset=iso-8859-1"
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": false,
+          "redirect_immediately_to": null,
+          "redirect_immediately_to_www": false,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": null,
+          "redirect_external": false
+        }
+      },
+      "http": {
+        "www": {
+          "status": 200,
+          "up": true,
+          "headers": {
+            "date": "Sat, 18 Apr 2015 07:28:30 GMT",
+            "server": "Apache",
+            "x-frame-options": "SAMEORIGIN",
+            "accept-ranges": "bytes",
+            "vary": "Accept-Encoding",
+            "x-ua-compatible": "IE=edge",
+            "content-length": "31988",
+            "content-type": "text/html; charset=UTF-8"
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": false,
+          "redirect_immediately_to": null,
+          "redirect_immediately_to_www": false,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": null,
+          "redirect_external": false
+        },
+        "root": {
+          "status": 200,
+          "up": true,
+          "headers": {
+            "date": "Sat, 18 Apr 2015 07:28:31 GMT",
+            "server": "Apache",
+            "x-frame-options": "SAMEORIGIN",
+            "accept-ranges": "bytes",
+            "vary": "Accept-Encoding",
+            "x-ua-compatible": "IE=edge",
+            "content-length": "31988",
+            "content-type": "text/html; charset=UTF-8"
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": false,
+          "redirect_immediately_to": null,
+          "redirect_immediately_to_www": false,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": null,
+          "redirect_external": false
+        }
+      }
+    },
+    "canonical_endpoint": "root",
+    "canonical_protocol": "http",
+    "canonical": "http://nist.gov",
+    "up": true,
+    "broken_root": false,
+    "broken_www": false,
+    "support_https": true,
+    "default_https": false,
+    "downgrade_https": false,
+    "enforce_https": false,
+    "redirect": false,
+    "redirect_to": null,
+    "hsts": false,
+    "hsts_header": null,
+    "hsts_entire_domain": false,
+    "hsts_entire_domain_preload": false
+  },
+  {
+    "endpoints": {
+      "https": {
+        "www": {
+          "status": 0,
+          "up": false
+        },
+        "root": {
+          "status": 0,
+          "up": false
+        }
+      },
+      "http": {
+        "www": {
+          "status": 302,
+          "up": true,
+          "headers": {
+            "date": "Sat, 18 Apr 2015 15:30:19 GMT",
+            "server": "Apache-Coyote/1.1",
+            "x-frame-options": "SAMEORIGIN",
+            "location": "/portal/category/100000",
+            "content-length": "0",
+            "content-type": "text/plain; charset=ISO-8859-1"
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": true,
+          "redirect_immediately_to": "http://www.gsa.gov/portal/category/100000",
+          "redirect_immediately_to_www": true,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": "http://www.gsa.gov/portal/category/100000",
+          "redirect_external": false
+        },
+        "root": {
+          "status": 302,
+          "up": true,
+          "headers": {
+            "date": "Sat, 18 Apr 2015 15:30:30 GMT",
+            "server": "Apache-Coyote/1.1",
+            "x-frame-options": "SAMEORIGIN",
+            "location": "/portal/category/100000",
+            "content-length": "0",
+            "content-type": "text/plain; charset=ISO-8859-1"
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": true,
+          "redirect_immediately_to": "http://gsa.gov/portal/category/100000",
+          "redirect_immediately_to_www": false,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": "http://gsa.gov/portal/category/100000",
+          "redirect_external": false
+        }
+      }
+    },
+    "canonical_endpoint": "www",
+    "canonical_protocol": "http",
+    "canonical": "http://www.gsa.gov",
+    "up": true,
+    "broken_root": false,
+    "broken_www": false,
+    "support_https": false,
+    "default_https": false,
+    "downgrade_https": false,
+    "enforce_https": false,
+    "redirect": false,
+    "redirect_to": null,
+    "hsts": false,
+    "hsts_header": null,
+    "hsts_entire_domain": false,
+    "hsts_entire_domain_preload": false
+  },
+  {
+    "endpoints": {
+      "https": {
+        "www": {
+          "https_valid": true,
+          "https_bad_chain": false,
+          "https_bad_name": false,
+          "status": 200,
+          "up": true,
+          "headers": {
+            "content-length": "108116",
+            "content-type": "text/html; charset=utf-8",
+            "x-drupal-cache": "HIT",
+            "p3p": "CP=\"NON DSP COR ADM DEV IVA OTPi OUR LEG\"",
+            "x-age": "91",
+            "x-cache-hits": "7",
+            "x-varnish": "805277604 805277520",
+            "x-ah-environment": "prod",
+            "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+            "link": "<https://www.whitehouse.gov/sites/whitehouse.gov/files/images/fb_share_postcard.jpg>; rel=\"image_src\",<https://www.whitehouse.gov/homepage>; rel=\"canonical\",<https://www.whitehouse.gov/node/5596>; rel=\"shortlink\"",
+            "x-generator": "Drupal 7 (http://drupal.org)",
+            "x-ua-compatible": "IE=edge,chrome=1",
+            "content-language": "en",
+            "strict-transport-security": "max-age=3600;include_subdomains",
+            "etag": "\"1429368880.095-1\"",
+            "date": "Sat, 18 Apr 2015 15:05:02 GMT",
+            "connection": "keep-alive"
+          },
+          "hsts": true,
+          "hsts_header": "max-age=3600;include_subdomains",
+          "redirect": false,
+          "redirect_immediately_to": null,
+          "redirect_immediately_to_www": false,
+          "redirect_immediately_to_https": false,
+          "redirect_immediately_external": false,
+          "redirect_to": null,
+          "redirect_external": false
+        },
+        "root": {
+          "https_valid": true,
+          "https_bad_chain": false,
+          "https_bad_name": false,
+          "status": 301,
+          "up": true,
+          "headers": {
+            "server": "AkamaiGHost",
+            "content-length": "0",
+            "location": "https://www.whitehouse.gov/",
+            "date": "Sat, 18 Apr 2015 15:05:02 GMT",
+            "connection": "keep-alive",
+            "strict-transport-security": "max-age=3600;includeSubDomains;preload",
+            "content-type": "text/html; charset=utf-8"
+          },
+          "hsts": true,
+          "hsts_header": "max-age=3600;includeSubDomains;preload",
+          "redirect": true,
+          "redirect_immediately_to": "https://www.whitehouse.gov/",
+          "redirect_immediately_to_www": true,
+          "redirect_immediately_to_https": true,
+          "redirect_immediately_external": false,
+          "redirect_to": "https://www.whitehouse.gov/",
+          "redirect_external": false
+        }
+      },
+      "http": {
+        "www": {
+          "status": 302,
+          "up": true,
+          "headers": {
+            "content-length": "0",
+            "location": "https://www.whitehouse.gov/",
+            "date": "Sat, 18 Apr 2015 15:05:02 GMT",
+            "connection": "keep-alive",
+            "server": "White House",
+            "p3p": "CP=\"NON DSP COR ADM DEV IVA OTPi OUR LEG\""
+          },
+          "hsts": false,
+          "hsts_header": null,
+          "redirect": true,
+          "redirect_immediately_to": "https://www.whitehouse.gov/",
+          "redirect_immediately_to_www": true,
+          "redirect_immediately_to_https": true,
+          "redirect_immediately_external": false,
+          "redirect_to": "https://www.whitehouse.gov/",
+          "redirect_external": false
+        },
+        "root": {
+          "status": 301,
+          "up": true,
+          "headers": {
+            "server": "AkamaiGHost",
+            "content-length": "0",
+            "location": "https://www.whitehouse.gov/",
+            "date": "Sat, 18 Apr 2015 15:05:03 GMT",
+            "connection": "keep-alive",
+            "strict-transport-security": "max-age=3600;includeSubDomains;preload",
+            "content-type": "text/html; charset=utf-8"
+          },
+          "hsts": false,
+          "hsts_header": "max-age=3600;includeSubDomains;preload",
+          "redirect": true,
+          "redirect_immediately_to": "https://www.whitehouse.gov/",
+          "redirect_immediately_to_www": true,
+          "redirect_immediately_to_https": true,
+          "redirect_immediately_external": false,
+          "redirect_to": "https://www.whitehouse.gov/",
+          "redirect_external": false
+        }
+      }
+    },
+    "canonical_endpoint": "www",
+    "canonical_protocol": "https",
+    "canonical": "https://www.whitehouse.gov",
+    "up": true,
+    "broken_root": false,
+    "broken_www": false,
+    "support_https": true,
+    "default_https": true,
+    "downgrade_https": false,
+    "enforce_https": true,
+    "redirect": false,
+    "redirect_to": null,
+    "hsts": true,
+    "hsts_header": "max-age=3600;include_subdomains",
+    "hsts_entire_domain": true,
+    "hsts_entire_domain_preload": true
+  }
+]
