@@ -2,6 +2,8 @@
 
 How the .gov domain space is doing at best practices and federal requirements.
 
+A static website, with front-end assets managed by npm and Bower.
+
 ## Install
 
 * Install [node and npm](https://nodejs.org/download/) directly.
