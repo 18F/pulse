@@ -2,34 +2,33 @@
 
 How the .gov domain space is doing at best practices and federal requirements.
 
-## Prerequisites
+## Install
 
-1. [node/npm](https://nodejs.org/download/)
-2. [bower](http://bower.io/#install-bower)
-3. [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
+* Install [node and npm](https://nodejs.org/download/) directly.
+* Install [bower](http://bower.io/) through npm:
 
-## Installation
-
-1) Clone the repo to your desktop.
-
-```bash
-$ git clone git@github.com:18F/dotgov-dashboard.git
+```
+npm install -g bower
 ```
 
-2) Run the following commands to install the necessary packages:
+* Install the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en).
+
+## Setup
+
+* Run the following commands to install the necessary packages:
 
 ```bash
-$ npm install
-$ bower install
+npm install
+bower install
 ```
 
-3) Now you should be able to run `gulp` and open the `index.html` file in your favorite browser.
+* Now you should be able to run `gulp` and open the `index.html` file in your favorite browser.
 
 ```bash
-$ gulp
+gulp
 ```
 
-4) You'll now have your `.scss` files auto compile to `main.min.css` using a watch command. LiveReload is also a part of the process, but you'll need to make sure to have the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) installed in whatever version of Chrome you are using.
+* You'll now have your `.scss` files auto compile to `main.min.css` using a watch command. LiveReload is also a part of the process, but you'll need to make sure to have the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) installed in whatever version of Chrome you are using.
 
 ### Public domain
 
