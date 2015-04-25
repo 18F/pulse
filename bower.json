@@ -2,14 +2,9 @@
   "name": "dotgov-dashboard",
   "version": "0.0.1",
   "homepage": "https://github.com/18F/dotgov-dashboard",
-  "authors": [],
-  "license": "CC0 1.0 Universal Summary",
+  "license": "CC0",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "**/*"
   ],
   "devDependencies": {
     "bourbon": "~4.2.2",
