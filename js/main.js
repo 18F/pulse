@@ -1,7 +1,7 @@
 $(document).ready(function () {
   
   // Initialize the json call 
-  url = "js/data.json"
+  url = "data/data.json"
   sites = []
 
   // Get the JSON
