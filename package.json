@@ -1,17 +1,18 @@
 {
   "name": "dotgov-dashboard",
-  "version": "1.0.0",
-  "description": "A dashboard of useful information about .gov domains.",
+  "version": "0.0.1",
+  "private": true,
+  "description": "How the .gov domain space is doing at best practices and federal requirements.",
   "repository": {
     "type": "git",
     "url": "https://github.com/18F/dotgov-dashboard.git"
   },
-  "author": "",
-  "license": "CC0 1.0 Universal Summary",
+  "license": "CC0",
   "bugs": {
     "url": "https://github.com/18F/dotgov-dashboard/issues"
   },
   "homepage": "https://github.com/18F/dotgov-dashboard",
+
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-gzip": "^1.1.0",
