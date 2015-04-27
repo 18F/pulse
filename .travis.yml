@@ -1,0 +1,9 @@
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: deploy-dotgov
+  password:
+    secure: kTucjJLA26THRTft6G9QK79hZba2UckcWOxoK1gjKZapept3AJmwMAiERXbixTJAxvtI+YP9p2rPDzQ826iFoOKRX9jw4G8Z7AIIOcX8zVQf9WdgULmuMRLSI/LBDaT5Da032MXS4lt/bQkUyCODbtxNJAR1pBingtaUkytwFLQ=
+  api: https://api.18f.gov
+  organization: dotgov
+  space: prod
