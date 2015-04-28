@@ -1,8 +1,8 @@
 ---
 applications:
-- name: dotgov
+- name: pulse
   memory: 64M
   buildpack: https://github.com/cloudfoundry-incubator/staticfile-buildpack.git
-  domain: pulse.18f.gov
+  domain: 18f.gov
   env:
     FORCE_HTTPS: true
