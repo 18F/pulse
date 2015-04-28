@@ -6,9 +6,9 @@ Manage auto-deploy webhooks remotely.
 
 Production hook:
 
-  forever start -l $HOME/pulse/hookshot.log -a deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull && bundle exec jekyll build >> $HOME/pulse/hookshot.log"
-  forever restart deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull && bundle exec jekyll build >> $HOME/pulse/hookshot.log"
-  forever stop deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull && bundle exec jekyll build >> $HOME/pulse/hookshot.log"
+  forever start -l $HOME/pulse/hookshot.log -a deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull >> $HOME/pulse/hookshot.log"
+  forever restart deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull >> $HOME/pulse/hookshot.log"
+  forever stop deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull >> $HOME/pulse/hookshot.log"
 """
 
 environment = "production"
@@ -22,7 +22,7 @@ log = "%s/hookshot.log" % home
 current = "%s/%s/current" % (home, environment)
 
 # principal command to run upon update
-command = "cd %s && git pull && bundle exec jekyll build >> %s" % (current, log)
+command = "cd %s && git pull >> %s" % (current, log)
 
 def start():
   run(
