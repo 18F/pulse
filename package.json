@@ -12,8 +12,8 @@
     "url": "https://github.com/18F/dotgov-dashboard/issues"
   },
   "homepage": "https://github.com/18F/dotgov-dashboard",
-
   "devDependencies": {
+    "bower": "^1.4.1",
     "gulp": "^3.8.11",
     "gulp-gzip": "^1.1.0",
     "gulp-livereload": "^3.8.0",
