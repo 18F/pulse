@@ -22,3 +22,12 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['sass', 'watch']);
+
+gulp.task('travis', function() {
+    return gulp.src('scss/main.scss')
+    .pipe(sass())
+    .pipe(sass())
+    .pipe(minifycss())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('css'));
+});

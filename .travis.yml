@@ -7,3 +7,8 @@ deploy:
   api: https://api.18f.gov
   organization: dotgov
   space: prod
+
+script:
+- npm install
+- bower install
+
