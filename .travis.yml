@@ -3,12 +3,10 @@ deploy:
   provider: cloudfoundry
   username: deploy-dotgov
   password:
-    secure: kTucjJLA26THRTft6G9QK79hZba2UckcWOxoK1gjKZapept3AJmwMAiERXbixTJAxvtI+YP9p2rPDzQ826iFoOKRX9jw4G8Z7AIIOcX8zVQf9WdgULmuMRLSI/LBDaT5Da032MXS4lt/bQkUyCODbtxNJAR1pBingtaUkytwFLQ=
+    secure: q+bRENhLOlwzM5EH2Ajcasgux+Fwu1Myf1Ljt/VygTJiqoCaKzqN6C/scHcLi747myngpwDvJmqBX/DoUR05fcbNJkmGPMSlOTZivboZVkx573yuQ1k21YA+Shi1e54PKapM9cAws0le0x5U84OZuX3tzTU7FN4mHwpr7tZpdFA=
   api: https://api.18f.gov
   organization: dotgov
   space: prod
-
 script:
 - npm install
 - bower install
-
