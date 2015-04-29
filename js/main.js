@@ -1,21 +1,27 @@
 $(document).ready(function () {
+
+
+  $('#mainTableId').DataTable({
+    "ajax": "data/domainData.json",
+    "columns": [
+      {"data":"Domain"},
+      {"data":"Canonical"},
+      {"data":"Live"},
+      {"data":"Redirect"},
+      {"data":"Redirect To"},
+      {"data":"Valid HTTPS"},
+      {"data":"Defaults to HTTPS"},
+      {"data":"Downgrades HTTPS"},
+      {"data":"Strictly Forces HTTPS"},
+      {"data":"HTTPS Bad Chain"},
+      {"data":"HTTPS Bad Hostname"},
+      {"data":"HSTS"},
+      {"data":"HSTS Header"},
+      {"data":"HSTS All Subdomains"},
+      {"data":"HSTS Preload Ready"},
+      {"data":"Broken Root"},
+      {"data":"Broken WWW"}
+    ]
+  });
   
-  // Initialize the json call 
-  url = "data/data.json"
-  sites = []
-
-  // Get the JSON
-  $.getJSON(url, function (data) {
-    
-    // Parse the JSON into individual sites
-    $.each(data, function(idx, el) {
-
-      // More code will go here
-      // Each site is manipulable here
-      sites.push(el["canonical"])
-    })
-
-    // This happens when everything is done
-    console.log(sites)
-  })
 })
