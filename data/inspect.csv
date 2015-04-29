@@ -1,4 +1,5 @@
 Domain,Canonical,Live,Redirect,Redirect To,Valid HTTPS,Defaults to HTTPS,Downgrades HTTPS,Strictly Forces HTTPS,HTTPS Bad Chain,HTTPS Bad Hostname,HSTS,HSTS Header,HSTS All Subdomains,HSTS Preload Ready,Broken Root,Broken WWW
+18f.gov,http://www.18f.gov,True,True,https://18f.gsa.gov/,True,False,False,True,False,False,True,max-age=31536000,False,False,False,False
 acus.gov,https://www.acus.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,True,True,False,False
 achp.gov,http://achp.gov,True,False,,False,False,False,False,False,False,False,,False,False,False,False
 preserveamerica.gov,http://preserveamerica.gov,True,False,,False,False,False,False,False,False,False,,False,False,False,False
