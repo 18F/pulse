@@ -1,0 +1,3277 @@
+Agency,variable,value,binary
+AMTRAK,Broken Root,1,Yes
+AMTRAK,Broken WWW,1,Yes
+AMTRAK,Defaults to HTTPS,0,Yes
+AMTRAK,Downgrades HTTPS,1,Yes
+AMTRAK,HSTS,1,Yes
+AMTRAK,HSTS All Subdomains,1,Yes
+AMTRAK,HSTS Preload Ready,1,Yes
+AMTRAK,HTTPS Bad Chain,1,Yes
+AMTRAK,HTTPS Bad Hostname,1,Yes
+AMTRAK,Live,0,Yes
+AMTRAK,Redirect,1,Yes
+AMTRAK,Strictly Forces HTTPS,0,Yes
+AMTRAK,Valid HTTPS,0,Yes
+Administrative Conference of the United States,Broken Root,1,Yes
+Administrative Conference of the United States,Broken WWW,1,Yes
+Administrative Conference of the United States,Defaults to HTTPS,0,Yes
+Administrative Conference of the United States,Downgrades HTTPS,1,Yes
+Administrative Conference of the United States,HSTS,0,Yes
+Administrative Conference of the United States,HSTS All Subdomains,0,Yes
+Administrative Conference of the United States,HSTS Preload Ready,0,Yes
+Administrative Conference of the United States,HTTPS Bad Chain,1,Yes
+Administrative Conference of the United States,HTTPS Bad Hostname,1,Yes
+Administrative Conference of the United States,Live,0,Yes
+Administrative Conference of the United States,Redirect,1,Yes
+Administrative Conference of the United States,Strictly Forces HTTPS,0,Yes
+Administrative Conference of the United States,Valid HTTPS,0,Yes
+Advisory Commission on Intergovernmental Relations,Broken Root,1,Yes
+Advisory Commission on Intergovernmental Relations,Broken WWW,1,Yes
+Advisory Commission on Intergovernmental Relations,Defaults to HTTPS,1,Yes
+Advisory Commission on Intergovernmental Relations,Downgrades HTTPS,1,Yes
+Advisory Commission on Intergovernmental Relations,HSTS,1,Yes
+Advisory Commission on Intergovernmental Relations,HSTS All Subdomains,1,Yes
+Advisory Commission on Intergovernmental Relations,HSTS Preload Ready,1,Yes
+Advisory Commission on Intergovernmental Relations,HTTPS Bad Chain,0,Yes
+Advisory Commission on Intergovernmental Relations,HTTPS Bad Hostname,1,Yes
+Advisory Commission on Intergovernmental Relations,Live,0,Yes
+Advisory Commission on Intergovernmental Relations,Redirect,0,Yes
+Advisory Commission on Intergovernmental Relations,Strictly Forces HTTPS,1,Yes
+Advisory Commission on Intergovernmental Relations,Valid HTTPS,1,Yes
+Advisory Council on Historic Preservation,Broken Root,2,Yes
+Advisory Council on Historic Preservation,Broken WWW,2,Yes
+Advisory Council on Historic Preservation,Defaults to HTTPS,2,Yes
+Advisory Council on Historic Preservation,Downgrades HTTPS,2,Yes
+Advisory Council on Historic Preservation,HSTS,2,Yes
+Advisory Council on Historic Preservation,HSTS All Subdomains,2,Yes
+Advisory Council on Historic Preservation,HSTS Preload Ready,2,Yes
+Advisory Council on Historic Preservation,HTTPS Bad Chain,2,Yes
+Advisory Council on Historic Preservation,HTTPS Bad Hostname,2,Yes
+Advisory Council on Historic Preservation,Live,0,Yes
+Advisory Council on Historic Preservation,Redirect,2,Yes
+Advisory Council on Historic Preservation,Strictly Forces HTTPS,2,Yes
+Advisory Council on Historic Preservation,Valid HTTPS,2,Yes
+African Development Foundation,Broken Root,2,Yes
+African Development Foundation,Broken WWW,2,Yes
+African Development Foundation,Defaults to HTTPS,2,Yes
+African Development Foundation,Downgrades HTTPS,2,Yes
+African Development Foundation,HSTS,2,Yes
+African Development Foundation,HSTS All Subdomains,2,Yes
+African Development Foundation,HSTS Preload Ready,2,Yes
+African Development Foundation,HTTPS Bad Chain,2,Yes
+African Development Foundation,HTTPS Bad Hostname,2,Yes
+African Development Foundation,Live,0,Yes
+African Development Foundation,Redirect,2,Yes
+African Development Foundation,Strictly Forces HTTPS,2,Yes
+African Development Foundation,Valid HTTPS,2,Yes
+American Battle Monuments Commission,Broken Root,1,Yes
+American Battle Monuments Commission,Broken WWW,1,Yes
+American Battle Monuments Commission,Defaults to HTTPS,1,Yes
+American Battle Monuments Commission,Downgrades HTTPS,1,Yes
+American Battle Monuments Commission,HSTS,1,Yes
+American Battle Monuments Commission,HSTS All Subdomains,1,Yes
+American Battle Monuments Commission,HSTS Preload Ready,1,Yes
+American Battle Monuments Commission,HTTPS Bad Chain,0,Yes
+American Battle Monuments Commission,HTTPS Bad Hostname,1,Yes
+American Battle Monuments Commission,Live,0,Yes
+American Battle Monuments Commission,Redirect,1,Yes
+American Battle Monuments Commission,Strictly Forces HTTPS,1,Yes
+American Battle Monuments Commission,Valid HTTPS,1,Yes
+Appalachian Regional Commission,Broken Root,0,Yes
+Appalachian Regional Commission,Broken WWW,1,Yes
+Appalachian Regional Commission,Defaults to HTTPS,1,Yes
+Appalachian Regional Commission,Downgrades HTTPS,1,Yes
+Appalachian Regional Commission,HSTS,1,Yes
+Appalachian Regional Commission,HSTS All Subdomains,1,Yes
+Appalachian Regional Commission,HSTS Preload Ready,1,Yes
+Appalachian Regional Commission,HTTPS Bad Chain,1,Yes
+Appalachian Regional Commission,HTTPS Bad Hostname,1,Yes
+Appalachian Regional Commission,Live,0,Yes
+Appalachian Regional Commission,Redirect,1,Yes
+Appalachian Regional Commission,Strictly Forces HTTPS,1,Yes
+Appalachian Regional Commission,Valid HTTPS,1,Yes
+Appraisal Subcommittee,Broken Root,1,Yes
+Appraisal Subcommittee,Broken WWW,1,Yes
+Appraisal Subcommittee,Defaults to HTTPS,0,Yes
+Appraisal Subcommittee,Downgrades HTTPS,1,Yes
+Appraisal Subcommittee,HSTS,1,Yes
+Appraisal Subcommittee,HSTS All Subdomains,1,Yes
+Appraisal Subcommittee,HSTS Preload Ready,1,Yes
+Appraisal Subcommittee,HTTPS Bad Chain,1,Yes
+Appraisal Subcommittee,HTTPS Bad Hostname,1,Yes
+Appraisal Subcommittee,Live,0,Yes
+Appraisal Subcommittee,Redirect,1,Yes
+Appraisal Subcommittee,Strictly Forces HTTPS,0,Yes
+Appraisal Subcommittee,Valid HTTPS,0,Yes
+Armed Forces Retirement Home,Broken Root,0,Yes
+Armed Forces Retirement Home,Broken WWW,1,Yes
+Armed Forces Retirement Home,Defaults to HTTPS,0,Yes
+Armed Forces Retirement Home,Downgrades HTTPS,1,Yes
+Armed Forces Retirement Home,HSTS,1,Yes
+Armed Forces Retirement Home,HSTS All Subdomains,1,Yes
+Armed Forces Retirement Home,HSTS Preload Ready,1,Yes
+Armed Forces Retirement Home,HTTPS Bad Chain,1,Yes
+Armed Forces Retirement Home,HTTPS Bad Hostname,1,Yes
+Armed Forces Retirement Home,Live,0,Yes
+Armed Forces Retirement Home,Redirect,1,Yes
+Armed Forces Retirement Home,Strictly Forces HTTPS,0,Yes
+Armed Forces Retirement Home,Valid HTTPS,0,Yes
+Central Intelligence Agency,Broken Root,3,Yes
+Central Intelligence Agency,Broken WWW,7,Yes
+Central Intelligence Agency,Defaults to HTTPS,7,Yes
+Central Intelligence Agency,Downgrades HTTPS,9,Yes
+Central Intelligence Agency,HSTS,9,Yes
+Central Intelligence Agency,HSTS All Subdomains,9,Yes
+Central Intelligence Agency,HSTS Preload Ready,9,Yes
+Central Intelligence Agency,HTTPS Bad Chain,8,Yes
+Central Intelligence Agency,HTTPS Bad Hostname,9,Yes
+Central Intelligence Agency,Live,2,Yes
+Central Intelligence Agency,Redirect,9,Yes
+Central Intelligence Agency,Strictly Forces HTTPS,7,Yes
+Central Intelligence Agency,Valid HTTPS,7,Yes
+Christopher Columbus Fellowship Foundation,Broken Root,1,Yes
+Christopher Columbus Fellowship Foundation,Broken WWW,1,Yes
+Christopher Columbus Fellowship Foundation,Defaults to HTTPS,1,Yes
+Christopher Columbus Fellowship Foundation,Downgrades HTTPS,1,Yes
+Christopher Columbus Fellowship Foundation,HSTS,1,Yes
+Christopher Columbus Fellowship Foundation,HSTS All Subdomains,1,Yes
+Christopher Columbus Fellowship Foundation,HSTS Preload Ready,1,Yes
+Christopher Columbus Fellowship Foundation,HTTPS Bad Chain,1,Yes
+Christopher Columbus Fellowship Foundation,HTTPS Bad Hostname,1,Yes
+Christopher Columbus Fellowship Foundation,Live,0,Yes
+Christopher Columbus Fellowship Foundation,Redirect,1,Yes
+Christopher Columbus Fellowship Foundation,Strictly Forces HTTPS,1,Yes
+Christopher Columbus Fellowship Foundation,Valid HTTPS,0,Yes
+Civil Air Patrol,Broken Root,1,Yes
+Civil Air Patrol,Broken WWW,2,Yes
+Civil Air Patrol,Defaults to HTTPS,2,Yes
+Civil Air Patrol,Downgrades HTTPS,2,Yes
+Civil Air Patrol,HSTS,2,Yes
+Civil Air Patrol,HSTS All Subdomains,2,Yes
+Civil Air Patrol,HSTS Preload Ready,2,Yes
+Civil Air Patrol,HTTPS Bad Chain,2,Yes
+Civil Air Patrol,HTTPS Bad Hostname,2,Yes
+Civil Air Patrol,Live,0,Yes
+Civil Air Patrol,Redirect,2,Yes
+Civil Air Patrol,Strictly Forces HTTPS,2,Yes
+Civil Air Patrol,Valid HTTPS,1,Yes
+Comm for People Who Are Blind/Severly Disabled,Broken Root,2,Yes
+Comm for People Who Are Blind/Severly Disabled,Broken WWW,2,Yes
+Comm for People Who Are Blind/Severly Disabled,Defaults to HTTPS,3,Yes
+Comm for People Who Are Blind/Severly Disabled,Downgrades HTTPS,3,Yes
+Comm for People Who Are Blind/Severly Disabled,HSTS,3,Yes
+Comm for People Who Are Blind/Severly Disabled,HSTS All Subdomains,3,Yes
+Comm for People Who Are Blind/Severly Disabled,HSTS Preload Ready,3,Yes
+Comm for People Who Are Blind/Severly Disabled,HTTPS Bad Chain,3,Yes
+Comm for People Who Are Blind/Severly Disabled,HTTPS Bad Hostname,3,Yes
+Comm for People Who Are Blind/Severly Disabled,Live,1,Yes
+Comm for People Who Are Blind/Severly Disabled,Redirect,3,Yes
+Comm for People Who Are Blind/Severly Disabled,Strictly Forces HTTPS,3,Yes
+Comm for People Who Are Blind/Severly Disabled,Valid HTTPS,3,Yes
+Commodity Futures Trading Commission,Broken Root,1,Yes
+Commodity Futures Trading Commission,Broken WWW,2,Yes
+Commodity Futures Trading Commission,Defaults to HTTPS,2,Yes
+Commodity Futures Trading Commission,Downgrades HTTPS,1,Yes
+Commodity Futures Trading Commission,HSTS,2,Yes
+Commodity Futures Trading Commission,HSTS All Subdomains,2,Yes
+Commodity Futures Trading Commission,HSTS Preload Ready,2,Yes
+Commodity Futures Trading Commission,HTTPS Bad Chain,2,Yes
+Commodity Futures Trading Commission,HTTPS Bad Hostname,2,Yes
+Commodity Futures Trading Commission,Live,0,Yes
+Commodity Futures Trading Commission,Redirect,2,Yes
+Commodity Futures Trading Commission,Strictly Forces HTTPS,2,Yes
+Commodity Futures Trading Commission,Valid HTTPS,1,Yes
+Congressional Office of Compliance,Broken Root,1,Yes
+Congressional Office of Compliance,Broken WWW,1,Yes
+Congressional Office of Compliance,Defaults to HTTPS,1,Yes
+Congressional Office of Compliance,Downgrades HTTPS,1,Yes
+Congressional Office of Compliance,HSTS,1,Yes
+Congressional Office of Compliance,HSTS All Subdomains,1,Yes
+Congressional Office of Compliance,HSTS Preload Ready,1,Yes
+Congressional Office of Compliance,HTTPS Bad Chain,0,Yes
+Congressional Office of Compliance,HTTPS Bad Hostname,1,Yes
+Congressional Office of Compliance,Live,0,Yes
+Congressional Office of Compliance,Redirect,1,Yes
+Congressional Office of Compliance,Strictly Forces HTTPS,1,Yes
+Congressional Office of Compliance,Valid HTTPS,1,Yes
+Consumer Financial Protection Bureau,Broken Root,9,Yes
+Consumer Financial Protection Bureau,Broken WWW,10,Yes
+Consumer Financial Protection Bureau,Defaults to HTTPS,10,Yes
+Consumer Financial Protection Bureau,Downgrades HTTPS,10,Yes
+Consumer Financial Protection Bureau,HSTS,10,Yes
+Consumer Financial Protection Bureau,HSTS All Subdomains,10,Yes
+Consumer Financial Protection Bureau,HSTS Preload Ready,10,Yes
+Consumer Financial Protection Bureau,HTTPS Bad Chain,0,Yes
+Consumer Financial Protection Bureau,HTTPS Bad Hostname,10,Yes
+Consumer Financial Protection Bureau,Live,0,Yes
+Consumer Financial Protection Bureau,Redirect,1,Yes
+Consumer Financial Protection Bureau,Strictly Forces HTTPS,10,Yes
+Consumer Financial Protection Bureau,Valid HTTPS,10,Yes
+Consumer Product Safety Commission,Broken Root,9,Yes
+Consumer Product Safety Commission,Broken WWW,9,Yes
+Consumer Product Safety Commission,Defaults to HTTPS,9,Yes
+Consumer Product Safety Commission,Downgrades HTTPS,8,Yes
+Consumer Product Safety Commission,HSTS,9,Yes
+Consumer Product Safety Commission,HSTS All Subdomains,9,Yes
+Consumer Product Safety Commission,HSTS Preload Ready,9,Yes
+Consumer Product Safety Commission,HTTPS Bad Chain,1,Yes
+Consumer Product Safety Commission,HTTPS Bad Hostname,9,Yes
+Consumer Product Safety Commission,Live,0,Yes
+Consumer Product Safety Commission,Redirect,8,Yes
+Consumer Product Safety Commission,Strictly Forces HTTPS,9,Yes
+Consumer Product Safety Commission,Valid HTTPS,8,Yes
+Corporation for National & Community Service,Broken Root,21,Yes
+Corporation for National & Community Service,Broken WWW,22,Yes
+Corporation for National & Community Service,Defaults to HTTPS,23,Yes
+Corporation for National & Community Service,Downgrades HTTPS,23,Yes
+Corporation for National & Community Service,HSTS,24,Yes
+Corporation for National & Community Service,HSTS All Subdomains,24,Yes
+Corporation for National & Community Service,HSTS Preload Ready,24,Yes
+Corporation for National & Community Service,HTTPS Bad Chain,21,Yes
+Corporation for National & Community Service,HTTPS Bad Hostname,24,Yes
+Corporation for National & Community Service,Live,2,Yes
+Corporation for National & Community Service,Redirect,10,Yes
+Corporation for National & Community Service,Strictly Forces HTTPS,23,Yes
+Corporation for National & Community Service,Valid HTTPS,22,Yes
+Council of Inspector General on Integrity and Efficiency,Broken Root,1,Yes
+Council of Inspector General on Integrity and Efficiency,Broken WWW,2,Yes
+Council of Inspector General on Integrity and Efficiency,Defaults to HTTPS,1,Yes
+Council of Inspector General on Integrity and Efficiency,Downgrades HTTPS,2,Yes
+Council of Inspector General on Integrity and Efficiency,HSTS,2,Yes
+Council of Inspector General on Integrity and Efficiency,HSTS All Subdomains,2,Yes
+Council of Inspector General on Integrity and Efficiency,HSTS Preload Ready,2,Yes
+Council of Inspector General on Integrity and Efficiency,HTTPS Bad Chain,2,Yes
+Council of Inspector General on Integrity and Efficiency,HTTPS Bad Hostname,2,Yes
+Council of Inspector General on Integrity and Efficiency,Live,0,Yes
+Council of Inspector General on Integrity and Efficiency,Redirect,2,Yes
+Council of Inspector General on Integrity and Efficiency,Strictly Forces HTTPS,1,Yes
+Council of Inspector General on Integrity and Efficiency,Valid HTTPS,1,Yes
+Court Services and Offender Supervision,Broken Root,4,Yes
+Court Services and Offender Supervision,Broken WWW,5,Yes
+Court Services and Offender Supervision,Defaults to HTTPS,5,Yes
+Court Services and Offender Supervision,Downgrades HTTPS,5,Yes
+Court Services and Offender Supervision,HSTS,5,Yes
+Court Services and Offender Supervision,HSTS All Subdomains,5,Yes
+Court Services and Offender Supervision,HSTS Preload Ready,5,Yes
+Court Services and Offender Supervision,HTTPS Bad Chain,5,Yes
+Court Services and Offender Supervision,HTTPS Bad Hostname,5,Yes
+Court Services and Offender Supervision,Live,0,Yes
+Court Services and Offender Supervision,Redirect,5,Yes
+Court Services and Offender Supervision,Strictly Forces HTTPS,5,Yes
+Court Services and Offender Supervision,Valid HTTPS,5,Yes
+Defense Nuclear Facilities Safety Board,Broken Root,0,Yes
+Defense Nuclear Facilities Safety Board,Broken WWW,1,Yes
+Defense Nuclear Facilities Safety Board,Defaults to HTTPS,1,Yes
+Defense Nuclear Facilities Safety Board,Downgrades HTTPS,1,Yes
+Defense Nuclear Facilities Safety Board,HSTS,1,Yes
+Defense Nuclear Facilities Safety Board,HSTS All Subdomains,1,Yes
+Defense Nuclear Facilities Safety Board,HSTS Preload Ready,1,Yes
+Defense Nuclear Facilities Safety Board,HTTPS Bad Chain,0,Yes
+Defense Nuclear Facilities Safety Board,HTTPS Bad Hostname,1,Yes
+Defense Nuclear Facilities Safety Board,Live,0,Yes
+Defense Nuclear Facilities Safety Board,Redirect,1,Yes
+Defense Nuclear Facilities Safety Board,Strictly Forces HTTPS,1,Yes
+Defense Nuclear Facilities Safety Board,Valid HTTPS,1,Yes
+Delta Regional Authority,Broken Root,1,Yes
+Delta Regional Authority,Broken WWW,1,Yes
+Delta Regional Authority,Defaults to HTTPS,1,Yes
+Delta Regional Authority,Downgrades HTTPS,1,Yes
+Delta Regional Authority,HSTS,1,Yes
+Delta Regional Authority,HSTS All Subdomains,1,Yes
+Delta Regional Authority,HSTS Preload Ready,1,Yes
+Delta Regional Authority,HTTPS Bad Chain,1,Yes
+Delta Regional Authority,HTTPS Bad Hostname,1,Yes
+Delta Regional Authority,Live,0,Yes
+Delta Regional Authority,Redirect,1,Yes
+Delta Regional Authority,Strictly Forces HTTPS,1,Yes
+Delta Regional Authority,Valid HTTPS,1,Yes
+Denali Commission,Broken Root,1,Yes
+Denali Commission,Broken WWW,1,Yes
+Denali Commission,Defaults to HTTPS,1,Yes
+Denali Commission,Downgrades HTTPS,1,Yes
+Denali Commission,HSTS,1,Yes
+Denali Commission,HSTS All Subdomains,1,Yes
+Denali Commission,HSTS Preload Ready,1,Yes
+Denali Commission,HTTPS Bad Chain,0,Yes
+Denali Commission,HTTPS Bad Hostname,1,Yes
+Denali Commission,Live,0,Yes
+Denali Commission,Redirect,1,Yes
+Denali Commission,Strictly Forces HTTPS,1,Yes
+Denali Commission,Valid HTTPS,1,Yes
+Department of Agriculture,Broken Root,37,Yes
+Department of Agriculture,Broken WWW,51,Yes
+Department of Agriculture,Defaults to HTTPS,45,Yes
+Department of Agriculture,Downgrades HTTPS,46,Yes
+Department of Agriculture,HSTS,52,Yes
+Department of Agriculture,HSTS All Subdomains,52,Yes
+Department of Agriculture,HSTS Preload Ready,52,Yes
+Department of Agriculture,HTTPS Bad Chain,28,Yes
+Department of Agriculture,HTTPS Bad Hostname,52,Yes
+Department of Agriculture,Live,0,Yes
+Department of Agriculture,Redirect,42,Yes
+Department of Agriculture,Strictly Forces HTTPS,45,Yes
+Department of Agriculture,Valid HTTPS,42,Yes
+Department of Commerce,Broken Root,47,Yes
+Department of Commerce,Broken WWW,54,Yes
+Department of Commerce,Defaults to HTTPS,54,Yes
+Department of Commerce,Downgrades HTTPS,52,Yes
+Department of Commerce,HSTS,55,Yes
+Department of Commerce,HSTS All Subdomains,55,Yes
+Department of Commerce,HSTS Preload Ready,55,Yes
+Department of Commerce,HTTPS Bad Chain,42,Yes
+Department of Commerce,HTTPS Bad Hostname,55,Yes
+Department of Commerce,Live,1,Yes
+Department of Commerce,Redirect,44,Yes
+Department of Commerce,Strictly Forces HTTPS,55,Yes
+Department of Commerce,Valid HTTPS,47,Yes
+Department of Defense,Broken Root,13,Yes
+Department of Defense,Broken WWW,28,Yes
+Department of Defense,Defaults to HTTPS,27,Yes
+Department of Defense,Downgrades HTTPS,29,Yes
+Department of Defense,HSTS,31,Yes
+Department of Defense,HSTS All Subdomains,32,Yes
+Department of Defense,HSTS Preload Ready,32,Yes
+Department of Defense,HTTPS Bad Chain,27,Yes
+Department of Defense,HTTPS Bad Hostname,32,Yes
+Department of Defense,Live,4,Yes
+Department of Defense,Redirect,31,Yes
+Department of Defense,Strictly Forces HTTPS,25,Yes
+Department of Defense,Valid HTTPS,24,Yes
+Department of Education,Broken Root,15,Yes
+Department of Education,Broken WWW,16,Yes
+Department of Education,Defaults to HTTPS,13,Yes
+Department of Education,Downgrades HTTPS,15,Yes
+Department of Education,HSTS,15,Yes
+Department of Education,HSTS All Subdomains,15,Yes
+Department of Education,HSTS Preload Ready,15,Yes
+Department of Education,HTTPS Bad Chain,13,Yes
+Department of Education,HTTPS Bad Hostname,16,Yes
+Department of Education,Live,0,Yes
+Department of Education,Redirect,10,Yes
+Department of Education,Strictly Forces HTTPS,13,Yes
+Department of Education,Valid HTTPS,10,Yes
+Department of Energy,Broken Root,47,Yes
+Department of Energy,Broken WWW,61,Yes
+Department of Energy,Defaults to HTTPS,59,Yes
+Department of Energy,Downgrades HTTPS,61,Yes
+Department of Energy,HSTS,66,Yes
+Department of Energy,HSTS All Subdomains,66,Yes
+Department of Energy,HSTS Preload Ready,66,Yes
+Department of Energy,HTTPS Bad Chain,50,Yes
+Department of Energy,HTTPS Bad Hostname,66,Yes
+Department of Energy,Live,5,Yes
+Department of Energy,Redirect,55,Yes
+Department of Energy,Strictly Forces HTTPS,58,Yes
+Department of Energy,Valid HTTPS,42,Yes
+Department of Health And Human Services,Broken Root,103,Yes
+Department of Health And Human Services,Broken WWW,115,Yes
+Department of Health And Human Services,Defaults to HTTPS,105,Yes
+Department of Health And Human Services,Downgrades HTTPS,115,Yes
+Department of Health And Human Services,HSTS,113,Yes
+Department of Health And Human Services,HSTS All Subdomains,115,Yes
+Department of Health And Human Services,HSTS Preload Ready,115,Yes
+Department of Health And Human Services,HTTPS Bad Chain,67,Yes
+Department of Health And Human Services,HTTPS Bad Hostname,117,Yes
+Department of Health And Human Services,Live,1,Yes
+Department of Health And Human Services,Redirect,81,Yes
+Department of Health And Human Services,Strictly Forces HTTPS,102,Yes
+Department of Health And Human Services,Valid HTTPS,86,Yes
+Department of Homeland Security,Broken Root,24,Yes
+Department of Homeland Security,Broken WWW,28,Yes
+Department of Homeland Security,Defaults to HTTPS,21,Yes
+Department of Homeland Security,Downgrades HTTPS,20,Yes
+Department of Homeland Security,HSTS,29,Yes
+Department of Homeland Security,HSTS All Subdomains,29,Yes
+Department of Homeland Security,HSTS Preload Ready,29,Yes
+Department of Homeland Security,HTTPS Bad Chain,18,Yes
+Department of Homeland Security,HTTPS Bad Hostname,29,Yes
+Department of Homeland Security,Live,1,Yes
+Department of Homeland Security,Redirect,22,Yes
+Department of Homeland Security,Strictly Forces HTTPS,23,Yes
+Department of Homeland Security,Valid HTTPS,15,Yes
+Department of Housing And Urban Development,Broken Root,0,Yes
+Department of Housing And Urban Development,Broken WWW,0,Yes
+Department of Housing And Urban Development,Defaults to HTTPS,10,Yes
+Department of Housing And Urban Development,Downgrades HTTPS,10,Yes
+Department of Housing And Urban Development,HSTS,10,Yes
+Department of Housing And Urban Development,HSTS All Subdomains,10,Yes
+Department of Housing And Urban Development,HSTS Preload Ready,10,Yes
+Department of Housing And Urban Development,HTTPS Bad Chain,10,Yes
+Department of Housing And Urban Development,HTTPS Bad Hostname,10,Yes
+Department of Housing And Urban Development,Live,10,Yes
+Department of Housing And Urban Development,Redirect,10,Yes
+Department of Housing And Urban Development,Strictly Forces HTTPS,10,Yes
+Department of Housing And Urban Development,Valid HTTPS,10,Yes
+Department of Justice,Broken Root,34,Yes
+Department of Justice,Broken WWW,37,Yes
+Department of Justice,Defaults to HTTPS,60,Yes
+Department of Justice,Downgrades HTTPS,64,Yes
+Department of Justice,HSTS,67,Yes
+Department of Justice,HSTS All Subdomains,67,Yes
+Department of Justice,HSTS Preload Ready,67,Yes
+Department of Justice,HTTPS Bad Chain,62,Yes
+Department of Justice,HTTPS Bad Hostname,67,Yes
+Department of Justice,Live,30,Yes
+Department of Justice,Redirect,57,Yes
+Department of Justice,Strictly Forces HTTPS,61,Yes
+Department of Justice,Valid HTTPS,57,Yes
+Department of Labor,Broken Root,13,Yes
+Department of Labor,Broken WWW,14,Yes
+Department of Labor,Defaults to HTTPS,18,Yes
+Department of Labor,Downgrades HTTPS,18,Yes
+Department of Labor,HSTS,20,Yes
+Department of Labor,HSTS All Subdomains,20,Yes
+Department of Labor,HSTS Preload Ready,20,Yes
+Department of Labor,HTTPS Bad Chain,12,Yes
+Department of Labor,HTTPS Bad Hostname,20,Yes
+Department of Labor,Live,6,Yes
+Department of Labor,Redirect,17,Yes
+Department of Labor,Strictly Forces HTTPS,19,Yes
+Department of Labor,Valid HTTPS,16,Yes
+Department of State,Broken Root,21,Yes
+Department of State,Broken WWW,22,Yes
+Department of State,Defaults to HTTPS,18,Yes
+Department of State,Downgrades HTTPS,22,Yes
+Department of State,HSTS,22,Yes
+Department of State,HSTS All Subdomains,22,Yes
+Department of State,HSTS Preload Ready,22,Yes
+Department of State,HTTPS Bad Chain,11,Yes
+Department of State,HTTPS Bad Hostname,22,Yes
+Department of State,Live,0,Yes
+Department of State,Redirect,22,Yes
+Department of State,Strictly Forces HTTPS,20,Yes
+Department of State,Valid HTTPS,17,Yes
+Department of Transportation,Broken Root,18,Yes
+Department of Transportation,Broken WWW,32,Yes
+Department of Transportation,Defaults to HTTPS,30,Yes
+Department of Transportation,Downgrades HTTPS,27,Yes
+Department of Transportation,HSTS,33,Yes
+Department of Transportation,HSTS All Subdomains,33,Yes
+Department of Transportation,HSTS Preload Ready,33,Yes
+Department of Transportation,HTTPS Bad Chain,17,Yes
+Department of Transportation,HTTPS Bad Hostname,33,Yes
+Department of Transportation,Live,0,Yes
+Department of Transportation,Redirect,28,Yes
+Department of Transportation,Strictly Forces HTTPS,30,Yes
+Department of Transportation,Valid HTTPS,25,Yes
+Department of Veterans Affairs,Broken Root,6,Yes
+Department of Veterans Affairs,Broken WWW,9,Yes
+Department of Veterans Affairs,Defaults to HTTPS,8,Yes
+Department of Veterans Affairs,Downgrades HTTPS,9,Yes
+Department of Veterans Affairs,HSTS,9,Yes
+Department of Veterans Affairs,HSTS All Subdomains,9,Yes
+Department of Veterans Affairs,HSTS Preload Ready,9,Yes
+Department of Veterans Affairs,HTTPS Bad Chain,7,Yes
+Department of Veterans Affairs,HTTPS Bad Hostname,9,Yes
+Department of Veterans Affairs,Live,0,Yes
+Department of Veterans Affairs,Redirect,6,Yes
+Department of Veterans Affairs,Strictly Forces HTTPS,7,Yes
+Department of Veterans Affairs,Valid HTTPS,7,Yes
+Department of the Interior,Broken Root,62,Yes
+Department of the Interior,Broken WWW,86,Yes
+Department of the Interior,Defaults to HTTPS,83,Yes
+Department of the Interior,Downgrades HTTPS,84,Yes
+Department of the Interior,HSTS,87,Yes
+Department of the Interior,HSTS All Subdomains,87,Yes
+Department of the Interior,HSTS Preload Ready,87,Yes
+Department of the Interior,HTTPS Bad Chain,56,Yes
+Department of the Interior,HTTPS Bad Hostname,87,Yes
+Department of the Interior,Live,1,Yes
+Department of the Interior,Redirect,80,Yes
+Department of the Interior,Strictly Forces HTTPS,85,Yes
+Department of the Interior,Valid HTTPS,63,Yes
+Department of the Treasury,Broken Root,80,Yes
+Department of the Treasury,Broken WWW,86,Yes
+Department of the Treasury,Defaults to HTTPS,77,Yes
+Department of the Treasury,Downgrades HTTPS,92,Yes
+Department of the Treasury,HSTS,95,Yes
+Department of the Treasury,HSTS All Subdomains,95,Yes
+Department of the Treasury,HSTS Preload Ready,95,Yes
+Department of the Treasury,HTTPS Bad Chain,54,Yes
+Department of the Treasury,HTTPS Bad Hostname,95,Yes
+Department of the Treasury,Live,8,Yes
+Department of the Treasury,Redirect,83,Yes
+Department of the Treasury,Strictly Forces HTTPS,74,Yes
+Department of the Treasury,Valid HTTPS,79,Yes
+Director of National Intelligence,Broken Root,9,Yes
+Director of National Intelligence,Broken WWW,12,Yes
+Director of National Intelligence,Defaults to HTTPS,15,Yes
+Director of National Intelligence,Downgrades HTTPS,15,Yes
+Director of National Intelligence,HSTS,15,Yes
+Director of National Intelligence,HSTS All Subdomains,15,Yes
+Director of National Intelligence,HSTS Preload Ready,15,Yes
+Director of National Intelligence,HTTPS Bad Chain,11,Yes
+Director of National Intelligence,HTTPS Bad Hostname,15,Yes
+Director of National Intelligence,Live,3,Yes
+Director of National Intelligence,Redirect,14,Yes
+Director of National Intelligence,Strictly Forces HTTPS,14,Yes
+Director of National Intelligence,Valid HTTPS,13,Yes
+Environmental Protection Agency,Broken Root,13,Yes
+Environmental Protection Agency,Broken WWW,17,Yes
+Environmental Protection Agency,Defaults to HTTPS,16,Yes
+Environmental Protection Agency,Downgrades HTTPS,17,Yes
+Environmental Protection Agency,HSTS,17,Yes
+Environmental Protection Agency,HSTS All Subdomains,17,Yes
+Environmental Protection Agency,HSTS Preload Ready,17,Yes
+Environmental Protection Agency,HTTPS Bad Chain,14,Yes
+Environmental Protection Agency,HTTPS Bad Hostname,17,Yes
+Environmental Protection Agency,Live,0,Yes
+Environmental Protection Agency,Redirect,14,Yes
+Environmental Protection Agency,Strictly Forces HTTPS,16,Yes
+Environmental Protection Agency,Valid HTTPS,15,Yes
+Equal Employment Opportunity Commission,Broken Root,1,Yes
+Equal Employment Opportunity Commission,Broken WWW,1,Yes
+Equal Employment Opportunity Commission,Defaults to HTTPS,1,Yes
+Equal Employment Opportunity Commission,Downgrades HTTPS,1,Yes
+Equal Employment Opportunity Commission,HSTS,1,Yes
+Equal Employment Opportunity Commission,HSTS All Subdomains,1,Yes
+Equal Employment Opportunity Commission,HSTS Preload Ready,1,Yes
+Equal Employment Opportunity Commission,HTTPS Bad Chain,1,Yes
+Equal Employment Opportunity Commission,HTTPS Bad Hostname,1,Yes
+Equal Employment Opportunity Commission,Live,0,Yes
+Equal Employment Opportunity Commission,Redirect,1,Yes
+Equal Employment Opportunity Commission,Strictly Forces HTTPS,1,Yes
+Equal Employment Opportunity Commission,Valid HTTPS,1,Yes
+Executive Office of the President,Broken Root,30,Yes
+Executive Office of the President,Broken WWW,31,Yes
+Executive Office of the President,Defaults to HTTPS,27,Yes
+Executive Office of the President,Downgrades HTTPS,32,Yes
+Executive Office of the President,HSTS,23,Yes
+Executive Office of the President,HSTS All Subdomains,24,Yes
+Executive Office of the President,HSTS Preload Ready,26,Yes
+Executive Office of the President,HTTPS Bad Chain,30,Yes
+Executive Office of the President,HTTPS Bad Hostname,33,Yes
+Executive Office of the President,Live,2,Yes
+Executive Office of the President,Redirect,14,Yes
+Executive Office of the President,Strictly Forces HTTPS,25,Yes
+Executive Office of the President,Valid HTTPS,11,Yes
+Export/Import Bank of the U.S.,Broken Root,1,Yes
+Export/Import Bank of the U.S.,Broken WWW,2,Yes
+Export/Import Bank of the U.S.,Defaults to HTTPS,2,Yes
+Export/Import Bank of the U.S.,Downgrades HTTPS,2,Yes
+Export/Import Bank of the U.S.,HSTS,2,Yes
+Export/Import Bank of the U.S.,HSTS All Subdomains,2,Yes
+Export/Import Bank of the U.S.,HSTS Preload Ready,2,Yes
+Export/Import Bank of the U.S.,HTTPS Bad Chain,2,Yes
+Export/Import Bank of the U.S.,HTTPS Bad Hostname,2,Yes
+Export/Import Bank of the U.S.,Live,0,Yes
+Export/Import Bank of the U.S.,Redirect,2,Yes
+Export/Import Bank of the U.S.,Strictly Forces HTTPS,2,Yes
+Export/Import Bank of the U.S.,Valid HTTPS,2,Yes
+Farm Credit Administration,Broken Root,2,Yes
+Farm Credit Administration,Broken WWW,2,Yes
+Farm Credit Administration,Defaults to HTTPS,2,Yes
+Farm Credit Administration,Downgrades HTTPS,2,Yes
+Farm Credit Administration,HSTS,2,Yes
+Farm Credit Administration,HSTS All Subdomains,2,Yes
+Farm Credit Administration,HSTS Preload Ready,2,Yes
+Farm Credit Administration,HTTPS Bad Chain,2,Yes
+Farm Credit Administration,HTTPS Bad Hostname,2,Yes
+Farm Credit Administration,Live,0,Yes
+Farm Credit Administration,Redirect,2,Yes
+Farm Credit Administration,Strictly Forces HTTPS,2,Yes
+Farm Credit Administration,Valid HTTPS,1,Yes
+Federal Communications Commission,Broken Root,8,Yes
+Federal Communications Commission,Broken WWW,8,Yes
+Federal Communications Commission,Defaults to HTTPS,8,Yes
+Federal Communications Commission,Downgrades HTTPS,8,Yes
+Federal Communications Commission,HSTS,8,Yes
+Federal Communications Commission,HSTS All Subdomains,8,Yes
+Federal Communications Commission,HSTS Preload Ready,8,Yes
+Federal Communications Commission,HTTPS Bad Chain,6,Yes
+Federal Communications Commission,HTTPS Bad Hostname,8,Yes
+Federal Communications Commission,Live,0,Yes
+Federal Communications Commission,Redirect,4,Yes
+Federal Communications Commission,Strictly Forces HTTPS,7,Yes
+Federal Communications Commission,Valid HTTPS,8,Yes
+Federal Deposit Insurance Corporation,Broken Root,8,Yes
+Federal Deposit Insurance Corporation,Broken WWW,10,Yes
+Federal Deposit Insurance Corporation,Defaults to HTTPS,8,Yes
+Federal Deposit Insurance Corporation,Downgrades HTTPS,10,Yes
+Federal Deposit Insurance Corporation,HSTS,10,Yes
+Federal Deposit Insurance Corporation,HSTS All Subdomains,10,Yes
+Federal Deposit Insurance Corporation,HSTS Preload Ready,10,Yes
+Federal Deposit Insurance Corporation,HTTPS Bad Chain,9,Yes
+Federal Deposit Insurance Corporation,HTTPS Bad Hostname,10,Yes
+Federal Deposit Insurance Corporation,Live,0,Yes
+Federal Deposit Insurance Corporation,Redirect,9,Yes
+Federal Deposit Insurance Corporation,Strictly Forces HTTPS,7,Yes
+Federal Deposit Insurance Corporation,Valid HTTPS,8,Yes
+Federal Elections Commission,Broken Root,1,Yes
+Federal Elections Commission,Broken WWW,1,Yes
+Federal Elections Commission,Defaults to HTTPS,1,Yes
+Federal Elections Commission,Downgrades HTTPS,1,Yes
+Federal Elections Commission,HSTS,1,Yes
+Federal Elections Commission,HSTS All Subdomains,1,Yes
+Federal Elections Commission,HSTS Preload Ready,1,Yes
+Federal Elections Commission,HTTPS Bad Chain,1,Yes
+Federal Elections Commission,HTTPS Bad Hostname,1,Yes
+Federal Elections Commission,Live,0,Yes
+Federal Elections Commission,Redirect,1,Yes
+Federal Elections Commission,Strictly Forces HTTPS,1,Yes
+Federal Elections Commission,Valid HTTPS,1,Yes
+Federal Energy Regulatory Commission,Broken Root,2,Yes
+Federal Energy Regulatory Commission,Broken WWW,2,Yes
+Federal Energy Regulatory Commission,Defaults to HTTPS,2,Yes
+Federal Energy Regulatory Commission,Downgrades HTTPS,2,Yes
+Federal Energy Regulatory Commission,HSTS,2,Yes
+Federal Energy Regulatory Commission,HSTS All Subdomains,2,Yes
+Federal Energy Regulatory Commission,HSTS Preload Ready,2,Yes
+Federal Energy Regulatory Commission,HTTPS Bad Chain,1,Yes
+Federal Energy Regulatory Commission,HTTPS Bad Hostname,2,Yes
+Federal Energy Regulatory Commission,Live,0,Yes
+Federal Energy Regulatory Commission,Redirect,2,Yes
+Federal Energy Regulatory Commission,Strictly Forces HTTPS,2,Yes
+Federal Energy Regulatory Commission,Valid HTTPS,2,Yes
+Federal Housing Finance Agency,Broken Root,2,Yes
+Federal Housing Finance Agency,Broken WWW,3,Yes
+Federal Housing Finance Agency,Defaults to HTTPS,4,Yes
+Federal Housing Finance Agency,Downgrades HTTPS,3,Yes
+Federal Housing Finance Agency,HSTS,4,Yes
+Federal Housing Finance Agency,HSTS All Subdomains,4,Yes
+Federal Housing Finance Agency,HSTS Preload Ready,4,Yes
+Federal Housing Finance Agency,HTTPS Bad Chain,4,Yes
+Federal Housing Finance Agency,HTTPS Bad Hostname,4,Yes
+Federal Housing Finance Agency,Live,1,Yes
+Federal Housing Finance Agency,Redirect,4,Yes
+Federal Housing Finance Agency,Strictly Forces HTTPS,4,Yes
+Federal Housing Finance Agency,Valid HTTPS,3,Yes
+Federal Housing Finance Agency Office of Inspector General,Broken Root,1,Yes
+Federal Housing Finance Agency Office of Inspector General,Broken WWW,1,Yes
+Federal Housing Finance Agency Office of Inspector General,Defaults to HTTPS,0,Yes
+Federal Housing Finance Agency Office of Inspector General,Downgrades HTTPS,1,Yes
+Federal Housing Finance Agency Office of Inspector General,HSTS,1,Yes
+Federal Housing Finance Agency Office of Inspector General,HSTS All Subdomains,1,Yes
+Federal Housing Finance Agency Office of Inspector General,HSTS Preload Ready,1,Yes
+Federal Housing Finance Agency Office of Inspector General,HTTPS Bad Chain,0,Yes
+Federal Housing Finance Agency Office of Inspector General,HTTPS Bad Hostname,1,Yes
+Federal Housing Finance Agency Office of Inspector General,Live,0,Yes
+Federal Housing Finance Agency Office of Inspector General,Redirect,1,Yes
+Federal Housing Finance Agency Office of Inspector General,Strictly Forces HTTPS,0,Yes
+Federal Housing Finance Agency Office of Inspector General,Valid HTTPS,1,Yes
+Federal Labor Relations Authority,Broken Root,1,Yes
+Federal Labor Relations Authority,Broken WWW,1,Yes
+Federal Labor Relations Authority,Defaults to HTTPS,1,Yes
+Federal Labor Relations Authority,Downgrades HTTPS,1,Yes
+Federal Labor Relations Authority,HSTS,1,Yes
+Federal Labor Relations Authority,HSTS All Subdomains,1,Yes
+Federal Labor Relations Authority,HSTS Preload Ready,1,Yes
+Federal Labor Relations Authority,HTTPS Bad Chain,0,Yes
+Federal Labor Relations Authority,HTTPS Bad Hostname,1,Yes
+Federal Labor Relations Authority,Live,0,Yes
+Federal Labor Relations Authority,Redirect,1,Yes
+Federal Labor Relations Authority,Strictly Forces HTTPS,1,Yes
+Federal Labor Relations Authority,Valid HTTPS,1,Yes
+Federal Maritime Commission,Broken Root,1,Yes
+Federal Maritime Commission,Broken WWW,1,Yes
+Federal Maritime Commission,Defaults to HTTPS,1,Yes
+Federal Maritime Commission,Downgrades HTTPS,1,Yes
+Federal Maritime Commission,HSTS,1,Yes
+Federal Maritime Commission,HSTS All Subdomains,1,Yes
+Federal Maritime Commission,HSTS Preload Ready,1,Yes
+Federal Maritime Commission,HTTPS Bad Chain,1,Yes
+Federal Maritime Commission,HTTPS Bad Hostname,1,Yes
+Federal Maritime Commission,Live,0,Yes
+Federal Maritime Commission,Redirect,1,Yes
+Federal Maritime Commission,Strictly Forces HTTPS,1,Yes
+Federal Maritime Commission,Valid HTTPS,1,Yes
+Federal Mediation and Conciliation Service,Broken Root,1,Yes
+Federal Mediation and Conciliation Service,Broken WWW,1,Yes
+Federal Mediation and Conciliation Service,Defaults to HTTPS,1,Yes
+Federal Mediation and Conciliation Service,Downgrades HTTPS,0,Yes
+Federal Mediation and Conciliation Service,HSTS,1,Yes
+Federal Mediation and Conciliation Service,HSTS All Subdomains,1,Yes
+Federal Mediation and Conciliation Service,HSTS Preload Ready,1,Yes
+Federal Mediation and Conciliation Service,HTTPS Bad Chain,1,Yes
+Federal Mediation and Conciliation Service,HTTPS Bad Hostname,1,Yes
+Federal Mediation and Conciliation Service,Live,0,Yes
+Federal Mediation and Conciliation Service,Redirect,1,Yes
+Federal Mediation and Conciliation Service,Strictly Forces HTTPS,1,Yes
+Federal Mediation and Conciliation Service,Valid HTTPS,0,Yes
+Federal Reserve System,Broken Root,4,Yes
+Federal Reserve System,Broken WWW,8,Yes
+Federal Reserve System,Defaults to HTTPS,13,Yes
+Federal Reserve System,Downgrades HTTPS,13,Yes
+Federal Reserve System,HSTS,14,Yes
+Federal Reserve System,HSTS All Subdomains,14,Yes
+Federal Reserve System,HSTS Preload Ready,14,Yes
+Federal Reserve System,HTTPS Bad Chain,13,Yes
+Federal Reserve System,HTTPS Bad Hostname,14,Yes
+Federal Reserve System,Live,6,Yes
+Federal Reserve System,Redirect,14,Yes
+Federal Reserve System,Strictly Forces HTTPS,13,Yes
+Federal Reserve System,Valid HTTPS,9,Yes
+Federal Retirement Thrift Investment Board,Broken Root,3,Yes
+Federal Retirement Thrift Investment Board,Broken WWW,5,Yes
+Federal Retirement Thrift Investment Board,Defaults to HTTPS,4,Yes
+Federal Retirement Thrift Investment Board,Downgrades HTTPS,5,Yes
+Federal Retirement Thrift Investment Board,HSTS,5,Yes
+Federal Retirement Thrift Investment Board,HSTS All Subdomains,5,Yes
+Federal Retirement Thrift Investment Board,HSTS Preload Ready,5,Yes
+Federal Retirement Thrift Investment Board,HTTPS Bad Chain,4,Yes
+Federal Retirement Thrift Investment Board,HTTPS Bad Hostname,5,Yes
+Federal Retirement Thrift Investment Board,Live,0,Yes
+Federal Retirement Thrift Investment Board,Redirect,5,Yes
+Federal Retirement Thrift Investment Board,Strictly Forces HTTPS,3,Yes
+Federal Retirement Thrift Investment Board,Valid HTTPS,4,Yes
+Federal Trade Commission,Broken Root,20,Yes
+Federal Trade Commission,Broken WWW,21,Yes
+Federal Trade Commission,Defaults to HTTPS,18,Yes
+Federal Trade Commission,Downgrades HTTPS,24,Yes
+Federal Trade Commission,HSTS,20,Yes
+Federal Trade Commission,HSTS All Subdomains,20,Yes
+Federal Trade Commission,HSTS Preload Ready,20,Yes
+Federal Trade Commission,HTTPS Bad Chain,22,Yes
+Federal Trade Commission,HTTPS Bad Hostname,24,Yes
+Federal Trade Commission,Live,2,Yes
+Federal Trade Commission,Redirect,17,Yes
+Federal Trade Commission,Strictly Forces HTTPS,18,Yes
+Federal Trade Commission,Valid HTTPS,12,Yes
+General Services Administration,Broken Root,91,Yes
+General Services Administration,Broken WWW,92,Yes
+General Services Administration,Defaults to HTTPS,75,Yes
+General Services Administration,Downgrades HTTPS,88,Yes
+General Services Administration,HSTS,99,Yes
+General Services Administration,HSTS All Subdomains,99,Yes
+General Services Administration,HSTS Preload Ready,99,Yes
+General Services Administration,HTTPS Bad Chain,62,Yes
+General Services Administration,HTTPS Bad Hostname,104,Yes
+General Services Administration,Live,11,Yes
+General Services Administration,Redirect,73,Yes
+General Services Administration,Strictly Forces HTTPS,76,Yes
+General Services Administration,Valid HTTPS,65,Yes
+Government Printing Office,Broken Root,14,Yes
+Government Printing Office,Broken WWW,23,Yes
+Government Printing Office,Defaults to HTTPS,23,Yes
+Government Printing Office,Downgrades HTTPS,24,Yes
+Government Printing Office,HSTS,23,Yes
+Government Printing Office,HSTS All Subdomains,23,Yes
+Government Printing Office,HSTS Preload Ready,23,Yes
+Government Printing Office,HTTPS Bad Chain,24,Yes
+Government Printing Office,HTTPS Bad Hostname,24,Yes
+Government Printing Office,Live,1,Yes
+Government Printing Office,Redirect,15,Yes
+Government Printing Office,Strictly Forces HTTPS,24,Yes
+Government Printing Office,Valid HTTPS,21,Yes
+Harry S. Truman Scholarship Foundation,Broken Root,1,Yes
+Harry S. Truman Scholarship Foundation,Broken WWW,1,Yes
+Harry S. Truman Scholarship Foundation,Defaults to HTTPS,1,Yes
+Harry S. Truman Scholarship Foundation,Downgrades HTTPS,1,Yes
+Harry S. Truman Scholarship Foundation,HSTS,1,Yes
+Harry S. Truman Scholarship Foundation,HSTS All Subdomains,1,Yes
+Harry S. Truman Scholarship Foundation,HSTS Preload Ready,1,Yes
+Harry S. Truman Scholarship Foundation,HTTPS Bad Chain,0,Yes
+Harry S. Truman Scholarship Foundation,HTTPS Bad Hostname,1,Yes
+Harry S. Truman Scholarship Foundation,Live,0,Yes
+Harry S. Truman Scholarship Foundation,Redirect,1,Yes
+Harry S. Truman Scholarship Foundation,Strictly Forces HTTPS,1,Yes
+Harry S. Truman Scholarship Foundation,Valid HTTPS,1,Yes
+Indian Affairs,Broken Root,102,Yes
+Indian Affairs,Broken WWW,115,Yes
+Indian Affairs,Defaults to HTTPS,166,Yes
+Indian Affairs,Downgrades HTTPS,163,Yes
+Indian Affairs,HSTS,166,Yes
+Indian Affairs,HSTS All Subdomains,166,Yes
+Indian Affairs,HSTS Preload Ready,167,Yes
+Indian Affairs,HTTPS Bad Chain,106,Yes
+Indian Affairs,HTTPS Bad Hostname,167,Yes
+Indian Affairs,Live,49,Yes
+Indian Affairs,Redirect,155,Yes
+Indian Affairs,Strictly Forces HTTPS,157,Yes
+Indian Affairs,Valid HTTPS,153,Yes
+Institute of Museum and Library Services,Broken Root,1,Yes
+Institute of Museum and Library Services,Broken WWW,1,Yes
+Institute of Museum and Library Services,Defaults to HTTPS,1,Yes
+Institute of Museum and Library Services,Downgrades HTTPS,1,Yes
+Institute of Museum and Library Services,HSTS,1,Yes
+Institute of Museum and Library Services,HSTS All Subdomains,1,Yes
+Institute of Museum and Library Services,HSTS Preload Ready,1,Yes
+Institute of Museum and Library Services,HTTPS Bad Chain,1,Yes
+Institute of Museum and Library Services,HTTPS Bad Hostname,1,Yes
+Institute of Museum and Library Services,Live,0,Yes
+Institute of Museum and Library Services,Redirect,1,Yes
+Institute of Museum and Library Services,Strictly Forces HTTPS,1,Yes
+Institute of Museum and Library Services,Valid HTTPS,1,Yes
+Inter-American Foundation,Broken Root,1,Yes
+Inter-American Foundation,Broken WWW,1,Yes
+Inter-American Foundation,Defaults to HTTPS,1,Yes
+Inter-American Foundation,Downgrades HTTPS,1,Yes
+Inter-American Foundation,HSTS,1,Yes
+Inter-American Foundation,HSTS All Subdomains,1,Yes
+Inter-American Foundation,HSTS Preload Ready,1,Yes
+Inter-American Foundation,HTTPS Bad Chain,1,Yes
+Inter-American Foundation,HTTPS Bad Hostname,1,Yes
+Inter-American Foundation,Live,0,Yes
+Inter-American Foundation,Redirect,1,Yes
+Inter-American Foundation,Strictly Forces HTTPS,1,Yes
+Inter-American Foundation,Valid HTTPS,1,Yes
+International Broadcasting Bureau,Broken Root,3,Yes
+International Broadcasting Bureau,Broken WWW,3,Yes
+International Broadcasting Bureau,Defaults to HTTPS,3,Yes
+International Broadcasting Bureau,Downgrades HTTPS,3,Yes
+International Broadcasting Bureau,HSTS,3,Yes
+International Broadcasting Bureau,HSTS All Subdomains,3,Yes
+International Broadcasting Bureau,HSTS Preload Ready,3,Yes
+International Broadcasting Bureau,HTTPS Bad Chain,0,Yes
+International Broadcasting Bureau,HTTPS Bad Hostname,3,Yes
+International Broadcasting Bureau,Live,0,Yes
+International Broadcasting Bureau,Redirect,1,Yes
+International Broadcasting Bureau,Strictly Forces HTTPS,3,Yes
+International Broadcasting Bureau,Valid HTTPS,3,Yes
+James Madison Memorial Fellowship Foundation,Broken Root,1,Yes
+James Madison Memorial Fellowship Foundation,Broken WWW,1,Yes
+James Madison Memorial Fellowship Foundation,Defaults to HTTPS,1,Yes
+James Madison Memorial Fellowship Foundation,Downgrades HTTPS,1,Yes
+James Madison Memorial Fellowship Foundation,HSTS,1,Yes
+James Madison Memorial Fellowship Foundation,HSTS All Subdomains,1,Yes
+James Madison Memorial Fellowship Foundation,HSTS Preload Ready,1,Yes
+James Madison Memorial Fellowship Foundation,HTTPS Bad Chain,0,Yes
+James Madison Memorial Fellowship Foundation,HTTPS Bad Hostname,1,Yes
+James Madison Memorial Fellowship Foundation,Live,0,Yes
+James Madison Memorial Fellowship Foundation,Redirect,1,Yes
+James Madison Memorial Fellowship Foundation,Strictly Forces HTTPS,1,Yes
+James Madison Memorial Fellowship Foundation,Valid HTTPS,1,Yes
+Legal Services Corporation,Broken Root,1,Yes
+Legal Services Corporation,Broken WWW,1,Yes
+Legal Services Corporation,Defaults to HTTPS,1,Yes
+Legal Services Corporation,Downgrades HTTPS,1,Yes
+Legal Services Corporation,HSTS,1,Yes
+Legal Services Corporation,HSTS All Subdomains,1,Yes
+Legal Services Corporation,HSTS Preload Ready,1,Yes
+Legal Services Corporation,HTTPS Bad Chain,0,Yes
+Legal Services Corporation,HTTPS Bad Hostname,1,Yes
+Legal Services Corporation,Live,0,Yes
+Legal Services Corporation,Redirect,1,Yes
+Legal Services Corporation,Strictly Forces HTTPS,1,Yes
+Legal Services Corporation,Valid HTTPS,1,Yes
+Library of Congress,Broken Root,42,Yes
+Library of Congress,Broken WWW,42,Yes
+Library of Congress,Defaults to HTTPS,44,Yes
+Library of Congress,Downgrades HTTPS,44,Yes
+Library of Congress,HSTS,45,Yes
+Library of Congress,HSTS All Subdomains,45,Yes
+Library of Congress,HSTS Preload Ready,45,Yes
+Library of Congress,HTTPS Bad Chain,11,Yes
+Library of Congress,HTTPS Bad Hostname,45,Yes
+Library of Congress,Live,3,Yes
+Library of Congress,Redirect,35,Yes
+Library of Congress,Strictly Forces HTTPS,44,Yes
+Library of Congress,Valid HTTPS,42,Yes
+Marine Mammal Commission,Broken Root,1,Yes
+Marine Mammal Commission,Broken WWW,1,Yes
+Marine Mammal Commission,Defaults to HTTPS,1,Yes
+Marine Mammal Commission,Downgrades HTTPS,1,Yes
+Marine Mammal Commission,HSTS,1,Yes
+Marine Mammal Commission,HSTS All Subdomains,1,Yes
+Marine Mammal Commission,HSTS Preload Ready,1,Yes
+Marine Mammal Commission,HTTPS Bad Chain,1,Yes
+Marine Mammal Commission,HTTPS Bad Hostname,1,Yes
+Marine Mammal Commission,Live,0,Yes
+Marine Mammal Commission,Redirect,1,Yes
+Marine Mammal Commission,Strictly Forces HTTPS,1,Yes
+Marine Mammal Commission,Valid HTTPS,1,Yes
+Medicaid and CHIP Payment and Access Commission,Broken Root,1,Yes
+Medicaid and CHIP Payment and Access Commission,Broken WWW,1,Yes
+Medicaid and CHIP Payment and Access Commission,Defaults to HTTPS,0,Yes
+Medicaid and CHIP Payment and Access Commission,Downgrades HTTPS,1,Yes
+Medicaid and CHIP Payment and Access Commission,HSTS,1,Yes
+Medicaid and CHIP Payment and Access Commission,HSTS All Subdomains,1,Yes
+Medicaid and CHIP Payment and Access Commission,HSTS Preload Ready,1,Yes
+Medicaid and CHIP Payment and Access Commission,HTTPS Bad Chain,1,Yes
+Medicaid and CHIP Payment and Access Commission,HTTPS Bad Hostname,1,Yes
+Medicaid and CHIP Payment and Access Commission,Live,0,Yes
+Medicaid and CHIP Payment and Access Commission,Redirect,1,Yes
+Medicaid and CHIP Payment and Access Commission,Strictly Forces HTTPS,0,Yes
+Medicaid and CHIP Payment and Access Commission,Valid HTTPS,0,Yes
+Medical Payment Advisory Commission,Broken Root,1,Yes
+Medical Payment Advisory Commission,Broken WWW,1,Yes
+Medical Payment Advisory Commission,Defaults to HTTPS,1,Yes
+Medical Payment Advisory Commission,Downgrades HTTPS,1,Yes
+Medical Payment Advisory Commission,HSTS,1,Yes
+Medical Payment Advisory Commission,HSTS All Subdomains,1,Yes
+Medical Payment Advisory Commission,HSTS Preload Ready,1,Yes
+Medical Payment Advisory Commission,HTTPS Bad Chain,1,Yes
+Medical Payment Advisory Commission,HTTPS Bad Hostname,1,Yes
+Medical Payment Advisory Commission,Live,0,Yes
+Medical Payment Advisory Commission,Redirect,1,Yes
+Medical Payment Advisory Commission,Strictly Forces HTTPS,1,Yes
+Medical Payment Advisory Commission,Valid HTTPS,1,Yes
+Merit Systems Protection Board,Broken Root,1,Yes
+Merit Systems Protection Board,Broken WWW,1,Yes
+Merit Systems Protection Board,Defaults to HTTPS,1,Yes
+Merit Systems Protection Board,Downgrades HTTPS,1,Yes
+Merit Systems Protection Board,HSTS,1,Yes
+Merit Systems Protection Board,HSTS All Subdomains,1,Yes
+Merit Systems Protection Board,HSTS Preload Ready,1,Yes
+Merit Systems Protection Board,HTTPS Bad Chain,1,Yes
+Merit Systems Protection Board,HTTPS Bad Hostname,1,Yes
+Merit Systems Protection Board,Live,0,Yes
+Merit Systems Protection Board,Redirect,1,Yes
+Merit Systems Protection Board,Strictly Forces HTTPS,1,Yes
+Merit Systems Protection Board,Valid HTTPS,1,Yes
+Millennium Challenge Corporation,Broken Root,1,Yes
+Millennium Challenge Corporation,Broken WWW,1,Yes
+Millennium Challenge Corporation,Defaults to HTTPS,0,Yes
+Millennium Challenge Corporation,Downgrades HTTPS,1,Yes
+Millennium Challenge Corporation,HSTS,1,Yes
+Millennium Challenge Corporation,HSTS All Subdomains,1,Yes
+Millennium Challenge Corporation,HSTS Preload Ready,1,Yes
+Millennium Challenge Corporation,HTTPS Bad Chain,1,Yes
+Millennium Challenge Corporation,HTTPS Bad Hostname,1,Yes
+Millennium Challenge Corporation,Live,0,Yes
+Millennium Challenge Corporation,Redirect,1,Yes
+Millennium Challenge Corporation,Strictly Forces HTTPS,0,Yes
+Millennium Challenge Corporation,Valid HTTPS,0,Yes
+Morris K. Udall Foundation,Broken Root,2,Yes
+Morris K. Udall Foundation,Broken WWW,2,Yes
+Morris K. Udall Foundation,Defaults to HTTPS,2,Yes
+Morris K. Udall Foundation,Downgrades HTTPS,2,Yes
+Morris K. Udall Foundation,HSTS,2,Yes
+Morris K. Udall Foundation,HSTS All Subdomains,2,Yes
+Morris K. Udall Foundation,HSTS Preload Ready,2,Yes
+Morris K. Udall Foundation,HTTPS Bad Chain,2,Yes
+Morris K. Udall Foundation,HTTPS Bad Hostname,2,Yes
+Morris K. Udall Foundation,Live,0,Yes
+Morris K. Udall Foundation,Redirect,1,Yes
+Morris K. Udall Foundation,Strictly Forces HTTPS,2,Yes
+Morris K. Udall Foundation,Valid HTTPS,0,Yes
+Multistate Tax Commission,Broken Root,0,Yes
+Multistate Tax Commission,Broken WWW,1,Yes
+Multistate Tax Commission,Defaults to HTTPS,1,Yes
+Multistate Tax Commission,Downgrades HTTPS,1,Yes
+Multistate Tax Commission,HSTS,1,Yes
+Multistate Tax Commission,HSTS All Subdomains,1,Yes
+Multistate Tax Commission,HSTS Preload Ready,1,Yes
+Multistate Tax Commission,HTTPS Bad Chain,1,Yes
+Multistate Tax Commission,HTTPS Bad Hostname,1,Yes
+Multistate Tax Commission,Live,0,Yes
+Multistate Tax Commission,Redirect,1,Yes
+Multistate Tax Commission,Strictly Forces HTTPS,1,Yes
+Multistate Tax Commission,Valid HTTPS,1,Yes
+National Aeronautics and Space Administration,Broken Root,4,Yes
+National Aeronautics and Space Administration,Broken WWW,5,Yes
+National Aeronautics and Space Administration,Defaults to HTTPS,5,Yes
+National Aeronautics and Space Administration,Downgrades HTTPS,5,Yes
+National Aeronautics and Space Administration,HSTS,5,Yes
+National Aeronautics and Space Administration,HSTS All Subdomains,5,Yes
+National Aeronautics and Space Administration,HSTS Preload Ready,5,Yes
+National Aeronautics and Space Administration,HTTPS Bad Chain,4,Yes
+National Aeronautics and Space Administration,HTTPS Bad Hostname,5,Yes
+National Aeronautics and Space Administration,Live,0,Yes
+National Aeronautics and Space Administration,Redirect,3,Yes
+National Aeronautics and Space Administration,Strictly Forces HTTPS,5,Yes
+National Aeronautics and Space Administration,Valid HTTPS,3,Yes
+National Archives and Records Administration,Broken Root,10,Yes
+National Archives and Records Administration,Broken WWW,10,Yes
+National Archives and Records Administration,Defaults to HTTPS,20,Yes
+National Archives and Records Administration,Downgrades HTTPS,20,Yes
+National Archives and Records Administration,HSTS,20,Yes
+National Archives and Records Administration,HSTS All Subdomains,20,Yes
+National Archives and Records Administration,HSTS Preload Ready,20,Yes
+National Archives and Records Administration,HTTPS Bad Chain,20,Yes
+National Archives and Records Administration,HTTPS Bad Hostname,20,Yes
+National Archives and Records Administration,Live,10,Yes
+National Archives and Records Administration,Redirect,16,Yes
+National Archives and Records Administration,Strictly Forces HTTPS,20,Yes
+National Archives and Records Administration,Valid HTTPS,20,Yes
+National Capital Planning Commission,Broken Root,0,Yes
+National Capital Planning Commission,Broken WWW,0,Yes
+National Capital Planning Commission,Defaults to HTTPS,1,Yes
+National Capital Planning Commission,Downgrades HTTPS,1,Yes
+National Capital Planning Commission,HSTS,1,Yes
+National Capital Planning Commission,HSTS All Subdomains,1,Yes
+National Capital Planning Commission,HSTS Preload Ready,1,Yes
+National Capital Planning Commission,HTTPS Bad Chain,1,Yes
+National Capital Planning Commission,HTTPS Bad Hostname,1,Yes
+National Capital Planning Commission,Live,1,Yes
+National Capital Planning Commission,Redirect,1,Yes
+National Capital Planning Commission,Strictly Forces HTTPS,1,Yes
+National Capital Planning Commission,Valid HTTPS,1,Yes
+National Council on Disability,Broken Root,0,Yes
+National Council on Disability,Broken WWW,0,Yes
+National Council on Disability,Defaults to HTTPS,1,Yes
+National Council on Disability,Downgrades HTTPS,1,Yes
+National Council on Disability,HSTS,1,Yes
+National Council on Disability,HSTS All Subdomains,1,Yes
+National Council on Disability,HSTS Preload Ready,1,Yes
+National Council on Disability,HTTPS Bad Chain,1,Yes
+National Council on Disability,HTTPS Bad Hostname,1,Yes
+National Council on Disability,Live,1,Yes
+National Council on Disability,Redirect,1,Yes
+National Council on Disability,Strictly Forces HTTPS,1,Yes
+National Council on Disability,Valid HTTPS,1,Yes
+National Credit Union Administration,Broken Root,0,Yes
+National Credit Union Administration,Broken WWW,0,Yes
+National Credit Union Administration,Defaults to HTTPS,2,Yes
+National Credit Union Administration,Downgrades HTTPS,2,Yes
+National Credit Union Administration,HSTS,2,Yes
+National Credit Union Administration,HSTS All Subdomains,2,Yes
+National Credit Union Administration,HSTS Preload Ready,2,Yes
+National Credit Union Administration,HTTPS Bad Chain,2,Yes
+National Credit Union Administration,HTTPS Bad Hostname,2,Yes
+National Credit Union Administration,Live,2,Yes
+National Credit Union Administration,Redirect,2,Yes
+National Credit Union Administration,Strictly Forces HTTPS,2,Yes
+National Credit Union Administration,Valid HTTPS,2,Yes
+National Endowment for the Arts,Broken Root,0,Yes
+National Endowment for the Arts,Broken WWW,0,Yes
+National Endowment for the Arts,Defaults to HTTPS,2,Yes
+National Endowment for the Arts,Downgrades HTTPS,2,Yes
+National Endowment for the Arts,HSTS,2,Yes
+National Endowment for the Arts,HSTS All Subdomains,2,Yes
+National Endowment for the Arts,HSTS Preload Ready,2,Yes
+National Endowment for the Arts,HTTPS Bad Chain,2,Yes
+National Endowment for the Arts,HTTPS Bad Hostname,2,Yes
+National Endowment for the Arts,Live,2,Yes
+National Endowment for the Arts,Redirect,2,Yes
+National Endowment for the Arts,Strictly Forces HTTPS,2,Yes
+National Endowment for the Arts,Valid HTTPS,2,Yes
+National Endowment for the Humanities,Broken Root,0,Yes
+National Endowment for the Humanities,Broken WWW,0,Yes
+National Endowment for the Humanities,Defaults to HTTPS,4,Yes
+National Endowment for the Humanities,Downgrades HTTPS,4,Yes
+National Endowment for the Humanities,HSTS,4,Yes
+National Endowment for the Humanities,HSTS All Subdomains,4,Yes
+National Endowment for the Humanities,HSTS Preload Ready,4,Yes
+National Endowment for the Humanities,HTTPS Bad Chain,4,Yes
+National Endowment for the Humanities,HTTPS Bad Hostname,4,Yes
+National Endowment for the Humanities,Live,4,Yes
+National Endowment for the Humanities,Redirect,4,Yes
+National Endowment for the Humanities,Strictly Forces HTTPS,4,Yes
+National Endowment for the Humanities,Valid HTTPS,4,Yes
+National Gallery of Art,Broken Root,0,Yes
+National Gallery of Art,Broken WWW,0,Yes
+National Gallery of Art,Defaults to HTTPS,1,Yes
+National Gallery of Art,Downgrades HTTPS,1,Yes
+National Gallery of Art,HSTS,1,Yes
+National Gallery of Art,HSTS All Subdomains,1,Yes
+National Gallery of Art,HSTS Preload Ready,1,Yes
+National Gallery of Art,HTTPS Bad Chain,1,Yes
+National Gallery of Art,HTTPS Bad Hostname,1,Yes
+National Gallery of Art,Live,1,Yes
+National Gallery of Art,Redirect,1,Yes
+National Gallery of Art,Strictly Forces HTTPS,1,Yes
+National Gallery of Art,Valid HTTPS,1,Yes
+National Indian Gaming Commission,Broken Root,0,Yes
+National Indian Gaming Commission,Broken WWW,0,Yes
+National Indian Gaming Commission,Defaults to HTTPS,1,Yes
+National Indian Gaming Commission,Downgrades HTTPS,1,Yes
+National Indian Gaming Commission,HSTS,1,Yes
+National Indian Gaming Commission,HSTS All Subdomains,1,Yes
+National Indian Gaming Commission,HSTS Preload Ready,1,Yes
+National Indian Gaming Commission,HTTPS Bad Chain,1,Yes
+National Indian Gaming Commission,HTTPS Bad Hostname,1,Yes
+National Indian Gaming Commission,Live,1,Yes
+National Indian Gaming Commission,Redirect,1,Yes
+National Indian Gaming Commission,Strictly Forces HTTPS,1,Yes
+National Indian Gaming Commission,Valid HTTPS,1,Yes
+National Labor Relations Board,Broken Root,0,Yes
+National Labor Relations Board,Broken WWW,0,Yes
+National Labor Relations Board,Defaults to HTTPS,1,Yes
+National Labor Relations Board,Downgrades HTTPS,1,Yes
+National Labor Relations Board,HSTS,1,Yes
+National Labor Relations Board,HSTS All Subdomains,1,Yes
+National Labor Relations Board,HSTS Preload Ready,1,Yes
+National Labor Relations Board,HTTPS Bad Chain,1,Yes
+National Labor Relations Board,HTTPS Bad Hostname,1,Yes
+National Labor Relations Board,Live,1,Yes
+National Labor Relations Board,Redirect,1,Yes
+National Labor Relations Board,Strictly Forces HTTPS,1,Yes
+National Labor Relations Board,Valid HTTPS,1,Yes
+National Mediation Board,Broken Root,0,Yes
+National Mediation Board,Broken WWW,0,Yes
+National Mediation Board,Defaults to HTTPS,1,Yes
+National Mediation Board,Downgrades HTTPS,1,Yes
+National Mediation Board,HSTS,1,Yes
+National Mediation Board,HSTS All Subdomains,1,Yes
+National Mediation Board,HSTS Preload Ready,1,Yes
+National Mediation Board,HTTPS Bad Chain,1,Yes
+National Mediation Board,HTTPS Bad Hostname,1,Yes
+National Mediation Board,Live,1,Yes
+National Mediation Board,Redirect,1,Yes
+National Mediation Board,Strictly Forces HTTPS,1,Yes
+National Mediation Board,Valid HTTPS,1,Yes
+National Nanotechnology Coordination Office,Broken Root,0,Yes
+National Nanotechnology Coordination Office,Broken WWW,0,Yes
+National Nanotechnology Coordination Office,Defaults to HTTPS,1,Yes
+National Nanotechnology Coordination Office,Downgrades HTTPS,1,Yes
+National Nanotechnology Coordination Office,HSTS,1,Yes
+National Nanotechnology Coordination Office,HSTS All Subdomains,1,Yes
+National Nanotechnology Coordination Office,HSTS Preload Ready,1,Yes
+National Nanotechnology Coordination Office,HTTPS Bad Chain,1,Yes
+National Nanotechnology Coordination Office,HTTPS Bad Hostname,1,Yes
+National Nanotechnology Coordination Office,Live,1,Yes
+National Nanotechnology Coordination Office,Redirect,1,Yes
+National Nanotechnology Coordination Office,Strictly Forces HTTPS,1,Yes
+National Nanotechnology Coordination Office,Valid HTTPS,1,Yes
+National Science Foundation,Broken Root,0,Yes
+National Science Foundation,Broken WWW,0,Yes
+National Science Foundation,Defaults to HTTPS,8,Yes
+National Science Foundation,Downgrades HTTPS,8,Yes
+National Science Foundation,HSTS,8,Yes
+National Science Foundation,HSTS All Subdomains,8,Yes
+National Science Foundation,HSTS Preload Ready,8,Yes
+National Science Foundation,HTTPS Bad Chain,8,Yes
+National Science Foundation,HTTPS Bad Hostname,8,Yes
+National Science Foundation,Live,8,Yes
+National Science Foundation,Redirect,8,Yes
+National Science Foundation,Strictly Forces HTTPS,8,Yes
+National Science Foundation,Valid HTTPS,8,Yes
+National Security Agency,Broken Root,0,Yes
+National Security Agency,Broken WWW,0,Yes
+National Security Agency,Defaults to HTTPS,1,Yes
+National Security Agency,Downgrades HTTPS,1,Yes
+National Security Agency,HSTS,1,Yes
+National Security Agency,HSTS All Subdomains,1,Yes
+National Security Agency,HSTS Preload Ready,1,Yes
+National Security Agency,HTTPS Bad Chain,1,Yes
+National Security Agency,HTTPS Bad Hostname,1,Yes
+National Security Agency,Live,1,Yes
+National Security Agency,Redirect,1,Yes
+National Security Agency,Strictly Forces HTTPS,1,Yes
+National Security Agency,Valid HTTPS,1,Yes
+National Transportation Safety Board,Broken Root,0,Yes
+National Transportation Safety Board,Broken WWW,0,Yes
+National Transportation Safety Board,Defaults to HTTPS,1,Yes
+National Transportation Safety Board,Downgrades HTTPS,1,Yes
+National Transportation Safety Board,HSTS,1,Yes
+National Transportation Safety Board,HSTS All Subdomains,1,Yes
+National Transportation Safety Board,HSTS Preload Ready,1,Yes
+National Transportation Safety Board,HTTPS Bad Chain,1,Yes
+National Transportation Safety Board,HTTPS Bad Hostname,1,Yes
+National Transportation Safety Board,Live,1,Yes
+National Transportation Safety Board,Redirect,1,Yes
+National Transportation Safety Board,Strictly Forces HTTPS,1,Yes
+National Transportation Safety Board,Valid HTTPS,1,Yes
+Networking Information Technology Research and Development (NITRD),Broken Root,0,Yes
+Networking Information Technology Research and Development (NITRD),Broken WWW,0,Yes
+Networking Information Technology Research and Development (NITRD),Defaults to HTTPS,2,Yes
+Networking Information Technology Research and Development (NITRD),Downgrades HTTPS,2,Yes
+Networking Information Technology Research and Development (NITRD),HSTS,2,Yes
+Networking Information Technology Research and Development (NITRD),HSTS All Subdomains,2,Yes
+Networking Information Technology Research and Development (NITRD),HSTS Preload Ready,2,Yes
+Networking Information Technology Research and Development (NITRD),HTTPS Bad Chain,2,Yes
+Networking Information Technology Research and Development (NITRD),HTTPS Bad Hostname,2,Yes
+Networking Information Technology Research and Development (NITRD),Live,2,Yes
+Networking Information Technology Research and Development (NITRD),Redirect,2,Yes
+Networking Information Technology Research and Development (NITRD),Strictly Forces HTTPS,2,Yes
+Networking Information Technology Research and Development (NITRD),Valid HTTPS,2,Yes
+Nuclear Regulatory Commission,Broken Root,0,Yes
+Nuclear Regulatory Commission,Broken WWW,0,Yes
+Nuclear Regulatory Commission,Defaults to HTTPS,2,Yes
+Nuclear Regulatory Commission,Downgrades HTTPS,2,Yes
+Nuclear Regulatory Commission,HSTS,2,Yes
+Nuclear Regulatory Commission,HSTS All Subdomains,2,Yes
+Nuclear Regulatory Commission,HSTS Preload Ready,2,Yes
+Nuclear Regulatory Commission,HTTPS Bad Chain,2,Yes
+Nuclear Regulatory Commission,HTTPS Bad Hostname,2,Yes
+Nuclear Regulatory Commission,Live,2,Yes
+Nuclear Regulatory Commission,Redirect,2,Yes
+Nuclear Regulatory Commission,Strictly Forces HTTPS,2,Yes
+Nuclear Regulatory Commission,Valid HTTPS,2,Yes
+Occupational Safety & Health Review Commission,Broken Root,0,Yes
+Occupational Safety & Health Review Commission,Broken WWW,0,Yes
+Occupational Safety & Health Review Commission,Defaults to HTTPS,1,Yes
+Occupational Safety & Health Review Commission,Downgrades HTTPS,1,Yes
+Occupational Safety & Health Review Commission,HSTS,1,Yes
+Occupational Safety & Health Review Commission,HSTS All Subdomains,1,Yes
+Occupational Safety & Health Review Commission,HSTS Preload Ready,1,Yes
+Occupational Safety & Health Review Commission,HTTPS Bad Chain,1,Yes
+Occupational Safety & Health Review Commission,HTTPS Bad Hostname,1,Yes
+Occupational Safety & Health Review Commission,Live,1,Yes
+Occupational Safety & Health Review Commission,Redirect,1,Yes
+Occupational Safety & Health Review Commission,Strictly Forces HTTPS,1,Yes
+Occupational Safety & Health Review Commission,Valid HTTPS,1,Yes
+Office of Government Ethics,Broken Root,0,Yes
+Office of Government Ethics,Broken WWW,0,Yes
+Office of Government Ethics,Defaults to HTTPS,1,Yes
+Office of Government Ethics,Downgrades HTTPS,1,Yes
+Office of Government Ethics,HSTS,1,Yes
+Office of Government Ethics,HSTS All Subdomains,1,Yes
+Office of Government Ethics,HSTS Preload Ready,1,Yes
+Office of Government Ethics,HTTPS Bad Chain,1,Yes
+Office of Government Ethics,HTTPS Bad Hostname,1,Yes
+Office of Government Ethics,Live,1,Yes
+Office of Government Ethics,Redirect,1,Yes
+Office of Government Ethics,Strictly Forces HTTPS,1,Yes
+Office of Government Ethics,Valid HTTPS,1,Yes
+Office of Personnel Management,Broken Root,0,Yes
+Office of Personnel Management,Broken WWW,0,Yes
+Office of Personnel Management,Defaults to HTTPS,22,Yes
+Office of Personnel Management,Downgrades HTTPS,22,Yes
+Office of Personnel Management,HSTS,22,Yes
+Office of Personnel Management,HSTS All Subdomains,22,Yes
+Office of Personnel Management,HSTS Preload Ready,22,Yes
+Office of Personnel Management,HTTPS Bad Chain,22,Yes
+Office of Personnel Management,HTTPS Bad Hostname,22,Yes
+Office of Personnel Management,Live,22,Yes
+Office of Personnel Management,Redirect,22,Yes
+Office of Personnel Management,Strictly Forces HTTPS,22,Yes
+Office of Personnel Management,Valid HTTPS,22,Yes
+Overseas Private Investment Corporation,Broken Root,0,Yes
+Overseas Private Investment Corporation,Broken WWW,0,Yes
+Overseas Private Investment Corporation,Defaults to HTTPS,1,Yes
+Overseas Private Investment Corporation,Downgrades HTTPS,1,Yes
+Overseas Private Investment Corporation,HSTS,1,Yes
+Overseas Private Investment Corporation,HSTS All Subdomains,1,Yes
+Overseas Private Investment Corporation,HSTS Preload Ready,1,Yes
+Overseas Private Investment Corporation,HTTPS Bad Chain,1,Yes
+Overseas Private Investment Corporation,HTTPS Bad Hostname,1,Yes
+Overseas Private Investment Corporation,Live,1,Yes
+Overseas Private Investment Corporation,Redirect,1,Yes
+Overseas Private Investment Corporation,Strictly Forces HTTPS,1,Yes
+Overseas Private Investment Corporation,Valid HTTPS,1,Yes
+Pension Benefit Guaranty Corporation,Broken Root,0,Yes
+Pension Benefit Guaranty Corporation,Broken WWW,0,Yes
+Pension Benefit Guaranty Corporation,Defaults to HTTPS,1,Yes
+Pension Benefit Guaranty Corporation,Downgrades HTTPS,1,Yes
+Pension Benefit Guaranty Corporation,HSTS,1,Yes
+Pension Benefit Guaranty Corporation,HSTS All Subdomains,1,Yes
+Pension Benefit Guaranty Corporation,HSTS Preload Ready,1,Yes
+Pension Benefit Guaranty Corporation,HTTPS Bad Chain,1,Yes
+Pension Benefit Guaranty Corporation,HTTPS Bad Hostname,1,Yes
+Pension Benefit Guaranty Corporation,Live,1,Yes
+Pension Benefit Guaranty Corporation,Redirect,1,Yes
+Pension Benefit Guaranty Corporation,Strictly Forces HTTPS,1,Yes
+Pension Benefit Guaranty Corporation,Valid HTTPS,1,Yes
+Postal Rate Commission,Broken Root,0,Yes
+Postal Rate Commission,Broken WWW,0,Yes
+Postal Rate Commission,Defaults to HTTPS,1,Yes
+Postal Rate Commission,Downgrades HTTPS,1,Yes
+Postal Rate Commission,HSTS,1,Yes
+Postal Rate Commission,HSTS All Subdomains,1,Yes
+Postal Rate Commission,HSTS Preload Ready,1,Yes
+Postal Rate Commission,HTTPS Bad Chain,1,Yes
+Postal Rate Commission,HTTPS Bad Hostname,1,Yes
+Postal Rate Commission,Live,1,Yes
+Postal Rate Commission,Redirect,1,Yes
+Postal Rate Commission,Strictly Forces HTTPS,1,Yes
+Postal Rate Commission,Valid HTTPS,1,Yes
+Railroad Retirement Board,Broken Root,0,Yes
+Railroad Retirement Board,Broken WWW,0,Yes
+Railroad Retirement Board,Defaults to HTTPS,1,Yes
+Railroad Retirement Board,Downgrades HTTPS,1,Yes
+Railroad Retirement Board,HSTS,1,Yes
+Railroad Retirement Board,HSTS All Subdomains,1,Yes
+Railroad Retirement Board,HSTS Preload Ready,1,Yes
+Railroad Retirement Board,HTTPS Bad Chain,1,Yes
+Railroad Retirement Board,HTTPS Bad Hostname,1,Yes
+Railroad Retirement Board,Live,1,Yes
+Railroad Retirement Board,Redirect,1,Yes
+Railroad Retirement Board,Strictly Forces HTTPS,1,Yes
+Railroad Retirement Board,Valid HTTPS,1,Yes
+Recovery Accountability and Transparency Board,Broken Root,0,Yes
+Recovery Accountability and Transparency Board,Broken WWW,0,Yes
+Recovery Accountability and Transparency Board,Defaults to HTTPS,6,Yes
+Recovery Accountability and Transparency Board,Downgrades HTTPS,6,Yes
+Recovery Accountability and Transparency Board,HSTS,6,Yes
+Recovery Accountability and Transparency Board,HSTS All Subdomains,6,Yes
+Recovery Accountability and Transparency Board,HSTS Preload Ready,6,Yes
+Recovery Accountability and Transparency Board,HTTPS Bad Chain,6,Yes
+Recovery Accountability and Transparency Board,HTTPS Bad Hostname,6,Yes
+Recovery Accountability and Transparency Board,Live,6,Yes
+Recovery Accountability and Transparency Board,Redirect,6,Yes
+Recovery Accountability and Transparency Board,Strictly Forces HTTPS,6,Yes
+Recovery Accountability and Transparency Board,Valid HTTPS,6,Yes
+Securities and Exchange Commission,Broken Root,0,Yes
+Securities and Exchange Commission,Broken WWW,0,Yes
+Securities and Exchange Commission,Defaults to HTTPS,3,Yes
+Securities and Exchange Commission,Downgrades HTTPS,3,Yes
+Securities and Exchange Commission,HSTS,3,Yes
+Securities and Exchange Commission,HSTS All Subdomains,3,Yes
+Securities and Exchange Commission,HSTS Preload Ready,3,Yes
+Securities and Exchange Commission,HTTPS Bad Chain,3,Yes
+Securities and Exchange Commission,HTTPS Bad Hostname,3,Yes
+Securities and Exchange Commission,Live,3,Yes
+Securities and Exchange Commission,Redirect,3,Yes
+Securities and Exchange Commission,Strictly Forces HTTPS,3,Yes
+Securities and Exchange Commission,Valid HTTPS,3,Yes
+Selective Service System,Broken Root,0,Yes
+Selective Service System,Broken WWW,0,Yes
+Selective Service System,Defaults to HTTPS,1,Yes
+Selective Service System,Downgrades HTTPS,1,Yes
+Selective Service System,HSTS,1,Yes
+Selective Service System,HSTS All Subdomains,1,Yes
+Selective Service System,HSTS Preload Ready,1,Yes
+Selective Service System,HTTPS Bad Chain,1,Yes
+Selective Service System,HTTPS Bad Hostname,1,Yes
+Selective Service System,Live,1,Yes
+Selective Service System,Redirect,1,Yes
+Selective Service System,Strictly Forces HTTPS,1,Yes
+Selective Service System,Valid HTTPS,1,Yes
+Small Business Administration,Broken Root,0,Yes
+Small Business Administration,Broken WWW,0,Yes
+Small Business Administration,Defaults to HTTPS,8,Yes
+Small Business Administration,Downgrades HTTPS,8,Yes
+Small Business Administration,HSTS,8,Yes
+Small Business Administration,HSTS All Subdomains,8,Yes
+Small Business Administration,HSTS Preload Ready,8,Yes
+Small Business Administration,HTTPS Bad Chain,8,Yes
+Small Business Administration,HTTPS Bad Hostname,8,Yes
+Small Business Administration,Live,8,Yes
+Small Business Administration,Redirect,8,Yes
+Small Business Administration,Strictly Forces HTTPS,8,Yes
+Small Business Administration,Valid HTTPS,8,Yes
+Smithsonian Institution,Broken Root,0,Yes
+Smithsonian Institution,Broken WWW,0,Yes
+Smithsonian Institution,Defaults to HTTPS,1,Yes
+Smithsonian Institution,Downgrades HTTPS,1,Yes
+Smithsonian Institution,HSTS,1,Yes
+Smithsonian Institution,HSTS All Subdomains,1,Yes
+Smithsonian Institution,HSTS Preload Ready,1,Yes
+Smithsonian Institution,HTTPS Bad Chain,1,Yes
+Smithsonian Institution,HTTPS Bad Hostname,1,Yes
+Smithsonian Institution,Live,1,Yes
+Smithsonian Institution,Redirect,1,Yes
+Smithsonian Institution,Strictly Forces HTTPS,1,Yes
+Smithsonian Institution,Valid HTTPS,1,Yes
+Social Security Administration,Broken Root,0,Yes
+Social Security Administration,Broken WWW,0,Yes
+Social Security Administration,Defaults to HTTPS,3,Yes
+Social Security Administration,Downgrades HTTPS,3,Yes
+Social Security Administration,HSTS,3,Yes
+Social Security Administration,HSTS All Subdomains,3,Yes
+Social Security Administration,HSTS Preload Ready,3,Yes
+Social Security Administration,HTTPS Bad Chain,3,Yes
+Social Security Administration,HTTPS Bad Hostname,3,Yes
+Social Security Administration,Live,3,Yes
+Social Security Administration,Redirect,3,Yes
+Social Security Administration,Strictly Forces HTTPS,3,Yes
+Social Security Administration,Valid HTTPS,3,Yes
+Social Security Advisory Board,Broken Root,0,Yes
+Social Security Advisory Board,Broken WWW,0,Yes
+Social Security Advisory Board,Defaults to HTTPS,2,Yes
+Social Security Advisory Board,Downgrades HTTPS,2,Yes
+Social Security Advisory Board,HSTS,2,Yes
+Social Security Advisory Board,HSTS All Subdomains,2,Yes
+Social Security Advisory Board,HSTS Preload Ready,2,Yes
+Social Security Advisory Board,HTTPS Bad Chain,2,Yes
+Social Security Advisory Board,HTTPS Bad Hostname,2,Yes
+Social Security Advisory Board,Live,2,Yes
+Social Security Advisory Board,Redirect,2,Yes
+Social Security Advisory Board,Strictly Forces HTTPS,2,Yes
+Social Security Advisory Board,Valid HTTPS,2,Yes
+Stennis Center for Public Service,Broken Root,0,Yes
+Stennis Center for Public Service,Broken WWW,0,Yes
+Stennis Center for Public Service,Defaults to HTTPS,1,Yes
+Stennis Center for Public Service,Downgrades HTTPS,1,Yes
+Stennis Center for Public Service,HSTS,1,Yes
+Stennis Center for Public Service,HSTS All Subdomains,1,Yes
+Stennis Center for Public Service,HSTS Preload Ready,1,Yes
+Stennis Center for Public Service,HTTPS Bad Chain,1,Yes
+Stennis Center for Public Service,HTTPS Bad Hostname,1,Yes
+Stennis Center for Public Service,Live,1,Yes
+Stennis Center for Public Service,Redirect,1,Yes
+Stennis Center for Public Service,Strictly Forces HTTPS,1,Yes
+Stennis Center for Public Service,Valid HTTPS,1,Yes
+Tennessee Valley Authority,Broken Root,0,Yes
+Tennessee Valley Authority,Broken WWW,0,Yes
+Tennessee Valley Authority,Defaults to HTTPS,2,Yes
+Tennessee Valley Authority,Downgrades HTTPS,2,Yes
+Tennessee Valley Authority,HSTS,2,Yes
+Tennessee Valley Authority,HSTS All Subdomains,2,Yes
+Tennessee Valley Authority,HSTS Preload Ready,2,Yes
+Tennessee Valley Authority,HTTPS Bad Chain,2,Yes
+Tennessee Valley Authority,HTTPS Bad Hostname,2,Yes
+Tennessee Valley Authority,Live,2,Yes
+Tennessee Valley Authority,Redirect,2,Yes
+Tennessee Valley Authority,Strictly Forces HTTPS,2,Yes
+Tennessee Valley Authority,Valid HTTPS,2,Yes
+Terrorist Screening Center,Broken Root,0,Yes
+Terrorist Screening Center,Broken WWW,0,Yes
+Terrorist Screening Center,Defaults to HTTPS,1,Yes
+Terrorist Screening Center,Downgrades HTTPS,1,Yes
+Terrorist Screening Center,HSTS,1,Yes
+Terrorist Screening Center,HSTS All Subdomains,1,Yes
+Terrorist Screening Center,HSTS Preload Ready,1,Yes
+Terrorist Screening Center,HTTPS Bad Chain,1,Yes
+Terrorist Screening Center,HTTPS Bad Hostname,1,Yes
+Terrorist Screening Center,Live,1,Yes
+Terrorist Screening Center,Redirect,1,Yes
+Terrorist Screening Center,Strictly Forces HTTPS,1,Yes
+Terrorist Screening Center,Valid HTTPS,1,Yes
+The Intelligence Community,Broken Root,0,Yes
+The Intelligence Community,Broken WWW,0,Yes
+The Intelligence Community,Defaults to HTTPS,1,Yes
+The Intelligence Community,Downgrades HTTPS,1,Yes
+The Intelligence Community,HSTS,1,Yes
+The Intelligence Community,HSTS All Subdomains,1,Yes
+The Intelligence Community,HSTS Preload Ready,1,Yes
+The Intelligence Community,HTTPS Bad Chain,1,Yes
+The Intelligence Community,HTTPS Bad Hostname,1,Yes
+The Intelligence Community,Live,1,Yes
+The Intelligence Community,Redirect,1,Yes
+The Intelligence Community,Strictly Forces HTTPS,1,Yes
+The Intelligence Community,Valid HTTPS,1,Yes
+The Judicial Branch (Courts),Broken Root,3,Yes
+The Judicial Branch (Courts),Broken WWW,7,Yes
+The Judicial Branch (Courts),Defaults to HTTPS,27,Yes
+The Judicial Branch (Courts),Downgrades HTTPS,27,Yes
+The Judicial Branch (Courts),HSTS,27,Yes
+The Judicial Branch (Courts),HSTS All Subdomains,27,Yes
+The Judicial Branch (Courts),HSTS Preload Ready,27,Yes
+The Judicial Branch (Courts),HTTPS Bad Chain,23,Yes
+The Judicial Branch (Courts),HTTPS Bad Hostname,27,Yes
+The Judicial Branch (Courts),Live,20,Yes
+The Judicial Branch (Courts),Redirect,24,Yes
+The Judicial Branch (Courts),Strictly Forces HTTPS,27,Yes
+The Judicial Branch (Courts),Valid HTTPS,26,Yes
+The Legislative Branch (Congress),Broken Root,28,Yes
+The Legislative Branch (Congress),Broken WWW,29,Yes
+The Legislative Branch (Congress),Defaults to HTTPS,47,Yes
+The Legislative Branch (Congress),Downgrades HTTPS,43,Yes
+The Legislative Branch (Congress),HSTS,48,Yes
+The Legislative Branch (Congress),HSTS All Subdomains,48,Yes
+The Legislative Branch (Congress),HSTS Preload Ready,48,Yes
+The Legislative Branch (Congress),HTTPS Bad Chain,30,Yes
+The Legislative Branch (Congress),HTTPS Bad Hostname,48,Yes
+The Legislative Branch (Congress),Live,19,Yes
+The Legislative Branch (Congress),Redirect,41,Yes
+The Legislative Branch (Congress),Strictly Forces HTTPS,48,Yes
+The Legislative Branch (Congress),Valid HTTPS,44,Yes
+The United States World War One Centennial Commission,Broken Root,0,Yes
+The United States World War One Centennial Commission,Broken WWW,0,Yes
+The United States World War One Centennial Commission,Defaults to HTTPS,1,Yes
+The United States World War One Centennial Commission,Downgrades HTTPS,1,Yes
+The United States World War One Centennial Commission,HSTS,1,Yes
+The United States World War One Centennial Commission,HSTS All Subdomains,1,Yes
+The United States World War One Centennial Commission,HSTS Preload Ready,1,Yes
+The United States World War One Centennial Commission,HTTPS Bad Chain,1,Yes
+The United States World War One Centennial Commission,HTTPS Bad Hostname,1,Yes
+The United States World War One Centennial Commission,Live,1,Yes
+The United States World War One Centennial Commission,Redirect,1,Yes
+The United States World War One Centennial Commission,Strictly Forces HTTPS,1,Yes
+The United States World War One Centennial Commission,Valid HTTPS,1,Yes
+U. S. Access Board,Broken Root,0,Yes
+U. S. Access Board,Broken WWW,0,Yes
+U. S. Access Board,Defaults to HTTPS,2,Yes
+U. S. Access Board,Downgrades HTTPS,2,Yes
+U. S. Access Board,HSTS,2,Yes
+U. S. Access Board,HSTS All Subdomains,2,Yes
+U. S. Access Board,HSTS Preload Ready,2,Yes
+U. S. Access Board,HTTPS Bad Chain,2,Yes
+U. S. Access Board,HTTPS Bad Hostname,2,Yes
+U. S. Access Board,Live,2,Yes
+U. S. Access Board,Redirect,2,Yes
+U. S. Access Board,Strictly Forces HTTPS,2,Yes
+U. S. Access Board,Valid HTTPS,2,Yes
+U. S. Holocaust Memorial Museum,Broken Root,0,Yes
+U. S. Holocaust Memorial Museum,Broken WWW,0,Yes
+U. S. Holocaust Memorial Museum,Defaults to HTTPS,1,Yes
+U. S. Holocaust Memorial Museum,Downgrades HTTPS,1,Yes
+U. S. Holocaust Memorial Museum,HSTS,1,Yes
+U. S. Holocaust Memorial Museum,HSTS All Subdomains,1,Yes
+U. S. Holocaust Memorial Museum,HSTS Preload Ready,1,Yes
+U. S. Holocaust Memorial Museum,HTTPS Bad Chain,1,Yes
+U. S. Holocaust Memorial Museum,HTTPS Bad Hostname,1,Yes
+U. S. Holocaust Memorial Museum,Live,1,Yes
+U. S. Holocaust Memorial Museum,Redirect,1,Yes
+U. S. Holocaust Memorial Museum,Strictly Forces HTTPS,1,Yes
+U. S. Holocaust Memorial Museum,Valid HTTPS,1,Yes
+U. S. International Trade Commission,Broken Root,0,Yes
+U. S. International Trade Commission,Broken WWW,0,Yes
+U. S. International Trade Commission,Defaults to HTTPS,1,Yes
+U. S. International Trade Commission,Downgrades HTTPS,1,Yes
+U. S. International Trade Commission,HSTS,1,Yes
+U. S. International Trade Commission,HSTS All Subdomains,1,Yes
+U. S. International Trade Commission,HSTS Preload Ready,1,Yes
+U. S. International Trade Commission,HTTPS Bad Chain,1,Yes
+U. S. International Trade Commission,HTTPS Bad Hostname,1,Yes
+U. S. International Trade Commission,Live,1,Yes
+U. S. International Trade Commission,Redirect,1,Yes
+U. S. International Trade Commission,Strictly Forces HTTPS,1,Yes
+U. S. International Trade Commission,Valid HTTPS,1,Yes
+U. S. Office of Special Counsel,Broken Root,0,Yes
+U. S. Office of Special Counsel,Broken WWW,0,Yes
+U. S. Office of Special Counsel,Defaults to HTTPS,2,Yes
+U. S. Office of Special Counsel,Downgrades HTTPS,2,Yes
+U. S. Office of Special Counsel,HSTS,2,Yes
+U. S. Office of Special Counsel,HSTS All Subdomains,2,Yes
+U. S. Office of Special Counsel,HSTS Preload Ready,2,Yes
+U. S. Office of Special Counsel,HTTPS Bad Chain,2,Yes
+U. S. Office of Special Counsel,HTTPS Bad Hostname,2,Yes
+U. S. Office of Special Counsel,Live,2,Yes
+U. S. Office of Special Counsel,Redirect,2,Yes
+U. S. Office of Special Counsel,Strictly Forces HTTPS,2,Yes
+U. S. Office of Special Counsel,Valid HTTPS,2,Yes
+U. S. Peace Corps,Broken Root,0,Yes
+U. S. Peace Corps,Broken WWW,0,Yes
+U. S. Peace Corps,Defaults to HTTPS,3,Yes
+U. S. Peace Corps,Downgrades HTTPS,3,Yes
+U. S. Peace Corps,HSTS,3,Yes
+U. S. Peace Corps,HSTS All Subdomains,3,Yes
+U. S. Peace Corps,HSTS Preload Ready,3,Yes
+U. S. Peace Corps,HTTPS Bad Chain,3,Yes
+U. S. Peace Corps,HTTPS Bad Hostname,3,Yes
+U. S. Peace Corps,Live,3,Yes
+U. S. Peace Corps,Redirect,3,Yes
+U. S. Peace Corps,Strictly Forces HTTPS,3,Yes
+U. S. Peace Corps,Valid HTTPS,3,Yes
+U. S. Postal Service,Broken Root,3,Yes
+U. S. Postal Service,Broken WWW,4,Yes
+U. S. Postal Service,Defaults to HTTPS,3,Yes
+U. S. Postal Service,Downgrades HTTPS,5,Yes
+U. S. Postal Service,HSTS,5,Yes
+U. S. Postal Service,HSTS All Subdomains,5,Yes
+U. S. Postal Service,HSTS Preload Ready,5,Yes
+U. S. Postal Service,HTTPS Bad Chain,3,Yes
+U. S. Postal Service,HTTPS Bad Hostname,5,Yes
+U. S. Postal Service,Live,1,Yes
+U. S. Postal Service,Redirect,2,Yes
+U. S. Postal Service,Strictly Forces HTTPS,3,Yes
+U. S. Postal Service,Valid HTTPS,4,Yes
+U.S. Agency for International Development,Broken Root,9,Yes
+U.S. Agency for International Development,Broken WWW,9,Yes
+U.S. Agency for International Development,Defaults to HTTPS,11,Yes
+U.S. Agency for International Development,Downgrades HTTPS,10,Yes
+U.S. Agency for International Development,HSTS,12,Yes
+U.S. Agency for International Development,HSTS All Subdomains,12,Yes
+U.S. Agency for International Development,HSTS Preload Ready,12,Yes
+U.S. Agency for International Development,HTTPS Bad Chain,6,Yes
+U.S. Agency for International Development,HTTPS Bad Hostname,12,Yes
+U.S. Agency for International Development,Live,2,Yes
+U.S. Agency for International Development,Redirect,10,Yes
+U.S. Agency for International Development,Strictly Forces HTTPS,11,Yes
+U.S. Agency for International Development,Valid HTTPS,8,Yes
+U.S. Capitol Police,Broken Root,0,Yes
+U.S. Capitol Police,Broken WWW,0,Yes
+U.S. Capitol Police,Defaults to HTTPS,1,Yes
+U.S. Capitol Police,Downgrades HTTPS,1,Yes
+U.S. Capitol Police,HSTS,1,Yes
+U.S. Capitol Police,HSTS All Subdomains,1,Yes
+U.S. Capitol Police,HSTS Preload Ready,1,Yes
+U.S. Capitol Police,HTTPS Bad Chain,1,Yes
+U.S. Capitol Police,HTTPS Bad Hostname,1,Yes
+U.S. Capitol Police,Live,1,Yes
+U.S. Capitol Police,Redirect,1,Yes
+U.S. Capitol Police,Strictly Forces HTTPS,1,Yes
+U.S. Capitol Police,Valid HTTPS,1,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Broken Root,0,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Broken WWW,0,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Defaults to HTTPS,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Downgrades HTTPS,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,HSTS,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,HSTS All Subdomains,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,HSTS Preload Ready,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,HTTPS Bad Chain,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,HTTPS Bad Hostname,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Live,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Redirect,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Strictly Forces HTTPS,3,Yes
+U.S. Chemical Safety and Hazard Investigation Board,Valid HTTPS,3,Yes
+U.S. Commission of Fine Arts,Broken Root,0,Yes
+U.S. Commission of Fine Arts,Broken WWW,0,Yes
+U.S. Commission of Fine Arts,Defaults to HTTPS,1,Yes
+U.S. Commission of Fine Arts,Downgrades HTTPS,1,Yes
+U.S. Commission of Fine Arts,HSTS,1,Yes
+U.S. Commission of Fine Arts,HSTS All Subdomains,1,Yes
+U.S. Commission of Fine Arts,HSTS Preload Ready,1,Yes
+U.S. Commission of Fine Arts,HTTPS Bad Chain,1,Yes
+U.S. Commission of Fine Arts,HTTPS Bad Hostname,1,Yes
+U.S. Commission of Fine Arts,Live,1,Yes
+U.S. Commission of Fine Arts,Redirect,1,Yes
+U.S. Commission of Fine Arts,Strictly Forces HTTPS,1,Yes
+U.S. Commission of Fine Arts,Valid HTTPS,1,Yes
+"U.S. Postal Service, Office of Inspector General",Broken Root,1,Yes
+"U.S. Postal Service, Office of Inspector General",Broken WWW,1,Yes
+"U.S. Postal Service, Office of Inspector General",Defaults to HTTPS,1,Yes
+"U.S. Postal Service, Office of Inspector General",Downgrades HTTPS,2,Yes
+"U.S. Postal Service, Office of Inspector General",HSTS,1,Yes
+"U.S. Postal Service, Office of Inspector General",HSTS All Subdomains,1,Yes
+"U.S. Postal Service, Office of Inspector General",HSTS Preload Ready,1,Yes
+"U.S. Postal Service, Office of Inspector General",HTTPS Bad Chain,2,Yes
+"U.S. Postal Service, Office of Inspector General",HTTPS Bad Hostname,2,Yes
+"U.S. Postal Service, Office of Inspector General",Live,1,Yes
+"U.S. Postal Service, Office of Inspector General",Redirect,2,Yes
+"U.S. Postal Service, Office of Inspector General",Strictly Forces HTTPS,1,Yes
+"U.S. Postal Service, Office of Inspector General",Valid HTTPS,1,Yes
+U.S. Trade and Development Agency,Broken Root,1,Yes
+U.S. Trade and Development Agency,Broken WWW,1,Yes
+U.S. Trade and Development Agency,Defaults to HTTPS,2,Yes
+U.S. Trade and Development Agency,Downgrades HTTPS,2,Yes
+U.S. Trade and Development Agency,HSTS,2,Yes
+U.S. Trade and Development Agency,HSTS All Subdomains,2,Yes
+U.S. Trade and Development Agency,HSTS Preload Ready,2,Yes
+U.S. Trade and Development Agency,HTTPS Bad Chain,2,Yes
+U.S. Trade and Development Agency,HTTPS Bad Hostname,2,Yes
+U.S. Trade and Development Agency,Live,1,Yes
+U.S. Trade and Development Agency,Redirect,2,Yes
+U.S. Trade and Development Agency,Strictly Forces HTTPS,2,Yes
+U.S. Trade and Development Agency,Valid HTTPS,1,Yes
+US Interagency Council on Homelessness,Broken Root,0,Yes
+US Interagency Council on Homelessness,Broken WWW,0,Yes
+US Interagency Council on Homelessness,Defaults to HTTPS,2,Yes
+US Interagency Council on Homelessness,Downgrades HTTPS,2,Yes
+US Interagency Council on Homelessness,HSTS,2,Yes
+US Interagency Council on Homelessness,HSTS All Subdomains,2,Yes
+US Interagency Council on Homelessness,HSTS Preload Ready,2,Yes
+US Interagency Council on Homelessness,HTTPS Bad Chain,2,Yes
+US Interagency Council on Homelessness,HTTPS Bad Hostname,2,Yes
+US Interagency Council on Homelessness,Live,2,Yes
+US Interagency Council on Homelessness,Redirect,2,Yes
+US Interagency Council on Homelessness,Strictly Forces HTTPS,2,Yes
+US Interagency Council on Homelessness,Valid HTTPS,2,Yes
+United Stated Global Change Research Program,Broken Root,0,Yes
+United Stated Global Change Research Program,Broken WWW,1,Yes
+United Stated Global Change Research Program,Defaults to HTTPS,4,Yes
+United Stated Global Change Research Program,Downgrades HTTPS,3,Yes
+United Stated Global Change Research Program,HSTS,4,Yes
+United Stated Global Change Research Program,HSTS All Subdomains,4,Yes
+United Stated Global Change Research Program,HSTS Preload Ready,4,Yes
+United Stated Global Change Research Program,HTTPS Bad Chain,3,Yes
+United Stated Global Change Research Program,HTTPS Bad Hostname,4,Yes
+United Stated Global Change Research Program,Live,3,Yes
+United Stated Global Change Research Program,Redirect,4,Yes
+United Stated Global Change Research Program,Strictly Forces HTTPS,4,Yes
+United Stated Global Change Research Program,Valid HTTPS,4,Yes
+United States Office of Government Ethics,Broken Root,0,Yes
+United States Office of Government Ethics,Broken WWW,0,Yes
+United States Office of Government Ethics,Defaults to HTTPS,2,Yes
+United States Office of Government Ethics,Downgrades HTTPS,2,Yes
+United States Office of Government Ethics,HSTS,2,Yes
+United States Office of Government Ethics,HSTS All Subdomains,2,Yes
+United States Office of Government Ethics,HSTS Preload Ready,2,Yes
+United States Office of Government Ethics,HTTPS Bad Chain,2,Yes
+United States Office of Government Ethics,HTTPS Bad Hostname,2,Yes
+United States Office of Government Ethics,Live,2,Yes
+United States Office of Government Ethics,Redirect,2,Yes
+United States Office of Government Ethics,Strictly Forces HTTPS,2,Yes
+United States Office of Government Ethics,Valid HTTPS,2,Yes
+AMTRAK,Broken Root,0,No
+AMTRAK,Broken WWW,0,No
+AMTRAK,Defaults to HTTPS,1,No
+AMTRAK,Downgrades HTTPS,0,No
+AMTRAK,HSTS,0,No
+AMTRAK,HSTS All Subdomains,0,No
+AMTRAK,HSTS Preload Ready,0,No
+AMTRAK,HTTPS Bad Chain,0,No
+AMTRAK,HTTPS Bad Hostname,0,No
+AMTRAK,Live,1,No
+AMTRAK,Redirect,0,No
+AMTRAK,Strictly Forces HTTPS,1,No
+AMTRAK,Valid HTTPS,1,No
+Administrative Conference of the United States,Broken Root,0,No
+Administrative Conference of the United States,Broken WWW,0,No
+Administrative Conference of the United States,Defaults to HTTPS,1,No
+Administrative Conference of the United States,Downgrades HTTPS,0,No
+Administrative Conference of the United States,HSTS,1,No
+Administrative Conference of the United States,HSTS All Subdomains,1,No
+Administrative Conference of the United States,HSTS Preload Ready,1,No
+Administrative Conference of the United States,HTTPS Bad Chain,0,No
+Administrative Conference of the United States,HTTPS Bad Hostname,0,No
+Administrative Conference of the United States,Live,1,No
+Administrative Conference of the United States,Redirect,0,No
+Administrative Conference of the United States,Strictly Forces HTTPS,1,No
+Administrative Conference of the United States,Valid HTTPS,1,No
+Advisory Commission on Intergovernmental Relations,Broken Root,0,No
+Advisory Commission on Intergovernmental Relations,Broken WWW,0,No
+Advisory Commission on Intergovernmental Relations,Defaults to HTTPS,0,No
+Advisory Commission on Intergovernmental Relations,Downgrades HTTPS,0,No
+Advisory Commission on Intergovernmental Relations,HSTS,0,No
+Advisory Commission on Intergovernmental Relations,HSTS All Subdomains,0,No
+Advisory Commission on Intergovernmental Relations,HSTS Preload Ready,0,No
+Advisory Commission on Intergovernmental Relations,HTTPS Bad Chain,1,No
+Advisory Commission on Intergovernmental Relations,HTTPS Bad Hostname,0,No
+Advisory Commission on Intergovernmental Relations,Live,1,No
+Advisory Commission on Intergovernmental Relations,Redirect,1,No
+Advisory Commission on Intergovernmental Relations,Strictly Forces HTTPS,0,No
+Advisory Commission on Intergovernmental Relations,Valid HTTPS,0,No
+Advisory Council on Historic Preservation,Broken Root,0,No
+Advisory Council on Historic Preservation,Broken WWW,0,No
+Advisory Council on Historic Preservation,Defaults to HTTPS,0,No
+Advisory Council on Historic Preservation,Downgrades HTTPS,0,No
+Advisory Council on Historic Preservation,HSTS,0,No
+Advisory Council on Historic Preservation,HSTS All Subdomains,0,No
+Advisory Council on Historic Preservation,HSTS Preload Ready,0,No
+Advisory Council on Historic Preservation,HTTPS Bad Chain,0,No
+Advisory Council on Historic Preservation,HTTPS Bad Hostname,0,No
+Advisory Council on Historic Preservation,Live,2,No
+Advisory Council on Historic Preservation,Redirect,0,No
+Advisory Council on Historic Preservation,Strictly Forces HTTPS,0,No
+Advisory Council on Historic Preservation,Valid HTTPS,0,No
+African Development Foundation,Broken Root,0,No
+African Development Foundation,Broken WWW,0,No
+African Development Foundation,Defaults to HTTPS,0,No
+African Development Foundation,Downgrades HTTPS,0,No
+African Development Foundation,HSTS,0,No
+African Development Foundation,HSTS All Subdomains,0,No
+African Development Foundation,HSTS Preload Ready,0,No
+African Development Foundation,HTTPS Bad Chain,0,No
+African Development Foundation,HTTPS Bad Hostname,0,No
+African Development Foundation,Live,2,No
+African Development Foundation,Redirect,0,No
+African Development Foundation,Strictly Forces HTTPS,0,No
+African Development Foundation,Valid HTTPS,0,No
+American Battle Monuments Commission,Broken Root,0,No
+American Battle Monuments Commission,Broken WWW,0,No
+American Battle Monuments Commission,Defaults to HTTPS,0,No
+American Battle Monuments Commission,Downgrades HTTPS,0,No
+American Battle Monuments Commission,HSTS,0,No
+American Battle Monuments Commission,HSTS All Subdomains,0,No
+American Battle Monuments Commission,HSTS Preload Ready,0,No
+American Battle Monuments Commission,HTTPS Bad Chain,1,No
+American Battle Monuments Commission,HTTPS Bad Hostname,0,No
+American Battle Monuments Commission,Live,1,No
+American Battle Monuments Commission,Redirect,0,No
+American Battle Monuments Commission,Strictly Forces HTTPS,0,No
+American Battle Monuments Commission,Valid HTTPS,0,No
+Appalachian Regional Commission,Broken Root,1,No
+Appalachian Regional Commission,Broken WWW,0,No
+Appalachian Regional Commission,Defaults to HTTPS,0,No
+Appalachian Regional Commission,Downgrades HTTPS,0,No
+Appalachian Regional Commission,HSTS,0,No
+Appalachian Regional Commission,HSTS All Subdomains,0,No
+Appalachian Regional Commission,HSTS Preload Ready,0,No
+Appalachian Regional Commission,HTTPS Bad Chain,0,No
+Appalachian Regional Commission,HTTPS Bad Hostname,0,No
+Appalachian Regional Commission,Live,1,No
+Appalachian Regional Commission,Redirect,0,No
+Appalachian Regional Commission,Strictly Forces HTTPS,0,No
+Appalachian Regional Commission,Valid HTTPS,0,No
+Appraisal Subcommittee,Broken Root,0,No
+Appraisal Subcommittee,Broken WWW,0,No
+Appraisal Subcommittee,Defaults to HTTPS,1,No
+Appraisal Subcommittee,Downgrades HTTPS,0,No
+Appraisal Subcommittee,HSTS,0,No
+Appraisal Subcommittee,HSTS All Subdomains,0,No
+Appraisal Subcommittee,HSTS Preload Ready,0,No
+Appraisal Subcommittee,HTTPS Bad Chain,0,No
+Appraisal Subcommittee,HTTPS Bad Hostname,0,No
+Appraisal Subcommittee,Live,1,No
+Appraisal Subcommittee,Redirect,0,No
+Appraisal Subcommittee,Strictly Forces HTTPS,1,No
+Appraisal Subcommittee,Valid HTTPS,1,No
+Armed Forces Retirement Home,Broken Root,1,No
+Armed Forces Retirement Home,Broken WWW,0,No
+Armed Forces Retirement Home,Defaults to HTTPS,1,No
+Armed Forces Retirement Home,Downgrades HTTPS,0,No
+Armed Forces Retirement Home,HSTS,0,No
+Armed Forces Retirement Home,HSTS All Subdomains,0,No
+Armed Forces Retirement Home,HSTS Preload Ready,0,No
+Armed Forces Retirement Home,HTTPS Bad Chain,0,No
+Armed Forces Retirement Home,HTTPS Bad Hostname,0,No
+Armed Forces Retirement Home,Live,1,No
+Armed Forces Retirement Home,Redirect,0,No
+Armed Forces Retirement Home,Strictly Forces HTTPS,1,No
+Armed Forces Retirement Home,Valid HTTPS,1,No
+Central Intelligence Agency,Broken Root,6,No
+Central Intelligence Agency,Broken WWW,2,No
+Central Intelligence Agency,Defaults to HTTPS,2,No
+Central Intelligence Agency,Downgrades HTTPS,0,No
+Central Intelligence Agency,HSTS,0,No
+Central Intelligence Agency,HSTS All Subdomains,0,No
+Central Intelligence Agency,HSTS Preload Ready,0,No
+Central Intelligence Agency,HTTPS Bad Chain,1,No
+Central Intelligence Agency,HTTPS Bad Hostname,0,No
+Central Intelligence Agency,Live,7,No
+Central Intelligence Agency,Redirect,0,No
+Central Intelligence Agency,Strictly Forces HTTPS,2,No
+Central Intelligence Agency,Valid HTTPS,2,No
+Christopher Columbus Fellowship Foundation,Broken Root,0,No
+Christopher Columbus Fellowship Foundation,Broken WWW,0,No
+Christopher Columbus Fellowship Foundation,Defaults to HTTPS,0,No
+Christopher Columbus Fellowship Foundation,Downgrades HTTPS,0,No
+Christopher Columbus Fellowship Foundation,HSTS,0,No
+Christopher Columbus Fellowship Foundation,HSTS All Subdomains,0,No
+Christopher Columbus Fellowship Foundation,HSTS Preload Ready,0,No
+Christopher Columbus Fellowship Foundation,HTTPS Bad Chain,0,No
+Christopher Columbus Fellowship Foundation,HTTPS Bad Hostname,0,No
+Christopher Columbus Fellowship Foundation,Live,1,No
+Christopher Columbus Fellowship Foundation,Redirect,0,No
+Christopher Columbus Fellowship Foundation,Strictly Forces HTTPS,0,No
+Christopher Columbus Fellowship Foundation,Valid HTTPS,1,No
+Civil Air Patrol,Broken Root,1,No
+Civil Air Patrol,Broken WWW,0,No
+Civil Air Patrol,Defaults to HTTPS,0,No
+Civil Air Patrol,Downgrades HTTPS,0,No
+Civil Air Patrol,HSTS,0,No
+Civil Air Patrol,HSTS All Subdomains,0,No
+Civil Air Patrol,HSTS Preload Ready,0,No
+Civil Air Patrol,HTTPS Bad Chain,0,No
+Civil Air Patrol,HTTPS Bad Hostname,0,No
+Civil Air Patrol,Live,2,No
+Civil Air Patrol,Redirect,0,No
+Civil Air Patrol,Strictly Forces HTTPS,0,No
+Civil Air Patrol,Valid HTTPS,1,No
+Comm for People Who Are Blind/Severly Disabled,Broken Root,1,No
+Comm for People Who Are Blind/Severly Disabled,Broken WWW,1,No
+Comm for People Who Are Blind/Severly Disabled,Defaults to HTTPS,0,No
+Comm for People Who Are Blind/Severly Disabled,Downgrades HTTPS,0,No
+Comm for People Who Are Blind/Severly Disabled,HSTS,0,No
+Comm for People Who Are Blind/Severly Disabled,HSTS All Subdomains,0,No
+Comm for People Who Are Blind/Severly Disabled,HSTS Preload Ready,0,No
+Comm for People Who Are Blind/Severly Disabled,HTTPS Bad Chain,0,No
+Comm for People Who Are Blind/Severly Disabled,HTTPS Bad Hostname,0,No
+Comm for People Who Are Blind/Severly Disabled,Live,2,No
+Comm for People Who Are Blind/Severly Disabled,Redirect,0,No
+Comm for People Who Are Blind/Severly Disabled,Strictly Forces HTTPS,0,No
+Comm for People Who Are Blind/Severly Disabled,Valid HTTPS,0,No
+Commodity Futures Trading Commission,Broken Root,1,No
+Commodity Futures Trading Commission,Broken WWW,0,No
+Commodity Futures Trading Commission,Defaults to HTTPS,0,No
+Commodity Futures Trading Commission,Downgrades HTTPS,1,No
+Commodity Futures Trading Commission,HSTS,0,No
+Commodity Futures Trading Commission,HSTS All Subdomains,0,No
+Commodity Futures Trading Commission,HSTS Preload Ready,0,No
+Commodity Futures Trading Commission,HTTPS Bad Chain,0,No
+Commodity Futures Trading Commission,HTTPS Bad Hostname,0,No
+Commodity Futures Trading Commission,Live,2,No
+Commodity Futures Trading Commission,Redirect,0,No
+Commodity Futures Trading Commission,Strictly Forces HTTPS,0,No
+Commodity Futures Trading Commission,Valid HTTPS,1,No
+Congressional Office of Compliance,Broken Root,0,No
+Congressional Office of Compliance,Broken WWW,0,No
+Congressional Office of Compliance,Defaults to HTTPS,0,No
+Congressional Office of Compliance,Downgrades HTTPS,0,No
+Congressional Office of Compliance,HSTS,0,No
+Congressional Office of Compliance,HSTS All Subdomains,0,No
+Congressional Office of Compliance,HSTS Preload Ready,0,No
+Congressional Office of Compliance,HTTPS Bad Chain,1,No
+Congressional Office of Compliance,HTTPS Bad Hostname,0,No
+Congressional Office of Compliance,Live,1,No
+Congressional Office of Compliance,Redirect,0,No
+Congressional Office of Compliance,Strictly Forces HTTPS,0,No
+Congressional Office of Compliance,Valid HTTPS,0,No
+Consumer Financial Protection Bureau,Broken Root,1,No
+Consumer Financial Protection Bureau,Broken WWW,0,No
+Consumer Financial Protection Bureau,Defaults to HTTPS,0,No
+Consumer Financial Protection Bureau,Downgrades HTTPS,0,No
+Consumer Financial Protection Bureau,HSTS,0,No
+Consumer Financial Protection Bureau,HSTS All Subdomains,0,No
+Consumer Financial Protection Bureau,HSTS Preload Ready,0,No
+Consumer Financial Protection Bureau,HTTPS Bad Chain,10,No
+Consumer Financial Protection Bureau,HTTPS Bad Hostname,0,No
+Consumer Financial Protection Bureau,Live,10,No
+Consumer Financial Protection Bureau,Redirect,9,No
+Consumer Financial Protection Bureau,Strictly Forces HTTPS,0,No
+Consumer Financial Protection Bureau,Valid HTTPS,0,No
+Consumer Product Safety Commission,Broken Root,0,No
+Consumer Product Safety Commission,Broken WWW,0,No
+Consumer Product Safety Commission,Defaults to HTTPS,0,No
+Consumer Product Safety Commission,Downgrades HTTPS,1,No
+Consumer Product Safety Commission,HSTS,0,No
+Consumer Product Safety Commission,HSTS All Subdomains,0,No
+Consumer Product Safety Commission,HSTS Preload Ready,0,No
+Consumer Product Safety Commission,HTTPS Bad Chain,8,No
+Consumer Product Safety Commission,HTTPS Bad Hostname,0,No
+Consumer Product Safety Commission,Live,9,No
+Consumer Product Safety Commission,Redirect,1,No
+Consumer Product Safety Commission,Strictly Forces HTTPS,0,No
+Consumer Product Safety Commission,Valid HTTPS,1,No
+Corporation for National & Community Service,Broken Root,3,No
+Corporation for National & Community Service,Broken WWW,2,No
+Corporation for National & Community Service,Defaults to HTTPS,1,No
+Corporation for National & Community Service,Downgrades HTTPS,1,No
+Corporation for National & Community Service,HSTS,0,No
+Corporation for National & Community Service,HSTS All Subdomains,0,No
+Corporation for National & Community Service,HSTS Preload Ready,0,No
+Corporation for National & Community Service,HTTPS Bad Chain,3,No
+Corporation for National & Community Service,HTTPS Bad Hostname,0,No
+Corporation for National & Community Service,Live,22,No
+Corporation for National & Community Service,Redirect,14,No
+Corporation for National & Community Service,Strictly Forces HTTPS,1,No
+Corporation for National & Community Service,Valid HTTPS,2,No
+Council of Inspector General on Integrity and Efficiency,Broken Root,1,No
+Council of Inspector General on Integrity and Efficiency,Broken WWW,0,No
+Council of Inspector General on Integrity and Efficiency,Defaults to HTTPS,1,No
+Council of Inspector General on Integrity and Efficiency,Downgrades HTTPS,0,No
+Council of Inspector General on Integrity and Efficiency,HSTS,0,No
+Council of Inspector General on Integrity and Efficiency,HSTS All Subdomains,0,No
+Council of Inspector General on Integrity and Efficiency,HSTS Preload Ready,0,No
+Council of Inspector General on Integrity and Efficiency,HTTPS Bad Chain,0,No
+Council of Inspector General on Integrity and Efficiency,HTTPS Bad Hostname,0,No
+Council of Inspector General on Integrity and Efficiency,Live,2,No
+Council of Inspector General on Integrity and Efficiency,Redirect,0,No
+Council of Inspector General on Integrity and Efficiency,Strictly Forces HTTPS,1,No
+Council of Inspector General on Integrity and Efficiency,Valid HTTPS,1,No
+Court Services and Offender Supervision,Broken Root,1,No
+Court Services and Offender Supervision,Broken WWW,0,No
+Court Services and Offender Supervision,Defaults to HTTPS,0,No
+Court Services and Offender Supervision,Downgrades HTTPS,0,No
+Court Services and Offender Supervision,HSTS,0,No
+Court Services and Offender Supervision,HSTS All Subdomains,0,No
+Court Services and Offender Supervision,HSTS Preload Ready,0,No
+Court Services and Offender Supervision,HTTPS Bad Chain,0,No
+Court Services and Offender Supervision,HTTPS Bad Hostname,0,No
+Court Services and Offender Supervision,Live,5,No
+Court Services and Offender Supervision,Redirect,0,No
+Court Services and Offender Supervision,Strictly Forces HTTPS,0,No
+Court Services and Offender Supervision,Valid HTTPS,0,No
+Defense Nuclear Facilities Safety Board,Broken Root,1,No
+Defense Nuclear Facilities Safety Board,Broken WWW,0,No
+Defense Nuclear Facilities Safety Board,Defaults to HTTPS,0,No
+Defense Nuclear Facilities Safety Board,Downgrades HTTPS,0,No
+Defense Nuclear Facilities Safety Board,HSTS,0,No
+Defense Nuclear Facilities Safety Board,HSTS All Subdomains,0,No
+Defense Nuclear Facilities Safety Board,HSTS Preload Ready,0,No
+Defense Nuclear Facilities Safety Board,HTTPS Bad Chain,1,No
+Defense Nuclear Facilities Safety Board,HTTPS Bad Hostname,0,No
+Defense Nuclear Facilities Safety Board,Live,1,No
+Defense Nuclear Facilities Safety Board,Redirect,0,No
+Defense Nuclear Facilities Safety Board,Strictly Forces HTTPS,0,No
+Defense Nuclear Facilities Safety Board,Valid HTTPS,0,No
+Delta Regional Authority,Broken Root,0,No
+Delta Regional Authority,Broken WWW,0,No
+Delta Regional Authority,Defaults to HTTPS,0,No
+Delta Regional Authority,Downgrades HTTPS,0,No
+Delta Regional Authority,HSTS,0,No
+Delta Regional Authority,HSTS All Subdomains,0,No
+Delta Regional Authority,HSTS Preload Ready,0,No
+Delta Regional Authority,HTTPS Bad Chain,0,No
+Delta Regional Authority,HTTPS Bad Hostname,0,No
+Delta Regional Authority,Live,1,No
+Delta Regional Authority,Redirect,0,No
+Delta Regional Authority,Strictly Forces HTTPS,0,No
+Delta Regional Authority,Valid HTTPS,0,No
+Denali Commission,Broken Root,0,No
+Denali Commission,Broken WWW,0,No
+Denali Commission,Defaults to HTTPS,0,No
+Denali Commission,Downgrades HTTPS,0,No
+Denali Commission,HSTS,0,No
+Denali Commission,HSTS All Subdomains,0,No
+Denali Commission,HSTS Preload Ready,0,No
+Denali Commission,HTTPS Bad Chain,1,No
+Denali Commission,HTTPS Bad Hostname,0,No
+Denali Commission,Live,1,No
+Denali Commission,Redirect,0,No
+Denali Commission,Strictly Forces HTTPS,0,No
+Denali Commission,Valid HTTPS,0,No
+Department of Agriculture,Broken Root,15,No
+Department of Agriculture,Broken WWW,1,No
+Department of Agriculture,Defaults to HTTPS,7,No
+Department of Agriculture,Downgrades HTTPS,6,No
+Department of Agriculture,HSTS,0,No
+Department of Agriculture,HSTS All Subdomains,0,No
+Department of Agriculture,HSTS Preload Ready,0,No
+Department of Agriculture,HTTPS Bad Chain,24,No
+Department of Agriculture,HTTPS Bad Hostname,0,No
+Department of Agriculture,Live,52,No
+Department of Agriculture,Redirect,10,No
+Department of Agriculture,Strictly Forces HTTPS,7,No
+Department of Agriculture,Valid HTTPS,10,No
+Department of Commerce,Broken Root,8,No
+Department of Commerce,Broken WWW,1,No
+Department of Commerce,Defaults to HTTPS,1,No
+Department of Commerce,Downgrades HTTPS,3,No
+Department of Commerce,HSTS,0,No
+Department of Commerce,HSTS All Subdomains,0,No
+Department of Commerce,HSTS Preload Ready,0,No
+Department of Commerce,HTTPS Bad Chain,13,No
+Department of Commerce,HTTPS Bad Hostname,0,No
+Department of Commerce,Live,54,No
+Department of Commerce,Redirect,11,No
+Department of Commerce,Strictly Forces HTTPS,0,No
+Department of Commerce,Valid HTTPS,8,No
+Department of Defense,Broken Root,19,No
+Department of Defense,Broken WWW,4,No
+Department of Defense,Defaults to HTTPS,5,No
+Department of Defense,Downgrades HTTPS,3,No
+Department of Defense,HSTS,1,No
+Department of Defense,HSTS All Subdomains,0,No
+Department of Defense,HSTS Preload Ready,0,No
+Department of Defense,HTTPS Bad Chain,5,No
+Department of Defense,HTTPS Bad Hostname,0,No
+Department of Defense,Live,28,No
+Department of Defense,Redirect,1,No
+Department of Defense,Strictly Forces HTTPS,7,No
+Department of Defense,Valid HTTPS,8,No
+Department of Education,Broken Root,1,No
+Department of Education,Broken WWW,0,No
+Department of Education,Defaults to HTTPS,3,No
+Department of Education,Downgrades HTTPS,1,No
+Department of Education,HSTS,1,No
+Department of Education,HSTS All Subdomains,1,No
+Department of Education,HSTS Preload Ready,1,No
+Department of Education,HTTPS Bad Chain,3,No
+Department of Education,HTTPS Bad Hostname,0,No
+Department of Education,Live,16,No
+Department of Education,Redirect,6,No
+Department of Education,Strictly Forces HTTPS,3,No
+Department of Education,Valid HTTPS,6,No
+Department of Energy,Broken Root,19,No
+Department of Energy,Broken WWW,5,No
+Department of Energy,Defaults to HTTPS,7,No
+Department of Energy,Downgrades HTTPS,5,No
+Department of Energy,HSTS,0,No
+Department of Energy,HSTS All Subdomains,0,No
+Department of Energy,HSTS Preload Ready,0,No
+Department of Energy,HTTPS Bad Chain,16,No
+Department of Energy,HTTPS Bad Hostname,0,No
+Department of Energy,Live,61,No
+Department of Energy,Redirect,11,No
+Department of Energy,Strictly Forces HTTPS,8,No
+Department of Energy,Valid HTTPS,24,No
+Department of Health And Human Services,Broken Root,14,No
+Department of Health And Human Services,Broken WWW,2,No
+Department of Health And Human Services,Defaults to HTTPS,12,No
+Department of Health And Human Services,Downgrades HTTPS,2,No
+Department of Health And Human Services,HSTS,4,No
+Department of Health And Human Services,HSTS All Subdomains,2,No
+Department of Health And Human Services,HSTS Preload Ready,2,No
+Department of Health And Human Services,HTTPS Bad Chain,50,No
+Department of Health And Human Services,HTTPS Bad Hostname,0,No
+Department of Health And Human Services,Live,116,No
+Department of Health And Human Services,Redirect,36,No
+Department of Health And Human Services,Strictly Forces HTTPS,15,No
+Department of Health And Human Services,Valid HTTPS,31,No
+Department of Homeland Security,Broken Root,5,No
+Department of Homeland Security,Broken WWW,1,No
+Department of Homeland Security,Defaults to HTTPS,8,No
+Department of Homeland Security,Downgrades HTTPS,9,No
+Department of Homeland Security,HSTS,0,No
+Department of Homeland Security,HSTS All Subdomains,0,No
+Department of Homeland Security,HSTS Preload Ready,0,No
+Department of Homeland Security,HTTPS Bad Chain,11,No
+Department of Homeland Security,HTTPS Bad Hostname,0,No
+Department of Homeland Security,Live,28,No
+Department of Homeland Security,Redirect,7,No
+Department of Homeland Security,Strictly Forces HTTPS,6,No
+Department of Homeland Security,Valid HTTPS,14,No
+Department of Housing And Urban Development,Broken Root,10,No
+Department of Housing And Urban Development,Broken WWW,10,No
+Department of Housing And Urban Development,Defaults to HTTPS,0,No
+Department of Housing And Urban Development,Downgrades HTTPS,0,No
+Department of Housing And Urban Development,HSTS,0,No
+Department of Housing And Urban Development,HSTS All Subdomains,0,No
+Department of Housing And Urban Development,HSTS Preload Ready,0,No
+Department of Housing And Urban Development,HTTPS Bad Chain,0,No
+Department of Housing And Urban Development,HTTPS Bad Hostname,0,No
+Department of Housing And Urban Development,Live,0,No
+Department of Housing And Urban Development,Redirect,0,No
+Department of Housing And Urban Development,Strictly Forces HTTPS,0,No
+Department of Housing And Urban Development,Valid HTTPS,0,No
+Department of Justice,Broken Root,33,No
+Department of Justice,Broken WWW,30,No
+Department of Justice,Defaults to HTTPS,7,No
+Department of Justice,Downgrades HTTPS,3,No
+Department of Justice,HSTS,0,No
+Department of Justice,HSTS All Subdomains,0,No
+Department of Justice,HSTS Preload Ready,0,No
+Department of Justice,HTTPS Bad Chain,5,No
+Department of Justice,HTTPS Bad Hostname,0,No
+Department of Justice,Live,37,No
+Department of Justice,Redirect,10,No
+Department of Justice,Strictly Forces HTTPS,6,No
+Department of Justice,Valid HTTPS,10,No
+Department of Labor,Broken Root,7,No
+Department of Labor,Broken WWW,6,No
+Department of Labor,Defaults to HTTPS,2,No
+Department of Labor,Downgrades HTTPS,2,No
+Department of Labor,HSTS,0,No
+Department of Labor,HSTS All Subdomains,0,No
+Department of Labor,HSTS Preload Ready,0,No
+Department of Labor,HTTPS Bad Chain,8,No
+Department of Labor,HTTPS Bad Hostname,0,No
+Department of Labor,Live,14,No
+Department of Labor,Redirect,3,No
+Department of Labor,Strictly Forces HTTPS,1,No
+Department of Labor,Valid HTTPS,4,No
+Department of State,Broken Root,1,No
+Department of State,Broken WWW,0,No
+Department of State,Defaults to HTTPS,4,No
+Department of State,Downgrades HTTPS,0,No
+Department of State,HSTS,0,No
+Department of State,HSTS All Subdomains,0,No
+Department of State,HSTS Preload Ready,0,No
+Department of State,HTTPS Bad Chain,11,No
+Department of State,HTTPS Bad Hostname,0,No
+Department of State,Live,22,No
+Department of State,Redirect,0,No
+Department of State,Strictly Forces HTTPS,2,No
+Department of State,Valid HTTPS,5,No
+Department of Transportation,Broken Root,15,No
+Department of Transportation,Broken WWW,1,No
+Department of Transportation,Defaults to HTTPS,3,No
+Department of Transportation,Downgrades HTTPS,6,No
+Department of Transportation,HSTS,0,No
+Department of Transportation,HSTS All Subdomains,0,No
+Department of Transportation,HSTS Preload Ready,0,No
+Department of Transportation,HTTPS Bad Chain,16,No
+Department of Transportation,HTTPS Bad Hostname,0,No
+Department of Transportation,Live,33,No
+Department of Transportation,Redirect,5,No
+Department of Transportation,Strictly Forces HTTPS,3,No
+Department of Transportation,Valid HTTPS,8,No
+Department of Veterans Affairs,Broken Root,3,No
+Department of Veterans Affairs,Broken WWW,0,No
+Department of Veterans Affairs,Defaults to HTTPS,1,No
+Department of Veterans Affairs,Downgrades HTTPS,0,No
+Department of Veterans Affairs,HSTS,0,No
+Department of Veterans Affairs,HSTS All Subdomains,0,No
+Department of Veterans Affairs,HSTS Preload Ready,0,No
+Department of Veterans Affairs,HTTPS Bad Chain,2,No
+Department of Veterans Affairs,HTTPS Bad Hostname,0,No
+Department of Veterans Affairs,Live,9,No
+Department of Veterans Affairs,Redirect,3,No
+Department of Veterans Affairs,Strictly Forces HTTPS,2,No
+Department of Veterans Affairs,Valid HTTPS,2,No
+Department of the Interior,Broken Root,25,No
+Department of the Interior,Broken WWW,1,No
+Department of the Interior,Defaults to HTTPS,4,No
+Department of the Interior,Downgrades HTTPS,3,No
+Department of the Interior,HSTS,0,No
+Department of the Interior,HSTS All Subdomains,0,No
+Department of the Interior,HSTS Preload Ready,0,No
+Department of the Interior,HTTPS Bad Chain,31,No
+Department of the Interior,HTTPS Bad Hostname,0,No
+Department of the Interior,Live,86,No
+Department of the Interior,Redirect,7,No
+Department of the Interior,Strictly Forces HTTPS,2,No
+Department of the Interior,Valid HTTPS,24,No
+Department of the Treasury,Broken Root,15,No
+Department of the Treasury,Broken WWW,9,No
+Department of the Treasury,Defaults to HTTPS,18,No
+Department of the Treasury,Downgrades HTTPS,3,No
+Department of the Treasury,HSTS,0,No
+Department of the Treasury,HSTS All Subdomains,0,No
+Department of the Treasury,HSTS Preload Ready,0,No
+Department of the Treasury,HTTPS Bad Chain,41,No
+Department of the Treasury,HTTPS Bad Hostname,0,No
+Department of the Treasury,Live,87,No
+Department of the Treasury,Redirect,12,No
+Department of the Treasury,Strictly Forces HTTPS,21,No
+Department of the Treasury,Valid HTTPS,16,No
+Director of National Intelligence,Broken Root,6,No
+Director of National Intelligence,Broken WWW,3,No
+Director of National Intelligence,Defaults to HTTPS,0,No
+Director of National Intelligence,Downgrades HTTPS,0,No
+Director of National Intelligence,HSTS,0,No
+Director of National Intelligence,HSTS All Subdomains,0,No
+Director of National Intelligence,HSTS Preload Ready,0,No
+Director of National Intelligence,HTTPS Bad Chain,4,No
+Director of National Intelligence,HTTPS Bad Hostname,0,No
+Director of National Intelligence,Live,12,No
+Director of National Intelligence,Redirect,1,No
+Director of National Intelligence,Strictly Forces HTTPS,1,No
+Director of National Intelligence,Valid HTTPS,2,No
+Environmental Protection Agency,Broken Root,4,No
+Environmental Protection Agency,Broken WWW,0,No
+Environmental Protection Agency,Defaults to HTTPS,1,No
+Environmental Protection Agency,Downgrades HTTPS,0,No
+Environmental Protection Agency,HSTS,0,No
+Environmental Protection Agency,HSTS All Subdomains,0,No
+Environmental Protection Agency,HSTS Preload Ready,0,No
+Environmental Protection Agency,HTTPS Bad Chain,3,No
+Environmental Protection Agency,HTTPS Bad Hostname,0,No
+Environmental Protection Agency,Live,17,No
+Environmental Protection Agency,Redirect,3,No
+Environmental Protection Agency,Strictly Forces HTTPS,1,No
+Environmental Protection Agency,Valid HTTPS,2,No
+Equal Employment Opportunity Commission,Broken Root,0,No
+Equal Employment Opportunity Commission,Broken WWW,0,No
+Equal Employment Opportunity Commission,Defaults to HTTPS,0,No
+Equal Employment Opportunity Commission,Downgrades HTTPS,0,No
+Equal Employment Opportunity Commission,HSTS,0,No
+Equal Employment Opportunity Commission,HSTS All Subdomains,0,No
+Equal Employment Opportunity Commission,HSTS Preload Ready,0,No
+Equal Employment Opportunity Commission,HTTPS Bad Chain,0,No
+Equal Employment Opportunity Commission,HTTPS Bad Hostname,0,No
+Equal Employment Opportunity Commission,Live,1,No
+Equal Employment Opportunity Commission,Redirect,0,No
+Equal Employment Opportunity Commission,Strictly Forces HTTPS,0,No
+Equal Employment Opportunity Commission,Valid HTTPS,0,No
+Executive Office of the President,Broken Root,3,No
+Executive Office of the President,Broken WWW,2,No
+Executive Office of the President,Defaults to HTTPS,6,No
+Executive Office of the President,Downgrades HTTPS,1,No
+Executive Office of the President,HSTS,10,No
+Executive Office of the President,HSTS All Subdomains,9,No
+Executive Office of the President,HSTS Preload Ready,7,No
+Executive Office of the President,HTTPS Bad Chain,3,No
+Executive Office of the President,HTTPS Bad Hostname,0,No
+Executive Office of the President,Live,31,No
+Executive Office of the President,Redirect,19,No
+Executive Office of the President,Strictly Forces HTTPS,8,No
+Executive Office of the President,Valid HTTPS,22,No
+Export/Import Bank of the U.S.,Broken Root,1,No
+Export/Import Bank of the U.S.,Broken WWW,0,No
+Export/Import Bank of the U.S.,Defaults to HTTPS,0,No
+Export/Import Bank of the U.S.,Downgrades HTTPS,0,No
+Export/Import Bank of the U.S.,HSTS,0,No
+Export/Import Bank of the U.S.,HSTS All Subdomains,0,No
+Export/Import Bank of the U.S.,HSTS Preload Ready,0,No
+Export/Import Bank of the U.S.,HTTPS Bad Chain,0,No
+Export/Import Bank of the U.S.,HTTPS Bad Hostname,0,No
+Export/Import Bank of the U.S.,Live,2,No
+Export/Import Bank of the U.S.,Redirect,0,No
+Export/Import Bank of the U.S.,Strictly Forces HTTPS,0,No
+Export/Import Bank of the U.S.,Valid HTTPS,0,No
+Farm Credit Administration,Broken Root,0,No
+Farm Credit Administration,Broken WWW,0,No
+Farm Credit Administration,Defaults to HTTPS,0,No
+Farm Credit Administration,Downgrades HTTPS,0,No
+Farm Credit Administration,HSTS,0,No
+Farm Credit Administration,HSTS All Subdomains,0,No
+Farm Credit Administration,HSTS Preload Ready,0,No
+Farm Credit Administration,HTTPS Bad Chain,0,No
+Farm Credit Administration,HTTPS Bad Hostname,0,No
+Farm Credit Administration,Live,2,No
+Farm Credit Administration,Redirect,0,No
+Farm Credit Administration,Strictly Forces HTTPS,0,No
+Farm Credit Administration,Valid HTTPS,1,No
+Federal Communications Commission,Broken Root,0,No
+Federal Communications Commission,Broken WWW,0,No
+Federal Communications Commission,Defaults to HTTPS,0,No
+Federal Communications Commission,Downgrades HTTPS,0,No
+Federal Communications Commission,HSTS,0,No
+Federal Communications Commission,HSTS All Subdomains,0,No
+Federal Communications Commission,HSTS Preload Ready,0,No
+Federal Communications Commission,HTTPS Bad Chain,2,No
+Federal Communications Commission,HTTPS Bad Hostname,0,No
+Federal Communications Commission,Live,8,No
+Federal Communications Commission,Redirect,4,No
+Federal Communications Commission,Strictly Forces HTTPS,1,No
+Federal Communications Commission,Valid HTTPS,0,No
+Federal Deposit Insurance Corporation,Broken Root,2,No
+Federal Deposit Insurance Corporation,Broken WWW,0,No
+Federal Deposit Insurance Corporation,Defaults to HTTPS,2,No
+Federal Deposit Insurance Corporation,Downgrades HTTPS,0,No
+Federal Deposit Insurance Corporation,HSTS,0,No
+Federal Deposit Insurance Corporation,HSTS All Subdomains,0,No
+Federal Deposit Insurance Corporation,HSTS Preload Ready,0,No
+Federal Deposit Insurance Corporation,HTTPS Bad Chain,1,No
+Federal Deposit Insurance Corporation,HTTPS Bad Hostname,0,No
+Federal Deposit Insurance Corporation,Live,10,No
+Federal Deposit Insurance Corporation,Redirect,1,No
+Federal Deposit Insurance Corporation,Strictly Forces HTTPS,3,No
+Federal Deposit Insurance Corporation,Valid HTTPS,2,No
+Federal Elections Commission,Broken Root,0,No
+Federal Elections Commission,Broken WWW,0,No
+Federal Elections Commission,Defaults to HTTPS,0,No
+Federal Elections Commission,Downgrades HTTPS,0,No
+Federal Elections Commission,HSTS,0,No
+Federal Elections Commission,HSTS All Subdomains,0,No
+Federal Elections Commission,HSTS Preload Ready,0,No
+Federal Elections Commission,HTTPS Bad Chain,0,No
+Federal Elections Commission,HTTPS Bad Hostname,0,No
+Federal Elections Commission,Live,1,No
+Federal Elections Commission,Redirect,0,No
+Federal Elections Commission,Strictly Forces HTTPS,0,No
+Federal Elections Commission,Valid HTTPS,0,No
+Federal Energy Regulatory Commission,Broken Root,0,No
+Federal Energy Regulatory Commission,Broken WWW,0,No
+Federal Energy Regulatory Commission,Defaults to HTTPS,0,No
+Federal Energy Regulatory Commission,Downgrades HTTPS,0,No
+Federal Energy Regulatory Commission,HSTS,0,No
+Federal Energy Regulatory Commission,HSTS All Subdomains,0,No
+Federal Energy Regulatory Commission,HSTS Preload Ready,0,No
+Federal Energy Regulatory Commission,HTTPS Bad Chain,1,No
+Federal Energy Regulatory Commission,HTTPS Bad Hostname,0,No
+Federal Energy Regulatory Commission,Live,2,No
+Federal Energy Regulatory Commission,Redirect,0,No
+Federal Energy Regulatory Commission,Strictly Forces HTTPS,0,No
+Federal Energy Regulatory Commission,Valid HTTPS,0,No
+Federal Housing Finance Agency,Broken Root,2,No
+Federal Housing Finance Agency,Broken WWW,1,No
+Federal Housing Finance Agency,Defaults to HTTPS,0,No
+Federal Housing Finance Agency,Downgrades HTTPS,1,No
+Federal Housing Finance Agency,HSTS,0,No
+Federal Housing Finance Agency,HSTS All Subdomains,0,No
+Federal Housing Finance Agency,HSTS Preload Ready,0,No
+Federal Housing Finance Agency,HTTPS Bad Chain,0,No
+Federal Housing Finance Agency,HTTPS Bad Hostname,0,No
+Federal Housing Finance Agency,Live,3,No
+Federal Housing Finance Agency,Redirect,0,No
+Federal Housing Finance Agency,Strictly Forces HTTPS,0,No
+Federal Housing Finance Agency,Valid HTTPS,1,No
+Federal Housing Finance Agency Office of Inspector General,Broken Root,0,No
+Federal Housing Finance Agency Office of Inspector General,Broken WWW,0,No
+Federal Housing Finance Agency Office of Inspector General,Defaults to HTTPS,1,No
+Federal Housing Finance Agency Office of Inspector General,Downgrades HTTPS,0,No
+Federal Housing Finance Agency Office of Inspector General,HSTS,0,No
+Federal Housing Finance Agency Office of Inspector General,HSTS All Subdomains,0,No
+Federal Housing Finance Agency Office of Inspector General,HSTS Preload Ready,0,No
+Federal Housing Finance Agency Office of Inspector General,HTTPS Bad Chain,1,No
+Federal Housing Finance Agency Office of Inspector General,HTTPS Bad Hostname,0,No
+Federal Housing Finance Agency Office of Inspector General,Live,1,No
+Federal Housing Finance Agency Office of Inspector General,Redirect,0,No
+Federal Housing Finance Agency Office of Inspector General,Strictly Forces HTTPS,1,No
+Federal Housing Finance Agency Office of Inspector General,Valid HTTPS,0,No
+Federal Labor Relations Authority,Broken Root,0,No
+Federal Labor Relations Authority,Broken WWW,0,No
+Federal Labor Relations Authority,Defaults to HTTPS,0,No
+Federal Labor Relations Authority,Downgrades HTTPS,0,No
+Federal Labor Relations Authority,HSTS,0,No
+Federal Labor Relations Authority,HSTS All Subdomains,0,No
+Federal Labor Relations Authority,HSTS Preload Ready,0,No
+Federal Labor Relations Authority,HTTPS Bad Chain,1,No
+Federal Labor Relations Authority,HTTPS Bad Hostname,0,No
+Federal Labor Relations Authority,Live,1,No
+Federal Labor Relations Authority,Redirect,0,No
+Federal Labor Relations Authority,Strictly Forces HTTPS,0,No
+Federal Labor Relations Authority,Valid HTTPS,0,No
+Federal Maritime Commission,Broken Root,0,No
+Federal Maritime Commission,Broken WWW,0,No
+Federal Maritime Commission,Defaults to HTTPS,0,No
+Federal Maritime Commission,Downgrades HTTPS,0,No
+Federal Maritime Commission,HSTS,0,No
+Federal Maritime Commission,HSTS All Subdomains,0,No
+Federal Maritime Commission,HSTS Preload Ready,0,No
+Federal Maritime Commission,HTTPS Bad Chain,0,No
+Federal Maritime Commission,HTTPS Bad Hostname,0,No
+Federal Maritime Commission,Live,1,No
+Federal Maritime Commission,Redirect,0,No
+Federal Maritime Commission,Strictly Forces HTTPS,0,No
+Federal Maritime Commission,Valid HTTPS,0,No
+Federal Mediation and Conciliation Service,Broken Root,0,No
+Federal Mediation and Conciliation Service,Broken WWW,0,No
+Federal Mediation and Conciliation Service,Defaults to HTTPS,0,No
+Federal Mediation and Conciliation Service,Downgrades HTTPS,1,No
+Federal Mediation and Conciliation Service,HSTS,0,No
+Federal Mediation and Conciliation Service,HSTS All Subdomains,0,No
+Federal Mediation and Conciliation Service,HSTS Preload Ready,0,No
+Federal Mediation and Conciliation Service,HTTPS Bad Chain,0,No
+Federal Mediation and Conciliation Service,HTTPS Bad Hostname,0,No
+Federal Mediation and Conciliation Service,Live,1,No
+Federal Mediation and Conciliation Service,Redirect,0,No
+Federal Mediation and Conciliation Service,Strictly Forces HTTPS,0,No
+Federal Mediation and Conciliation Service,Valid HTTPS,1,No
+Federal Reserve System,Broken Root,10,No
+Federal Reserve System,Broken WWW,6,No
+Federal Reserve System,Defaults to HTTPS,1,No
+Federal Reserve System,Downgrades HTTPS,1,No
+Federal Reserve System,HSTS,0,No
+Federal Reserve System,HSTS All Subdomains,0,No
+Federal Reserve System,HSTS Preload Ready,0,No
+Federal Reserve System,HTTPS Bad Chain,1,No
+Federal Reserve System,HTTPS Bad Hostname,0,No
+Federal Reserve System,Live,8,No
+Federal Reserve System,Redirect,0,No
+Federal Reserve System,Strictly Forces HTTPS,1,No
+Federal Reserve System,Valid HTTPS,5,No
+Federal Retirement Thrift Investment Board,Broken Root,2,No
+Federal Retirement Thrift Investment Board,Broken WWW,0,No
+Federal Retirement Thrift Investment Board,Defaults to HTTPS,1,No
+Federal Retirement Thrift Investment Board,Downgrades HTTPS,0,No
+Federal Retirement Thrift Investment Board,HSTS,0,No
+Federal Retirement Thrift Investment Board,HSTS All Subdomains,0,No
+Federal Retirement Thrift Investment Board,HSTS Preload Ready,0,No
+Federal Retirement Thrift Investment Board,HTTPS Bad Chain,1,No
+Federal Retirement Thrift Investment Board,HTTPS Bad Hostname,0,No
+Federal Retirement Thrift Investment Board,Live,5,No
+Federal Retirement Thrift Investment Board,Redirect,0,No
+Federal Retirement Thrift Investment Board,Strictly Forces HTTPS,2,No
+Federal Retirement Thrift Investment Board,Valid HTTPS,1,No
+Federal Trade Commission,Broken Root,4,No
+Federal Trade Commission,Broken WWW,3,No
+Federal Trade Commission,Defaults to HTTPS,6,No
+Federal Trade Commission,Downgrades HTTPS,0,No
+Federal Trade Commission,HSTS,4,No
+Federal Trade Commission,HSTS All Subdomains,4,No
+Federal Trade Commission,HSTS Preload Ready,4,No
+Federal Trade Commission,HTTPS Bad Chain,2,No
+Federal Trade Commission,HTTPS Bad Hostname,0,No
+Federal Trade Commission,Live,22,No
+Federal Trade Commission,Redirect,7,No
+Federal Trade Commission,Strictly Forces HTTPS,6,No
+Federal Trade Commission,Valid HTTPS,12,No
+General Services Administration,Broken Root,13,No
+General Services Administration,Broken WWW,12,No
+General Services Administration,Defaults to HTTPS,29,No
+General Services Administration,Downgrades HTTPS,16,No
+General Services Administration,HSTS,5,No
+General Services Administration,HSTS All Subdomains,5,No
+General Services Administration,HSTS Preload Ready,5,No
+General Services Administration,HTTPS Bad Chain,42,No
+General Services Administration,HTTPS Bad Hostname,0,No
+General Services Administration,Live,93,No
+General Services Administration,Redirect,31,No
+General Services Administration,Strictly Forces HTTPS,28,No
+General Services Administration,Valid HTTPS,39,No
+Government Printing Office,Broken Root,10,No
+Government Printing Office,Broken WWW,1,No
+Government Printing Office,Defaults to HTTPS,1,No
+Government Printing Office,Downgrades HTTPS,0,No
+Government Printing Office,HSTS,1,No
+Government Printing Office,HSTS All Subdomains,1,No
+Government Printing Office,HSTS Preload Ready,1,No
+Government Printing Office,HTTPS Bad Chain,0,No
+Government Printing Office,HTTPS Bad Hostname,0,No
+Government Printing Office,Live,23,No
+Government Printing Office,Redirect,9,No
+Government Printing Office,Strictly Forces HTTPS,0,No
+Government Printing Office,Valid HTTPS,3,No
+Harry S. Truman Scholarship Foundation,Broken Root,0,No
+Harry S. Truman Scholarship Foundation,Broken WWW,0,No
+Harry S. Truman Scholarship Foundation,Defaults to HTTPS,0,No
+Harry S. Truman Scholarship Foundation,Downgrades HTTPS,0,No
+Harry S. Truman Scholarship Foundation,HSTS,0,No
+Harry S. Truman Scholarship Foundation,HSTS All Subdomains,0,No
+Harry S. Truman Scholarship Foundation,HSTS Preload Ready,0,No
+Harry S. Truman Scholarship Foundation,HTTPS Bad Chain,1,No
+Harry S. Truman Scholarship Foundation,HTTPS Bad Hostname,0,No
+Harry S. Truman Scholarship Foundation,Live,1,No
+Harry S. Truman Scholarship Foundation,Redirect,0,No
+Harry S. Truman Scholarship Foundation,Strictly Forces HTTPS,0,No
+Harry S. Truman Scholarship Foundation,Valid HTTPS,0,No
+Indian Affairs,Broken Root,65,No
+Indian Affairs,Broken WWW,52,No
+Indian Affairs,Defaults to HTTPS,1,No
+Indian Affairs,Downgrades HTTPS,4,No
+Indian Affairs,HSTS,1,No
+Indian Affairs,HSTS All Subdomains,1,No
+Indian Affairs,HSTS Preload Ready,0,No
+Indian Affairs,HTTPS Bad Chain,61,No
+Indian Affairs,HTTPS Bad Hostname,0,No
+Indian Affairs,Live,118,No
+Indian Affairs,Redirect,12,No
+Indian Affairs,Strictly Forces HTTPS,10,No
+Indian Affairs,Valid HTTPS,14,No
+Institute of Museum and Library Services,Broken Root,0,No
+Institute of Museum and Library Services,Broken WWW,0,No
+Institute of Museum and Library Services,Defaults to HTTPS,0,No
+Institute of Museum and Library Services,Downgrades HTTPS,0,No
+Institute of Museum and Library Services,HSTS,0,No
+Institute of Museum and Library Services,HSTS All Subdomains,0,No
+Institute of Museum and Library Services,HSTS Preload Ready,0,No
+Institute of Museum and Library Services,HTTPS Bad Chain,0,No
+Institute of Museum and Library Services,HTTPS Bad Hostname,0,No
+Institute of Museum and Library Services,Live,1,No
+Institute of Museum and Library Services,Redirect,0,No
+Institute of Museum and Library Services,Strictly Forces HTTPS,0,No
+Institute of Museum and Library Services,Valid HTTPS,0,No
+Inter-American Foundation,Broken Root,0,No
+Inter-American Foundation,Broken WWW,0,No
+Inter-American Foundation,Defaults to HTTPS,0,No
+Inter-American Foundation,Downgrades HTTPS,0,No
+Inter-American Foundation,HSTS,0,No
+Inter-American Foundation,HSTS All Subdomains,0,No
+Inter-American Foundation,HSTS Preload Ready,0,No
+Inter-American Foundation,HTTPS Bad Chain,0,No
+Inter-American Foundation,HTTPS Bad Hostname,0,No
+Inter-American Foundation,Live,1,No
+Inter-American Foundation,Redirect,0,No
+Inter-American Foundation,Strictly Forces HTTPS,0,No
+Inter-American Foundation,Valid HTTPS,0,No
+International Broadcasting Bureau,Broken Root,0,No
+International Broadcasting Bureau,Broken WWW,0,No
+International Broadcasting Bureau,Defaults to HTTPS,0,No
+International Broadcasting Bureau,Downgrades HTTPS,0,No
+International Broadcasting Bureau,HSTS,0,No
+International Broadcasting Bureau,HSTS All Subdomains,0,No
+International Broadcasting Bureau,HSTS Preload Ready,0,No
+International Broadcasting Bureau,HTTPS Bad Chain,3,No
+International Broadcasting Bureau,HTTPS Bad Hostname,0,No
+International Broadcasting Bureau,Live,3,No
+International Broadcasting Bureau,Redirect,2,No
+International Broadcasting Bureau,Strictly Forces HTTPS,0,No
+International Broadcasting Bureau,Valid HTTPS,0,No
+James Madison Memorial Fellowship Foundation,Broken Root,0,No
+James Madison Memorial Fellowship Foundation,Broken WWW,0,No
+James Madison Memorial Fellowship Foundation,Defaults to HTTPS,0,No
+James Madison Memorial Fellowship Foundation,Downgrades HTTPS,0,No
+James Madison Memorial Fellowship Foundation,HSTS,0,No
+James Madison Memorial Fellowship Foundation,HSTS All Subdomains,0,No
+James Madison Memorial Fellowship Foundation,HSTS Preload Ready,0,No
+James Madison Memorial Fellowship Foundation,HTTPS Bad Chain,1,No
+James Madison Memorial Fellowship Foundation,HTTPS Bad Hostname,0,No
+James Madison Memorial Fellowship Foundation,Live,1,No
+James Madison Memorial Fellowship Foundation,Redirect,0,No
+James Madison Memorial Fellowship Foundation,Strictly Forces HTTPS,0,No
+James Madison Memorial Fellowship Foundation,Valid HTTPS,0,No
+Legal Services Corporation,Broken Root,0,No
+Legal Services Corporation,Broken WWW,0,No
+Legal Services Corporation,Defaults to HTTPS,0,No
+Legal Services Corporation,Downgrades HTTPS,0,No
+Legal Services Corporation,HSTS,0,No
+Legal Services Corporation,HSTS All Subdomains,0,No
+Legal Services Corporation,HSTS Preload Ready,0,No
+Legal Services Corporation,HTTPS Bad Chain,1,No
+Legal Services Corporation,HTTPS Bad Hostname,0,No
+Legal Services Corporation,Live,1,No
+Legal Services Corporation,Redirect,0,No
+Legal Services Corporation,Strictly Forces HTTPS,0,No
+Legal Services Corporation,Valid HTTPS,0,No
+Library of Congress,Broken Root,3,No
+Library of Congress,Broken WWW,3,No
+Library of Congress,Defaults to HTTPS,1,No
+Library of Congress,Downgrades HTTPS,1,No
+Library of Congress,HSTS,0,No
+Library of Congress,HSTS All Subdomains,0,No
+Library of Congress,HSTS Preload Ready,0,No
+Library of Congress,HTTPS Bad Chain,34,No
+Library of Congress,HTTPS Bad Hostname,0,No
+Library of Congress,Live,42,No
+Library of Congress,Redirect,10,No
+Library of Congress,Strictly Forces HTTPS,1,No
+Library of Congress,Valid HTTPS,3,No
+Marine Mammal Commission,Broken Root,0,No
+Marine Mammal Commission,Broken WWW,0,No
+Marine Mammal Commission,Defaults to HTTPS,0,No
+Marine Mammal Commission,Downgrades HTTPS,0,No
+Marine Mammal Commission,HSTS,0,No
+Marine Mammal Commission,HSTS All Subdomains,0,No
+Marine Mammal Commission,HSTS Preload Ready,0,No
+Marine Mammal Commission,HTTPS Bad Chain,0,No
+Marine Mammal Commission,HTTPS Bad Hostname,0,No
+Marine Mammal Commission,Live,1,No
+Marine Mammal Commission,Redirect,0,No
+Marine Mammal Commission,Strictly Forces HTTPS,0,No
+Marine Mammal Commission,Valid HTTPS,0,No
+Medicaid and CHIP Payment and Access Commission,Broken Root,0,No
+Medicaid and CHIP Payment and Access Commission,Broken WWW,0,No
+Medicaid and CHIP Payment and Access Commission,Defaults to HTTPS,1,No
+Medicaid and CHIP Payment and Access Commission,Downgrades HTTPS,0,No
+Medicaid and CHIP Payment and Access Commission,HSTS,0,No
+Medicaid and CHIP Payment and Access Commission,HSTS All Subdomains,0,No
+Medicaid and CHIP Payment and Access Commission,HSTS Preload Ready,0,No
+Medicaid and CHIP Payment and Access Commission,HTTPS Bad Chain,0,No
+Medicaid and CHIP Payment and Access Commission,HTTPS Bad Hostname,0,No
+Medicaid and CHIP Payment and Access Commission,Live,1,No
+Medicaid and CHIP Payment and Access Commission,Redirect,0,No
+Medicaid and CHIP Payment and Access Commission,Strictly Forces HTTPS,1,No
+Medicaid and CHIP Payment and Access Commission,Valid HTTPS,1,No
+Medical Payment Advisory Commission,Broken Root,0,No
+Medical Payment Advisory Commission,Broken WWW,0,No
+Medical Payment Advisory Commission,Defaults to HTTPS,0,No
+Medical Payment Advisory Commission,Downgrades HTTPS,0,No
+Medical Payment Advisory Commission,HSTS,0,No
+Medical Payment Advisory Commission,HSTS All Subdomains,0,No
+Medical Payment Advisory Commission,HSTS Preload Ready,0,No
+Medical Payment Advisory Commission,HTTPS Bad Chain,0,No
+Medical Payment Advisory Commission,HTTPS Bad Hostname,0,No
+Medical Payment Advisory Commission,Live,1,No
+Medical Payment Advisory Commission,Redirect,0,No
+Medical Payment Advisory Commission,Strictly Forces HTTPS,0,No
+Medical Payment Advisory Commission,Valid HTTPS,0,No
+Merit Systems Protection Board,Broken Root,0,No
+Merit Systems Protection Board,Broken WWW,0,No
+Merit Systems Protection Board,Defaults to HTTPS,0,No
+Merit Systems Protection Board,Downgrades HTTPS,0,No
+Merit Systems Protection Board,HSTS,0,No
+Merit Systems Protection Board,HSTS All Subdomains,0,No
+Merit Systems Protection Board,HSTS Preload Ready,0,No
+Merit Systems Protection Board,HTTPS Bad Chain,0,No
+Merit Systems Protection Board,HTTPS Bad Hostname,0,No
+Merit Systems Protection Board,Live,1,No
+Merit Systems Protection Board,Redirect,0,No
+Merit Systems Protection Board,Strictly Forces HTTPS,0,No
+Merit Systems Protection Board,Valid HTTPS,0,No
+Millennium Challenge Corporation,Broken Root,0,No
+Millennium Challenge Corporation,Broken WWW,0,No
+Millennium Challenge Corporation,Defaults to HTTPS,1,No
+Millennium Challenge Corporation,Downgrades HTTPS,0,No
+Millennium Challenge Corporation,HSTS,0,No
+Millennium Challenge Corporation,HSTS All Subdomains,0,No
+Millennium Challenge Corporation,HSTS Preload Ready,0,No
+Millennium Challenge Corporation,HTTPS Bad Chain,0,No
+Millennium Challenge Corporation,HTTPS Bad Hostname,0,No
+Millennium Challenge Corporation,Live,1,No
+Millennium Challenge Corporation,Redirect,0,No
+Millennium Challenge Corporation,Strictly Forces HTTPS,1,No
+Millennium Challenge Corporation,Valid HTTPS,1,No
+Morris K. Udall Foundation,Broken Root,0,No
+Morris K. Udall Foundation,Broken WWW,0,No
+Morris K. Udall Foundation,Defaults to HTTPS,0,No
+Morris K. Udall Foundation,Downgrades HTTPS,0,No
+Morris K. Udall Foundation,HSTS,0,No
+Morris K. Udall Foundation,HSTS All Subdomains,0,No
+Morris K. Udall Foundation,HSTS Preload Ready,0,No
+Morris K. Udall Foundation,HTTPS Bad Chain,0,No
+Morris K. Udall Foundation,HTTPS Bad Hostname,0,No
+Morris K. Udall Foundation,Live,2,No
+Morris K. Udall Foundation,Redirect,1,No
+Morris K. Udall Foundation,Strictly Forces HTTPS,0,No
+Morris K. Udall Foundation,Valid HTTPS,2,No
+Multistate Tax Commission,Broken Root,1,No
+Multistate Tax Commission,Broken WWW,0,No
+Multistate Tax Commission,Defaults to HTTPS,0,No
+Multistate Tax Commission,Downgrades HTTPS,0,No
+Multistate Tax Commission,HSTS,0,No
+Multistate Tax Commission,HSTS All Subdomains,0,No
+Multistate Tax Commission,HSTS Preload Ready,0,No
+Multistate Tax Commission,HTTPS Bad Chain,0,No
+Multistate Tax Commission,HTTPS Bad Hostname,0,No
+Multistate Tax Commission,Live,1,No
+Multistate Tax Commission,Redirect,0,No
+Multistate Tax Commission,Strictly Forces HTTPS,0,No
+Multistate Tax Commission,Valid HTTPS,0,No
+National Aeronautics and Space Administration,Broken Root,1,No
+National Aeronautics and Space Administration,Broken WWW,0,No
+National Aeronautics and Space Administration,Defaults to HTTPS,0,No
+National Aeronautics and Space Administration,Downgrades HTTPS,0,No
+National Aeronautics and Space Administration,HSTS,0,No
+National Aeronautics and Space Administration,HSTS All Subdomains,0,No
+National Aeronautics and Space Administration,HSTS Preload Ready,0,No
+National Aeronautics and Space Administration,HTTPS Bad Chain,1,No
+National Aeronautics and Space Administration,HTTPS Bad Hostname,0,No
+National Aeronautics and Space Administration,Live,5,No
+National Aeronautics and Space Administration,Redirect,2,No
+National Aeronautics and Space Administration,Strictly Forces HTTPS,0,No
+National Aeronautics and Space Administration,Valid HTTPS,2,No
+National Archives and Records Administration,Broken Root,10,No
+National Archives and Records Administration,Broken WWW,10,No
+National Archives and Records Administration,Defaults to HTTPS,0,No
+National Archives and Records Administration,Downgrades HTTPS,0,No
+National Archives and Records Administration,HSTS,0,No
+National Archives and Records Administration,HSTS All Subdomains,0,No
+National Archives and Records Administration,HSTS Preload Ready,0,No
+National Archives and Records Administration,HTTPS Bad Chain,0,No
+National Archives and Records Administration,HTTPS Bad Hostname,0,No
+National Archives and Records Administration,Live,10,No
+National Archives and Records Administration,Redirect,4,No
+National Archives and Records Administration,Strictly Forces HTTPS,0,No
+National Archives and Records Administration,Valid HTTPS,0,No
+National Capital Planning Commission,Broken Root,1,No
+National Capital Planning Commission,Broken WWW,1,No
+National Capital Planning Commission,Defaults to HTTPS,0,No
+National Capital Planning Commission,Downgrades HTTPS,0,No
+National Capital Planning Commission,HSTS,0,No
+National Capital Planning Commission,HSTS All Subdomains,0,No
+National Capital Planning Commission,HSTS Preload Ready,0,No
+National Capital Planning Commission,HTTPS Bad Chain,0,No
+National Capital Planning Commission,HTTPS Bad Hostname,0,No
+National Capital Planning Commission,Live,0,No
+National Capital Planning Commission,Redirect,0,No
+National Capital Planning Commission,Strictly Forces HTTPS,0,No
+National Capital Planning Commission,Valid HTTPS,0,No
+National Council on Disability,Broken Root,1,No
+National Council on Disability,Broken WWW,1,No
+National Council on Disability,Defaults to HTTPS,0,No
+National Council on Disability,Downgrades HTTPS,0,No
+National Council on Disability,HSTS,0,No
+National Council on Disability,HSTS All Subdomains,0,No
+National Council on Disability,HSTS Preload Ready,0,No
+National Council on Disability,HTTPS Bad Chain,0,No
+National Council on Disability,HTTPS Bad Hostname,0,No
+National Council on Disability,Live,0,No
+National Council on Disability,Redirect,0,No
+National Council on Disability,Strictly Forces HTTPS,0,No
+National Council on Disability,Valid HTTPS,0,No
+National Credit Union Administration,Broken Root,2,No
+National Credit Union Administration,Broken WWW,2,No
+National Credit Union Administration,Defaults to HTTPS,0,No
+National Credit Union Administration,Downgrades HTTPS,0,No
+National Credit Union Administration,HSTS,0,No
+National Credit Union Administration,HSTS All Subdomains,0,No
+National Credit Union Administration,HSTS Preload Ready,0,No
+National Credit Union Administration,HTTPS Bad Chain,0,No
+National Credit Union Administration,HTTPS Bad Hostname,0,No
+National Credit Union Administration,Live,0,No
+National Credit Union Administration,Redirect,0,No
+National Credit Union Administration,Strictly Forces HTTPS,0,No
+National Credit Union Administration,Valid HTTPS,0,No
+National Endowment for the Arts,Broken Root,2,No
+National Endowment for the Arts,Broken WWW,2,No
+National Endowment for the Arts,Defaults to HTTPS,0,No
+National Endowment for the Arts,Downgrades HTTPS,0,No
+National Endowment for the Arts,HSTS,0,No
+National Endowment for the Arts,HSTS All Subdomains,0,No
+National Endowment for the Arts,HSTS Preload Ready,0,No
+National Endowment for the Arts,HTTPS Bad Chain,0,No
+National Endowment for the Arts,HTTPS Bad Hostname,0,No
+National Endowment for the Arts,Live,0,No
+National Endowment for the Arts,Redirect,0,No
+National Endowment for the Arts,Strictly Forces HTTPS,0,No
+National Endowment for the Arts,Valid HTTPS,0,No
+National Endowment for the Humanities,Broken Root,4,No
+National Endowment for the Humanities,Broken WWW,4,No
+National Endowment for the Humanities,Defaults to HTTPS,0,No
+National Endowment for the Humanities,Downgrades HTTPS,0,No
+National Endowment for the Humanities,HSTS,0,No
+National Endowment for the Humanities,HSTS All Subdomains,0,No
+National Endowment for the Humanities,HSTS Preload Ready,0,No
+National Endowment for the Humanities,HTTPS Bad Chain,0,No
+National Endowment for the Humanities,HTTPS Bad Hostname,0,No
+National Endowment for the Humanities,Live,0,No
+National Endowment for the Humanities,Redirect,0,No
+National Endowment for the Humanities,Strictly Forces HTTPS,0,No
+National Endowment for the Humanities,Valid HTTPS,0,No
+National Gallery of Art,Broken Root,1,No
+National Gallery of Art,Broken WWW,1,No
+National Gallery of Art,Defaults to HTTPS,0,No
+National Gallery of Art,Downgrades HTTPS,0,No
+National Gallery of Art,HSTS,0,No
+National Gallery of Art,HSTS All Subdomains,0,No
+National Gallery of Art,HSTS Preload Ready,0,No
+National Gallery of Art,HTTPS Bad Chain,0,No
+National Gallery of Art,HTTPS Bad Hostname,0,No
+National Gallery of Art,Live,0,No
+National Gallery of Art,Redirect,0,No
+National Gallery of Art,Strictly Forces HTTPS,0,No
+National Gallery of Art,Valid HTTPS,0,No
+National Indian Gaming Commission,Broken Root,1,No
+National Indian Gaming Commission,Broken WWW,1,No
+National Indian Gaming Commission,Defaults to HTTPS,0,No
+National Indian Gaming Commission,Downgrades HTTPS,0,No
+National Indian Gaming Commission,HSTS,0,No
+National Indian Gaming Commission,HSTS All Subdomains,0,No
+National Indian Gaming Commission,HSTS Preload Ready,0,No
+National Indian Gaming Commission,HTTPS Bad Chain,0,No
+National Indian Gaming Commission,HTTPS Bad Hostname,0,No
+National Indian Gaming Commission,Live,0,No
+National Indian Gaming Commission,Redirect,0,No
+National Indian Gaming Commission,Strictly Forces HTTPS,0,No
+National Indian Gaming Commission,Valid HTTPS,0,No
+National Labor Relations Board,Broken Root,1,No
+National Labor Relations Board,Broken WWW,1,No
+National Labor Relations Board,Defaults to HTTPS,0,No
+National Labor Relations Board,Downgrades HTTPS,0,No
+National Labor Relations Board,HSTS,0,No
+National Labor Relations Board,HSTS All Subdomains,0,No
+National Labor Relations Board,HSTS Preload Ready,0,No
+National Labor Relations Board,HTTPS Bad Chain,0,No
+National Labor Relations Board,HTTPS Bad Hostname,0,No
+National Labor Relations Board,Live,0,No
+National Labor Relations Board,Redirect,0,No
+National Labor Relations Board,Strictly Forces HTTPS,0,No
+National Labor Relations Board,Valid HTTPS,0,No
+National Mediation Board,Broken Root,1,No
+National Mediation Board,Broken WWW,1,No
+National Mediation Board,Defaults to HTTPS,0,No
+National Mediation Board,Downgrades HTTPS,0,No
+National Mediation Board,HSTS,0,No
+National Mediation Board,HSTS All Subdomains,0,No
+National Mediation Board,HSTS Preload Ready,0,No
+National Mediation Board,HTTPS Bad Chain,0,No
+National Mediation Board,HTTPS Bad Hostname,0,No
+National Mediation Board,Live,0,No
+National Mediation Board,Redirect,0,No
+National Mediation Board,Strictly Forces HTTPS,0,No
+National Mediation Board,Valid HTTPS,0,No
+National Nanotechnology Coordination Office,Broken Root,1,No
+National Nanotechnology Coordination Office,Broken WWW,1,No
+National Nanotechnology Coordination Office,Defaults to HTTPS,0,No
+National Nanotechnology Coordination Office,Downgrades HTTPS,0,No
+National Nanotechnology Coordination Office,HSTS,0,No
+National Nanotechnology Coordination Office,HSTS All Subdomains,0,No
+National Nanotechnology Coordination Office,HSTS Preload Ready,0,No
+National Nanotechnology Coordination Office,HTTPS Bad Chain,0,No
+National Nanotechnology Coordination Office,HTTPS Bad Hostname,0,No
+National Nanotechnology Coordination Office,Live,0,No
+National Nanotechnology Coordination Office,Redirect,0,No
+National Nanotechnology Coordination Office,Strictly Forces HTTPS,0,No
+National Nanotechnology Coordination Office,Valid HTTPS,0,No
+National Science Foundation,Broken Root,8,No
+National Science Foundation,Broken WWW,8,No
+National Science Foundation,Defaults to HTTPS,0,No
+National Science Foundation,Downgrades HTTPS,0,No
+National Science Foundation,HSTS,0,No
+National Science Foundation,HSTS All Subdomains,0,No
+National Science Foundation,HSTS Preload Ready,0,No
+National Science Foundation,HTTPS Bad Chain,0,No
+National Science Foundation,HTTPS Bad Hostname,0,No
+National Science Foundation,Live,0,No
+National Science Foundation,Redirect,0,No
+National Science Foundation,Strictly Forces HTTPS,0,No
+National Science Foundation,Valid HTTPS,0,No
+National Security Agency,Broken Root,1,No
+National Security Agency,Broken WWW,1,No
+National Security Agency,Defaults to HTTPS,0,No
+National Security Agency,Downgrades HTTPS,0,No
+National Security Agency,HSTS,0,No
+National Security Agency,HSTS All Subdomains,0,No
+National Security Agency,HSTS Preload Ready,0,No
+National Security Agency,HTTPS Bad Chain,0,No
+National Security Agency,HTTPS Bad Hostname,0,No
+National Security Agency,Live,0,No
+National Security Agency,Redirect,0,No
+National Security Agency,Strictly Forces HTTPS,0,No
+National Security Agency,Valid HTTPS,0,No
+National Transportation Safety Board,Broken Root,1,No
+National Transportation Safety Board,Broken WWW,1,No
+National Transportation Safety Board,Defaults to HTTPS,0,No
+National Transportation Safety Board,Downgrades HTTPS,0,No
+National Transportation Safety Board,HSTS,0,No
+National Transportation Safety Board,HSTS All Subdomains,0,No
+National Transportation Safety Board,HSTS Preload Ready,0,No
+National Transportation Safety Board,HTTPS Bad Chain,0,No
+National Transportation Safety Board,HTTPS Bad Hostname,0,No
+National Transportation Safety Board,Live,0,No
+National Transportation Safety Board,Redirect,0,No
+National Transportation Safety Board,Strictly Forces HTTPS,0,No
+National Transportation Safety Board,Valid HTTPS,0,No
+Networking Information Technology Research and Development (NITRD),Broken Root,2,No
+Networking Information Technology Research and Development (NITRD),Broken WWW,2,No
+Networking Information Technology Research and Development (NITRD),Defaults to HTTPS,0,No
+Networking Information Technology Research and Development (NITRD),Downgrades HTTPS,0,No
+Networking Information Technology Research and Development (NITRD),HSTS,0,No
+Networking Information Technology Research and Development (NITRD),HSTS All Subdomains,0,No
+Networking Information Technology Research and Development (NITRD),HSTS Preload Ready,0,No
+Networking Information Technology Research and Development (NITRD),HTTPS Bad Chain,0,No
+Networking Information Technology Research and Development (NITRD),HTTPS Bad Hostname,0,No
+Networking Information Technology Research and Development (NITRD),Live,0,No
+Networking Information Technology Research and Development (NITRD),Redirect,0,No
+Networking Information Technology Research and Development (NITRD),Strictly Forces HTTPS,0,No
+Networking Information Technology Research and Development (NITRD),Valid HTTPS,0,No
+Nuclear Regulatory Commission,Broken Root,2,No
+Nuclear Regulatory Commission,Broken WWW,2,No
+Nuclear Regulatory Commission,Defaults to HTTPS,0,No
+Nuclear Regulatory Commission,Downgrades HTTPS,0,No
+Nuclear Regulatory Commission,HSTS,0,No
+Nuclear Regulatory Commission,HSTS All Subdomains,0,No
+Nuclear Regulatory Commission,HSTS Preload Ready,0,No
+Nuclear Regulatory Commission,HTTPS Bad Chain,0,No
+Nuclear Regulatory Commission,HTTPS Bad Hostname,0,No
+Nuclear Regulatory Commission,Live,0,No
+Nuclear Regulatory Commission,Redirect,0,No
+Nuclear Regulatory Commission,Strictly Forces HTTPS,0,No
+Nuclear Regulatory Commission,Valid HTTPS,0,No
+Occupational Safety & Health Review Commission,Broken Root,1,No
+Occupational Safety & Health Review Commission,Broken WWW,1,No
+Occupational Safety & Health Review Commission,Defaults to HTTPS,0,No
+Occupational Safety & Health Review Commission,Downgrades HTTPS,0,No
+Occupational Safety & Health Review Commission,HSTS,0,No
+Occupational Safety & Health Review Commission,HSTS All Subdomains,0,No
+Occupational Safety & Health Review Commission,HSTS Preload Ready,0,No
+Occupational Safety & Health Review Commission,HTTPS Bad Chain,0,No
+Occupational Safety & Health Review Commission,HTTPS Bad Hostname,0,No
+Occupational Safety & Health Review Commission,Live,0,No
+Occupational Safety & Health Review Commission,Redirect,0,No
+Occupational Safety & Health Review Commission,Strictly Forces HTTPS,0,No
+Occupational Safety & Health Review Commission,Valid HTTPS,0,No
+Office of Government Ethics,Broken Root,1,No
+Office of Government Ethics,Broken WWW,1,No
+Office of Government Ethics,Defaults to HTTPS,0,No
+Office of Government Ethics,Downgrades HTTPS,0,No
+Office of Government Ethics,HSTS,0,No
+Office of Government Ethics,HSTS All Subdomains,0,No
+Office of Government Ethics,HSTS Preload Ready,0,No
+Office of Government Ethics,HTTPS Bad Chain,0,No
+Office of Government Ethics,HTTPS Bad Hostname,0,No
+Office of Government Ethics,Live,0,No
+Office of Government Ethics,Redirect,0,No
+Office of Government Ethics,Strictly Forces HTTPS,0,No
+Office of Government Ethics,Valid HTTPS,0,No
+Office of Personnel Management,Broken Root,22,No
+Office of Personnel Management,Broken WWW,22,No
+Office of Personnel Management,Defaults to HTTPS,0,No
+Office of Personnel Management,Downgrades HTTPS,0,No
+Office of Personnel Management,HSTS,0,No
+Office of Personnel Management,HSTS All Subdomains,0,No
+Office of Personnel Management,HSTS Preload Ready,0,No
+Office of Personnel Management,HTTPS Bad Chain,0,No
+Office of Personnel Management,HTTPS Bad Hostname,0,No
+Office of Personnel Management,Live,0,No
+Office of Personnel Management,Redirect,0,No
+Office of Personnel Management,Strictly Forces HTTPS,0,No
+Office of Personnel Management,Valid HTTPS,0,No
+Overseas Private Investment Corporation,Broken Root,1,No
+Overseas Private Investment Corporation,Broken WWW,1,No
+Overseas Private Investment Corporation,Defaults to HTTPS,0,No
+Overseas Private Investment Corporation,Downgrades HTTPS,0,No
+Overseas Private Investment Corporation,HSTS,0,No
+Overseas Private Investment Corporation,HSTS All Subdomains,0,No
+Overseas Private Investment Corporation,HSTS Preload Ready,0,No
+Overseas Private Investment Corporation,HTTPS Bad Chain,0,No
+Overseas Private Investment Corporation,HTTPS Bad Hostname,0,No
+Overseas Private Investment Corporation,Live,0,No
+Overseas Private Investment Corporation,Redirect,0,No
+Overseas Private Investment Corporation,Strictly Forces HTTPS,0,No
+Overseas Private Investment Corporation,Valid HTTPS,0,No
+Pension Benefit Guaranty Corporation,Broken Root,1,No
+Pension Benefit Guaranty Corporation,Broken WWW,1,No
+Pension Benefit Guaranty Corporation,Defaults to HTTPS,0,No
+Pension Benefit Guaranty Corporation,Downgrades HTTPS,0,No
+Pension Benefit Guaranty Corporation,HSTS,0,No
+Pension Benefit Guaranty Corporation,HSTS All Subdomains,0,No
+Pension Benefit Guaranty Corporation,HSTS Preload Ready,0,No
+Pension Benefit Guaranty Corporation,HTTPS Bad Chain,0,No
+Pension Benefit Guaranty Corporation,HTTPS Bad Hostname,0,No
+Pension Benefit Guaranty Corporation,Live,0,No
+Pension Benefit Guaranty Corporation,Redirect,0,No
+Pension Benefit Guaranty Corporation,Strictly Forces HTTPS,0,No
+Pension Benefit Guaranty Corporation,Valid HTTPS,0,No
+Postal Rate Commission,Broken Root,1,No
+Postal Rate Commission,Broken WWW,1,No
+Postal Rate Commission,Defaults to HTTPS,0,No
+Postal Rate Commission,Downgrades HTTPS,0,No
+Postal Rate Commission,HSTS,0,No
+Postal Rate Commission,HSTS All Subdomains,0,No
+Postal Rate Commission,HSTS Preload Ready,0,No
+Postal Rate Commission,HTTPS Bad Chain,0,No
+Postal Rate Commission,HTTPS Bad Hostname,0,No
+Postal Rate Commission,Live,0,No
+Postal Rate Commission,Redirect,0,No
+Postal Rate Commission,Strictly Forces HTTPS,0,No
+Postal Rate Commission,Valid HTTPS,0,No
+Railroad Retirement Board,Broken Root,1,No
+Railroad Retirement Board,Broken WWW,1,No
+Railroad Retirement Board,Defaults to HTTPS,0,No
+Railroad Retirement Board,Downgrades HTTPS,0,No
+Railroad Retirement Board,HSTS,0,No
+Railroad Retirement Board,HSTS All Subdomains,0,No
+Railroad Retirement Board,HSTS Preload Ready,0,No
+Railroad Retirement Board,HTTPS Bad Chain,0,No
+Railroad Retirement Board,HTTPS Bad Hostname,0,No
+Railroad Retirement Board,Live,0,No
+Railroad Retirement Board,Redirect,0,No
+Railroad Retirement Board,Strictly Forces HTTPS,0,No
+Railroad Retirement Board,Valid HTTPS,0,No
+Recovery Accountability and Transparency Board,Broken Root,6,No
+Recovery Accountability and Transparency Board,Broken WWW,6,No
+Recovery Accountability and Transparency Board,Defaults to HTTPS,0,No
+Recovery Accountability and Transparency Board,Downgrades HTTPS,0,No
+Recovery Accountability and Transparency Board,HSTS,0,No
+Recovery Accountability and Transparency Board,HSTS All Subdomains,0,No
+Recovery Accountability and Transparency Board,HSTS Preload Ready,0,No
+Recovery Accountability and Transparency Board,HTTPS Bad Chain,0,No
+Recovery Accountability and Transparency Board,HTTPS Bad Hostname,0,No
+Recovery Accountability and Transparency Board,Live,0,No
+Recovery Accountability and Transparency Board,Redirect,0,No
+Recovery Accountability and Transparency Board,Strictly Forces HTTPS,0,No
+Recovery Accountability and Transparency Board,Valid HTTPS,0,No
+Securities and Exchange Commission,Broken Root,3,No
+Securities and Exchange Commission,Broken WWW,3,No
+Securities and Exchange Commission,Defaults to HTTPS,0,No
+Securities and Exchange Commission,Downgrades HTTPS,0,No
+Securities and Exchange Commission,HSTS,0,No
+Securities and Exchange Commission,HSTS All Subdomains,0,No
+Securities and Exchange Commission,HSTS Preload Ready,0,No
+Securities and Exchange Commission,HTTPS Bad Chain,0,No
+Securities and Exchange Commission,HTTPS Bad Hostname,0,No
+Securities and Exchange Commission,Live,0,No
+Securities and Exchange Commission,Redirect,0,No
+Securities and Exchange Commission,Strictly Forces HTTPS,0,No
+Securities and Exchange Commission,Valid HTTPS,0,No
+Selective Service System,Broken Root,1,No
+Selective Service System,Broken WWW,1,No
+Selective Service System,Defaults to HTTPS,0,No
+Selective Service System,Downgrades HTTPS,0,No
+Selective Service System,HSTS,0,No
+Selective Service System,HSTS All Subdomains,0,No
+Selective Service System,HSTS Preload Ready,0,No
+Selective Service System,HTTPS Bad Chain,0,No
+Selective Service System,HTTPS Bad Hostname,0,No
+Selective Service System,Live,0,No
+Selective Service System,Redirect,0,No
+Selective Service System,Strictly Forces HTTPS,0,No
+Selective Service System,Valid HTTPS,0,No
+Small Business Administration,Broken Root,8,No
+Small Business Administration,Broken WWW,8,No
+Small Business Administration,Defaults to HTTPS,0,No
+Small Business Administration,Downgrades HTTPS,0,No
+Small Business Administration,HSTS,0,No
+Small Business Administration,HSTS All Subdomains,0,No
+Small Business Administration,HSTS Preload Ready,0,No
+Small Business Administration,HTTPS Bad Chain,0,No
+Small Business Administration,HTTPS Bad Hostname,0,No
+Small Business Administration,Live,0,No
+Small Business Administration,Redirect,0,No
+Small Business Administration,Strictly Forces HTTPS,0,No
+Small Business Administration,Valid HTTPS,0,No
+Smithsonian Institution,Broken Root,1,No
+Smithsonian Institution,Broken WWW,1,No
+Smithsonian Institution,Defaults to HTTPS,0,No
+Smithsonian Institution,Downgrades HTTPS,0,No
+Smithsonian Institution,HSTS,0,No
+Smithsonian Institution,HSTS All Subdomains,0,No
+Smithsonian Institution,HSTS Preload Ready,0,No
+Smithsonian Institution,HTTPS Bad Chain,0,No
+Smithsonian Institution,HTTPS Bad Hostname,0,No
+Smithsonian Institution,Live,0,No
+Smithsonian Institution,Redirect,0,No
+Smithsonian Institution,Strictly Forces HTTPS,0,No
+Smithsonian Institution,Valid HTTPS,0,No
+Social Security Administration,Broken Root,3,No
+Social Security Administration,Broken WWW,3,No
+Social Security Administration,Defaults to HTTPS,0,No
+Social Security Administration,Downgrades HTTPS,0,No
+Social Security Administration,HSTS,0,No
+Social Security Administration,HSTS All Subdomains,0,No
+Social Security Administration,HSTS Preload Ready,0,No
+Social Security Administration,HTTPS Bad Chain,0,No
+Social Security Administration,HTTPS Bad Hostname,0,No
+Social Security Administration,Live,0,No
+Social Security Administration,Redirect,0,No
+Social Security Administration,Strictly Forces HTTPS,0,No
+Social Security Administration,Valid HTTPS,0,No
+Social Security Advisory Board,Broken Root,2,No
+Social Security Advisory Board,Broken WWW,2,No
+Social Security Advisory Board,Defaults to HTTPS,0,No
+Social Security Advisory Board,Downgrades HTTPS,0,No
+Social Security Advisory Board,HSTS,0,No
+Social Security Advisory Board,HSTS All Subdomains,0,No
+Social Security Advisory Board,HSTS Preload Ready,0,No
+Social Security Advisory Board,HTTPS Bad Chain,0,No
+Social Security Advisory Board,HTTPS Bad Hostname,0,No
+Social Security Advisory Board,Live,0,No
+Social Security Advisory Board,Redirect,0,No
+Social Security Advisory Board,Strictly Forces HTTPS,0,No
+Social Security Advisory Board,Valid HTTPS,0,No
+Stennis Center for Public Service,Broken Root,1,No
+Stennis Center for Public Service,Broken WWW,1,No
+Stennis Center for Public Service,Defaults to HTTPS,0,No
+Stennis Center for Public Service,Downgrades HTTPS,0,No
+Stennis Center for Public Service,HSTS,0,No
+Stennis Center for Public Service,HSTS All Subdomains,0,No
+Stennis Center for Public Service,HSTS Preload Ready,0,No
+Stennis Center for Public Service,HTTPS Bad Chain,0,No
+Stennis Center for Public Service,HTTPS Bad Hostname,0,No
+Stennis Center for Public Service,Live,0,No
+Stennis Center for Public Service,Redirect,0,No
+Stennis Center for Public Service,Strictly Forces HTTPS,0,No
+Stennis Center for Public Service,Valid HTTPS,0,No
+Tennessee Valley Authority,Broken Root,2,No
+Tennessee Valley Authority,Broken WWW,2,No
+Tennessee Valley Authority,Defaults to HTTPS,0,No
+Tennessee Valley Authority,Downgrades HTTPS,0,No
+Tennessee Valley Authority,HSTS,0,No
+Tennessee Valley Authority,HSTS All Subdomains,0,No
+Tennessee Valley Authority,HSTS Preload Ready,0,No
+Tennessee Valley Authority,HTTPS Bad Chain,0,No
+Tennessee Valley Authority,HTTPS Bad Hostname,0,No
+Tennessee Valley Authority,Live,0,No
+Tennessee Valley Authority,Redirect,0,No
+Tennessee Valley Authority,Strictly Forces HTTPS,0,No
+Tennessee Valley Authority,Valid HTTPS,0,No
+Terrorist Screening Center,Broken Root,1,No
+Terrorist Screening Center,Broken WWW,1,No
+Terrorist Screening Center,Defaults to HTTPS,0,No
+Terrorist Screening Center,Downgrades HTTPS,0,No
+Terrorist Screening Center,HSTS,0,No
+Terrorist Screening Center,HSTS All Subdomains,0,No
+Terrorist Screening Center,HSTS Preload Ready,0,No
+Terrorist Screening Center,HTTPS Bad Chain,0,No
+Terrorist Screening Center,HTTPS Bad Hostname,0,No
+Terrorist Screening Center,Live,0,No
+Terrorist Screening Center,Redirect,0,No
+Terrorist Screening Center,Strictly Forces HTTPS,0,No
+Terrorist Screening Center,Valid HTTPS,0,No
+The Intelligence Community,Broken Root,1,No
+The Intelligence Community,Broken WWW,1,No
+The Intelligence Community,Defaults to HTTPS,0,No
+The Intelligence Community,Downgrades HTTPS,0,No
+The Intelligence Community,HSTS,0,No
+The Intelligence Community,HSTS All Subdomains,0,No
+The Intelligence Community,HSTS Preload Ready,0,No
+The Intelligence Community,HTTPS Bad Chain,0,No
+The Intelligence Community,HTTPS Bad Hostname,0,No
+The Intelligence Community,Live,0,No
+The Intelligence Community,Redirect,0,No
+The Intelligence Community,Strictly Forces HTTPS,0,No
+The Intelligence Community,Valid HTTPS,0,No
+The Judicial Branch (Courts),Broken Root,24,No
+The Judicial Branch (Courts),Broken WWW,20,No
+The Judicial Branch (Courts),Defaults to HTTPS,0,No
+The Judicial Branch (Courts),Downgrades HTTPS,0,No
+The Judicial Branch (Courts),HSTS,0,No
+The Judicial Branch (Courts),HSTS All Subdomains,0,No
+The Judicial Branch (Courts),HSTS Preload Ready,0,No
+The Judicial Branch (Courts),HTTPS Bad Chain,4,No
+The Judicial Branch (Courts),HTTPS Bad Hostname,0,No
+The Judicial Branch (Courts),Live,7,No
+The Judicial Branch (Courts),Redirect,3,No
+The Judicial Branch (Courts),Strictly Forces HTTPS,0,No
+The Judicial Branch (Courts),Valid HTTPS,1,No
+The Legislative Branch (Congress),Broken Root,20,No
+The Legislative Branch (Congress),Broken WWW,19,No
+The Legislative Branch (Congress),Defaults to HTTPS,1,No
+The Legislative Branch (Congress),Downgrades HTTPS,5,No
+The Legislative Branch (Congress),HSTS,0,No
+The Legislative Branch (Congress),HSTS All Subdomains,0,No
+The Legislative Branch (Congress),HSTS Preload Ready,0,No
+The Legislative Branch (Congress),HTTPS Bad Chain,18,No
+The Legislative Branch (Congress),HTTPS Bad Hostname,0,No
+The Legislative Branch (Congress),Live,29,No
+The Legislative Branch (Congress),Redirect,7,No
+The Legislative Branch (Congress),Strictly Forces HTTPS,0,No
+The Legislative Branch (Congress),Valid HTTPS,4,No
+The United States World War One Centennial Commission,Broken Root,1,No
+The United States World War One Centennial Commission,Broken WWW,1,No
+The United States World War One Centennial Commission,Defaults to HTTPS,0,No
+The United States World War One Centennial Commission,Downgrades HTTPS,0,No
+The United States World War One Centennial Commission,HSTS,0,No
+The United States World War One Centennial Commission,HSTS All Subdomains,0,No
+The United States World War One Centennial Commission,HSTS Preload Ready,0,No
+The United States World War One Centennial Commission,HTTPS Bad Chain,0,No
+The United States World War One Centennial Commission,HTTPS Bad Hostname,0,No
+The United States World War One Centennial Commission,Live,0,No
+The United States World War One Centennial Commission,Redirect,0,No
+The United States World War One Centennial Commission,Strictly Forces HTTPS,0,No
+The United States World War One Centennial Commission,Valid HTTPS,0,No
+U. S. Access Board,Broken Root,2,No
+U. S. Access Board,Broken WWW,2,No
+U. S. Access Board,Defaults to HTTPS,0,No
+U. S. Access Board,Downgrades HTTPS,0,No
+U. S. Access Board,HSTS,0,No
+U. S. Access Board,HSTS All Subdomains,0,No
+U. S. Access Board,HSTS Preload Ready,0,No
+U. S. Access Board,HTTPS Bad Chain,0,No
+U. S. Access Board,HTTPS Bad Hostname,0,No
+U. S. Access Board,Live,0,No
+U. S. Access Board,Redirect,0,No
+U. S. Access Board,Strictly Forces HTTPS,0,No
+U. S. Access Board,Valid HTTPS,0,No
+U. S. Holocaust Memorial Museum,Broken Root,1,No
+U. S. Holocaust Memorial Museum,Broken WWW,1,No
+U. S. Holocaust Memorial Museum,Defaults to HTTPS,0,No
+U. S. Holocaust Memorial Museum,Downgrades HTTPS,0,No
+U. S. Holocaust Memorial Museum,HSTS,0,No
+U. S. Holocaust Memorial Museum,HSTS All Subdomains,0,No
+U. S. Holocaust Memorial Museum,HSTS Preload Ready,0,No
+U. S. Holocaust Memorial Museum,HTTPS Bad Chain,0,No
+U. S. Holocaust Memorial Museum,HTTPS Bad Hostname,0,No
+U. S. Holocaust Memorial Museum,Live,0,No
+U. S. Holocaust Memorial Museum,Redirect,0,No
+U. S. Holocaust Memorial Museum,Strictly Forces HTTPS,0,No
+U. S. Holocaust Memorial Museum,Valid HTTPS,0,No
+U. S. International Trade Commission,Broken Root,1,No
+U. S. International Trade Commission,Broken WWW,1,No
+U. S. International Trade Commission,Defaults to HTTPS,0,No
+U. S. International Trade Commission,Downgrades HTTPS,0,No
+U. S. International Trade Commission,HSTS,0,No
+U. S. International Trade Commission,HSTS All Subdomains,0,No
+U. S. International Trade Commission,HSTS Preload Ready,0,No
+U. S. International Trade Commission,HTTPS Bad Chain,0,No
+U. S. International Trade Commission,HTTPS Bad Hostname,0,No
+U. S. International Trade Commission,Live,0,No
+U. S. International Trade Commission,Redirect,0,No
+U. S. International Trade Commission,Strictly Forces HTTPS,0,No
+U. S. International Trade Commission,Valid HTTPS,0,No
+U. S. Office of Special Counsel,Broken Root,2,No
+U. S. Office of Special Counsel,Broken WWW,2,No
+U. S. Office of Special Counsel,Defaults to HTTPS,0,No
+U. S. Office of Special Counsel,Downgrades HTTPS,0,No
+U. S. Office of Special Counsel,HSTS,0,No
+U. S. Office of Special Counsel,HSTS All Subdomains,0,No
+U. S. Office of Special Counsel,HSTS Preload Ready,0,No
+U. S. Office of Special Counsel,HTTPS Bad Chain,0,No
+U. S. Office of Special Counsel,HTTPS Bad Hostname,0,No
+U. S. Office of Special Counsel,Live,0,No
+U. S. Office of Special Counsel,Redirect,0,No
+U. S. Office of Special Counsel,Strictly Forces HTTPS,0,No
+U. S. Office of Special Counsel,Valid HTTPS,0,No
+U. S. Peace Corps,Broken Root,3,No
+U. S. Peace Corps,Broken WWW,3,No
+U. S. Peace Corps,Defaults to HTTPS,0,No
+U. S. Peace Corps,Downgrades HTTPS,0,No
+U. S. Peace Corps,HSTS,0,No
+U. S. Peace Corps,HSTS All Subdomains,0,No
+U. S. Peace Corps,HSTS Preload Ready,0,No
+U. S. Peace Corps,HTTPS Bad Chain,0,No
+U. S. Peace Corps,HTTPS Bad Hostname,0,No
+U. S. Peace Corps,Live,0,No
+U. S. Peace Corps,Redirect,0,No
+U. S. Peace Corps,Strictly Forces HTTPS,0,No
+U. S. Peace Corps,Valid HTTPS,0,No
+U. S. Postal Service,Broken Root,2,No
+U. S. Postal Service,Broken WWW,1,No
+U. S. Postal Service,Defaults to HTTPS,2,No
+U. S. Postal Service,Downgrades HTTPS,0,No
+U. S. Postal Service,HSTS,0,No
+U. S. Postal Service,HSTS All Subdomains,0,No
+U. S. Postal Service,HSTS Preload Ready,0,No
+U. S. Postal Service,HTTPS Bad Chain,2,No
+U. S. Postal Service,HTTPS Bad Hostname,0,No
+U. S. Postal Service,Live,4,No
+U. S. Postal Service,Redirect,3,No
+U. S. Postal Service,Strictly Forces HTTPS,2,No
+U. S. Postal Service,Valid HTTPS,1,No
+U.S. Agency for International Development,Broken Root,3,No
+U.S. Agency for International Development,Broken WWW,3,No
+U.S. Agency for International Development,Defaults to HTTPS,1,No
+U.S. Agency for International Development,Downgrades HTTPS,2,No
+U.S. Agency for International Development,HSTS,0,No
+U.S. Agency for International Development,HSTS All Subdomains,0,No
+U.S. Agency for International Development,HSTS Preload Ready,0,No
+U.S. Agency for International Development,HTTPS Bad Chain,6,No
+U.S. Agency for International Development,HTTPS Bad Hostname,0,No
+U.S. Agency for International Development,Live,10,No
+U.S. Agency for International Development,Redirect,2,No
+U.S. Agency for International Development,Strictly Forces HTTPS,1,No
+U.S. Agency for International Development,Valid HTTPS,4,No
+U.S. Capitol Police,Broken Root,1,No
+U.S. Capitol Police,Broken WWW,1,No
+U.S. Capitol Police,Defaults to HTTPS,0,No
+U.S. Capitol Police,Downgrades HTTPS,0,No
+U.S. Capitol Police,HSTS,0,No
+U.S. Capitol Police,HSTS All Subdomains,0,No
+U.S. Capitol Police,HSTS Preload Ready,0,No
+U.S. Capitol Police,HTTPS Bad Chain,0,No
+U.S. Capitol Police,HTTPS Bad Hostname,0,No
+U.S. Capitol Police,Live,0,No
+U.S. Capitol Police,Redirect,0,No
+U.S. Capitol Police,Strictly Forces HTTPS,0,No
+U.S. Capitol Police,Valid HTTPS,0,No
+U.S. Chemical Safety and Hazard Investigation Board,Broken Root,3,No
+U.S. Chemical Safety and Hazard Investigation Board,Broken WWW,3,No
+U.S. Chemical Safety and Hazard Investigation Board,Defaults to HTTPS,0,No
+U.S. Chemical Safety and Hazard Investigation Board,Downgrades HTTPS,0,No
+U.S. Chemical Safety and Hazard Investigation Board,HSTS,0,No
+U.S. Chemical Safety and Hazard Investigation Board,HSTS All Subdomains,0,No
+U.S. Chemical Safety and Hazard Investigation Board,HSTS Preload Ready,0,No
+U.S. Chemical Safety and Hazard Investigation Board,HTTPS Bad Chain,0,No
+U.S. Chemical Safety and Hazard Investigation Board,HTTPS Bad Hostname,0,No
+U.S. Chemical Safety and Hazard Investigation Board,Live,0,No
+U.S. Chemical Safety and Hazard Investigation Board,Redirect,0,No
+U.S. Chemical Safety and Hazard Investigation Board,Strictly Forces HTTPS,0,No
+U.S. Chemical Safety and Hazard Investigation Board,Valid HTTPS,0,No
+U.S. Commission of Fine Arts,Broken Root,1,No
+U.S. Commission of Fine Arts,Broken WWW,1,No
+U.S. Commission of Fine Arts,Defaults to HTTPS,0,No
+U.S. Commission of Fine Arts,Downgrades HTTPS,0,No
+U.S. Commission of Fine Arts,HSTS,0,No
+U.S. Commission of Fine Arts,HSTS All Subdomains,0,No
+U.S. Commission of Fine Arts,HSTS Preload Ready,0,No
+U.S. Commission of Fine Arts,HTTPS Bad Chain,0,No
+U.S. Commission of Fine Arts,HTTPS Bad Hostname,0,No
+U.S. Commission of Fine Arts,Live,0,No
+U.S. Commission of Fine Arts,Redirect,0,No
+U.S. Commission of Fine Arts,Strictly Forces HTTPS,0,No
+U.S. Commission of Fine Arts,Valid HTTPS,0,No
+"U.S. Postal Service, Office of Inspector General",Broken Root,1,No
+"U.S. Postal Service, Office of Inspector General",Broken WWW,1,No
+"U.S. Postal Service, Office of Inspector General",Defaults to HTTPS,1,No
+"U.S. Postal Service, Office of Inspector General",Downgrades HTTPS,0,No
+"U.S. Postal Service, Office of Inspector General",HSTS,1,No
+"U.S. Postal Service, Office of Inspector General",HSTS All Subdomains,1,No
+"U.S. Postal Service, Office of Inspector General",HSTS Preload Ready,1,No
+"U.S. Postal Service, Office of Inspector General",HTTPS Bad Chain,0,No
+"U.S. Postal Service, Office of Inspector General",HTTPS Bad Hostname,0,No
+"U.S. Postal Service, Office of Inspector General",Live,1,No
+"U.S. Postal Service, Office of Inspector General",Redirect,0,No
+"U.S. Postal Service, Office of Inspector General",Strictly Forces HTTPS,1,No
+"U.S. Postal Service, Office of Inspector General",Valid HTTPS,1,No
+U.S. Trade and Development Agency,Broken Root,1,No
+U.S. Trade and Development Agency,Broken WWW,1,No
+U.S. Trade and Development Agency,Defaults to HTTPS,0,No
+U.S. Trade and Development Agency,Downgrades HTTPS,0,No
+U.S. Trade and Development Agency,HSTS,0,No
+U.S. Trade and Development Agency,HSTS All Subdomains,0,No
+U.S. Trade and Development Agency,HSTS Preload Ready,0,No
+U.S. Trade and Development Agency,HTTPS Bad Chain,0,No
+U.S. Trade and Development Agency,HTTPS Bad Hostname,0,No
+U.S. Trade and Development Agency,Live,1,No
+U.S. Trade and Development Agency,Redirect,0,No
+U.S. Trade and Development Agency,Strictly Forces HTTPS,0,No
+U.S. Trade and Development Agency,Valid HTTPS,1,No
+US Interagency Council on Homelessness,Broken Root,2,No
+US Interagency Council on Homelessness,Broken WWW,2,No
+US Interagency Council on Homelessness,Defaults to HTTPS,0,No
+US Interagency Council on Homelessness,Downgrades HTTPS,0,No
+US Interagency Council on Homelessness,HSTS,0,No
+US Interagency Council on Homelessness,HSTS All Subdomains,0,No
+US Interagency Council on Homelessness,HSTS Preload Ready,0,No
+US Interagency Council on Homelessness,HTTPS Bad Chain,0,No
+US Interagency Council on Homelessness,HTTPS Bad Hostname,0,No
+US Interagency Council on Homelessness,Live,0,No
+US Interagency Council on Homelessness,Redirect,0,No
+US Interagency Council on Homelessness,Strictly Forces HTTPS,0,No
+US Interagency Council on Homelessness,Valid HTTPS,0,No
+United Stated Global Change Research Program,Broken Root,4,No
+United Stated Global Change Research Program,Broken WWW,3,No
+United Stated Global Change Research Program,Defaults to HTTPS,0,No
+United Stated Global Change Research Program,Downgrades HTTPS,1,No
+United Stated Global Change Research Program,HSTS,0,No
+United Stated Global Change Research Program,HSTS All Subdomains,0,No
+United Stated Global Change Research Program,HSTS Preload Ready,0,No
+United Stated Global Change Research Program,HTTPS Bad Chain,1,No
+United Stated Global Change Research Program,HTTPS Bad Hostname,0,No
+United Stated Global Change Research Program,Live,1,No
+United Stated Global Change Research Program,Redirect,0,No
+United Stated Global Change Research Program,Strictly Forces HTTPS,0,No
+United Stated Global Change Research Program,Valid HTTPS,0,No
+United States Office of Government Ethics,Broken Root,2,No
+United States Office of Government Ethics,Broken WWW,2,No
+United States Office of Government Ethics,Defaults to HTTPS,0,No
+United States Office of Government Ethics,Downgrades HTTPS,0,No
+United States Office of Government Ethics,HSTS,0,No
+United States Office of Government Ethics,HSTS All Subdomains,0,No
+United States Office of Government Ethics,HSTS Preload Ready,0,No
+United States Office of Government Ethics,HTTPS Bad Chain,0,No
+United States Office of Government Ethics,HTTPS Bad Hostname,0,No
+United States Office of Government Ethics,Live,0,No
+United States Office of Government Ethics,Redirect,0,No
+United States Office of Government Ethics,Strictly Forces HTTPS,0,No
+United States Office of Government Ethics,Valid HTTPS,0,No
