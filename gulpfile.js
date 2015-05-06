@@ -6,7 +6,7 @@ var gulp        = require('gulp'),
     livereload  = require('gulp-livereload');
 
 gulp.task('sass', function() {
-    return gulp.src('scss/main.scss')
+    return gulp.src('assets/scss/main.scss')
         .pipe(sass())
         .pipe(minifycss())
         .pipe(rename({suffix: '.min'}))
@@ -16,7 +16,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('scss/**/*', ['sass']);
+    gulp.watch('assets/scss/**/*', ['sass']);
     gulp.watch('index.html')
     	.on('change', livereload.changed);
 });
@@ -24,9 +24,9 @@ gulp.task('watch', function() {
 gulp.task('default', ['sass', 'watch']);
 
 gulp.task('travis', function() {
-    return gulp.src('scss/main.scss')
+    return gulp.src('assets/scss/main.scss')
     .pipe(sass())
     .pipe(minifycss())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('assets/css'));
 });
