@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
   $('#mainTableId').DataTable({
-    "ajax": "data/domainData.json",
+    "ajax": "/assets/data/domainData.json",
     "columns": [
       {"data":"Domain"},
       {"data":"Canonical"},
@@ -23,5 +23,5 @@ $(document).ready(function () {
       {"data":"Broken WWW"}
     ]
   });
-  
+
 })
