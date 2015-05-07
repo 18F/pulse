@@ -1,0 +1,25 @@
+# markdown
+highlighter: rouge
+markdown: redcarpet
+redcarpet:
+  syntax_highlighter: rouge
+  extensions:
+  - smart
+  - with_toc_data
+
+exclude:
+- ".ruby-version"
+- ".python-version"
+- ".jekyll-metadata"
+- ".sass-cache"
+- ".gitignore"
+- ".travis.yml"
+- "manifest.yml"
+- todo.txt
+- Gemfile
+- Gemfile.lock
+- Makefile
+- lib
+- README.md
+- CONTRIBUTING.md
+- LICENSE.md

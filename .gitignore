@@ -2,9 +2,8 @@
 logs
 *.log
 
-# Dependency directories
-node_modules/
-bower_components/
+/_site
+/.sass-cache
 
 # Mac specific
 .DS_Store
