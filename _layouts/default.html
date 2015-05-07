@@ -17,8 +17,21 @@
 
 <!-- Title and meta description
 ================================================== -->
-<title>pulse.cio.gov | The pulse of the federal .gov space</title>
-<meta name="description" content="How the .gov domain space is doing at best practices and federal requirements.">
+{% if page.title %}
+  <title>{{ page.title }}</title>
+  <meta property="og:title" content="{{ page.title | xml_escape }}" />
+{% else %}
+  <title>{{ site.title }}</title>
+  <meta property="og:title" content="{{ site.title | xml_escape }}" />
+{% endif %}
+
+{% if page.description %}
+  <meta name="description" content="{{ page.description | xml_escape }}">
+  <meta property="og:description" content="{{ page.description | xml_escape }}" />
+{% else %}
+  <meta name="description" content="{{ site.description | xml_escape }}">
+  <meta property="og:description" content="{{ site.description | xml_escape }}" />
+{% endif %}
 
 <!-- CSS
 ================================================== -->
@@ -36,7 +49,9 @@
 
 {% include disclaimer.html %}
 
-{{ content }}
+<div class="content">
+  {{ content }}
+</div>
 
 {% include analytics.html %}
 
