@@ -4,15 +4,10 @@ How the .gov domain space is doing at best practices and federal requirements.
 
 ## Setup
 
-* Have Bundler installed:
+* Install Bundler if necessary, then install dependencies:
 
 ```bash
 gem install bundler
-```
-
-* Run the following commands to install the necessary packages:
-
-```bash
 bundle install
 ```
 
@@ -20,6 +15,12 @@ bundle install
 
 ```bash
 make run
+```
+
+* If editing styles during development, keep the Sass auto-compiling with:
+
+```bash
+make watch
 ```
 
 ## Ideas for later versions
