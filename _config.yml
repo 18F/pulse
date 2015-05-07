@@ -19,6 +19,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - Makefile
+- vendor
 - lib
 - README.md
 - CONTRIBUTING.md
