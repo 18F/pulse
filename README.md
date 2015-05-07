@@ -2,28 +2,25 @@
 
 How the .gov domain space is doing at best practices and federal requirements.
 
-A static website, with front-end assets managed by npm and Bower.
-
-## Install
-
-* Install [node and npm](https://nodejs.org/download/) directly.
-* Install the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en).
-
 ## Setup
+
+* Have Bundler installed:
+
+```bash
+gem install bundler
+```
 
 * Run the following commands to install the necessary packages:
 
 ```bash
-npm install
+bundle install
 ```
 
-* Now you should be able to run `gulp` and open the `index.html` file in your favorite browser.
+* Now you can run the app:
 
 ```bash
-gulp
+make run
 ```
-
-* You'll now have your `.scss` files auto compile to `main.min.css` using a watch command. LiveReload is also a part of the process, but you'll need to make sure to have the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) installed in whatever version of Chrome you are using.
 
 ## Ideas for later versions
 
