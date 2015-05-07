@@ -2,8 +2,6 @@
 logs
 *.log
 
-# Dependency directories
-node_modules
 /.sass-cache
 
 # Mac specific
