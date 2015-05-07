@@ -15,7 +15,5 @@ deploy:
   api: https://api.18f.gov
   organization: dotgov
   space: prod
-script:
-- bundle install
 
 sudo: required
