@@ -7,6 +7,7 @@
 h1, h2, h3, h4, h5, h6,
 ul, li,
 p {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 
 // Colors
 $background-dark:     #450081;
@@ -16,9 +17,11 @@ $text-dark:           #000000;
 $link:                #ffffff;
 
 // Font sizes
-$footer:    12px;
-$name:      24px;
-$nav:       20px;
+$footer:      12px;
+$name:        24px;
+$nav:         20px;
+$giant-name:  80px;
+$giant-desc:  36px;
 
 body {
   background-color: $background-dark;
@@ -34,7 +37,7 @@ body {
 
 // Temporary
 .disclaimer {
-  margin: 0 auto 10px auto;
+  margin: 0 auto 0px auto;
   padding: 10px;
   text-align: center;
   background-color: #f5f5f5;
@@ -44,8 +47,13 @@ body {
 header {
   @include outer-container;
 
+  padding: 10px 0;
+
   h1 {
     @include span-columns(9);
+
+    margin-top: 7px;
+    padding-left: 20px;
   }
 
   ul {
@@ -56,12 +64,56 @@ header {
 
     li {
       @include span-columns(4);
+      margin-top: 17px;
     }
   }
 }
 
+hr.white {
+  height: 2px;
+  background-color: $background-light;
+}
+
 .content {
   @include outer-container;
+  @include shift(2);
+
+  h1 {
+    @include span-columns(8);
+    text-align: center;
+    font-size: $giant-name;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    @include span-columns(8);
+    text-align: center;
+    font-size: $giant-desc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  ul.results {
+    @include span-columns(8);
+    @include outer-container;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    li {
+      @include span-columns(6);
+      padding: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      border: 1px solid $background-light;
+    }
+  }
+
+  .construction {
+    margin: 50px 0;
+    font-size: 50px;
+  }
 }
 
 footer {
@@ -71,7 +123,7 @@ footer {
   color: $text-dark;
 
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 
   img {
