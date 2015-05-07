@@ -1,3 +1,11 @@
+language: ruby
+rvm:
+  - 2.2.0
+git:
+  submodules: false
+
+script: bundle exec jekyll build --trace
+
 deploy:
   edge: true
   provider: cloudfoundry
@@ -8,7 +16,6 @@ deploy:
   organization: dotgov
   space: prod
 script:
-- npm install
-- bower install
+- bundle install
 
 sudo: required
