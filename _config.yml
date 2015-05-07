@@ -2,6 +2,7 @@
 highlighter: rouge
 markdown: redcarpet
 redcarpet:
+  syntax_highlighter: rouge
   extensions:
   - smart
   - with_toc_data
