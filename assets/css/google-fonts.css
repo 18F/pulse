@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  /* IE6-8 compat */
+  src: url("../fonts/lato-5e4924e57296a3bcb1c4882022475ae976b4aa94.eot");
+  src: local("Lato Regular"), 
+    local("Lato-Regular"), 
+    url("../fonts/lato-a13bcb3bf2b5092decc1008e96361ea104ceb77e.woff2") format("woff2"), 
+    url("../fonts/lato-11a10761f8efe584b8a3f24768cc4bae6c2d5aaf.woff") format("woff"), 
+    url("../fonts/lato-5e4924e57296a3bcb1c4882022475ae976b4aa94.eot") format("embedded-opentype"), 
+    url("../fonts/lato-de901c975ea1c587fce8ac22bdedf8627d47af29.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), 
+    local("Lato-Bold"), 
+    url("../fonts/lato-4978ef3145b0e1369395840cb3c24cf612a29e0d.woff2") format("woff2"), 
+    url("../fonts/lato-fea9a9dc165091e7e68b196b41270c9a0f6da602.woff") format("woff"), 
+    url("../fonts/lato-2973a83c705e65099d82050f6027413ef73f84d7.ttf") format("truetype");
+}
+

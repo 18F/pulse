@@ -1,0 +1,41 @@
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- Title and meta description
+================================================== -->
+{% if page.title %}
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ page.title | xml_escape }}" />
+{% else %}
+  <title>{{ site.name }} | {{ site.title }}</title>
+  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ site.title | xml_escape }}" />
+{% endif %}
+
+{% if page.description %}
+  <meta name="description" content="{{ page.description | xml_escape }}">
+  <meta property="og:description" content="{{ page.description | xml_escape }}" />
+{% else %}
+  <meta name="description" content="{{ site.description | xml_escape }}">
+  <meta property="og:description" content="{{ site.description | xml_escape }}" />
+{% endif %}
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/assets/css/normalize.min.css">
+<link rel="stylesheet" href="/assets/css/google-fonts.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.6/media/css/jquery.dataTables.min.css">
+
+<!-- Scripts
+================================================== -->
+<script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="/assets/js/vendor/jquery.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
