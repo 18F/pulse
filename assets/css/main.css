@@ -14,38 +14,42 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #450081;
-  color: #ffffff;
-  font-family: Lato, Arial, sans-serif; }
+  color: white;
+  font-family: "Lato", Helvetica, sans-serif; }
   body a {
     color: #ffffff;
     text-decoration: none; }
 
-.disclaimer {
-  margin: 0 auto 0px auto;
-  padding: 10px;
+header.site-header {
+  font-size: 12px;
   text-align: center;
-  background-color: #f5f5f5;
-  color: #000000; }
+  color: #000000;
+  background: white; }
+  header.site-header p {
+    padding: 10px 0; }
+  header.site-header .us-official {
+    background-color: #330060;
+    color: white; }
 
-header {
+nav {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0; }
-  header:after {
+  nav:after {
     content: "";
     display: table;
     clear: both; }
-  header h1 {
+  nav h1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
     margin-top: 7px;
     padding-left: 20px; }
-    header h1:last-child {
+    nav h1:last-child {
       margin-right: 0; }
-  header ul {
+  nav ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -54,24 +58,24 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0; }
-    header ul:last-child {
+    nav ul:last-child {
       margin-right: 0; }
-    header ul:after {
+    nav ul:after {
       content: "";
       display: table;
       clear: both; }
-    header ul li {
+    nav ul li {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
       margin-top: 17px; }
-      header ul li:last-child {
+      nav ul li:last-child {
         margin-right: 0; }
 
 hr.white {
-  height: 2px;
-  background-color: #ffffff; }
+  height: 1px;
+  background-color: white; }
 
 .content {
   max-width: 68em;
@@ -128,27 +132,11 @@ hr.white {
       text-align: center;
       text-transform: uppercase;
       font-size: 16px;
-      border: 1px solid #ffffff; }
+      border: 1px solid white; }
       .content ul.results li:last-child {
         margin-right: 0; }
   .content .construction {
     margin: 50px 0;
     font-size: 50px; }
-
-footer {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  background: #ffffff;
-  color: #000000;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center; }
-  footer:last-child {
-    margin-right: 0; }
-  footer img {
-    display: inline-block;
-    margin-left: 7px; }
 
 /*# sourceMappingURL=main.css.map */
