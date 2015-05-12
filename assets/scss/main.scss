@@ -90,7 +90,7 @@ body {
   .hero {
     text-align: center;
     color: white;
-    padding: 40px 0;
+    padding-top: 40px;
     @include span-columns(8);
     @include shift(2);
     h2 {
@@ -106,10 +106,14 @@ body {
   #results {
     @include span-columns(8);
     @include shift(2);
-    padding: 20px 0;
+    padding: 40px 0;
     .https, .dap {
       @include span-columns(4 of 8);
+      margin-bottom: 40px;
       text-align: center;
+      .total-value {
+        font-size: 5em;
+      }
     }
   }
 }
