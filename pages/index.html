@@ -1,17 +1,18 @@
 ---
 layout: default
+id: home
 permalink: /
 ---
+<div class="hero">
+	<h2>{{ site.name }}</h2>
+	<h3>{{ site.description }}</h3>
+</div>
 
-<h1>{{ site.name }}</h1>
-
-<h2>{{ site.description }}</h2>
-
-<ul class="results">
-  <li>
-    <a href="/https/">View HTTPS Results</a>
-  </li>
-  <li>
-    <a href="/analytics/">View Analytics Results</a>
-  </li>
-</ul>
+<div id="results">
+  <div class="https">
+    <a href="/https/" class="button">View HTTPS Results</a>
+  </div>
+  <div class="dap">
+    <a href="/analytics/" class="button">View Analytics Results</a>
+  </div>
+</div>

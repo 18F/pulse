@@ -3,13 +3,11 @@
 <head>
 {% include head.html %}
 </head>
-<body>
+<body id="{{ page.id }}">
 
-{% include disclaimer.html %}
+{% include header.html %}
 
-{% include nav.html %}
-
-<section class="content">
+<section id="content">
   {{ content }}
 </section>
 
