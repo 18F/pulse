@@ -50,7 +50,7 @@ header {
   }
 }
 
-nav {
+body > nav {
   @include outer-container;
   padding: 10px 0;
 
@@ -80,43 +80,86 @@ hr.white {
 }
 
 .content {
-  @include outer-container;
-  @include shift(2);
-
-  h1 {
-    @include span-columns(8);
-    text-align: center;
-    font-size: $giant-name;
-    margin-bottom: 10px;
-  }
-
-  h2 {
-    @include span-columns(8);
-    text-align: center;
-    font-size: $giant-desc;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  ul.results {
-    @include span-columns(8);
-    @include outer-container;
-
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-    li {
-      @include span-columns(6);
-      padding: 10px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 16px;
-      border: 1px solid white;
-    }
-  }
 
   .construction {
     margin: 50px 0;
     font-size: 50px;
+  }
+
+  .home {
+    @include shift(2);
+
+    h1 {
+      @include span-columns(8);
+      text-align: center;
+      font-size: $giant-name;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      @include span-columns(8);
+      text-align: center;
+      font-size: $giant-desc;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul.results {
+      @include span-columns(8);
+      @include outer-container;
+
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      li {
+        @include span-columns(6);
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: 1px solid white;
+      }
+    }
+  }
+
+
+  // /analytics and /https
+  .metric {
+
+    header {
+      @include outer-container;
+
+      .donut {
+        @include span-columns(3);
+      }
+
+      .description {
+        @include span-columns(8);
+
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        h1 {}
+        p {
+          margin-top: 12px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .data {
+      padding: 40px 20px;
+      background-color: white;
+      color: $text-dark;
+
+      select {
+        background-color: $background-dark;
+        color: white;
+        border: 0px;
+        padding: 5px 0px 5px 5px;
+        font-weight: bold;
+      }
+    }
+
   }
 }

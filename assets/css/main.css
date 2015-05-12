@@ -31,25 +31,25 @@ header.site-header {
     background-color: #330060;
     color: white; }
 
-nav {
+body > nav {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0; }
-  nav:after {
+  body > nav:after {
     content: "";
     display: table;
     clear: both; }
-  nav h1 {
+  body > nav h1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
     margin-top: 7px;
     padding-left: 20px; }
-    nav h1:last-child {
+    body > nav h1:last-child {
       margin-right: 0; }
-  nav ul {
+  body > nav ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -58,35 +58,31 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0; }
-    nav ul:last-child {
+    body > nav ul:last-child {
       margin-right: 0; }
-    nav ul:after {
+    body > nav ul:after {
       content: "";
       display: table;
       clear: both; }
-    nav ul li {
+    body > nav ul li {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
       margin-top: 17px; }
-      nav ul li:last-child {
+      body > nav ul li:last-child {
         margin-right: 0; }
 
 hr.white {
   height: 1px;
   background-color: white; }
 
-.content {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
+.content .construction {
+  margin: 50px 0;
+  font-size: 50px; }
+.content .home {
   margin-left: 17.05961%; }
-  .content:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .content h1 {
+  .content .home h1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -94,9 +90,9 @@ hr.white {
     text-align: center;
     font-size: 80px;
     margin-bottom: 10px; }
-    .content h1:last-child {
+    .content .home h1:last-child {
       margin-right: 0; }
-  .content h2 {
+  .content .home h2 {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -105,9 +101,9 @@ hr.white {
     font-size: 36px;
     margin-top: 20px;
     margin-bottom: 20px; }
-    .content h2:last-child {
+    .content .home h2:last-child {
       margin-right: 0; }
-  .content ul.results {
+  .content .home ul.results {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -117,13 +113,13 @@ hr.white {
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 40px; }
-    .content ul.results:last-child {
+    .content .home ul.results:last-child {
       margin-right: 0; }
-    .content ul.results:after {
+    .content .home ul.results:after {
       content: "";
       display: table;
       clear: both; }
-    .content ul.results li {
+    .content .home ul.results li {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -133,10 +129,44 @@ hr.white {
       text-transform: uppercase;
       font-size: 16px;
       border: 1px solid white; }
-      .content ul.results li:last-child {
+      .content .home ul.results li:last-child {
         margin-right: 0; }
-  .content .construction {
-    margin: 50px 0;
-    font-size: 50px; }
+.content .metric header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .content .metric header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content .metric header .donut {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .content .metric header .donut:last-child {
+      margin-right: 0; }
+  .content .metric header .description {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    .content .metric header .description:last-child {
+      margin-right: 0; }
+    .content .metric header .description p {
+      margin-top: 12px;
+      line-height: 28px; }
+.content .metric .data {
+  padding: 40px 20px;
+  background-color: white;
+  color: #000000; }
+  .content .metric .data select {
+    background-color: #450081;
+    color: white;
+    border: 0px;
+    padding: 5px 0px 5px 5px;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
