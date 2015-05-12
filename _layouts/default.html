@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 {% include head.html %}
 </head>
-<body>
 
-{% include disclaimer.html %}
+<body id="{{ page.id }}">
 
-{% include nav.html %}
+{% include header.html %}
 
-<section class="content">
+<section id="content">
   {{ content }}
 </section>
 
