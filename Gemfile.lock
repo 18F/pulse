@@ -1,8 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bitters (1.0.0)
+      bourbon (>= 3.2)
+      sass (>= 3.2)
+      thor
     blankslate (2.1.2.4)
-    bourbon (4.2.2)
+    bourbon (4.2.3)
       sass (~> 3.4)
       thor
     celluloid (0.16.0)
@@ -75,6 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters
   bourbon
   jekyll
   neat

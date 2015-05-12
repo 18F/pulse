@@ -1,122 +1,119 @@
 @charset "UTF-8";
 
-@import "bourbon/bourbon";
-@import "neat/neat";
-
-// Reset
-h1, h2, h3, h4, h5, h6,
-ul, li,
-p {padding: 0; margin: 0;}
-h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+// Imports
+@import "lib/bourbon/bourbon";
+@import "base/grid-settings";
+@import "lib/neat/neat";
+@import "base/base";
 
 // Colors
-$background-dark:     #450081;
-$text-dark:           #000000;
-$link:                #ffffff;
+$dark-purple:       #330060;
+$medium-purple:     #450081;
+$light-purple:      #AB67E8;
 
-// Font sizes
-$small:       12px;
-$name:        24px;
-$nav:         20px;
-$giant-name:  80px;
-$giant-desc:  36px;
+// Custom font sizing
+h1 { font-size:   2.25em;   }
+h2 { font-size:   1.5em;    }
+h3 { font-size:   1.125em;  }
+h4 { font-size:   1.125em;  }
 
+// Generic
 body {
-  background-color: $background-dark;
+  background-color: $medium-purple;
+}
+
+#content {
+  @include outer-container;
+}
+
+.construction {
   color: white;
+  margin: 50px 0;
+  font-size: 50px;
+}
 
-  font-family: "Lato", Helvetica, sans-serif;
-
-  a {
-    color: $link;
-    text-decoration: none;
+.button {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: white;
+  &:hover {
+    background-color: white;
   }
 }
 
-header {
-  &.site-header {
-    font-size: $small;
+// _includes/header.html
+.site-header {
+  .disclaimer {
+    background-color: white;
+    padding: 10px 0;
     text-align: center;
-    color: $text-dark;
-    background: white;
-    p {
+  }
+  .us-official {
+    background-color: $dark-purple;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+  }
+  > nav {
+    border-bottom: 1px solid white;
+    #main-nav {
+      @include outer-container;
       padding: 10px 0;
-    }
-    .us-official {
-      background-color: #330060;
-      color: white;
-
-    }
-  }
-}
-
-nav {
-  @include outer-container;
-  padding: 10px 0;
-
-  h1 {
-    @include span-columns(9);
-
-    margin-top: 7px;
-    padding-left: 20px;
-  }
-
-  ul {
-    @include span-columns(3);
-    @include outer-container;
-
-    padding-left: 0;
-
-    li {
-      @include span-columns(4);
-      margin-top: 17px;
+      a { color: white; }
+      h1#branding {
+        @include span-columns(8);
+        font-size: 1.875em;
+        font-weight: 300;
+      }
+      ul {
+        @include span-columns(4);
+        margin-top: 6px;
+        li {
+          display: inline;
+          a { 
+            padding: 17px 24px; 
+            &:hover {
+              color: $medium-purple;
+              background-color: white;
+            }
+          }
+        }
+      }
     }
   }
 }
 
-hr.white {
-  height: 1px;
-  background-color: white;
-}
-
-.content {
-  @include outer-container;
-  @include shift(2);
-
-  h1 {
-    @include span-columns(8);
+// pages/index.html
+#home {
+  .hero {
     text-align: center;
-    font-size: $giant-name;
-    margin-bottom: 10px;
-  }
-
-  h2 {
+    color: white;
+    padding-top: 40px;
     @include span-columns(8);
-    text-align: center;
-    font-size: $giant-desc;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    @include shift(2);
+    h2 {
+      font-size: $base-font-size * 7;
+      font-weight: 300;
+    }
+    h3 {
+      font-size: $base-font-size * 2;
+      font-weight: 100;
+      padding-top: 15px;
+    }
   }
-
-  ul.results {
+  #results {
     @include span-columns(8);
-    @include outer-container;
-
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-    li {
-      @include span-columns(6);
-      padding: 10px;
+    @include shift(2);
+    padding: 40px 0;
+    .https, .dap {
+      @include span-columns(4 of 8);
+      margin-bottom: 40px;
       text-align: center;
-      text-transform: uppercase;
-      font-size: 16px;
-      border: 1px solid white;
+      .total-value {
+        font-size: 5em;
+      }
     }
-  }
-
-  .construction {
-    margin: 50px 0;
-    font-size: 50px;
   }
 }
