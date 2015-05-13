@@ -204,15 +204,6 @@ h4 {
 body {
   background-color: #450081; }
 
-#content {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  #content:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 .construction {
   color: white;
   margin: 50px 0;
@@ -275,14 +266,14 @@ body {
             background-color: white; }
 
 #home .hero {
-  text-align: center;
-  color: white;
-  padding-top: 40px;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
-  margin-left: 17.05961%; }
+  margin-left: 17.05961%;
+  text-align: center;
+  color: white;
+  padding-top: 40px; }
   #home .hero:last-child {
     margin-right: 0; }
   #home .hero h2 {
@@ -312,5 +303,48 @@ body {
       margin-right: 0; }
     #home #results .https .total-value, #home #results .dap .total-value {
       font-size: 5em; }
+
+#analytics #content header, #https #content header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  color: white; }
+  #analytics #content header:after, #https #content header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #analytics #content header .donut, #https #content header .donut {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    #analytics #content header .donut:last-child, #https #content header .donut:last-child {
+      margin-right: 0; }
+    #analytics #content header .donut .total-value, #https #content header .donut .total-value {
+      font-size: 3em; }
+    #analytics #content header .donut .total-desc, #https #content header .donut .total-desc {
+      font-size: 0.8em; }
+  #analytics #content header .description, #https #content header .description {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    #analytics #content header .description:last-child, #https #content header .description:last-child {
+      margin-right: 0; }
+    #analytics #content header .description p, #https #content header .description p {
+      margin-top: 12px;
+      line-height: 28px; }
+#analytics #content .data, #https #content .data {
+  padding: 40px 20px;
+  background-color: white; }
+  #analytics #content .data select, #https #content .data select {
+    display: inline-block;
+    background-color: #450081;
+    color: white;
+    border: 0px;
+    padding: 5px 0px 5px 5px;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

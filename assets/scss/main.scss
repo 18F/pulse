@@ -22,9 +22,6 @@ body {
   background-color: $medium-purple;
 }
 
-#content {
-  @include outer-container;
-}
 
 .construction {
   color: white;
@@ -50,14 +47,17 @@ body {
     padding: 10px 0;
     text-align: center;
   }
+
   .us-official {
     background-color: $dark-purple;
     padding: 10px 0;
     text-align: center;
     color: white;
   }
+
   > nav {
     border-bottom: 1px solid white;
+
     #main-nav {
       @include outer-container;
       padding: 10px 0;
@@ -72,8 +72,8 @@ body {
         margin-top: 6px;
         li {
           display: inline;
-          a { 
-            padding: 17px 24px; 
+          a {
+            padding: 17px 24px;
             &:hover {
               color: $medium-purple;
               background-color: white;
@@ -88,11 +88,13 @@ body {
 // pages/index.html
 #home {
   .hero {
+    @include span-columns(8);
+    @include shift(2);
+
     text-align: center;
     color: white;
     padding-top: 40px;
-    @include span-columns(8);
-    @include shift(2);
+
     h2 {
       font-size: $base-font-size * 7;
       font-weight: 300;
@@ -103,17 +105,75 @@ body {
       padding-top: 15px;
     }
   }
+
   #results {
     @include span-columns(8);
     @include shift(2);
+
     padding: 40px 0;
+
     .https, .dap {
       @include span-columns(4 of 8);
+
       margin-bottom: 40px;
       text-align: center;
+
       .total-value {
         font-size: 5em;
       }
     }
+  }
+}
+
+// /analytics and /https
+#analytics, #https {
+
+  #content {
+
+    header {
+      @include outer-container;
+
+      color: white;
+
+      .donut {
+        @include span-columns(3);
+
+        .total-value {
+          font-size: 3em;
+        }
+
+        .total-desc {
+          font-size: 0.8em;
+        }
+      }
+
+      .description {
+        @include span-columns(8);
+
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        h1 {}
+        p {
+          margin-top: 12px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .data {
+      padding: 40px 20px;
+      background-color: white;
+
+      select {
+        display: inline-block;
+        background-color: $medium-purple;
+        color: white;
+        border: 0px;
+        padding: 5px 0px 5px 5px;
+        font-weight: bold;
+      }
+    }
+
   }
 }
