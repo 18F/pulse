@@ -2,11 +2,11 @@
   "data": [
     {
       "Domain": "911.gov",
-      "Participating": false
+      "Participating": "False"
     },
     {
       "Domain": "abandonedmines.gov",
-      "Participating": false
+      "Participating": "False"
     }
   ]
 }
