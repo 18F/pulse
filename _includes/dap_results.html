@@ -1,7 +1,14 @@
 <script type="text/javascript" >
+(function() {
+    var chart = d3.select(".dap_chart");
+    var elem = chart[0][0];
 
-    width   = 287;
-    height  = 350;
+    var width = chart.attr("data-width");
+    if (width == null)
+        width = getComputedStyle(elem.parentElement).width;
+    width = parseInt(width);
+
+    var height = width * 1.2;
 
     var radius = Math.min(width, height) / 2;
 
@@ -18,7 +25,7 @@
     })
         .sort(null);
 
-    var dapChart = d3.select(".dap_chart")
+    chart = chart
         .append('svg')
         .attr("width", width)
         .attr("height", height)
@@ -27,7 +34,7 @@
 
     d3.csv("../assets/data/aggregateDAP.csv", function (error, data) {
 
-        var g = dapChart.selectAll(".arc")
+        var g = chart.selectAll(".arc")
             .data(pie(data))
             .enter().append("g")
             .attr("class", "arc");
@@ -59,6 +66,7 @@
 
         g.append("text")
             .attr("text-anchor", "middle")
+            .attr("class", "total-desc")
             .attr("y", 30)
             .attr("fill", "white")
         // TODO: Value below needs to get pulled in dynamically
@@ -66,5 +74,5 @@
             return "PARTICIPATE IN DAP";
         });
     });
-
+})();
 </script>

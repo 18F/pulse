@@ -133,8 +133,18 @@ body {
     header {
       @include outer-container;
 
+      color: white;
+
       .donut {
         @include span-columns(3);
+
+        .total-value {
+          font-size: 3em;
+        }
+
+        .total-desc {
+          font-size: 0.8em;
+        }
       }
 
       .description {
