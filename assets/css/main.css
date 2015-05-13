@@ -196,10 +196,10 @@ h2 {
   font-size: 1.5em; }
 
 h3 {
-  font-size: 1.125em; }
+  font-size: 1.25em; }
 
-h4 {
-  font-size: 1.125em; }
+p {
+  font-size: 1.0em; }
 
 body {
   background-color: #450081; }
@@ -213,10 +213,21 @@ body {
   .button:hover {
     background-color: white; }
 
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .site-header .disclaimer {
-  background-color: white;
+  background-color: #330060;
   padding: 10px 0;
-  text-align: center; }
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #450081; }
 .site-header .us-official {
   background-color: #330060;
   padding: 10px 0;
@@ -299,48 +310,60 @@ body {
     #home #results .https .total-value, #home #results .dap .total-value {
       font-size: 5em; }
 
-#analytics #content header, #https #content header {
+#analytics #content > header, #https #content > header, #about #content > header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  color: white; }
-  #analytics #content header:after, #https #content header:after {
+  color: white;
+  padding: 30px 0; }
+  #analytics #content > header:after, #https #content > header:after, #about #content > header:after {
     content: "";
     display: table;
     clear: both; }
-  #analytics #content header .donut, #https #content header .donut {
+  #analytics #content > header p, #https #content > header p, #about #content > header p {
+    margin-top: 12px; }
+  #analytics #content > header a, #https #content > header a, #about #content > header a {
+    font-weight: bold;
+    color: white; }
+  #analytics #content > header .donut, #https #content > header .donut, #about #content > header .donut {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
-    #analytics #content header .donut:last-child, #https #content header .donut:last-child {
+    #analytics #content > header .donut:last-child, #https #content > header .donut:last-child, #about #content > header .donut:last-child {
       margin-right: 0; }
-    #analytics #content header .donut .total-value, #https #content header .donut .total-value {
+    #analytics #content > header .donut .total-value, #https #content > header .donut .total-value, #about #content > header .donut .total-value {
       font-size: 3em; }
-    #analytics #content header .donut .total-desc, #https #content header .donut .total-desc {
+    #analytics #content > header .donut .total-desc, #https #content > header .donut .total-desc, #about #content > header .donut .total-desc {
       font-size: 0.8em; }
-  #analytics #content header .description, #https #content header .description {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    padding-top: 30px;
-    padding-bottom: 40px; }
-    #analytics #content header .description:last-child, #https #content header .description:last-child {
-      margin-right: 0; }
-    #analytics #content header .description p, #https #content header .description p {
-      margin-top: 12px;
-      line-height: 28px; }
-#analytics #content .data, #https #content .data {
-  padding: 40px 20px;
+  #analytics #content > header.chart, #https #content > header.chart, #about #content > header.chart {
+    padding: 0; }
+    #analytics #content > header.chart .description, #https #content > header.chart .description, #about #content > header.chart .description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      padding-top: 60px; }
+      #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
+        margin-right: 0; }
+#analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
+  padding: 40px 0;
   background-color: white; }
-  #analytics #content .data select, #https #content .data select {
-    display: inline-block;
-    margin: 0 5px;
-    background-color: #450081;
-    color: white;
-    border: 0px;
-    padding: 5px 0px 5px 5px;
-    font-weight: bold; }
+#analytics #content #main-content table select, #https #content #main-content table select, #about #content #main-content table select {
+  display: inline-block;
+  margin: 0 5px;
+  background-color: #450081;
+  color: white;
+  border: 0px;
+  padding: 5px 0px 5px 5px;
+  font-weight: bold; }
+
+#about .faq-questions {
+  padding: 20px 0 50px; }
+#about .faq-answers h3 {
+  font-style: italic;
+  margin-bottom: 15px; }
+#about .faq-answers li {
+  padding-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */

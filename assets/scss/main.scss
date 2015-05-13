@@ -14,8 +14,8 @@ $light-purple:      #AB67E8;
 // Custom font sizing
 h1 { font-size:   2.25em;   }
 h2 { font-size:   1.5em;    }
-h3 { font-size:   1.125em;  }
-h4 { font-size:   1.125em;  }
+h3 { font-size:   1.25em;   }
+p  { font-size:   1.0em;    }
 
 // Generic
 body {
@@ -33,12 +33,18 @@ body {
   }
 }
 
+.wrapper {
+  @include outer-container;
+}
+
 // _includes/header.html
 .site-header {
   .disclaimer {
-    background-color: white;
+    background-color: $dark-purple;
     padding: 10px 0;
     text-align: center;
+    color: white;
+    border-bottom: 1px solid $medium-purple;
   }
 
   .us-official {
@@ -118,16 +124,29 @@ body {
   }
 }
 
-// /analytics and /https
-#analytics, #https {
+// Generic layout for:
+// pages/analytics.html
+// pages/https.html
+// pages/about.html
+/////////////////////////////////////////
+
+#analytics, #https, #about {
 
   #content {
 
-    header {
+    > header {
       @include outer-container;
-
       color: white;
-
+      padding: 30px 0;
+      p { 
+        margin-top: 12px; 
+      }
+      
+      a { 
+        font-weight: bold;
+        color: white;
+      }
+      
       .donut {
         @include span-columns(3);
 
@@ -140,34 +159,43 @@ body {
         }
       }
 
-      .description {
-        @include span-columns(8);
-
-        padding-top: 30px;
-        padding-bottom: 40px;
-
-        h1 {}
-        p {
-          margin-top: 12px;
-          line-height: 28px;
+      &.chart {
+        padding: 0;
+        .description {
+          @include span-columns(8);
+          padding-top: 60px;
         }
       }
     }
 
-    .data {
-      padding: 40px 20px;
-      background-color: white;
-
-      select {
-        display: inline-block;
-        margin: 0 5px;
-        background-color: $medium-purple;
-        color: white;
-        border: 0px;
-        padding: 5px 0px 5px 5px;
-        font-weight: bold;
+    #main-content {
+      &.white-bkg {
+        padding: 40px 0;
+        background-color: white;
+      }
+      table {
+        select {
+          display: inline-block;
+          margin: 0 5px;
+          background-color: $medium-purple;
+          color: white;
+          border: 0px;
+          padding: 5px 0px 5px 5px;
+          font-weight: bold;
+        }
       }
     }
+  }
+}
 
+// pages/about.html
+#about {
+  .faq-questions { padding: 20px 0 50px; }
+  .faq-answers {
+    h3 {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    li { padding-bottom: 40px; }
   }
 }
