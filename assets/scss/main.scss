@@ -166,6 +166,7 @@ body {
       background-color: white;
 
       select {
+        display: inline-block;
         background-color: $medium-purple;
         color: white;
         border: 0px;

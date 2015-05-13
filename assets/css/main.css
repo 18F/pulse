@@ -340,6 +340,7 @@ body {
   padding: 40px 20px;
   background-color: white; }
   #analytics #content .data select, #https #content .data select {
+    display: inline-block;
     background-color: #450081;
     color: white;
     border: 0px;
