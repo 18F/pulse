@@ -341,6 +341,7 @@ body {
   background-color: white; }
   #analytics #content .data select, #https #content .data select {
     display: inline-block;
+    margin: 0 5px;
     background-color: #450081;
     color: white;
     border: 0px;
