@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     {
       "Domain": "abandonedmines.gov",
-      "Participating": "False"
+      "Participates in Analytics": "False"
     }
   */
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
       columns: [
         {"data":"Domain"},
-        {"data":"Participating"}
+        {"data":"Participates in Analytics"}
       ],
 
       dom: "lrtip"

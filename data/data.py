@@ -23,7 +23,7 @@ import json
 def run():
   domains = {}
   https = []
-  analytics = {}
+  analytics = []
 
 
 
@@ -67,6 +67,31 @@ def run():
 
   f = open("../assets/data/tables/https-domains.json", 'w', encoding='utf-8')
   f.write(json_for({'data': https}))
+  f.close()
+
+
+  # Now, analytics measurement.
+  headers = []
+  with open("analytics.csv", newline='') as csvfile:
+    for row in csv.reader(csvfile):
+      if (row[0].lower() == "domain"):
+        headers = row
+        continue
+
+      domain = row[0].lower()
+      if not domains.get(domain):
+        continue
+
+      json_row = {}
+      for i, cell in enumerate(row):
+        json_row[headers[i]] = cell
+
+      analytics.append(json_row)
+      domains[domain]['analytics'] = json_row
+
+
+  f = open("../assets/data/tables/analytics-domains.json", 'w', encoding='utf-8')
+  f.write(json_for({'data': analytics}))
   f.close()
 
 

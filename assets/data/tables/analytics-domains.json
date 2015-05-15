@@ -1,0 +1,5396 @@
+{
+  "data": [
+    {
+      "Domain": "18f.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "acus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "achp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "preserveamerica.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "adf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usadf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "abmc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "amtrakoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "arc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "asc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "afrh.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cia.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "istac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nctc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "odci.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "opensource.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osde.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ttic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ucia.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "christophercolumbusfoundation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "capnhq.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "abilityone.fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "abilityone.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jwod.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cftc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "smartcheck.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "compliance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bcfp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cfpa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cfpb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerbureau.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerfinance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerfinancial.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerfinancialbureau.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerfinancialprotectionbureau.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerprotection.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumerprotectionbureau.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "atvsafety.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cpsc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "drywallresponse.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "poolsafely.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "poolsafety.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "recalls.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "saferproduct.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "saferproducts.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "seguridadconsumidor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americore.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americorp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americorpsconnect.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americorpsweek.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cncs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cncsoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cns.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalmentoringcouncil.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "getinvolved.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "learnandserve.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mlkday.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalservice.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalservicegear.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalserviceresources.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "presidentialserviceawards.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "seniorcorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "serve.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "service.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "servicelearning.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "servir.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vista.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vistacampus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "volunteeringinamerica.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cigie.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ignet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "csosa.fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "csosa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dcpsa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pretrialservices.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "psa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dnfsb.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "dra.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "denali.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "aff.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ag.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ars-grin.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "arsusda.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "askkaren.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "befoodsafe.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "biopreferred.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "choosemyplate.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "coastalamerica.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dietaryguidelines.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "empowhr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "execsec.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "farmerclaims.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "femalefarmerclaims.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fireinstitute.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "foodsafetyjobs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "foodsafetyworkinggroup.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "forestsandrangelands.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fs.fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fswg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "green.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hispanicfarmerclaims.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "icbemp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iiog.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "invasivespeciesinfo.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ipm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "isitdoneyet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "itap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "juniorforestranger.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "latinofarmerclaims.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lcacommons.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mtbs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nafri.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nel.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nstl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nutrition.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nutritionevidencelibrary.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nwcg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pregunteleakaren.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "recreation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "reo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "smokeybear.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "start2farm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "symbols.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "thepeoplesgarden.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usda.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usdapii.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vallescaldera.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wildfire.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "womenfarmerclaims.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "woodsy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "woodsyowl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "aviationweather.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bea.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bldrdoc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "buyusa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cbp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "census.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "civilrightsusa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "climate.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "climatechange.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "commerce.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "coop-uspto.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "digitalliteracy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dnsops.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "doc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "drought.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "e3.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eda.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "esa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "export.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fcsm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedstats.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "firstnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fishwatch.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "getyouhome.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "globalentry.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "goes-r.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "gps.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "hurricanes.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "itds.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "manufacturing.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "mapstats.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "marinecadastre.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mbda.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nehrp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nist.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "noaa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "noaawatch.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ntis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ofcm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "papahanaumokuakea.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "pscr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "restorethegulf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sdr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "selectusa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "spaceweather.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "spectrum.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "standards.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "time.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "trade.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "tsunami.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uspto.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "wdol.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "weather.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "adlnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "aftac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "altusandc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "brac.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cmts.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cnss.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cttso.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "defense.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "dod.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eaclearinghouse.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "erdc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fvap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iad.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ioss.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "itc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jccs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mcrmc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mojavedata.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mtmc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mypay.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nro.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nrojr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nsa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nsep.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "oea.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "osdbu.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "pentagon.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safexchange.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "siteidiq.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tswg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usandc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "aapi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bfelob.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "childstats.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "college.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "collegenavigator.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ed.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "edpubs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "education.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fafsa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fsapubs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "g5.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nagb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationsreportcard.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "opportunity.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "studentaid.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "studentloans.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ameslab.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "anl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "arm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "biomassboard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bnl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bpa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "brc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "buildingamerica.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "casl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cebaf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cendi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "crt2014-2024review.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "doe.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "doeal.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eia.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "energy.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "energycodes.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "energyplus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "energysaver.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "energysavers.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fnal.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fueleconomy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hanford.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "highperformancebuildings.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "homeenergyscore.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hydrogen.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "inel.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "inl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iscience.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "isotope.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "isotopes.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "kapl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lanl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lbl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "llnl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nccrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nccs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nersc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "neup.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nrel.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nrelhub.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ntrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nuclear.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "orau.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ornl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osti.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pnl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pnnl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "rl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "salmonrecovery.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sandia.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scidac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "science.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scienceaccelerator.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scienceeducation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "smartgrid.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sns.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "solardecathlon.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "srs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "swpa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "unnpp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "unrpnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wapa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "windpoweringamerica.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ymp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "acf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "acl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "afterschool.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "agingstats.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ahcpr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ahrq.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "aids.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "alzheimers.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "aoa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bam.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bestbonesforever.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "betobaccofree.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bioethics.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "biosecurityboard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cancer.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cancernet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cdc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "childwelfare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "clinicaltrial.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "clinicaltrials.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "clubdrugs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cms.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "collegedrinkingprevention.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cuidadodesalud.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dhhs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "diabetescommittee.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "docline.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "drugabuse.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "drugfreeworkplace.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "edison.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eldercare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "endingthedocumentgame.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "errp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fatherhood.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fda.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "findyouthinfo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fitness.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "flu.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "foodsafety.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fruitsandveggiesmatter.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "genbank.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "genome.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "girlshealth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "globalhealth.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "grants.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "grantsolutions.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "guideline.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "guidelines.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hcqualitycommission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "health.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthcare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthdata.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthfinder.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthindicators.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthit.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthreform.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "healthypeople.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hearttruth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hhs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "hhsoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hhsops.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hiv.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hrsa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "iedison.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ihs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "insurekidsnow.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "locatorplus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "longtermcare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medicaid.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medicalcountermeasures.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medicalreservecorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medicare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medline.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medlineplus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mentalhealth.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "mesh.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mimedicare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mymedicare.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalchildrensstudy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncifcrf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ngc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nih.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nihseniorhealth.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "niosh.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nlm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nnlm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "organdonor.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "pandemicflu.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "paperworkreduction.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pcip.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "phe.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "psc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pubmed.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pubmedcentral.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "quic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "quick.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "recoverymonth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safeyouth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "samhsa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "selectagents.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "smokefree.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "steroidabuse.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "stopalcoholabuse.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "stopbullying.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "stopmedicarefraud.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "surgeongeneral.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "thecoolspot.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "therealcost.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tissueengineering.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tobacco.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usability.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usbm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usphs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vaccines.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "whaging.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "whitehouseconferenceonaging.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "womenshealth.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "biometrics.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "citizencorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cpnireporting.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dhs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "disasterassistance.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fema.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fero.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "firstresponder.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "firstrespondertraining.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fleta.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fletc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "flightschoolcandidates.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "floodsmart.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "homelandsecurity.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ice.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "listo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "llis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nmsc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ready.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "readybusiness.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safecomprogram.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safetyact.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "secretservice.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tsa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "us-cert.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscis.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usss.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "disasterhousing.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fha.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ginniemae.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "homesales.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hud.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "hudoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalhousing.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalhousinglocator.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nhl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nls.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ada.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "adr.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "amberalert.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "atf.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "biometriccoe.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bja.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bjs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bop.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "crimesolutions.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "crimevictims.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cybercrime.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dea.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "deadiversion.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "deals.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dna.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dsac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "espanolforlawenforcement.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fara.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fbi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fbijobs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "firstfreedom.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "foia.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "forfeiture.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "getsmartaboutdrugs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "helpingamericasyouth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ic3.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "interpol.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iprcenter.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "justice.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "justthinktwice.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "juvenilecouncil.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "lep.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "lookstoogoodtobetrue.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "malwareinvestigator.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medalofvalor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "namus.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nationalgangcenter.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ncirc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ncjrs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nibin.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nicic.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "niem.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nij.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nmvtis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nsopw.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nvtc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ojjdp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ojp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ovc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ovcttac.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "projectsafechildhood.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "projectsafeneighborhoods.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "psob.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "rcfl.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "reentry.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scra.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "servicemembers.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "smart.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "stopfraud.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "tribaljusticeandsafety.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ucrdatatool.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "unicor.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usdoj.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "userra.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usmarshals.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "vcf.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "vehiclehistory.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "americasheroesatwork.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "autocommunities.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "benefits.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bls.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "disability.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "dol-esa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dol.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "doleta.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "govbenefits.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "govloans.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jobcorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "labor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "msha.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "mynextmove.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osha.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "unionreports.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "veterans.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "whistleblowers.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "wrp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "youthrules.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "america.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "civilianresponsecorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "continentalshelf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cwc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ecopartnerships.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fan.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "foreignassistance.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fsgb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ghi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "humanrights.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "iawg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ibwc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "icass.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osac.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "pepfar.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "state.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usconsulate.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usembassy-mexico.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usembassy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usint.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usmission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usvpp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "abandonedmines.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "acwi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "alaskacenters.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americanlatinomuseum.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americasgreatoutdoors.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "anstaskforce.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bia.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bioeco.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "blm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "blmntl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "boem.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "boemre.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bsee.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "c3.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "coast2050.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "conservation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "coralreef.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cupcao.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "doi.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "doioig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "earthquake.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "evergladesrestoration.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fcg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fgdc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "firecode.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fireleadership.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "firenet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "firescience.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frcc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fws.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gcdamp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gcmrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "geocommunicator.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "geomac.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "geoplatform.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iat.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "indianaffairs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "interior.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "invasivespecies.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jem.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "klamathrestoration.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lacoast.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "landfire.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "landimaging.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lca.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lcrmscp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lmvsci.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "lowermississippivalleyscience.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mapaplanet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "marine.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mitigationcommission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mms.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mrgo.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "mrlc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nationalatlas.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nationalmap.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nbc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ndep.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ndop.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nemi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nfpors.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nifc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "niftt.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nolaenvironmental.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nps.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "onhir.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "onrr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osmre.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "piedrasblancas.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "reportband.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "rivers.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safecom.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sciencebase.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "sierrawild.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "snap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usbr.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usgs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "utahfireinfo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "volcano.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "volunteer.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "watermonitor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wildlifeadaptationstrategy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wlci.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "youthgo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ama.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americathebeautifulquarters.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "asap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ayudaconmibanco.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bankanswers.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bankcustomer.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bankcustomerassistance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bankhelp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "banknet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bep.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bfem.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bondpro.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ccac.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cdfifund.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "complaintreferralexpress.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "comptrollerofthecurrency.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "directoasucuenta.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eftps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eta-find.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ethicsburg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eyenote.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalinvestments.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedinvest.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "financialresearch.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "financialstability.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fincen.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fsoc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fttesttwai.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "godirect.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gwa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "helpwithmybank.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "helpwithmycheckingaccount.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "helpwithmycreditcard.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "helpwithmycreditcardbank.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "helpwithmymortgage.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "helpwithmymortgagebank.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ipac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ipp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "irs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "irsauctions.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "irsnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "irssales.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "irsvideos.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "its.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "makinghomeaffordable.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "mha.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "moneyfactory.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "moneyfactorystore.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "msb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mymoney.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "myra.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalbank.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalbankhelp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nationalbanknet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "navycash.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "occ.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "occhelps.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "occnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ots.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "patriotbonds.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pay.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pracomment.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "qatesttwai.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "savingsbond.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "savingsbonds.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "savingsbondwizard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sigtarp.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "slgs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "taaps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tax.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tcis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tigta.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tigtanet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treas.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treaslockbox.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treasury.fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treasury.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "treasuryauction.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treasuryauctions.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treasurydirect.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "treasuryecm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treasuryhunt.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "treasuryscams.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "trs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ttb.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ttbonline.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ttlplus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "twai.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usaspending.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usdebitcard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usmint.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ustreas.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "verifypayment.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wizard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "workplace.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "911.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "bts.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cflhd.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "distracteddriving.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "distraction.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "dot.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "dotideahub.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dottrafficrecords.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dottrcc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ems.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "esc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "faa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "faasafety.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fdr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fmip.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "italladdsup.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jccbi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "marview.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mda.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nhtsa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ntdprogram.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "plainlanguage.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "protectyourmove.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "safercar.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safertruck.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sharetheroadsafely.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "strongports.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sustainablecommunities.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tfhrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "trafficsafetymarketing.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "transportation.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "transportationresearch.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "unitedweride.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cdco.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lasegundacosa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nationalresourcedirectory.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nrd.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "thesecondthing.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "va.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "vet-biz.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vetbiz.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "vetsuccess.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bto.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "counterwmd.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dni.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iarpa-ideas.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iarpa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "icjointduty.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "intelink.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "intelligence.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ise.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncix.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nmic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "odni.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pix.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ugov.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "airnow.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "aqi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cbi-epa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "energystar.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "epa-echo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "epa-otis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "epa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fdms.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedcenter.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frtr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "greengov.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ofee.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "regulation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "regulations.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "relocatefeds.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "sustainability.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "urbanwaters.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "eeoc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "astrongmiddleclass.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "budget.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "change.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "earmarks.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "egov.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eop.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ethics.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "exrwh.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fiscalcommission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "itdashboard.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "joiningforces.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "letsmove.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "max.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nepa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "notalone.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nstic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "omb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "omblog.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ondcp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ostp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "paymentaccuracy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "presidio.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "presidiotrust.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "reachhigher.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "save.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "saveaward.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "strongmiddleclass.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ustr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wh.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "whitehouse.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "whitehousedrugpolicy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "exim.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eximcoop.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fca.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fcsic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "broadband.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "broadbandmap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dtv.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fcc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fccuniversity.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lifeline.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nbm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "openinternet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "economicinclusion.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdicbets.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdicconnect.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdicig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdicoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdicsales.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdicseguro.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "myfdic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "myfdicinsurance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fec.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ferc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fercalt.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fhfa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fhfb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "harp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ofheo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fhfaoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "flra.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fmc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fmcs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fbiic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedcentennial.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreserve.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreserve100.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreserve2013.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreservecentennial.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreservecentennialcelebration.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreserveconsumerhelp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedpartnership.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ffiec.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frb.fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "newmoney.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "exploretsp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frtib.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frtibtest.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tsp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tsptest.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "admongo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "alertaenlinea.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "annualcreditreport.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumer.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "consumersentinel.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumersentinelnetwork.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumidor.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "donotcall.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dontserveteens.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "econsumer.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "freecreditreport.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ftc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ftccomplaintassistant.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ftcefile.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hsr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "identitytheft.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "idtheft.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncpw.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "onguardonline.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "onlineonguard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "protecciondelconsumidor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sentinel.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uce.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usicn.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "acquisition.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "advantage.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "afadvantage.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "americanjobcenter.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "apps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "businessusa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "buyaccessible.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cao.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cbca.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ccr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cfda.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "cfo.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "challenge.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "challenges.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cio.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "computers4learning.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "computersforlearning.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "connect.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "consumeraction.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "contractdirectory.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cpars.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "data.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "digitalgov.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "dotgov.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ecpic.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "efaca.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eforms.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "eisenhowermemorial.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "epls.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "espanol.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "esrs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "faca.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "facadatabase.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fai.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fapiis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "faq.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fbo.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedbizopps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedforms.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedidcard.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fedinfo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedramp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedrealestate.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedrooms.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fido.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "firstgov.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fmi.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "forms.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fpds.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fpki-lab.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fpki.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "frpp-pa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fsd.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fsrs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "gobierno.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gobiernousa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "govsales.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "gsa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "gsaadvantage.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "gsaauctions.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "gsadvantage.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gsaig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gsaxcess.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "howto.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "idmanagement.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "info.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jobcenter.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "kids.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "learnperformance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "myusa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nbrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "networx.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nonprofit.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "partner4solutions.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pclob.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "performance.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "pic.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ppirs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ptt.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "realestatesales.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "realpropertyprofile.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "reginfo.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "rocis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sam.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sandbox.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "section508.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "seniors.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sftool.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "strategicsourcing.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "supportthevoter.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "transparency.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "unitedstates.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "us.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usagov.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usaperformance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscirf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usgovernment.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usip.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vef.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "vitm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "browsetopics.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "congressionaldirectory.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "congressionalrecord.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ecfr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdlp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fdsys.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalregister.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedreg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fmshrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "govinfo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gpo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gpoaccess.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "housecalendar.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ofr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "openworld.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "presidentialdocuments.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "senatecalendar.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "stopfakes.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscapitolpolice.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usccr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscode.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usgovernmentmanual.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "welcometousa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "truman.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "imls.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "iaf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bbg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ibb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "voa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jamesmadison.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lsc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "africanamericanhistorymonth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americanmemory.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americaslibrary.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americasstory.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "americastory.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "asianpacificheritage.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "capitolhill.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "commission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "congress.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "copyright.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "crs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "digitalpreservation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "digitalstewardship.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "digitizationguidelines.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hill.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hispanicheritagemonth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jewishheritage.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jewishheritagemonth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "law.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lctl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "legislative.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "legislativebranch.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "library-of-congress.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "libraryofcongress.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "literacy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "loc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "locimages.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "locstore.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "loctps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "myloc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nativeamericanheritagemonth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ndsa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "primarysources.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "read.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "section108.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "teachingprimarysources.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "teachingwithprimarysources.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "thomas.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "unitedstatescongress.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscongress.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wdl.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "womenshistorymonth.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "worlddigitallibrary.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mmc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "macpac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "medpac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mspb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mcc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ecr.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "udall.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "globe.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nasa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nswp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scijinks.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usgeo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "9-11commission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "911commission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "archives.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "clintonlibrary.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "emergency-federal-register.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fcic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fordlibrarymuseum.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "frc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "georgewbushlibrary.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "history.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jimmycarterlibrary.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nara-at-work.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nara.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nixonlibrary.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ogis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ourdocuments.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "reaganlibrary.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "recordsmanagement.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wartimecontracting.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "webharvest.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncpc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncd.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mycreditunion.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ncua.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "arts.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nea.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "humanities.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "neh.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pcah.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "wethepeople.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nga.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nigc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nlrb.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "nmb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nano.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "arctic.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "arcticgas.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nsf.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "research.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sbir.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "science360.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usap.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "lps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ntsb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "itrd.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nitrd.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nrc-gateway.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nrc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "oshrc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "integrity.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "applicationmanager.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "chcoc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "e-qip.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "employeeexpress.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "feb.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "federaljobs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedjobs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedshirevets.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "fegli.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fsafeds.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "golearn.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "governmentjobs.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hru.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "lmrcouncil.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "opm.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "pac.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pmf.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "telework.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "unlocktalent.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usajobs.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usalearning.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usastaffing.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "opic.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pbgc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "prc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "rrb.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "educationjobsfund.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalaccountability.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalreporting.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federaltransparency.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ratb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "recovery.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "404.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "investor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sec.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sss.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "business.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "disastercontractingassistance.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "hsa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nwbc.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "onlinewbc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sba.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "smallbusiness.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "womenbiz.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "itis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "segurosocial.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "socialsecurity.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ssa.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "socialsecurityadvisoryboard.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ssab.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "stennis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tva.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tvaoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tsc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ptf.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "bankruptcy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cavc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dcsc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fedcir.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalcourts.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalprobation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "federalrules.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fjc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "judicialconference.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "nmcourt.fed.us",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pacer.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "sc-us.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scinet-test.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scinet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "scus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "supreme-court.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "supremecourt.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "supremecourtus.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usbankruptcy.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscavc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscourts.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscva.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usprobation.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ussc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ustaxcourt.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "vetapp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "aoc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "capital.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "capitol.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "capitolflags.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cbo.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cbonews.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cecc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "china-commission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "chinacommission.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "citizencosponsors.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "citizens.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cosponsor.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "csce.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "democraticleader.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "democraticwhip.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "democrats.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dems.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "eseclab.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fasab.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gao.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gaonet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gop.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gopconference.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "gopleader.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "house.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "housecommunications.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "housedemocrats.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "housedems.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "houselive.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "housenewsletters.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jct.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "listenstoyou.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "majorityleader.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "majoritywhip.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pdbcecc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ppdcecc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "republicans.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "senate.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "senaterestaurants.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "speaker.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "taxreform.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usbg.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscapital.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscapitol.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscapitolvisitorcenter.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscvc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "visitthecapital.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "visitthecapitol.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "worldwar1centennial.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "access-board-members.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "access-board.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "ushmm.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usitc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "osc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "oscnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "peacecore.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "peacecorp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "peacecorps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "mail.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "postoffice.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "purchasing.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uspis.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usps.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "childreninadversity.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "dfafacts.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "feedthefuture.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "fightingmalaria.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "jmc.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "neglecteddiseases.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ofda.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "oti.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "pmi.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usaid.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "usaidallnet.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "volunteersforprosperity.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uscp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "chemsafety.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "csb.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "safetyvideos.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "cfa.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "peacecorpsoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "uspsoig.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "tda.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ustda.gov",
+      "Participates in Analytics": "True"
+    },
+    {
+      "Domain": "carboncyclescience.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "globalchange.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ipcc-wg2.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usgcrp.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "oge.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usoge.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "ich.gov",
+      "Participates in Analytics": "False"
+    },
+    {
+      "Domain": "usich.gov",
+      "Participates in Analytics": "False"
+    }
+  ]
+}
