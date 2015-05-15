@@ -60,6 +60,7 @@ def run():
       json_row = {}
       for i, cell in enumerate(row):
         json_row[headers[i]] = cell
+      json_row['Branch'] = domains[domain]['branch']
 
       https.append(json_row)
       domains[domain]['https'] = json_row
@@ -82,9 +83,16 @@ def run():
       if not domains.get(domain):
         continue
 
+      if not domains[domain].get('https'):
+        continue
+
       json_row = {}
       for i, cell in enumerate(row):
         json_row[headers[i]] = cell
+
+      json_row['Redirect'] = domains[domain]['https']['Redirect']
+      json_row['Live'] = domains[domain]['https']['Live']
+      json_row['Branch'] = domains[domain]['branch']
 
       analytics.append(json_row)
       domains[domain]['analytics'] = json_row
