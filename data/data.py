@@ -17,10 +17,15 @@
 ###
 
 import csv
+import json
 
 
 def run():
   domains = {}
+  https = []
+  analytics = {}
+
+
 
   # load in base data from the .gov domain list
 
@@ -41,7 +46,41 @@ def run():
         'branch': branch
       }
 
-  print(domains)
+  headers = []
+  with open("inspect.csv", newline='') as csvfile:
+    for row in csv.reader(csvfile):
+      if (row[0].lower() == "domain"):
+        headers = row
+        continue
+
+      domain = row[0].lower()
+      if not domains.get(domain):
+        continue
+
+      json_row = {}
+      for i, cell in enumerate(row):
+        json_row[headers[i]] = cell
+
+      https.append(json_row)
+      domains[domain]['https'] = json_row
+
+
+  f = open("../assets/data/tables/https-domains.json", 'w', encoding='utf-8')
+  f.write(json_for({'data': https}))
+  f.close()
+
+
+def json_for(object):
+  return json.dumps(object, sort_keys=True,
+                    indent=2, default=format_datetime)
+
+def format_datetime(obj):
+    if isinstance(obj, datetime.date):
+        return obj.isoformat()
+    elif isinstance(obj, str):
+        return obj
+    else:
+        return None
 
 
 def branch_for(agency):
