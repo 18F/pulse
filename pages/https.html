@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /https/
+id: https
+title: "HTTPS in the federal government"
+description: "How federal government domains are doing at deploying HTTPS."
+---
+
+<header class="chart">
+
+  <div class="donut">
+    <div class="https_chart"></div>
+    {% include https_results.html %}
+  </div>
+
+  <div class="description">
+    <h1>Secure HTTP (HTTPS)</h1>
+    <p>
+       This data measures whether federal domains support the HTTPS protocol (<code>https://</code>), and the strength of that support. HTTPS provides a secure connection across the internet, and is becoming the new baseline for public web services. As part of this shift, the U.S. federal government is in the process of transitioning <a href="https://https.cio.gov">entirely to HTTPS</a>.
+    </p>
+  </div>
+
+</header>
+
+<section id="main-content" class="white-bkg">
+  <div class="wrapper">
+    <table>
+        <thead>
+            <th>Domain</th>
+            <th>HTTPS</th>
+            <th>HTTPS Behavior</th>
+            <th>HSTS</th>
+        </thead>
+    </table>
+  </div>
+</section>
+
+<script src="/assets/js/https.js"></script>

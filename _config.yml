@@ -1,0 +1,34 @@
+# Site metadata.
+
+name: Pulse
+title: "The pulse of the federal .gov space"
+description: "How federal government domains are meeting best practices on the web."
+
+
+# Markdown configuration.
+highlighter: rouge
+markdown: redcarpet
+redcarpet:
+  syntax_highlighter: rouge
+  extensions:
+  - smart
+  - with_toc_data
+
+# Jekyll compilation.
+exclude:
+- ".ruby-version"
+- ".python-version"
+- ".jekyll-metadata"
+- ".sass-cache"
+- ".gitignore"
+- ".travis.yml"
+- "manifest.yml"
+- todo.txt
+- Gemfile
+- Gemfile.lock
+- Makefile
+- vendor
+- lib
+- README.md
+- CONTRIBUTING.md
+- LICENSE.md

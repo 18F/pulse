@@ -1,0 +1,27 @@
+---
+layout: default
+id: home
+permalink: /
+---
+<div class="hero">
+	<h2>{{ site.name }}</h2>
+	<h3>{{ site.description }}</h3>
+</div>
+
+<!-- POSSIBLE TODO: Modularize the code so that we have one donut chart file to rule them all. Vars can be passed in to change the values represented. -->
+<div id="results">
+  <div class="https">
+  	<div class="https_chart"
+      data-width="287"
+    ></div>
+  	{% include https_results.html %}
+    <a href="/https/" class="button">View HTTPS Results</a>
+  </div>
+  <div class="dap">
+  	<div class="dap_chart"
+      data-width="287"
+    ></div>
+  	{% include dap_results.html %}
+    <a href="/analytics/" class="button">View Analytics Results</a>
+  </div>
+</div>
