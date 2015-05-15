@@ -22,6 +22,8 @@ $(document).ready(function () {
       var domain = domains[i];
 
       // TODO: Filter out non-exec domains.
+      // TODO: Filter out non-live domains.
+      // TODO: Filter out redirect domains.
 
       prepared.push(domain);
     }
