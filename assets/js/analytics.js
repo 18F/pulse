@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     {
       "Domain": "abandonedmines.gov",
-      "Participating": "False"
+      "Participates in Analytics": "False"
     }
   */
 
@@ -21,7 +21,16 @@ $(document).ready(function () {
     for (var i=0; i<domains.length; i++) {
       var domain = domains[i];
 
-      // TODO: Filter out non-exec domains.
+      // TODO: Move this to the data preparation stage.
+      // Filter step:
+      if (domain["Live"] == "False")
+        continue;
+
+      if (domain["Redirect"] == "True")
+        continue;
+
+      if (domain["Branch"] != "executive")
+        continue;
 
       prepared.push(domain);
     }
@@ -36,7 +45,7 @@ $(document).ready(function () {
 
       columns: [
         {"data":"Domain"},
-        {"data":"Participating"}
+        {"data":"Participates in Analytics"}
       ],
 
       dom: "lrtip"
