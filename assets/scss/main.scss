@@ -22,16 +22,28 @@ body {
   background-color: $medium-purple;
 }
 
+a {
+  color: white;
+  font-weight: 900;
+  &:hover, &:focus {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
 .button {
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid white;
   color: white;
-  &:hover {
+  &:hover, &:focus {
     background-color: white;
+    color: $medium-purple;
+    text-decoration: none;
   }
 }
+
 
 .wrapper {
   @include outer-container;
@@ -42,7 +54,7 @@ body {
   
   .disclaimer {
     background-color: $dark-purple;
-    padding: 10px 20px;
+    padding: 10px 40px;
     color: white;
     text-align: center;
     .us-official {
