@@ -32,7 +32,7 @@
         .append("g")
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
 
-    d3.csv("../assets/data/aggregateDAP.csv", function (error, data) {
+    d3.csv("../assets/data/analytics.csv", function (error, data) {
 
         var g = chart.selectAll(".arc")
             .data(pie(data))
@@ -41,7 +41,7 @@
 
         g.append("path")
             .style("fill", function (d) {
-            return color(d.data.name);
+            return color(d.data.status);
         })
             .transition().delay(function (d, i) {
             return i * 400;
@@ -61,7 +61,7 @@
             .attr("fill", "white")
         // TODO: Value below needs to get pulled in dynamically
         .text(function (d) {
-            return "33%";
+            return "" + data[0].value + "%";
         });
 
         g.append("text")
