@@ -186,6 +186,14 @@ body {
       }
       &.white-bkg {
         background-color: white;
+        a { 
+          color: $light-purple;
+          font-weight: 900;
+          &:hover, &:focus {
+            color: $light-purple;
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

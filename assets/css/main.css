@@ -360,6 +360,12 @@ body {
     color: white; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
   background-color: white; }
+  #analytics #content #main-content.white-bkg a, #https #content #main-content.white-bkg a, #about #content #main-content.white-bkg a {
+    color: #AB67E8;
+    font-weight: 900; }
+    #analytics #content #main-content.white-bkg a:hover, #analytics #content #main-content.white-bkg a:focus, #https #content #main-content.white-bkg a:hover, #https #content #main-content.white-bkg a:focus, #about #content #main-content.white-bkg a:hover, #about #content #main-content.white-bkg a:focus {
+      color: #AB67E8;
+      text-decoration: underline; }
 
 #about .wrapper header {
   padding: 40px 0; }
