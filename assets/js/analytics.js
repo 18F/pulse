@@ -10,8 +10,11 @@ $(document).ready(function () {
     Incoming and outgoing rows are the same:
 
     {
-      "Domain": "abandonedmines.gov",
-      "Participates in Analytics": "False"
+      "Branch": "executive",
+      "Domain": "acus.gov",
+      "Live": "True",
+      "Participates in Analytics": "False",
+      "Redirect": "False"
     }
   */
 
