@@ -205,7 +205,7 @@ body {
 
 // dataTables
 .dataTables_wrapper {
-  padding: 40px 0;
+  padding: 60px 0 40px;
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
@@ -224,4 +224,31 @@ body {
       background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-purple;
     }
   }
+  .dataTables_filter {
+    font-size: 1.1em;
+    label { float: right; }
+    input {   
+      display: inline-block;
+      width: auto;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      height: 40px;
+      width: 400px;
+      box-shadow: none; 
+      font-size: 1.1em;
+      font-weight: 200;
+    }
+  }
+  table.dataTable {
+    padding: 20px 0;
+    th, td {
+      border-bottom: 2px solid #EEE !important;
+      padding: 8px 0 !important;
+    }
+    &.no-footer {
+      border: none;
+    }
+  }
 }
+
+

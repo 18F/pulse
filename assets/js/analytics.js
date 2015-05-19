@@ -11,7 +11,12 @@ $(document).ready(function () {
       columns: [
         {"data":"Domain"},
         {"data":"Participates in DAP?"}
-      ]
+      ],
+
+      language: {
+        searchPlaceholder: "Start typing..."
+      },
+
     });
   };
 

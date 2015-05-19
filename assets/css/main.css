@@ -370,7 +370,7 @@ body {
   padding-bottom: 40px; }
 
 .dataTables_wrapper {
-  padding: 40px 0; }
+  padding: 60px 0 40px; }
   .dataTables_wrapper .dataTables_length {
     font-size: 1.1em;
     font-weight: 200; }
@@ -387,5 +387,26 @@ body {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #450081; }
+  .dataTables_wrapper .dataTables_filter {
+    font-size: 1.1em; }
+    .dataTables_wrapper .dataTables_filter label {
+      float: right; }
+    .dataTables_wrapper .dataTables_filter input {
+      display: inline-block;
+      width: auto;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      height: 40px;
+      width: 400px;
+      box-shadow: none;
+      font-size: 1.1em;
+      font-weight: 200; }
+  .dataTables_wrapper table.dataTable {
+    padding: 20px 0; }
+    .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
+      border-bottom: 2px solid #EEE !important;
+      padding: 8px 0 !important; }
+    .dataTables_wrapper table.dataTable.no-footer {
+      border: none; }
 
 /*# sourceMappingURL=main.css.map */

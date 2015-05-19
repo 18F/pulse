@@ -14,7 +14,12 @@ $(document).ready(function () {
         {"data":"HTTPS Enabled?"},
         {"data":"HTTPS Enforced?"},
         {"data":"Strict Transport Security (HSTS)"}
-      ]
+      ],
+
+      language: {
+        searchPlaceholder: "Start typing..."
+      },
+
     });
   };
 
