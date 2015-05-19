@@ -51,7 +51,7 @@ a {
 
 // _includes/header.html
 .site-header {
-  
+
   .disclaimer {
     background-color: $dark-purple;
     padding: 10px 40px;
@@ -149,15 +149,15 @@ a {
       @include outer-container;
       color: white;
       padding: 30px 0;
-      p { 
-        margin-top: 12px; 
+      p {
+        margin-top: 12px;
       }
-      
-      a { 
+
+      a {
         font-weight: bold;
         color: white;
       }
-      
+
       .donut {
         @include span-columns(3);
 
@@ -200,7 +200,7 @@ a {
       }
       &.white-bkg {
         background-color: white;
-        a { 
+        a {
           color: $light-purple;
           font-weight: 900;
           &:hover, &:focus {
@@ -238,9 +238,10 @@ a {
       border: none;
       display: inline-block;
       color: white;
-      width: 40px;
+      width: 60px;
       border-radius: 0px;
       padding: 0 8px;
+      margin: 0 5px;
       height: 30px;
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -252,14 +253,14 @@ a {
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
-    input {   
+    input {
       display: inline-block;
       width: auto;
       border: 1px solid #CCC;
       border-radius: 0;
       height: 40px;
       width: 400px;
-      box-shadow: none; 
+      box-shadow: none;
       font-size: 1.1em;
       font-weight: 200;
     }
@@ -275,7 +276,7 @@ a {
     }
     &.agency {
       td { padding: 15px 0 !important; }
-      .progress-bar-indication {  
+      .progress-bar-indication {
         background-color: #CCC;
         border-radius: 20px;
         width: 70%;

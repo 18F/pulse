@@ -395,9 +395,10 @@ a {
       border: none;
       display: inline-block;
       color: white;
-      width: 40px;
+      width: 60px;
       border-radius: 0px;
       padding: 0 8px;
+      margin: 0 5px;
       height: 30px;
       -webkit-appearance: none;
       -moz-appearance: none;
