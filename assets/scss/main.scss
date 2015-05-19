@@ -22,16 +22,28 @@ body {
   background-color: $medium-purple;
 }
 
+a {
+  color: white;
+  font-weight: 900;
+  &:hover, &:focus {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
 .button {
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid white;
   color: white;
-  &:hover {
+  &:hover, &:focus {
     background-color: white;
+    color: $medium-purple;
+    text-decoration: none;
   }
 }
+
 
 .wrapper {
   @include outer-container;
@@ -39,23 +51,22 @@ body {
 
 // _includes/header.html
 .site-header {
+  
   .disclaimer {
     background-color: $dark-purple;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 40px;
     color: white;
-    border-bottom: 1px solid $medium-purple;
-  }
-
-  .us-official {
-    background-color: $dark-purple;
-    padding: 10px 0;
     text-align: center;
-    color: white;
+    .us-official {
+      margin-left: 177px;
+    }
+    .alpha {
+      float: right;
+    }
   }
 
   > nav {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $dark-purple;
 
     #main-nav {
       @include outer-container;
@@ -179,9 +190,12 @@ body {
           padding: 30px 0;
           font-size: 1.5em;
         }
-        a {
+        a.tab {
           background-color: $medium-purple;
           color: white;
+          &:hover, &:focus {
+            color: white;
+          }
         }
       }
       &.white-bkg {
