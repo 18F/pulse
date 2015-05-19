@@ -224,17 +224,15 @@ body {
 
 .site-header .disclaimer {
   background-color: #330060;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 20px;
   color: white;
-  border-bottom: 1px solid #450081; }
-.site-header .us-official {
-  background-color: #330060;
-  padding: 10px 0;
-  text-align: center;
-  color: white; }
+  text-align: center; }
+  .site-header .disclaimer .us-official {
+    margin-left: 177px; }
+  .site-header .disclaimer .alpha {
+    float: right; }
 .site-header > nav {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #330060; }
   .site-header > nav #main-nav {
     max-width: 68em;
     margin-left: auto;
