@@ -32,7 +32,7 @@
         .append("g")
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
 
-    d3.csv("../assets/data/aggregateHTTPS.csv", function (error, data) {
+    d3.csv("../assets/data/https.csv", function (error, data) {
 
         var g = chart.selectAll(".arc")
             .data(pie(data))
@@ -61,7 +61,7 @@
             .attr("fill", "white")
         // TODO: Value below needs to get pulled in dynamically
         .text(function(d)
-            { return "34" + "%";
+            { return "" + data[0].value + "%";
         });
 
         g.append("text")

@@ -23,7 +23,7 @@ import os
 ## Output dirs.
 
 TABLE_DATA = "../assets/data/tables"
-STATS_DATA = "../_data"
+STATS_DATA = "../assets/data"
 
 
 ## global data
@@ -43,16 +43,18 @@ https_agencies = []
 analytics_agencies = []
 
 # Stats data as prepared for direct rendering.
-stats = {}
+https_stats = []
+analytics_stats = []
+
+###
+# Main task flow.
 
 def run():
   load_data()
-  # print(json_for(agency_data))
-  filter_domains()
-  # group_domains()
-  # group_agencies()
+  process_domains()
+  process_stats()
   save_tables()
-  # save_stats()
+  save_stats()
 
 
 # Reads in input CSVs.
@@ -140,7 +142,7 @@ def load_data():
 
 # Given the domain data loaded in from CSVs, initialize the
 # main domains arrays with filtered data.
-def filter_domains():
+def process_domains():
 
   for domain in domains:
     if evaluating_for_https(domain):
@@ -273,15 +275,39 @@ def analytics_row_for(domain):
 
   return row
 
+# Make a tiny CSV about each stat, to be downloaded for D3 rendering.
+def process_stats():
+  global https_stats, analytics_stats
 
-# Currently unused.
-def boolean_nice(value):
-  if value == "True":
-    return "Yes"
-  elif value == "False":
-    return "No"
-  else:
-    return value
+  total = len(https_domains)
+  enabled = 0
+  for row in https_domains:
+    if row['HTTPS Enabled?'] != "No":
+      enabled += 1
+  pct = percent(enabled, total)
+
+  https_stats = [
+    ['status', 'value'],
+    ['active', pct],
+    ['inactive', 100-pct]
+  ]
+
+  total = len(analytics_domains)
+  enabled = 0
+  for row in analytics_domains:
+    if row['Participates in DAP?'] == "True":
+      enabled += 1
+  pct = percent(enabled, total)
+
+  analytics_stats = [
+    ['status', 'value'],
+    ['active', pct],
+    ['inactive', 100-pct]
+  ]
+
+
+def percent(num, denom):
+  return round((num / denom) * 100)
 
 # Given the rows we've made, save them to disk.
 def save_tables():
@@ -295,7 +321,18 @@ def save_tables():
 
 # Given the rows we've made, save some top-level #'s to disk.
 def save_stats():
-  pass
+  f = open(os.path.join(STATS_DATA, "https.csv"), 'w', newline='')
+  writer = csv.writer(f)
+  for row in https_stats:
+    writer.writerow(row)
+  f.close()
+
+  f = open(os.path.join(STATS_DATA, "analytics.csv"), 'w', newline='')
+  writer = csv.writer(f)
+  for row in analytics_stats:
+    writer.writerow(row)
+  f.close()
+
 
 
 ### utilities
