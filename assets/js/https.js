@@ -16,10 +16,6 @@ $(document).ready(function () {
         {"data":"Strict Transport Security (HSTS)"}
       ],
 
-      language: {
-        searchPlaceholder: "Start typing..."
-      },
-
       "oLanguage": {
         "oPaginate": {
           "sPrevious": "<<",

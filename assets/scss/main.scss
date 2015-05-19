@@ -251,6 +251,35 @@ body {
     &.no-footer {
       border: none;
     }
+    &.agency {
+      td { padding: 15px 0 !important; }
+      .progress-bar-indication {  
+        background-color: #CCC;
+        border-radius: 20px;
+        width: 70%;
+
+        > .meter {
+          @include box-sizing(border-box);
+          background-color: $light-purple;
+          background-repeat: repeat-x;
+          background-size: 40px 40px;
+          border-bottom-right-radius: 0;
+          border-radius: 20px 0 0 20px;
+          border-top-right-radius: 0;
+          margin: 15px 0;
+          display: block;
+          height: 100%;
+          width: 60%;
+        }
+
+        p {
+          font-weight: 900;
+          font-size: 0.875em;
+          position: relative;
+          top: -18px;
+        }
+      }
+    }
   }
   .dataTables_info {
     padding-top: 0 !important;

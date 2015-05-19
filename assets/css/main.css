@@ -410,6 +410,31 @@ body {
       padding: 8px 0 !important; }
     .dataTables_wrapper table.dataTable.no-footer {
       border: none; }
+    .dataTables_wrapper table.dataTable.agency td {
+      padding: 15px 0 !important; }
+    .dataTables_wrapper table.dataTable.agency .progress-bar-indication {
+      background-color: #CCC;
+      border-radius: 20px;
+      width: 70%; }
+      .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #AB67E8;
+        background-repeat: repeat-x;
+        background-size: 40px 40px;
+        border-bottom-right-radius: 0;
+        border-radius: 20px 0 0 20px;
+        border-top-right-radius: 0;
+        margin: 15px 0;
+        display: block;
+        height: 100%;
+        width: 60%; }
+      .dataTables_wrapper table.dataTable.agency .progress-bar-indication p {
+        font-weight: 900;
+        font-size: 0.875em;
+        position: relative;
+        top: -18px; }
   .dataTables_wrapper .dataTables_info {
     padding-top: 0 !important; }
   .dataTables_wrapper .dataTables_paginate a.paginate_button {

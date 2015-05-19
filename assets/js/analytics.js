@@ -13,10 +13,6 @@ $(document).ready(function () {
         {"data":"Participates in DAP?"}
       ],
 
-      language: {
-        searchPlaceholder: "Start typing..."
-      },
-
       "oLanguage": {
         "oPaginate": {
           "sPrevious": "<<",
