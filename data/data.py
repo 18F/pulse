@@ -18,14 +18,31 @@
 
 import csv
 import json
+import os
 
+## Output dirs.
+
+TABLE_DATA = "../assets/data/tables"
+STATS_DATA = "../_data"
+
+
+## global data
+
+domains = {}
+https = []
+analytics = []
 
 def run():
-  domains = {}
-  https = []
-  analytics = []
+  global domains, https, analytics
+
+  load_data()
+  save_tables()
+  save_stats()
 
 
+
+# Reads in input CSVs.
+def load_data():
 
   # load in base data from the .gov domain list
 
@@ -65,12 +82,6 @@ def run():
       https.append(json_row)
       domains[domain]['https'] = json_row
 
-
-  f = open("../assets/data/tables/https-domains.json", 'w', encoding='utf-8')
-  f.write(json_for({'data': https}))
-  f.close()
-
-
   # Now, analytics measurement.
   headers = []
   with open("analytics.csv", newline='') as csvfile:
@@ -83,6 +94,7 @@ def run():
       if not domains.get(domain):
         continue
 
+      # If it didn't appear in the inspect data, skip it, we need this.
       if not domains[domain].get('https'):
         continue
 
@@ -97,11 +109,20 @@ def run():
       analytics.append(json_row)
       domains[domain]['analytics'] = json_row
 
+def save_tables():
+  https_path = os.path.join(TABLE_DATA, "https-domains.json")
+  https_data = json_for({'data': https})
+  write(https_data, https_path)
 
-  f = open("../assets/data/tables/analytics-domains.json", 'w', encoding='utf-8')
-  f.write(json_for({'data': analytics}))
-  f.close()
+  analytics_path = os.path.join(TABLE_DATA, "analytics-domains.json")
+  analytics_data = json_for({'data': analytics})
+  write(analytics_data, analytics_path)
 
+def save_stats():
+  pass
+
+
+### utilities
 
 def json_for(object):
   return json.dumps(object, sort_keys=True,
@@ -134,6 +155,13 @@ def branch_for(agency):
   else:
     return "executive"
 
+def write(content, destination):
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
+    f = open(destination, 'w', encoding='utf-8')
+    f.write(content)
+    f.close()
+
+### Run when executed.
 
 if __name__ == '__main__':
     run()
