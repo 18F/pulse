@@ -151,7 +151,10 @@ def filter_domains():
 
 
 def evaluating_for_https(domain):
-  return (domain_data[domain].get('inspect') is not None)
+  return (
+    (domain_data[domain].get('inspect') is not None) and
+    (domain_data[domain]['inspect']["Live"] == "True")
+  )
 
 def evaluating_for_analytics(domain):
   return (

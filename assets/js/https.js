@@ -9,10 +9,6 @@ $(document).ready(function () {
 
     Filter out some rows, transform input rows to output rows.
 
-    Filter out rows where:
-
-      - "Live" is false
-
     Example of incoming row:
     {
       "Domain": "consumerfinancial.gov",
@@ -55,11 +51,6 @@ $(document).ready(function () {
     var prepared = [];
     for (var i=0; i<domains.length; i++) {
       var domain = domains[i];
-
-      // TODO: Move this to the data preparation stage.
-      // Filter step:
-      if (domain["Live"] == "False")
-        continue;
 
       // TODO: Maybe this should also be in the data pipeline, not JS.
       // Transform step:
