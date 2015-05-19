@@ -10,7 +10,7 @@ $(document).ready(function () {
 
       columns: [
         {"data":"Domain"},
-        {"data":"Participates in DAP"}
+        {"data":"Participates in DAP?"}
       ]
     });
   };
