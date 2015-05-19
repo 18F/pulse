@@ -17,6 +17,13 @@ $(document).ready(function () {
         searchPlaceholder: "Start typing..."
       },
 
+      "oLanguage": {
+        "oPaginate": {
+          "sPrevious": "<<",
+          "sNext": ">>"
+        }
+      },
+
     });
   };
 

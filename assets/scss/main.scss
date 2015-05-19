@@ -249,6 +249,30 @@ body {
       border: none;
     }
   }
+  .dataTables_info {
+    padding-top: 0 !important;
+  }
+  .dataTables_paginate {
+    a.paginate_button {
+      padding: 0 8px !important;
+      font-size: 0.875em;
+      border: none !important;
+      &.current {
+        background: $medium-purple !important;
+        color: white !important;
+        &:hover {
+          color: white !important;
+        }
+      }
+      &:hover, &:focus {
+        background: $medium-purple !important;
+        color: white !important;
+      }
+      &.disabled {
+        &:hover, &:focus {
+          background: transparent !important;
+        }
+      }
+    }
+  }
 }
-
-
