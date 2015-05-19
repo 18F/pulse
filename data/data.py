@@ -166,18 +166,124 @@ def evaluating_for_analytics(domain):
     (domain_data[domain]['branch'] == "executive")
   )
 
-def https_row_for(domain):
-  return dict.copy(domain_data[domain]['inspect'])
+'''
+Given the data we have about a domain, what's the HTTPS row?
 
+{
+  "Domain": [domain],
+  "HTTPS Enabled?": [
+    "No" | "Yes (with issues)" | "Yes"
+  ],
+  "HTTPS Enforced?": [
+    "No" | "Yes" | "Yes (Strict)"
+  ],
+  "HSTS": [
+    "No" | "Yes (Partial)" | "Yes (Complete)"
+  ]
+}
+'''
+def https_row_for(domain):
+  inspect = domain_data[domain]['inspect']
+  row = {"Domain": domain}
+
+  ###
+  # Is it there? There for most clients? Not there?
+
+  if (inspect["Valid HTTPS"] == "True"):
+    https = "Yes"
+  elif (inspect["HTTPS Bad Chain"] == "True"):
+    https = "Yes (with issues)"
+  else:
+    https = "No"
+
+  row["HTTPS Enabled?"] = https;
+
+
+  ###
+  # Characterize the HTTPS setup on the domain.
+
+  # It's a "No" if HTTPS isn't present.
+  if (https == "No"):
+    behavior = "No"
+
+  else:
+    # It's a "No" if HTTPS redirects down to HTTP.
+    if (inspect["Downgrades HTTPS"] == "True"):
+      behavior = "No"
+
+    # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
+    # *and* that HTTP eventually redirects to HTTPS.
+    elif (
+      (inspect["Strictly Forces HTTPS"] == "True") and
+      (inspect["Defaults to HTTPS"] == "True")
+    ):
+      behavior = "Yes (Strict)"
+
+    # "Yes" means HTTP eventually redirects to HTTPS.
+    elif (
+      (inspect["Strictly Forces HTTPS"] == "False") and
+      (inspect["Defaults to HTTPS"] == "True")
+    ):
+      behavior = "Yes";
+
+    # Either both are False, or just 'Strict Force' is True,
+    # which doesn't matter on its own.
+    else:
+      behavior = "No";
+
+  row["HTTPS Enforced?"] = behavior;
+
+
+  ###
+  # Characterize the presence and completeness of HSTS.
+
+  # Without HTTPS there can be no HSTS.
+  if (https == "No"):
+    hsts = "No"
+
+  else:
+
+    # HTTPS is there, but no HSTS header.
+    if (inspect["HSTS"] == "False"):
+      hsts = "No"
+
+    # "Complete" means HSTS preload ready (long max-age).
+    elif (inspect["HSTS Preload Ready"] == "True"):
+      hsts = "Yes (Complete)"
+
+    # This kind of "Partial" means `includeSubdomains`, but no `preload`.
+    elif (inspect["HSTS All Subdomains"] == "True"):
+      hsts = "Yes (Partial)"
+
+    # This kind of "Partial" means HSTS, but not on subdomains.
+    else: # if (inspect["HSTS"] == "True"):
+      hsts = "Yes (Partial)"
+
+  row["Strict Transport Security (HSTS)"] = hsts;
+
+  return row
+
+# Given the data we have about a domain, what's the DAP row?
 def analytics_row_for(domain):
   row = dict.copy(domain_data[domain]['analytics'])
 
-  # TODO: maybe there's a better way to do this?
-  row['Participates in DAP'] = row['Participates in Analytics']
+  # TODO: maybe there's a better way to rename this column?
+  row['Participates in DAP?'] = row['Participates in Analytics']
   del row["Participates in Analytics"]
 
   return row
 
+
+# Currently unused.
+def boolean_nice(value):
+  if value == "True":
+    return "Yes"
+  elif value == "False":
+    return "No"
+  else:
+    return value
+
+# Given the rows we've made, save them to disk.
 def save_tables():
   https_path = os.path.join(TABLE_DATA, "https-domains.json")
   https_data = json_for({'data': https_domains})
@@ -187,6 +293,7 @@ def save_tables():
   analytics_data = json_for({'data': analytics_domains})
   write(analytics_data, analytics_path)
 
+# Given the rows we've made, save some top-level #'s to disk.
 def save_stats():
   pass
 
