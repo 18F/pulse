@@ -171,9 +171,11 @@ def https_row_for(domain):
 
 def analytics_row_for(domain):
   row = dict.copy(domain_data[domain]['analytics'])
-  row['Redirect'] = domain_data[domain]['inspect']['Redirect']
-  row['Live'] = domain_data[domain]['inspect']['Live']
-  row['Branch'] = domain_data[domain]['branch']
+
+  # TODO: maybe there's a better way to do this?
+  row['Participates in DAP'] = row['Participates in Analytics']
+  del row["Participates in Analytics"]
+
   return row
 
 def save_tables():
