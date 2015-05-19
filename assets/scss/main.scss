@@ -169,8 +169,22 @@ body {
     }
 
     #main-content {
+      .tab-menu {
+        width: 100%;
+        .tab {
+          width: 50%;
+          margin: 0;
+          float: left;
+          text-align: center;
+          padding: 30px 0;
+          font-size: 1.5em;
+        }
+        a {
+          background-color: $medium-purple;
+          color: white;
+        }
+      }
       &.white-bkg {
-        padding: 40px 0;
         background-color: white;
       }
       table {

@@ -346,8 +346,19 @@ body {
       padding-top: 60px; }
       #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
         margin-right: 0; }
+#analytics #content #main-content .tab-menu, #https #content #main-content .tab-menu, #about #content #main-content .tab-menu {
+  width: 100%; }
+  #analytics #content #main-content .tab-menu .tab, #https #content #main-content .tab-menu .tab, #about #content #main-content .tab-menu .tab {
+    width: 50%;
+    margin: 0;
+    float: left;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.5em; }
+  #analytics #content #main-content .tab-menu a, #https #content #main-content .tab-menu a, #about #content #main-content .tab-menu a {
+    background-color: #450081;
+    color: white; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
-  padding: 40px 0;
   background-color: white; }
 #analytics #content #main-content table select, #https #content #main-content table select, #about #content #main-content table select {
   display: inline-block;
