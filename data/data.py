@@ -48,19 +48,24 @@ def load_data():
 
   with open("domains.csv", newline='') as csvfile:
     for row in csv.reader(csvfile):
-      if (not row[0]) or (row[0].lower().startswith("domain")):
+      if row[0].lower().startswith("domain"):
         continue
 
       domain = row[0].lower()
-      # row[1] is just "Federal Agency"
-      # TODO: take in the official full list, but filter out others
+      domain_type = row[1]
       branch = branch_for(row[2])
 
+      # Exclude cities, counties, tribes, etc.
+      if domain_type != "Federal Agency":
+        continue
+
+      # There are a few erroneously marked non-federal domains.
       if branch == "non-federal":
         continue
 
       domains[domain] = {
-        'branch': branch
+        'branch': branch,
+        'agency': row[2]
       }
 
   headers = []
