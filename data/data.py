@@ -159,7 +159,11 @@ def evaluating_for_https(domain):
 def evaluating_for_analytics(domain):
   return (
     (domain_data[domain].get('inspect') is not None) and
-    (domain_data[domain].get('analytics') is not None)
+    (domain_data[domain].get('analytics') is not None) and
+
+    (domain_data[domain]['inspect']["Live"] == "True") and
+    (domain_data[domain]['inspect']["Redirect"] == "False") and
+    (domain_data[domain]['branch'] == "executive")
   )
 
 def https_row_for(domain):
