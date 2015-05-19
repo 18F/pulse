@@ -361,6 +361,8 @@ body {
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
   background-color: white; }
 
+#about .wrapper header {
+  padding: 40px 0; }
 #about .faq-questions {
   padding: 20px 0 50px; }
 #about .faq-answers h3 {

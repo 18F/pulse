@@ -193,6 +193,9 @@ body {
 
 // pages/about.html
 #about {
+  .wrapper header {
+    padding: 40px 0;
+  }
   .faq-questions { padding: 20px 0 50px; }
   .faq-answers {
     h3 {
