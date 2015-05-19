@@ -204,14 +204,23 @@ p {
 body {
   background-color: #450081; }
 
+a {
+  color: white;
+  font-weight: 900; }
+  a:hover, a:focus {
+    color: white;
+    text-decoration: underline; }
+
 .button {
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid white;
   color: white; }
-  .button:hover {
-    background-color: white; }
+  .button:hover, .button:focus {
+    background-color: white;
+    color: #450081;
+    text-decoration: none; }
 
 .wrapper {
   max-width: 68em;
@@ -224,17 +233,15 @@ body {
 
 .site-header .disclaimer {
   background-color: #330060;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 40px;
   color: white;
-  border-bottom: 1px solid #450081; }
-.site-header .us-official {
-  background-color: #330060;
-  padding: 10px 0;
-  text-align: center;
-  color: white; }
+  text-align: center; }
+  .site-header .disclaimer .us-official {
+    margin-left: 177px; }
+  .site-header .disclaimer .alpha {
+    float: right; }
 .site-header > nav {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #330060; }
   .site-header > nav #main-nav {
     max-width: 68em;
     margin-left: auto;
