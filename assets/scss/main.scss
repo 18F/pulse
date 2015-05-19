@@ -183,6 +183,14 @@ a {
       &.white-bkg {
         padding: 40px 0;
         background-color: white;
+        a { 
+          color: $light-purple;
+          font-weight: 900;
+          &:hover, &:focus {
+            color: $light-purple;
+            text-decoration: underline;
+          }
+        }
       }
       table {
         select {
