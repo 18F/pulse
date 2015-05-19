@@ -28,17 +28,31 @@ STATS_DATA = "../_data"
 
 ## global data
 
-domains = {}
-https = []
-analytics = []
+# big dict of everything in input CSVs
+domain_data = {}
+agency_data = {}
+
+# lists of uniquely seen domains and agencies, in order
+domains = []
+agencies = []
+
+# Data as prepared for table input.
+https_domains = []
+analytics_domains = []
+https_agencies = []
+analytics_agencies = []
+
+# Stats data as prepared for direct rendering.
+stats = {}
 
 def run():
-  global domains, https, analytics
-
   load_data()
+  # print(json_for(agency_data))
+  filter_domains()
+  # group_domains()
+  # group_agencies()
   save_tables()
-  save_stats()
-
+  # save_stats()
 
 
 # Reads in input CSVs.
@@ -53,7 +67,8 @@ def load_data():
 
       domain = row[0].lower()
       domain_type = row[1]
-      branch = branch_for(row[2])
+      agency = row[2]
+      branch = branch_for(agency)
 
       # Exclude cities, counties, tribes, etc.
       if domain_type != "Federal Agency":
@@ -63,10 +78,23 @@ def load_data():
       if branch == "non-federal":
         continue
 
-      domains[domain] = {
+      if domain not in domains:
+        domains.append(domain)
+
+      if agency not in agencies:
+        agencies.append(agency)
+        agency_data[agency] = []
+
+      agency_data[agency].append(domain)
+
+      domain_data[domain] = {
         'branch': branch,
-        'agency': row[2]
+        'agency': agency
       }
+
+  # sort uniquely seen domains and agencies
+  domains.sort()
+  agencies.sort()
 
   headers = []
   with open("inspect.csv", newline='') as csvfile:
@@ -76,16 +104,15 @@ def load_data():
         continue
 
       domain = row[0].lower()
-      if not domains.get(domain):
+      if not domain_data.get(domain):
+        # print("[inspect] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
-      json_row = {}
+      dict_row = {}
       for i, cell in enumerate(row):
-        json_row[headers[i]] = cell
-      json_row['Branch'] = domains[domain]['branch']
+        dict_row[headers[i]] = cell
+      domain_data[domain]['inspect'] = dict_row
 
-      https.append(json_row)
-      domains[domain]['https'] = json_row
 
   # Now, analytics measurement.
   headers = []
@@ -96,31 +123,59 @@ def load_data():
         continue
 
       domain = row[0].lower()
-      if not domains.get(domain):
+      if not domain_data.get(domain):
+        # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       # If it didn't appear in the inspect data, skip it, we need this.
-      if not domains[domain].get('https'):
+      if not domain_data[domain].get('inspect'):
+        # print("[analytics] Skipping %s, did not appear in inspect.csv." % domain)
         continue
 
-      json_row = {}
+      dict_row = {}
       for i, cell in enumerate(row):
-        json_row[headers[i]] = cell
+        dict_row[headers[i]] = cell
 
-      json_row['Redirect'] = domains[domain]['https']['Redirect']
-      json_row['Live'] = domains[domain]['https']['Live']
-      json_row['Branch'] = domains[domain]['branch']
+      domain_data[domain]['analytics'] = dict_row
 
-      analytics.append(json_row)
-      domains[domain]['analytics'] = json_row
+# Given the domain data loaded in from CSVs, initialize the
+# main domains arrays with filtered data.
+def filter_domains():
+
+  for domain in domains:
+    if evaluating_for_https(domain):
+      https_domains.append(https_row_for(domain))
+
+    if evaluating_for_analytics(domain):
+      analytics_domains.append(analytics_row_for(domain))
+
+
+def evaluating_for_https(domain):
+  return (domain_data[domain].get('inspect') is not None)
+
+def evaluating_for_analytics(domain):
+  return (
+    (domain_data[domain].get('inspect') is not None) and
+    (domain_data[domain].get('analytics') is not None)
+  )
+
+def https_row_for(domain):
+  return dict.copy(domain_data[domain]['inspect'])
+
+def analytics_row_for(domain):
+  row = dict.copy(domain_data[domain]['analytics'])
+  row['Redirect'] = domain_data[domain]['inspect']['Redirect']
+  row['Live'] = domain_data[domain]['inspect']['Live']
+  row['Branch'] = domain_data[domain]['branch']
+  return row
 
 def save_tables():
   https_path = os.path.join(TABLE_DATA, "https-domains.json")
-  https_data = json_for({'data': https})
+  https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
   analytics_path = os.path.join(TABLE_DATA, "analytics-domains.json")
-  analytics_data = json_for({'data': analytics})
+  analytics_data = json_for({'data': analytics_domains})
   write(analytics_data, analytics_path)
 
 def save_stats():
