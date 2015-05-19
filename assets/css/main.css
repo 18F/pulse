@@ -360,14 +360,6 @@ body {
     color: white; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
   background-color: white; }
-#analytics #content #main-content table select, #https #content #main-content table select, #about #content #main-content table select {
-  display: inline-block;
-  margin: 0 5px;
-  background-color: #450081;
-  color: white;
-  border: 0px;
-  padding: 5px 0px 5px 5px;
-  font-weight: bold; }
 
 #about .faq-questions {
   padding: 20px 0 50px; }
@@ -376,5 +368,24 @@ body {
   margin-bottom: 15px; }
 #about .faq-answers li {
   padding-bottom: 40px; }
+
+.dataTables_wrapper {
+  padding: 40px 0; }
+  .dataTables_wrapper .dataTables_length {
+    font-size: 1.1em;
+    font-weight: 200; }
+    .dataTables_wrapper .dataTables_length select {
+      border: none;
+      display: inline-block;
+      color: white;
+      width: 40px;
+      border-radius: 0px;
+      padding: 0 8px;
+      height: 30px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #450081; }
 
 /*# sourceMappingURL=main.css.map */

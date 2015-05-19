@@ -187,17 +187,6 @@ body {
       &.white-bkg {
         background-color: white;
       }
-      table {
-        select {
-          display: inline-block;
-          margin: 0 5px;
-          background-color: $medium-purple;
-          color: white;
-          border: 0px;
-          padding: 5px 0px 5px 5px;
-          font-weight: bold;
-        }
-      }
     }
   }
 }
@@ -211,5 +200,28 @@ body {
       margin-bottom: 15px;
     }
     li { padding-bottom: 40px; }
+  }
+}
+
+// dataTables
+.dataTables_wrapper {
+  padding: 40px 0;
+  .dataTables_length {
+    font-size: 1.1em;
+    font-weight: 200;
+    select {
+      border: none;
+      display: inline-block;
+      color: white;
+      width: 40px;
+      border-radius: 0px;
+      padding: 0 8px;
+      height: 30px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-purple;
+    }
   }
 }
