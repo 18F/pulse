@@ -311,11 +311,11 @@ def percent(num, denom):
 
 # Given the rows we've made, save them to disk.
 def save_tables():
-  https_path = os.path.join(TABLE_DATA, "https-domains.json")
+  https_path = os.path.join(TABLE_DATA, "https/domains.json")
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
-  analytics_path = os.path.join(TABLE_DATA, "analytics-domains.json")
+  analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
   analytics_data = json_for({'data': analytics_domains})
   write(analytics_data, analytics_path)
 
