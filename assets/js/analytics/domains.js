@@ -4,6 +4,22 @@ $(document).ready(function () {
     renderTable(data.data);
   });
 
+  var names = {
+    dap: {
+      0: "No",
+      1: "Yes"
+    }
+  };
+
+  var display = function(set) {
+    return function(data, type) {
+      if (type == "sort")
+        return data;
+      else
+        return set[data.toString()];
+    }
+  };
+
   var renderTable = function(data) {
     $("table").DataTable({
       data: data,
@@ -11,6 +27,10 @@ $(document).ready(function () {
       columns: [
         {"data": "Domain"},
         {"data": "Participates in DAP?"}
+      ],
+
+      columnDefs: [
+        {render: display(names.dap), targets: 1}
       ],
 
       "oLanguage": {
