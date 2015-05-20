@@ -16,6 +16,9 @@ $(document).ready(function () {
         {data: "Strict Transport Security (HSTS)"}
       ],
 
+      // order by number of domains
+      order: [[1, "desc"]],
+
       columnDefs: [
         {render: Utils.progressBar, targets: 2},
         {render: Utils.progressBar, targets: 3},

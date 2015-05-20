@@ -14,6 +14,9 @@ $(document).ready(function () {
         {"data": "Participates in DAP?"}
       ],
 
+      // order by number of domains
+      order: [[1, "desc"]],
+
       columnDefs: [
         {render: Utils.progressBar, targets: 2}
       ],
