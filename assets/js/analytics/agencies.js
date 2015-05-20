@@ -1,37 +1,31 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
-//   $.get("/assets/data/tables/analytics/agencies.json", function(data) {
-//     renderTable(data.data);
-//   });
+  $.get("/assets/data/tables/analytics/agencies.json", function(data) {
+    renderTable(data.data);
+  });
 
-//   var renderTable = function(data) {
-//     $("table").DataTable({
-//       data: data,
+  var renderTable = function(data) {
+    $("table").DataTable({
+      data: data,
 
-//       columns: [
-//         {"data":"Domain"},
-//         {"data":"Participates in DAP?"}
-//       ],
+      columns: [
+        {"data": "Agency"},
+        {"data": "Number of Domains"},
+        {"data": "Participates in DAP?"}
+      ],
 
-//       "oLanguage": {
-//         "oPaginate": {
-//           "sPrevious": "<<",
-//           "sNext": ">>"
-//         }
-//       },
+      columnDefs: [
+        {render: Utils.progressBar, targets: 2}
+      ],
 
-//     });
-//   };
-
-// });
-
-$(document).ready(function() {
-    $('table').dataTable( {
-        "oLanguage": {
+      "oLanguage": {
         "oPaginate": {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      },
-    } );
+      }
+
+    });
+  };
+
 });

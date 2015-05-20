@@ -10,10 +10,10 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {"data":"Domain"},
-        {"data":"HTTPS Enabled?"},
-        {"data":"HTTPS Enforced?"},
-        {"data":"Strict Transport Security (HSTS)"}
+        {data: "Domain"},
+        {data: "HTTPS Enabled?"},
+        {data: "HTTPS Enforced?"},
+        {data: "Strict Transport Security (HSTS)"}
       ],
 
       "oLanguage": {

@@ -1,41 +1,35 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
-//   $.get("/assets/data/tables/https/agencies.json", function(data) {
-//     renderTable(data.data);
-//   });
+  $.get("/assets/data/tables/https/agencies.json", function(data) {
+    renderTable(data.data);
+  });
 
-//   var renderTable = function(data) {
-//     $("table").DataTable({
+  var renderTable = function(data) {
+    $("table").DataTable({
+      data: data,
 
-//       data: data,
+      columns: [
+        {data: "Agency"},
+        {data: "Number of Domains"},
+        {data: "HTTPS Enabled?"},
+        {data: "HTTPS Enforced?"},
+        {data: "Strict Transport Security (HSTS)"}
+      ],
 
-//       columns: [
-//         {"data":"Agency name" },
-//         {"data":"# of Domains"},
-//         {"data":"% Using HTTPS"},
-//         {"data":"% Strictly Enforcing HTTPS"},
-//         {"data":"% Using HSTS"},
-//       ],
+      columnDefs: [
+        {render: Utils.progressBar, targets: 2},
+        {render: Utils.progressBar, targets: 3},
+        {render: Utils.progressBar, targets: 4}
+      ],
 
-//       "oLanguage": {
-//         "oPaginate": {
-//           "sPrevious": "<<",
-//           "sNext": ">>"
-//         }
-//       },
-
-//     });
-//   };
-
-// })
-
-$(document).ready(function() {
-    $('table').dataTable( {
-        "oLanguage": {
+      "oLanguage": {
         "oPaginate": {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      },
-    } );
+      }
+
+    });
+  };
+
 });

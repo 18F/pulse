@@ -199,7 +199,7 @@ def process_domains():
     if https_total > 0:
       https_agencies.append({
         'Agency': agency,
-        'No. of Domains': https_total,
+        'Number of Domains': https_total,
         LABELS['https']: percent(https_stats['https'], https_total),
         LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
         LABELS['hsts']: percent(https_stats['hsts'], https_total)
@@ -208,7 +208,7 @@ def process_domains():
     if analytics_total > 0:
       analytics_agencies.append({
         'Agency': agency,
-        'No. of Domains': analytics_total,
+        'Number of Domains': analytics_total,
         LABELS['dap']: percent(analytics_stats['dap'], analytics_total)
       })
 

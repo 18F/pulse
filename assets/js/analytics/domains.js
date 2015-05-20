@@ -9,8 +9,8 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {"data":"Domain"},
-        {"data":"Participates in DAP?"}
+        {"data": "Domain"},
+        {"data": "Participates in DAP?"}
       ],
 
       "oLanguage": {
@@ -18,7 +18,7 @@ $(document).ready(function () {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      },
+      }
 
     });
   };
