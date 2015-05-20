@@ -26,6 +26,13 @@ TABLE_DATA = "../assets/data/tables"
 STATS_DATA = "../assets/data"
 
 
+LABELS = {
+  'https': 'HTTPS Enabled?',
+  'https_forced': 'HTTPS Enforced?',
+  'hsts': 'Strict Transport Security (HSTS)',
+  'dap': 'Participates in DAP?'
+}
+
 ## global data
 
 # big dict of everything in input CSVs
@@ -140,16 +147,76 @@ def load_data():
 
       domain_data[domain]['analytics'] = dict_row
 
-# Given the domain data loaded in from CSVs, initialize the
-# main domains arrays with filtered data.
+# Given the domain data loaded in from CSVs, draw conclusions,
+# and filter/transform data into form needed for display.
 def process_domains():
 
+  # First, process all domains.
   for domain in domains:
     if evaluating_for_https(domain):
       https_domains.append(https_row_for(domain))
 
     if evaluating_for_analytics(domain):
       analytics_domains.append(analytics_row_for(domain))
+
+  # Second, process each agency's domains.
+  for agency in agencies:
+
+    https_total = 0
+    https_stats = {
+      'https': 0,
+      'https_forced': 0,
+      'hsts': 0
+    }
+
+    analytics_total = 0
+    analytics_stats = {
+      'dap': 0
+    }
+
+    for domain in agency_data[agency]:
+
+      if evaluating_for_https(domain):
+
+        https_total += 1
+        row = https_row_for(domain)
+
+        # Needs to be enabled, with issues is allowed
+        if row[LABELS['https']] >= 1:
+          https_stats['https'] += 1
+
+        # Needs to be Default or Strict to be 'Yes'
+        if row[LABELS['https_forced']] >= 2:
+          https_stats['https_forced'] += 1
+
+        # Needs to be at least partially present
+        if row[LABELS['hsts']] >= 1:
+          https_stats['hsts'] += 1
+
+      if evaluating_for_analytics(domain):
+
+        analytics_total += 1
+        row = analytics_row_for(domain)
+
+        # Enabled ('Yes')
+        if row[LABELS['dap']] >= 1:
+          analytics_stats['dap'] += 1
+
+    if https_total > 0:
+      https_agencies.append({
+        'Agency': agency,
+        'Number of Domains': https_total,
+        LABELS['https']: percent(https_stats['https'], https_total),
+        LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
+        LABELS['hsts']: percent(https_stats['hsts'], https_total)
+      })
+
+    if analytics_total > 0:
+      analytics_agencies.append({
+        'Agency': agency,
+        'Number of Domains': analytics_total,
+        LABELS['dap']: percent(analytics_stats['dap'], analytics_total)
+      })
 
 
 def evaluating_for_https(domain):
@@ -192,26 +259,25 @@ def https_row_for(domain):
   # Is it there? There for most clients? Not there?
 
   if (inspect["Valid HTTPS"] == "True"):
-    https = "Yes"
+    https = 2 # Yes
   elif (inspect["HTTPS Bad Chain"] == "True"):
-    https = "Yes (with issues)"
+    https = 1 # Yes (with issues) - Considered 'Yes'
   else:
-    https = "No"
+    https = 0 # No
 
   row["HTTPS Enabled?"] = https;
 
 
   ###
-  # Characterize the HTTPS setup on the domain.
+  # Is HTTPS enforced?
 
-  # It's a "No" if HTTPS isn't present.
-  if (https == "No"):
-    behavior = "No"
+  if (https == 0):
+    behavior = -1 # N/A (considered 'No')
 
   else:
-    # It's a "No" if HTTPS redirects down to HTTP.
+    # It's a hard "No" if HTTPS redirects down to HTTP.
     if (inspect["Downgrades HTTPS"] == "True"):
-      behavior = "No"
+      behavior = 0 # Downgrade (considered 'No')
 
     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
     # *and* that HTTP eventually redirects to HTTPS.
@@ -219,21 +285,22 @@ def https_row_for(domain):
       (inspect["Strictly Forces HTTPS"] == "True") and
       (inspect["Defaults to HTTPS"] == "True")
     ):
-      behavior = "Yes (Strict)"
+      behavior = 3 # Yes (Strict)
 
     # "Yes" means HTTP eventually redirects to HTTPS.
     elif (
       (inspect["Strictly Forces HTTPS"] == "False") and
       (inspect["Defaults to HTTPS"] == "True")
     ):
-      behavior = "Yes";
+      behavior = 2 # Yes
 
     # Either both are False, or just 'Strict Force' is True,
     # which doesn't matter on its own.
+    # A "present" is better than a downgrade.
     else:
-      behavior = "No";
+      behavior = 1 # Present (considered 'No')
 
-  row["HTTPS Enforced?"] = behavior;
+  row[LABELS['https_forced']] = behavior;
 
 
   ###
@@ -241,27 +308,27 @@ def https_row_for(domain):
 
   # Without HTTPS there can be no HSTS.
   if (https == "No"):
-    hsts = "No"
+    hsts = -1 # N/A (considered 'No')
 
   else:
 
     # HTTPS is there, but no HSTS header.
     if (inspect["HSTS"] == "False"):
-      hsts = "No"
+      hsts = 0 # No
 
     # "Complete" means HSTS preload ready (long max-age).
     elif (inspect["HSTS Preload Ready"] == "True"):
-      hsts = "Yes (Complete)"
+      hsts = 3 # Complete (considered 'Yes')
 
     # This kind of "Partial" means `includeSubdomains`, but no `preload`.
     elif (inspect["HSTS All Subdomains"] == "True"):
-      hsts = "Yes (Partial)"
+      hsts = 2 # Nearly Complete (considered 'Yes')
 
     # This kind of "Partial" means HSTS, but not on subdomains.
     else: # if (inspect["HSTS"] == "True"):
-      hsts = "Yes (Partial)"
+      hsts = 1 # Partial (considered 'Yes')
 
-  row["Strict Transport Security (HSTS)"] = hsts;
+  row[LABELS['hsts']] = hsts;
 
   return row
 
@@ -270,7 +337,7 @@ def analytics_row_for(domain):
   row = dict.copy(domain_data[domain]['analytics'])
 
   # TODO: maybe there's a better way to rename this column?
-  row['Participates in DAP?'] = row['Participates in Analytics']
+  row[LABELS['dap']] = boolean_nice(row['Participates in Analytics'])
   del row["Participates in Analytics"]
 
   return row
@@ -282,7 +349,8 @@ def process_stats():
   total = len(https_domains)
   enabled = 0
   for row in https_domains:
-    if row['HTTPS Enabled?'] != "No":
+    # Needs to be enabled, with issues is allowed
+    if row[LABELS['https']] >= 1:
       enabled += 1
   pct = percent(enabled, total)
 
@@ -295,7 +363,8 @@ def process_stats():
   total = len(analytics_domains)
   enabled = 0
   for row in analytics_domains:
-    if row['Participates in DAP?'] == "True":
+    # Enabled ('Yes')
+    if row[LABELS['dap']] >= 1:
       enabled += 1
   pct = percent(enabled, total)
 
@@ -309,15 +378,31 @@ def process_stats():
 def percent(num, denom):
   return round((num / denom) * 100)
 
+def boolean_nice(value):
+  if value == "True":
+    return 1
+  elif value == "False":
+    return 0
+  else:
+    return -1
+
 # Given the rows we've made, save them to disk.
 def save_tables():
-  https_path = os.path.join(TABLE_DATA, "https-domains.json")
+  https_path = os.path.join(TABLE_DATA, "https/domains.json")
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
-  analytics_path = os.path.join(TABLE_DATA, "analytics-domains.json")
+  https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
+  https_agencies_data = json_for({'data': https_agencies})
+  write(https_agencies_data, https_agencies_path)
+
+  analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
   analytics_data = json_for({'data': analytics_domains})
   write(analytics_data, analytics_path)
+
+  analytics_agencies_path = os.path.join(TABLE_DATA, "analytics/agencies.json")
+  analytics_agencies_data = json_for({'data': analytics_agencies})
+  write(analytics_agencies_data, analytics_agencies_path)
 
 # Given the rows we've made, save some top-level #'s to disk.
 def save_stats():

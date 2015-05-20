@@ -353,8 +353,21 @@ a {
       padding-top: 60px; }
       #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
         margin-right: 0; }
+#analytics #content #main-content .tab-menu, #https #content #main-content .tab-menu, #about #content #main-content .tab-menu {
+  width: 100%; }
+  #analytics #content #main-content .tab-menu .tab, #https #content #main-content .tab-menu .tab, #about #content #main-content .tab-menu .tab {
+    width: 50%;
+    margin: 0;
+    float: left;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.5em; }
+  #analytics #content #main-content .tab-menu a.tab, #https #content #main-content .tab-menu a.tab, #about #content #main-content .tab-menu a.tab {
+    background-color: #450081;
+    color: white; }
+    #analytics #content #main-content .tab-menu a.tab:hover, #analytics #content #main-content .tab-menu a.tab:focus, #https #content #main-content .tab-menu a.tab:hover, #https #content #main-content .tab-menu a.tab:focus, #about #content #main-content .tab-menu a.tab:hover, #about #content #main-content .tab-menu a.tab:focus {
+      color: white; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
-  padding: 40px 0;
   background-color: white; }
   #analytics #content #main-content.white-bkg a, #https #content #main-content.white-bkg a, #about #content #main-content.white-bkg a {
     color: #AB67E8;
@@ -362,15 +375,9 @@ a {
     #analytics #content #main-content.white-bkg a:hover, #analytics #content #main-content.white-bkg a:focus, #https #content #main-content.white-bkg a:hover, #https #content #main-content.white-bkg a:focus, #about #content #main-content.white-bkg a:hover, #about #content #main-content.white-bkg a:focus {
       color: #AB67E8;
       text-decoration: underline; }
-#analytics #content #main-content table select, #https #content #main-content table select, #about #content #main-content table select {
-  display: inline-block;
-  margin: 0 5px;
-  background-color: #450081;
-  color: white;
-  border: 0px;
-  padding: 5px 0px 5px 5px;
-  font-weight: bold; }
 
+#about .wrapper header {
+  padding: 40px 0; }
 #about .faq-questions {
   padding: 20px 0 50px; }
 #about .faq-answers h3 {
@@ -378,5 +385,85 @@ a {
   margin-bottom: 15px; }
 #about .faq-answers li {
   padding-bottom: 40px; }
+
+.dataTables_wrapper {
+  padding: 60px 0 40px; }
+  .dataTables_wrapper .dataTables_length {
+    font-size: 1.1em;
+    font-weight: 200; }
+    .dataTables_wrapper .dataTables_length select {
+      border: none;
+      display: inline-block;
+      color: white;
+      width: 60px;
+      border-radius: 0px;
+      padding: 0 8px;
+      margin: 0 5px;
+      height: 30px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #450081; }
+  .dataTables_wrapper .dataTables_filter {
+    font-size: 1.1em; }
+    .dataTables_wrapper .dataTables_filter label {
+      float: right; }
+    .dataTables_wrapper .dataTables_filter input {
+      display: inline-block;
+      width: auto;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      height: 40px;
+      width: 400px;
+      box-shadow: none;
+      font-size: 1.1em;
+      font-weight: 200; }
+  .dataTables_wrapper table.dataTable {
+    padding: 20px 0; }
+    .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
+      border-bottom: 2px solid #EEE !important;
+      padding: 8px 0 !important; }
+    .dataTables_wrapper table.dataTable.no-footer {
+      border: none; }
+    .dataTables_wrapper table.dataTable.agency td {
+      padding: 15px 0 !important; }
+    .dataTables_wrapper table.dataTable.agency .progress-bar-indication {
+      background-color: #CCC;
+      border-radius: 20px;
+      width: 70%; }
+      .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #AB67E8;
+        background-repeat: repeat-x;
+        background-size: 40px 40px;
+        border-radius: 20px;
+        margin: 15px 0;
+        display: block;
+        height: 100%;
+        width: 60%; }
+      .dataTables_wrapper table.dataTable.agency .progress-bar-indication p {
+        font-weight: 900;
+        font-size: 0.875em;
+        position: relative;
+        top: -18px; }
+  .dataTables_wrapper .dataTables_info {
+    padding-top: 0 !important; }
+  .dataTables_wrapper .dataTables_paginate a.paginate_button {
+    padding: 0 8px !important;
+    font-size: 0.875em;
+    border: none !important; }
+    .dataTables_wrapper .dataTables_paginate a.paginate_button.current {
+      background: #450081 !important;
+      color: white !important; }
+      .dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover {
+        color: white !important; }
+    .dataTables_wrapper .dataTables_paginate a.paginate_button:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button:focus {
+      background: #450081 !important;
+      color: white !important; }
+    .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:focus {
+      background: transparent !important; }
 
 /*# sourceMappingURL=main.css.map */

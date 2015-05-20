@@ -1,0 +1,851 @@
+{
+  "data": [
+    {
+      "Agency": "AMTRAK",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Administrative Conference of the United States",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 100
+    },
+    {
+      "Agency": "Advisory Council on Historic Preservation",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "American Battle Monuments Commission",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Appalachian Regional Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Appraisal Subcommittee",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Armed Forces Retirement Home",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Central Intelligence Agency",
+      "HTTPS Enabled?": 67,
+      "HTTPS Enforced?": 67,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Christopher Columbus Fellowship Foundation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Civil Air Patrol",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Comm for People Who Are Blind/Severly Disabled",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Commodity Futures Trading Commission",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Congressional Office of Compliance",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Consumer Financial Protection Bureau",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 10,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Consumer Product Safety Commission",
+      "HTTPS Enabled?": 22,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 9,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Corporation for National & Community Service",
+      "HTTPS Enabled?": 10,
+      "HTTPS Enforced?": 5,
+      "Number of Domains": 21,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Council of Inspector General on Integrity and Efficiency",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Court Services and Offender Supervision",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 4,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Defense Nuclear Facilities Safety Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Delta Regional Authority",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Denali Commission",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Agriculture",
+      "HTTPS Enabled?": 39,
+      "HTTPS Enforced?": 16,
+      "Number of Domains": 44,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Commerce",
+      "HTTPS Enabled?": 21,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 53,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Defense",
+      "HTTPS Enabled?": 35,
+      "HTTPS Enforced?": 17,
+      "Number of Domains": 23,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Education",
+      "HTTPS Enabled?": 44,
+      "HTTPS Enforced?": 19,
+      "Number of Domains": 16,
+      "Strict Transport Security (HSTS)": 6
+    },
+    {
+      "Agency": "Department of Energy",
+      "HTTPS Enabled?": 45,
+      "HTTPS Enforced?": 10,
+      "Number of Domains": 58,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Health And Human Services",
+      "HTTPS Enabled?": 33,
+      "HTTPS Enforced?": 9,
+      "Number of Domains": 112,
+      "Strict Transport Security (HSTS)": 3
+    },
+    {
+      "Agency": "Department of Homeland Security",
+      "HTTPS Enabled?": 62,
+      "HTTPS Enforced?": 25,
+      "Number of Domains": 24,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Housing And Urban Development",
+      "HTTPS Enabled?": 10,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 10,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Justice",
+      "HTTPS Enabled?": 20,
+      "HTTPS Enforced?": 14,
+      "Number of Domains": 66,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Labor",
+      "HTTPS Enabled?": 25,
+      "HTTPS Enforced?": 15,
+      "Number of Domains": 20,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of State",
+      "HTTPS Enabled?": 45,
+      "HTTPS Enforced?": 18,
+      "Number of Domains": 22,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Transportation",
+      "HTTPS Enabled?": 38,
+      "HTTPS Enforced?": 6,
+      "Number of Domains": 32,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of Veterans Affairs",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 17,
+      "Number of Domains": 6,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of the Interior",
+      "HTTPS Enabled?": 35,
+      "HTTPS Enforced?": 5,
+      "Number of Domains": 83,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Department of the Treasury",
+      "HTTPS Enabled?": 29,
+      "HTTPS Enforced?": 19,
+      "Number of Domains": 85,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Director of National Intelligence",
+      "HTTPS Enabled?": 18,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 11,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Environmental Protection Agency",
+      "HTTPS Enabled?": 20,
+      "HTTPS Enforced?": 7,
+      "Number of Domains": 15,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Equal Employment Opportunity Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Executive Office of the President",
+      "HTTPS Enabled?": 74,
+      "HTTPS Enforced?": 19,
+      "Number of Domains": 31,
+      "Strict Transport Security (HSTS)": 32
+    },
+    {
+      "Agency": "Export/Import Bank of the U.S.",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Farm Credit Administration",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Communications Commission",
+      "HTTPS Enabled?": 12,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 8,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Deposit Insurance Corporation",
+      "HTTPS Enabled?": 22,
+      "HTTPS Enforced?": 22,
+      "Number of Domains": 9,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Elections Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Energy Regulatory Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Housing Finance Agency",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Housing Finance Agency Office of Inspector General",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Labor Relations Authority",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Maritime Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Mediation and Conciliation Service",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Reserve System",
+      "HTTPS Enabled?": 83,
+      "HTTPS Enforced?": 17,
+      "Number of Domains": 6,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Retirement Thrift Investment Board",
+      "HTTPS Enabled?": 33,
+      "HTTPS Enforced?": 33,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Federal Trade Commission",
+      "HTTPS Enabled?": 59,
+      "HTTPS Enforced?": 27,
+      "Number of Domains": 22,
+      "Strict Transport Security (HSTS)": 18
+    },
+    {
+      "Agency": "General Services Administration",
+      "HTTPS Enabled?": 52,
+      "HTTPS Enforced?": 27,
+      "Number of Domains": 94,
+      "Strict Transport Security (HSTS)": 6
+    },
+    {
+      "Agency": "Government Printing Office",
+      "HTTPS Enabled?": 13,
+      "HTTPS Enforced?": 4,
+      "Number of Domains": 23,
+      "Strict Transport Security (HSTS)": 4
+    },
+    {
+      "Agency": "Harry S. Truman Scholarship Foundation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Institute of Museum and Library Services",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Inter-American Foundation",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "International Broadcasting Bureau",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "James Madison Memorial Fellowship Foundation",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Legal Services Corporation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Library of Congress",
+      "HTTPS Enabled?": 5,
+      "HTTPS Enforced?": 2,
+      "Number of Domains": 42,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Marine Mammal Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Medicaid and CHIP Payment and Access Commission",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Medical Payment Advisory Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Merit Systems Protection Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Millennium Challenge Corporation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Morris K. Udall Foundation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Aeronautics and Space Administration",
+      "HTTPS Enabled?": 60,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 5,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Archives and Records Administration",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 16,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Capital Planning Commission",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Council on Disability",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Credit Union Administration",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Endowment for the Arts",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Endowment for the Humanities",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 4,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Gallery of Art",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Indian Gaming Commission",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Labor Relations Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Mediation Board",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Nanotechnology Coordination Office",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Science Foundation",
+      "HTTPS Enabled?": 88,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 8,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Security Agency",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "National Transportation Safety Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Networking Information Technology Research and Development (NITRD)",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 50,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Nuclear Regulatory Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Occupational Safety & Health Review Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Office of Government Ethics",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Office of Personnel Management",
+      "HTTPS Enabled?": 57,
+      "HTTPS Enforced?": 29,
+      "Number of Domains": 21,
+      "Strict Transport Security (HSTS)": 5
+    },
+    {
+      "Agency": "Overseas Private Investment Corporation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 100
+    },
+    {
+      "Agency": "Pension Benefit Guaranty Corporation",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Postal Rate Commission",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Railroad Retirement Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Recovery Accountability and Transparency Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 5,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Securities and Exchange Commission",
+      "HTTPS Enabled?": 67,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Selective Service System",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Small Business Administration",
+      "HTTPS Enabled?": 29,
+      "HTTPS Enforced?": 29,
+      "Number of Domains": 7,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Smithsonian Institution",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Social Security Administration",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Social Security Advisory Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Stennis Center for Public Service",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Tennessee Valley Authority",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "Terrorist Screening Center",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "The Intelligence Community",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "The Judicial Branch (Courts)",
+      "HTTPS Enabled?": 6,
+      "HTTPS Enforced?": 6,
+      "Number of Domains": 16,
+      "Strict Transport Security (HSTS)": 6
+    },
+    {
+      "Agency": "The Legislative Branch (Congress)",
+      "HTTPS Enabled?": 22,
+      "HTTPS Enforced?": 5,
+      "Number of Domains": 41,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "The United States World War One Centennial Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U. S. Access Board",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U. S. Holocaust Memorial Museum",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U. S. International Trade Commission",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U. S. Office of Special Counsel",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U. S. Peace Corps",
+      "HTTPS Enabled?": 33,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U. S. Postal Service",
+      "HTTPS Enabled?": 25,
+      "HTTPS Enforced?": 25,
+      "Number of Domains": 4,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U.S. Agency for International Development",
+      "HTTPS Enabled?": 36,
+      "HTTPS Enforced?": 9,
+      "Number of Domains": 11,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U.S. Chemical Safety and Hazard Investigation Board",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 3,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U.S. Commission of Fine Arts",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "U.S. Postal Service, Office of Inspector General",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 100,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 100
+    },
+    {
+      "Agency": "U.S. Trade and Development Agency",
+      "HTTPS Enabled?": 100,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 1,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "US Interagency Council on Homelessness",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "United Stated Global Change Research Program",
+      "HTTPS Enabled?": 50,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 4,
+      "Strict Transport Security (HSTS)": 0
+    },
+    {
+      "Agency": "United States Office of Government Ethics",
+      "HTTPS Enabled?": 0,
+      "HTTPS Enforced?": 0,
+      "Number of Domains": 2,
+      "Strict Transport Security (HSTS)": 0
+    }
+  ]
+}
