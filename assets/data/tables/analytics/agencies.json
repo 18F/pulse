@@ -1,0 +1,569 @@
+{
+  "data": [
+    {
+      "Agency": "AMTRAK",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Administrative Conference of the United States",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Advisory Council on Historic Preservation",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "American Battle Monuments Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Appalachian Regional Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Appraisal Subcommittee",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Armed Forces Retirement Home",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Central Intelligence Agency",
+      "No. of Domains": 3,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Christopher Columbus Fellowship Foundation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Civil Air Patrol",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Comm for People Who Are Blind/Severly Disabled",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Commodity Futures Trading Commission",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Consumer Financial Protection Bureau",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Consumer Product Safety Commission",
+      "No. of Domains": 4,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Corporation for National & Community Service",
+      "No. of Domains": 6,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Council of Inspector General on Integrity and Efficiency",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Court Services and Offender Supervision",
+      "No. of Domains": 4,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Defense Nuclear Facilities Safety Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "Delta Regional Authority",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Denali Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Department of Agriculture",
+      "No. of Domains": 33,
+      "Participates in DAP?": 9
+    },
+    {
+      "Agency": "Department of Commerce",
+      "No. of Domains": 41,
+      "Participates in DAP?": 49
+    },
+    {
+      "Agency": "Department of Defense",
+      "No. of Domains": 22,
+      "Participates in DAP?": 36
+    },
+    {
+      "Agency": "Department of Education",
+      "No. of Domains": 10,
+      "Participates in DAP?": 70
+    },
+    {
+      "Agency": "Department of Energy",
+      "No. of Domains": 44,
+      "Participates in DAP?": 2
+    },
+    {
+      "Agency": "Department of Health And Human Services",
+      "No. of Domains": 73,
+      "Participates in DAP?": 26
+    },
+    {
+      "Agency": "Department of Homeland Security",
+      "No. of Domains": 18,
+      "Participates in DAP?": 50
+    },
+    {
+      "Agency": "Department of Housing And Urban Development",
+      "No. of Domains": 9,
+      "Participates in DAP?": 11
+    },
+    {
+      "Agency": "Department of Justice",
+      "No. of Domains": 46,
+      "Participates in DAP?": 85
+    },
+    {
+      "Agency": "Department of Labor",
+      "No. of Domains": 14,
+      "Participates in DAP?": 57
+    },
+    {
+      "Agency": "Department of State",
+      "No. of Domains": 19,
+      "Participates in DAP?": 32
+    },
+    {
+      "Agency": "Department of Transportation",
+      "No. of Domains": 25,
+      "Participates in DAP?": 48
+    },
+    {
+      "Agency": "Department of Veterans Affairs",
+      "No. of Domains": 2,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "Department of the Interior",
+      "No. of Domains": 74,
+      "Participates in DAP?": 23
+    },
+    {
+      "Agency": "Department of the Treasury",
+      "No. of Domains": 71,
+      "Participates in DAP?": 38
+    },
+    {
+      "Agency": "Director of National Intelligence",
+      "No. of Domains": 11,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Environmental Protection Agency",
+      "No. of Domains": 12,
+      "Participates in DAP?": 42
+    },
+    {
+      "Agency": "Equal Employment Opportunity Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Executive Office of the President",
+      "No. of Domains": 10,
+      "Participates in DAP?": 30
+    },
+    {
+      "Agency": "Export/Import Bank of the U.S.",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Farm Credit Administration",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Communications Commission",
+      "No. of Domains": 3,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Deposit Insurance Corporation",
+      "No. of Domains": 7,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Elections Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Energy Regulatory Commission",
+      "No. of Domains": 2,
+      "Participates in DAP?": 50
+    },
+    {
+      "Agency": "Federal Housing Finance Agency",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Housing Finance Agency Office of Inspector General",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Labor Relations Authority",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Maritime Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Mediation and Conciliation Service",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Reserve System",
+      "No. of Domains": 6,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Retirement Thrift Investment Board",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Federal Trade Commission",
+      "No. of Domains": 15,
+      "Participates in DAP?": 47
+    },
+    {
+      "Agency": "General Services Administration",
+      "No. of Domains": 64,
+      "Participates in DAP?": 56
+    },
+    {
+      "Agency": "Harry S. Truman Scholarship Foundation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Institute of Museum and Library Services",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Inter-American Foundation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "International Broadcasting Bureau",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "James Madison Memorial Fellowship Foundation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Legal Services Corporation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Marine Mammal Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Medicaid and CHIP Payment and Access Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Medical Payment Advisory Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Merit Systems Protection Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Millennium Challenge Corporation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Morris K. Udall Foundation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Aeronautics and Space Administration",
+      "No. of Domains": 3,
+      "Participates in DAP?": 33
+    },
+    {
+      "Agency": "National Archives and Records Administration",
+      "No. of Domains": 10,
+      "Participates in DAP?": 60
+    },
+    {
+      "Agency": "National Capital Planning Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Council on Disability",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Credit Union Administration",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Endowment for the Arts",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Endowment for the Humanities",
+      "No. of Domains": 3,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Gallery of Art",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Indian Gaming Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Labor Relations Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "National Mediation Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Nanotechnology Coordination Office",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Science Foundation",
+      "No. of Domains": 8,
+      "Participates in DAP?": 25
+    },
+    {
+      "Agency": "National Security Agency",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "National Transportation Safety Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Networking Information Technology Research and Development (NITRD)",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Nuclear Regulatory Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "Occupational Safety & Health Review Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Office of Government Ethics",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Office of Personnel Management",
+      "No. of Domains": 13,
+      "Participates in DAP?": 92
+    },
+    {
+      "Agency": "Overseas Private Investment Corporation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Pension Benefit Guaranty Corporation",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "Postal Rate Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Railroad Retirement Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "Recovery Accountability and Transparency Board",
+      "No. of Domains": 2,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Securities and Exchange Commission",
+      "No. of Domains": 3,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Selective Service System",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Small Business Administration",
+      "No. of Domains": 4,
+      "Participates in DAP?": 50
+    },
+    {
+      "Agency": "Smithsonian Institution",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Social Security Administration",
+      "No. of Domains": 3,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "Social Security Advisory Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Stennis Center for Public Service",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "Tennessee Valley Authority",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "The United States World War One Centennial Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U. S. Access Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "U. S. International Trade Commission",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U. S. Office of Special Counsel",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U. S. Peace Corps",
+      "No. of Domains": 3,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U. S. Postal Service",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U.S. Agency for International Development",
+      "No. of Domains": 9,
+      "Participates in DAP?": 11
+    },
+    {
+      "Agency": "U.S. Chemical Safety and Hazard Investigation Board",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U.S. Commission of Fine Arts",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U.S. Postal Service, Office of Inspector General",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "U.S. Trade and Development Agency",
+      "No. of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
+      "Agency": "US Interagency Council on Homelessness",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "United Stated Global Change Research Program",
+      "No. of Domains": 3,
+      "Participates in DAP?": 0
+    },
+    {
+      "Agency": "United States Office of Government Ethics",
+      "No. of Domains": 1,
+      "Participates in DAP?": 0
+    }
+  ]
+}

@@ -26,6 +26,13 @@ TABLE_DATA = "../assets/data/tables"
 STATS_DATA = "../assets/data"
 
 
+LABELS = {
+  'https': 'HTTPS Enabled?',
+  'https_forced': 'HTTPS Enforced?',
+  'hsts': 'Strict Transport Security (HSTS)',
+  'dap': 'Participates in DAP?'
+}
+
 ## global data
 
 # big dict of everything in input CSVs
@@ -140,16 +147,70 @@ def load_data():
 
       domain_data[domain]['analytics'] = dict_row
 
-# Given the domain data loaded in from CSVs, initialize the
-# main domains arrays with filtered data.
+# Given the domain data loaded in from CSVs, draw conclusions,
+# and filter/transform data into form needed for display.
 def process_domains():
 
+  # First, process all domains.
   for domain in domains:
     if evaluating_for_https(domain):
       https_domains.append(https_row_for(domain))
 
     if evaluating_for_analytics(domain):
       analytics_domains.append(analytics_row_for(domain))
+
+  # Second, process each agency's domains.
+  for agency in agencies:
+
+    https_total = 0
+    https_stats = {
+      'https': 0,
+      'https_forced': 0,
+      'hsts': 0
+    }
+
+    analytics_total = 0
+    analytics_stats = {
+      'dap': 0
+    }
+
+    for domain in agency_data[agency]:
+
+      if evaluating_for_https(domain):
+
+        https_total += 1
+        row = https_row_for(domain)
+
+        if row[LABELS['https']] != "No":
+          https_stats['https'] += 1
+        if row[LABELS['https_forced']] != "No":
+          https_stats['https_forced'] += 1
+        if row[LABELS['hsts']] != "No":
+          https_stats['hsts'] += 1
+
+      if evaluating_for_analytics(domain):
+
+        analytics_total += 1
+        row = analytics_row_for(domain)
+
+        if row[LABELS['dap']] != "No":
+          analytics_stats['dap'] += 1
+
+    if https_total > 0:
+      https_agencies.append({
+        'Agency': agency,
+        'No. of Domains': https_total,
+        LABELS['https']: percent(https_stats['https'], https_total),
+        LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
+        LABELS['hsts']: percent(https_stats['hsts'], https_total)
+      })
+
+    if analytics_total > 0:
+      analytics_agencies.append({
+        'Agency': agency,
+        'No. of Domains': analytics_total,
+        LABELS['dap']: percent(analytics_stats['dap'], analytics_total)
+      })
 
 
 def evaluating_for_https(domain):
@@ -233,7 +294,7 @@ def https_row_for(domain):
     else:
       behavior = "No";
 
-  row["HTTPS Enforced?"] = behavior;
+  row[LABELS['https_forced']] = behavior;
 
 
   ###
@@ -261,7 +322,7 @@ def https_row_for(domain):
     else: # if (inspect["HSTS"] == "True"):
       hsts = "Yes (Partial)"
 
-  row["Strict Transport Security (HSTS)"] = hsts;
+  row[LABELS['hsts']] = hsts;
 
   return row
 
@@ -270,7 +331,7 @@ def analytics_row_for(domain):
   row = dict.copy(domain_data[domain]['analytics'])
 
   # TODO: maybe there's a better way to rename this column?
-  row['Participates in DAP?'] = row['Participates in Analytics']
+  row[LABELS['dap']] = boolean_nice(row['Participates in Analytics'])
   del row["Participates in Analytics"]
 
   return row
@@ -282,7 +343,7 @@ def process_stats():
   total = len(https_domains)
   enabled = 0
   for row in https_domains:
-    if row['HTTPS Enabled?'] != "No":
+    if row[LABELS['https']] != "No":
       enabled += 1
   pct = percent(enabled, total)
 
@@ -295,7 +356,7 @@ def process_stats():
   total = len(analytics_domains)
   enabled = 0
   for row in analytics_domains:
-    if row['Participates in DAP?'] == "True":
+    if row[LABELS['dap']] == "Yes":
       enabled += 1
   pct = percent(enabled, total)
 
@@ -309,15 +370,31 @@ def process_stats():
 def percent(num, denom):
   return round((num / denom) * 100)
 
+def boolean_nice(value):
+  if value == "True":
+    return "Yes"
+  elif value == "False":
+    return "No"
+  else:
+    return value
+
 # Given the rows we've made, save them to disk.
 def save_tables():
   https_path = os.path.join(TABLE_DATA, "https/domains.json")
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
+  https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
+  https_agencies_data = json_for({'data': https_agencies})
+  write(https_agencies_data, https_agencies_path)
+
   analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
   analytics_data = json_for({'data': analytics_domains})
   write(analytics_data, analytics_path)
+
+  analytics_agencies_path = os.path.join(TABLE_DATA, "analytics/agencies.json")
+  analytics_agencies_data = json_for({'data': analytics_agencies})
+  write(analytics_agencies_data, analytics_agencies_path)
 
 # Given the rows we've made, save some top-level #'s to disk.
 def save_stats():
