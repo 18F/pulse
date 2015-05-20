@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/assets/data/tables/https-domains.json", function(data) {
+  $.get("/assets/data/tables/https/domains.json", function(data) {
     renderTable(data.data);
   });
 

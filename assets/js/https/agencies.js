@@ -1,6 +1,6 @@
 // $(document).ready(function () {
 
-//   $.get("/assets/data/tables/https-agency.json", function(data) {
+//   $.get("/assets/data/tables/https/agencies.json", function(data) {
 //     renderTable(data.data);
 //   });
 
