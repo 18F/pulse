@@ -181,11 +181,16 @@ def process_domains():
         https_total += 1
         row = https_row_for(domain)
 
-        if row[LABELS['https']] != "No":
+        # Needs to be enabled, with issues is allowed
+        if row[LABELS['https']] >= 1:
           https_stats['https'] += 1
-        if row[LABELS['https_forced']] != "No":
+
+        # Needs to be Default or Strict to be 'Yes'
+        if row[LABELS['https_forced']] >= 2:
           https_stats['https_forced'] += 1
-        if row[LABELS['hsts']] != "No":
+
+        # Needs to be at least partially present
+        if row[LABELS['hsts']] >= 1:
           https_stats['hsts'] += 1
 
       if evaluating_for_analytics(domain):
@@ -193,7 +198,8 @@ def process_domains():
         analytics_total += 1
         row = analytics_row_for(domain)
 
-        if row[LABELS['dap']] != "No":
+        # Enabled ('Yes')
+        if row[LABELS['dap']] >= 1:
           analytics_stats['dap'] += 1
 
     if https_total > 0:
@@ -253,26 +259,25 @@ def https_row_for(domain):
   # Is it there? There for most clients? Not there?
 
   if (inspect["Valid HTTPS"] == "True"):
-    https = "Yes"
+    https = 2 # Yes
   elif (inspect["HTTPS Bad Chain"] == "True"):
-    https = "Yes (with issues)"
+    https = 1 # Yes (with issues) - Considered 'Yes'
   else:
-    https = "No"
+    https = 0 # No
 
   row["HTTPS Enabled?"] = https;
 
 
   ###
-  # Characterize the HTTPS setup on the domain.
+  # Is HTTPS enforced?
 
-  # It's a "No" if HTTPS isn't present.
-  if (https == "No"):
-    behavior = "No"
+  if (https == 0):
+    behavior = -1 # N/A (considered 'No')
 
   else:
-    # It's a "No" if HTTPS redirects down to HTTP.
+    # It's a hard "No" if HTTPS redirects down to HTTP.
     if (inspect["Downgrades HTTPS"] == "True"):
-      behavior = "No"
+      behavior = 0 # Downgrade (considered 'No')
 
     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
     # *and* that HTTP eventually redirects to HTTPS.
@@ -280,19 +285,20 @@ def https_row_for(domain):
       (inspect["Strictly Forces HTTPS"] == "True") and
       (inspect["Defaults to HTTPS"] == "True")
     ):
-      behavior = "Yes (Strict)"
+      behavior = 3 # Yes (Strict)
 
     # "Yes" means HTTP eventually redirects to HTTPS.
     elif (
       (inspect["Strictly Forces HTTPS"] == "False") and
       (inspect["Defaults to HTTPS"] == "True")
     ):
-      behavior = "Yes";
+      behavior = 2 # Yes
 
     # Either both are False, or just 'Strict Force' is True,
     # which doesn't matter on its own.
+    # A "present" is better than a downgrade.
     else:
-      behavior = "No";
+      behavior = 1 # Present (considered 'No')
 
   row[LABELS['https_forced']] = behavior;
 
@@ -302,25 +308,25 @@ def https_row_for(domain):
 
   # Without HTTPS there can be no HSTS.
   if (https == "No"):
-    hsts = "No"
+    hsts = -1 # N/A (considered 'No')
 
   else:
 
     # HTTPS is there, but no HSTS header.
     if (inspect["HSTS"] == "False"):
-      hsts = "No"
+      hsts = 0 # No
 
     # "Complete" means HSTS preload ready (long max-age).
     elif (inspect["HSTS Preload Ready"] == "True"):
-      hsts = "Yes (Complete)"
+      hsts = 3 # Complete (considered 'Yes')
 
     # This kind of "Partial" means `includeSubdomains`, but no `preload`.
     elif (inspect["HSTS All Subdomains"] == "True"):
-      hsts = "Yes (Partial)"
+      hsts = 2 # Nearly Complete (considered 'Yes')
 
     # This kind of "Partial" means HSTS, but not on subdomains.
     else: # if (inspect["HSTS"] == "True"):
-      hsts = "Yes (Partial)"
+      hsts = 1 # Partial (considered 'Yes')
 
   row[LABELS['hsts']] = hsts;
 
@@ -343,7 +349,8 @@ def process_stats():
   total = len(https_domains)
   enabled = 0
   for row in https_domains:
-    if row[LABELS['https']] != "No":
+    # Needs to be enabled, with issues is allowed
+    if row[LABELS['https']] >= 1:
       enabled += 1
   pct = percent(enabled, total)
 
@@ -356,7 +363,8 @@ def process_stats():
   total = len(analytics_domains)
   enabled = 0
   for row in analytics_domains:
-    if row[LABELS['dap']] == "Yes":
+    # Enabled ('Yes')
+    if row[LABELS['dap']] >= 1:
       enabled += 1
   pct = percent(enabled, total)
 
@@ -372,11 +380,11 @@ def percent(num, denom):
 
 def boolean_nice(value):
   if value == "True":
-    return "Yes"
+    return 1
   elif value == "False":
-    return "No"
+    return 0
   else:
-    return value
+    return -1
 
 # Given the rows we've made, save them to disk.
 def save_tables():
