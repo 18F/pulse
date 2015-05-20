@@ -32,7 +32,7 @@
         .append("g")
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
 
-    d3.csv("../assets/data/analytics.csv", function (error, data) {
+    d3.csv("/assets/data/analytics.csv", function (error, data) {
 
         var g = chart.selectAll(".arc")
             .data(pie(data))
