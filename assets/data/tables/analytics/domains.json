@@ -2,3171 +2,3171 @@
   "data": [
     {
       "Domain": "404.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "9-11commission.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "911.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "911commission.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "abandonedmines.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "abilityone.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "abmc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "access-board.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "achp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "acl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "acquisition.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "acus.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "acwi.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ada.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "adlnet.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "admongo.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "adr.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "advantage.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "afadvantage.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "aff.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "afrh.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "agingstats.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ahrq.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "aids.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "airnow.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "alaskacenters.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "alertaenlinea.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "altusandc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "alzheimers.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ama.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "amberalert.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "americanlatinomuseum.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "americathebeautifulquarters.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ameslab.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "amtrakoig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "anl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "anstaskforce.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "aoa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "arc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "archives.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "arctic.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "arcticgas.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "arm.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ars-grin.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "arts.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "asap.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "asc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "atf.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "autocommunities.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "aviationweather.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ayudaconmibanco.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bam.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bankanswers.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bankcustomer.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bankcustomerassistance.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bankhelp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "banknet.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bbg.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bea.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "benefits.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bep.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bfem.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bia.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bioeco.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bioethics.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "biomassboard.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "biometrics.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "biopreferred.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bja.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bjs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bldrdoc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "blm.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bls.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bnl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "boem.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "boemre.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bondpro.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bop.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "bpa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "brac.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "broadband.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "broadbandmap.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "bsee.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "buyaccessible.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "buyusa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "c3.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cancer.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cao.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "capnhq.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "carboncyclescience.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "casl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cbca.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cbp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ccac.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ccr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cdc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "cdfifund.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "cendi.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "census.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cfa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cfda.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "cflhd.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cfo.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "cftc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "challenge.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "change.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "chcoc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "childreninadversity.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "childstats.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "childwelfare.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "choosemyplate.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "christophercolumbusfoundation.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cia.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cio.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "civilianresponsecorps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "civilrightsusa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "climate.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "clinicaltrial.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "clinicaltrials.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "clintonlibrary.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cms.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cmts.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "cncsoig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cnss.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "coast2050.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "coastalamerica.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "collegedrinkingprevention.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "commerce.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "comptrollerofthecurrency.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "computersforlearning.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "connect.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "consumer.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "consumerfinance.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "consumersentinel.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "consumidor.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "continentalshelf.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "contractdirectory.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "coralreef.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "counterwmd.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cpars.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cpnireporting.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cpsc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "crimesolutions.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "crimevictims.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "crt2014-2024review.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "csb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "csosa.fed.us",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "csosa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cttso.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cuidadodesalud.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cupcao.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "cwc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "data.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "dea.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "deadiversion.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "defense.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "denali.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dfafacts.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dhs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "digitalgov.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "digitalliteracy.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "directoasucuenta.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "disability.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "disasterassistance.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "disasterhousing.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "distracteddriving.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "distraction.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "dnfsb.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "dni.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dnsops.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "docline.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dod.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "doeal.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "doi.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "doioig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dol-esa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dol.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "doleta.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "donotcall.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dot.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "dotgov.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dottrafficrecords.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dottrcc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dra.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "drought.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "drugabuse.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "dsac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "e3.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "eac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "economicinclusion.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "econsumer.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ecopartnerships.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ecpic.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ed.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "eda.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "edpubs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "education.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "eeoc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "eftps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "eia.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "eisenhowermemorial.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "eldercare.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "employeeexpress.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "empowhr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ems.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "endingthedocumentgame.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "energy.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "energycodes.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "energystar.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "epa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "epls.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "esa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "esc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "espanolforlawenforcement.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "esrs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "eta-find.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ethicsburg.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "evergladesrestoration.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "execsec.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "exim.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "export.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "eyenote.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "faa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "faasafety.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "faca.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "facadatabase.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fafsa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fai.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fan.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fapiis.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fara.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "farmerclaims.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fatherhood.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fbi.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fbiic.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fbijobs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fbo.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fca.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fcc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fcg.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fcsic.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fcsm.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fda.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fdic.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fdicbets.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fdicig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fdicoig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fdicseguro.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fdms.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fdr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "feb.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fec.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedcenter.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "federalaccountability.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "federalinvestments.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "federalreserve.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "federalreserveconsumerhelp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedidcard.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fedinvest.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedpartnership.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedramp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedrealestate.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedrooms.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fedshirevets.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fedstats.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "feedthefuture.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fema.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "femalefarmerclaims.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ferc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fercalt.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ffiec.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fgdc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fhfa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fhfaoig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fido.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fightingmalaria.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "financialresearch.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fincen.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "findyouthinfo.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "firecode.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fireleadership.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "firescience.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "firstnet.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "firstresponder.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "firstrespondertraining.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fiscalcommission.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fishwatch.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fitness.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fleta.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fletc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "flightschoolcandidates.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "floodsmart.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "flra.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "flu.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fmc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fmcs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fmi.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fnal.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "foia.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "foodsafety.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "foodsafetyworkinggroup.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fordlibrarymuseum.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "foreignassistance.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "forestsandrangelands.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "forfeiture.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fpds.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "frcc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "frtib.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "frtr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fs.fed.us",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fsapubs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fsd.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "fsgb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fsrs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ftc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ftccomplaintassistant.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ftcefile.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fttesttwai.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fueleconomy.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fvap.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "fws.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "g5.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "gcdamp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "gcmrc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "genome.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "geocommunicator.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "geomac.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "geoplatform.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ghi.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ginniemae.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "girlshealth.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "globalchange.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "globalhealth.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "globe.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "godirect.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "goes-r.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "golearn.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "govloans.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "govsales.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "gps.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "grants.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "grantsolutions.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "greengov.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "gsa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "gsaadvantage.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "gsaauctions.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "gsadvantage.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "gsaig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "gsaxcess.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "guideline.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "gwa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "hanford.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "harp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "health.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "healthcare.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "healthdata.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "healthfinder.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "healthindicators.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "healthit.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "healthypeople.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "helpwithmybank.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "helpwithmycheckingaccount.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "helpwithmycreditcard.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "helpwithmycreditcardbank.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "helpwithmymortgage.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "helpwithmymortgagebank.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "hhs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "hispanicfarmerclaims.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "homesales.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "hrsa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "hru.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "hsa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "hsr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "hud.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "hudoig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "humanrights.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "hydrogen.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iad.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "iaf.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iarpa-ideas.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iarpa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iat.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iawg.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ibwc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ic3.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "icass.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "icbemp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ice.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "icjointduty.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "idmanagement.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ignet.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ihs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iiog.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "imls.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "indianaffairs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "inel.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "inl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "insurekidsnow.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "integrity.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "intelink.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "intelligence.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "interior.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "invasivespecies.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "invasivespeciesinfo.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "investor.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ioss.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ipac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ipcc-wg2.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ipp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "iprcenter.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "irs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "irsvideos.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ise.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "isotope.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "isotopes.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "italladdsup.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "itap.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "itdashboard.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "itds.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "itis.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "its.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "jamesmadison.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "jccs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "jem.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "jimmycarterlibrary.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "jobcorps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "justice.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "juvenilecouncil.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "jwod.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "klamathrestoration.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lacoast.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "landfire.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "landimaging.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lanl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "latinofarmerclaims.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lbl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lca.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lcacommons.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lcrmscp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "learnperformance.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lep.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "letsmove.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "llnl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lmrcouncil.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "lmvsci.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "locatorplus.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "longtermcare.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lowermississippivalleyscience.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "lsc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "macpac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "makinghomeaffordable.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "malwareinvestigator.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "manufacturing.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "mapaplanet.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "marine.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "marinecadastre.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "marview.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "max.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mbda.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mcc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mcrmc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mda.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "medicaid.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "medicalcountermeasures.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "medicalreservecorps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "medicare.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "medpac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mentalhealth.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "mitigationcommission.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mmc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mms.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "moneyfactory.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "moneyfactorystore.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "mrlc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "msb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "msha.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "mspb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mtbs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mycreditunion.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "myfdicinsurance.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mymedicare.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "mymoney.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nafri.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nagb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "namus.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nano.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nasa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nationalbankhelp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nationalgangcenter.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nationalhousing.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nationalhousinglocator.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nationalmap.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nationalservice.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nationsreportcard.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "navycash.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nbc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nccrc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ncd.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ncirc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ncix.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ncjrs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ncpc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ncpw.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ncrc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nctc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ncua.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ndep.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ndop.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "neglecteddiseases.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "neh.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nehrp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nel.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nemi.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nersc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "newmoney.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nfpors.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nga.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nhl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nhtsa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nibin.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nicic.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "niem.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nifc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "niftt.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nigc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nih.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nihseniorhealth.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nij.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "niosh.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nist.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nitrd.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nixonlibrary.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nlrb.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nls.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nmb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nmic.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nnlm.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "noaa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nolaenvironmental.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "notalone.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nps.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nrc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nrel.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nro.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nrojr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nsa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nsep.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nsf.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nsopw.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nswp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ntdprogram.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ntis.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ntsb.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nutrition.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "nwbc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "nwcg.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "occ.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "occhelps.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "odni.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "oea.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ofcm.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ofda.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ofee.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "oge.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ojjdp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ojp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "onguardonline.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "onhir.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "onlinewbc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "onrr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "opensource.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "opic.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "opm.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "orau.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "organdonor.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ornl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "osac.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "osc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "osdbu.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "osha.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "oshrc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "osmre.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "osti.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ots.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ourdocuments.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ovc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ovcttac.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "papahanaumokuakea.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "partner4solutions.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "patriotbonds.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pay.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "paymentaccuracy.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pbgc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "pcah.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pclob.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "peacecore.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "peacecorp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "peacecorps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pepfar.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "performance.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "phe.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pic.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "plainlanguage.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "pmf.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "pmi.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pnl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pnnl.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "poolsafely.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ppirs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "prc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "preserveamerica.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "presidentialserviceawards.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "presidio.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pretrialservices.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "protecciondelconsumidor.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "psa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "psc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "pscr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "psob.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "qatesttwai.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "rcfl.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ready.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "reaganlibrary.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "realestatesales.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "realpropertyprofile.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "recalls.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "recovery.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "recoverymonth.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "recreation.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "reginfo.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "regulations.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "relocatefeds.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "reo.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "research.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "restorethegulf.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "rivers.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "rocis.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "rrb.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "sac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "safecom.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "safercar.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "saferproducts.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "safertruck.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "safetyact.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "salmonrecovery.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sam.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "samhsa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sandia.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "savingsbond.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "savingsbonds.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "savingsbondwizard.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sba.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "sbir.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "scidac.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "science.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "science360.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sciencebase.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "sdr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sec.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "secretservice.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "section508.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "segurosocial.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "selectagents.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "serve.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sftool.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "sharetheroadsafely.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "sierrawild.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sigtarp.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "siteidiq.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "slgs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "smart.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "smartcheck.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "smartgrid.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "smokefree.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "snap.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sns.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "socialsecurity.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "solardecathlon.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "srs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ssa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ssab.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sss.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "start2farm.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "state.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "stennis.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "stopalcoholabuse.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "stopbullying.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "stopfraud.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "stopmedicarefraud.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "strategicsourcing.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "studentloans.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "supportthevoter.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "surgeongeneral.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "sustainability.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "sustainablecommunities.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "swpa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "symbols.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "taaps.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "tax.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "telework.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "thecoolspot.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "thepeoplesgarden.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "time.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "tissueengineering.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "trade.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "trafficsafetymarketing.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "transportation.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "treaslockbox.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "treasury.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "treasuryauctions.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "treasurydirect.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "treasuryhunt.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "treasuryscams.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "truman.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "tsa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "tsp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "tsunami.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "tswg.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ttb.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ttbonline.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "tva.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ucrdatatool.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "udall.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "unicor.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "unitedweride.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "unlocktalent.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "urbanwaters.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "us-cert.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usa.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usability.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usaid.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usaidallnet.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usajobs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usalearning.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usandc.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usap.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usaperformance.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usaspending.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usbr.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "uscirf.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "uscis.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usda.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usdebitcard.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usembassy-mexico.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usembassy.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usgs.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usich.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usicn.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usint.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usitc.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usmarshals.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usmint.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "usmission.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "usphs.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "uspis.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "uspsoig.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "uspto.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ustda.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "ustr.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "utahfireinfo.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "va.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "vaccines.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "vallescaldera.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "vcf.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "vef.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "vehiclehistory.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "vetbiz.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "vistacampus.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "volunteer.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "volunteeringinamerica.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wapa.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "watermonitor.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wdol.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "weather.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "webharvest.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wethepeople.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "whistleblowers.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "whitehouse.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "whitehouseconferenceonaging.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wildfire.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wildlifeadaptationstrategy.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wizard.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wlci.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "womenfarmerclaims.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "womenshealth.gov",
-      "Participates in DAP?": "True"
+      "Participates in DAP?": "Yes"
     },
     {
       "Domain": "workplace.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "worldwar1centennial.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "wrp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "ymp.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "youthgo.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     },
     {
       "Domain": "youthrules.gov",
-      "Participates in DAP?": "False"
+      "Participates in DAP?": "No"
     }
   ]
 }
