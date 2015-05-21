@@ -30,6 +30,7 @@ LABELS = {
   'https': 'HTTPS Enabled?',
   'https_forced': 'HTTPS Enforced?',
   'hsts': 'Strict Transport Security (HSTS)',
+  'grade': 'SSL Labs Grade',
   'dap': 'Participates in DAP?'
 }
 
@@ -122,6 +123,25 @@ def load_data():
         dict_row[headers[i]] = cell
       domain_data[domain]['inspect'] = dict_row
 
+  headers = []
+  with open("tls.csv", newline='') as csvfile:
+    for row in csv.reader(csvfile):
+      if (row[0].lower() == "domain"):
+        headers = row
+        continue
+
+      domain = row[0].lower()
+      if not domain_data.get(domain):
+        # print("[tls] Skipping %s, not a federal domain from domains.csv." % domain)
+        continue
+
+      dict_row = {}
+      for i, cell in enumerate(row):
+        dict_row[headers[i]] = cell
+
+      # For now: overwrite previous rows if present, use last endpoint.
+      domain_data[domain]['tls'] = dict_row
+
 
   # Now, analytics measurement.
   headers = []
@@ -166,7 +186,8 @@ def process_domains():
     https_stats = {
       'https': 0,
       'https_forced': 0,
-      'hsts': 0
+      'hsts': 0,
+      'grade': 0
     }
 
     analytics_total = 0
@@ -193,6 +214,10 @@ def process_domains():
         if row[LABELS['hsts']] >= 1:
           https_stats['hsts'] += 1
 
+        # Needs to be A- or above
+        if row[LABELS['grade']] >= 4:
+          https_stats['grade'] += 1
+
       if evaluating_for_analytics(domain):
 
         analytics_total += 1
@@ -208,7 +233,8 @@ def process_domains():
         'Number of Domains': https_total,
         LABELS['https']: percent(https_stats['https'], https_total),
         LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
-        LABELS['hsts']: percent(https_stats['hsts'], https_total)
+        LABELS['hsts']: percent(https_stats['hsts'], https_total),
+        LABELS['grade']: percent(https_stats['grade'], https_total)
       })
 
     if analytics_total > 0:
@@ -307,7 +333,7 @@ def https_row_for(domain):
   # Characterize the presence and completeness of HSTS.
 
   # Without HTTPS there can be no HSTS.
-  if (https == "No"):
+  if (https == 0):
     hsts = -1 # N/A (considered 'No')
 
   else:
@@ -329,6 +355,34 @@ def https_row_for(domain):
       hsts = 1 # Partial (considered 'Yes')
 
   row[LABELS['hsts']] = hsts;
+
+
+  ###
+  # Include the SSL Labs grade for a domain.
+
+  tls = domain_data[domain].get('tls')
+
+  # Not relevant if no HTTPS
+  if (https == 0):
+    grade = -1 # N/A
+
+  elif tls is None:
+    # print("[https][%s] No TLS scan data found." % domain)
+    grade = -1 # N/A
+
+  else:
+
+    grade = {
+      "F": 0,
+      "T": 1,
+      "C": 2,
+      "B": 3,
+      "A-": 4,
+      "A": 5,
+      "A+": 6
+    }[tls["Grade"]]
+
+  row[LABELS['grade']] = grade
 
   return row
 
