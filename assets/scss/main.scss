@@ -223,6 +223,10 @@ a {
   }
 }
 
+.https_chart, .dap_chart {
+  cursor: pointer;
+}
+
 // pages/analytics/*
 /////////////////////////////////////////
 #analytics #content > header .donut .total-value {

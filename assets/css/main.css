@@ -376,6 +376,9 @@ a {
       color: #AB67E8;
       text-decoration: underline; }
 
+.https_chart, .dap_chart {
+  cursor: pointer; }
+
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
 
