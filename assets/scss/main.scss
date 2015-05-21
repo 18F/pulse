@@ -7,17 +7,23 @@
 @import "base/base";
 
 // Colors
+/////////////////////////////////////////
+
 $dark-purple:       #330060;
 $medium-purple:     #450081;
 $light-purple:      #AB67E8;
 
 // Custom font sizing
+/////////////////////////////////////////
+
 h1 { font-size:   2.25em;   }
 h2 { font-size:   1.5em;    }
 h3 { font-size:   1.25em;   }
 p  { font-size:   1.0em;    }
 
 // Generic
+/////////////////////////////////////////
+
 body {
   background-color: $medium-purple;
 }
@@ -50,6 +56,8 @@ a {
 }
 
 // _includes/header.html
+/////////////////////////////////////////
+
 .site-header {
 
   .disclaimer {
@@ -96,6 +104,8 @@ a {
 }
 
 // pages/index.html
+/////////////////////////////////////////
+
 #home {
   .hero {
     @include span-columns(8);
@@ -136,8 +146,8 @@ a {
 }
 
 // Generic layout for:
-// pages/analytics.html
-// pages/https.html
+// pages/analytics/*
+// pages/https/*
 // pages/about.html
 /////////////////////////////////////////
 
@@ -211,6 +221,16 @@ a {
       }
     }
   }
+}
+
+.https_chart, .dap_chart {
+  cursor: pointer;
+}
+
+// pages/analytics/*
+/////////////////////////////////////////
+#analytics #content > header .donut .total-value {
+    font-size: 3.5em;
 }
 
 // pages/about.html
