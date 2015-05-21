@@ -18,33 +18,92 @@
 
 import csv
 import json
+import os
 
+## Output dirs.
+
+TABLE_DATA = "../assets/data/tables"
+STATS_DATA = "../assets/data"
+
+
+LABELS = {
+  'https': 'HTTPS Enabled?',
+  'https_forced': 'HTTPS Enforced?',
+  'hsts': 'Strict Transport Security (HSTS)',
+  'dap': 'Participates in DAP?'
+}
+
+## global data
+
+# big dict of everything in input CSVs
+domain_data = {}
+agency_data = {}
+
+# lists of uniquely seen domains and agencies, in order
+domains = []
+agencies = []
+
+# Data as prepared for table input.
+https_domains = []
+analytics_domains = []
+https_agencies = []
+analytics_agencies = []
+
+# Stats data as prepared for direct rendering.
+https_stats = []
+analytics_stats = []
+
+###
+# Main task flow.
 
 def run():
-  domains = {}
-  https = []
-  analytics = []
+  load_data()
+  process_domains()
+  process_stats()
+  save_tables()
+  save_stats()
 
 
+# Reads in input CSVs.
+def load_data():
 
   # load in base data from the .gov domain list
 
   with open("domains.csv", newline='') as csvfile:
     for row in csv.reader(csvfile):
-      if (not row[0]) or (row[0].lower().startswith("domain")):
+      if row[0].lower().startswith("domain"):
         continue
 
       domain = row[0].lower()
-      # row[1] is just "Federal Agency"
-      # TODO: take in the official full list, but filter out others
-      branch = branch_for(row[2])
+      domain_type = row[1]
+      agency = row[2]
+      branch = branch_for(agency)
 
+      # Exclude cities, counties, tribes, etc.
+      if domain_type != "Federal Agency":
+        continue
+
+      # There are a few erroneously marked non-federal domains.
       if branch == "non-federal":
         continue
 
-      domains[domain] = {
-        'branch': branch
+      if domain not in domains:
+        domains.append(domain)
+
+      if agency not in agencies:
+        agencies.append(agency)
+        agency_data[agency] = []
+
+      agency_data[agency].append(domain)
+
+      domain_data[domain] = {
+        'branch': branch,
+        'agency': agency
       }
+
+  # sort uniquely seen domains and agencies
+  domains.sort()
+  agencies.sort()
 
   headers = []
   with open("inspect.csv", newline='') as csvfile:
@@ -54,21 +113,14 @@ def run():
         continue
 
       domain = row[0].lower()
-      if not domains.get(domain):
+      if not domain_data.get(domain):
+        # print("[inspect] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
-      json_row = {}
+      dict_row = {}
       for i, cell in enumerate(row):
-        json_row[headers[i]] = cell
-      json_row['Branch'] = domains[domain]['branch']
-
-      https.append(json_row)
-      domains[domain]['https'] = json_row
-
-
-  f = open("../assets/data/tables/https-domains.json", 'w', encoding='utf-8')
-  f.write(json_for({'data': https}))
-  f.close()
+        dict_row[headers[i]] = cell
+      domain_data[domain]['inspect'] = dict_row
 
 
   # Now, analytics measurement.
@@ -80,28 +132,295 @@ def run():
         continue
 
       domain = row[0].lower()
-      if not domains.get(domain):
+      if not domain_data.get(domain):
+        # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
-      if not domains[domain].get('https'):
+      # If it didn't appear in the inspect data, skip it, we need this.
+      if not domain_data[domain].get('inspect'):
+        # print("[analytics] Skipping %s, did not appear in inspect.csv." % domain)
         continue
 
-      json_row = {}
+      dict_row = {}
       for i, cell in enumerate(row):
-        json_row[headers[i]] = cell
+        dict_row[headers[i]] = cell
 
-      json_row['Redirect'] = domains[domain]['https']['Redirect']
-      json_row['Live'] = domains[domain]['https']['Live']
-      json_row['Branch'] = domains[domain]['branch']
+      domain_data[domain]['analytics'] = dict_row
 
-      analytics.append(json_row)
-      domains[domain]['analytics'] = json_row
+# Given the domain data loaded in from CSVs, draw conclusions,
+# and filter/transform data into form needed for display.
+def process_domains():
+
+  # First, process all domains.
+  for domain in domains:
+    if evaluating_for_https(domain):
+      https_domains.append(https_row_for(domain))
+
+    if evaluating_for_analytics(domain):
+      analytics_domains.append(analytics_row_for(domain))
+
+  # Second, process each agency's domains.
+  for agency in agencies:
+
+    https_total = 0
+    https_stats = {
+      'https': 0,
+      'https_forced': 0,
+      'hsts': 0
+    }
+
+    analytics_total = 0
+    analytics_stats = {
+      'dap': 0
+    }
+
+    for domain in agency_data[agency]:
+
+      if evaluating_for_https(domain):
+
+        https_total += 1
+        row = https_row_for(domain)
+
+        # Needs to be enabled, with issues is allowed
+        if row[LABELS['https']] >= 1:
+          https_stats['https'] += 1
+
+        # Needs to be Default or Strict to be 'Yes'
+        if row[LABELS['https_forced']] >= 2:
+          https_stats['https_forced'] += 1
+
+        # Needs to be at least partially present
+        if row[LABELS['hsts']] >= 1:
+          https_stats['hsts'] += 1
+
+      if evaluating_for_analytics(domain):
+
+        analytics_total += 1
+        row = analytics_row_for(domain)
+
+        # Enabled ('Yes')
+        if row[LABELS['dap']] >= 1:
+          analytics_stats['dap'] += 1
+
+    if https_total > 0:
+      https_agencies.append({
+        'Agency': agency,
+        'Number of Domains': https_total,
+        LABELS['https']: percent(https_stats['https'], https_total),
+        LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
+        LABELS['hsts']: percent(https_stats['hsts'], https_total)
+      })
+
+    if analytics_total > 0:
+      analytics_agencies.append({
+        'Agency': agency,
+        'Number of Domains': analytics_total,
+        LABELS['dap']: percent(analytics_stats['dap'], analytics_total)
+      })
 
 
-  f = open("../assets/data/tables/analytics-domains.json", 'w', encoding='utf-8')
-  f.write(json_for({'data': analytics}))
+def evaluating_for_https(domain):
+  return (
+    (domain_data[domain].get('inspect') is not None) and
+    (domain_data[domain]['inspect']["Live"] == "True")
+  )
+
+def evaluating_for_analytics(domain):
+  return (
+    (domain_data[domain].get('inspect') is not None) and
+    (domain_data[domain].get('analytics') is not None) and
+
+    (domain_data[domain]['inspect']["Live"] == "True") and
+    (domain_data[domain]['inspect']["Redirect"] == "False") and
+    (domain_data[domain]['branch'] == "executive")
+  )
+
+'''
+Given the data we have about a domain, what's the HTTPS row?
+
+{
+  "Domain": [domain],
+  "HTTPS Enabled?": [
+    "No" | "Yes (with issues)" | "Yes"
+  ],
+  "HTTPS Enforced?": [
+    "No" | "Yes" | "Yes (Strict)"
+  ],
+  "HSTS": [
+    "No" | "Yes (Partial)" | "Yes (Complete)"
+  ]
+}
+'''
+def https_row_for(domain):
+  inspect = domain_data[domain]['inspect']
+  row = {"Domain": domain}
+
+  ###
+  # Is it there? There for most clients? Not there?
+
+  if (inspect["Valid HTTPS"] == "True"):
+    https = 2 # Yes
+  elif (inspect["HTTPS Bad Chain"] == "True"):
+    https = 1 # Yes (with issues) - Considered 'Yes'
+  else:
+    https = 0 # No
+
+  row["HTTPS Enabled?"] = https;
+
+
+  ###
+  # Is HTTPS enforced?
+
+  if (https == 0):
+    behavior = -1 # N/A (considered 'No')
+
+  else:
+    # It's a hard "No" if HTTPS redirects down to HTTP.
+    if (inspect["Downgrades HTTPS"] == "True"):
+      behavior = 0 # Downgrade (considered 'No')
+
+    # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
+    # *and* that HTTP eventually redirects to HTTPS.
+    elif (
+      (inspect["Strictly Forces HTTPS"] == "True") and
+      (inspect["Defaults to HTTPS"] == "True")
+    ):
+      behavior = 3 # Yes (Strict)
+
+    # "Yes" means HTTP eventually redirects to HTTPS.
+    elif (
+      (inspect["Strictly Forces HTTPS"] == "False") and
+      (inspect["Defaults to HTTPS"] == "True")
+    ):
+      behavior = 2 # Yes
+
+    # Either both are False, or just 'Strict Force' is True,
+    # which doesn't matter on its own.
+    # A "present" is better than a downgrade.
+    else:
+      behavior = 1 # Present (considered 'No')
+
+  row[LABELS['https_forced']] = behavior;
+
+
+  ###
+  # Characterize the presence and completeness of HSTS.
+
+  # Without HTTPS there can be no HSTS.
+  if (https == "No"):
+    hsts = -1 # N/A (considered 'No')
+
+  else:
+
+    # HTTPS is there, but no HSTS header.
+    if (inspect["HSTS"] == "False"):
+      hsts = 0 # No
+
+    # "Complete" means HSTS preload ready (long max-age).
+    elif (inspect["HSTS Preload Ready"] == "True"):
+      hsts = 3 # Complete (considered 'Yes')
+
+    # This kind of "Partial" means `includeSubdomains`, but no `preload`.
+    elif (inspect["HSTS All Subdomains"] == "True"):
+      hsts = 2 # Nearly Complete (considered 'Yes')
+
+    # This kind of "Partial" means HSTS, but not on subdomains.
+    else: # if (inspect["HSTS"] == "True"):
+      hsts = 1 # Partial (considered 'Yes')
+
+  row[LABELS['hsts']] = hsts;
+
+  return row
+
+# Given the data we have about a domain, what's the DAP row?
+def analytics_row_for(domain):
+  row = dict.copy(domain_data[domain]['analytics'])
+
+  # TODO: maybe there's a better way to rename this column?
+  row[LABELS['dap']] = boolean_nice(row['Participates in Analytics'])
+  del row["Participates in Analytics"]
+
+  return row
+
+# Make a tiny CSV about each stat, to be downloaded for D3 rendering.
+def process_stats():
+  global https_stats, analytics_stats
+
+  total = len(https_domains)
+  enabled = 0
+  for row in https_domains:
+    # Needs to be enabled, with issues is allowed
+    if row[LABELS['https']] >= 1:
+      enabled += 1
+  pct = percent(enabled, total)
+
+  https_stats = [
+    ['status', 'value'],
+    ['active', pct],
+    ['inactive', 100-pct]
+  ]
+
+  total = len(analytics_domains)
+  enabled = 0
+  for row in analytics_domains:
+    # Enabled ('Yes')
+    if row[LABELS['dap']] >= 1:
+      enabled += 1
+  pct = percent(enabled, total)
+
+  analytics_stats = [
+    ['status', 'value'],
+    ['active', pct],
+    ['inactive', 100-pct]
+  ]
+
+
+def percent(num, denom):
+  return round((num / denom) * 100)
+
+def boolean_nice(value):
+  if value == "True":
+    return 1
+  elif value == "False":
+    return 0
+  else:
+    return -1
+
+# Given the rows we've made, save them to disk.
+def save_tables():
+  https_path = os.path.join(TABLE_DATA, "https/domains.json")
+  https_data = json_for({'data': https_domains})
+  write(https_data, https_path)
+
+  https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
+  https_agencies_data = json_for({'data': https_agencies})
+  write(https_agencies_data, https_agencies_path)
+
+  analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
+  analytics_data = json_for({'data': analytics_domains})
+  write(analytics_data, analytics_path)
+
+  analytics_agencies_path = os.path.join(TABLE_DATA, "analytics/agencies.json")
+  analytics_agencies_data = json_for({'data': analytics_agencies})
+  write(analytics_agencies_data, analytics_agencies_path)
+
+# Given the rows we've made, save some top-level #'s to disk.
+def save_stats():
+  f = open(os.path.join(STATS_DATA, "https.csv"), 'w', newline='')
+  writer = csv.writer(f)
+  for row in https_stats:
+    writer.writerow(row)
   f.close()
 
+  f = open(os.path.join(STATS_DATA, "analytics.csv"), 'w', newline='')
+  writer = csv.writer(f)
+  for row in analytics_stats:
+    writer.writerow(row)
+  f.close()
+
+
+
+### utilities
 
 def json_for(object):
   return json.dumps(object, sort_keys=True,
@@ -134,6 +453,13 @@ def branch_for(agency):
   else:
     return "executive"
 
+def write(content, destination):
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
+    f = open(destination, 'w', encoding='utf-8')
+    f.write(content)
+    f.close()
+
+### Run when executed.
 
 if __name__ == '__main__':
     run()

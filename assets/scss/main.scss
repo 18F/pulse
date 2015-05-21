@@ -22,16 +22,28 @@ body {
   background-color: $medium-purple;
 }
 
+a {
+  color: white;
+  font-weight: 900;
+  &:hover, &:focus {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
 .button {
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid white;
   color: white;
-  &:hover {
+  &:hover, &:focus {
     background-color: white;
+    color: $medium-purple;
+    text-decoration: none;
   }
 }
+
 
 .wrapper {
   @include outer-container;
@@ -39,23 +51,22 @@ body {
 
 // _includes/header.html
 .site-header {
+
   .disclaimer {
     background-color: $dark-purple;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 40px;
     color: white;
-    border-bottom: 1px solid $medium-purple;
-  }
-
-  .us-official {
-    background-color: $dark-purple;
-    padding: 10px 0;
     text-align: center;
-    color: white;
+    .us-official {
+      margin-left: 177px;
+    }
+    .alpha {
+      float: right;
+    }
   }
 
   > nav {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $dark-purple;
 
     #main-nav {
       @include outer-container;
@@ -138,15 +149,15 @@ body {
       @include outer-container;
       color: white;
       padding: 30px 0;
-      p { 
-        margin-top: 12px; 
+      p {
+        margin-top: 12px;
       }
-      
-      a { 
+
+      a {
         font-weight: bold;
         color: white;
       }
-      
+
       .donut {
         @include span-columns(3);
 
@@ -169,19 +180,33 @@ body {
     }
 
     #main-content {
-      &.white-bkg {
-        padding: 40px 0;
-        background-color: white;
-      }
-      table {
-        select {
-          display: inline-block;
-          margin: 0 5px;
+      .tab-menu {
+        width: 100%;
+        .tab {
+          width: 50%;
+          margin: 0;
+          float: left;
+          text-align: center;
+          padding: 30px 0;
+          font-size: 1.5em;
+        }
+        a.tab {
           background-color: $medium-purple;
           color: white;
-          border: 0px;
-          padding: 5px 0px 5px 5px;
-          font-weight: bold;
+          &:hover, &:focus {
+            color: white;
+          }
+        }
+      }
+      &.white-bkg {
+        background-color: white;
+        a {
+          color: $light-purple;
+          font-weight: 900;
+          &:hover, &:focus {
+            color: $light-purple;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -190,6 +215,9 @@ body {
 
 // pages/about.html
 #about {
+  .wrapper header {
+    padding: 40px 0;
+  }
   .faq-questions { padding: 20px 0 50px; }
   .faq-answers {
     h3 {
@@ -197,5 +225,107 @@ body {
       margin-bottom: 15px;
     }
     li { padding-bottom: 40px; }
+  }
+}
+
+// dataTables
+.dataTables_wrapper {
+  padding: 60px 0 40px;
+  .dataTables_length {
+    font-size: 1.1em;
+    font-weight: 200;
+    select {
+      border: none;
+      display: inline-block;
+      color: white;
+      width: 60px;
+      border-radius: 0px;
+      padding: 0 8px;
+      margin: 0 5px;
+      height: 30px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-purple;
+    }
+  }
+  .dataTables_filter {
+    font-size: 1.1em;
+    label { float: right; }
+    input {
+      display: inline-block;
+      width: auto;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      height: 40px;
+      width: 400px;
+      box-shadow: none;
+      font-size: 1.1em;
+      font-weight: 200;
+    }
+  }
+  table.dataTable {
+    padding: 20px 0;
+    th, td {
+      border-bottom: 2px solid #EEE !important;
+      padding: 8px 0 !important;
+    }
+    &.no-footer {
+      border: none;
+    }
+    &.agency {
+      td { padding: 15px 0 !important; }
+      .progress-bar-indication {
+        background-color: #CCC;
+        border-radius: 20px;
+        width: 70%;
+
+        > .meter {
+          @include box-sizing(border-box);
+          background-color: $light-purple;
+          background-repeat: repeat-x;
+          background-size: 40px 40px;
+          border-radius: 20px;
+          margin: 15px 0;
+          display: block;
+          height: 100%;
+          width: 60%;
+        }
+
+        p {
+          font-weight: 900;
+          font-size: 0.875em;
+          position: relative;
+          top: -18px;
+        }
+      }
+    }
+  }
+  .dataTables_info {
+    padding-top: 0 !important;
+  }
+  .dataTables_paginate {
+    a.paginate_button {
+      padding: 0 8px !important;
+      font-size: 0.875em;
+      border: none !important;
+      &.current {
+        background: $medium-purple !important;
+        color: white !important;
+        &:hover {
+          color: white !important;
+        }
+      }
+      &:hover, &:focus {
+        background: $medium-purple !important;
+        color: white !important;
+      }
+      &.disabled {
+        &:hover, &:focus {
+          background: transparent !important;
+        }
+      }
+    }
   }
 }

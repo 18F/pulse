@@ -1,16 +1,8 @@
----
-layout: default
-permalink: /https/
-id: https
-title: "HTTPS in the federal government"
-description: "How federal government domains are doing at deploying HTTPS."
----
-
 <header class="chart">
 
   <div class="donut">
     <div class="https_chart"></div>
-    {% include https_results.html %}
+    {% include https/donut.html %}
   </div>
 
   <div class="description">
@@ -21,18 +13,3 @@ description: "How federal government domains are doing at deploying HTTPS."
   </div>
 
 </header>
-
-<section id="main-content" class="white-bkg">
-  <div class="wrapper">
-    <table>
-        <thead>
-            <th>Domain</th>
-            <th>HTTPS</th>
-            <th>HTTPS Behavior</th>
-            <th>HSTS</th>
-        </thead>
-    </table>
-  </div>
-</section>
-
-<script src="/assets/js/https.js"></script>

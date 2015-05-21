@@ -1,0 +1,3172 @@
+{
+  "data": [
+    {
+      "Domain": "404.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "9-11commission.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "911.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "911commission.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "abandonedmines.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "abilityone.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "abmc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "access-board.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "achp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "acl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "acquisition.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "acus.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "acwi.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ada.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "adlnet.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "admongo.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "adr.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "advantage.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "afadvantage.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "aff.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "afrh.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "agingstats.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ahrq.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "aids.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "airnow.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "alaskacenters.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "alertaenlinea.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "altusandc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "alzheimers.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ama.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "amberalert.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "americanlatinomuseum.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "americathebeautifulquarters.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ameslab.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "amtrakoig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "anl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "anstaskforce.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "aoa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "arc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "archives.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "arctic.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "arcticgas.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "arm.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ars-grin.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "arts.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "asap.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "asc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "atf.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "autocommunities.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "aviationweather.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ayudaconmibanco.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bam.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bankanswers.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bankcustomer.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bankcustomerassistance.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bankhelp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "banknet.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bbg.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bea.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "benefits.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bep.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bfem.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bia.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bioeco.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bioethics.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "biomassboard.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "biometrics.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "biopreferred.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bja.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bjs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bldrdoc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "blm.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bls.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bnl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "boem.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "boemre.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bondpro.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bop.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "bpa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "brac.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "broadband.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "broadbandmap.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "bsee.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "buyaccessible.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "buyusa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "c3.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cancer.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cao.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "capnhq.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "carboncyclescience.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "casl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cbca.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cbp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ccac.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ccr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cdc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "cdfifund.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "cendi.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "census.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cfa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cfda.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "cflhd.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cfo.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "cftc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "challenge.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "change.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "chcoc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "childreninadversity.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "childstats.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "childwelfare.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "choosemyplate.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "christophercolumbusfoundation.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cia.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cio.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "civilianresponsecorps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "civilrightsusa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "climate.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "clinicaltrial.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "clinicaltrials.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "clintonlibrary.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cms.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cmts.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "cncsoig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cnss.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "coast2050.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "coastalamerica.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "collegedrinkingprevention.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "commerce.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "comptrollerofthecurrency.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "computersforlearning.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "connect.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "consumer.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "consumerfinance.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "consumersentinel.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "consumidor.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "continentalshelf.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "contractdirectory.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "coralreef.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "counterwmd.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cpars.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cpnireporting.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cpsc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "crimesolutions.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "crimevictims.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "crt2014-2024review.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "csb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "csosa.fed.us",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "csosa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cttso.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cuidadodesalud.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cupcao.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "cwc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "data.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "dea.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "deadiversion.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "defense.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "denali.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dfafacts.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dhs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "digitalgov.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "digitalliteracy.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "directoasucuenta.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "disability.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "disasterassistance.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "disasterhousing.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "distracteddriving.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "distraction.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "dnfsb.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "dni.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dnsops.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "docline.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dod.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "doeal.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "doi.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "doioig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dol-esa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dol.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "doleta.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "donotcall.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dot.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "dotgov.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dottrafficrecords.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dottrcc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dra.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "drought.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "drugabuse.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "dsac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "e3.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "eac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "economicinclusion.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "econsumer.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ecopartnerships.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ecpic.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ed.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "eda.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "edpubs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "education.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "eeoc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "eftps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "eia.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "eisenhowermemorial.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "eldercare.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "employeeexpress.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "empowhr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ems.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "endingthedocumentgame.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "energy.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "energycodes.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "energystar.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "epa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "epls.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "esa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "esc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "espanolforlawenforcement.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "esrs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "eta-find.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ethicsburg.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "evergladesrestoration.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "execsec.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "exim.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "export.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "eyenote.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "faa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "faasafety.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "faca.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "facadatabase.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fafsa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fai.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fan.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fapiis.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fara.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "farmerclaims.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fatherhood.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fbi.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fbiic.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fbijobs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fbo.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fca.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fcc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fcg.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fcsic.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fcsm.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fda.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fdic.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fdicbets.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fdicig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fdicoig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fdicseguro.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fdms.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fdr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "feb.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fec.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedcenter.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "federalaccountability.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "federalinvestments.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "federalreserve.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "federalreserveconsumerhelp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedidcard.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fedinvest.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedpartnership.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedramp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedrealestate.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedrooms.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fedshirevets.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fedstats.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "feedthefuture.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fema.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "femalefarmerclaims.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ferc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fercalt.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ffiec.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fgdc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fhfa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fhfaoig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fido.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fightingmalaria.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "financialresearch.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fincen.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "findyouthinfo.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "firecode.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fireleadership.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "firescience.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "firstnet.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "firstresponder.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "firstrespondertraining.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fiscalcommission.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fishwatch.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fitness.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fleta.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fletc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "flightschoolcandidates.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "floodsmart.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "flra.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "flu.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fmc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fmcs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fmi.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fnal.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "foia.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "foodsafety.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "foodsafetyworkinggroup.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fordlibrarymuseum.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "foreignassistance.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "forestsandrangelands.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "forfeiture.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fpds.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "frcc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "frtib.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "frtr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fs.fed.us",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fsapubs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fsd.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "fsgb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fsrs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ftc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ftccomplaintassistant.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ftcefile.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fttesttwai.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fueleconomy.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fvap.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "fws.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "g5.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "gcdamp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "gcmrc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "genome.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "geocommunicator.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "geomac.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "geoplatform.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ghi.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ginniemae.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "girlshealth.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "globalchange.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "globalhealth.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "globe.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "godirect.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "goes-r.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "golearn.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "govloans.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "govsales.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "gps.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "grants.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "grantsolutions.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "greengov.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "gsa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "gsaadvantage.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "gsaauctions.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "gsadvantage.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "gsaig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "gsaxcess.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "guideline.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "gwa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "hanford.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "harp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "health.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "healthcare.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "healthdata.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "healthfinder.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "healthindicators.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "healthit.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "healthypeople.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "helpwithmybank.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "helpwithmycheckingaccount.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "helpwithmycreditcard.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "helpwithmycreditcardbank.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "helpwithmymortgage.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "helpwithmymortgagebank.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "hhs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "hispanicfarmerclaims.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "homesales.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "hrsa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "hru.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "hsa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "hsr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "hud.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "hudoig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "humanrights.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "hydrogen.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iad.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "iaf.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iarpa-ideas.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iarpa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iat.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iawg.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ibwc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ic3.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "icass.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "icbemp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ice.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "icjointduty.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "idmanagement.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ignet.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ihs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iiog.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "imls.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "indianaffairs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "inel.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "inl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "insurekidsnow.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "integrity.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "intelink.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "intelligence.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "interior.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "invasivespecies.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "invasivespeciesinfo.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "investor.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ioss.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ipac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ipcc-wg2.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ipp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "iprcenter.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "irs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "irsvideos.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ise.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "isotope.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "isotopes.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "italladdsup.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "itap.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "itdashboard.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "itds.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "itis.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "its.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "jamesmadison.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "jccs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "jem.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "jimmycarterlibrary.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "jobcorps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "justice.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "juvenilecouncil.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "jwod.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "klamathrestoration.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lacoast.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "landfire.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "landimaging.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lanl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "latinofarmerclaims.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lbl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lca.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lcacommons.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lcrmscp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "learnperformance.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lep.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "letsmove.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "llnl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lmrcouncil.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "lmvsci.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "locatorplus.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "longtermcare.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lowermississippivalleyscience.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "lsc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "macpac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "makinghomeaffordable.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "malwareinvestigator.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "manufacturing.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "mapaplanet.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "marine.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "marinecadastre.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "marview.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "max.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mbda.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mcc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mcrmc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mda.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "medicaid.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "medicalcountermeasures.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "medicalreservecorps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "medicare.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "medpac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mentalhealth.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "mitigationcommission.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mmc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mms.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "moneyfactory.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "moneyfactorystore.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "mrlc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "msb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "msha.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "mspb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mtbs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mycreditunion.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "myfdicinsurance.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mymedicare.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "mymoney.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nafri.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nagb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "namus.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nano.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nasa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nationalbankhelp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nationalgangcenter.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nationalhousing.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nationalhousinglocator.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nationalmap.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nationalservice.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nationsreportcard.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "navycash.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nbc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nccrc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ncd.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ncirc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ncix.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ncjrs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ncpc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ncpw.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ncrc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nctc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ncua.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ndep.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ndop.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "neglecteddiseases.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "neh.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nehrp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nel.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nemi.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nersc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "newmoney.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nfpors.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nga.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nhl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nhtsa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nibin.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nicic.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "niem.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nifc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "niftt.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nigc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nih.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nihseniorhealth.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nij.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "niosh.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nist.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nitrd.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nixonlibrary.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nlrb.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nls.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nmb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nmic.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nnlm.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "noaa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nolaenvironmental.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "notalone.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nps.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nrc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nrel.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nro.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nrojr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nsa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nsep.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nsf.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nsopw.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nswp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ntdprogram.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ntis.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ntsb.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nutrition.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "nwbc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "nwcg.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "occ.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "occhelps.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "odni.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "oea.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ofcm.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ofda.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ofee.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "oge.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ojjdp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ojp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "onguardonline.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "onhir.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "onlinewbc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "onrr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "opensource.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "opic.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "opm.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "orau.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "organdonor.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ornl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "osac.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "osc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "osdbu.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "osha.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "oshrc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "osmre.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "osti.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ots.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ourdocuments.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ovc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ovcttac.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "papahanaumokuakea.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "partner4solutions.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "patriotbonds.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pay.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "paymentaccuracy.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pbgc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "pcah.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pclob.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "peacecore.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "peacecorp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "peacecorps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pepfar.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "performance.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "phe.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pic.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "plainlanguage.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "pmf.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "pmi.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pnl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pnnl.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "poolsafely.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ppirs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "prc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "preserveamerica.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "presidentialserviceawards.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "presidio.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pretrialservices.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "protecciondelconsumidor.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "psa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "psc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "pscr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "psob.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "qatesttwai.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "rcfl.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ready.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "reaganlibrary.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "realestatesales.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "realpropertyprofile.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "recalls.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "recovery.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "recoverymonth.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "recreation.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "reginfo.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "regulations.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "relocatefeds.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "reo.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "research.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "restorethegulf.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "rivers.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "rocis.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "rrb.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "sac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "safecom.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "safercar.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "saferproducts.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "safertruck.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "safetyact.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "salmonrecovery.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sam.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "samhsa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sandia.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "savingsbond.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "savingsbonds.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "savingsbondwizard.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sba.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "sbir.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "scidac.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "science.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "science360.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sciencebase.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "sdr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sec.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "secretservice.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "section508.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "segurosocial.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "selectagents.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "serve.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sftool.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "sharetheroadsafely.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "sierrawild.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sigtarp.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "siteidiq.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "slgs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "smart.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "smartcheck.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "smartgrid.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "smokefree.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "snap.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sns.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "socialsecurity.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "solardecathlon.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "srs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ssa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ssab.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sss.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "start2farm.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "state.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "stennis.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "stopalcoholabuse.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "stopbullying.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "stopfraud.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "stopmedicarefraud.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "strategicsourcing.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "studentloans.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "supportthevoter.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "surgeongeneral.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "sustainability.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "sustainablecommunities.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "swpa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "symbols.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "taaps.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "tax.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "telework.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "thecoolspot.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "thepeoplesgarden.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "time.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "tissueengineering.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "trade.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "trafficsafetymarketing.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "transportation.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "treaslockbox.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "treasury.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "treasuryauctions.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "treasurydirect.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "treasuryhunt.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "treasuryscams.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "truman.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "tsa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "tsp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "tsunami.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "tswg.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ttb.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ttbonline.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "tva.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ucrdatatool.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "udall.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "unicor.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "unitedweride.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "unlocktalent.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "urbanwaters.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "us-cert.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usa.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usability.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usaid.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usaidallnet.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usajobs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usalearning.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usandc.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usap.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usaperformance.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usaspending.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usbr.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "uscirf.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "uscis.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usda.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usdebitcard.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usembassy-mexico.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usembassy.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usgs.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usich.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usicn.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usint.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usitc.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usmarshals.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usmint.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "usmission.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "usphs.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "uspis.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "uspsoig.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "uspto.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ustda.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "ustr.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "utahfireinfo.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "va.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "vaccines.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "vallescaldera.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "vcf.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "vef.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "vehiclehistory.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "vetbiz.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "vistacampus.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "volunteer.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "volunteeringinamerica.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wapa.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "watermonitor.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wdol.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "weather.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "webharvest.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wethepeople.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "whistleblowers.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "whitehouse.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "whitehouseconferenceonaging.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wildfire.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wildlifeadaptationstrategy.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wizard.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wlci.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "womenfarmerclaims.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "womenshealth.gov",
+      "Participates in DAP?": 1
+    },
+    {
+      "Domain": "workplace.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "worldwar1centennial.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "wrp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "ymp.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "youthgo.gov",
+      "Participates in DAP?": 0
+    },
+    {
+      "Domain": "youthrules.gov",
+      "Participates in DAP?": 0
+    }
+  ]
+}

@@ -1,14 +1,8 @@
----
-layout: default
-id: analytics
-permalink: /analytics/
----
-
 <header class="chart">
 
   <div class="donut">
     <div class="dap_chart"></div>
-    {% include dap_results.html %}
+    {% include analytics/donut.html %}
   </div>
 
   <div class="description">
@@ -19,16 +13,3 @@ permalink: /analytics/
   </div>
 
 </header>
-
-<section id="main-content" class="white-bkg">
-  <div class="wrapper">
-    <table>
-      <thead>
-        <th>Domain</th>
-        <th>Participates in Analytics</th>
-      </thead>
-    </table>
-  </div>
-</section>
-
-<script src="/assets/js/analytics.js"></script>
