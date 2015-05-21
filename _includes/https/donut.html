@@ -57,21 +57,21 @@
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-value")
-            .attr("y", 10)
+            .attr("dy", "0.2em")
             .attr("fill", "white")
-        // TODO: Value below needs to get pulled in dynamically
-        .text(function(d)
-            { return "" + data[0].value + "%";
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function(d){ 
+                return "" + data[0].value + "%";
         });
 
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-desc")
-            .attr("y", 30)
+            .attr("dy", "2.5em")
             .attr("fill", "white")
-        // TODO: Value below needs to get pulled in dynamically
-        .text(function(d) {
-            return "USE HTTPS";
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function(d) {
+                return "USES HTTPS";
         });
     });
 })();

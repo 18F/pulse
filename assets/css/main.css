@@ -376,6 +376,9 @@ a {
       color: #AB67E8;
       text-decoration: underline; }
 
+#analytics #content > header .donut .total-value {
+  font-size: 3.5em; }
+
 #about .wrapper header {
   padding: 40px 0; }
 #about .faq-questions {

@@ -57,21 +57,31 @@
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-value")
-            .attr("y", 10)
             .attr("fill", "white")
-        // TODO: Value below needs to get pulled in dynamically
-        .text(function (d) {
-            return "" + data[0].value + "%";
+            .attr("dy", "0.2em")
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function (d) {
+                return "" + data[0].value + "%";
         });
 
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-desc")
-            .attr("y", 30)
             .attr("fill", "white")
-        // TODO: Value below needs to get pulled in dynamically
-        .text(function (d) {
-            return "PARTICIPATE IN DAP";
+            .attr("dy", "2.5em")
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function (d) {
+            return "PARTICIPATES";
+        });
+
+        g.append("text")
+            .attr("text-anchor", "middle")
+            .attr("class", "total-desc")
+            .attr("fill", "white")
+            .attr("dy", "3.75em")
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function (d) {
+            return "IN ANALYTICS";
         });
     });
 })();
