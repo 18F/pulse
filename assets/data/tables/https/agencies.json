@@ -5,6 +5,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -12,6 +13,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 100
     },
     {
@@ -19,6 +21,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -26,6 +29,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -33,6 +37,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -40,6 +45,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -47,6 +53,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -54,6 +61,7 @@
       "HTTPS Enabled?": 67,
       "HTTPS Enforced?": 67,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 33,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -61,6 +69,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -68,6 +77,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -75,6 +85,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -82,6 +93,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 50,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -89,6 +101,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -96,6 +109,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 10,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -103,6 +117,7 @@
       "HTTPS Enabled?": 22,
       "HTTPS Enforced?": 0,
       "Number of Domains": 9,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -110,6 +125,7 @@
       "HTTPS Enabled?": 10,
       "HTTPS Enforced?": 5,
       "Number of Domains": 21,
+      "SSL Labs (A- or higher)": 5,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -117,6 +133,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -124,6 +141,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 4,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -131,6 +149,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -138,6 +157,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -145,6 +165,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -152,6 +173,7 @@
       "HTTPS Enabled?": 39,
       "HTTPS Enforced?": 16,
       "Number of Domains": 44,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -159,6 +181,7 @@
       "HTTPS Enabled?": 21,
       "HTTPS Enforced?": 0,
       "Number of Domains": 53,
+      "SSL Labs (A- or higher)": 6,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -166,6 +189,7 @@
       "HTTPS Enabled?": 35,
       "HTTPS Enforced?": 17,
       "Number of Domains": 23,
+      "SSL Labs (A- or higher)": 9,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -173,6 +197,7 @@
       "HTTPS Enabled?": 44,
       "HTTPS Enforced?": 19,
       "Number of Domains": 16,
+      "SSL Labs (A- or higher)": 6,
       "Strict Transport Security (HSTS)": 6
     },
     {
@@ -180,6 +205,7 @@
       "HTTPS Enabled?": 45,
       "HTTPS Enforced?": 10,
       "Number of Domains": 58,
+      "SSL Labs (A- or higher)": 10,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -187,6 +213,7 @@
       "HTTPS Enabled?": 33,
       "HTTPS Enforced?": 9,
       "Number of Domains": 112,
+      "SSL Labs (A- or higher)": 12,
       "Strict Transport Security (HSTS)": 3
     },
     {
@@ -194,6 +221,7 @@
       "HTTPS Enabled?": 62,
       "HTTPS Enforced?": 25,
       "Number of Domains": 24,
+      "SSL Labs (A- or higher)": 12,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -201,6 +229,7 @@
       "HTTPS Enabled?": 10,
       "HTTPS Enforced?": 0,
       "Number of Domains": 10,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -208,6 +237,7 @@
       "HTTPS Enabled?": 20,
       "HTTPS Enforced?": 14,
       "Number of Domains": 66,
+      "SSL Labs (A- or higher)": 6,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -215,6 +245,7 @@
       "HTTPS Enabled?": 25,
       "HTTPS Enforced?": 15,
       "Number of Domains": 20,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -222,6 +253,7 @@
       "HTTPS Enabled?": 45,
       "HTTPS Enforced?": 18,
       "Number of Domains": 22,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -229,6 +261,7 @@
       "HTTPS Enabled?": 38,
       "HTTPS Enforced?": 6,
       "Number of Domains": 32,
+      "SSL Labs (A- or higher)": 3,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -236,6 +269,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 17,
       "Number of Domains": 6,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -243,6 +277,7 @@
       "HTTPS Enabled?": 35,
       "HTTPS Enforced?": 5,
       "Number of Domains": 83,
+      "SSL Labs (A- or higher)": 2,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -250,6 +285,7 @@
       "HTTPS Enabled?": 29,
       "HTTPS Enforced?": 19,
       "Number of Domains": 85,
+      "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -257,6 +293,7 @@
       "HTTPS Enabled?": 18,
       "HTTPS Enforced?": 0,
       "Number of Domains": 11,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -264,6 +301,7 @@
       "HTTPS Enabled?": 20,
       "HTTPS Enforced?": 7,
       "Number of Domains": 15,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -271,6 +309,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -278,6 +317,7 @@
       "HTTPS Enabled?": 74,
       "HTTPS Enforced?": 19,
       "Number of Domains": 31,
+      "SSL Labs (A- or higher)": 45,
       "Strict Transport Security (HSTS)": 32
     },
     {
@@ -285,6 +325,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -292,6 +333,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -299,6 +341,7 @@
       "HTTPS Enabled?": 12,
       "HTTPS Enforced?": 0,
       "Number of Domains": 8,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -306,6 +349,7 @@
       "HTTPS Enabled?": 22,
       "HTTPS Enforced?": 22,
       "Number of Domains": 9,
+      "SSL Labs (A- or higher)": 11,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -313,6 +357,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -320,6 +365,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -327,6 +373,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -334,6 +381,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -341,6 +389,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -348,6 +397,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -355,6 +405,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -362,6 +413,7 @@
       "HTTPS Enabled?": 83,
       "HTTPS Enforced?": 17,
       "Number of Domains": 6,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -369,6 +421,7 @@
       "HTTPS Enabled?": 33,
       "HTTPS Enforced?": 33,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -376,6 +429,7 @@
       "HTTPS Enabled?": 59,
       "HTTPS Enforced?": 27,
       "Number of Domains": 22,
+      "SSL Labs (A- or higher)": 27,
       "Strict Transport Security (HSTS)": 18
     },
     {
@@ -383,6 +437,7 @@
       "HTTPS Enabled?": 52,
       "HTTPS Enforced?": 27,
       "Number of Domains": 94,
+      "SSL Labs (A- or higher)": 5,
       "Strict Transport Security (HSTS)": 6
     },
     {
@@ -390,6 +445,7 @@
       "HTTPS Enabled?": 13,
       "HTTPS Enforced?": 4,
       "Number of Domains": 23,
+      "SSL Labs (A- or higher)": 4,
       "Strict Transport Security (HSTS)": 4
     },
     {
@@ -397,6 +453,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -404,6 +461,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -411,6 +469,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -418,6 +477,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -425,6 +485,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -432,6 +493,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -439,6 +501,7 @@
       "HTTPS Enabled?": 5,
       "HTTPS Enforced?": 2,
       "Number of Domains": 42,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -446,6 +509,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -453,6 +517,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -460,6 +525,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -467,6 +533,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -474,6 +541,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -481,6 +549,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -488,6 +557,7 @@
       "HTTPS Enabled?": 60,
       "HTTPS Enforced?": 0,
       "Number of Domains": 5,
+      "SSL Labs (A- or higher)": 20,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -495,6 +565,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 16,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -502,6 +573,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -509,6 +581,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -516,6 +589,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -523,6 +597,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -530,6 +605,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 0,
       "Number of Domains": 4,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -537,6 +613,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -544,6 +621,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -551,6 +629,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -558,6 +637,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -565,6 +645,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -572,6 +653,7 @@
       "HTTPS Enabled?": 88,
       "HTTPS Enforced?": 0,
       "Number of Domains": 8,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -579,6 +661,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -586,6 +669,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -593,6 +677,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 50,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 50,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -600,6 +685,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -607,6 +693,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -614,6 +701,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -621,6 +709,7 @@
       "HTTPS Enabled?": 57,
       "HTTPS Enforced?": 29,
       "Number of Domains": 21,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 5
     },
     {
@@ -628,6 +717,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 100
     },
     {
@@ -635,6 +725,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -642,6 +733,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -649,6 +741,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -656,6 +749,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 5,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -663,6 +757,7 @@
       "HTTPS Enabled?": 67,
       "HTTPS Enforced?": 0,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 33,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -670,6 +765,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -677,6 +773,7 @@
       "HTTPS Enabled?": 29,
       "HTTPS Enforced?": 29,
       "Number of Domains": 7,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -684,6 +781,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -691,6 +789,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -698,6 +797,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -705,6 +805,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -712,6 +813,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -719,6 +821,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -726,6 +829,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -733,6 +837,7 @@
       "HTTPS Enabled?": 6,
       "HTTPS Enforced?": 6,
       "Number of Domains": 16,
+      "SSL Labs (A- or higher)": 6,
       "Strict Transport Security (HSTS)": 6
     },
     {
@@ -740,6 +845,7 @@
       "HTTPS Enabled?": 22,
       "HTTPS Enforced?": 5,
       "Number of Domains": 41,
+      "SSL Labs (A- or higher)": 5,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -747,6 +853,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -754,6 +861,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -761,6 +869,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -768,6 +877,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -775,6 +885,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -782,6 +893,7 @@
       "HTTPS Enabled?": 33,
       "HTTPS Enforced?": 0,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -789,6 +901,7 @@
       "HTTPS Enabled?": 25,
       "HTTPS Enforced?": 25,
       "Number of Domains": 4,
+      "SSL Labs (A- or higher)": 25,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -796,6 +909,7 @@
       "HTTPS Enabled?": 36,
       "HTTPS Enforced?": 9,
       "Number of Domains": 11,
+      "SSL Labs (A- or higher)": 9,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -803,6 +917,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 3,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -810,6 +925,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -817,6 +933,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 100,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 100
     },
     {
@@ -824,6 +941,7 @@
       "HTTPS Enabled?": 100,
       "HTTPS Enforced?": 0,
       "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -831,6 +949,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -838,6 +957,7 @@
       "HTTPS Enabled?": 50,
       "HTTPS Enforced?": 0,
       "Number of Domains": 4,
+      "SSL Labs (A- or higher)": 25,
       "Strict Transport Security (HSTS)": 0
     },
     {
@@ -845,6 +965,7 @@
       "HTTPS Enabled?": 0,
       "HTTPS Enforced?": 0,
       "Number of Domains": 2,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0
     }
   ]

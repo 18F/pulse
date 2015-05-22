@@ -12,7 +12,7 @@ $(document).ready(function () {
     },
 
     https_forced: {
-      "-1": "No", // N/A
+      "-1": "", // N/A
       0: "No", // Downgrade
       1: "No", // Present, not default
       2: "Yes", // Defaults eventually to HTTPS
@@ -20,11 +20,22 @@ $(document).ready(function () {
     },
 
     hsts: {
-      "-1": "No", // N/A
+      "-1": "", // N/A
       0: "No", // No
       1: "Yes", // HSTS on only that domain
       2: "Yes", // HSTS on subdomains
       3: "Yes, and preloaded" // HSTS on subdomains + preload
+    },
+
+    grade: {
+      "-1": "",
+      0: "F",
+      1: "T",
+      2: "C",
+      3: "B",
+      4: "A-",
+      5: "A",
+      6: "A+"
     }
   };
 
@@ -37,6 +48,21 @@ $(document).ready(function () {
     }
   };
 
+  var link = function(data, type, row) {
+    var grade = display(names.grade)(data, type);
+    if (type == "sort")
+      return grade;
+    else
+      return "" +
+        "<a href=\"" + labsUrlFor(row['Domain']) + "\" target=\"blank\">" +
+          grade +
+        "</a>";
+  };
+
+  var labsUrlFor = function(domain) {
+    return "https://www.ssllabs.com/ssltest/analyze.html?d=" + domain;
+  };
+
   var renderTable = function(data) {
     $("table").DataTable({
 
@@ -46,13 +72,15 @@ $(document).ready(function () {
         {data: "Domain"},
         {data: "HTTPS Enabled?"},
         {data: "HTTPS Enforced?"},
-        {data: "Strict Transport Security (HSTS)"}
+        {data: "Strict Transport Security (HSTS)"},
+        {data: "SSL Labs Grade"}
       ],
 
       columnDefs: [
         {render: display(names.https), targets: 1},
         {render: display(names.https_forced), targets: 2},
         {render: display(names.hsts), targets: 3},
+        {render: link, targets: 4},
       ],
 
       "oLanguage": {

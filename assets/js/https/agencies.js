@@ -13,7 +13,8 @@ $(document).ready(function () {
         {data: "Number of Domains"},
         {data: "HTTPS Enabled?"},
         {data: "HTTPS Enforced?"},
-        {data: "Strict Transport Security (HSTS)"}
+        {data: "Strict Transport Security (HSTS)"},
+        {data: "SSL Labs (A- or higher)"}
       ],
 
       // order by number of domains
@@ -22,7 +23,8 @@ $(document).ready(function () {
       columnDefs: [
         {render: Utils.progressBar, targets: 2},
         {render: Utils.progressBar, targets: 3},
-        {render: Utils.progressBar, targets: 4}
+        {render: Utils.progressBar, targets: 4},
+        {render: Utils.progressBar, targets: 5}
       ],
 
       "oLanguage": {
