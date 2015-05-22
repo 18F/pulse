@@ -202,7 +202,7 @@ p {
   font-size: 1.0em; }
 
 body {
-  background-color: #450081; }
+  background-color: #0059b3; }
 
 a {
   color: white;
@@ -219,7 +219,7 @@ a {
   color: white; }
   .button:hover, .button:focus {
     background-color: white;
-    color: #450081;
+    color: #0059b3;
     text-decoration: none; }
 
 .wrapper {
@@ -232,7 +232,7 @@ a {
     clear: both; }
 
 .site-header .disclaimer {
-  background-color: #330060;
+  background-color: #003366;
   padding: 10px 40px;
   color: white;
   text-align: center; }
@@ -241,7 +241,7 @@ a {
   .site-header .disclaimer .alpha {
     float: right; }
 .site-header > nav {
-  border-bottom: 1px solid #330060; }
+  border-bottom: 1px solid #003366; }
   .site-header > nav #main-nav {
     max-width: 68em;
     margin-left: auto;
@@ -275,7 +275,7 @@ a {
         .site-header > nav #main-nav ul li a {
           padding: 17px 24px; }
           .site-header > nav #main-nav ul li a:hover {
-            color: #450081;
+            color: #0059b3;
             background-color: white; }
 
 #home .hero {
@@ -363,18 +363,24 @@ a {
     padding: 30px 0;
     font-size: 1.5em; }
   #analytics #content #main-content .tab-menu a.tab, #https #content #main-content .tab-menu a.tab, #about #content #main-content .tab-menu a.tab {
-    background-color: #450081;
+    background-color: #0059b3;
     color: white; }
     #analytics #content #main-content .tab-menu a.tab:hover, #analytics #content #main-content .tab-menu a.tab:focus, #https #content #main-content .tab-menu a.tab:hover, #https #content #main-content .tab-menu a.tab:focus, #about #content #main-content .tab-menu a.tab:hover, #about #content #main-content .tab-menu a.tab:focus {
       color: white; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
   background-color: white; }
   #analytics #content #main-content.white-bkg a, #https #content #main-content.white-bkg a, #about #content #main-content.white-bkg a {
-    color: #AB67E8;
+    color: #0066CC;
     font-weight: 900; }
     #analytics #content #main-content.white-bkg a:hover, #analytics #content #main-content.white-bkg a:focus, #https #content #main-content.white-bkg a:hover, #https #content #main-content.white-bkg a:focus, #about #content #main-content.white-bkg a:hover, #about #content #main-content.white-bkg a:focus {
-      color: #AB67E8;
+      color: #0066CC;
       text-decoration: underline; }
+
+.https_chart, .dap_chart {
+  cursor: pointer; }
+
+#analytics #content > header .donut .total-value {
+  font-size: 3.5em; }
 
 #about .wrapper header {
   padding: 40px 0; }
@@ -404,7 +410,7 @@ a {
       -moz-appearance: none;
       appearance: none;
       cursor: pointer;
-      background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #450081; }
+      background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #0059b3; }
   .dataTables_wrapper .dataTables_filter {
     font-size: 1.1em; }
     .dataTables_wrapper .dataTables_filter label {
@@ -436,7 +442,7 @@ a {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        background-color: #AB67E8;
+        background-color: #0066CC;
         background-repeat: repeat-x;
         background-size: 40px 40px;
         border-radius: 20px;
@@ -456,12 +462,12 @@ a {
     font-size: 0.875em;
     border: none !important; }
     .dataTables_wrapper .dataTables_paginate a.paginate_button.current {
-      background: #450081 !important;
+      background: #0059b3 !important;
       color: white !important; }
       .dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover {
         color: white !important; }
     .dataTables_wrapper .dataTables_paginate a.paginate_button:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button:focus {
-      background: #450081 !important;
+      background: #0059b3 !important;
       color: white !important; }
     .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:focus {
       background: transparent !important; }

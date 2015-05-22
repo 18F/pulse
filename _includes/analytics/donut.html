@@ -13,7 +13,7 @@
     var radius = Math.min(width, height) / 2;
 
     var color = d3.scale.ordinal()
-        .range(["#AB67E8", "#FFFFFF"]);
+        .range(["#7ED321", "#FFFFFF"]);
 
     var arc = d3.svg.arc()
         .outerRadius(radius)
@@ -30,7 +30,10 @@
         .attr("width", width)
         .attr("height", height)
         .append("g")
-        .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+        .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")")
+        .on("click", function(d,i) { 
+            location.href = "/analytics/domains/";
+        });
 
     d3.csv("/assets/data/analytics.csv", function (error, data) {
 
@@ -57,21 +60,31 @@
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-value")
-            .attr("y", 10)
             .attr("fill", "white")
-        // TODO: Value below needs to get pulled in dynamically
-        .text(function (d) {
-            return "" + data[0].value + "%";
+            .attr("dy", "0.2em")
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function (d) {
+                return "" + data[0].value + "%";
         });
 
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-desc")
-            .attr("y", 30)
             .attr("fill", "white")
-        // TODO: Value below needs to get pulled in dynamically
-        .text(function (d) {
-            return "PARTICIPATE IN DAP";
+            .attr("dy", "2.5em")
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function (d) {
+            return "PARTICIPATES";
+        });
+
+        g.append("text")
+            .attr("text-anchor", "middle")
+            .attr("class", "total-desc")
+            .attr("fill", "white")
+            .attr("dy", "3.75em")
+            // TODO: Value below needs to get pulled in dynamically
+            .text(function (d) {
+            return "IN ANALYTICS";
         });
     });
 })();
