@@ -192,14 +192,16 @@ a {
     #main-content {
       .tab-menu {
         width: 100%;
+
         .tab {
-          width: 50%;
+          width: 33.33%;
           margin: 0;
           float: left;
           text-align: center;
           padding: 30px 0;
           font-size: 1.5em;
         }
+
         a.tab {
           background-color: $medium-blue;
           color: white;
@@ -208,6 +210,20 @@ a {
           }
         }
       }
+
+      .guide {
+
+        padding: 100px 0 50px 0;
+
+        h1 {
+          margin: 25px 0 10px 0;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+      }
+
       &.white-bkg {
         background-color: white;
         a {

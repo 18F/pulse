@@ -356,7 +356,7 @@ a {
 #analytics #content #main-content .tab-menu, #https #content #main-content .tab-menu, #about #content #main-content .tab-menu {
   width: 100%; }
   #analytics #content #main-content .tab-menu .tab, #https #content #main-content .tab-menu .tab, #about #content #main-content .tab-menu .tab {
-    width: 50%;
+    width: 33.33%;
     margin: 0;
     float: left;
     text-align: center;
@@ -367,6 +367,12 @@ a {
     color: white; }
     #analytics #content #main-content .tab-menu a.tab:hover, #analytics #content #main-content .tab-menu a.tab:focus, #https #content #main-content .tab-menu a.tab:hover, #https #content #main-content .tab-menu a.tab:focus, #about #content #main-content .tab-menu a.tab:hover, #about #content #main-content .tab-menu a.tab:focus {
       color: white; }
+#analytics #content #main-content .guide, #https #content #main-content .guide, #about #content #main-content .guide {
+  padding: 100px 0 50px 0; }
+  #analytics #content #main-content .guide h1, #https #content #main-content .guide h1, #about #content #main-content .guide h1 {
+    margin: 25px 0 10px 0; }
+  #analytics #content #main-content .guide p, #https #content #main-content .guide p, #about #content #main-content .guide p {
+    margin: 10px 0; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
   background-color: white; }
   #analytics #content #main-content.white-bkg a, #https #content #main-content.white-bkg a, #about #content #main-content.white-bkg a {
