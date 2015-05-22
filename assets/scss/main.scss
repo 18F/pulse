@@ -9,9 +9,9 @@
 // Colors
 /////////////////////////////////////////
 
-$dark-purple:       #330060;
-$medium-purple:     #450081;
-$light-purple:      #AB67E8;
+$dark-blue:       darken(#0066CC, 20%);
+$medium-blue:     darken(#0066CC, 5%);
+$light-blue:      #0066CC;
 
 // Custom font sizing
 /////////////////////////////////////////
@@ -25,7 +25,7 @@ p  { font-size:   1.0em;    }
 /////////////////////////////////////////
 
 body {
-  background-color: $medium-purple;
+  background-color: $medium-blue;
 }
 
 a {
@@ -45,7 +45,7 @@ a {
   color: white;
   &:hover, &:focus {
     background-color: white;
-    color: $medium-purple;
+    color: $medium-blue;
     text-decoration: none;
   }
 }
@@ -61,7 +61,7 @@ a {
 .site-header {
 
   .disclaimer {
-    background-color: $dark-purple;
+    background-color: $dark-blue;
     padding: 10px 40px;
     color: white;
     text-align: center;
@@ -74,7 +74,7 @@ a {
   }
 
   > nav {
-    border-bottom: 1px solid $dark-purple;
+    border-bottom: 1px solid $dark-blue;
 
     #main-nav {
       @include outer-container;
@@ -93,7 +93,7 @@ a {
           a {
             padding: 17px 24px;
             &:hover {
-              color: $medium-purple;
+              color: $medium-blue;
               background-color: white;
             }
           }
@@ -201,7 +201,7 @@ a {
           font-size: 1.5em;
         }
         a.tab {
-          background-color: $medium-purple;
+          background-color: $medium-blue;
           color: white;
           &:hover, &:focus {
             color: white;
@@ -211,10 +211,10 @@ a {
       &.white-bkg {
         background-color: white;
         a {
-          color: $light-purple;
+          color: $light-blue;
           font-weight: 900;
           &:hover, &:focus {
-            color: $light-purple;
+            color: $light-blue;
             text-decoration: underline;
           }
         }
@@ -267,7 +267,7 @@ a {
       -moz-appearance: none;
       appearance: none;
       cursor: pointer;
-      background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-purple;
+      background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-blue;
     }
   }
   .dataTables_filter {
@@ -303,7 +303,7 @@ a {
 
         > .meter {
           @include box-sizing(border-box);
-          background-color: $light-purple;
+          background-color: $light-blue;
           background-repeat: repeat-x;
           background-size: 40px 40px;
           border-radius: 20px;
@@ -331,14 +331,14 @@ a {
       font-size: 0.875em;
       border: none !important;
       &.current {
-        background: $medium-purple !important;
+        background: $medium-blue !important;
         color: white !important;
         &:hover {
           color: white !important;
         }
       }
       &:hover, &:focus {
-        background: $medium-purple !important;
+        background: $medium-blue !important;
         color: white !important;
       }
       &.disabled {
