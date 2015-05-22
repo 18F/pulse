@@ -301,15 +301,23 @@ a {
       font-weight: 200;
     }
   }
+
   table.dataTable {
     padding: 20px 0;
+
+    a {
+      text-decoration: underline;
+    }
+
     th, td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 !important;
     }
+
     &.no-footer {
       border: none;
     }
+
     &.agency {
       td { padding: 15px 0 !important; }
       .progress-bar-indication {
