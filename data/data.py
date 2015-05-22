@@ -31,6 +31,7 @@ LABELS = {
   'https_forced': 'HTTPS Enforced?',
   'hsts': 'Strict Transport Security (HSTS)',
   'grade': 'SSL Labs Grade',
+  'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?'
 }
 
@@ -234,7 +235,7 @@ def process_domains():
         LABELS['https']: percent(https_stats['https'], https_total),
         LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
         LABELS['hsts']: percent(https_stats['hsts'], https_total),
-        LABELS['grade']: percent(https_stats['grade'], https_total)
+        LABELS['grade_agencies']: percent(https_stats['grade'], https_total)
       })
 
     if analytics_total > 0:
