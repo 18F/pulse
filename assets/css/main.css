@@ -371,6 +371,8 @@ a {
   padding: 100px 0 50px 0; }
   #analytics #content #main-content .guide h1, #https #content #main-content .guide h1, #about #content #main-content .guide h1 {
     margin: 25px 0 10px 0; }
+  #analytics #content #main-content .guide h3, #https #content #main-content .guide h3, #about #content #main-content .guide h3 {
+    margin: 25px 0 10px 0; }
   #analytics #content #main-content .guide p, #https #content #main-content .guide p, #about #content #main-content .guide p {
     margin: 10px 0; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
