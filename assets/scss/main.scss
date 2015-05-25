@@ -340,6 +340,12 @@ a {
       }
     }
 
+    &.dtr-inline.collapsed {
+      td:first-child:before {
+        top: 15px;
+      }
+    }
+
     &.agency {
 
       td { padding: 15px 0 !important; }

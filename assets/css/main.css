@@ -449,6 +449,8 @@ a {
       border: none; }
     .dataTables_wrapper table.dataTable.domain td:first-child {
       white-space: nowrap; }
+    .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
+      top: 15px; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 !important; }
     .dataTables_wrapper table.dataTable.agency td:first-child {
