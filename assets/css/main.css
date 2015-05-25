@@ -434,12 +434,16 @@ a {
       font-size: 1.1em;
       font-weight: 200; }
   .dataTables_wrapper table.dataTable {
-    padding: 20px 0; }
+    padding: 20px 0;
+    /* Domain column, to accommodate for More button. */ }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 20px !important; }
+    .dataTables_wrapper table.dataTable td:first-child {
+      padding-left: 32px !important;
+      white-space: nowrap; }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
       background-position: center left; }
     .dataTables_wrapper table.dataTable.no-footer {

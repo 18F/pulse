@@ -318,6 +318,12 @@ a {
       padding: 8px 0 8px 20px !important;
     }
 
+    /* Domain column, to accommodate for More button. */
+    td:first-child {
+      padding-left: 32px !important;
+      white-space: nowrap;
+    }
+
     thead {
       .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
         background-position: center left;
