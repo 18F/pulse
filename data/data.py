@@ -385,6 +385,8 @@ def https_row_for(domain):
 
   row[LABELS['grade']] = grade
 
+  # row["More details"] = "Anything."
+
   return row
 
 # Given the data we have about a domain, what's the DAP row?
