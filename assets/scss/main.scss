@@ -321,7 +321,6 @@ a {
     /* Domain column, to accommodate for More button. */
     td:first-child {
       padding-left: 32px !important;
-      white-space: nowrap;
     }
 
     thead {
@@ -334,8 +333,21 @@ a {
       border: none;
     }
 
+    &.domain {
+
+      td:first-child {
+        white-space: nowrap;
+      }
+    }
+
     &.agency {
+
       td { padding: 15px 0 !important; }
+
+      td:first-child {
+        padding: 0 10px 0 32px !important;
+      }
+
       .progress-bar-indication {
         background-color: #CCC;
         border-radius: 20px;
