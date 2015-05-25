@@ -79,17 +79,22 @@ a {
     #main-nav {
       @include outer-container;
       padding: 10px 0;
+
       a { color: white; }
+
       h1#branding {
-        @include span-columns(8);
+        @include span-columns(6);
         font-size: 1.875em;
         font-weight: 300;
       }
+
       ul {
-        @include span-columns(4);
+        @include span-columns(6);
         margin-top: 6px;
+
         li {
           display: inline;
+
           a {
             padding: 17px 24px;
             &:hover {
