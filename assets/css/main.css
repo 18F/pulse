@@ -354,7 +354,8 @@ a {
       #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
         margin-right: 0; }
 #analytics #content #main-content .tab-menu, #https #content #main-content .tab-menu, #about #content #main-content .tab-menu {
-  width: 100%; }
+  width: 100%;
+  margin-top: 40px; }
   #analytics #content #main-content .tab-menu .tab, #https #content #main-content .tab-menu .tab, #about #content #main-content .tab-menu .tab {
     width: 33.33%;
     margin: 0;
@@ -366,15 +367,8 @@ a {
     background-color: #0059b3;
     color: white; }
     #analytics #content #main-content .tab-menu a.tab:hover, #analytics #content #main-content .tab-menu a.tab:focus, #https #content #main-content .tab-menu a.tab:hover, #https #content #main-content .tab-menu a.tab:focus, #about #content #main-content .tab-menu a.tab:hover, #about #content #main-content .tab-menu a.tab:focus {
+      background-color: #0073e6;
       color: white; }
-#analytics #content #main-content .guide, #https #content #main-content .guide, #about #content #main-content .guide {
-  padding: 100px 0 50px 0; }
-  #analytics #content #main-content .guide h1, #https #content #main-content .guide h1, #about #content #main-content .guide h1 {
-    margin: 25px 0 10px 0; }
-  #analytics #content #main-content .guide h3, #https #content #main-content .guide h3, #about #content #main-content .guide h3 {
-    margin: 25px 0 10px 0; }
-  #analytics #content #main-content .guide p, #https #content #main-content .guide p, #about #content #main-content .guide p {
-    margin: 10px 0; }
 #analytics #content #main-content.white-bkg, #https #content #main-content.white-bkg, #about #content #main-content.white-bkg {
   background-color: white; }
   #analytics #content #main-content.white-bkg a, #https #content #main-content.white-bkg a, #about #content #main-content.white-bkg a {
@@ -400,8 +394,22 @@ a {
 #about .faq-answers li {
   padding-bottom: 40px; }
 
-.dataTables_wrapper {
+.guide {
+  clear: both;
   padding: 60px 0 40px; }
+  .guide h2 {
+    margin-bottom: 60px; }
+  .guide article {
+    padding-bottom: 25px; }
+    .guide article h3, .guide article h4 {
+      margin-bottom: 12px; }
+    .guide article ul, .guide article p {
+      padding-bottom: 20px; }
+      .guide article ul li, .guide article p li {
+        padding-bottom: 15px; }
+
+.dataTables_wrapper {
+  padding: 80px 0 40px; }
   .dataTables_wrapper .dataTables_length {
     font-size: 1.1em;
     font-weight: 200; }
