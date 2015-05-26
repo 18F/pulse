@@ -323,7 +323,13 @@ a {
 
     th, td {
       border-bottom: 2px solid #EEE !important;
-      padding: 8px 0 !important;
+      padding: 8px 0 8px 20px !important;
+    }
+
+    thead {
+      .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
+        background-position: center left;
+      }
     }
 
     &.no-footer {
@@ -385,3 +391,4 @@ a {
     }
   }
 }
+
