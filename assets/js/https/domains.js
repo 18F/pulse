@@ -66,14 +66,17 @@ $(document).ready(function () {
   var renderTable = function(data) {
     $("table").DataTable({
 
+      responsive: true,
+
       data: data,
 
       columns: [
-        {data: "Domain"},
+        {data: "Domain", width: "210px"},
         {data: "HTTPS Enabled?"},
         {data: "HTTPS Enforced?"},
         {data: "Strict Transport Security (HSTS)"},
-        {data: "SSL Labs Grade"}
+        {data: "SSL Labs Grade"},
+        // {data: "More details"}
       ],
 
       columnDefs: [

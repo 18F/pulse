@@ -22,11 +22,14 @@ $(document).ready(function () {
 
   var renderTable = function(data) {
     $("table").DataTable({
+
+      responsive: true,
+
       data: data,
 
       columns: [
-        {"data": "Domain"},
-        {"data": "Participates in DAP?"}
+        {data: "Domain", width: "210px"},
+        {data: "Participates in DAP?"}
       ],
 
       columnDefs: [

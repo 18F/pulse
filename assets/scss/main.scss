@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 // Imports
+/////////////////////////////////////////
+
 @import "lib/bourbon/bourbon";
 @import "base/grid-settings";
 @import "lib/neat/neat";
@@ -326,6 +328,13 @@ a {
       padding: 8px 0 8px 20px !important;
     }
 
+    /* Domain column, to accommodate for More button. */
+    td:first-child {
+      @media (max-width: 767px) {
+        padding-left: 32px !important;
+      }
+    }
+
     thead {
       .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
         background-position: center left;
@@ -336,8 +345,35 @@ a {
       border: none;
     }
 
+    &.domain {
+
+      td:first-child {
+        white-space: nowrap;
+      }
+    }
+
+    &.dtr-inline.collapsed {
+      td:first-child:before {
+        top: 9px;
+        background-color: lighten($light-blue, 20%);
+      }
+    }
+
+    tbody > tr.parent > th:first-child:before {
+      background-color: #CCC;
+    }
+
     &.agency {
-      td { padding: 15px 0 !important; }
+
+      td { 
+        padding: 15px 0 !important; 
+
+        &:first-child {
+          padding: 0 10px 0 32px !important;
+        }
+
+      }
+
       .progress-bar-indication {
         background-color: #CCC;
         border-radius: 20px;

@@ -6,6 +6,8 @@ $(document).ready(function () {
 
   var renderTable = function(data) {
     $("table").DataTable({
+      responsive: true,
+
       data: data,
 
       columns: [
