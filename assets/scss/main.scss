@@ -192,8 +192,9 @@ a {
     #main-content {
       .tab-menu {
         width: 100%;
+        margin-top: 40px;
         .tab {
-          width: 50%;
+          width: 33.33%;
           margin: 0;
           float: left;
           text-align: center;
@@ -204,10 +205,12 @@ a {
           background-color: $medium-blue;
           color: white;
           &:hover, &:focus {
+            background-color: lighten($medium-blue, 10%);
             color: white;
           }
         }
       }
+
       &.white-bkg {
         background-color: white;
         a {
@@ -248,9 +251,29 @@ a {
   }
 }
 
-// dataTables
-.dataTables_wrapper {
+// pages/**/guides.html
+/////////////////////////////////////////
+.guide {
+  clear: both;
   padding: 60px 0 40px;
+  h2 { margin-bottom: 60px; }
+  article {
+    padding-bottom: 25px;
+    h3, h4 { margin-bottom: 12px; }
+    ul, p {
+      padding-bottom: 20px;
+      li {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+// dataTables
+/////////////////////////////////////////
+
+.dataTables_wrapper {
+  padding: 80px 0 40px;
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
