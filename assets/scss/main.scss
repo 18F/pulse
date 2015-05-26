@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 // Imports
+/////////////////////////////////////////
+
 @import "lib/bourbon/bourbon";
 @import "base/grid-settings";
 @import "lib/neat/neat";
@@ -328,7 +330,9 @@ a {
 
     /* Domain column, to accommodate for More button. */
     td:first-child {
-      padding-left: 32px !important;
+      @media (max-width: 767px) {
+        padding-left: 32px !important;
+      }
     }
 
     thead {
@@ -350,16 +354,24 @@ a {
 
     &.dtr-inline.collapsed {
       td:first-child:before {
-        top: 15px;
+        top: 9px;
+        background-color: lighten($light-blue, 20%);
       }
+    }
+
+    tbody > tr.parent > th:first-child:before {
+      background-color: #CCC;
     }
 
     &.agency {
 
-      td { padding: 15px 0 !important; }
+      td { 
+        padding: 15px 0 !important; 
 
-      td:first-child {
-        padding: 0 10px 0 32px !important;
+        &:first-child {
+          padding: 0 10px 0 32px !important;
+        }
+
       }
 
       .progress-bar-indication {
