@@ -1,3 +1,13 @@
+# Third-party JavaScript
+
+This project uses various third-party JavaScript tools, which for convenience are versioned in this repository.
+
+Any files in the following directories are subject to their own licenses:
+
+* `assets/js/vendor`
+
+# Everything else
+
 As a work of the United States Government, this project is in the
 public domain within the United States.
 
