@@ -516,6 +516,9 @@ a {
           &.width100 {
             border-radius: 20px;
           }
+          @for $i from 1 through 3 {
+            &.width#{$i} { background-color: transparent }
+          }
         }
 
         p {
