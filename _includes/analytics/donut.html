@@ -31,7 +31,7 @@
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")")
-        .on("click", function(d,i) { 
+        .on("click", function(d,i) {
             location.href = "/analytics/domains/";
         });
 
@@ -61,8 +61,6 @@
             .attr("text-anchor", "middle")
             .attr("class", "total-value")
             .attr("fill", "white")
-            .attr("dy", "0.2em")
-            // TODO: Value below needs to get pulled in dynamically
             .text(function (d) {
                 return "" + data[0].value + "%";
         });
@@ -71,20 +69,27 @@
             .attr("text-anchor", "middle")
             .attr("class", "total-desc")
             .attr("fill", "white")
-            .attr("dy", "2.5em")
-            // TODO: Value below needs to get pulled in dynamically
+            .attr("dy", "1.9em")
             .text(function (d) {
-            return "PARTICIPATES";
+            return "PARTICIPATE IN THE";
         });
 
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-desc")
             .attr("fill", "white")
-            .attr("dy", "3.75em")
-            // TODO: Value below needs to get pulled in dynamically
+            .attr("dy", "3em")
             .text(function (d) {
-            return "IN ANALYTICS";
+            return "DIGITAL ANALYTICS";
+        });
+
+        g.append("text")
+            .attr("text-anchor", "middle")
+            .attr("class", "total-desc")
+            .attr("fill", "white")
+            .attr("dy", "4em")
+            .text(function (d) {
+            return "PROGRAM";
         });
     });
 })();
