@@ -8,5 +8,15 @@ var Utils = {
           '<p>' + data + '%</p>' +
         '</span>' +
       '</div>';
+  },
+
+  linkDomain: function(data, type, row) {
+    if (type == "sort")
+      return data;
+    else
+      return "" +
+        "<a href=\"" + row['Canonical'] + "\" target=\"blank\">" +
+          data +
+        "</a>";
   }
 };

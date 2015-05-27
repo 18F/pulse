@@ -1,3170 +1,3962 @@
 {
   "data": [
     {
+      "Canonical": "http://404.gov",
       "Domain": "404.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://9-11commission.gov",
       "Domain": "9-11commission.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://911.gov",
       "Domain": "911.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://911commission.gov",
       "Domain": "911commission.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.abandonedmines.gov",
       "Domain": "abandonedmines.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://abilityone.gov",
       "Domain": "abilityone.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://abmc.gov",
       "Domain": "abmc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.access-board.gov",
       "Domain": "access-board.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://achp.gov",
       "Domain": "achp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://acl.gov",
       "Domain": "acl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.acquisition.gov",
       "Domain": "acquisition.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.acus.gov",
       "Domain": "acus.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://acwi.gov",
       "Domain": "acwi.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ada.gov",
       "Domain": "ada.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://adlnet.gov",
       "Domain": "adlnet.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.admongo.gov",
       "Domain": "admongo.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.adr.gov",
       "Domain": "adr.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.advantage.gov",
       "Domain": "advantage.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://afadvantage.gov",
       "Domain": "afadvantage.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.aff.gov",
       "Domain": "aff.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.afrh.gov",
       "Domain": "afrh.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.agingstats.gov",
       "Domain": "agingstats.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ahrq.gov",
       "Domain": "ahrq.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://aids.gov",
       "Domain": "aids.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://airnow.gov",
       "Domain": "airnow.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://alaskacenters.gov",
       "Domain": "alaskacenters.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.alertaenlinea.gov",
       "Domain": "alertaenlinea.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.altusandc.gov",
       "Domain": "altusandc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://alzheimers.gov",
       "Domain": "alzheimers.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ama.gov",
       "Domain": "ama.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://amberalert.gov",
       "Domain": "amberalert.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://americanlatinomuseum.gov",
       "Domain": "americanlatinomuseum.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.americathebeautifulquarters.gov",
       "Domain": "americathebeautifulquarters.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ameslab.gov",
       "Domain": "ameslab.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://amtrakoig.gov",
       "Domain": "amtrakoig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.anl.gov",
       "Domain": "anl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.anstaskforce.gov",
       "Domain": "anstaskforce.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://aoa.gov",
       "Domain": "aoa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.arc.gov",
       "Domain": "arc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://archives.gov",
       "Domain": "archives.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://arctic.gov",
       "Domain": "arctic.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://arcticgas.gov",
       "Domain": "arcticgas.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.arm.gov",
       "Domain": "arm.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ars-grin.gov",
       "Domain": "ars-grin.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://arts.gov",
       "Domain": "arts.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.asap.gov",
       "Domain": "asap.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.asc.gov",
       "Domain": "asc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.atf.gov",
       "Domain": "atf.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.autocommunities.gov",
       "Domain": "autocommunities.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://aviationweather.gov",
       "Domain": "aviationweather.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ayudaconmibanco.gov",
       "Domain": "ayudaconmibanco.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.bam.gov",
       "Domain": "bam.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bankanswers.gov",
       "Domain": "bankanswers.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bankcustomer.gov",
       "Domain": "bankcustomer.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://bankcustomerassistance.gov",
       "Domain": "bankcustomerassistance.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bankhelp.gov",
       "Domain": "bankhelp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://banknet.gov",
       "Domain": "banknet.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.bbg.gov",
       "Domain": "bbg.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bea.gov",
       "Domain": "bea.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.benefits.gov",
       "Domain": "benefits.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://bep.gov",
       "Domain": "bep.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://bfem.gov",
       "Domain": "bfem.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bia.gov",
       "Domain": "bia.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.bioeco.gov",
       "Domain": "bioeco.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bioethics.gov",
       "Domain": "bioethics.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://biomassboard.gov",
       "Domain": "biomassboard.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://biometrics.gov",
       "Domain": "biometrics.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://biopreferred.gov",
       "Domain": "biopreferred.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.bja.gov",
       "Domain": "bja.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://bjs.gov",
       "Domain": "bjs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.bldrdoc.gov",
       "Domain": "bldrdoc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.blm.gov",
       "Domain": "blm.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.bls.gov",
       "Domain": "bls.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.bnl.gov",
       "Domain": "bnl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.boem.gov",
       "Domain": "boem.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://boemre.gov",
       "Domain": "boemre.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://bondpro.gov",
       "Domain": "bondpro.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.bop.gov",
       "Domain": "bop.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.bpa.gov",
       "Domain": "bpa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://brac.gov",
       "Domain": "brac.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.broadband.gov",
       "Domain": "broadband.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://broadbandmap.gov",
       "Domain": "broadbandmap.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.bsee.gov",
       "Domain": "bsee.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://buyaccessible.gov",
       "Domain": "buyaccessible.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://buyusa.gov",
       "Domain": "buyusa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.c3.gov",
       "Domain": "c3.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.cancer.gov",
       "Domain": "cancer.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://cao.gov",
       "Domain": "cao.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.capnhq.gov",
       "Domain": "capnhq.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.carboncyclescience.gov",
       "Domain": "carboncyclescience.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.casl.gov",
       "Domain": "casl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://cbca.gov",
       "Domain": "cbca.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.cbp.gov",
       "Domain": "cbp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://ccac.gov",
       "Domain": "ccac.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ccr.gov",
       "Domain": "ccr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.cdc.gov",
       "Domain": "cdc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://cdfifund.gov",
       "Domain": "cdfifund.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://cendi.gov",
       "Domain": "cendi.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://census.gov",
       "Domain": "census.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://cfa.gov",
       "Domain": "cfa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.cfda.gov",
       "Domain": "cfda.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.cflhd.gov",
       "Domain": "cflhd.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://cfo.gov",
       "Domain": "cfo.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.cftc.gov",
       "Domain": "cftc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.challenge.gov",
       "Domain": "challenge.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://change.gov",
       "Domain": "change.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://chcoc.gov",
       "Domain": "chcoc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.childreninadversity.gov",
       "Domain": "childreninadversity.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.childstats.gov",
       "Domain": "childstats.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://childwelfare.gov",
       "Domain": "childwelfare.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://choosemyplate.gov",
       "Domain": "choosemyplate.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.christophercolumbusfoundation.gov",
       "Domain": "christophercolumbusfoundation.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.cia.gov",
       "Domain": "cia.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://cio.gov",
       "Domain": "cio.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://civilianresponsecorps.gov",
       "Domain": "civilianresponsecorps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://civilrightsusa.gov",
       "Domain": "civilrightsusa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://climate.gov",
       "Domain": "climate.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.clinicaltrial.gov",
       "Domain": "clinicaltrial.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://clinicaltrials.gov",
       "Domain": "clinicaltrials.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://clintonlibrary.gov",
       "Domain": "clintonlibrary.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://cms.gov",
       "Domain": "cms.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.cmts.gov",
       "Domain": "cmts.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://cncsoig.gov",
       "Domain": "cncsoig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.cnss.gov",
       "Domain": "cnss.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://coast2050.gov",
       "Domain": "coast2050.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://coastalamerica.gov",
       "Domain": "coastalamerica.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://collegedrinkingprevention.gov",
       "Domain": "collegedrinkingprevention.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.commerce.gov",
       "Domain": "commerce.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://comptrollerofthecurrency.gov",
       "Domain": "comptrollerofthecurrency.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://computersforlearning.gov",
       "Domain": "computersforlearning.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.connect.gov",
       "Domain": "connect.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.consumer.gov",
       "Domain": "consumer.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.consumerfinance.gov",
       "Domain": "consumerfinance.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://consumersentinel.gov",
       "Domain": "consumersentinel.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.consumidor.gov",
       "Domain": "consumidor.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://continentalshelf.gov",
       "Domain": "continentalshelf.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.contractdirectory.gov",
       "Domain": "contractdirectory.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.coralreef.gov",
       "Domain": "coralreef.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.counterwmd.gov",
       "Domain": "counterwmd.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.cpars.gov",
       "Domain": "cpars.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.cpnireporting.gov",
       "Domain": "cpnireporting.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.cpsc.gov",
       "Domain": "cpsc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.crimesolutions.gov",
       "Domain": "crimesolutions.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://crimevictims.gov",
       "Domain": "crimevictims.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.crt2014-2024review.gov",
       "Domain": "crt2014-2024review.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.csb.gov",
       "Domain": "csb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.csosa.fed.us",
       "Domain": "csosa.fed.us",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://csosa.gov",
       "Domain": "csosa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://cttso.gov",
       "Domain": "cttso.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.cuidadodesalud.gov",
       "Domain": "cuidadodesalud.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.cupcao.gov",
       "Domain": "cupcao.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://cwc.gov",
       "Domain": "cwc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.data.gov",
       "Domain": "data.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.dea.gov",
       "Domain": "dea.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://deadiversion.gov",
       "Domain": "deadiversion.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.defense.gov",
       "Domain": "defense.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://denali.gov",
       "Domain": "denali.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://dfafacts.gov",
       "Domain": "dfafacts.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.dhs.gov",
       "Domain": "dhs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.digitalgov.gov",
       "Domain": "digitalgov.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.digitalliteracy.gov",
       "Domain": "digitalliteracy.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.directoasucuenta.gov",
       "Domain": "directoasucuenta.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.disability.gov",
       "Domain": "disability.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.disasterassistance.gov",
       "Domain": "disasterassistance.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://disasterhousing.gov",
       "Domain": "disasterhousing.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://distracteddriving.gov",
       "Domain": "distracteddriving.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.distraction.gov",
       "Domain": "distraction.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.dnfsb.gov",
       "Domain": "dnfsb.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.dni.gov",
       "Domain": "dni.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.dnsops.gov",
       "Domain": "dnsops.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.docline.gov",
       "Domain": "docline.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.dod.gov",
       "Domain": "dod.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.doeal.gov",
       "Domain": "doeal.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.doi.gov",
       "Domain": "doi.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.doioig.gov",
       "Domain": "doioig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://dol-esa.gov",
       "Domain": "dol-esa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://dol.gov",
       "Domain": "dol.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://doleta.gov",
       "Domain": "doleta.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://donotcall.gov",
       "Domain": "donotcall.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.dot.gov",
       "Domain": "dot.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.dotgov.gov",
       "Domain": "dotgov.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://dottrafficrecords.gov",
       "Domain": "dottrafficrecords.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://dottrcc.gov",
       "Domain": "dottrcc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://dra.gov",
       "Domain": "dra.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.drought.gov",
       "Domain": "drought.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.drugabuse.gov",
       "Domain": "drugabuse.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.dsac.gov",
       "Domain": "dsac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://e3.gov",
       "Domain": "e3.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.eac.gov",
       "Domain": "eac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://economicinclusion.gov",
       "Domain": "economicinclusion.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://econsumer.gov",
       "Domain": "econsumer.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ecopartnerships.gov",
       "Domain": "ecopartnerships.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ecpic.gov",
       "Domain": "ecpic.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ed.gov",
       "Domain": "ed.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://eda.gov",
       "Domain": "eda.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.edpubs.gov",
       "Domain": "edpubs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.education.gov",
       "Domain": "education.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://eeoc.gov",
       "Domain": "eeoc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.eftps.gov",
       "Domain": "eftps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.eia.gov",
       "Domain": "eia.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://eisenhowermemorial.gov",
       "Domain": "eisenhowermemorial.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.eldercare.gov",
       "Domain": "eldercare.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.employeeexpress.gov",
       "Domain": "employeeexpress.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://empowhr.gov",
       "Domain": "empowhr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ems.gov",
       "Domain": "ems.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://endingthedocumentgame.gov",
       "Domain": "endingthedocumentgame.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://energy.gov",
       "Domain": "energy.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.energycodes.gov",
       "Domain": "energycodes.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.energystar.gov",
       "Domain": "energystar.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://epa.gov",
       "Domain": "epa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.epls.gov",
       "Domain": "epls.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://esa.gov",
       "Domain": "esa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.esc.gov",
       "Domain": "esc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://espanolforlawenforcement.gov",
       "Domain": "espanolforlawenforcement.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.esrs.gov",
       "Domain": "esrs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.eta-find.gov",
       "Domain": "eta-find.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ethicsburg.gov",
       "Domain": "ethicsburg.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.evergladesrestoration.gov",
       "Domain": "evergladesrestoration.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.execsec.gov",
       "Domain": "execsec.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.exim.gov",
       "Domain": "exim.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://export.gov",
       "Domain": "export.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://eyenote.gov",
       "Domain": "eyenote.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.faa.gov",
       "Domain": "faa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.faasafety.gov",
       "Domain": "faasafety.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://faca.gov",
       "Domain": "faca.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://facadatabase.gov",
       "Domain": "facadatabase.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fafsa.gov",
       "Domain": "fafsa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fai.gov",
       "Domain": "fai.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fan.gov",
       "Domain": "fan.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://fapiis.gov",
       "Domain": "fapiis.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fara.gov",
       "Domain": "fara.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.farmerclaims.gov",
       "Domain": "farmerclaims.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://fatherhood.gov",
       "Domain": "fatherhood.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fbi.gov",
       "Domain": "fbi.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fbiic.gov",
       "Domain": "fbiic.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fbijobs.gov",
       "Domain": "fbijobs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fbo.gov",
       "Domain": "fbo.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fca.gov",
       "Domain": "fca.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fcc.gov",
       "Domain": "fcc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fcg.gov",
       "Domain": "fcg.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fcsic.gov",
       "Domain": "fcsic.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fcsm.gov",
       "Domain": "fcsm.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fda.gov",
       "Domain": "fda.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://fdic.gov",
       "Domain": "fdic.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fdicbets.gov",
       "Domain": "fdicbets.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fdicig.gov",
       "Domain": "fdicig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fdicoig.gov",
       "Domain": "fdicoig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fdicseguro.gov",
       "Domain": "fdicseguro.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fdms.gov",
       "Domain": "fdms.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fdr.gov",
       "Domain": "fdr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://feb.gov",
       "Domain": "feb.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fec.gov",
       "Domain": "fec.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fedcenter.gov",
       "Domain": "fedcenter.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.federalaccountability.gov",
       "Domain": "federalaccountability.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://federalinvestments.gov",
       "Domain": "federalinvestments.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://federalreserve.gov",
       "Domain": "federalreserve.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://federalreserveconsumerhelp.gov",
       "Domain": "federalreserveconsumerhelp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fedidcard.gov",
       "Domain": "fedidcard.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fedinvest.gov",
       "Domain": "fedinvest.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://fedpartnership.gov",
       "Domain": "fedpartnership.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fedramp.gov",
       "Domain": "fedramp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fedrealestate.gov",
       "Domain": "fedrealestate.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fedrooms.gov",
       "Domain": "fedrooms.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fedshirevets.gov",
       "Domain": "fedshirevets.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fedstats.gov",
       "Domain": "fedstats.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://feedthefuture.gov",
       "Domain": "feedthefuture.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fema.gov",
       "Domain": "fema.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.femalefarmerclaims.gov",
       "Domain": "femalefarmerclaims.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ferc.gov",
       "Domain": "ferc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fercalt.gov",
       "Domain": "fercalt.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ffiec.gov",
       "Domain": "ffiec.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fgdc.gov",
       "Domain": "fgdc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.fhfa.gov",
       "Domain": "fhfa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fhfaoig.gov",
       "Domain": "fhfaoig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fido.gov",
       "Domain": "fido.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fightingmalaria.gov",
       "Domain": "fightingmalaria.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://financialresearch.gov",
       "Domain": "financialresearch.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fincen.gov",
       "Domain": "fincen.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://findyouthinfo.gov",
       "Domain": "findyouthinfo.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.firecode.gov",
       "Domain": "firecode.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fireleadership.gov",
       "Domain": "fireleadership.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.firescience.gov",
       "Domain": "firescience.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://firstnet.gov",
       "Domain": "firstnet.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.firstresponder.gov",
       "Domain": "firstresponder.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.firstrespondertraining.gov",
       "Domain": "firstrespondertraining.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fiscalcommission.gov",
       "Domain": "fiscalcommission.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fishwatch.gov",
       "Domain": "fishwatch.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fitness.gov",
       "Domain": "fitness.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fleta.gov",
       "Domain": "fleta.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fletc.gov",
       "Domain": "fletc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.flightschoolcandidates.gov",
       "Domain": "flightschoolcandidates.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.floodsmart.gov",
       "Domain": "floodsmart.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://flra.gov",
       "Domain": "flra.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.flu.gov",
       "Domain": "flu.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.fmc.gov",
       "Domain": "fmc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fmcs.gov",
       "Domain": "fmcs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fmi.gov",
       "Domain": "fmi.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://fnal.gov",
       "Domain": "fnal.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.foia.gov",
       "Domain": "foia.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.foodsafety.gov",
       "Domain": "foodsafety.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.foodsafetyworkinggroup.gov",
       "Domain": "foodsafetyworkinggroup.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fordlibrarymuseum.gov",
       "Domain": "fordlibrarymuseum.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://foreignassistance.gov",
       "Domain": "foreignassistance.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://forestsandrangelands.gov",
       "Domain": "forestsandrangelands.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.forfeiture.gov",
       "Domain": "forfeiture.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.fpds.gov",
       "Domain": "fpds.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://frcc.gov",
       "Domain": "frcc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://frtib.gov",
       "Domain": "frtib.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://frtr.gov",
       "Domain": "frtr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fs.fed.us",
       "Domain": "fs.fed.us",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fsapubs.gov",
       "Domain": "fsapubs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.fsd.gov",
       "Domain": "fsd.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.fsgb.gov",
       "Domain": "fsgb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fsrs.gov",
       "Domain": "fsrs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.ftc.gov",
       "Domain": "ftc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://ftccomplaintassistant.gov",
       "Domain": "ftccomplaintassistant.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://ftcefile.gov",
       "Domain": "ftcefile.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.fttesttwai.gov",
       "Domain": "fttesttwai.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://fueleconomy.gov",
       "Domain": "fueleconomy.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fvap.gov",
       "Domain": "fvap.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.fws.gov",
       "Domain": "fws.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.g5.gov",
       "Domain": "g5.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.gcdamp.gov",
       "Domain": "gcdamp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.gcmrc.gov",
       "Domain": "gcmrc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.genome.gov",
       "Domain": "genome.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.geocommunicator.gov",
       "Domain": "geocommunicator.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.geomac.gov",
       "Domain": "geomac.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://geoplatform.gov",
       "Domain": "geoplatform.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ghi.gov",
       "Domain": "ghi.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ginniemae.gov",
       "Domain": "ginniemae.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://girlshealth.gov",
       "Domain": "girlshealth.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.globalchange.gov",
       "Domain": "globalchange.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.globalhealth.gov",
       "Domain": "globalhealth.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.globe.gov",
       "Domain": "globe.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.godirect.gov",
       "Domain": "godirect.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.goes-r.gov",
       "Domain": "goes-r.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://golearn.gov",
       "Domain": "golearn.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.govloans.gov",
       "Domain": "govloans.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.govsales.gov",
       "Domain": "govsales.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.gps.gov",
       "Domain": "gps.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.grants.gov",
       "Domain": "grants.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://grantsolutions.gov",
       "Domain": "grantsolutions.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://greengov.gov",
       "Domain": "greengov.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.gsa.gov",
       "Domain": "gsa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://gsaadvantage.gov",
       "Domain": "gsaadvantage.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.gsaauctions.gov",
       "Domain": "gsaauctions.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.gsadvantage.gov",
       "Domain": "gsadvantage.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.gsaig.gov",
       "Domain": "gsaig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://gsaxcess.gov",
       "Domain": "gsaxcess.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.guideline.gov",
       "Domain": "guideline.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.gwa.gov",
       "Domain": "gwa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.hanford.gov",
       "Domain": "hanford.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://harp.gov",
       "Domain": "harp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://health.gov",
       "Domain": "health.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.healthcare.gov",
       "Domain": "healthcare.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.healthdata.gov",
       "Domain": "healthdata.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://healthfinder.gov",
       "Domain": "healthfinder.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.healthindicators.gov",
       "Domain": "healthindicators.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://healthit.gov",
       "Domain": "healthit.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.healthypeople.gov",
       "Domain": "healthypeople.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://helpwithmybank.gov",
       "Domain": "helpwithmybank.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://helpwithmycheckingaccount.gov",
       "Domain": "helpwithmycheckingaccount.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://helpwithmycreditcard.gov",
       "Domain": "helpwithmycreditcard.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://helpwithmycreditcardbank.gov",
       "Domain": "helpwithmycreditcardbank.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://helpwithmymortgage.gov",
       "Domain": "helpwithmymortgage.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://helpwithmymortgagebank.gov",
       "Domain": "helpwithmymortgagebank.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.hhs.gov",
       "Domain": "hhs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.hispanicfarmerclaims.gov",
       "Domain": "hispanicfarmerclaims.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://homesales.gov",
       "Domain": "homesales.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://hrsa.gov",
       "Domain": "hrsa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://hru.gov",
       "Domain": "hru.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://hsa.gov",
       "Domain": "hsa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://hsr.gov",
       "Domain": "hsr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://hud.gov",
       "Domain": "hud.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.hudoig.gov",
       "Domain": "hudoig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.humanrights.gov",
       "Domain": "humanrights.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://hydrogen.gov",
       "Domain": "hydrogen.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.iad.gov",
       "Domain": "iad.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.iaf.gov",
       "Domain": "iaf.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://iarpa-ideas.gov",
       "Domain": "iarpa-ideas.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.iarpa.gov",
       "Domain": "iarpa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.iat.gov",
       "Domain": "iat.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.iawg.gov",
       "Domain": "iawg.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ibwc.gov",
       "Domain": "ibwc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ic3.gov",
       "Domain": "ic3.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.icass.gov",
       "Domain": "icass.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://icbemp.gov",
       "Domain": "icbemp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ice.gov",
       "Domain": "ice.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://icjointduty.gov",
       "Domain": "icjointduty.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://idmanagement.gov",
       "Domain": "idmanagement.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.ignet.gov",
       "Domain": "ignet.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ihs.gov",
       "Domain": "ihs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://iiog.gov",
       "Domain": "iiog.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.imls.gov",
       "Domain": "imls.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://indianaffairs.gov",
       "Domain": "indianaffairs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.inel.gov",
       "Domain": "inel.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://inl.gov",
       "Domain": "inl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://insurekidsnow.gov",
       "Domain": "insurekidsnow.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.integrity.gov",
       "Domain": "integrity.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.intelink.gov",
       "Domain": "intelink.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://intelligence.gov",
       "Domain": "intelligence.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.interior.gov",
       "Domain": "interior.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://invasivespecies.gov",
       "Domain": "invasivespecies.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.invasivespeciesinfo.gov",
       "Domain": "invasivespeciesinfo.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://investor.gov",
       "Domain": "investor.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ioss.gov",
       "Domain": "ioss.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ipac.gov",
       "Domain": "ipac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ipcc-wg2.gov",
       "Domain": "ipcc-wg2.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ipp.gov",
       "Domain": "ipp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.iprcenter.gov",
       "Domain": "iprcenter.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.irs.gov",
       "Domain": "irs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.irsvideos.gov",
       "Domain": "irsvideos.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ise.gov",
       "Domain": "ise.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://isotope.gov",
       "Domain": "isotope.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://isotopes.gov",
       "Domain": "isotopes.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.italladdsup.gov",
       "Domain": "italladdsup.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.itap.gov",
       "Domain": "itap.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://itdashboard.gov",
       "Domain": "itdashboard.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://itds.gov",
       "Domain": "itds.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.itis.gov",
       "Domain": "itis.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.its.gov",
       "Domain": "its.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.jamesmadison.gov",
       "Domain": "jamesmadison.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.jccs.gov",
       "Domain": "jccs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://jem.gov",
       "Domain": "jem.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.jimmycarterlibrary.gov",
       "Domain": "jimmycarterlibrary.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.jobcorps.gov",
       "Domain": "jobcorps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.justice.gov",
       "Domain": "justice.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://juvenilecouncil.gov",
       "Domain": "juvenilecouncil.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://jwod.gov",
       "Domain": "jwod.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://klamathrestoration.gov",
       "Domain": "klamathrestoration.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lacoast.gov",
       "Domain": "lacoast.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://landfire.gov",
       "Domain": "landfire.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.landimaging.gov",
       "Domain": "landimaging.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://lanl.gov",
       "Domain": "lanl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.latinofarmerclaims.gov",
       "Domain": "latinofarmerclaims.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lbl.gov",
       "Domain": "lbl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://lca.gov",
       "Domain": "lca.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lcacommons.gov",
       "Domain": "lcacommons.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lcrmscp.gov",
       "Domain": "lcrmscp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.learnperformance.gov",
       "Domain": "learnperformance.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lep.gov",
       "Domain": "lep.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.letsmove.gov",
       "Domain": "letsmove.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.llnl.gov",
       "Domain": "llnl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://lmrcouncil.gov",
       "Domain": "lmrcouncil.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://lmvsci.gov",
       "Domain": "lmvsci.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://locatorplus.gov",
       "Domain": "locatorplus.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://longtermcare.gov",
       "Domain": "longtermcare.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lowermississippivalleyscience.gov",
       "Domain": "lowermississippivalleyscience.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lps.gov",
       "Domain": "lps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.lsc.gov",
       "Domain": "lsc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.macpac.gov",
       "Domain": "macpac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.makinghomeaffordable.gov",
       "Domain": "makinghomeaffordable.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://malwareinvestigator.gov",
       "Domain": "malwareinvestigator.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://manufacturing.gov",
       "Domain": "manufacturing.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.mapaplanet.gov",
       "Domain": "mapaplanet.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://marine.gov",
       "Domain": "marine.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://marinecadastre.gov",
       "Domain": "marinecadastre.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.marview.gov",
       "Domain": "marview.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.max.gov",
       "Domain": "max.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.mbda.gov",
       "Domain": "mbda.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://mcc.gov",
       "Domain": "mcc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.mcrmc.gov",
       "Domain": "mcrmc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://mda.gov",
       "Domain": "mda.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://medicaid.gov",
       "Domain": "medicaid.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.medicalcountermeasures.gov",
       "Domain": "medicalcountermeasures.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.medicalreservecorps.gov",
       "Domain": "medicalreservecorps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://medicare.gov",
       "Domain": "medicare.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://medpac.gov",
       "Domain": "medpac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.mentalhealth.gov",
       "Domain": "mentalhealth.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.mitigationcommission.gov",
       "Domain": "mitigationcommission.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://mmc.gov",
       "Domain": "mmc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://mms.gov",
       "Domain": "mms.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://moneyfactory.gov",
       "Domain": "moneyfactory.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.moneyfactorystore.gov",
       "Domain": "moneyfactorystore.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.mrlc.gov",
       "Domain": "mrlc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://msb.gov",
       "Domain": "msb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.msha.gov",
       "Domain": "msha.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://mspb.gov",
       "Domain": "mspb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://mtbs.gov",
       "Domain": "mtbs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.mycreditunion.gov",
       "Domain": "mycreditunion.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://myfdicinsurance.gov",
       "Domain": "myfdicinsurance.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://mymedicare.gov",
       "Domain": "mymedicare.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.mymoney.gov",
       "Domain": "mymoney.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nafri.gov",
       "Domain": "nafri.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nagb.gov",
       "Domain": "nagb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://namus.gov",
       "Domain": "namus.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nano.gov",
       "Domain": "nano.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nasa.gov",
       "Domain": "nasa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nationalbankhelp.gov",
       "Domain": "nationalbankhelp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nationalgangcenter.gov",
       "Domain": "nationalgangcenter.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nationalhousing.gov",
       "Domain": "nationalhousing.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nationalhousinglocator.gov",
       "Domain": "nationalhousinglocator.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nationalmap.gov",
       "Domain": "nationalmap.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nationalservice.gov",
       "Domain": "nationalservice.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nationsreportcard.gov",
       "Domain": "nationsreportcard.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.navycash.gov",
       "Domain": "navycash.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nbc.gov",
       "Domain": "nbc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nccrc.gov",
       "Domain": "nccrc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ncd.gov",
       "Domain": "ncd.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://ncirc.gov",
       "Domain": "ncirc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://ncix.gov",
       "Domain": "ncix.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://ncjrs.gov",
       "Domain": "ncjrs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ncpc.gov",
       "Domain": "ncpc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ncpw.gov",
       "Domain": "ncpw.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ncrc.gov",
       "Domain": "ncrc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nctc.gov",
       "Domain": "nctc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ncua.gov",
       "Domain": "ncua.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ndep.gov",
       "Domain": "ndep.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ndop.gov",
       "Domain": "ndop.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://neglecteddiseases.gov",
       "Domain": "neglecteddiseases.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.neh.gov",
       "Domain": "neh.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nehrp.gov",
       "Domain": "nehrp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nel.gov",
       "Domain": "nel.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nemi.gov",
       "Domain": "nemi.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nersc.gov",
       "Domain": "nersc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.newmoney.gov",
       "Domain": "newmoney.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://nfpors.gov",
       "Domain": "nfpors.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nga.gov",
       "Domain": "nga.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nhl.gov",
       "Domain": "nhl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nhtsa.gov",
       "Domain": "nhtsa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nibin.gov",
       "Domain": "nibin.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nicic.gov",
       "Domain": "nicic.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.niem.gov",
       "Domain": "niem.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nifc.gov",
       "Domain": "nifc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://niftt.gov",
       "Domain": "niftt.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nigc.gov",
       "Domain": "nigc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nih.gov",
       "Domain": "nih.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nihseniorhealth.gov",
       "Domain": "nihseniorhealth.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nij.gov",
       "Domain": "nij.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.niosh.gov",
       "Domain": "niosh.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nist.gov",
       "Domain": "nist.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.nitrd.gov",
       "Domain": "nitrd.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nixonlibrary.gov",
       "Domain": "nixonlibrary.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nlrb.gov",
       "Domain": "nlrb.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nls.gov",
       "Domain": "nls.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nmb.gov",
       "Domain": "nmb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nmic.gov",
       "Domain": "nmic.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nnlm.gov",
       "Domain": "nnlm.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.noaa.gov",
       "Domain": "noaa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nolaenvironmental.gov",
       "Domain": "nolaenvironmental.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.notalone.gov",
       "Domain": "notalone.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nps.gov",
       "Domain": "nps.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nrc.gov",
       "Domain": "nrc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nrel.gov",
       "Domain": "nrel.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nro.gov",
       "Domain": "nro.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nrojr.gov",
       "Domain": "nrojr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.nsa.gov",
       "Domain": "nsa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://nsep.gov",
       "Domain": "nsep.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nsf.gov",
       "Domain": "nsf.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nsopw.gov",
       "Domain": "nsopw.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://nswp.gov",
       "Domain": "nswp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ntdprogram.gov",
       "Domain": "ntdprogram.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ntis.gov",
       "Domain": "ntis.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.ntsb.gov",
       "Domain": "ntsb.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.nutrition.gov",
       "Domain": "nutrition.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.nwbc.gov",
       "Domain": "nwbc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.nwcg.gov",
       "Domain": "nwcg.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://occ.gov",
       "Domain": "occ.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://occhelps.gov",
       "Domain": "occhelps.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.odni.gov",
       "Domain": "odni.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.oea.gov",
       "Domain": "oea.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ofcm.gov",
       "Domain": "ofcm.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ofda.gov",
       "Domain": "ofda.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ofee.gov",
       "Domain": "ofee.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://oge.gov",
       "Domain": "oge.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ojjdp.gov",
       "Domain": "ojjdp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://ojp.gov",
       "Domain": "ojp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.onguardonline.gov",
       "Domain": "onguardonline.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://onhir.gov",
       "Domain": "onhir.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://onlinewbc.gov",
       "Domain": "onlinewbc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://onrr.gov",
       "Domain": "onrr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.opensource.gov",
       "Domain": "opensource.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.opic.gov",
       "Domain": "opic.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.opm.gov",
       "Domain": "opm.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.orau.gov",
       "Domain": "orau.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.organdonor.gov",
       "Domain": "organdonor.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ornl.gov",
       "Domain": "ornl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.osac.gov",
       "Domain": "osac.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://osc.gov",
       "Domain": "osc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://osdbu.gov",
       "Domain": "osdbu.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.osha.gov",
       "Domain": "osha.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://oshrc.gov",
       "Domain": "oshrc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.osmre.gov",
       "Domain": "osmre.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.osti.gov",
       "Domain": "osti.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ots.gov",
       "Domain": "ots.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ourdocuments.gov",
       "Domain": "ourdocuments.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://ovc.gov",
       "Domain": "ovc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.ovcttac.gov",
       "Domain": "ovcttac.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.papahanaumokuakea.gov",
       "Domain": "papahanaumokuakea.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.partner4solutions.gov",
       "Domain": "partner4solutions.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://patriotbonds.gov",
       "Domain": "patriotbonds.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://pay.gov",
       "Domain": "pay.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://paymentaccuracy.gov",
       "Domain": "paymentaccuracy.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://pbgc.gov",
       "Domain": "pbgc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://pcah.gov",
       "Domain": "pcah.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://pclob.gov",
       "Domain": "pclob.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://peacecore.gov",
       "Domain": "peacecore.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://peacecorp.gov",
       "Domain": "peacecorp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.peacecorps.gov",
       "Domain": "peacecorps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.pepfar.gov",
       "Domain": "pepfar.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.performance.gov",
       "Domain": "performance.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.phe.gov",
       "Domain": "phe.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://pic.gov",
       "Domain": "pic.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.plainlanguage.gov",
       "Domain": "plainlanguage.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://pmf.gov",
       "Domain": "pmf.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://pmi.gov",
       "Domain": "pmi.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.pnl.gov",
       "Domain": "pnl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.pnnl.gov",
       "Domain": "pnnl.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.poolsafely.gov",
       "Domain": "poolsafely.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.ppirs.gov",
       "Domain": "ppirs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.prc.gov",
       "Domain": "prc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://preserveamerica.gov",
       "Domain": "preserveamerica.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.presidentialserviceawards.gov",
       "Domain": "presidentialserviceawards.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.presidio.gov",
       "Domain": "presidio.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://pretrialservices.gov",
       "Domain": "pretrialservices.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.protecciondelconsumidor.gov",
       "Domain": "protecciondelconsumidor.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://psa.gov",
       "Domain": "psa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.psc.gov",
       "Domain": "psc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://pscr.gov",
       "Domain": "pscr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://psob.gov",
       "Domain": "psob.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.qatesttwai.gov",
       "Domain": "qatesttwai.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.rcfl.gov",
       "Domain": "rcfl.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ready.gov",
       "Domain": "ready.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://reaganlibrary.gov",
       "Domain": "reaganlibrary.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://realestatesales.gov",
       "Domain": "realestatesales.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.realpropertyprofile.gov",
       "Domain": "realpropertyprofile.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.recalls.gov",
       "Domain": "recalls.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.recovery.gov",
       "Domain": "recovery.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://recoverymonth.gov",
       "Domain": "recoverymonth.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.recreation.gov",
       "Domain": "recreation.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://reginfo.gov",
       "Domain": "reginfo.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.regulations.gov",
       "Domain": "regulations.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://relocatefeds.gov",
       "Domain": "relocatefeds.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://reo.gov",
       "Domain": "reo.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.research.gov",
       "Domain": "research.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://restorethegulf.gov",
       "Domain": "restorethegulf.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://rivers.gov",
       "Domain": "rivers.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://rocis.gov",
       "Domain": "rocis.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.rrb.gov",
       "Domain": "rrb.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://sac.gov",
       "Domain": "sac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.safecom.gov",
       "Domain": "safecom.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.safercar.gov",
       "Domain": "safercar.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.saferproducts.gov",
       "Domain": "saferproducts.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://safertruck.gov",
       "Domain": "safertruck.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://safetyact.gov",
       "Domain": "safetyact.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.salmonrecovery.gov",
       "Domain": "salmonrecovery.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.sam.gov",
       "Domain": "sam.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.samhsa.gov",
       "Domain": "samhsa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.sandia.gov",
       "Domain": "sandia.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://savingsbond.gov",
       "Domain": "savingsbond.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://savingsbonds.gov",
       "Domain": "savingsbonds.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://savingsbondwizard.gov",
       "Domain": "savingsbondwizard.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.sba.gov",
       "Domain": "sba.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.sbir.gov",
       "Domain": "sbir.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.scidac.gov",
       "Domain": "scidac.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.science.gov",
       "Domain": "science.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.science360.gov",
       "Domain": "science360.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.sciencebase.gov",
       "Domain": "sciencebase.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.sdr.gov",
       "Domain": "sdr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.sec.gov",
       "Domain": "sec.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.secretservice.gov",
       "Domain": "secretservice.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://section508.gov",
       "Domain": "section508.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://segurosocial.gov",
       "Domain": "segurosocial.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.selectagents.gov",
       "Domain": "selectagents.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.serve.gov",
       "Domain": "serve.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://sftool.gov",
       "Domain": "sftool.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.sharetheroadsafely.gov",
       "Domain": "sharetheroadsafely.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://sierrawild.gov",
       "Domain": "sierrawild.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.sigtarp.gov",
       "Domain": "sigtarp.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.siteidiq.gov",
       "Domain": "siteidiq.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://slgs.gov",
       "Domain": "slgs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://smart.gov",
       "Domain": "smart.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.smartcheck.gov",
       "Domain": "smartcheck.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.smartgrid.gov",
       "Domain": "smartgrid.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://smokefree.gov",
       "Domain": "smokefree.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://snap.gov",
       "Domain": "snap.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://sns.gov",
       "Domain": "sns.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://socialsecurity.gov",
       "Domain": "socialsecurity.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.solardecathlon.gov",
       "Domain": "solardecathlon.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.srs.gov",
       "Domain": "srs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ssa.gov",
       "Domain": "ssa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://ssab.gov",
       "Domain": "ssab.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.sss.gov",
       "Domain": "sss.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://start2farm.gov",
       "Domain": "start2farm.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.state.gov",
       "Domain": "state.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://stennis.gov",
       "Domain": "stennis.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://stopalcoholabuse.gov",
       "Domain": "stopalcoholabuse.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.stopbullying.gov",
       "Domain": "stopbullying.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.stopfraud.gov",
       "Domain": "stopfraud.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.stopmedicarefraud.gov",
       "Domain": "stopmedicarefraud.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://strategicsourcing.gov",
       "Domain": "strategicsourcing.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.studentloans.gov",
       "Domain": "studentloans.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.supportthevoter.gov",
       "Domain": "supportthevoter.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.surgeongeneral.gov",
       "Domain": "surgeongeneral.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://sustainability.gov",
       "Domain": "sustainability.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.sustainablecommunities.gov",
       "Domain": "sustainablecommunities.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://swpa.gov",
       "Domain": "swpa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.symbols.gov",
       "Domain": "symbols.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://taaps.gov",
       "Domain": "taaps.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.tax.gov",
       "Domain": "tax.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://telework.gov",
       "Domain": "telework.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://thecoolspot.gov",
       "Domain": "thecoolspot.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://thepeoplesgarden.gov",
       "Domain": "thepeoplesgarden.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://time.gov",
       "Domain": "time.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://tissueengineering.gov",
       "Domain": "tissueengineering.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://trade.gov",
       "Domain": "trade.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.trafficsafetymarketing.gov",
       "Domain": "trafficsafetymarketing.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.transportation.gov",
       "Domain": "transportation.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.treaslockbox.gov",
       "Domain": "treaslockbox.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.treasury.gov",
       "Domain": "treasury.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://treasuryauctions.gov",
       "Domain": "treasuryauctions.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://treasurydirect.gov",
       "Domain": "treasurydirect.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://treasuryhunt.gov",
       "Domain": "treasuryhunt.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://treasuryscams.gov",
       "Domain": "treasuryscams.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.truman.gov",
       "Domain": "truman.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.tsa.gov",
       "Domain": "tsa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.tsp.gov",
       "Domain": "tsp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.tsunami.gov",
       "Domain": "tsunami.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://tswg.gov",
       "Domain": "tswg.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ttb.gov",
       "Domain": "ttb.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.ttbonline.gov",
       "Domain": "ttbonline.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://tva.gov",
       "Domain": "tva.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ucrdatatool.gov",
       "Domain": "ucrdatatool.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://udall.gov",
       "Domain": "udall.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.unicor.gov",
       "Domain": "unicor.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.unitedweride.gov",
       "Domain": "unitedweride.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://unlocktalent.gov",
       "Domain": "unlocktalent.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://urbanwaters.gov",
       "Domain": "urbanwaters.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.us-cert.gov",
       "Domain": "us-cert.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.usa.gov",
       "Domain": "usa.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.usability.gov",
       "Domain": "usability.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.usaid.gov",
       "Domain": "usaid.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.usaidallnet.gov",
       "Domain": "usaidallnet.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.usajobs.gov",
       "Domain": "usajobs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://usalearning.gov",
       "Domain": "usalearning.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.usandc.gov",
       "Domain": "usandc.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://usap.gov",
       "Domain": "usap.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.usaperformance.gov",
       "Domain": "usaperformance.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.usaspending.gov",
       "Domain": "usaspending.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.usbr.gov",
       "Domain": "usbr.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.uscirf.gov",
       "Domain": "uscirf.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.uscis.gov",
       "Domain": "uscis.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.usda.gov",
       "Domain": "usda.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://usdebitcard.gov",
       "Domain": "usdebitcard.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://usembassy-mexico.gov",
       "Domain": "usembassy-mexico.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.usembassy.gov",
       "Domain": "usembassy.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://usgs.gov",
       "Domain": "usgs.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://usich.gov",
       "Domain": "usich.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.usicn.gov",
       "Domain": "usicn.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://usint.gov",
       "Domain": "usint.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://usitc.gov",
       "Domain": "usitc.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.usmarshals.gov",
       "Domain": "usmarshals.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.usmint.gov",
       "Domain": "usmint.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://usmission.gov",
       "Domain": "usmission.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://usphs.gov",
       "Domain": "usphs.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.uspis.gov",
       "Domain": "uspis.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://uspsoig.gov",
       "Domain": "uspsoig.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.uspto.gov",
       "Domain": "uspto.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://ustda.gov",
       "Domain": "ustda.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://ustr.gov",
       "Domain": "ustr.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.utahfireinfo.gov",
       "Domain": "utahfireinfo.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://va.gov",
       "Domain": "va.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.vaccines.gov",
       "Domain": "vaccines.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://vallescaldera.gov",
       "Domain": "vallescaldera.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.vcf.gov",
       "Domain": "vcf.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://vef.gov",
       "Domain": "vef.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.vehiclehistory.gov",
       "Domain": "vehiclehistory.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.vetbiz.gov",
       "Domain": "vetbiz.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://www.vistacampus.gov",
       "Domain": "vistacampus.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://volunteer.gov",
       "Domain": "volunteer.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.volunteeringinamerica.gov",
       "Domain": "volunteeringinamerica.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.wapa.gov",
       "Domain": "wapa.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://watermonitor.gov",
       "Domain": "watermonitor.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://wdol.gov",
       "Domain": "wdol.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.weather.gov",
       "Domain": "weather.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://webharvest.gov",
       "Domain": "webharvest.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://wethepeople.gov",
       "Domain": "wethepeople.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.whistleblowers.gov",
       "Domain": "whistleblowers.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.whitehouse.gov",
       "Domain": "whitehouse.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "http://whitehouseconferenceonaging.gov",
       "Domain": "whitehouseconferenceonaging.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.wildfire.gov",
       "Domain": "wildfire.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.wildlifeadaptationstrategy.gov",
       "Domain": "wildlifeadaptationstrategy.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://wizard.gov",
       "Domain": "wizard.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.wlci.gov",
       "Domain": "wlci.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.womenfarmerclaims.gov",
       "Domain": "womenfarmerclaims.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://womenshealth.gov",
       "Domain": "womenshealth.gov",
       "Participates in DAP?": 1
     },
     {
+      "Canonical": "https://www.workplace.gov",
       "Domain": "workplace.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://worldwar1centennial.gov",
       "Domain": "worldwar1centennial.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://www.wrp.gov",
       "Domain": "wrp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://ymp.gov",
       "Domain": "ymp.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "https://youthgo.gov",
       "Domain": "youthgo.gov",
       "Participates in DAP?": 0
     },
     {
+      "Canonical": "http://www.youthrules.gov",
       "Domain": "youthrules.gov",
       "Participates in DAP?": 0
     }
