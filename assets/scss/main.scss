@@ -436,9 +436,7 @@ a {
 
     /* Domain column, to accommodate for More button. */
     td:first-child {
-      @include media($medium) {
-        padding-left: 32px !important;
-      }
+      padding-left: 32px !important;
     }
 
     thead {

@@ -33,7 +33,7 @@ LABELS = {
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?',
-  'more': 'More details'
+  'details': 'Details'
 }
 
 ## global data
@@ -394,7 +394,20 @@ def https_row_for(domain):
 
   row[LABELS['grade']] = grade
 
-  # row["More details"] = "Anything."
+
+  ###
+  # Construct a sentence explaining the situation.
+
+  if https == 2:
+    details = "This domain is offered over valid HTTPS."
+  elif https == 1:
+    details = "This domain is offered over valid HTTPS, but uses a certificate chain that may cause issues for some visitors."
+  elif https == 0:
+    details = "This domain redirects visitors from HTTPS to HTTP."
+  elif https == -1:
+    details = "This domain does not support HTTPS."
+
+  row[LABELS['details']] = details
 
   return row
 
