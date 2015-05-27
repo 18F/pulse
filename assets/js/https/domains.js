@@ -71,21 +71,30 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {data: "Domain", width: "210px"},
+        {
+          data: "Domain",
+          width: "210px",
+          render: Utils.linkDomain
+        },
         {data: "Canonical"},
-        {data: "HTTPS Enabled?"},
-        {data: "HTTPS Enforced?"},
-        {data: "Strict Transport Security (HSTS)"},
-        {data: "SSL Labs Grade"},
+        {data: "Agency"},
+        {
+          data: "HTTPS Enabled?",
+          render: display(names.https)
+        },
+        {
+          data: "HTTPS Enforced?",
+          render: display(names.https_forced)
+        },
+        {
+          data: "Strict Transport Security (HSTS)",
+          render: display(names.hsts)
+        },
+        {
+          data: "SSL Labs Grade",
+          render: linkGrade
+        },
         // {data: "More details"}
-      ],
-
-      columnDefs: [
-        {render: Utils.linkDomain, targets: 0},
-        {render: display(names.https), targets: 2},
-        {render: display(names.https_forced), targets: 3},
-        {render: display(names.hsts), targets: 4},
-        {render: linkGrade, targets: 5},
       ],
 
       "oLanguage": {

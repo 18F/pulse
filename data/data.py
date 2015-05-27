@@ -283,7 +283,8 @@ def https_row_for(domain):
   inspect = domain_data[domain]['inspect']
   row = {
     "Domain": domain,
-    "Canonical": inspect["Canonical"]
+    "Canonical": inspect["Canonical"],
+    "Agency": domain_data[domain]['agency']
   }
 
   ###
@@ -400,7 +401,8 @@ def analytics_row_for(domain):
 
   row = {
     "Domain": domain,
-    "Canonical": inspect["Canonical"]
+    "Canonical": inspect["Canonical"],
+    "Agency": domain_data[domain]['agency']
   }
 
   # rename column in process

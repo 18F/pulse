@@ -28,14 +28,17 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {data: "Domain", width: "210px"},
+        {
+          data: "Domain",
+          width: "210px",
+          render: Utils.linkDomain
+        },
         {data: "Canonical"},
-        {data: "Participates in DAP?"}
-      ],
-
-      columnDefs: [
-        {render: Utils.linkDomain, targets: 0},
-        {render: display(names.dap), targets: 2}
+        {data: "Agency"},
+        {
+          data: "Participates in DAP?",
+          render: display(names.dap)
+        }
       ],
 
       "oLanguage": {
