@@ -394,7 +394,7 @@ a {
     text-align: center; }
     #home #results .https:last-child, #home #results .dap:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 970px) {
       #home #results .https, #home #results .dap {
         float: left;
         display: block;
