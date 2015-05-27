@@ -327,8 +327,21 @@ a {
 
 // pages/analytics/*
 /////////////////////////////////////////
-#analytics #content > header .donut .total-value {
-    font-size: 3.5em;
+#analytics {
+
+  #content {
+    > header .donut .total-value {
+      font-size: 3.5em;
+    }
+  }
+
+  .dataTables_wrapper table.dataTable td:first-child {
+      padding: 8px 0 8px 20px !important;
+      @include media($medium) {
+        padding-left: 40px !important;
+      }
+  }
+
 }
 
 // pages/about.html
@@ -436,9 +449,7 @@ a {
 
     /* Domain column, to accommodate for More button. */
     td:first-child {
-      @include media($medium) {
-        padding-left: 32px !important;
-      }
+      padding-left: 40px !important;
     }
 
     thead {
@@ -463,6 +474,10 @@ a {
         top: 9px;
         background-color: lighten($light-blue, 20%);
       }
+    }
+
+    tbody > tr.child span.dtr-title {
+      min-width: 50px;
     }
 
     tbody > tr.parent > th:first-child:before {
