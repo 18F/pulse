@@ -404,6 +404,9 @@ a {
           margin-right: 0; } }
     #home #results .https .total-value, #home #results .dap .total-value {
       font-size: 5em; }
+    @media screen and (max-width: 1024px) {
+      #home #results .https .button, #home #results .dap .button {
+        margin-left: 25px; } }
 
 #analytics #content > header, #https #content > header, #about #content > header {
   max-width: 68em;
@@ -427,6 +430,9 @@ a {
     width: 23.23176%; }
     #analytics #content > header .donut:last-child, #https #content > header .donut:last-child, #about #content > header .donut:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 767px) {
+      #analytics #content > header .donut, #https #content > header .donut, #about #content > header .donut {
+        display: none; } }
     #analytics #content > header .donut .total-value, #https #content > header .donut .total-value, #about #content > header .donut .total-value {
       font-size: 3em; }
     #analytics #content > header .donut .total-desc, #https #content > header .donut .total-desc, #about #content > header .donut .total-desc {
@@ -441,6 +447,15 @@ a {
       padding-top: 60px; }
       #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 767px) {
+        #analytics #content > header.chart .description, #https #content > header.chart .description, #about #content > header.chart .description {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          padding: 40px 20px 20px 20px; }
+          #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
+            margin-right: 0; } }
 #analytics #content #main-content .tab-menu, #https #content #main-content .tab-menu, #about #content #main-content .tab-menu {
   width: 100%;
   margin-top: 40px; }
@@ -472,19 +487,24 @@ a {
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
 
-#about .wrapper header {
-  padding: 40px 0; }
+#about #content header {
+  padding: 40px; }
 #about .faq-questions {
-  padding: 20px 0 50px; }
-#about .faq-answers h3 {
-  font-style: italic;
-  margin-bottom: 15px; }
-#about .faq-answers li {
-  padding-bottom: 40px; }
+  padding: 20px 0; }
+#about .faq-answers {
+  padding: 0 40px; }
+  #about .faq-answers h3 {
+    font-style: italic;
+    margin-bottom: 15px; }
+  #about .faq-answers li {
+    padding-bottom: 40px; }
 
 .guide {
   clear: both;
   padding: 60px 0 40px; }
+  @media screen and (max-width: 767px) {
+    .guide {
+      padding: 40px 20px; } }
   .guide h2 {
     margin-bottom: 60px; }
   .guide article {

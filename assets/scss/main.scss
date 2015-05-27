@@ -224,6 +224,12 @@ a {
       .total-value {
         font-size: 5em;
       }
+
+      .button {
+        @include media($large){
+          margin-left: 25px;
+        }
+      }
     }
   }
 }
@@ -253,7 +259,9 @@ a {
 
       .donut {
         @include span-columns(3);
-
+        @include media($medium) {
+          display: none;
+        }
         .total-value {
           font-size: 3em;
         }
@@ -268,6 +276,10 @@ a {
         .description {
           @include span-columns(8);
           padding-top: 60px;
+          @include media($medium) {
+            @include span-columns(12);
+            padding: 40px 20px 20px 20px;
+          }
         }
       }
     }
@@ -320,12 +332,15 @@ a {
 }
 
 // pages/about.html
+/////////////////////////////////////////
 #about {
-  .wrapper header {
-    padding: 40px 0;
+
+  #content header {
+    padding: 40px;
   }
-  .faq-questions { padding: 20px 0 50px; }
+  .faq-questions { padding: 20px 0; }
   .faq-answers {
+    padding: 0 40px; 
     h3 {
       font-style: italic;
       margin-bottom: 15px;
@@ -339,6 +354,9 @@ a {
 .guide {
   clear: both;
   padding: 60px 0 40px;
+  @include media($medium) {
+    padding: 40px 20px;
+  }
   h2 { margin-bottom: 60px; }
   article {
     padding-bottom: 25px;
