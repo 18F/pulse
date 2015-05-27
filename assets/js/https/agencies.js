@@ -13,8 +13,8 @@ $(document).ready(function () {
       columns: [
         {data: "Agency"},
         {data: "Number of Domains"},
-        {data: "HTTPS Enabled?"},
-        {data: "HTTPS Enforced?"},
+        {data: "Uses HTTPS"},
+        {data: "Enforces HTTPS"},
         {data: "Strict Transport Security (HSTS)"},
         {data: "SSL Labs (A- or higher)"}
       ],

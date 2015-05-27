@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   var names = {
     https: {
+      "-1": "No",
       0: "No",
       1: "Yes", // (with certificate chain issues)
       2: "Yes"
@@ -73,8 +74,8 @@ $(document).ready(function () {
       columns: [
         {data: "Domain", width: "210px"},
         {data: "Canonical"},
-        {data: "HTTPS Enabled?"},
-        {data: "HTTPS Enforced?"},
+        {data: "Uses HTTPS"},
+        {data: "Enforces HTTPS"},
         {data: "Strict Transport Security (HSTS)"},
         {data: "SSL Labs Grade"},
         // {data: "More details"}
