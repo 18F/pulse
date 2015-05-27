@@ -549,6 +549,12 @@ a {
       box-shadow: none;
       font-size: 1.1em;
       font-weight: 200; }
+    @media screen and (max-width: 480px) {
+      .dataTables_wrapper .dataTables_filter label {
+        float: none; }
+      .dataTables_wrapper .dataTables_filter input {
+        width: 200px;
+        margin-left: 10px; } }
   .dataTables_wrapper table.dataTable {
     padding: 20px 0;
     /* Domain column, to accommodate for More button. */ }

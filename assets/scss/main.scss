@@ -141,12 +141,12 @@ a {
     @include media($medium) {
       display: inline;
       text-align: right;
-      margin-top: 6px;  
+      margin-top: 6px;
       @include span-columns(3);
     }
   }
 
-  #menu-content{  
+  #menu-content{
     $sliding-panel-width: 220px;
 
     @include position(fixed, 0 auto 0 0);
@@ -340,7 +340,7 @@ a {
   }
   .faq-questions { padding: 20px 0; }
   .faq-answers {
-    padding: 0 40px; 
+    padding: 0 40px;
     h3 {
       font-style: italic;
       margin-bottom: 15px;
@@ -397,6 +397,7 @@ a {
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
+
     input {
       display: inline-block;
       width: auto;
@@ -407,6 +408,17 @@ a {
       box-shadow: none;
       font-size: 1.1em;
       font-weight: 200;
+    }
+
+    @include media($small) {
+      label {
+        float: none;
+      }
+
+      input {
+        width: 200px;
+        margin-left: 10px;
+      }
     }
   }
 
@@ -459,8 +471,9 @@ a {
 
     &.agency {
 
-      td { 
-        padding: 15px 0 !important; 
+      td {
+        padding: 15px 0 !important;
+
         @include media($large) {
           padding-left: 32px !important;
           &:first-child:before { top: 30px !important; }
