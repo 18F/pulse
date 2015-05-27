@@ -605,6 +605,12 @@ a {
         width: 60%; }
         .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width100 {
           border-radius: 20px; }
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width1 {
+          background-color: transparent; }
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width2 {
+          background-color: transparent; }
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width3 {
+          background-color: transparent; }
       .dataTables_wrapper table.dataTable.agency .progress-bar-indication p {
         font-weight: 900;
         font-size: 0.875em;
