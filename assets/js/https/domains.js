@@ -73,8 +73,8 @@ $(document).ready(function () {
       columns: [
         {data: "Domain", width: "210px"},
         {data: "Canonical"},
-        {data: "HTTPS Enabled?"},
-        {data: "HTTPS Enforced?"},
+        {data: "Uses HTTPS"},
+        {data: "Enforces HTTPS"},
         {data: "Strict Transport Security (HSTS)"},
         {data: "SSL Labs Grade"},
         // {data: "More details"}

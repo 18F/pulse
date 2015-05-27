@@ -27,8 +27,8 @@ STATS_DATA = "../assets/data"
 
 
 LABELS = {
-  'https': 'HTTPS Enabled?',
-  'https_forced': 'HTTPS Enforced?',
+  'https': 'Uses HTTPS',
+  'https_forced': 'Enforces HTTPS',
   'hsts': 'Strict Transport Security (HSTS)',
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
@@ -268,10 +268,10 @@ Given the data we have about a domain, what's the HTTPS row?
 
 {
   "Domain": [domain],
-  "HTTPS Enabled?": [
+  "Uses HTTPS": [
     "No" | "Yes (with issues)" | "Yes"
   ],
-  "HTTPS Enforced?": [
+  "Enforces HTTPS": [
     "No" | "Yes" | "Yes (Strict)"
   ],
   "HSTS": [
@@ -296,7 +296,7 @@ def https_row_for(domain):
   else:
     https = 0 # No
 
-  row["HTTPS Enabled?"] = https;
+  row[LABELS['https']] = https;
 
 
   ###
