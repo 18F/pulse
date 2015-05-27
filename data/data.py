@@ -415,9 +415,15 @@ def process_stats():
   total = len(https_domains)
   enabled = 0
   for row in https_domains:
-    # Needs to be enabled, with issues is allowed
-    if row[LABELS['https']] >= 1:
+    # HTTPS needs to be enabled.
+    # It's okay if it has a bad chain.
+    # However, it's not okay if HTTPS is downgraded.
+    if (
+      (row[LABELS['https']] >= 1) and
+      (row[LABELS['https_forced']] >= 1)
+    ):
       enabled += 1
+
   pct = percent(enabled, total)
 
   https_stats = [
