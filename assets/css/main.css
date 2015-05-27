@@ -598,11 +598,13 @@ a {
         background-color: #0066CC;
         background-repeat: repeat-x;
         background-size: 40px 40px;
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;
         margin: 15px 0;
         display: block;
         height: 100%;
         width: 60%; }
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width100 {
+          border-radius: 20px; }
       .dataTables_wrapper table.dataTable.agency .progress-bar-indication p {
         font-weight: 900;
         font-size: 0.875em;
