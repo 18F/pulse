@@ -215,7 +215,7 @@ a {
 
     .https, .dap {
       @include span-columns(4 of 8);
-      @include media($large) {
+      @media (max-width: 970px) {
         @include span-columns(8 of 8);
       }
       margin-bottom: 40px;
