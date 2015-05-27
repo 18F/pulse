@@ -486,6 +486,11 @@ a {
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
+#analytics .dataTables_wrapper table.dataTable td:first-child {
+  padding: 8px 0 8px 20px !important; }
+  @media screen and (max-width: 767px) {
+    #analytics .dataTables_wrapper table.dataTable td:first-child {
+      padding-left: 40px !important; } }
 
 #about #content header {
   padding: 40px; }
