@@ -93,7 +93,7 @@ $(document).ready(function () {
         {
           data: "SSL Labs Grade",
           render: linkGrade
-        },
+        }
         // {data: "More details"}
       ],
 
