@@ -8,6 +8,14 @@
 @import "lib/neat/neat";
 @import "base/base";
 
+// Breakpoints
+/////////////////////////////////////////
+
+$small:       new-breakpoint(max-width 480px, 12);
+$medium:      new-breakpoint(max-width 767px, 12);
+$large:       new-breakpoint(max-width 1024px, 12);
+$xlarge:      new-breakpoint(max-width 1200px, 12);
+
 // Colors
 /////////////////////////////////////////
 
@@ -67,11 +75,22 @@ a {
     padding: 10px 40px;
     color: white;
     text-align: center;
+    @include media($small) {
+      padding: 10px 20px;
+      font-size: 0.8em;
+    }
     .us-official {
       margin-left: 177px;
+      @include media($large) {
+        margin: 0;
+      }
     }
     .alpha {
       float: right;
+      @include media($large) {
+        float: none;
+        display: block;
+      }
     }
   }
 
@@ -81,19 +100,27 @@ a {
     #main-nav {
       @include outer-container;
       padding: 10px 0;
+      @include media($large) {
+        padding: 10px 20px;
+      }
 
       a { color: white; }
 
       h1#branding {
-        @include span-columns(6);
+        @include span-columns(5);
         font-size: 1.875em;
         font-weight: 300;
+        @include media($medium) {
+          @include span-columns(9);
+        }
       }
 
       ul {
-        @include span-columns(6);
         margin-top: 6px;
-
+        float: right;
+        @include media($medium) {
+          display: none;
+        }
         li {
           display: inline;
 
@@ -108,6 +135,53 @@ a {
       }
     }
   }
+
+  #menu-btn {
+    display: none;
+    @include media($medium) {
+      display: inline;
+      text-align: right;
+      margin-top: 6px;
+      @include span-columns(3);
+    }
+  }
+
+  #menu-content{
+    $sliding-panel-width: 220px;
+
+    @include position(fixed, 0 auto 0 0);
+    @include size($sliding-panel-width 100%);
+    @include transform(translateX(- $sliding-panel-width));
+    @include transition(all 0.25s linear);
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    z-index: 999999;
+    a { color: #4A4A4A; }
+    ul {
+      padding: 14px;
+      font-weight: 300;
+      line-height: 1.8em;
+    }
+    &.is-visible {
+      @include transform(translateX(0));
+    }
+  }
+
+  .overlay {
+    @include position(fixed, 0 0 0 0);
+    @include transition;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+
+    &.is-visible {
+      visibility: visible;
+    }
+  }
+
+  // Based on code by Diego Eis
 }
 
 // pages/index.html
@@ -141,12 +215,20 @@ a {
 
     .https, .dap {
       @include span-columns(4 of 8);
-
+      @include media($large) {
+        @include span-columns(8 of 8);
+      }
       margin-bottom: 40px;
       text-align: center;
 
       .total-value {
         font-size: 5em;
+      }
+
+      .button {
+        @include media($large){
+          margin-left: 25px;
+        }
       }
     }
   }
@@ -177,7 +259,9 @@ a {
 
       .donut {
         @include span-columns(3);
-
+        @include media($medium) {
+          display: none;
+        }
         .total-value {
           font-size: 3em;
         }
@@ -192,6 +276,10 @@ a {
         .description {
           @include span-columns(8);
           padding-top: 60px;
+          @include media($medium) {
+            @include span-columns(12);
+            padding: 40px 20px 20px 20px;
+          }
         }
       }
     }
@@ -244,12 +332,15 @@ a {
 }
 
 // pages/about.html
+/////////////////////////////////////////
 #about {
-  .wrapper header {
-    padding: 40px 0;
+
+  #content header {
+    padding: 40px;
   }
-  .faq-questions { padding: 20px 0 50px; }
+  .faq-questions { padding: 20px 0; }
   .faq-answers {
+    padding: 0 40px;
     h3 {
       font-style: italic;
       margin-bottom: 15px;
@@ -263,6 +354,9 @@ a {
 .guide {
   clear: both;
   padding: 60px 0 40px;
+  @include media($medium) {
+    padding: 40px 20px;
+  }
   h2 { margin-bottom: 60px; }
   article {
     padding-bottom: 25px;
@@ -303,6 +397,7 @@ a {
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
+
     input {
       display: inline-block;
       width: auto;
@@ -313,6 +408,17 @@ a {
       box-shadow: none;
       font-size: 1.1em;
       font-weight: 200;
+    }
+
+    @include media($small) {
+      label {
+        float: none;
+      }
+
+      input {
+        width: 200px;
+        margin-left: 10px;
+      }
     }
   }
 
@@ -330,7 +436,7 @@ a {
 
     /* Domain column, to accommodate for More button. */
     td:first-child {
-      @media (max-width: 767px) {
+      @include media($medium) {
         padding-left: 32px !important;
       }
     }
@@ -365,13 +471,16 @@ a {
 
     &.agency {
 
-      td { 
-        padding: 15px 0 !important; 
+      td {
+        padding: 15px 0 !important;
 
-        &:first-child {
-          padding: 0 10px 0 32px !important;
+        @include media($large) {
+          padding-left: 32px !important;
+          &:first-child:before { top: 30px !important; }
         }
-
+        @include media ($medium) {
+          &:first-child:before { top: 15px !important; }
+        }
       }
 
       .progress-bar-indication {
