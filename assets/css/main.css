@@ -564,7 +564,7 @@ a {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 20px !important; }
     .dataTables_wrapper table.dataTable td:first-child {
-      padding-left: 32px !important; }
+      padding-left: 40px !important; }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
       background-position: center left; }
     .dataTables_wrapper table.dataTable.no-footer {
@@ -574,6 +574,8 @@ a {
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }
+    .dataTables_wrapper table.dataTable tbody > tr.child span.dtr-title {
+      min-width: 50px; }
     .dataTables_wrapper table.dataTable tbody > tr.parent > th:first-child:before {
       background-color: #CCC; }
     .dataTables_wrapper table.dataTable.agency td {
