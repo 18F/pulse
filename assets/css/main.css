@@ -449,7 +449,7 @@ a {
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 20px !important; }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .dataTables_wrapper table.dataTable td:first-child {
         padding-left: 32px !important; } }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
@@ -465,8 +465,14 @@ a {
       background-color: #CCC; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 !important; }
-      .dataTables_wrapper table.dataTable.agency td:first-child {
-        padding: 0 10px 0 32px !important; }
+      @media screen and (max-width: 1024px) {
+        .dataTables_wrapper table.dataTable.agency td {
+          padding-left: 32px !important; }
+          .dataTables_wrapper table.dataTable.agency td:first-child:before {
+            top: 30px !important; } }
+      @media screen and (max-width: 767px) {
+        .dataTables_wrapper table.dataTable.agency td:first-child:before {
+          top: 15px !important; } }
     .dataTables_wrapper table.dataTable.agency .progress-bar-indication {
       background-color: #CCC;
       border-radius: 20px;

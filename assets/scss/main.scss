@@ -8,6 +8,14 @@
 @import "lib/neat/neat";
 @import "base/base";
 
+// Breakpoints
+/////////////////////////////////////////
+
+$small:       new-breakpoint(max-width 480px, 12);
+$medium:      new-breakpoint(max-width 767px, 12);
+$large:       new-breakpoint(max-width 1024px, 12);
+$xlarge:      new-breakpoint(max-width 1200px, 12);
+
 // Colors
 /////////////////////////////////////////
 
@@ -330,7 +338,7 @@ a {
 
     /* Domain column, to accommodate for More button. */
     td:first-child {
-      @media (max-width: 767px) {
+      @include media($medium) {
         padding-left: 32px !important;
       }
     }
@@ -367,11 +375,13 @@ a {
 
       td { 
         padding: 15px 0 !important; 
-
-        &:first-child {
-          padding: 0 10px 0 32px !important;
+        @include media($large) {
+          padding-left: 32px !important;
+          &:first-child:before { top: 30px !important; }
         }
-
+        @include media ($medium) {
+          &:first-child:before { top: 15px !important; }
+        }
       }
 
       .progress-bar-indication {
