@@ -32,7 +32,8 @@ LABELS = {
   'hsts': 'Strict Transport Security (HSTS)',
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
-  'dap': 'Participates in DAP?'
+  'dap': 'Participates in DAP?',
+  'more': 'More details'
 }
 
 ## global data
@@ -280,7 +281,10 @@ Given the data we have about a domain, what's the HTTPS row?
 '''
 def https_row_for(domain):
   inspect = domain_data[domain]['inspect']
-  row = {"Domain": domain}
+  row = {
+    "Domain": domain,
+    "Canonical": inspect["Canonical"]
+  }
 
   ###
   # Is it there? There for most clients? Not there?
@@ -391,11 +395,16 @@ def https_row_for(domain):
 
 # Given the data we have about a domain, what's the DAP row?
 def analytics_row_for(domain):
-  row = dict.copy(domain_data[domain]['analytics'])
+  analytics = domain_data[domain]['analytics']
+  inspect = domain_data[domain]['inspect']
 
-  # TODO: maybe there's a better way to rename this column?
-  row[LABELS['dap']] = boolean_nice(row['Participates in Analytics'])
-  del row["Participates in Analytics"]
+  row = {
+    "Domain": domain,
+    "Canonical": inspect["Canonical"]
+  }
+
+  # rename column in process
+  row[LABELS['dap']] = boolean_nice(analytics['Participates in Analytics'])
 
   return row
 

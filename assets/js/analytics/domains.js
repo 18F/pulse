@@ -29,11 +29,13 @@ $(document).ready(function () {
 
       columns: [
         {data: "Domain", width: "210px"},
+        {data: "Canonical"},
         {data: "Participates in DAP?"}
       ],
 
       columnDefs: [
-        {render: display(names.dap), targets: 1}
+        {render: Utils.linkDomain, targets: 0},
+        {render: display(names.dap), targets: 2}
       ],
 
       "oLanguage": {

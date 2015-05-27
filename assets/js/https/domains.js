@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
   };
 
-  var link = function(data, type, row) {
+  var linkGrade = function(data, type, row) {
     var grade = display(names.grade)(data, type);
     if (type == "sort")
       return grade;
@@ -72,6 +72,7 @@ $(document).ready(function () {
 
       columns: [
         {data: "Domain", width: "210px"},
+        {data: "Canonical"},
         {data: "HTTPS Enabled?"},
         {data: "HTTPS Enforced?"},
         {data: "Strict Transport Security (HSTS)"},
@@ -80,10 +81,11 @@ $(document).ready(function () {
       ],
 
       columnDefs: [
-        {render: display(names.https), targets: 1},
-        {render: display(names.https_forced), targets: 2},
-        {render: display(names.hsts), targets: 3},
-        {render: link, targets: 4},
+        {render: Utils.linkDomain, targets: 0},
+        {render: display(names.https), targets: 2},
+        {render: display(names.https_forced), targets: 3},
+        {render: display(names.hsts), targets: 4},
+        {render: linkGrade, targets: 5},
       ],
 
       "oLanguage": {
