@@ -69,20 +69,20 @@ description: "How federal government domains are doing at deploying HTTPS."
         <h3>Fields</h3>
 
         <ul>
-          <li><strong>HTTPS Enabled?</strong></li>
-          <li><strong>Values:</strong> No,Yes</li>
-          <li>Whether a valid HTTPS connection can be established to a domain, on either its bare domain or its <code>www</code> subdomain.</li>
+          <li><strong>Uses HTTPS</strong></li>
+          <li><strong>Values:</strong> No, Yes</li>
+          <li>Whether a site can be used over HTTPS, on either its bare domain or its <code>www</code> subdomain. Sites that appear to redirect "down" from HTTPS to HTTP are considered a "No".</li>
         </ul>
 
         <ul>
-          <li><strong>HTTPS Enforced?</strong></li>
-          <li><strong>Values:</strong> No,Yes</li>
+          <li><strong>Enforces HTTPS</strong></li>
+          <li><strong>Values:</strong> No, Yes</li>
           <li>Whether a domain appears to "default" to using HTTPS. This can be done either by redirecting its HTTP endpoints to HTTPS, or by only being available over HTTPS.</li>
         </ul>
 
         <ul>
           <li><strong>Strict Transport Security (HSTS)</strong></li>
-          <li><strong>Values:</strong> No,Yes,"Yes, and preloaded"</li>
+          <li><strong>Values:</strong> No, Yes, "Yes, and preloaded"</li>
           <li>Whether a domain has implemented <a href="https://https.cio.gov/hsts/">HTTP Strict Transport Security</a>, which ensures that <a href="http://caniuse.com/#search=hsts">supporting browsers</a> will only ever communicate with a domain over HTTPS (even if the user clicks or types in a plain HTTP link).</li>
           <li>"Yes" means that a valid <code>Strict-Transport-Security</code> header with a non-zero <code>max-age</code> is present on the domain's default endpoint.</li>
           <li>"Yes, and preloaded" means that the domain has implemented a strong HSTS header on its <strong>bare domain</strong> whose policy covers all subdomains, and has indicated consent to <a href="https://hstspreload.appspot.com">preloading by all major browsers</a> as HTTPS-only. This effectively means that a domain's namespace is permanently and fully committed to HTTPS.</li>
@@ -90,7 +90,7 @@ description: "How federal government domains are doing at deploying HTTPS."
 
         <ul>
           <li><strong>SSL Labs Grade</strong></li>
-          <li><strong>Values:</strong> T,F,C,B,A-,A,A+</li>
+          <li><strong>Values:</strong> T, F, C, B, A-, A, A+</li>
           <li>A grade measuring the <em>quality</em> of HTTPS configuration, as calculated by <a href="https://www.ssllabs.com">SSL Labs</a>. SSL Labs operates a free and universally referenced benchmarking service.</li>
           <li>Grades are calculated using a <a href="https://www.ssllabs.com/downloads/SSL_Server_Rating_Guide.pdf">detailed methodology</a> that looks at the strength of cryptographic keys, choices of ciphers, supported protocols, and other relevant standards (such as HSTS).</li>
           <li>Grades are hyperlinked to detailed reports for each domain on SSL Labs. As an example, view the <a href="https://www.ssllabs.com/ssltest/analyze.html?d=pulse.cio.gov">SSL Labs report for Pulse itself</a>.</li>

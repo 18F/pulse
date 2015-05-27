@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   var names = {
     https: {
+      "-1": "No",
       0: "No",
       1: "Yes", // (with certificate chain issues)
       2: "Yes"
@@ -79,11 +80,11 @@ $(document).ready(function () {
         {data: "Canonical"},
         {data: "Agency"},
         {
-          data: "HTTPS Enabled?",
+          data: "Uses HTTPS",
           render: display(names.https)
         },
         {
-          data: "HTTPS Enforced?",
+          data: "Enforces HTTPS",
           render: display(names.https_forced)
         },
         {
@@ -94,7 +95,6 @@ $(document).ready(function () {
           data: "SSL Labs Grade",
           render: linkGrade
         }
-        // {data: "More details"}
       ],
 
       "oLanguage": {
