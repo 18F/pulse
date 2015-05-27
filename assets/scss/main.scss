@@ -493,11 +493,14 @@ a {
           background-color: $light-blue;
           background-repeat: repeat-x;
           background-size: 40px 40px;
-          border-radius: 20px;
+          border-radius: 20px 0 0 20px;
           margin: 15px 0;
           display: block;
           height: 100%;
           width: 60%;
+          &.width100 {
+            border-radius: 20px;
+          }
         }
 
         p {
