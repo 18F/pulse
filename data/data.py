@@ -289,12 +289,16 @@ def https_row_for(domain):
   ###
   # Is it there? There for most clients? Not there?
 
-  if (inspect["Valid HTTPS"] == "True"):
-    https = 2 # Yes
-  elif (inspect["HTTPS Bad Chain"] == "True"):
-    https = 1 # Yes (with issues) - Considered 'Yes'
-  else:
+  # assumes that HTTPS would be technically present, with or without issues
+  if (inspect["Downgrades HTTPS"] == "True"):
     https = 0 # No
+  else:
+    if (inspect["Valid HTTPS"] == "True"):
+      https = 2 # Yes
+    elif (inspect["HTTPS Bad Chain"] == "True"):
+      https = 1 # Yes
+    else:
+      https = -1 # No
 
   row[LABELS['https']] = https;
 
@@ -302,7 +306,7 @@ def https_row_for(domain):
   ###
   # Is HTTPS enforced?
 
-  if (https == 0):
+  if (https <= 0):
     behavior = -1 # N/A (considered 'No')
 
   else:
@@ -338,7 +342,7 @@ def https_row_for(domain):
   # Characterize the presence and completeness of HSTS.
 
   # Without HTTPS there can be no HSTS.
-  if (https == 0):
+  if (https <= 0):
     hsts = -1 # N/A (considered 'No')
 
   else:
@@ -368,7 +372,7 @@ def https_row_for(domain):
   tls = domain_data[domain].get('tls')
 
   # Not relevant if no HTTPS
-  if (https == 0):
+  if (https <= 0):
     grade = -1 # N/A
 
   elif tls is None:
