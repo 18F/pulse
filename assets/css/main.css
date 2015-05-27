@@ -394,6 +394,14 @@ a {
     text-align: center; }
     #home #results .https:last-child, #home #results .dap:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 1024px) {
+      #home #results .https, #home #results .dap {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 100%; }
+        #home #results .https:last-child, #home #results .dap:last-child {
+          margin-right: 0; } }
     #home #results .https .total-value, #home #results .dap .total-value {
       font-size: 5em; }
 
