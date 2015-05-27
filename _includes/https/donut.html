@@ -31,7 +31,7 @@
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")")
-        .on("click", function(d,i) { 
+        .on("click", function(d,i) {
             location.href = "/https/domains/";
         });
 
@@ -62,8 +62,7 @@
             .attr("class", "total-value")
             .attr("dy", "0.2em")
             .attr("fill", "white")
-            // TODO: Value below needs to get pulled in dynamically
-            .text(function(d){ 
+            .text(function(d){
                 return "" + data[0].value + "%";
         });
 
@@ -72,9 +71,8 @@
             .attr("class", "total-desc")
             .attr("dy", "2.5em")
             .attr("fill", "white")
-            // TODO: Value below needs to get pulled in dynamically
             .text(function(d) {
-                return "USES HTTPS";
+                return "USE HTTPS";
         });
 
 

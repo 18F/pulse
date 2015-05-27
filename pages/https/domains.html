@@ -12,17 +12,24 @@ description: "How federal government domains are doing at deploying HTTPS."
   <nav class="tab-menu">
     <span class="tab">By Domain</span>
     <a href="/https/agencies/" class="tab">By Agency</a>
+    <a href="/https/guidance/" class="tab">Guidance</a>
   </nav>
   <div class="wrapper">
-    <table>
+    <table class="domain responsive">
         <thead>
-            <th>Domain</th>
-            <th>HTTPS Enabled?</th>
-            <th>HTTPS Enforced?</th>
-            <th>Strict Transport Security (HSTS)</th>
+          <tr>
+            <th class="all">Domain</th>
+            <th class="never">Canonical</th>
+            <th class="never">Agency</th>
+            <th class="min-tablet">Uses HTTPS</th>
+            <th class="min-tablet">Enforces HTTPS</th>
+            <th class="min-tablet-l">Strict Transport Security (HSTS)</th>
+            <th class="min-tablet-l">SSL Labs Grade</th>
+            <th class="none">Details</th>
+          </tr>
         </thead>
     </table>
   </div>
 </section>
 
-<script src="/assets/js/https/domains.js"></script>
+<script src="/assets/js/https/domains.js?{{ site.time | date: "%Y%m%j%H%M%S" }}"></script>

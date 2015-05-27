@@ -22,15 +22,23 @@ $(document).ready(function () {
 
   var renderTable = function(data) {
     $("table").DataTable({
+
+      responsive: true,
+
       data: data,
 
       columns: [
-        {"data": "Domain"},
-        {"data": "Participates in DAP?"}
-      ],
-
-      columnDefs: [
-        {render: display(names.dap), targets: 1}
+        {
+          data: "Domain",
+          width: "210px",
+          render: Utils.linkDomain
+        },
+        {data: "Canonical"},
+        {data: "Agency"},
+        {
+          data: "Participates in DAP?",
+          render: display(names.dap)
+        }
       ],
 
       "oLanguage": {

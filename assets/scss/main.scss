@@ -1,10 +1,20 @@
 @charset "UTF-8";
 
 // Imports
+/////////////////////////////////////////
+
 @import "lib/bourbon/bourbon";
 @import "base/grid-settings";
 @import "lib/neat/neat";
 @import "base/base";
+
+// Breakpoints
+/////////////////////////////////////////
+
+$small:       new-breakpoint(max-width 480px, 12);
+$medium:      new-breakpoint(max-width 767px, 12);
+$large:       new-breakpoint(max-width 1024px, 12);
+$xlarge:      new-breakpoint(max-width 1200px, 12);
 
 // Colors
 /////////////////////////////////////////
@@ -65,11 +75,22 @@ a {
     padding: 10px 40px;
     color: white;
     text-align: center;
+    @include media($small) {
+      padding: 10px 20px;
+      font-size: 0.8em;
+    }
     .us-official {
       margin-left: 177px;
+      @include media($large) {
+        margin: 0;
+      }
     }
     .alpha {
       float: right;
+      @include media($large) {
+        float: none;
+        display: block;
+      }
     }
   }
 
@@ -79,17 +100,30 @@ a {
     #main-nav {
       @include outer-container;
       padding: 10px 0;
+      @include media($large) {
+        padding: 10px 20px;
+      }
+
       a { color: white; }
+
       h1#branding {
-        @include span-columns(8);
+        @include span-columns(5);
         font-size: 1.875em;
         font-weight: 300;
+        @include media($medium) {
+          @include span-columns(9);
+        }
       }
+
       ul {
-        @include span-columns(4);
         margin-top: 6px;
+        float: right;
+        @include media($medium) {
+          display: none;
+        }
         li {
           display: inline;
+
           a {
             padding: 17px 24px;
             &:hover {
@@ -101,6 +135,53 @@ a {
       }
     }
   }
+
+  #menu-btn {
+    display: none;
+    @include media($medium) {
+      display: inline;
+      text-align: right;
+      margin-top: 6px;
+      @include span-columns(3);
+    }
+  }
+
+  #menu-content{
+    $sliding-panel-width: 220px;
+
+    @include position(fixed, 0 auto 0 0);
+    @include size($sliding-panel-width 100%);
+    @include transform(translateX(- $sliding-panel-width));
+    @include transition(all 0.25s linear);
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    z-index: 999999;
+    a { color: #4A4A4A; }
+    ul {
+      padding: 14px;
+      font-weight: 300;
+      line-height: 1.8em;
+    }
+    &.is-visible {
+      @include transform(translateX(0));
+    }
+  }
+
+  .overlay {
+    @include position(fixed, 0 0 0 0);
+    @include transition;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+
+    &.is-visible {
+      visibility: visible;
+    }
+  }
+
+  // Based on code by Diego Eis
 }
 
 // pages/index.html
@@ -134,12 +215,20 @@ a {
 
     .https, .dap {
       @include span-columns(4 of 8);
-
+      @include media($large) {
+        @include span-columns(8 of 8);
+      }
       margin-bottom: 40px;
       text-align: center;
 
       .total-value {
         font-size: 5em;
+      }
+
+      .button {
+        @include media($large){
+          margin-left: 25px;
+        }
       }
     }
   }
@@ -170,7 +259,9 @@ a {
 
       .donut {
         @include span-columns(3);
-
+        @include media($medium) {
+          display: none;
+        }
         .total-value {
           font-size: 3em;
         }
@@ -185,6 +276,10 @@ a {
         .description {
           @include span-columns(8);
           padding-top: 60px;
+          @include media($medium) {
+            @include span-columns(12);
+            padding: 40px 20px 20px 20px;
+          }
         }
       }
     }
@@ -192,8 +287,9 @@ a {
     #main-content {
       .tab-menu {
         width: 100%;
+        margin-top: 40px;
         .tab {
-          width: 50%;
+          width: 33.33%;
           margin: 0;
           float: left;
           text-align: center;
@@ -204,10 +300,12 @@ a {
           background-color: $medium-blue;
           color: white;
           &:hover, &:focus {
+            background-color: lighten($medium-blue, 10%);
             color: white;
           }
         }
       }
+
       &.white-bkg {
         background-color: white;
         a {
@@ -229,17 +327,33 @@ a {
 
 // pages/analytics/*
 /////////////////////////////////////////
-#analytics #content > header .donut .total-value {
-    font-size: 3.5em;
+#analytics {
+
+  #content {
+    > header .donut .total-value {
+      font-size: 3.5em;
+    }
+  }
+
+  .dataTables_wrapper table.dataTable td:first-child {
+      padding: 8px 0 8px 20px !important;
+      @include media($medium) {
+        padding-left: 40px !important;
+      }
+  }
+
 }
 
 // pages/about.html
+/////////////////////////////////////////
 #about {
-  .wrapper header {
-    padding: 40px 0;
+
+  #content header {
+    padding: 40px;
   }
-  .faq-questions { padding: 20px 0 50px; }
+  .faq-questions { padding: 20px 0; }
   .faq-answers {
+    padding: 0 40px;
     h3 {
       font-style: italic;
       margin-bottom: 15px;
@@ -248,9 +362,32 @@ a {
   }
 }
 
-// dataTables
-.dataTables_wrapper {
+// pages/**/guides.html
+/////////////////////////////////////////
+.guide {
+  clear: both;
   padding: 60px 0 40px;
+  @include media($medium) {
+    padding: 40px 20px;
+  }
+  h2 { margin-bottom: 60px; }
+  article {
+    padding-bottom: 25px;
+    h3, h4 { margin-bottom: 12px; }
+    ul, p {
+      padding-bottom: 20px;
+      li {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+// dataTables
+/////////////////////////////////////////
+
+.dataTables_wrapper {
+  padding: 80px 0 40px;
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
@@ -273,6 +410,7 @@ a {
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
+
     input {
       display: inline-block;
       width: auto;
@@ -284,18 +422,82 @@ a {
       font-size: 1.1em;
       font-weight: 200;
     }
+
+    @include media($small) {
+      label {
+        float: none;
+      }
+
+      input {
+        width: 200px;
+        margin-left: 10px;
+      }
+    }
   }
+
   table.dataTable {
     padding: 20px 0;
+
+    a {
+      text-decoration: underline;
+    }
+
     th, td {
       border-bottom: 2px solid #EEE !important;
-      padding: 8px 0 !important;
+      padding: 8px 0 8px 20px !important;
     }
+
+    /* Domain column, to accommodate for More button. */
+    td:first-child {
+      padding-left: 40px !important;
+    }
+
+    thead {
+      .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
+        background-position: center left;
+      }
+    }
+
     &.no-footer {
       border: none;
     }
+
+    &.domain {
+
+      td:first-child {
+        white-space: nowrap;
+      }
+    }
+
+    &.dtr-inline.collapsed {
+      td:first-child:before {
+        top: 9px;
+        background-color: lighten($light-blue, 20%);
+      }
+    }
+
+    tbody > tr.child span.dtr-title {
+      min-width: 50px;
+    }
+
+    tbody > tr.parent > th:first-child:before {
+      background-color: #CCC;
+    }
+
     &.agency {
-      td { padding: 15px 0 !important; }
+
+      td {
+        padding: 15px 0 !important;
+
+        @include media($large) {
+          padding-left: 32px !important;
+          &:first-child:before { top: 30px !important; }
+        }
+        @include media ($medium) {
+          &:first-child:before { top: 15px !important; }
+        }
+      }
+
       .progress-bar-indication {
         background-color: #CCC;
         border-radius: 20px;
@@ -306,11 +508,17 @@ a {
           background-color: $light-blue;
           background-repeat: repeat-x;
           background-size: 40px 40px;
-          border-radius: 20px;
+          border-radius: 20px 0 0 20px;
           margin: 15px 0;
           display: block;
           height: 100%;
           width: 60%;
+          &.width100 {
+            border-radius: 20px;
+          }
+          @for $i from 1 through 3 {
+            &.width#{$i} { background-color: transparent }
+          }
         }
 
         p {
@@ -349,3 +557,4 @@ a {
     }
   }
 }
+

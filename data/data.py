@@ -27,10 +27,13 @@ STATS_DATA = "../assets/data"
 
 
 LABELS = {
-  'https': 'HTTPS Enabled?',
-  'https_forced': 'HTTPS Enforced?',
+  'https': 'Uses HTTPS',
+  'https_forced': 'Enforces HTTPS',
   'hsts': 'Strict Transport Security (HSTS)',
-  'dap': 'Participates in DAP?'
+  'grade': 'SSL Labs Grade',
+  'grade_agencies': 'SSL Labs (A- or higher)',
+  'dap': 'Participates in DAP?',
+  'details': 'Details'
 }
 
 ## global data
@@ -122,6 +125,25 @@ def load_data():
         dict_row[headers[i]] = cell
       domain_data[domain]['inspect'] = dict_row
 
+  headers = []
+  with open("tls.csv", newline='') as csvfile:
+    for row in csv.reader(csvfile):
+      if (row[0].lower() == "domain"):
+        headers = row
+        continue
+
+      domain = row[0].lower()
+      if not domain_data.get(domain):
+        # print("[tls] Skipping %s, not a federal domain from domains.csv." % domain)
+        continue
+
+      dict_row = {}
+      for i, cell in enumerate(row):
+        dict_row[headers[i]] = cell
+
+      # For now: overwrite previous rows if present, use last endpoint.
+      domain_data[domain]['tls'] = dict_row
+
 
   # Now, analytics measurement.
   headers = []
@@ -166,7 +188,8 @@ def process_domains():
     https_stats = {
       'https': 0,
       'https_forced': 0,
-      'hsts': 0
+      'hsts': 0,
+      'grade': 0
     }
 
     analytics_total = 0
@@ -193,6 +216,10 @@ def process_domains():
         if row[LABELS['hsts']] >= 1:
           https_stats['hsts'] += 1
 
+        # Needs to be A- or above
+        if row[LABELS['grade']] >= 4:
+          https_stats['grade'] += 1
+
       if evaluating_for_analytics(domain):
 
         analytics_total += 1
@@ -208,7 +235,8 @@ def process_domains():
         'Number of Domains': https_total,
         LABELS['https']: percent(https_stats['https'], https_total),
         LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
-        LABELS['hsts']: percent(https_stats['hsts'], https_total)
+        LABELS['hsts']: percent(https_stats['hsts'], https_total),
+        LABELS['grade_agencies']: percent(https_stats['grade'], https_total)
       })
 
     if analytics_total > 0:
@@ -240,10 +268,10 @@ Given the data we have about a domain, what's the HTTPS row?
 
 {
   "Domain": [domain],
-  "HTTPS Enabled?": [
+  "Uses HTTPS": [
     "No" | "Yes (with issues)" | "Yes"
   ],
-  "HTTPS Enforced?": [
+  "Enforces HTTPS": [
     "No" | "Yes" | "Yes (Strict)"
   ],
   "HSTS": [
@@ -253,25 +281,33 @@ Given the data we have about a domain, what's the HTTPS row?
 '''
 def https_row_for(domain):
   inspect = domain_data[domain]['inspect']
-  row = {"Domain": domain}
+  row = {
+    "Domain": domain,
+    "Canonical": inspect["Canonical"],
+    "Agency": domain_data[domain]['agency']
+  }
 
   ###
   # Is it there? There for most clients? Not there?
 
-  if (inspect["Valid HTTPS"] == "True"):
-    https = 2 # Yes
-  elif (inspect["HTTPS Bad Chain"] == "True"):
-    https = 1 # Yes (with issues) - Considered 'Yes'
-  else:
+  # assumes that HTTPS would be technically present, with or without issues
+  if (inspect["Downgrades HTTPS"] == "True"):
     https = 0 # No
+  else:
+    if (inspect["Valid HTTPS"] == "True"):
+      https = 2 # Yes
+    elif (inspect["HTTPS Bad Chain"] == "True"):
+      https = 1 # Yes
+    else:
+      https = -1 # No
 
-  row["HTTPS Enabled?"] = https;
+  row[LABELS['https']] = https;
 
 
   ###
   # Is HTTPS enforced?
 
-  if (https == 0):
+  if (https <= 0):
     behavior = -1 # N/A (considered 'No')
 
   else:
@@ -307,7 +343,7 @@ def https_row_for(domain):
   # Characterize the presence and completeness of HSTS.
 
   # Without HTTPS there can be no HSTS.
-  if (https == "No"):
+  if (https <= 0):
     hsts = -1 # N/A (considered 'No')
 
   else:
@@ -330,15 +366,64 @@ def https_row_for(domain):
 
   row[LABELS['hsts']] = hsts;
 
+
+  ###
+  # Include the SSL Labs grade for a domain.
+
+  tls = domain_data[domain].get('tls')
+
+  # Not relevant if no HTTPS
+  if (https <= 0):
+    grade = -1 # N/A
+
+  elif tls is None:
+    # print("[https][%s] No TLS scan data found." % domain)
+    grade = -1 # N/A
+
+  else:
+
+    grade = {
+      "F": 0,
+      "T": 1,
+      "C": 2,
+      "B": 3,
+      "A-": 4,
+      "A": 5,
+      "A+": 6
+    }[tls["Grade"]]
+
+  row[LABELS['grade']] = grade
+
+
+  ###
+  # Construct a sentence explaining the situation.
+
+  if https == 2:
+    details = "This domain is offered over valid HTTPS."
+  elif https == 1:
+    details = "This domain is offered over valid HTTPS, but uses a certificate chain that may cause issues for some visitors."
+  elif https == 0:
+    details = "This domain redirects visitors from HTTPS to HTTP."
+  elif https == -1:
+    details = "This domain does not support HTTPS."
+
+  row[LABELS['details']] = details
+
   return row
 
 # Given the data we have about a domain, what's the DAP row?
 def analytics_row_for(domain):
-  row = dict.copy(domain_data[domain]['analytics'])
+  analytics = domain_data[domain]['analytics']
+  inspect = domain_data[domain]['inspect']
 
-  # TODO: maybe there's a better way to rename this column?
-  row[LABELS['dap']] = boolean_nice(row['Participates in Analytics'])
-  del row["Participates in Analytics"]
+  row = {
+    "Domain": domain,
+    "Canonical": inspect["Canonical"],
+    "Agency": domain_data[domain]['agency']
+  }
+
+  # rename column in process
+  row[LABELS['dap']] = boolean_nice(analytics['Participates in Analytics'])
 
   return row
 
@@ -349,9 +434,15 @@ def process_stats():
   total = len(https_domains)
   enabled = 0
   for row in https_domains:
-    # Needs to be enabled, with issues is allowed
-    if row[LABELS['https']] >= 1:
+    # HTTPS needs to be enabled.
+    # It's okay if it has a bad chain.
+    # However, it's not okay if HTTPS is downgraded.
+    if (
+      (row[LABELS['https']] >= 1) and
+      (row[LABELS['https_forced']] >= 1)
+    ):
       enabled += 1
+
   pct = percent(enabled, total)
 
   https_stats = [
