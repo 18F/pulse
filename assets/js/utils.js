@@ -23,6 +23,20 @@ var Utils = {
         "</a>";
   },
 
+  // used to make "71" say "71 domains" and link to filtered domains
+  linkAgency: function(page) {
+    return function(data, type, row) {
+      if (type == "sort")
+        return data;
+      else
+        return "" +
+          "<a href=\"/" + page + "/domains/#" +
+            QueryString.stringify({q: row["Agency"]}) + "\">" +
+            data +
+          "</a>";
+    }
+  },
+
   searchLinks: function() {
     var api = this.api();
     var query = QueryString.parse(location.hash).q;

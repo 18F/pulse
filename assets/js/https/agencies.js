@@ -13,7 +13,10 @@ $(document).ready(function () {
 
       columns: [
         {data: "Agency"},
-        {data: "Number of Domains"},
+        {
+          data: "Number of Domains",
+          render: Utils.linkAgency("https")
+        },
         {data: "Uses HTTPS"},
         {data: "Enforces HTTPS"},
         {data: "Strict Transport Security (HSTS)"},
