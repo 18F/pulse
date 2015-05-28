@@ -7,6 +7,7 @@ $(document).ready(function () {
   var renderTable = function(data) {
     $("table").DataTable({
       responsive: true,
+      initComplete: Utils.searchLinks,
 
       data: data,
 

@@ -21,5 +21,15 @@ var Utils = {
         "<a href=\"" + row['Canonical'] + "\" target=\"blank\">" +
           data +
         "</a>";
+  },
+
+  searchLinks: function() {
+    var api = this.api();
+    var query = QueryString.parse(location.hash).q;
+
+    if (query) {
+      $("input[type=search]").val(query);
+      api.search(query).draw();
+    }
   }
 };

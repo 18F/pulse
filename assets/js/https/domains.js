@@ -71,13 +71,7 @@ $(document).ready(function () {
 
       data: data,
 
-      initComplete: function() {
-        var api = this.api();
-
-        var query = QueryString.parse(location.hash).q;
-        $("input[type=search]").val(query);
-        api.search(query).draw();
-      },
+      initComplete: Utils.searchLinks,
 
       columns: [
         {
@@ -115,10 +109,7 @@ $(document).ready(function () {
 
     });
 
-    $("table").on('search.dt', function(e, settings) {
-      var query = $("input[type=search]").val();
-      location.hash = QueryString.stringify({q: query});
-    });
+
   }
 
 })
