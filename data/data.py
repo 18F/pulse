@@ -394,13 +394,20 @@ def https_row_for(domain):
 
   ###
   # Construct a sentence explaining the situation.
+  #
+  # TODO: This actually seems better at the JavaScript level.
 
-  if https == 2:
-    details = "This domain is offered over valid HTTPS."
-  elif https == 1:
-    details = "This domain is offered over valid HTTPS, but uses a certificate chain that may cause issues for some visitors."
+  if https >= 1:
+    if behavior >= 2:
+      details = "This domain enforces HTTPS."
+    else:
+      details = "This domain supports HTTPS, but does not enforce it."
+
+    if https == 1:
+      details += " However, it uses a certificate chain that may cause issues for some visitors."
+
   elif https == 0:
-    details = "This domain redirects visitors from HTTPS to HTTP."
+    details = "This domain redirects visitors from HTTPS down to HTTP."
   elif https == -1:
     details = "This domain does not support HTTPS."
 
