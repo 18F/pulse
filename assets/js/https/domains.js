@@ -13,8 +13,7 @@ $(document).ready(function () {
     },
 
     https_forced: {
-      "-1": "", // N/A
-      0: "No", // Downgrade
+      0: "", // N/A (no HTTPS)
       1: "No", // Present, not default
       2: "Yes", // Defaults eventually to HTTPS
       3: "Yes" // Defaults eventually + redirects immediately

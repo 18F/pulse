@@ -308,16 +308,13 @@ def https_row_for(domain):
   # Is HTTPS enforced?
 
   if (https <= 0):
-    behavior = -1 # N/A (considered 'No')
+    behavior = 0 # N/A
 
   else:
-    # It's a hard "No" if HTTPS redirects down to HTTP.
-    if (inspect["Downgrades HTTPS"] == "True"):
-      behavior = 0 # Downgrade (considered 'No')
 
     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
     # *and* that HTTP eventually redirects to HTTPS.
-    elif (
+    if (
       (inspect["Strictly Forces HTTPS"] == "True") and
       (inspect["Defaults to HTTPS"] == "True")
     ):
