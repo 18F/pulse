@@ -503,6 +503,8 @@ a {
     margin-bottom: 15px; }
   #about .faq-answers li {
     padding-bottom: 40px; }
+  #about .faq-answers p {
+    padding-bottom: 15px; }
 
 .guide {
   clear: both;
