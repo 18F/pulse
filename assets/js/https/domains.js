@@ -36,6 +36,14 @@ $(document).ready(function () {
       4: "A-",
       5: "A",
       6: "A+"
+    },
+
+    // Straight from SSL Labs API docs: https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md#endpointdetails
+    fs: {
+      0: "No",
+      1: "Some",
+      2: "Modern",
+      4: "Robust"
     }
   };
 
