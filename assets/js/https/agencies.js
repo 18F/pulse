@@ -7,12 +7,16 @@ $(document).ready(function () {
   var renderTable = function(data) {
     $("table").DataTable({
       responsive: true,
+      initComplete: Utils.searchLinks,
 
       data: data,
 
       columns: [
         {data: "Agency"},
-        {data: "Number of Domains"},
+        {
+          data: "Number of Domains",
+          render: Utils.linkAgency("https")
+        },
         {data: "Uses HTTPS"},
         {data: "Enforces HTTPS"},
         {data: "Strict Transport Security (HSTS)"},

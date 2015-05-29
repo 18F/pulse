@@ -10,10 +10,15 @@ $(document).ready(function () {
 
       data: data,
 
+      initComplete: Utils.searchLinks,
+
       columns: [
-        {"data": "Agency"},
-        {"data": "Number of Domains"},
-        {"data": "Participates in DAP?"}
+        {data: "Agency"},
+        {
+          data: "Number of Domains",
+          render: Utils.filterAgency("analytics")
+        },
+        {data: "Participates in DAP?"}
       ],
 
       // order by number of domains
