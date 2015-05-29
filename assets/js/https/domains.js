@@ -203,6 +203,16 @@ $(document).ready(function () {
         }
       ],
 
+      columnDefs: [
+        {
+          targets: 0,
+          cellType: "td",
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        }
+      ],
+
       "oLanguage": {
         "oPaginate": {
           "sPrevious": "<<",
