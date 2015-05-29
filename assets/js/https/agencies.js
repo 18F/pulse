@@ -15,7 +15,7 @@ $(document).ready(function () {
         {data: "Agency"},
         {
           data: "Number of Domains",
-          render: Utils.linkAgency("https")
+          render: Utils.filterAgency("https")
         },
         {data: "Uses HTTPS"},
         {data: "Enforces HTTPS"},
