@@ -946,7 +946,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "bfelob.gov",
       "Enforces HTTPS": 1,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -1306,7 +1306,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "cao.gov",
       "Enforces HTTPS": 3,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -1536,7 +1536,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "cfo.gov",
       "Enforces HTTPS": 3,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -1696,7 +1696,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "cio.gov",
       "Enforces HTTPS": 3,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -2896,7 +2896,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "earmarks.gov",
       "Enforces HTTPS": 1,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -6216,7 +6216,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "itdashboard.gov",
       "Enforces HTTPS": 3,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -6936,7 +6936,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "max.gov",
       "Enforces HTTPS": 3,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -8816,7 +8816,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "paymentaccuracy.gov",
       "Enforces HTTPS": 3,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -9696,7 +9696,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "save.gov",
       "Enforces HTTPS": 1,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
@@ -9706,7 +9706,7 @@
       "Details": "This domain is offered over valid HTTPS.",
       "Domain": "saveaward.gov",
       "Enforces HTTPS": 1,
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": -1,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 2
     },
