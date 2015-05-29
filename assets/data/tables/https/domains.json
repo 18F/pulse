@@ -71,6 +71,16 @@
       "Uses HTTPS": 2
     },
     {
+      "Agency": "Comm for People Who Are Blind/Severly Disabled",
+      "Canonical": "http://abilityone.gov",
+      "Details": "This domain does not support HTTPS.",
+      "Domain": "abilityone.gov",
+      "Enforces HTTPS": -1,
+      "SSL Labs Grade": -1,
+      "Strict Transport Security (HSTS)": -1,
+      "Uses HTTPS": -1
+    },
+    {
       "Agency": "American Battle Monuments Commission",
       "Canonical": "http://abmc.gov",
       "Details": "This domain is offered over valid HTTPS, but uses a certificate chain that may cause issues for some visitors.",

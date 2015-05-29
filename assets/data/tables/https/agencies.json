@@ -89,6 +89,14 @@
       "Uses HTTPS": 0
     },
     {
+      "Agency": "Comm for People Who Are Blind/Severly Disabled",
+      "Enforces HTTPS": 0,
+      "Number of Domains": 1,
+      "SSL Labs (A- or higher)": 0,
+      "Strict Transport Security (HSTS)": 0,
+      "Uses HTTPS": 0
+    },
+    {
       "Agency": "Commodity Futures Trading Commission",
       "Enforces HTTPS": 0,
       "Number of Domains": 2,
