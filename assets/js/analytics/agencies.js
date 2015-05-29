@@ -16,7 +16,7 @@ $(document).ready(function () {
         {data: "Agency"},
         {
           data: "Number of Domains",
-          render: Utils.linkAgency("analytics")
+          render: Utils.filterAgency("analytics")
         },
         {data: "Participates in DAP?"}
       ],

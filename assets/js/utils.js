@@ -24,7 +24,7 @@ var Utils = {
   },
 
   // used to make "71" say "71 domains" and link to filtered domains
-  linkAgency: function(page) {
+  filterAgency: function(page) {
     return function(data, type, row) {
       if (type == "sort")
         return data;
