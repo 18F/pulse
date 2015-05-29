@@ -3,7 +3,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.18f.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "18f.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 6,
@@ -63,7 +63,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.abandonedmines.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "abandonedmines.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -83,7 +83,7 @@
     {
       "Agency": "American Battle Monuments Commission",
       "Canonical": "http://abmc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "abmc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -93,7 +93,7 @@
     {
       "Agency": "U. S. Access Board",
       "Canonical": "http://www.access-board.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "access-board.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -233,7 +233,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://www.aff.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "aff.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -313,7 +313,7 @@
     {
       "Agency": "Environmental Protection Agency",
       "Canonical": "http://airnow.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "airnow.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -333,7 +333,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.alertaenlinea.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "alertaenlinea.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -383,7 +383,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://www.america.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "america.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -573,7 +573,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.anstaskforce.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "anstaskforce.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -623,7 +623,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://apps.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "apps.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -653,7 +653,7 @@
     {
       "Agency": "National Science Foundation",
       "Canonical": "http://arctic.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "arctic.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -663,7 +663,7 @@
     {
       "Agency": "National Science Foundation",
       "Canonical": "http://arcticgas.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "arcticgas.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -673,7 +673,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.arm.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "arm.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -693,7 +693,7 @@
     {
       "Agency": "National Endowment for the Arts",
       "Canonical": "http://arts.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "arts.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -743,7 +743,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.astrongmiddleclass.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "astrongmiddleclass.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -783,7 +783,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://aviationweather.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "aviationweather.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -893,7 +893,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://bea.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "bea.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -953,7 +953,7 @@
     {
       "Agency": "Department of Education",
       "Canonical": "http://www.bfelob.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "bfelob.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -993,7 +993,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://bioethics.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "bioethics.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -1033,7 +1033,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://biopreferred.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "biopreferred.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -1153,7 +1153,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.bpa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "bpa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -1183,7 +1183,7 @@
     {
       "Agency": "Federal Communications Commission",
       "Canonical": "http://broadbandmap.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "broadbandmap.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -1203,7 +1203,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.bsee.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "bsee.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -1223,7 +1223,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.budget.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "budget.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -1253,7 +1253,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.businessusa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "businessusa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -1333,7 +1333,7 @@
     {
       "Agency": "The Legislative Branch (Congress)",
       "Canonical": "http://capitol.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "capitol.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -1393,7 +1393,7 @@
     {
       "Agency": "The Legislative Branch (Congress)",
       "Canonical": "http://www.cbo.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "cbo.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -1433,7 +1433,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.ccr.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "ccr.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -1513,7 +1513,7 @@
     {
       "Agency": "U.S. Commission of Fine Arts",
       "Canonical": "http://cfa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "cfa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -1533,7 +1533,7 @@
     {
       "Agency": "Department of Transportation",
       "Canonical": "http://www.cflhd.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "cflhd.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -1583,7 +1583,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.challenge.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "challenge.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -1613,7 +1613,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Canonical": "http://chcoc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "chcoc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -1663,7 +1663,7 @@
     {
       "Agency": "The Legislative Branch (Congress)",
       "Canonical": "http://chinacommission.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "chinacommission.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -1673,7 +1673,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://choosemyplate.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "choosemyplate.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -1683,7 +1683,7 @@
     {
       "Agency": "Christopher Columbus Fellowship Foundation",
       "Canonical": "http://www.christophercolumbusfoundation.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "christophercolumbusfoundation.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -1713,7 +1713,7 @@
     {
       "Agency": "Department of Homeland Security",
       "Canonical": "http://www.citizencorps.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "citizencorps.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -1743,7 +1743,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://civilrightsusa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "civilrightsusa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -1753,7 +1753,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://climate.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "climate.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -1803,7 +1803,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://cms.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "cms.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -1953,7 +1953,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://computersforlearning.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "computersforlearning.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -1993,7 +1993,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.connect.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "connect.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -2003,7 +2003,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.consumer.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "consumer.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -2103,7 +2103,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.consumidor.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "consumidor.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -2203,7 +2203,7 @@
     {
       "Agency": "Consumer Product Safety Commission",
       "Canonical": "http://www.cpsc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "cpsc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -2333,7 +2333,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.data.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "data.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -2423,7 +2423,7 @@
     {
       "Agency": "U.S. Agency for International Development",
       "Canonical": "http://dfafacts.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "dfafacts.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -2473,7 +2473,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.digitalgov.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "digitalgov.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -2673,7 +2673,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.doioig.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "doioig.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -2693,7 +2693,7 @@
     {
       "Agency": "Department of Labor",
       "Canonical": "http://dol.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "dol.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -2793,7 +2793,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://www.drought.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "drought.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -2803,7 +2803,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.drugabuse.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "drugabuse.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -2883,7 +2883,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.earmarks.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "earmarks.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -2953,7 +2953,7 @@
     {
       "Agency": "Morris K. Udall Foundation",
       "Canonical": "http://www.ecr.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ecr.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -2963,7 +2963,7 @@
     {
       "Agency": "Department of Education",
       "Canonical": "http://www.ed.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ed.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -3003,7 +3003,7 @@
     {
       "Agency": "Department of Education",
       "Canonical": "http://education.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "education.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -3053,7 +3053,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.egov.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "egov.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -3083,7 +3083,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.eldercare.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "eldercare.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -3143,7 +3143,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.energycodes.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "energycodes.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3183,7 +3183,7 @@
     {
       "Agency": "Environmental Protection Agency",
       "Canonical": "http://www.energystar.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "energystar.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -3193,7 +3193,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.eop.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "eop.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -3213,7 +3213,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.epls.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "epls.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -3233,7 +3233,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://esa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "esa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -3243,7 +3243,7 @@
     {
       "Agency": "Department of Transportation",
       "Canonical": "http://www.esc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "esc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3293,7 +3293,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.ethics.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ethics.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -3373,7 +3373,7 @@
     {
       "Agency": "Department of Transportation",
       "Canonical": "http://www.faa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "faa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3393,7 +3393,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.faca.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "faca.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3413,7 +3413,7 @@
     {
       "Agency": "Department of Education",
       "Canonical": "http://fafsa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fafsa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3513,7 +3513,7 @@
     {
       "Agency": "Federal Reserve System",
       "Canonical": "http://www.fbiic.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fbiic.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3543,7 +3543,7 @@
     {
       "Agency": "Farm Credit Administration",
       "Canonical": "http://fca.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "fca.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3733,7 +3733,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.fedbizopps.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "fedbizopps.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -3823,7 +3823,7 @@
     {
       "Agency": "Federal Reserve System",
       "Canonical": "http://www.federalreserve.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "federalreserve.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -3833,7 +3833,7 @@
     {
       "Agency": "Federal Reserve System",
       "Canonical": "http://federalreserveconsumerhelp.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "federalreserveconsumerhelp.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -3903,7 +3903,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.fedramp.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fedramp.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -3953,7 +3953,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Canonical": "http://www.fegli.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fegli.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -3963,7 +3963,7 @@
     {
       "Agency": "Department of Homeland Security",
       "Canonical": "http://www.fema.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fema.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -4003,7 +4003,7 @@
     {
       "Agency": "Federal Reserve System",
       "Canonical": "http://www.ffiec.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ffiec.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -4013,7 +4013,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://fgdc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fgdc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -4083,7 +4083,7 @@
     {
       "Agency": "Department of the Treasury",
       "Canonical": "http://fincen.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "fincen.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -4093,7 +4093,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.findyouthinfo.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "findyouthinfo.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -4103,7 +4103,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.firecode.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "firecode.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -4113,7 +4113,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.fireleadership.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "fireleadership.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -4333,7 +4333,7 @@
     {
       "Agency": "Government Printing Office",
       "Canonical": "http://fmshrc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fmshrc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -4343,7 +4343,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://fnal.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fnal.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -4443,7 +4443,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.fpds.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fpds.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -4543,7 +4543,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://www.fsgb.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fsgb.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -4643,7 +4643,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.fws.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "fws.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -4663,7 +4663,7 @@
     {
       "Agency": "The Legislative Branch (Congress)",
       "Canonical": "http://gao.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "gao.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -4673,7 +4673,7 @@
     {
       "Agency": "The Legislative Branch (Congress)",
       "Canonical": "http://gaonet.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "gaonet.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -4713,7 +4713,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.genome.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "genome.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -4743,7 +4743,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://geoplatform.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "geoplatform.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -4843,7 +4843,7 @@
     {
       "Agency": "National Aeronautics and Space Administration",
       "Canonical": "http://www.globe.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "globe.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -5083,7 +5083,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://gsaxcess.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "gsaxcess.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -5093,7 +5093,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.guideline.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "guideline.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -5233,7 +5233,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.healthypeople.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "healthypeople.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -5383,7 +5383,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://hiv.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "hiv.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 6,
@@ -5423,7 +5423,7 @@
     {
       "Agency": "The Legislative Branch (Congress)",
       "Canonical": "http://www.house.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "house.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -5483,7 +5483,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.howto.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "howto.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -5553,7 +5553,7 @@
     {
       "Agency": "National Endowment for the Humanities",
       "Canonical": "http://www.humanities.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "humanities.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -5613,7 +5613,7 @@
     {
       "Agency": "Director of National Intelligence",
       "Canonical": "http://iarpa-ideas.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "iarpa-ideas.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -5673,7 +5673,7 @@
     {
       "Agency": "Department of Justice",
       "Canonical": "http://www.ic3.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ic3.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -5703,7 +5703,7 @@
     {
       "Agency": "Department of Homeland Security",
       "Canonical": "http://www.ice.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ice.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -5753,7 +5753,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.idtheft.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "idtheft.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -5783,7 +5783,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.ihs.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ihs.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -5793,7 +5793,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://iiog.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "iiog.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -5873,7 +5873,7 @@
     {
       "Agency": "Director of National Intelligence",
       "Canonical": "http://www.intelink.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "intelink.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -5933,7 +5933,7 @@
     {
       "Agency": "Securities and Exchange Commission",
       "Canonical": "http://investor.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "investor.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -5963,7 +5963,7 @@
     {
       "Agency": "United Stated Global Change Research Program",
       "Canonical": "http://ipcc-wg2.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ipcc-wg2.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -5983,7 +5983,7 @@
     {
       "Agency": "Department of the Treasury",
       "Canonical": "http://www.ipp.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ipp.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -6083,7 +6083,7 @@
     {
       "Agency": "Department of Transportation",
       "Canonical": "http://www.italladdsup.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "italladdsup.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -6163,7 +6163,7 @@
     {
       "Agency": "Department of Defense",
       "Canonical": "http://www.jccs.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "jccs.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -6183,7 +6183,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://jem.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "jem.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -6253,7 +6253,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.joiningforces.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "joiningforces.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -6313,7 +6313,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://klamathrestoration.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "klamathrestoration.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -6333,7 +6333,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.lacoast.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "lacoast.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -6363,7 +6363,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://lanl.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "lanl.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -6393,7 +6393,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.lbl.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "lbl.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -6553,7 +6553,7 @@
     {
       "Agency": "Department of Homeland Security",
       "Canonical": "http://www.llis.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "llis.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -6573,7 +6573,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Canonical": "http://lmrcouncil.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "lmrcouncil.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -6593,7 +6593,7 @@
     {
       "Agency": "Library of Congress",
       "Canonical": "http://loc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "loc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -6643,7 +6643,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://longtermcare.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "longtermcare.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -6683,7 +6683,7 @@
     {
       "Agency": "Legal Services Corporation",
       "Canonical": "http://www.lsc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "lsc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -6843,7 +6843,7 @@
     {
       "Agency": "Department of Transportation",
       "Canonical": "http://mda.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "mda.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -6873,7 +6873,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.medicalcountermeasures.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "medicalcountermeasures.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -6893,7 +6893,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://medicare.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "medicare.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -7033,7 +7033,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.mrgo.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "mrgo.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -7053,7 +7053,7 @@
     {
       "Agency": "Department of the Treasury",
       "Canonical": "http://msb.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "msb.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -7163,7 +7163,7 @@
     {
       "Agency": "Department of the Treasury",
       "Canonical": "http://www.myra.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "myra.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -7173,7 +7173,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://nafri.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nafri.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -7223,7 +7223,7 @@
     {
       "Agency": "National Aeronautics and Space Administration",
       "Canonical": "http://www.nasa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nasa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -7283,7 +7283,7 @@
     {
       "Agency": "Department of Justice",
       "Canonical": "http://www.nationalgangcenter.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nationalgangcenter.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7323,7 +7323,7 @@
     {
       "Agency": "Department of Veterans Affairs",
       "Canonical": "http://www.nationalresourcedirectory.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nationalresourcedirectory.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7383,7 +7383,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.nbc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nbc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7403,7 +7403,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://nccrc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nccrc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -7433,7 +7433,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.ncifcrf.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "ncifcrf.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -7473,7 +7473,7 @@
     {
       "Agency": "National Capital Planning Commission",
       "Canonical": "http://www.ncpc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ncpc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -7483,7 +7483,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.ncpw.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ncpw.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7493,7 +7493,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.ncrc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ncrc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7553,7 +7553,7 @@
     {
       "Agency": "National Endowment for the Arts",
       "Canonical": "http://www.nea.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nea.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -7573,7 +7573,7 @@
     {
       "Agency": "National Endowment for the Humanities",
       "Canonical": "http://www.neh.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "neh.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -7603,7 +7603,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.nemi.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nemi.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -7623,7 +7623,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.nersc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nersc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7663,7 +7663,7 @@
     {
       "Agency": "National Gallery of Art",
       "Canonical": "http://www.nga.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nga.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -7713,7 +7713,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.nic.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nic.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -7743,7 +7743,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.nifc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nifc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7763,7 +7763,7 @@
     {
       "Agency": "National Indian Gaming Commission",
       "Canonical": "http://nigc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nigc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -7783,7 +7783,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://nihseniorhealth.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nihseniorhealth.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -7813,7 +7813,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://nist.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nist.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7903,7 +7903,7 @@
     {
       "Agency": "Department of Homeland Security",
       "Canonical": "http://nmsc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nmsc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -7923,7 +7923,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://nnlm.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nnlm.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -7953,7 +7953,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.nolaenvironmental.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "nolaenvironmental.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -8083,7 +8083,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.nstic.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nstic.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -8103,7 +8103,7 @@
     {
       "Agency": "Department of Transportation",
       "Canonical": "http://www.ntdprogram.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ntdprogram.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -8113,7 +8113,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://www.ntis.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ntis.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -8183,7 +8183,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://www.nwcg.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "nwcg.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -8223,7 +8223,7 @@
     {
       "Agency": "Department of Defense",
       "Canonical": "http://www.oea.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "oea.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -8313,7 +8313,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.omb.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "omb.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -8333,7 +8333,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.ondcp.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ondcp.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -8343,7 +8343,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.onguardonline.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "onguardonline.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -8433,7 +8433,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Canonical": "http://www.opm.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "opm.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -8473,7 +8473,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.ornl.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ornl.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -8503,7 +8503,7 @@
     {
       "Agency": "Department of Defense",
       "Canonical": "http://osdbu.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "osdbu.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -8563,7 +8563,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.ostp.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ostp.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -8653,7 +8653,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.partner4solutions.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "partner4solutions.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -8693,7 +8693,7 @@
     {
       "Agency": "Pension Benefit Guaranty Corporation",
       "Canonical": "http://pbgc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "pbgc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -8803,7 +8803,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.phe.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "phe.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -8813,7 +8813,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://pic.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "pic.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -8843,7 +8843,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Canonical": "http://pmf.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "pmf.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -8863,7 +8863,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.pnl.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "pnl.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -8873,7 +8873,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.pnnl.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "pnnl.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -9003,7 +9003,7 @@
     {
       "Agency": "Court Services and Offender Supervision",
       "Canonical": "http://pretrialservices.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "pretrialservices.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -9043,7 +9043,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.protecciondelconsumidor.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "protecciondelconsumidor.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -9063,7 +9063,7 @@
     {
       "Agency": "Court Services and Offender Supervision",
       "Canonical": "http://psa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "psa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -9073,7 +9073,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.psc.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "psc.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -9113,7 +9113,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://www.pubmed.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "pubmed.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -9173,7 +9173,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.reachhigher.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "reachhigher.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -9223,7 +9223,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://realestatesales.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "realestatesales.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -9363,7 +9363,7 @@
     {
       "Agency": "National Science Foundation",
       "Canonical": "http://www.research.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "research.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -9373,7 +9373,7 @@
     {
       "Agency": "Department of Commerce",
       "Canonical": "http://restorethegulf.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "restorethegulf.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -9393,7 +9393,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://rocis.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "rocis.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -9513,7 +9513,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.salmonrecovery.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "salmonrecovery.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -9553,7 +9553,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.save.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "save.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -9563,7 +9563,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.saveaward.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "saveaward.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -9633,7 +9633,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.science.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "science.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -9643,7 +9643,7 @@
     {
       "Agency": "National Science Foundation",
       "Canonical": "http://www.science360.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "science360.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -9693,7 +9693,7 @@
     {
       "Agency": "Securities and Exchange Commission",
       "Canonical": "http://www.sec.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "sec.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -9823,7 +9823,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Canonical": "http://www.sentinel.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "sentinel.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -9963,7 +9963,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://smokefree.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "smokefree.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -9983,7 +9983,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://sns.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "sns.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -10073,7 +10073,7 @@
     {
       "Agency": "Selective Service System",
       "Canonical": "http://www.sss.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "sss.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -10133,7 +10133,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://stopalcoholabuse.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "stopalcoholabuse.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -10193,7 +10193,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.strongmiddleclass.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "strongmiddleclass.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -10213,7 +10213,7 @@
     {
       "Agency": "Department of Education",
       "Canonical": "http://www.studentaid.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "studentaid.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -10233,7 +10233,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.supportthevoter.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "supportthevoter.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -10623,7 +10623,7 @@
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
       "Canonical": "http://www.truman.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "truman.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -10633,7 +10633,7 @@
     {
       "Agency": "Department of Homeland Security",
       "Canonical": "http://www.tsa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "tsa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -10733,7 +10733,7 @@
     {
       "Agency": "Morris K. Udall Foundation",
       "Canonical": "http://udall.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "udall.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -10933,7 +10933,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.usaperformance.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usaperformance.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -10983,7 +10983,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.usbr.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "usbr.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -11093,7 +11093,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://www.usconsulate.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usconsulate.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11163,7 +11163,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://usembassy-mexico.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usembassy-mexico.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11203,7 +11203,7 @@
     {
       "Agency": "National Aeronautics and Space Administration",
       "Canonical": "http://www.usgeo.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usgeo.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11233,7 +11233,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://usgs.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "usgs.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 4,
@@ -11273,7 +11273,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://usint.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usint.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11283,7 +11283,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://www.usip.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usip.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11313,7 +11313,7 @@
     {
       "Agency": "Department of the Treasury",
       "Canonical": "http://www.usmint.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "usmint.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -11323,7 +11323,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://www.usmission.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usmission.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11413,7 +11413,7 @@
     {
       "Agency": "The Judicial Branch (Courts)",
       "Canonical": "http://ustaxcourt.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "ustaxcourt.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -11453,7 +11453,7 @@
     {
       "Agency": "Department of State",
       "Canonical": "http://www.usvpp.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "usvpp.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11463,7 +11463,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://www.utahfireinfo.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "utahfireinfo.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
@@ -11473,7 +11473,7 @@
     {
       "Agency": "Department of Veterans Affairs",
       "Canonical": "http://va.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "va.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 1,
@@ -11493,7 +11493,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://vallescaldera.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "vallescaldera.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -11513,7 +11513,7 @@
     {
       "Agency": "General Services Administration",
       "Canonical": "http://vef.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "vef.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -11603,7 +11603,7 @@
     {
       "Agency": "Department of the Interior",
       "Canonical": "http://volunteer.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "volunteer.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 2,
@@ -11613,7 +11613,7 @@
     {
       "Agency": "Corporation for National & Community Service",
       "Canonical": "http://www.volunteeringinamerica.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "volunteeringinamerica.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 3,
@@ -11623,7 +11623,7 @@
     {
       "Agency": "Department of Energy",
       "Canonical": "http://www.wapa.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "wapa.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 0,
@@ -11713,7 +11713,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.wh.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "wh.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -11753,7 +11753,7 @@
     {
       "Agency": "Executive Office of the President",
       "Canonical": "http://www.whitehousedrugpolicy.gov",
-      "Details": "This domain supports HTTPS but does not enforce it.",
+      "Details": "This domain supports HTTPS, but does not enforce it.",
       "Domain": "whitehousedrugpolicy.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": 5,
@@ -11763,7 +11763,7 @@
     {
       "Agency": "Department of Agriculture",
       "Canonical": "http://www.wildfire.gov",
-      "Details": "This domain supports HTTPS but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
+      "Details": "This domain supports HTTPS, but does not enforce it. However, it uses a certificate chain that may cause issues for some visitors.",
       "Domain": "wildfire.gov",
       "Enforces HTTPS": 1,
       "SSL Labs Grade": -1,
