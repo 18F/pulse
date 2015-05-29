@@ -424,7 +424,7 @@
       "Agency": "Department of Justice",
       "Canonical": "http://bjs.gov",
       "Domain": "bjs.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Commerce",
@@ -658,7 +658,7 @@
       "Agency": "Department of Health And Human Services",
       "Canonical": "https://childwelfare.gov",
       "Domain": "childwelfare.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Agriculture",
@@ -796,7 +796,7 @@
       "Agency": "Consumer Financial Protection Bureau",
       "Canonical": "http://www.consumerfinance.gov",
       "Domain": "consumerfinance.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Federal Trade Commission",
@@ -1006,7 +1006,7 @@
       "Agency": "Defense Nuclear Facilities Safety Board",
       "Canonical": "http://www.dnfsb.gov",
       "Domain": "dnfsb.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Director of National Intelligence",
@@ -1192,7 +1192,7 @@
       "Agency": "Department of Energy",
       "Canonical": "http://www.eia.gov",
       "Domain": "eia.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "General Services Administration",
@@ -1270,7 +1270,7 @@
       "Agency": "Department of Transportation",
       "Canonical": "http://www.esc.gov",
       "Domain": "esc.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Justice",
@@ -1678,7 +1678,7 @@
       "Agency": "Department of Commerce",
       "Canonical": "http://www.fishwatch.gov",
       "Domain": "fishwatch.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Health And Human Services",
@@ -1882,7 +1882,7 @@
       "Agency": "Department of the Interior",
       "Canonical": "http://www.fws.gov",
       "Domain": "fws.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Education",
@@ -2044,7 +2044,7 @@
       "Agency": "General Services Administration",
       "Canonical": "http://www.gsadvantage.gov",
       "Domain": "gsadvantage.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "General Services Administration",
@@ -2140,13 +2140,13 @@
       "Agency": "Department of the Treasury",
       "Canonical": "http://helpwithmycreditcard.gov",
       "Domain": "helpwithmycreditcard.gov",
-      "Participates in DAP?": 0
+      "Participates in DAP?": 1
     },
     {
       "Agency": "Department of the Treasury",
       "Canonical": "http://helpwithmycreditcardbank.gov",
       "Domain": "helpwithmycreditcardbank.gov",
-      "Participates in DAP?": 0
+      "Participates in DAP?": 1
     },
     {
       "Agency": "Department of the Treasury",
@@ -2212,7 +2212,7 @@
       "Agency": "Department of Housing And Urban Development",
       "Canonical": "http://hud.gov",
       "Domain": "hud.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Housing And Urban Development",
@@ -2224,7 +2224,7 @@
       "Agency": "Department of State",
       "Canonical": "http://www.humanrights.gov",
       "Domain": "humanrights.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Energy",
@@ -2518,7 +2518,7 @@
       "Agency": "Department of the Interior",
       "Canonical": "http://jem.gov",
       "Domain": "jem.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "National Archives and Records Administration",
@@ -2602,7 +2602,7 @@
       "Agency": "Department of Agriculture",
       "Canonical": "http://www.lcacommons.gov",
       "Domain": "lcacommons.gov",
-      "Participates in DAP?": 0
+      "Participates in DAP?": 1
     },
     {
       "Agency": "Department of the Interior",
@@ -2662,7 +2662,7 @@
       "Agency": "Department of the Interior",
       "Canonical": "http://www.lowermississippivalleyscience.gov",
       "Domain": "lowermississippivalleyscience.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "National Security Agency",
@@ -2782,7 +2782,7 @@
       "Agency": "Department of Health And Human Services",
       "Canonical": "http://medicare.gov",
       "Domain": "medicare.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Medical Payment Advisory Commission",
@@ -3502,7 +3502,7 @@
       "Agency": "Department of Justice",
       "Canonical": "https://www.ovcttac.gov",
       "Domain": "ovcttac.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Commerce",
@@ -3526,7 +3526,7 @@
       "Agency": "Department of the Treasury",
       "Canonical": "https://pay.gov",
       "Domain": "pay.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Executive Office of the President",
@@ -3568,7 +3568,7 @@
       "Agency": "U. S. Peace Corps",
       "Canonical": "http://www.peacecorps.gov",
       "Domain": "peacecorps.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of State",
@@ -3592,7 +3592,7 @@
       "Agency": "General Services Administration",
       "Canonical": "http://pic.gov",
       "Domain": "pic.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Transportation",
@@ -3772,7 +3772,7 @@
       "Agency": "Environmental Protection Agency",
       "Canonical": "http://www.regulations.gov",
       "Domain": "regulations.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Environmental Protection Agency",
@@ -3934,7 +3934,7 @@
       "Agency": "Securities and Exchange Commission",
       "Canonical": "http://www.sec.gov",
       "Domain": "sec.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Homeland Security",
@@ -4120,7 +4120,7 @@
       "Agency": "General Services Administration",
       "Canonical": "https://strategicsourcing.gov",
       "Domain": "strategicsourcing.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Education",
@@ -4198,7 +4198,7 @@
       "Agency": "Department of Commerce",
       "Canonical": "http://time.gov",
       "Domain": "time.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of Health And Human Services",
@@ -4420,7 +4420,7 @@
       "Agency": "Department of the Treasury",
       "Canonical": "https://www.usaspending.gov",
       "Domain": "usaspending.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Office of Personnel Management",
@@ -4468,7 +4468,7 @@
       "Agency": "Department of State",
       "Canonical": "http://www.usembassy.gov",
       "Domain": "usembassy.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of the Interior",
@@ -4618,7 +4618,7 @@
       "Agency": "Department of Energy",
       "Canonical": "http://www.wapa.gov",
       "Domain": "wapa.gov",
-      "Participates in DAP?": 1
+      "Participates in DAP?": 0
     },
     {
       "Agency": "Department of the Interior",
