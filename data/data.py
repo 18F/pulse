@@ -30,6 +30,7 @@ LABELS = {
   'https': 'Uses HTTPS',
   'https_forced': 'Enforces HTTPS',
   'hsts': 'Strict Transport Security (HSTS)',
+  'hsts_age': 'HSTS max-age',
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?',
@@ -334,6 +335,11 @@ def https_row_for(domain):
   ###
   # Characterize the presence and completeness of HSTS.
 
+  if inspect["HSTS Max Age"]:
+    hsts_age = int(inspect["HSTS Max Age"])
+  else:
+    hsts_age = None
+
   # Without HTTPS there can be no HSTS.
   if (https <= 0):
     hsts = -1 # N/A (considered 'No')
@@ -344,19 +350,38 @@ def https_row_for(domain):
     if (inspect["HSTS"] == "False"):
       hsts = 0 # No
 
-    # "Complete" means HSTS preload ready (long max-age).
+    # HSTS preload ready already implies a minimum max-age, and
+    # may be fine on the root even if the canonical www is weak.
     elif (inspect["HSTS Preload Ready"] == "True"):
-      hsts = 3 # Complete (considered 'Yes')
+      hsts = 3 # Yes
 
-    # This kind of "Partial" means `includeSubdomains`, but no `preload`.
-    elif (inspect["HSTS All Subdomains"] == "True"):
-      hsts = 2 # Nearly Complete (considered 'Yes')
+    # We'll make a judgment call here.
+    #
+    # The OMB policy wants a 1 year max-age (31536000).
+    # The HSTS preload list wants an 18 week max-age (10886400).
+    #
+    # We don't want to punish preload-ready domains that are between
+    # the two.
+    #
+    # So if you're below 18 weeks, that's a No.
+    # If you're between 18 weeks and 1 year, it's a Yes
+    # (but you'll get a warning in the extended text).
+    # 1 year and up is a yes.
+    elif (hsts_age < 10886400):
+      hsts = 0 # No, too weak
 
-    # This kind of "Partial" means HSTS, but not on subdomains.
-    else: # if (inspect["HSTS"] == "True"):
-      hsts = 1 # Partial (considered 'Yes')
+    else:
+      # This kind of "Partial" means `includeSubdomains`, but no `preload`.
+      if (inspect["HSTS All Subdomains"] == "True"):
+        hsts = 2 # Yes
 
-  row[LABELS['hsts']] = hsts;
+      # This kind of "Partial" means HSTS, but not on subdomains.
+      else: # if (inspect["HSTS"] == "True"):
+
+        hsts = 1 # Yes
+
+  row[LABELS['hsts']] = hsts
+  # row[LABELS['hsts_age']] = hsts_age
 
 
   ###

@@ -325,7 +325,7 @@
       "Enforces HTTPS": 27,
       "Number of Domains": 30,
       "SSL Labs (A- or higher)": 47,
-      "Strict Transport Security (HSTS)": 33,
+      "Strict Transport Security (HSTS)": 23,
       "Uses HTTPS": 77
     },
     {

@@ -16012,7 +16012,7 @@
       "SSL Labs Grade": -1,
       "SSLv3": null,
       "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": 1,
+      "Strict Transport Security (HSTS)": 0,
       "TLSv1.2": null,
       "Uses HTTPS": 2
     },
@@ -16404,7 +16404,7 @@
       "SSL Labs Grade": 5,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 2,
+      "Strict Transport Security (HSTS)": 0,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -16432,7 +16432,7 @@
       "SSL Labs Grade": 5,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 2,
+      "Strict Transport Security (HSTS)": 0,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
