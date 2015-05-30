@@ -464,7 +464,8 @@ a {
 
     &.domain {
 
-      td:first-child {
+      td.odd:first-child,
+      td.even:first-child {
         white-space: nowrap;
       }
     }

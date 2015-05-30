@@ -33,8 +33,11 @@ LABELS = {
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?',
-  'details': 'Details',
-  'tls_details': 'TLS Issues'
+  'fs': 'Forward Secrecy',
+  'rc4': 'RC4',
+  'sig': 'Signature Algorithm',
+  'ssl3': 'SSLv3',
+  'tls12': 'TLSv1.2'
 }
 
 ## global data
@@ -370,7 +373,11 @@ def https_row_for(domain):
 
   tls = domain_data[domain].get('tls')
 
-  config = ""
+  fs = None
+  sig = None
+  ssl3 = None
+  tls12 = None
+  rc4 = None
 
   # Not relevant if no HTTPS
   if (https <= 0):
@@ -397,43 +404,18 @@ def https_row_for(domain):
     #
     # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
 
-    if (tls["Signature Algorithm"] == "SHA1withRSA"):
-      config += "This domain uses a weak SHA-1 certificate, and should replace it with a certificate signed with SHA-2. "
-
-    if (tls["SSLv3"] == "True"):
-      config += "This domain supports the insecure SSLv3 protocol, and should disable it. "
-
-    if (tls["TLSv1.2"] == "False"):
-      config += "This domain lacks support for TLSv1.2, the most modern and secure version of TLS. "
-
-    # Don't bother remarking if FS is Modern or Robust.
-    if int(tls["Forward Secrecy"]) <= 1:
-      config += "This domain should adjust its ciphers to enable forward secrecy. "
+    fs = int(tls["Forward Secrecy"])
+    sig = tls["Signature Algorithm"]
+    rc4 = boolean_for(tls["RC4"])
+    ssl3 = boolean_for(tls["SSLv3"])
+    tls12 = boolean_for(tls["TLSv1.2"])
 
   row[LABELS['grade']] = grade
-  row[LABELS['tls_details']] = config
-
-
-  ###
-  # Construct a sentence explaining the situation.
-  #
-  # TODO: This actually seems better at the JavaScript level.
-
-  if https >= 1:
-    if behavior >= 2:
-      details = "This domain enforces HTTPS."
-    else:
-      details = "This domain supports HTTPS, but does not enforce it."
-
-    if https == 1:
-      details += " However, it uses a certificate chain that may cause issues for some visitors."
-
-  elif https == 0:
-    details = "This domain redirects visitors from HTTPS down to HTTP."
-  elif https == -1:
-    details = "This domain does not support HTTPS."
-
-  row[LABELS['details']] = details
+  row[LABELS['fs']] = fs
+  row[LABELS['sig']] = sig
+  row[LABELS['rc4']] = rc4
+  row[LABELS['ssl3']] = ssl3
+  row[LABELS['tls12']] = tls12
 
   return row
 
@@ -538,6 +520,12 @@ def save_stats():
 
 
 ### utilities
+
+def boolean_for(string):
+  if string == "False":
+    return False
+  else:
+    return True
 
 def json_for(object):
   return json.dumps(object, sort_keys=True,
