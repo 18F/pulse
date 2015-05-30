@@ -36,14 +36,6 @@ $(document).ready(function () {
       4: "A-",
       5: "A",
       6: "A+"
-    },
-
-    // Straight from SSL Labs API docs: https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md#endpointdetails
-    fs: {
-      0: "No",
-      1: "Some",
-      2: "Modern",
-      4: "Robust"
     }
   };
 
@@ -85,12 +77,19 @@ $(document).ready(function () {
 
     if (https >= 1) {
       if (behavior >= 2)
-        details = "This domain enforces HTTPS."
+        details = "This domain enforces HTTPS. "
       else
-        details = "This domain supports HTTPS, but does not enforce it."
+        details = "This domain supports HTTPS, but does not enforce it. "
 
-      if (https == 1)
-        details += " However, it uses a certificate chain that may cause issues for some visitors."
+      if (hsts == 0)
+        details += l("hsts", "HSTS") + " is not enabled.";
+      else if (hsts == 1)
+        details += l("hsts", "HSTS") + " is enabled, but not for its subdomains and is not ready for " + l("preload", "preloading") + ".";
+      else if (hsts == 2)
+        details += l("hsts", "HSTS") + " is enabled for all subdomains, but is not ready for " + l("preload", "preloading into browsers") + ".";
+      else if (hsts == 3)
+        details += l("hsts", "HSTS") + " is enabled for all subdomains, and can be " + l("preload", "preloaded into browsers") + ".";
+
     } else if (https == 0)
       details = "This domain redirects visitors from HTTPS down to HTTP."
     else if (https == -1)
@@ -104,11 +103,12 @@ $(document).ready(function () {
     hsts: "https://https.cio.gov/hsts/",
     sha1: "http://googleonlinesecurity.blogspot.com/2014/09/gradually-sunsetting-sha-1.html",
     ssl3: "https://www.openssl.org/~bodo/ssl-poodle.pdf",
-    fs: "https://blog.twitter.com/2013/forward-secrecy-at-twitter"
+    fs: "https://blog.twitter.com/2013/forward-secrecy-at-twitter",
+    preload: "https://hstspreload.appspot.com"
   };
 
   var l = function(slug, text) {
-    return "<a href=\"" + links[slug] + "\" target=\"blank\">" + text + "</a>";
+    return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\">" + text + "</a>";
   };
 
   // Mention a few high-impact TLS issues that will have affected
@@ -121,6 +121,9 @@ $(document).ready(function () {
       return "";
 
     var config = [];
+
+    if (row["Uses HTTPS"] == 1)
+      config.push("uses a certificate chain that may be invalid for some visitors");
 
     if (row["Signature Algorithm"] == "SHA1withRSA")
       config.push("uses a certificate with a " + l("sha1", "weak SHA-1 signature"));
