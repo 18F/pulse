@@ -202,7 +202,7 @@
     },
     {
       "Agency": "Department of Education",
-      "Enforces HTTPS": 12,
+      "Enforces HTTPS": 19,
       "Number of Domains": 16,
       "SSL Labs (A- or higher)": 6,
       "Strict Transport Security (HSTS)": 6,
@@ -274,7 +274,7 @@
     },
     {
       "Agency": "Department of Veterans Affairs",
-      "Enforces HTTPS": 17,
+      "Enforces HTTPS": 33,
       "Number of Domains": 6,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
@@ -290,7 +290,7 @@
     },
     {
       "Agency": "Department of the Treasury",
-      "Enforces HTTPS": 19,
+      "Enforces HTTPS": 20,
       "Number of Domains": 84,
       "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 0,
@@ -322,7 +322,7 @@
     },
     {
       "Agency": "Executive Office of the President",
-      "Enforces HTTPS": 20,
+      "Enforces HTTPS": 27,
       "Number of Domains": 30,
       "SSL Labs (A- or higher)": 47,
       "Strict Transport Security (HSTS)": 33,
@@ -442,7 +442,7 @@
     },
     {
       "Agency": "General Services Administration",
-      "Enforces HTTPS": 26,
+      "Enforces HTTPS": 29,
       "Number of Domains": 92,
       "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 7,
