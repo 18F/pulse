@@ -381,7 +381,7 @@ def https_row_for(domain):
         hsts = 1 # Yes
 
   row[LABELS['hsts']] = hsts
-  # row[LABELS['hsts_age']] = hsts_age
+  row[LABELS['hsts_age']] = hsts_age
 
 
   ###

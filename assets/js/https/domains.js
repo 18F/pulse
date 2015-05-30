@@ -72,6 +72,7 @@ $(document).ready(function () {
     var https = row["Uses HTTPS"];
     var behavior = row["Enforces HTTPS"];
     var hsts = row["Strict Transport Security (HSTS)"];
+    var hsts_age = row["HSTS max-age"];
 
     var details;
 
@@ -89,6 +90,14 @@ $(document).ready(function () {
         details += l("hsts", "HSTS") + " is enabled for all subdomains, but is not ready for " + l("preload", "preloading into browsers") + ".";
       else if (hsts == 3)
         details += l("hsts", "HSTS") + " is enabled for all subdomains, and can be " + l("preload", "preloaded into browsers") + ".";
+
+      // HSTS is considered a No *because* its max-age is too weak.
+      if (hsts == 0 && (hsts_age > 0) && (hsts_age < 10886400))
+        details += " The HSTS max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds)."
+
+      // HSTS is strong enough to get a yes, but still less than a year.
+      if (hsts > 0 && (hsts_age < 31536000))
+        details += " The HSTS max-age (" + hsts_age + " seconds) should be increased to at least 1 year (31536000 seconds)."
 
     } else if (https == 0)
       details = "This domain redirects visitors from HTTPS down to HTTP."
