@@ -82,18 +82,19 @@ $(document).ready(function () {
       else
         details = "This domain supports HTTPS, but does not enforce it. "
 
-      if (hsts == 0)
-        details += l("hsts", "HSTS") + " is not enabled.";
+      if (hsts == 0) {
+        // HSTS is considered a No *because* its max-age is too weak.
+        if ((hsts_age > 0) && (hsts_age < 10886400))
+          details += "The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
+        else
+          details += l("hsts", "HSTS") + " is not enabled.";
+      }
       else if (hsts == 1)
         details += l("hsts", "HSTS") + " is enabled, but not for its subdomains and is not ready for " + l("preload", "preloading") + ".";
       else if (hsts == 2)
         details += l("hsts", "HSTS") + " is enabled for all subdomains, but is not ready for " + l("preload", "preloading into browsers") + ".";
       else if (hsts == 3)
         details += l("hsts", "HSTS") + " is enabled for all subdomains, and can be " + l("preload", "preloaded into browsers") + ".";
-
-      // HSTS is considered a No *because* its max-age is too weak.
-      if (hsts == 0 && (hsts_age > 0) && (hsts_age < 10886400))
-        details += " The HSTS max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds)."
 
       // HSTS is strong enough to get a yes, but still less than a year.
       if (hsts > 0 && (hsts_age < 31536000))
