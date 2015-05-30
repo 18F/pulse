@@ -45,8 +45,29 @@ LABELS = {
   'rc4': 'RC4',
   'sig': 'Signature Algorithm',
   'ssl3': 'SSLv3',
-  'tls12': 'TLSv1.2'
+  'tls12': 'TLSv1.2',
+
+  # used in export CSVs
+  'agency': 'Agency',
+  'canonical': 'URL',
+  'domain': 'Domain'
 }
+
+# rows to put in public CSV export
+CSV_HTTPS_DOMAINS = [
+  'domain', 'agency', 'https',  'https_forced', 'hsts', 'grade'
+]
+CSV_HTTPS_AGENCIES = [
+  'domain', 'agency', 'https', 'https_forced', 'hsts', 'grade_agencies'
+]
+CSV_DAP_DOMAINS = [
+  'domain', 'agency', 'dap'
+]
+CSV_DAP_AGENCIES = [
+  'domain', 'agency', 'dap'
+]
+
+
 
 ## global data
 
@@ -514,6 +535,8 @@ def save_tables():
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
+
+
   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
   https_agencies_data = json_for({'data': https_agencies})
   write(https_agencies_data, https_agencies_path)
@@ -528,18 +551,15 @@ def save_tables():
 
 # Given the rows we've made, save some top-level #'s to disk.
 def save_stats():
-  f = open(os.path.join(STATS_DATA, "https.csv"), 'w', newline='')
+  save_csv(https_stats, STATS_DATA, "https.csv")
+  save_csv(analytics_stats, STATS_DATA, "analytics.csv")
+
+def save_csv(rows, directory, filename):
+  f = open(os.path.join(directory, filename), 'w', newline='')
   writer = csv.writer(f)
-  for row in https_stats:
+  for row in rows:
     writer.writerow(row)
   f.close()
-
-  f = open(os.path.join(STATS_DATA, "analytics.csv"), 'w', newline='')
-  writer = csv.writer(f)
-  for row in analytics_stats:
-    writer.writerow(row)
-  f.close()
-
 
 
 ### utilities
