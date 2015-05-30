@@ -535,7 +535,13 @@ def save_tables():
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
-
+  csv_rows = [CSV_HTTPS_DOMAINS] # headers
+  for domain in https_domains:
+    row = []
+    for label in CSV_HTTPS_DOMAINS:
+      row.append(domain[LABELS[label]])
+    csv_rows.append(row)
+  save_csv(csv_rows, TABLE_DATA, "https/domains.csv")
 
   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
   https_agencies_data = json_for({'data': https_agencies})
