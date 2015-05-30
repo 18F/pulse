@@ -275,7 +275,7 @@ a {
         padding: 0;
         .description {
           @include span-columns(8);
-          padding-top: 60px;
+          padding-top: 30px;
           @include media($medium) {
             @include span-columns(12);
             padding: 40px 20px 20px 20px;

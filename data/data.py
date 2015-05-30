@@ -6,13 +6,20 @@
 #
 # * domains.csv - federal domains, subset of .gov domain list.
 # * inspect.csv - output of domain-scan
+# * tls.csv - output of domain-scan
 # * analytics.csv - output of domain-scan
 #
-# Produce, in the assets/data/ directory:
+# Produce, in the assets/data directory:
 #
-# * https.json - JSON version of HTTPS stats.
-# * analytics.json - JSON version of DAP stats.
-# * stats.json - aggregate numbers for DAP, HTTPS, and a timestamp.
+# = donut power
+# * analytics.csv
+# * https.csv
+#
+# = table power
+# * tables/https/agencies.json
+# * tables/https/domains.json
+# * tables/analytics/agencies.json
+# * tables/analytics/domains.json
 #
 ###
 
