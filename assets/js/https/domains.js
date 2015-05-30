@@ -104,7 +104,8 @@ $(document).ready(function () {
           data: "SSL Labs Grade",
           render: linkGrade
         },
-        {data: "Details"}
+        {data: "Details"},
+        {data: "TLS Issues"}
       ],
 
       "oLanguage": {

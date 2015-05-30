@@ -33,7 +33,8 @@ LABELS = {
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?',
-  'details': 'Details'
+  'details': 'Details',
+  'tls_details': 'TLS Issues'
 }
 
 ## global data
@@ -369,6 +370,8 @@ def https_row_for(domain):
 
   tls = domain_data[domain].get('tls')
 
+  config = ""
+
   # Not relevant if no HTTPS
   if (https <= 0):
     grade = -1 # N/A
@@ -389,7 +392,26 @@ def https_row_for(domain):
       "A+": 6
     }[tls["Grade"]]
 
+    ###
+    # Construct a sentence about the domain's TLS config.
+    #
+    # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
+
+    if (tls["Signature Algorithm"] == "SHA1withRSA"):
+      config += "This domain uses a weak SHA-1 certificate, and should replace it with a certificate signed with SHA-2. "
+
+    if (tls["SSLv3"] == "True"):
+      config += "This domain supports the insecure SSLv3 protocol, and should disable it. "
+
+    if (tls["TLSv1.2"] == "False"):
+      config += "This domain lacks support for TLSv1.2, the most modern and secure version of TLS. "
+
+    # Don't bother remarking if FS is Modern or Robust.
+    if int(tls["Forward Secrecy"]) <= 1:
+      config += "This domain should adjust its ciphers to enable forward secrecy. "
+
   row[LABELS['grade']] = grade
+  row[LABELS['tls_details']] = config
 
 
   ###
