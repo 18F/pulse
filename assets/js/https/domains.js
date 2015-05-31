@@ -24,7 +24,7 @@ $(document).ready(function () {
       0: "No", // No
       1: "Yes", // HSTS on only that domain
       2: "Yes", // HSTS on subdomains
-      3: "Yes, and preloaded" // HSTS on subdomains + preload
+      3: "Yes, and preload-ready" // HSTS on subdomains + preload
     },
 
     grade: {
