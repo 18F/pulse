@@ -542,6 +542,8 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #0059b3; }
+      .dataTables_wrapper .dataTables_length select::-ms-expand {
+        display: none; }
   .dataTables_wrapper .dataTables_filter {
     font-size: 1.1em; }
     .dataTables_wrapper .dataTables_filter label {
