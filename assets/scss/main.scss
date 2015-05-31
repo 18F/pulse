@@ -409,6 +409,9 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-blue;
+      &::-ms-expand {
+        display: none;
+      }
     }
   }
   .dataTables_filter {
