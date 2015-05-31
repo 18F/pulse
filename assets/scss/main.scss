@@ -474,6 +474,13 @@ a {
       }
     }
 
+    &.https.domain {
+      tbody tr:hover {
+        background-color: #e5e5ff;
+        cursor: pointer;
+      }
+    }
+
     &.dtr-inline.collapsed {
       td:first-child:before {
         top: 9px;

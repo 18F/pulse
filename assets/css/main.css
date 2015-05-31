@@ -579,6 +579,9 @@ a {
     .dataTables_wrapper table.dataTable.domain td.odd:first-child,
     .dataTables_wrapper table.dataTable.domain td.even:first-child {
       white-space: nowrap; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr:hover {
+      background-color: #e5e5ff;
+      cursor: pointer; }
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }

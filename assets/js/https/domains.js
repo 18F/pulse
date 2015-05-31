@@ -209,6 +209,22 @@ $(document).ready(function () {
 
     });
 
+    /**
+    * Make the row expand when any cell in it is clicked.
+    *
+    * DataTables' child row API doesn't appear to work, likely
+    * because we're getting child rows through the Responsive
+    * plugin, not directly. We can't put the click event on the
+    * whole row, because then sending the click to the first cell
+    * will cause a recursive loop and stack overflow.
+    *
+    * So, we put the click on every cell except the first one, and
+    * send it to its sibling. The first cell is already wired.
+    */
+    $('table tbody').on('click', 'td:not(.sorting_1)', function(e) {
+      $(this).siblings("td.sorting_1").click();
+    });
+
 
   }
 
