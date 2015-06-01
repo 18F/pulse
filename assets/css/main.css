@@ -593,26 +593,18 @@ a {
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }
-    .dataTables_wrapper table.dataTable > tbody > tr.parent > th:first-child:before {
-      background-color: #CCC; }
-    .dataTables_wrapper table.dataTable > tbody > tr.parent td {
-      border-bottom: none !important; }
-    .dataTables_wrapper table.dataTable > tbody > tr.parent:hover {
-      background-color: #EEE; }
-      .dataTables_wrapper table.dataTable > tbody > tr.parent:hover + tr.child {
-        background-color: #EEE; }
     .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
       border-bottom: none;
       padding: 0 0 3px 0; }
     .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
       min-width: 50px; }
-    .dataTables_wrapper table.dataTable > tbody > tr.child:hover {
-      background-color: #EEE; }
-      .dataTables_wrapper table.dataTable > tbody > tr.child:hover + tr.parent {
-        background-color: #EEE; }
-    .dataTables_wrapper table.dataTable > tbody tr:hover {
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.parent td {
+      border-bottom: none !important; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr:hover {
       background-color: #EEE;
       cursor: pointer; }
+      .dataTables_wrapper table.dataTable.https.domain tbody tr:hover + .child {
+        background-color: #EEE; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 !important; }
       @media screen and (max-width: 1024px) {
