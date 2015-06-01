@@ -323,6 +323,7 @@ a {
 
 .https_chart, .dap_chart {
   cursor: pointer;
+  padding-top: 15px;
 }
 
 // pages/analytics/*
@@ -491,12 +492,22 @@ a {
       }
     }
 
-    tbody > tr.child span.dtr-title {
-      min-width: 50px;
-    }
-
-    tbody > tr.parent > th:first-child:before {
-      background-color: #CCC;
+    > tbody {
+      > tr.parent {
+        > th:first-child:before {
+          background-color: #CCC;
+        }
+        td { border-bottom: none !important; }
+      }
+      > tr.child {
+        ul li { 
+          border-bottom: none; 
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+      }
     }
 
     &.agency {

@@ -482,7 +482,8 @@ a {
       text-decoration: underline; }
 
 .https_chart, .dap_chart {
-  cursor: pointer; }
+  cursor: pointer;
+  padding-top: 15px; }
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
@@ -587,10 +588,15 @@ a {
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }
-    .dataTables_wrapper table.dataTable tbody > tr.child span.dtr-title {
-      min-width: 50px; }
-    .dataTables_wrapper table.dataTable tbody > tr.parent > th:first-child:before {
+    .dataTables_wrapper table.dataTable > tbody > tr.parent > th:first-child:before {
       background-color: #CCC; }
+    .dataTables_wrapper table.dataTable > tbody > tr.parent td {
+      border-bottom: none !important; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
+      border-bottom: none;
+      padding: 0 0 3px 0; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
+      min-width: 50px; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 !important; }
       @media screen and (max-width: 1024px) {
