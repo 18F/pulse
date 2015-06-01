@@ -41,6 +41,8 @@ This project is an initial pass - there is mmuch more information that can be re
 * Mixed content detection (linking to insecure resources)
 * Use of third party services
 * 508 compliance (poss. with http://pa11y.org/)
+* Any other items listed in the [OMB letter to OGP passing along .gov domain issuance](https://www.whitehouse.gov/sites/default/files/omb/egov/memo/policies-for-dot-gov-domain-issuance-for-federal-agency-public-websites.pdf)
+* Lighter or fun things - like how many domains start with each letter of the alphabet, what the last 10 that came out were, etc.  
 
 ### Public domain
 
