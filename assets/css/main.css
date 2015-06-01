@@ -585,17 +585,16 @@ a {
         width: 200px;
         margin-left: 10px; } }
   .dataTables_wrapper table.dataTable {
-    padding: 20px 0;
-    /* Domain column, to accommodate for More button. */ }
+    padding: 20px 0; }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
       border-bottom: 2px solid #EEE !important;
-      padding: 8px 0 8px 20px !important; }
-    .dataTables_wrapper table.dataTable td:first-child {
-      padding-left: 40px !important; }
+      padding: 8px 0 8px 40px; }
+    .dataTables_wrapper table.dataTable td:first {
+      padding: 8px 0 8px 30px !important; }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
-      background-position: center left; }
+      background-position: 20px center; }
     .dataTables_wrapper table.dataTable.no-footer {
       border: none; }
     .dataTables_wrapper table.dataTable.domain td.odd:first-child,
