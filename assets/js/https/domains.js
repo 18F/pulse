@@ -118,7 +118,7 @@ $(document).ready(function () {
       return null;
 
     if (row["SSL Labs Grade"] < 0)
-      return "";
+      return "N/A";
 
     var config = [];
 
@@ -144,7 +144,7 @@ $(document).ready(function () {
     if (config.length > 0)
       return "This domain " + config.join(", ") + ". ";
     else
-      return "";
+      return "N/A";
   };
 
   var renderTable = function(data) {
