@@ -267,22 +267,6 @@ def evaluating_for_analytics(domain):
     (domain_data[domain]['branch'] == "executive")
   )
 
-'''
-Given the data we have about a domain, what's the HTTPS row?
-
-{
-  "Domain": [domain],
-  "Uses HTTPS": [
-    "No" | "Yes (with issues)" | "Yes"
-  ],
-  "Enforces HTTPS": [
-    "No" | "Yes" | "Yes (Strict)"
-  ],
-  "HSTS": [
-    "No" | "Yes (Partial)" | "Yes (Complete)"
-  ]
-}
-'''
 def https_row_for(domain):
   inspect = domain_data[domain]['inspect']
   row = {
@@ -318,9 +302,16 @@ def https_row_for(domain):
 
     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
     # *and* that HTTP eventually redirects to HTTPS.
+    #
+    # Since a pure redirector domain can't "default" to HTTPS
+    # for itself, we'll say it "Enforces HTTPS" if it immediately
+    # redirects to an HTTPS URL.
     if (
       (inspect["Strictly Forces HTTPS"] == "True") and
-      (inspect["Defaults to HTTPS"] == "True")
+      (
+        (inspect["Defaults to HTTPS"] == "True") or
+        (inspect["Redirect"] == "True")
+      )
     ):
       behavior = 3 # Yes (Strict)
 
