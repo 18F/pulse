@@ -527,7 +527,15 @@ a {
   padding: 80px 0 40px; }
   .dataTables_wrapper .dataTables_length {
     font-size: 1.1em;
-    font-weight: 200; }
+    font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px; }
+    .dataTables_wrapper .dataTables_length a {
+      text-decoration: underline;
+      cursor: pointer; }
+    .dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
+      text-decoration: none;
+      color: black !important; }
     .dataTables_wrapper .dataTables_length select {
       border: none;
       display: inline-block;

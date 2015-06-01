@@ -48,7 +48,9 @@ $(document).ready(function () {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      }
+      },
+
+      dom: 'Lftrip'
 
     });
   };

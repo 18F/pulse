@@ -392,9 +392,23 @@ a {
 
 .dataTables_wrapper {
   padding: 80px 0 40px;
+
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a.active, a.active:hover {
+      text-decoration: none;
+      color: black !important;
+    }
+
     select {
       border: none;
       display: inline-block;
@@ -414,6 +428,7 @@ a {
       }
     }
   }
+
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
