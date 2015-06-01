@@ -491,6 +491,12 @@ a {
           background-color: #CCC;
         }
         td { border-bottom: none !important; }
+        &:hover {
+          background-color: #EEE;
+         +tr.child {
+          background-color: #EEE;
+         } 
+        }
       }
       > tr.child {
         ul li { 
@@ -500,6 +506,16 @@ a {
         span.dtr-title {
           min-width: 50px;
         }
+        &:hover { 
+          background-color: #EEE;
+          +tr.parent {
+            background-color: #EEE;
+          } 
+        }
+      }
+      tr:hover {
+        background-color: #EEE;
+        cursor: pointer;
       }
     }
 
