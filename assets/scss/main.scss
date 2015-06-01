@@ -471,7 +471,8 @@ a {
 
     &.domain {
 
-      td:first-child {
+      td.odd:first-child,
+      td.even:first-child {
         white-space: nowrap;
       }
     }
@@ -483,12 +484,22 @@ a {
       }
     }
 
-    tbody > tr.child span.dtr-title {
-      min-width: 50px;
-    }
-
-    tbody > tr.parent > th:first-child:before {
-      background-color: #CCC;
+    > tbody {
+      > tr.parent {
+        > th:first-child:before {
+          background-color: #CCC;
+        }
+        td { border-bottom: none !important; }
+      }
+      > tr.child {
+        ul li { 
+          border-bottom: none; 
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+      }
     }
 
     &.agency {

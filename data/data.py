@@ -33,7 +33,11 @@ LABELS = {
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?',
-  'details': 'Details'
+  'fs': 'Forward Secrecy',
+  'rc4': 'RC4',
+  'sig': 'Signature Algorithm',
+  'ssl3': 'SSLv3',
+  'tls12': 'TLSv1.2'
 }
 
 ## global data
@@ -308,16 +312,13 @@ def https_row_for(domain):
   # Is HTTPS enforced?
 
   if (https <= 0):
-    behavior = -1 # N/A (considered 'No')
+    behavior = 0 # N/A
 
   else:
-    # It's a hard "No" if HTTPS redirects down to HTTP.
-    if (inspect["Downgrades HTTPS"] == "True"):
-      behavior = 0 # Downgrade (considered 'No')
 
     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
     # *and* that HTTP eventually redirects to HTTPS.
-    elif (
+    if (
       (inspect["Strictly Forces HTTPS"] == "True") and
       (inspect["Defaults to HTTPS"] == "True")
     ):
@@ -372,6 +373,12 @@ def https_row_for(domain):
 
   tls = domain_data[domain].get('tls')
 
+  fs = None
+  sig = None
+  ssl3 = None
+  tls12 = None
+  rc4 = None
+
   # Not relevant if no HTTPS
   if (https <= 0):
     grade = -1 # N/A
@@ -392,22 +399,23 @@ def https_row_for(domain):
       "A+": 6
     }[tls["Grade"]]
 
+    ###
+    # Construct a sentence about the domain's TLS config.
+    #
+    # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
+
+    fs = int(tls["Forward Secrecy"])
+    sig = tls["Signature Algorithm"]
+    rc4 = boolean_for(tls["RC4"])
+    ssl3 = boolean_for(tls["SSLv3"])
+    tls12 = boolean_for(tls["TLSv1.2"])
+
   row[LABELS['grade']] = grade
-
-
-  ###
-  # Construct a sentence explaining the situation.
-
-  if https == 2:
-    details = "This domain is offered over valid HTTPS."
-  elif https == 1:
-    details = "This domain is offered over valid HTTPS, but uses a certificate chain that may cause issues for some visitors."
-  elif https == 0:
-    details = "This domain redirects visitors from HTTPS to HTTP."
-  elif https == -1:
-    details = "This domain does not support HTTPS."
-
-  row[LABELS['details']] = details
+  row[LABELS['fs']] = fs
+  row[LABELS['sig']] = sig
+  row[LABELS['rc4']] = rc4
+  row[LABELS['ssl3']] = ssl3
+  row[LABELS['tls12']] = tls12
 
   return row
 
@@ -512,6 +520,12 @@ def save_stats():
 
 
 ### utilities
+
+def boolean_for(string):
+  if string == "False":
+    return False
+  else:
+    return True
 
 def json_for(object):
   return json.dumps(object, sort_keys=True,
