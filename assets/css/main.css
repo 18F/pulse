@@ -444,7 +444,7 @@ a {
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%;
-      padding-top: 60px; }
+      padding-top: 30px; }
       #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
         margin-right: 0; }
       @media screen and (max-width: 767px) {
@@ -482,7 +482,8 @@ a {
       text-decoration: underline; }
 
 .https_chart, .dap_chart {
-  cursor: pointer; }
+  cursor: pointer;
+  padding-top: 15px; }
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }

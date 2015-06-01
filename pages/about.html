@@ -11,7 +11,7 @@ permalink: /about/
   	Pulse is a project of the General Services Administration that measures how U.S. government domains are following best practices for federal websites.
   </p>
   <p>
-  	Pulse is also an <strong>experiment</strong> built on automated tools, and is <strong>probably not perfect</strong>. Everything on Pulse is measured over the public internet, and can be reviewed by anyone.
+  	Pulse is also an <strong>experiment</strong> built on automated tools, and is <strong>probably not perfect</strong>. Pulse measures domains over the public internet using open source tools, and its results can be reviewed by anyone.
   </p>
 
 </header>
@@ -33,6 +33,9 @@ permalink: /about/
 				</li>
 				<li>
 					<a href="#why-dap">What is the Digital Analytics Program, and why does Pulse measure participation?</a>
+				</li>
+				<li>
+					<a href="#fresh-data">When was the data last updated on Pulse?</a>
 				</li>
 				<li>
 					<a href="#send-feedback">Where can I send feedback?</a>
@@ -88,6 +91,22 @@ permalink: /about/
 				</p>
 				<p>
 					Any publicly accessible federal website in the executive branch can participate in the <a href="https://www.digitalgov.gov/services/dap/">Digital Analytics Program</a> (DAP). The easiest way for federal websites to get started is to <a href="mailto:dap@gsa.gov">send the DAP team an email</a>.
+				</p>
+			</li>
+
+			<li id="fresh-data">
+				<h3>When was the data last updated on Pulse?</h3>
+
+				<p>
+					The list of <code>.gov</code> domains used on Pulse was generated on <strong>{{ site.data.domains | date: "%B %d, %Y" }}</strong>.
+				</p>
+
+				<p>
+					Participation in the Digital Analytics Program is current as of <strong>{{ site.data.dap | date: "%B %d, %Y" }}</strong>.
+				</p>
+
+				<p>
+					HTTPS and TLS data was last collected through a scan of the public internet on <strong>{{ site.data.scan | date: "%B %d, %Y" }}</strong>.
 				</p>
 			</li>
 
