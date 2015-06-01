@@ -524,6 +524,17 @@ a {
       .guide article ul li, .guide article p li {
         padding-bottom: 15px; }
 
+#pagenotfound #main-content {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  margin: 0 auto; }
+  #pagenotfound #main-content h2 {
+    font-size: 10em;
+    margin-bottom: 8px; }
+  #pagenotfound #main-content p {
+    font-size: 2em; }
+
 .dataTables_wrapper {
   padding: 80px 0 40px; }
   .dataTables_wrapper .dataTables_length {
