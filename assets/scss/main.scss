@@ -323,6 +323,7 @@ a {
 
 .https_chart, .dap_chart {
   cursor: pointer;
+  padding-top: 15px;
 }
 
 // pages/analytics/*
@@ -492,13 +493,6 @@ a {
       }
     }
 
-    &.https.domain {
-      tbody tr:hover {
-        background-color: #e5e5ff;
-        cursor: pointer;
-      }
-    }
-
     &.dtr-inline.collapsed {
       td:first-child:before {
         top: 9px;
@@ -506,12 +500,38 @@ a {
       }
     }
 
-    tbody > tr.child span.dtr-title {
-      min-width: 50px;
-    }
-
-    tbody > tr.parent > th:first-child:before {
-      background-color: #CCC;
+    > tbody {
+      > tr.parent {
+        > th:first-child:before {
+          background-color: #CCC;
+        }
+        td { border-bottom: none !important; }
+        &:hover {
+          background-color: #EEE;
+         +tr.child {
+          background-color: #EEE;
+         } 
+        }
+      }
+      > tr.child {
+        ul li { 
+          border-bottom: none; 
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+        &:hover { 
+          background-color: #EEE;
+          +tr.parent {
+            background-color: #EEE;
+          } 
+        }
+      }
+      tr:hover {
+        background-color: #EEE;
+        cursor: pointer;
+      }
     }
 
     &.agency {
