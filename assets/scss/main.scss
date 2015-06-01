@@ -393,9 +393,23 @@ a {
 
 .dataTables_wrapper {
   padding: 80px 0 40px;
+
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a.active, a.active:hover {
+      text-decoration: none;
+      color: black !important;
+    }
+
     select {
       border: none;
       display: inline-block;
@@ -415,6 +429,7 @@ a {
       }
     }
   }
+
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
@@ -486,18 +501,6 @@ a {
     }
 
     > tbody {
-      > tr.parent {
-        > th:first-child:before {
-          background-color: #CCC;
-        }
-        td { border-bottom: none !important; }
-        &:hover {
-          background-color: #EEE;
-         +tr.child {
-          background-color: #EEE;
-         } 
-        }
-      }
       > tr.child {
         ul li { 
           border-bottom: none; 
@@ -506,19 +509,26 @@ a {
         span.dtr-title {
           min-width: 50px;
         }
-        &:hover { 
-          background-color: #EEE;
-          +tr.parent {
-            background-color: #EEE;
-          } 
-        }
-      }
-      tr:hover {
-        background-color: #EEE;
-        cursor: pointer;
       }
     }
 
+    &.https.domain { 
+      tbody {
+        tr {
+          &.parent {
+            td { border-bottom: none !important; }
+          }
+          &:hover {
+            background-color: #EEE;
+            cursor: pointer;
+            +.child {
+              background-color: #EEE;
+            }
+          }
+        }
+      }
+    }
+    
     &.agency {
 
       td {
