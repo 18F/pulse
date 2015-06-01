@@ -151,10 +151,13 @@ $(document).ready(function () {
     if (row["Forward Secrecy"] <= 1)
       config.push("should enable " + l("fs", "forward secrecy"));
 
+    var issues = "";
     if (config.length > 0)
-      return "This domain " + config.join(", ") + ". ";
-    else
-      return "No data.";
+      issues += "This domain " + config.join(", ") + ". ";
+
+    issues += "See the " + l(labsUrlFor(row["Domain"]), "full SSL Labs report") + " for details.";
+
+    return issues;
   };
 
   var renderTable = function(data) {
