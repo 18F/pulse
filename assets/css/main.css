@@ -444,7 +444,7 @@ a {
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%;
-      padding-top: 60px; }
+      padding-top: 30px; }
       #analytics #content > header.chart .description:last-child, #https #content > header.chart .description:last-child, #about #content > header.chart .description:last-child {
         margin-right: 0; }
       @media screen and (max-width: 767px) {
@@ -482,7 +482,8 @@ a {
       text-decoration: underline; }
 
 .https_chart, .dap_chart {
-  cursor: pointer; }
+  cursor: pointer;
+  padding-top: 15px; }
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
@@ -503,6 +504,8 @@ a {
     margin-bottom: 15px; }
   #about .faq-answers li {
     padding-bottom: 40px; }
+  #about .faq-answers p {
+    padding-bottom: 15px; }
 
 .guide {
   clear: both;
@@ -525,7 +528,15 @@ a {
   padding: 80px 0 40px; }
   .dataTables_wrapper .dataTables_length {
     font-size: 1.1em;
-    font-weight: 200; }
+    font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px; }
+    .dataTables_wrapper .dataTables_length a {
+      text-decoration: underline;
+      cursor: pointer; }
+    .dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
+      text-decoration: none;
+      color: black !important; }
     .dataTables_wrapper .dataTables_length select {
       border: none;
       display: inline-block;
@@ -540,6 +551,8 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #0059b3; }
+      .dataTables_wrapper .dataTables_length select::-ms-expand {
+        display: none; }
   .dataTables_wrapper .dataTables_filter {
     font-size: 1.1em; }
     .dataTables_wrapper .dataTables_filter label {
@@ -574,15 +587,24 @@ a {
       background-position: center left; }
     .dataTables_wrapper table.dataTable.no-footer {
       border: none; }
-    .dataTables_wrapper table.dataTable.domain td:first-child {
+    .dataTables_wrapper table.dataTable.domain td.odd:first-child,
+    .dataTables_wrapper table.dataTable.domain td.even:first-child {
       white-space: nowrap; }
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }
-    .dataTables_wrapper table.dataTable tbody > tr.child span.dtr-title {
+    .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
+      border-bottom: none;
+      padding: 0 0 3px 0; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
       min-width: 50px; }
-    .dataTables_wrapper table.dataTable tbody > tr.parent > th:first-child:before {
-      background-color: #CCC; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.parent td {
+      border-bottom: none !important; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr:hover {
+      background-color: #EEE;
+      cursor: pointer; }
+      .dataTables_wrapper table.dataTable.https.domain tbody tr:hover + .child {
+        background-color: #EEE; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 !important; }
       @media screen and (max-width: 1024px) {

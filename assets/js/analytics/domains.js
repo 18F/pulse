@@ -27,6 +27,8 @@ $(document).ready(function () {
 
       data: data,
 
+      initComplete: Utils.searchLinks,
+
       columns: [
         {
           data: "Domain",
@@ -46,7 +48,9 @@ $(document).ready(function () {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      }
+      },
+
+      dom: 'Lftrip'
 
     });
   };

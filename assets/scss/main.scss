@@ -275,7 +275,7 @@ a {
         padding: 0;
         .description {
           @include span-columns(8);
-          padding-top: 60px;
+          padding-top: 30px;
           @include media($medium) {
             @include span-columns(12);
             padding: 40px 20px 20px 20px;
@@ -323,6 +323,7 @@ a {
 
 .https_chart, .dap_chart {
   cursor: pointer;
+  padding-top: 15px;
 }
 
 // pages/analytics/*
@@ -359,6 +360,10 @@ a {
       margin-bottom: 15px;
     }
     li { padding-bottom: 40px; }
+
+    p {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -388,9 +393,23 @@ a {
 
 .dataTables_wrapper {
   padding: 80px 0 40px;
+
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a.active, a.active:hover {
+      text-decoration: none;
+      color: black !important;
+    }
+
     select {
       border: none;
       display: inline-block;
@@ -405,8 +424,12 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-blue;
+      &::-ms-expand {
+        display: none;
+      }
     }
   }
+
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
@@ -464,7 +487,8 @@ a {
 
     &.domain {
 
-      td:first-child {
+      td.odd:first-child,
+      td.even:first-child {
         white-space: nowrap;
       }
     }
@@ -476,14 +500,35 @@ a {
       }
     }
 
-    tbody > tr.child span.dtr-title {
-      min-width: 50px;
+    > tbody {
+      > tr.child {
+        ul li { 
+          border-bottom: none; 
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+      }
     }
 
-    tbody > tr.parent > th:first-child:before {
-      background-color: #CCC;
+    &.https.domain { 
+      tbody {
+        tr {
+          &.parent {
+            td { border-bottom: none !important; }
+          }
+          &:hover {
+            background-color: #EEE;
+            cursor: pointer;
+            +.child {
+              background-color: #EEE;
+            }
+          }
+        }
+      }
     }
-
+    
     &.agency {
 
       td {
