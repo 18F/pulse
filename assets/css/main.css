@@ -590,7 +590,7 @@ a {
       border-bottom: none !important; }
     .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
       border-bottom: none;
-      padding: 0; }
+      padding: 0 0 3px 0; }
     .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
       min-width: 50px; }
     .dataTables_wrapper table.dataTable.agency td {
