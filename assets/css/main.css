@@ -542,6 +542,8 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #0059b3; }
+      .dataTables_wrapper .dataTables_length select::-ms-expand {
+        display: none; }
   .dataTables_wrapper .dataTables_filter {
     font-size: 1.1em; }
     .dataTables_wrapper .dataTables_filter label {
@@ -582,10 +584,15 @@ a {
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }
-    .dataTables_wrapper table.dataTable tbody > tr.child span.dtr-title {
-      min-width: 50px; }
-    .dataTables_wrapper table.dataTable tbody > tr.parent > th:first-child:before {
+    .dataTables_wrapper table.dataTable > tbody > tr.parent > th:first-child:before {
       background-color: #CCC; }
+    .dataTables_wrapper table.dataTable > tbody > tr.parent td {
+      border-bottom: none !important; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
+      border-bottom: none;
+      padding: 0 0 3px 0; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
+      min-width: 50px; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 !important; }
       @media screen and (max-width: 1024px) {

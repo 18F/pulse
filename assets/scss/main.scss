@@ -409,6 +409,9 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-blue;
+      &::-ms-expand {
+        display: none;
+      }
     }
   }
   .dataTables_filter {
@@ -481,12 +484,22 @@ a {
       }
     }
 
-    tbody > tr.child span.dtr-title {
-      min-width: 50px;
-    }
-
-    tbody > tr.parent > th:first-child:before {
-      background-color: #CCC;
+    > tbody {
+      > tr.parent {
+        > th:first-child:before {
+          background-color: #CCC;
+        }
+        td { border-bottom: none !important; }
+      }
+      > tr.child {
+        ul li { 
+          border-bottom: none; 
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+      }
     }
 
     &.agency {
