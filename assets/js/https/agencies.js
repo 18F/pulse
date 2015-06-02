@@ -27,10 +27,17 @@ $(document).ready(function () {
       order: [[1, "desc"]],
 
       columnDefs: [
-        {render: Utils.progressBar, targets: 2},
-        {render: Utils.progressBar, targets: 3},
-        {render: Utils.progressBar, targets: 4},
-        {render: Utils.progressBar, targets: 5}
+        {
+          targets: 0,
+          cellType: "td",
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        },
+        {
+          render: Utils.progressBar, 
+          targets: [2,3,4,5],
+        }
       ],
 
       "oLanguage": {
@@ -38,7 +45,9 @@ $(document).ready(function () {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      }
+      },
+
+      dom: 'Lftrip'
 
     });
   };

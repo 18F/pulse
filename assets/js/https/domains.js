@@ -24,7 +24,7 @@ $(document).ready(function () {
       0: "No", // No
       1: "Yes", // HSTS on only that domain
       2: "Yes", // HSTS on subdomains
-      3: "Yes, and preloaded" // HSTS on subdomains + preload
+      3: "Yes, and preload-ready" // HSTS on subdomains + preload
     },
 
     grade: {
@@ -52,6 +52,8 @@ $(document).ready(function () {
     var grade = display(names.grade)(data, type);
     if (type == "sort")
       return grade;
+    else if (grade == "")
+      return ""
     else
       return "" +
         "<a href=\"" + labsUrlFor(row['Domain']) + "\" target=\"blank\">" +
@@ -128,7 +130,7 @@ $(document).ready(function () {
       return null;
 
     if (row["SSL Labs Grade"] < 0)
-      return "";
+      return "No data.";
 
     var config = [];
 
@@ -151,10 +153,13 @@ $(document).ready(function () {
     if (row["Forward Secrecy"] <= 1)
       config.push("should enable " + l("fs", "forward secrecy"));
 
+    var issues = "";
     if (config.length > 0)
-      return "This domain " + config.join(", ") + ". ";
-    else
-      return "";
+      issues += "This domain " + config.join(", ") + ". ";
+
+    issues += "See the " + l(labsUrlFor(row["Domain"]), "full SSL Labs report") + " for details.";
+
+    return issues;
   };
 
   var renderTable = function(data) {
@@ -200,13 +205,41 @@ $(document).ready(function () {
         }
       ],
 
+      columnDefs: [
+        {
+          targets: 0,
+          cellType: "td",
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        }
+      ],
+
       "oLanguage": {
         "oPaginate": {
           "sPrevious": "<<",
           "sNext": ">>"
         }
-      }
+      },
 
+      dom: 'Lftrip'
+
+    });
+
+    /**
+    * Make the row expand when any cell in it is clicked.
+    *
+    * DataTables' child row API doesn't appear to work, likely
+    * because we're getting child rows through the Responsive
+    * plugin, not directly. We can't put the click event on the
+    * whole row, because then sending the click to the first cell
+    * will cause a recursive loop and stack overflow.
+    *
+    * So, we put the click on every cell except the first one, and
+    * send it to its sibling. The first cell is already wired.
+    */
+    $('table tbody').on('click', 'td:not(.sorting_1)', function(e) {
+      $(this).siblings("td.sorting_1").click();
     });
 
 
