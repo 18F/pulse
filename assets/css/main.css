@@ -137,7 +137,12 @@ th {
 
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
+  padding: 0.75em 0; 
+}
+td:focus {
+  background-color: #EEEEEE;
+  outline: none;
+}
 
 tr,
 td,
