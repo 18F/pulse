@@ -162,8 +162,16 @@ $(document).ready(function () {
     return issues;
   };
 
+  var detailsKeyboardCtrl = function(){
+      $('table tbody tr td:first-child').attr('tabindex','0')
+      .on('keydown',function(e){
+        if (e.keyCode == 13)
+          $(this).click();
+      })
+    };
+
   var renderTable = function(data) {
-    $("table").DataTable({
+    var table = $("table").DataTable({
 
       responsive: true,
 
@@ -225,6 +233,7 @@ $(document).ready(function () {
       dom: 'Lftrip'
 
     });
+    
 
     /**
     * Make the row expand when any cell in it is clicked.
@@ -242,6 +251,13 @@ $(document).ready(function () {
       $(this).siblings("td.sorting_1").click();
     });
 
+
+    //Adds keyboard control to first cell of table
+    detailsKeyboardCtrl();
+
+    table.on("draw.dt",function(){
+       detailsKeyboardCtrl();
+    });
 
   }
 
