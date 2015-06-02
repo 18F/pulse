@@ -231,6 +231,27 @@ a {
     display: table;
     clear: both; }
 
+a#skipnav {
+  padding: 10px 15px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: #0059b3;
+  background: transparent;
+  -webkit-transition: top 1s ease-out, background 1s linear;
+  -moz-transition: top 1s ease-out, background 1s linear;
+  transition: top 1s ease-out, background 1s linear;
+  z-index: 100; }
+  a#skipnav:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: white;
+    outline: 0;
+    -webkit-transition: top 0.1s ease-in, background 0.5s linear;
+    -moz-transition: top 0.1s ease-in, background 0.5s linear;
+    transition: top 0.1s ease-in, background 0.5s linear; }
+
 .site-header .disclaimer {
   background-color: #003366;
   padding: 10px 40px;

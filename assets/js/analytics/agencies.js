@@ -25,7 +25,17 @@ $(document).ready(function () {
       order: [[1, "desc"]],
 
       columnDefs: [
-        {render: Utils.progressBar, targets: 2}
+        {
+          targets: 0,
+          cellType: "td",
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        },
+        {
+          render: Utils.progressBar, 
+          targets: 2,
+        }
       ],
 
       "oLanguage": {
