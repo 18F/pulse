@@ -6,7 +6,7 @@ $(function(){
   });
 
   // if a datatable is searched, sync it to the URL hash
-  $("table").on('search.dt', function(e, settings) {
+  $('table').on('search.dt', function(e, settings) {
     var query = $("input[type=search]").val();
     if (query)
       location.hash = QueryString.stringify({q: query});
@@ -15,4 +15,5 @@ $(function(){
     // else
     //   location.hash = '';
   });
+
 });

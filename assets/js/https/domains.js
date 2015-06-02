@@ -52,6 +52,8 @@ $(document).ready(function () {
     var grade = display(names.grade)(data, type);
     if (type == "sort")
       return grade;
+    else if (grade == "")
+      return ""
     else
       return "" +
         "<a href=\"" + labsUrlFor(row['Domain']) + "\" target=\"blank\">" +
@@ -200,6 +202,16 @@ $(document).ready(function () {
         {
           data: "TLS Issues",
           render: tlsDetails
+        }
+      ],
+
+      columnDefs: [
+        {
+          targets: 0,
+          cellType: "td",
+          createdCell: function (td) {
+            td.scope = "row";
+          }
         }
       ],
 

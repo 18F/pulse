@@ -65,6 +65,25 @@ a {
   @include outer-container;
 }
 
+a#skipnav {
+    padding: 10px 15px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: $medium-blue;
+    background: transparent;
+    @include transition(top 1s ease-out, background 1s linear);
+    z-index: 100;
+    &:focus {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: white;
+      outline: 0;  
+      @include transition(top .1s ease-in, background .5s linear);
+    }
+}
+
 // _includes/header.html
 /////////////////////////////////////////
 
@@ -388,6 +407,24 @@ a {
   }
 }
 
+// pages/404.html
+/////////////////////////////////////////
+#pagenotfound {
+  #main-content {
+    padding: 40px;
+    text-align: center;
+    color: white; 
+    margin: 0 auto;
+    h2 { 
+      font-size: 10em;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+}
+
 // dataTables
 /////////////////////////////////////////
 
@@ -467,17 +504,16 @@ a {
 
     th, td {
       border-bottom: 2px solid #EEE !important;
-      padding: 8px 0 8px 20px !important;
+      padding: 8px 0 8px 40px;
     }
 
-    /* Domain column, to accommodate for More button. */
-    td:first-child {
-      padding-left: 40px !important;
+    td:first {
+      padding: 8px 0 8px 30px !important;
     }
 
     thead {
       .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
-        background-position: center left;
+        background-position: 20px center;
       }
     }
 
@@ -602,4 +638,6 @@ a {
     }
   }
 }
+
+
 

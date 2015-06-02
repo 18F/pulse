@@ -231,6 +231,27 @@ a {
     display: table;
     clear: both; }
 
+a#skipnav {
+  padding: 10px 15px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: #0059b3;
+  background: transparent;
+  -webkit-transition: top 1s ease-out, background 1s linear;
+  -moz-transition: top 1s ease-out, background 1s linear;
+  transition: top 1s ease-out, background 1s linear;
+  z-index: 100; }
+  a#skipnav:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: white;
+    outline: 0;
+    -webkit-transition: top 0.1s ease-in, background 0.5s linear;
+    -moz-transition: top 0.1s ease-in, background 0.5s linear;
+    transition: top 0.1s ease-in, background 0.5s linear; }
+
 .site-header .disclaimer {
   background-color: #003366;
   padding: 10px 40px;
@@ -329,7 +350,8 @@ a {
   background: #fff;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999; }
+  z-index: 999999; 
+  display:none;}
   .site-header #menu-content a {
     color: #4A4A4A; }
   .site-header #menu-content ul {
@@ -341,7 +363,8 @@ a {
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-    transform: translateX(0); }
+    transform: translateX(0); 
+    display:block;}
 .site-header .overlay {
   position: fixed;
   top: 0;
@@ -524,6 +547,17 @@ a {
       .guide article ul li, .guide article p li {
         padding-bottom: 15px; }
 
+#pagenotfound #main-content {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  margin: 0 auto; }
+  #pagenotfound #main-content h2 {
+    font-size: 10em;
+    margin-bottom: 8px; }
+  #pagenotfound #main-content p {
+    font-size: 2em; }
+
 .dataTables_wrapper {
   padding: 80px 0 40px; }
   .dataTables_wrapper .dataTables_length {
@@ -574,17 +608,16 @@ a {
         width: 200px;
         margin-left: 10px; } }
   .dataTables_wrapper table.dataTable {
-    padding: 20px 0;
-    /* Domain column, to accommodate for More button. */ }
+    padding: 20px 0; }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
       border-bottom: 2px solid #EEE !important;
-      padding: 8px 0 8px 20px !important; }
-    .dataTables_wrapper table.dataTable td:first-child {
-      padding-left: 40px !important; }
+      padding: 8px 0 8px 40px; }
+    .dataTables_wrapper table.dataTable td:first {
+      padding: 8px 0 8px 30px !important; }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
-      background-position: center left; }
+      background-position: 20px center; }
     .dataTables_wrapper table.dataTable.no-footer {
       border: none; }
     .dataTables_wrapper table.dataTable.domain td.odd:first-child,
