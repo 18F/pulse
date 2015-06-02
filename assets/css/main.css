@@ -350,7 +350,8 @@ a#skipnav {
   background: #fff;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999; }
+  z-index: 999999; 
+  display:none;}
   .site-header #menu-content a {
     color: #4A4A4A; }
   .site-header #menu-content ul {
@@ -362,7 +363,8 @@ a#skipnav {
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-    transform: translateX(0); }
+    transform: translateX(0); 
+    display:block;}
 .site-header .overlay {
   position: fixed;
   top: 0;
