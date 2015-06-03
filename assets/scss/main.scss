@@ -576,7 +576,7 @@ a#skipnav {
     &.agency {
 
       td {
-        padding: 15px 0 !important;
+        padding: 15px 0 15px 40px !important;
 
         @include media($large) {
           padding-left: 32px !important;
