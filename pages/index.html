@@ -3,25 +3,26 @@ layout: default
 id: home
 permalink: /
 ---
-<div class="hero">
-	<h2>{{ site.name }}</h2>
-	<h3>{{ site.description }}</h3>
-</div>
-
-<!-- POSSIBLE TODO: Modularize the code so that we have one donut chart file to rule them all. Vars can be passed in to change the values represented. -->
-<div id="results">
-  <div class="https">
-  	<div class="https_chart"
-      data-width="287"
-    ></div>
-  	{% include https/donut.html %}
-    <a href="/https/domains/" class="button">View HTTPS Results</a>
+<div class="wrapper">
+  <div class="hero">
+  	<h2>{{ site.name }}</h2>
+  	<h3>{{ site.description }}</h3>
   </div>
-  <div class="dap">
-  	<div class="dap_chart"
-      data-width="287"
-    ></div>
-  	{% include analytics/donut.html %}
-    <a href="/analytics/domains/" class="button">View Analytics Results</a>
+
+  <div id="results">
+    <div class="https">
+    	<div class="https_chart"
+        data-width="287"
+      ></div>
+    	{% include https/donut.html %}
+      <a href="/https/domains/" class="button">View HTTPS Results</a>
+    </div>
+    <div class="dap">
+    	<div class="dap_chart"
+        data-width="287"
+      ></div>
+    	{% include analytics/donut.html %}
+      <a href="/analytics/domains/" class="button">View Analytics Results</a>
+    </div>
   </div>
 </div>
