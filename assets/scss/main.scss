@@ -235,8 +235,14 @@ a#skipnav {
     .https, .dap {
       @include span-columns(4 of 8);
       @media (max-width: 970px) {
-        @include span-columns(8 of 8);
+        width: 100%
       }
+  
+      @include display(flex); 
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+
       margin-bottom: 40px;
       text-align: center;
 
@@ -244,11 +250,6 @@ a#skipnav {
         font-size: 5em;
       }
 
-      .button {
-        @include media($large){
-          margin-left: 25px;
-        }
-      }
     }
   }
 }

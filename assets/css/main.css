@@ -137,7 +137,12 @@ th {
 
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
+  padding: 0.75em 0; 
+}
+td:focus {
+  background-color: #EEEEEE;
+  outline: none;
+}
 
 tr,
 td,
@@ -350,8 +355,7 @@ a#skipnav {
   background: #fff;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999; 
-  display:none;}
+  z-index: 999999; }
   .site-header #menu-content a {
     color: #4A4A4A; }
   .site-header #menu-content ul {
@@ -363,8 +367,7 @@ a#skipnav {
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-    transform: translateX(0); 
-    display:block;}
+    transform: translateX(0); }
 .site-header .overlay {
   position: fixed;
   top: 0;
@@ -413,23 +416,47 @@ a#skipnav {
     display: block;
     margin-right: 3.57866%;
     width: 48.21067%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
     margin-bottom: 40px;
     text-align: center; }
     #home #results .https:last-child, #home #results .dap:last-child {
       margin-right: 0; }
     @media (max-width: 970px) {
       #home #results .https, #home #results .dap {
-        float: left;
-        display: block;
-        margin-right: 3.57866%;
-        width: 100%; }
-        #home #results .https:last-child, #home #results .dap:last-child {
-          margin-right: 0; } }
+        width: 100%; } }
     #home #results .https .total-value, #home #results .dap .total-value {
       font-size: 5em; }
-    @media screen and (max-width: 1024px) {
-      #home #results .https .button, #home #results .dap .button {
-        margin-left: 25px; } }
 
 #analytics #content > header, #https #content > header, #about #content > header {
   max-width: 68em;
@@ -552,25 +579,25 @@ a#skipnav {
   text-align: center;
   color: white;
   margin: 0 auto; }
-  #pagenotfound #main-content h2 {
-    font-size: 10em;
-    margin-bottom: 8px; }
-  #pagenotfound #main-content p {
-    font-size: 2em; }
+#pagenotfound #main-content h2 {
+  font-size: 10em;
+  margin-bottom: 8px; }
+#pagenotfound #main-content p {
+  font-size: 2em; }
 
 .dataTables_wrapper {
   padding: 80px 0 40px; }
-  .dataTables_wrapper .dataTables_length {
-    font-size: 1.1em;
-    font-weight: 200;
-    margin-top: 10px;
-    padding-left: 10px; }
-    .dataTables_wrapper .dataTables_length a {
-      text-decoration: underline;
-      cursor: pointer; }
-    .dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
-      text-decoration: none;
-      color: black !important; }
+.dataTables_wrapper .dataTables_length {
+  font-size: 1.1em;
+  font-weight: 200;
+  margin-top: 10px;
+  padding-left: 10px; }
+.dataTables_wrapper .dataTables_length a {
+  text-decoration: underline;
+  cursor: pointer; }
+.dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
+  text-decoration: none;
+  color: black !important; }
     .dataTables_wrapper .dataTables_length select {
       border: none;
       display: inline-block;
@@ -693,5 +720,8 @@ a#skipnav {
       color: white !important; }
     .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:focus {
       background: transparent !important; }
+
+ .dataTables_wrapper table.dataTable a {
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
