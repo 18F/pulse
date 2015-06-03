@@ -137,12 +137,7 @@ th {
 
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; 
-}
-td:focus {
-  background-color: #EEEEEE;
-  outline: none;
-}
+  padding: 0.75em 0; }
 
 tr,
 td,
@@ -215,6 +210,12 @@ a {
   a:hover, a:focus {
     color: white;
     text-decoration: underline; }
+
+footer {
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #003366; }
 
 .button {
   padding: 10px;
@@ -579,25 +580,25 @@ a#skipnav {
   text-align: center;
   color: white;
   margin: 0 auto; }
-#pagenotfound #main-content h2 {
-  font-size: 10em;
-  margin-bottom: 8px; }
-#pagenotfound #main-content p {
-  font-size: 2em; }
+  #pagenotfound #main-content h2 {
+    font-size: 10em;
+    margin-bottom: 8px; }
+  #pagenotfound #main-content p {
+    font-size: 2em; }
 
 .dataTables_wrapper {
   padding: 80px 0 40px; }
-.dataTables_wrapper .dataTables_length {
-  font-size: 1.1em;
-  font-weight: 200;
-  margin-top: 10px;
-  padding-left: 10px; }
-.dataTables_wrapper .dataTables_length a {
-  text-decoration: underline;
-  cursor: pointer; }
-.dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
-  text-decoration: none;
-  color: black !important; }
+  .dataTables_wrapper .dataTables_length {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px; }
+    .dataTables_wrapper .dataTables_length a {
+      text-decoration: underline;
+      cursor: pointer; }
+    .dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
+      text-decoration: none;
+      color: black !important; }
     .dataTables_wrapper .dataTables_length select {
       border: none;
       display: inline-block;
@@ -720,8 +721,5 @@ a#skipnav {
       color: white !important; }
     .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:focus {
       background: transparent !important; }
-
- .dataTables_wrapper table.dataTable a {
-      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
