@@ -667,7 +667,7 @@ a#skipnav {
       .dataTables_wrapper table.dataTable.https.domain tbody tr:hover + .child {
         background-color: #EEE; }
     .dataTables_wrapper table.dataTable.agency td {
-      padding: 15px 0 !important; }
+      padding: 15px 0 15px 40px !important; }
       @media screen and (max-width: 1024px) {
         .dataTables_wrapper table.dataTable.agency td {
           padding-left: 32px !important; }
