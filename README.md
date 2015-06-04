@@ -25,7 +25,7 @@ make watch
 
 ## Ideas for later versions
 
-This project is an initial pass - there is mmuch more information that can be represented in dashboards to great effect.  Below are some of the further ideas for both for future work on this project.  Feel free to add your ideas here, too.
+This project is an initial pass - there is much more information that can be represented in dashboards to great effect.  Below are some of the further ideas for both for future work on this project.  Feel free to add your ideas here, too.
 
 * For the HTTPS Dashboard:
   * Even more HTTPS detail, e.g. SHA-1, forward secrecy
