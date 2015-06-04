@@ -47,6 +47,13 @@ a {
   }
 }
 
+footer {
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  border-top: 1px solid $dark-blue;
+}
+
 .button {
   padding: 10px;
   text-align: center;
@@ -104,7 +111,7 @@ a#skipnav {
         margin: 0;
       }
     }
-    .alpha {
+    .stage {
       float: right;
       @include media($large) {
         float: none;
@@ -235,8 +242,14 @@ a#skipnav {
     .https, .dap {
       @include span-columns(4 of 8);
       @media (max-width: 970px) {
-        @include span-columns(8 of 8);
+        width: 100%
       }
+  
+      @include display(flex); 
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+
       margin-bottom: 40px;
       text-align: center;
 
@@ -244,11 +257,6 @@ a#skipnav {
         font-size: 5em;
       }
 
-      .button {
-        @include media($large){
-          margin-left: 25px;
-        }
-      }
     }
   }
 }
@@ -568,7 +576,7 @@ a#skipnav {
     &.agency {
 
       td {
-        padding: 15px 0 !important;
+        padding: 15px 0 15px 40px !important;
 
         @include media($large) {
           padding-left: 32px !important;

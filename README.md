@@ -46,6 +46,10 @@ This project is an initial pass - there is mmuch more information that can be re
 * Lighter or fun things - like how many domains start with each letter of the alphabet, what the last 10 that came out were, etc.  
 * 2FA or Connect.gov ?  - Not sure how it would work but note Section 3's requirement [in this EO](https://www.whitehouse.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions)
 * Anything from/with itdashboard.gov
+* [open source](https://github.com/18F/pulse/issues/204)
+* [Look at what Ben tracked](http://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/)
+* IPv6
+* DNSSEC
 
 
 ### Public domain
