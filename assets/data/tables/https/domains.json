@@ -1,6 +1,21 @@
 {
   "data": [
     {
+      "Agency": "General Services Administration",
+      "Canonical": "http://www.18f.gov",
+      "Domain": "18f.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 4,
+      "HSTS max-age": 31536000,
+      "RC4": false,
+      "SSL Labs Grade": 6,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 1,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    },
+    {
       "Agency": "Securities and Exchange Commission",
       "Canonical": "http://404.gov",
       "Domain": "404.gov",
