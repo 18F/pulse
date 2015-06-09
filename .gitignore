@@ -5,6 +5,7 @@ logs
 /_site
 /.sass-cache
 /data/*.csv
+/data/*.json
 
 # Mac specific
 .DS_Store
