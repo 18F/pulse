@@ -4,7 +4,7 @@ css ?= assets/css/main.css
 all: styles
 
 run:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --watch
 
 styles:
 	bundle exec sass $(scss):$(css)
