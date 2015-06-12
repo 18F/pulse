@@ -21,6 +21,10 @@
 # * tables/analytics/agencies.json
 # * tables/analytics/domains.json
 #
+# = table data
+# * tables/https/domains.csv
+# * tables/analytics/domains.csv
+#
 ###
 
 import csv
@@ -57,13 +61,7 @@ LABELS = {
 CSV_HTTPS_DOMAINS = [
   'domain', 'agency', 'https',  'https_forced', 'hsts', 'grade'
 ]
-CSV_HTTPS_AGENCIES = [
-  'domain', 'agency', 'https', 'https_forced', 'hsts', 'grade_agencies'
-]
 CSV_DAP_DOMAINS = [
-  'domain', 'agency', 'dap'
-]
-CSV_DAP_AGENCIES = [
   'domain', 'agency', 'dap'
 ]
 
@@ -535,13 +533,36 @@ def save_tables():
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
-  csv_rows = [CSV_HTTPS_DOMAINS] # headers
+  csv_https_rows = [CSV_HTTPS_DOMAINS] # headers
   for domain in https_domains:
     row = []
     for label in CSV_HTTPS_DOMAINS:
-      row.append(domain[LABELS[label]])
-    csv_rows.append(row)
-  save_csv(csv_rows, TABLE_DATA, "https/domains.csv")
+      cell = str(domain[LABELS[label]])
+
+      # If we have a display mapping of e.g. 1 -> "Yes", run it.
+      # This is synced manually with the JS mapping, which is bad.
+      if CSV_HTTPS_MAPPING.get(label):
+        cell = CSV_HTTPS_MAPPING[label][cell]
+
+      row.append(cell)
+    csv_https_rows.append(row)
+  save_csv(csv_https_rows, TABLE_DATA, "https/domains.csv")
+
+  csv_dap_rows = [CSV_DAP_DOMAINS]
+  for domain in analytics_domains:
+    row = []
+    for label in CSV_DAP_DOMAINS:
+      cell = str(domain[LABELS[label]])
+
+      # If we have a display mapping of e.g. 1 -> "Yes", run it.
+      # This is synced manually with the JS mapping, which is bad.
+      if CSV_DAP_MAPPING.get(label):
+        cell = CSV_DAP_MAPPING[label][cell]
+
+      row.append(cell)
+
+    csv_dap_rows.append(row)
+  save_csv(csv_dap_rows, TABLE_DATA, "analytics/domains.csv")
 
   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
   https_agencies_data = json_for({'data': https_agencies})
@@ -612,6 +633,60 @@ def write(content, destination):
     f = open(destination, 'w', encoding='utf-8')
     f.write(content)
     f.close()
+
+### Stupid mapping sync.
+
+"""
+I don't like this at all, but to keep the presentation synced
+between the front-end table, and the CSV we generate, this is
+getting replicated to the JavaScript files in this repository,
+and needs to be manually synced.
+
+The refactor that takes away from DataTables should also prioritize
+a cleaner way to DRY (don't repeat yourself) this mess up.
+"""
+CSV_HTTPS_MAPPING = {
+
+  'https': {
+    "-1": "No",
+    '0': "No",
+    '1': "Yes*", # (with certificate chain issues)
+    '2': "Yes"
+  },
+
+  'https_forced': {
+    '0': "", # N/A (no HTTPS)
+    '1': "No", # Present, not default
+    '2': "Yes", # Defaults eventually to HTTPS
+    '3': "Yes" # Defaults eventually + redirects immediately
+  },
+
+  'hsts': {
+    "-1": "", # N/A
+    '0': "No", # No
+    '1': "Yes", # HSTS on only that domain
+    '2': "Yes", # HSTS on subdomains
+    '3': "Yes, and preload-ready" # HSTS on subdomains + preload
+  },
+
+  'grade': {
+    "-1": "",
+    '0': "F",
+    '1': "T",
+    '2': "C",
+    '3': "B",
+    '4': "A-",
+    '5': "A",
+    '6': "A+"
+  }
+}
+
+CSV_DAP_MAPPING = {
+  'dap': {
+    '0': "No",
+    '1': "Yes"
+  }
+}
 
 ### Run when executed.
 
