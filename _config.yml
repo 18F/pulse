@@ -37,6 +37,9 @@ exclude:
 - todo.txt
 - Gemfile
 - Gemfile.lock
+- deploy
+- data
+- Staticfile
 - Makefile
 - vendor
 - lib
