@@ -242,7 +242,9 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'Lftrip'
+      csv: "/assets/data/tables/https/https-domains.csv",
+
+      dom: 'LCftrip'
 
     });
 

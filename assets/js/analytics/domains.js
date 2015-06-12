@@ -72,7 +72,9 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'Lftrip'
+      csv: "/assets/data/tables/analytics/analytics-domains.csv",
+
+      dom: 'LCftrip'
 
     });
   };
