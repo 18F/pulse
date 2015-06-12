@@ -58,8 +58,15 @@ LABELS = {
 }
 
 # rows to put in public CSV export
+CSV_HTTPS_HEADERS = [
+  'Domain', 'Agency', 'Uses HTTPS', 'Enforces HTTPS', 'Strict Transport Security (HSTS)', 'SSL Labs Grade'
+]
 CSV_HTTPS_DOMAINS = [
   'domain', 'agency', 'https',  'https_forced', 'hsts', 'grade'
+]
+
+CSV_DAP_HEADERS = [
+  'Domain', 'Agency', 'Participates in DAP?'
 ]
 CSV_DAP_DOMAINS = [
   'domain', 'agency', 'dap'
@@ -533,7 +540,7 @@ def save_tables():
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
-  csv_https_rows = [CSV_HTTPS_DOMAINS] # headers
+  csv_https_rows = [CSV_HTTPS_HEADERS] # headers
   for domain in https_domains:
     row = []
     for label in CSV_HTTPS_DOMAINS:
@@ -546,9 +553,9 @@ def save_tables():
 
       row.append(cell)
     csv_https_rows.append(row)
-  save_csv(csv_https_rows, TABLE_DATA, "https/domains.csv")
+  save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
 
-  csv_dap_rows = [CSV_DAP_DOMAINS]
+  csv_dap_rows = [CSV_DAP_HEADERS]
   for domain in analytics_domains:
     row = []
     for label in CSV_DAP_DOMAINS:
@@ -562,7 +569,7 @@ def save_tables():
       row.append(cell)
 
     csv_dap_rows.append(row)
-  save_csv(csv_dap_rows, TABLE_DATA, "analytics/domains.csv")
+  save_csv(csv_dap_rows, TABLE_DATA, "analytics/analytics-domains.csv")
 
   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
   https_agencies_data = json_for({'data': https_agencies})

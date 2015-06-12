@@ -1,0 +1,1195 @@
+Domain,Agency,Uses HTTPS,Enforces HTTPS,Strict Transport Security (HSTS),SSL Labs Grade
+18f.gov,General Services Administration,Yes,Yes,Yes,A+
+404.gov,Securities and Exchange Commission,No,,,
+9-11commission.gov,National Archives and Records Administration,No,,,
+911.gov,Department of Transportation,No,,,
+911commission.gov,National Archives and Records Administration,No,,,
+aapi.gov,Department of Education,No,,,
+abandonedmines.gov,Department of the Interior,Yes,No,No,A
+abilityone.gov,Comm for People Who Are Blind/Severly Disabled,No,,,
+abmc.gov,American Battle Monuments Commission,Yes*,No,No,B
+access-board.gov,U. S. Access Board,Yes,No,No,F
+acf.gov,Department of Health And Human Services,No,,,
+achp.gov,Advisory Council on Historic Preservation,No,,,
+acl.gov,Department of Health And Human Services,No,,,
+acquisition.gov,General Services Administration,Yes*,Yes,No,B
+acus.gov,Administrative Conference of the United States,Yes,Yes,"Yes, and preload-ready",A-
+acwi.gov,Department of the Interior,No,,,
+ada.gov,Department of Justice,No,,,
+adf.gov,African Development Foundation,No,,,
+adlnet.gov,Department of Defense,No,,,
+admongo.gov,Federal Trade Commission,No,,,
+adr.gov,Department of Justice,No,,,
+advantage.gov,General Services Administration,No,,,
+afadvantage.gov,General Services Administration,Yes,Yes,No,C
+aff.gov,Department of Agriculture,Yes,No,No,B
+afrh.gov,Armed Forces Retirement Home,Yes*,Yes,No,C
+africanamericanhistorymonth.gov,Library of Congress,No,,,
+afterschool.gov,Department of Health And Human Services,No,,,
+agingstats.gov,Department of Health And Human Services,No,,,
+ahcpr.gov,Department of Health And Human Services,No,,,
+ahrq.gov,Department of Health And Human Services,No,,,
+aids.gov,Department of Health And Human Services,Yes,Yes,"Yes, and preload-ready",A+
+airnow.gov,Environmental Protection Agency,Yes*,No,No,
+alaskacenters.gov,Department of the Interior,No,,,
+alertaenlinea.gov,Federal Trade Commission,Yes,No,No,C
+altusandc.gov,Department of Defense,No,,,
+alzheimers.gov,Department of Health And Human Services,No,,,
+ama.gov,Department of the Treasury,Yes,Yes,No,C
+amberalert.gov,Department of Justice,No,,,
+america.gov,Department of State,Yes*,No,No,
+americanjobcenter.gov,General Services Administration,No,,,
+americanlatinomuseum.gov,Department of the Interior,No,,,
+americanmemory.gov,Library of Congress,No,,,
+americasgreatoutdoors.gov,Department of the Interior,No,,,
+americasheroesatwork.gov,Department of Labor,No,,,
+americaslibrary.gov,Library of Congress,No,,,
+americasstory.gov,Library of Congress,No,,,
+americastory.gov,Library of Congress,No,,,
+americathebeautifulquarters.gov,Department of the Treasury,No,,,
+americore.gov,Corporation for National & Community Service,No,,,
+americorp.gov,Corporation for National & Community Service,No,,,
+americorps.gov,Corporation for National & Community Service,No,,,
+americorpsconnect.gov,Corporation for National & Community Service,No,,,
+americorpsweek.gov,Corporation for National & Community Service,No,,,
+ameslab.gov,Department of Energy,Yes,Yes,No,B
+amtrakoig.gov,AMTRAK,Yes,Yes,No,C
+anl.gov,Department of Energy,No,,,
+annualcreditreport.gov,Federal Trade Commission,No,,,
+anstaskforce.gov,Department of the Interior,Yes*,No,No,
+aoa.gov,Department of Health And Human Services,No,,,
+aoc.gov,The Legislative Branch (Congress),No,,,
+ap.gov,Department of Commerce,No,,,
+applicationmanager.gov,Office of Personnel Management,Yes,Yes,No,B
+apps.gov,General Services Administration,Yes*,No,No,
+arc.gov,Appalachian Regional Commission,No,,,
+archives.gov,National Archives and Records Administration,No,,,
+arctic.gov,National Science Foundation,Yes*,No,No,
+arcticgas.gov,National Science Foundation,Yes*,No,No,
+arm.gov,Department of Energy,Yes,No,No,A
+ars-grin.gov,Department of Agriculture,No,,,
+arts.gov,National Endowment for the Arts,Yes*,No,No,
+asap.gov,Department of the Treasury,Yes,Yes,No,C
+asc.gov,Appraisal Subcommittee,Yes,Yes,No,C
+asianpacificheritage.gov,Library of Congress,No,,,
+askkaren.gov,Department of Agriculture,No,,,
+astrongmiddleclass.gov,Executive Office of the President,Yes,No,No,A
+atf.gov,Department of Justice,Yes,Yes,Yes,A+
+atvsafety.gov,Consumer Product Safety Commission,No,,,
+autocommunities.gov,Department of Labor,No,,,
+aviationweather.gov,Department of Commerce,Yes,No,No,C
+ayudaconmibanco.gov,Department of the Treasury,No,,,
+bam.gov,Department of Health And Human Services,No,,,
+bankanswers.gov,Department of the Treasury,No,,,
+bankcustomer.gov,Department of the Treasury,No,,,
+bankcustomerassistance.gov,Department of the Treasury,No,,,
+bankhelp.gov,Department of the Treasury,No,,,
+banknet.gov,Department of the Treasury,No,,,
+bankruptcy.gov,The Judicial Branch (Courts),No,,,
+bbg.gov,International Broadcasting Bureau,No,,,
+bcfp.gov,Consumer Financial Protection Bureau,No,,,
+bea.gov,Department of Commerce,Yes,No,No,A-
+befoodsafe.gov,Department of Agriculture,No,,,
+benefits.gov,Department of Labor,No,,,
+bep.gov,Department of the Treasury,No,,,
+bestbonesforever.gov,Department of Health And Human Services,No,,,
+betobaccofree.gov,Department of Health And Human Services,No,,,
+bfelob.gov,Department of Education,Yes,Yes,"Yes, and preload-ready",
+bfem.gov,Department of the Treasury,Yes,Yes,No,C
+bia.gov,Department of the Interior,No,,,
+bioeco.gov,Department of the Interior,No,,,
+bioethics.gov,Department of Health And Human Services,Yes*,No,No,T
+biomassboard.gov,Department of Energy,No,,,
+biometriccoe.gov,Department of Justice,No,,,
+biometrics.gov,Department of Homeland Security,No,,,
+biopreferred.gov,Department of Agriculture,Yes*,No,No,T
+bja.gov,Department of Justice,Yes,Yes,No,F
+bjs.gov,Department of Justice,No,,,
+bldrdoc.gov,Department of Commerce,No,,,
+blm.gov,Department of the Interior,No,,,
+blmntl.gov,Department of the Interior,No,,,
+bls.gov,Department of Labor,No,,,
+bnl.gov,Department of Energy,No,,,
+boem.gov,Department of the Interior,No,,,
+boemre.gov,Department of the Interior,No,,,
+bondpro.gov,Department of the Treasury,No,,,
+bop.gov,Department of Justice,No,,,
+bpa.gov,Department of Energy,Yes,No,No,C
+brac.gov,Department of Defense,No,,,
+broadband.gov,Federal Communications Commission,No,,,
+broadbandmap.gov,Federal Communications Commission,Yes,No,No,B
+browsetopics.gov,Government Printing Office,No,,,
+bsee.gov,Department of the Interior,Yes,No,No,B
+bts.gov,Department of Transportation,No,,,
+budget.gov,Executive Office of the President,Yes,No,No,A
+buildingamerica.gov,Department of Energy,No,,,
+business.gov,Small Business Administration,No,,,
+businessusa.gov,General Services Administration,Yes,No,No,B
+buyaccessible.gov,General Services Administration,No,,,
+buyusa.gov,Department of Commerce,No,,,
+c3.gov,Department of the Interior,No,,,
+cancer.gov,Department of Health And Human Services,No,,,
+cancernet.gov,Department of Health And Human Services,No,,,
+cao.gov,General Services Administration,Yes,Yes,"Yes, and preload-ready",
+cap.gov,Civil Air Patrol,No,,,
+capitol.gov,The Legislative Branch (Congress),Yes,No,No,C
+capitolflags.gov,The Legislative Branch (Congress),No,,,
+capitolhill.gov,Library of Congress,No,,,
+capnhq.gov,Civil Air Patrol,Yes,No,No,C
+casl.gov,Department of Energy,No,,,
+cbca.gov,General Services Administration,No,,,
+cbo.gov,The Legislative Branch (Congress),Yes,No,No,B
+cbonews.gov,The Legislative Branch (Congress),No,,,
+cbp.gov,Department of Commerce,No,,,
+ccac.gov,Department of the Treasury,No,,,
+ccr.gov,General Services Administration,No,,,
+cdc.gov,Department of Health And Human Services,No,,,
+cdco.gov,Department of Veterans Affairs,No,,,
+cdfifund.gov,Department of the Treasury,Yes*,No,No,T
+cebaf.gov,Department of Energy,No,,,
+cecc.gov,The Legislative Branch (Congress),No,,,
+cendi.gov,Department of Energy,No,,,
+census.gov,Department of Commerce,No,,,
+cfa.gov,U.S. Commission of Fine Arts,Yes,No,No,C
+cfda.gov,General Services Administration,Yes,Yes,No,C
+cflhd.gov,Department of Transportation,Yes*,No,No,
+cfo.gov,General Services Administration,Yes,Yes,"Yes, and preload-ready",
+cfpa.gov,Consumer Financial Protection Bureau,No,,,
+cfpb.gov,Consumer Financial Protection Bureau,No,,,
+cftc.gov,Commodity Futures Trading Commission,No,,,
+challenge.gov,General Services Administration,Yes,No,No,C
+challenges.gov,General Services Administration,No,,,
+change.gov,Executive Office of the President,No,,,
+chcoc.gov,Office of Personnel Management,Yes,No,No,A-
+chemsafety.gov,U.S. Chemical Safety and Hazard Investigation Board,No,,,
+childreninadversity.gov,U.S. Agency for International Development,No,,,
+childwelfare.gov,Department of Health And Human Services,Yes,Yes,No,A
+chinacommission.gov,The Legislative Branch (Congress),Yes*,No,No,
+choosemyplate.gov,Department of Agriculture,Yes*,No,No,
+christophercolumbusfoundation.gov,Christopher Columbus Fellowship Foundation,Yes,No,No,C
+cia.gov,Central Intelligence Agency,Yes,Yes,No,A
+cio.gov,General Services Administration,Yes,Yes,"Yes, and preload-ready",
+citizencorps.gov,Department of Homeland Security,Yes,No,No,C
+citizens.gov,The Legislative Branch (Congress),No,,,
+civilianresponsecorps.gov,Department of State,No,,,
+civilrightsusa.gov,Department of Commerce,Yes*,No,No,
+climate.gov,Department of Commerce,Yes,No,No,A
+clinicaltrial.gov,Department of Health And Human Services,No,,,
+clinicaltrials.gov,Department of Health And Human Services,Yes,Yes,No,B
+clintonlibrary.gov,National Archives and Records Administration,No,,,
+clubdrugs.gov,Department of Health And Human Services,No,,,
+cms.gov,Department of Health And Human Services,No,,,
+cmts.gov,Department of Defense,No,,,
+cncs.gov,Corporation for National & Community Service,No,,,
+cncsoig.gov,Corporation for National & Community Service,No,,,
+cns.gov,Corporation for National & Community Service,No,,,
+cnss.gov,Department of Defense,Yes*,Yes,No,T
+coast2050.gov,Department of the Interior,No,,,
+coastalamerica.gov,Department of Agriculture,No,,,
+college.gov,Department of Education,No,,,
+collegedrinkingprevention.gov,Department of Health And Human Services,No,,,
+collegenavigator.gov,Department of Education,No,,,
+commerce.gov,Department of Commerce,No,,,
+complaintreferralexpress.gov,Department of the Treasury,Yes,Yes,No,F
+compliance.gov,Congressional Office of Compliance,No,,,
+comptrollerofthecurrency.gov,Department of the Treasury,No,,,
+computers4learning.gov,General Services Administration,No,,,
+computersforlearning.gov,General Services Administration,Yes,No,No,B
+congress.gov,Library of Congress,Yes,Yes,No,C
+congressionaldirectory.gov,Government Printing Office,No,,,
+congressionalrecord.gov,Government Printing Office,No,,,
+connect.gov,General Services Administration,Yes,No,No,C
+consumer.gov,Federal Trade Commission,Yes,No,No,C
+consumeraction.gov,General Services Administration,No,,,
+consumerbureau.gov,Consumer Financial Protection Bureau,No,,,
+consumerfinance.gov,Consumer Financial Protection Bureau,No,,,
+consumerfinancial.gov,Consumer Financial Protection Bureau,No,,,
+consumerfinancialbureau.gov,Consumer Financial Protection Bureau,No,,,
+consumerfinancialprotectionbureau.gov,Consumer Financial Protection Bureau,No,,,
+consumerprotection.gov,Consumer Financial Protection Bureau,No,,,
+consumerprotectionbureau.gov,Consumer Financial Protection Bureau,No,,,
+consumersentinel.gov,Federal Trade Commission,Yes,Yes,"Yes, and preload-ready",A-
+consumidor.gov,Federal Trade Commission,Yes,No,No,C
+continentalshelf.gov,Department of State,No,,,
+contractdirectory.gov,General Services Administration,Yes,Yes,No,F
+coop-uspto.gov,Department of Commerce,No,,,
+copyright.gov,Library of Congress,No,,,
+coralreef.gov,Department of the Interior,No,,,
+cosponsor.gov,The Legislative Branch (Congress),No,,,
+counterwmd.gov,Director of National Intelligence,No,,,
+cpars.gov,General Services Administration,Yes*,Yes,No,C
+cpnireporting.gov,Department of Homeland Security,Yes*,Yes,No,T
+cpsc.gov,Consumer Product Safety Commission,Yes,No,No,B
+crimesolutions.gov,Department of Justice,No,,,
+crimevictims.gov,Department of Justice,No,,,
+crt2014-2024review.gov,Department of Energy,No,,,
+csb.gov,U.S. Chemical Safety and Hazard Investigation Board,No,,,
+csce.gov,The Legislative Branch (Congress),No,,,
+csosa.fed.us,Court Services and Offender Supervision,No,,,
+csosa.gov,Court Services and Offender Supervision,No,,,
+cttso.gov,Department of Defense,No,,,
+cuidadodesalud.gov,Department of Health And Human Services,Yes,Yes,Yes,A+
+cupcao.gov,Department of the Interior,No,,,
+cwc.gov,Department of State,No,,,
+cybercrime.gov,Department of Justice,No,,,
+data.gov,General Services Administration,Yes,No,No,C
+dcsc.gov,The Judicial Branch (Courts),No,,,
+dea.gov,Department of Justice,No,,,
+deadiversion.gov,Department of Justice,No,,,
+defense.gov,Department of Defense,No,,,
+democraticleader.gov,The Legislative Branch (Congress),No,,,
+democraticwhip.gov,The Legislative Branch (Congress),No,,,
+dems.gov,The Legislative Branch (Congress),No,,,
+denali.gov,Denali Commission,No,,,
+dfafacts.gov,U.S. Agency for International Development,Yes,No,No,F
+dhhs.gov,Department of Health And Human Services,No,,,
+dhs.gov,Department of Homeland Security,No,,,
+diabetescommittee.gov,Department of Health And Human Services,No,,,
+dietaryguidelines.gov,Department of Agriculture,No,,,
+digitalgov.gov,General Services Administration,Yes,No,No,C
+digitalliteracy.gov,Department of Commerce,No,,,
+digitalpreservation.gov,Library of Congress,No,,,
+digitalstewardship.gov,Library of Congress,No,,,
+digitizationguidelines.gov,Library of Congress,No,,,
+directoasucuenta.gov,Department of the Treasury,Yes,Yes,No,F
+disability.gov,Department of Labor,Yes,Yes,No,F
+disasterassistance.gov,Department of Homeland Security,No,,,
+disasterhousing.gov,Department of Housing And Urban Development,No,,,
+distracteddriving.gov,Department of Transportation,No,,,
+distraction.gov,Department of Transportation,No,,,
+dna.gov,Department of Justice,No,,,
+dnfsb.gov,Defense Nuclear Facilities Safety Board,No,,,
+dni.gov,Director of National Intelligence,No,,,
+dnsops.gov,Department of Commerce,No,,,
+doc.gov,Department of Commerce,No,,,
+docline.gov,Department of Health And Human Services,No,,,
+dod.gov,Department of Defense,No,,,
+doe.gov,Department of Energy,No,,,
+doi.gov,Department of the Interior,No,,,
+doioig.gov,Department of the Interior,Yes,No,No,F
+dol-esa.gov,Department of Labor,No,,,
+dol.gov,Department of Labor,Yes,No,No,C
+doleta.gov,Department of Labor,No,,,
+donotcall.gov,Federal Trade Commission,Yes,Yes,"Yes, and preload-ready",A-
+dontserveteens.gov,Federal Trade Commission,No,,,
+dot.gov,Department of Transportation,No,,,
+dotgov.gov,General Services Administration,Yes,Yes,No,B
+dotideahub.gov,Department of Transportation,Yes,Yes,No,B
+dottrafficrecords.gov,Department of Transportation,No,,,
+dottrcc.gov,Department of Transportation,No,,,
+dra.gov,Delta Regional Authority,No,,,
+drought.gov,Department of Commerce,Yes,No,No,A
+drugabuse.gov,Department of Health And Human Services,Yes,No,No,B
+drugfreeworkplace.gov,Department of Health And Human Services,No,,,
+drywallresponse.gov,Consumer Product Safety Commission,No,,,
+dsac.gov,Department of Justice,Yes,Yes,No,A
+dtv.gov,Federal Communications Commission,No,,,
+e-qip.gov,Office of Personnel Management,No,,,
+e3.gov,Department of Commerce,No,,,
+eac.gov,General Services Administration,No,,,
+earmarks.gov,Executive Office of the President,Yes,Yes,"Yes, and preload-ready",
+earthquake.gov,Department of the Interior,No,,,
+ecfr.gov,Government Printing Office,No,,,
+economicinclusion.gov,Federal Deposit Insurance Corporation,Yes,Yes,No,C
+econsumer.gov,Federal Trade Commission,No,,,
+ecopartnerships.gov,Department of State,No,,,
+ecpic.gov,General Services Administration,Yes,Yes,No,C
+ecr.gov,Morris K. Udall Foundation,Yes,No,No,C
+ed.gov,Department of Education,Yes,No,No,C
+eda.gov,Department of Commerce,No,,,
+edison.gov,Department of Health And Human Services,No,,,
+edpubs.gov,Department of Education,No,,,
+education.gov,Department of Education,No,,,
+educationjobsfund.gov,Recovery Accountability and Transparency Board,No,,,
+eeoc.gov,Equal Employment Opportunity Commission,No,,,
+eforms.gov,General Services Administration,No,,,
+eftps.gov,Department of the Treasury,Yes,Yes,No,C
+egov.gov,Executive Office of the President,Yes,No,No,A
+eia.gov,Department of Energy,No,,,
+eisenhowermemorial.gov,General Services Administration,No,,,
+eldercare.gov,Department of Health And Human Services,Yes,No,No,C
+employeeexpress.gov,Office of Personnel Management,Yes,Yes,No,C
+empowhr.gov,Department of Agriculture,Yes*,Yes,No,B
+ems.gov,Department of Transportation,No,,,
+endingthedocumentgame.gov,Department of Health And Human Services,No,,,
+energy.gov,Department of Energy,No,,,
+energycodes.gov,Department of Energy,Yes,Yes,No,B
+energyplus.gov,Department of Energy,No,,,
+energysaver.gov,Department of Energy,No,,,
+energysavers.gov,Department of Energy,No,,,
+energystar.gov,Environmental Protection Agency,Yes,No,No,C
+eop.gov,Executive Office of the President,Yes,No,No,A
+epa.gov,Environmental Protection Agency,No,,,
+epls.gov,General Services Administration,No,,,
+errp.gov,Department of Health And Human Services,No,,,
+esa.gov,Department of Commerce,Yes*,No,No,
+esc.gov,Department of Transportation,Yes,No,No,B
+espanol.gov,General Services Administration,No,,,
+espanolforlawenforcement.gov,Department of Justice,No,,,
+esrs.gov,General Services Administration,Yes,Yes,No,C
+eta-find.gov,Department of the Treasury,Yes,Yes,No,F
+ethics.gov,Executive Office of the President,Yes,No,No,A
+ethicsburg.gov,Department of the Treasury,No,,,
+evergladesrestoration.gov,Department of the Interior,No,,,
+execsec.gov,Department of Agriculture,No,,,
+exim.gov,Export/Import Bank of the U.S.,No,,,
+exploretsp.gov,Federal Retirement Thrift Investment Board,No,,,
+export.gov,Department of Commerce,No,,,
+eyenote.gov,Department of the Treasury,No,,,
+faa.gov,Department of Transportation,Yes,No,No,B
+faasafety.gov,Department of Transportation,No,,,
+faca.gov,General Services Administration,Yes,No,No,B
+facadatabase.gov,General Services Administration,No,,,
+fafsa.gov,Department of Education,Yes,No,No,B
+fai.gov,General Services Administration,No,,,
+fan.gov,Department of State,Yes,Yes,No,B
+fapiis.gov,General Services Administration,Yes*,Yes,No,C
+faq.gov,General Services Administration,No,,,
+fara.gov,Department of Justice,No,,,
+farmerclaims.gov,Department of Agriculture,Yes*,Yes,No,C
+fasab.gov,The Legislative Branch (Congress),No,,,
+fatherhood.gov,Department of Health And Human Services,Yes,Yes,"Yes, and preload-ready",A+
+fbi.gov,Department of Justice,Yes,No,No,A-
+fbiic.gov,Federal Reserve System,Yes,No,No,B
+fbijobs.gov,Department of Justice,Yes,Yes,No,B
+fbo.gov,General Services Administration,Yes,Yes,No,C
+fca.gov,Farm Credit Administration,Yes*,No,No,B
+fcc.gov,Federal Communications Commission,Yes,Yes,No,B
+fccuniversity.gov,Federal Communications Commission,No,,,
+fcg.gov,Department of the Interior,No,,,
+fcic.gov,National Archives and Records Administration,No,,,
+fcsic.gov,Farm Credit Administration,No,,,
+fda.gov,Department of Health And Human Services,No,,,
+fdic.gov,Federal Deposit Insurance Corporation,Yes,Yes,No,A-
+fdicbets.gov,Federal Deposit Insurance Corporation,No,,,
+fdicconnect.gov,Federal Deposit Insurance Corporation,No,,,
+fdicig.gov,Federal Deposit Insurance Corporation,No,,,
+fdicoig.gov,Federal Deposit Insurance Corporation,No,,,
+fdicseguro.gov,Federal Deposit Insurance Corporation,No,,,
+fdlp.gov,Government Printing Office,No,,,
+fdms.gov,Environmental Protection Agency,No,,,
+fdr.gov,Department of Transportation,No,,,
+fdsys.gov,Government Printing Office,No,,,
+feb.gov,Office of Personnel Management,Yes,No,No,A-
+fec.gov,Federal Elections Commission,No,,,
+fedbizopps.gov,General Services Administration,Yes,Yes,No,C
+fedcenter.gov,Environmental Protection Agency,Yes,Yes,No,F
+federalaccountability.gov,Recovery Accountability and Transparency Board,No,,,
+federalcourts.gov,The Judicial Branch (Courts),No,,,
+federalinvestments.gov,Department of the Treasury,No,,,
+federaljobs.gov,Office of Personnel Management,No,,,
+federalprobation.gov,The Judicial Branch (Courts),No,,,
+federalregister.gov,Government Printing Office,Yes,Yes,"Yes, and preload-ready",B
+federalreporting.gov,Recovery Accountability and Transparency Board,No,,,
+federalreserve.gov,Federal Reserve System,No,,,
+federalreserveconsumerhelp.gov,Federal Reserve System,Yes,No,No,C
+federalrules.gov,The Judicial Branch (Courts),No,,,
+fedforms.gov,General Services Administration,No,,,
+fedidcard.gov,General Services Administration,No,,,
+fedinvest.gov,Department of the Treasury,No,,,
+fedjobs.gov,Office of Personnel Management,No,,,
+fedpartnership.gov,Federal Reserve System,Yes,Yes,No,B
+fedramp.gov,General Services Administration,Yes,No,No,C
+fedreg.gov,Government Printing Office,Yes,No,No,F
+fedrooms.gov,General Services Administration,No,,,
+fedshirevets.gov,Office of Personnel Management,No,,,
+feedthefuture.gov,U.S. Agency for International Development,No,,,
+fegli.gov,Office of Personnel Management,Yes,No,No,A-
+fema.gov,Department of Homeland Security,Yes,No,No,C
+femalefarmerclaims.gov,Department of Agriculture,Yes*,Yes,No,C
+ferc.gov,Federal Energy Regulatory Commission,No,,,
+fercalt.gov,Federal Energy Regulatory Commission,No,,,
+ffiec.gov,Federal Reserve System,Yes,No,No,B
+fgdc.gov,Department of the Interior,Yes,No,No,A-
+fha.gov,Department of Housing And Urban Development,No,,,
+fhfa.gov,Federal Housing Finance Agency,No,,,
+fhfaoig.gov,Federal Housing Finance Agency Office of Inspector General,No,,,
+fido.gov,General Services Administration,No,,,
+financialresearch.gov,Department of the Treasury,No,,,
+financialstability.gov,Department of the Treasury,No,,,
+fincen.gov,Department of the Treasury,Yes*,No,No,C
+findyouthinfo.gov,Department of Health And Human Services,Yes*,No,No,
+firecode.gov,Department of the Interior,Yes,No,No,C
+fireleadership.gov,Department of the Interior,Yes*,No,No,
+firenet.gov,Department of the Interior,No,,,
+firescience.gov,Department of the Interior,Yes,No,No,C
+firstfreedom.gov,Department of Justice,No,,,
+firstgov.gov,General Services Administration,No,,,
+firstnet.gov,Department of Commerce,No,,,
+firstresponder.gov,Department of Homeland Security,No,,,
+firstrespondertraining.gov,Department of Homeland Security,No,,,
+fiscalcommission.gov,Executive Office of the President,Yes,Yes,No,A
+fishwatch.gov,Department of Commerce,No,,,
+fitness.gov,Department of Health And Human Services,No,,,
+fjc.gov,The Judicial Branch (Courts),No,,,
+fleta.gov,Department of Homeland Security,Yes,Yes,No,C
+fletc.gov,Department of Homeland Security,Yes,Yes,No,C
+flightschoolcandidates.gov,Department of Homeland Security,Yes,Yes,No,C
+floodsmart.gov,Department of Homeland Security,No,,,
+flra.gov,Federal Labor Relations Authority,No,,,
+flu.gov,Department of Health And Human Services,No,,,
+fmc.gov,Federal Maritime Commission,No,,,
+fmcs.gov,Federal Mediation and Conciliation Service,No,,,
+fmi.gov,General Services Administration,No,,,
+fmip.gov,Department of Transportation,No,,,
+fmshrc.gov,Government Printing Office,Yes,No,No,C
+fnal.gov,Department of Energy,Yes,No,No,C
+foia.gov,Department of Justice,No,,,
+foodsafety.gov,Department of Health And Human Services,No,,,
+foodsafetyjobs.gov,Department of Agriculture,No,,,
+foodsafetyworkinggroup.gov,Department of Agriculture,No,,,
+fordlibrarymuseum.gov,National Archives and Records Administration,No,,,
+foreignassistance.gov,Department of State,No,,,
+forestsandrangelands.gov,Department of Agriculture,No,,,
+forfeiture.gov,Department of Justice,No,,,
+forms.gov,General Services Administration,No,,,
+fpds.gov,General Services Administration,Yes,No,No,F
+frcc.gov,Department of the Interior,No,,,
+freecreditreport.gov,Federal Trade Commission,No,,,
+frtib.gov,Federal Retirement Thrift Investment Board,No,,,
+frtr.gov,Environmental Protection Agency,No,,,
+fruitsandveggiesmatter.gov,Department of Health And Human Services,No,,,
+fs.fed.us,Department of Agriculture,No,,,
+fsafeds.gov,Office of Personnel Management,No,,,
+fsapubs.gov,Department of Education,No,,,
+fsd.gov,General Services Administration,Yes*,Yes,No,F
+fsgb.gov,Department of State,Yes,No,No,B
+fsoc.gov,Department of the Treasury,No,,,
+fsrs.gov,General Services Administration,Yes,Yes,No,C
+fswg.gov,Department of Agriculture,No,,,
+ftc.gov,Federal Trade Commission,Yes,Yes,No,C
+ftccomplaintassistant.gov,Federal Trade Commission,Yes,Yes,"Yes, and preload-ready",A-
+ftcefile.gov,Federal Trade Commission,Yes,Yes,No,A
+fttesttwai.gov,Department of the Treasury,Yes*,Yes,No,T
+fueleconomy.gov,Department of Energy,No,,,
+fvap.gov,Department of Defense,No,,,
+fws.gov,Department of the Interior,Yes,No,No,B
+g5.gov,Department of Education,Yes,Yes,No,A-
+gao.gov,The Legislative Branch (Congress),Yes*,No,No,C
+gaonet.gov,The Legislative Branch (Congress),Yes*,No,No,
+gcdamp.gov,Department of the Interior,No,,,
+gcmrc.gov,Department of the Interior,No,,,
+genbank.gov,Department of Health And Human Services,No,,,
+genome.gov,Department of Health And Human Services,Yes,No,No,B
+geocommunicator.gov,Department of the Interior,No,,,
+geomac.gov,Department of the Interior,No,,,
+geoplatform.gov,Department of the Interior,Yes,No,No,A-
+georgewbushlibrary.gov,National Archives and Records Administration,No,,,
+getinvolved.gov,Corporation for National & Community Service,No,,,
+getsmartaboutdrugs.gov,Department of Justice,No,,,
+ghi.gov,Department of State,No,,,
+ginniemae.gov,Department of Housing And Urban Development,No,,,
+girlshealth.gov,Department of Health And Human Services,No,,,
+globalchange.gov,United Stated Global Change Research Program,No,,,
+globalentry.gov,Department of Commerce,No,,,
+globalhealth.gov,Department of Health And Human Services,No,,,
+globe.gov,National Aeronautics and Space Administration,Yes,No,No,B
+gobierno.gov,General Services Administration,No,,,
+gobiernousa.gov,General Services Administration,No,,,
+godirect.gov,Department of the Treasury,Yes,Yes,No,F
+goes-r.gov,Department of Commerce,No,,,
+golearn.gov,Office of Personnel Management,No,,,
+gop.gov,The Legislative Branch (Congress),No,,,
+gopconference.gov,The Legislative Branch (Congress),No,,,
+gopleader.gov,The Legislative Branch (Congress),No,,,
+govbenefits.gov,Department of Labor,No,,,
+governmentjobs.gov,Office of Personnel Management,No,,,
+govloans.gov,Department of Labor,No,,,
+govsales.gov,General Services Administration,No,,,
+gpo.gov,Government Printing Office,No,,,
+gps.gov,Department of Commerce,No,,,
+grants.gov,Department of Health And Human Services,No,,,
+grantsolutions.gov,Department of Health And Human Services,Yes,Yes,No,B
+green.gov,Department of Agriculture,No,,,
+greengov.gov,Environmental Protection Agency,No,,,
+gsa.gov,General Services Administration,No,,,
+gsaadvantage.gov,General Services Administration,Yes,Yes,No,C
+gsaauctions.gov,General Services Administration,No,,,
+gsadvantage.gov,General Services Administration,No,,,
+gsaig.gov,General Services Administration,Yes,Yes,No,B
+gsaxcess.gov,General Services Administration,Yes,No,No,B
+guideline.gov,Department of Health And Human Services,Yes,No,No,F
+guidelines.gov,Department of Health And Human Services,No,,,
+gwa.gov,Department of the Treasury,Yes,Yes,No,C
+hanford.gov,Department of Energy,No,,,
+harp.gov,Federal Housing Finance Agency,No,,,
+hc.gov,Executive Office of the President,No,,,
+hcqualitycommission.gov,Department of Health And Human Services,No,,,
+health.gov,Department of Health And Human Services,No,,,
+healthcare.gov,Department of Health And Human Services,Yes,Yes,Yes,A+
+healthdata.gov,Department of Health And Human Services,No,,,
+healthfinder.gov,Department of Health And Human Services,Yes,No,No,F
+healthindicators.gov,Department of Health And Human Services,No,,,
+healthit.gov,Department of Health And Human Services,No,,,
+healthreform.gov,Department of Health And Human Services,No,,,
+healthypeople.gov,Department of Health And Human Services,Yes,No,No,B
+hearttruth.gov,Department of Health And Human Services,No,,,
+helpingamericasyouth.gov,Department of Justice,No,,,
+helpwithmybank.gov,Department of the Treasury,No,,,
+helpwithmycheckingaccount.gov,Department of the Treasury,No,,,
+helpwithmycreditcard.gov,Department of the Treasury,No,,,
+helpwithmycreditcardbank.gov,Department of the Treasury,No,,,
+helpwithmymortgage.gov,Department of the Treasury,No,,,
+helpwithmymortgagebank.gov,Department of the Treasury,No,,,
+hhs.gov,Department of Health And Human Services,No,,,
+hhsoig.gov,Department of Health And Human Services,Yes*,No,No,
+highperformancebuildings.gov,Department of Energy,No,,,
+hill.gov,Library of Congress,No,,,
+hispanicfarmerclaims.gov,Department of Agriculture,Yes*,Yes,No,C
+hispanicheritagemonth.gov,Library of Congress,No,,,
+hiv.gov,Department of Health And Human Services,Yes,No,"Yes, and preload-ready",A+
+homeenergyscore.gov,Department of Energy,No,,,
+homelandsecurity.gov,Department of Homeland Security,No,,,
+homesales.gov,Department of Housing And Urban Development,No,,,
+house.gov,The Legislative Branch (Congress),Yes,No,No,F
+housecalendar.gov,Government Printing Office,No,,,
+housecommunications.gov,The Legislative Branch (Congress),No,,,
+housedemocrats.gov,The Legislative Branch (Congress),No,,,
+housedems.gov,The Legislative Branch (Congress),No,,,
+houselive.gov,The Legislative Branch (Congress),No,,,
+howto.gov,General Services Administration,Yes,No,No,T
+hrsa.gov,Department of Health And Human Services,No,,,
+hru.gov,Office of Personnel Management,Yes,Yes,No,B
+hsa.gov,Small Business Administration,No,,,
+hsr.gov,Federal Trade Commission,Yes,Yes,"Yes, and preload-ready",B
+hud.gov,Department of Housing And Urban Development,No,,,
+hudoig.gov,Department of Housing And Urban Development,Yes,Yes,No,B
+humanities.gov,National Endowment for the Humanities,Yes*,No,No,
+humanrights.gov,Department of State,No,,,
+hurricanes.gov,Department of Commerce,No,,,
+hydrogen.gov,Department of Energy,No,,,
+iad.gov,Department of Defense,Yes*,Yes,No,T
+iaf.gov,Inter-American Foundation,No,,,
+iarpa-ideas.gov,Director of National Intelligence,Yes,No,No,C
+iarpa.gov,Director of National Intelligence,No,,,
+iat.gov,Department of the Interior,Yes,No,No,C
+iawg.gov,Department of State,Yes,Yes,No,C
+ibb.gov,International Broadcasting Bureau,No,,,
+ibwc.gov,Department of State,No,,,
+ic3.gov,Department of Justice,Yes,No,No,C
+icass.gov,Department of State,Yes,Yes,No,B
+icbemp.gov,Department of Agriculture,No,,,
+ice.gov,Department of Homeland Security,Yes,No,No,C
+ich.gov,US Interagency Council on Homelessness,No,,,
+icjointduty.gov,Director of National Intelligence,No,,,
+identitytheft.gov,Federal Trade Commission,Yes,Yes,No,C
+idmanagement.gov,General Services Administration,No,,,
+idtheft.gov,Federal Trade Commission,Yes,No,No,C
+iedison.gov,Department of Health And Human Services,No,,,
+ignet.gov,Council of Inspector General on Integrity and Efficiency,Yes*,Yes,No,B
+ihs.gov,Department of Health And Human Services,Yes,No,No,B
+iiog.gov,Department of Agriculture,Yes*,No,No,
+imls.gov,Institute of Museum and Library Services,No,,,
+indianaffairs.gov,Department of the Interior,No,,,
+inel.gov,Department of Energy,No,,,
+info.gov,General Services Administration,No,,,
+inl.gov,Department of Energy,Yes,Yes,No,B
+insurekidsnow.gov,Department of Health And Human Services,No,,,
+integrity.gov,Office of Government Ethics,Yes,Yes,No,A-
+intelink.gov,Director of National Intelligence,Yes,No,No,F
+intelligence.gov,Director of National Intelligence,No,,,
+interior.gov,Department of the Interior,No,,,
+interpol.gov,Department of Justice,No,,,
+invasivespecies.gov,Department of the Interior,No,,,
+invasivespeciesinfo.gov,Department of Agriculture,No,,,
+investor.gov,Securities and Exchange Commission,Yes,No,No,A
+ioss.gov,Department of Defense,Yes*,Yes,No,T
+ipac.gov,Department of the Treasury,Yes,Yes,No,C
+ipcc-wg2.gov,United Stated Global Change Research Program,Yes,No,No,C
+ipm.gov,Department of Agriculture,No,,,
+ipp.gov,Department of the Treasury,Yes,No,No,C
+iprcenter.gov,Department of Justice,No,,,
+irs.gov,Department of the Treasury,No,,,
+irsauctions.gov,Department of the Treasury,No,,,
+irssales.gov,Department of the Treasury,No,,,
+irsvideos.gov,Department of the Treasury,No,,,
+ise.gov,Director of National Intelligence,No,,,
+isitdoneyet.gov,Department of Agriculture,No,,,
+isotope.gov,Department of Energy,Yes,Yes,No,B
+isotopes.gov,Department of Energy,Yes,Yes,No,B
+italladdsup.gov,Department of Transportation,Yes*,No,No,
+itap.gov,Department of Agriculture,No,,,
+itdashboard.gov,Executive Office of the President,Yes,Yes,"Yes, and preload-ready",
+itds.gov,Department of Commerce,No,,,
+itis.gov,Smithsonian Institution,No,,,
+itrd.gov,Networking Information Technology Research and Development (NITRD),No,,,
+its.gov,Department of the Treasury,Yes,Yes,No,C
+jamesmadison.gov,James Madison Memorial Fellowship Foundation,No,,,
+jccs.gov,Department of Defense,Yes*,No,No,F
+jct.gov,The Legislative Branch (Congress),Yes,Yes,No,A
+jem.gov,Department of the Interior,Yes,No,No,A-
+jewishheritage.gov,Library of Congress,No,,,
+jewishheritagemonth.gov,Library of Congress,No,,,
+jimmycarterlibrary.gov,National Archives and Records Administration,No,,,
+jmc.gov,U.S. Agency for International Development,No,,,
+jobcenter.gov,General Services Administration,No,,,
+jobcorps.gov,Department of Labor,Yes,No,No,C
+joiningforces.gov,Executive Office of the President,Yes,No,No,A
+judicialconference.gov,The Judicial Branch (Courts),No,,,
+justice.gov,Department of Justice,No,,,
+justthinktwice.gov,Department of Justice,No,,,
+juvenilecouncil.gov,Department of Justice,No,,,
+jwod.gov,Comm for People Who Are Blind/Severly Disabled,No,,,
+kids.gov,General Services Administration,No,,,
+klamathrestoration.gov,Department of the Interior,Yes*,No,No,
+labor.gov,Department of Labor,No,,,
+lacoast.gov,Department of the Interior,Yes,No,No,A-
+landfire.gov,Department of the Interior,No,,,
+landimaging.gov,Department of the Interior,No,,,
+lanl.gov,Department of Energy,Yes,No,No,B
+latinofarmerclaims.gov,Department of Agriculture,Yes*,Yes,No,C
+law.gov,Library of Congress,No,,,
+lbl.gov,Department of Energy,Yes,No,No,A-
+lca.gov,Department of the Interior,No,,,
+lcacommons.gov,Department of Agriculture,No,,,
+lcrmscp.gov,Department of the Interior,No,,,
+learnandserve.gov,Corporation for National & Community Service,No,,,
+learnperformance.gov,General Services Administration,Yes,Yes,No,C
+legislative.gov,Library of Congress,No,,,
+legislativebranch.gov,Library of Congress,No,,,
+lep.gov,Department of Justice,No,,,
+letsmove.gov,Executive Office of the President,No,,,
+library-of-congress.gov,Library of Congress,No,,,
+libraryofcongress.gov,Library of Congress,No,,,
+lifeline.gov,Federal Communications Commission,No,,,
+lis.gov,Library of Congress,No,,,
+listo.gov,Department of Homeland Security,No,,,
+literacy.gov,Library of Congress,No,,,
+llis.gov,Department of Homeland Security,Yes,No,No,C
+llnl.gov,Department of Energy,Yes,Yes,No,F
+lmrcouncil.gov,Office of Personnel Management,Yes,No,No,A-
+lmvsci.gov,Department of the Interior,No,,,
+loc.gov,Library of Congress,Yes,No,No,C
+locatorplus.gov,Department of Health And Human Services,No,,,
+locimages.gov,Library of Congress,No,,,
+locstore.gov,Library of Congress,No,,,
+loctps.gov,Library of Congress,No,,,
+longtermcare.gov,Department of Health And Human Services,Yes*,No,No,
+lookstoogoodtobetrue.gov,Department of Justice,No,,,
+lowermississippivalleyscience.gov,Department of the Interior,No,,,
+lps.gov,National Security Agency,No,,,
+lsc.gov,Legal Services Corporation,Yes*,No,No,
+macpac.gov,Medicaid and CHIP Payment and Access Commission,Yes,Yes,No,A-
+mail.gov,U. S. Postal Service,No,,,
+majorityleader.gov,The Legislative Branch (Congress),No,,,
+majoritywhip.gov,The Legislative Branch (Congress),No,,,
+makinghomeaffordable.gov,Department of the Treasury,No,,,
+malwareinvestigator.gov,Department of Justice,No,,,
+manufacturing.gov,Department of Commerce,No,,,
+mapaplanet.gov,Department of the Interior,No,,,
+marine.gov,Department of the Interior,No,,,
+marinecadastre.gov,Department of Commerce,No,,,
+marview.gov,Department of Transportation,No,,,
+max.gov,Executive Office of the President,Yes,Yes,"Yes, and preload-ready",
+mbda.gov,Department of Commerce,No,,,
+mcc.gov,Millennium Challenge Corporation,Yes*,Yes,No,B
+mcrmc.gov,Department of Defense,No,,,
+mda.gov,Department of Transportation,Yes*,No,No,
+medalofvalor.gov,Department of Justice,Yes,Yes,No,F
+medicaid.gov,Department of Health And Human Services,No,,,
+medicalcountermeasures.gov,Department of Health And Human Services,Yes*,No,No,C
+medicalreservecorps.gov,Department of Health And Human Services,Yes,Yes,No,A
+medicare.gov,Department of Health And Human Services,No,,,
+medline.gov,Department of Health And Human Services,No,,,
+medlineplus.gov,Department of Health And Human Services,No,,,
+medpac.gov,Medical Payment Advisory Commission,No,,,
+mentalhealth.gov,Department of Health And Human Services,No,,,
+mesh.gov,Department of Health And Human Services,No,,,
+mha.gov,Department of the Treasury,No,,,
+mimedicare.gov,Department of Health And Human Services,Yes,Yes,No,A-
+mitigationcommission.gov,Department of the Interior,No,,,
+mlkday.gov,Corporation for National & Community Service,No,,,
+mmc.gov,Marine Mammal Commission,No,,,
+mms.gov,Department of the Interior,No,,,
+mojavedata.gov,Department of Defense,Yes*,Yes,No,
+moneyfactory.gov,Department of the Treasury,No,,,
+moneyfactorystore.gov,Department of the Treasury,No,,,
+mrgo.gov,Department of the Interior,Yes,No,No,A-
+mrlc.gov,Department of the Interior,No,,,
+msb.gov,Department of the Treasury,Yes*,No,No,
+msha.gov,Department of Labor,No,,,
+mspb.gov,Merit Systems Protection Board,No,,,
+mtbs.gov,Department of Agriculture,No,,,
+mycreditunion.gov,National Credit Union Administration,No,,,
+myfdic.gov,Federal Deposit Insurance Corporation,No,,,
+myfdicinsurance.gov,Federal Deposit Insurance Corporation,No,,,
+myloc.gov,Library of Congress,No,,,
+mymedicare.gov,Department of Health And Human Services,Yes,Yes,No,A-
+mymoney.gov,Department of the Treasury,No,,,
+mynextmove.gov,Department of Labor,No,,,
+myra.gov,Department of the Treasury,Yes,Yes,No,B
+nafri.gov,Department of Agriculture,Yes*,No,No,
+nagb.gov,Department of Education,No,,,
+namus.gov,Department of Justice,No,,,
+nano.gov,National Nanotechnology Coordination Office,No,,,
+nara.gov,National Archives and Records Administration,No,,,
+nasa.gov,National Aeronautics and Space Administration,Yes,No,No,B
+nationalatlas.gov,Department of the Interior,No,,,
+nationalbank.gov,Department of the Treasury,No,,,
+nationalbankhelp.gov,Department of the Treasury,No,,,
+nationalbanknet.gov,Department of the Treasury,No,,,
+nationalchildrensstudy.gov,Department of Health And Human Services,Yes,No,No,C
+nationalgangcenter.gov,Department of Justice,Yes*,No,No,C
+nationalhousing.gov,Department of Housing And Urban Development,No,,,
+nationalhousinglocator.gov,Department of Housing And Urban Development,No,,,
+nationalmap.gov,Department of the Interior,No,,,
+nationalresourcedirectory.gov,Department of Veterans Affairs,Yes,Yes,No,C
+nationalservice.gov,Corporation for National & Community Service,No,,,
+nationalserviceresources.gov,Corporation for National & Community Service,Yes,Yes,No,A-
+nativeamericanheritagemonth.gov,Library of Congress,No,,,
+navycash.gov,Department of the Treasury,No,,,
+nbc.gov,Department of the Interior,Yes,No,No,C
+nbm.gov,Federal Communications Commission,No,,,
+nccrc.gov,Department of Energy,Yes*,No,No,
+nccs.gov,Department of Energy,No,,,
+ncd.gov,National Council on Disability,No,,,
+ncifcrf.gov,Department of Health And Human Services,Yes,No,No,C
+ncirc.gov,Department of Justice,Yes,Yes,No,C
+ncix.gov,Director of National Intelligence,No,,,
+ncjrs.gov,Department of Justice,Yes,Yes,No,B
+ncpc.gov,National Capital Planning Commission,Yes,No,No,A
+ncpw.gov,Federal Trade Commission,Yes,No,No,C
+ncrc.gov,Department of Energy,Yes,No,No,C
+nctc.gov,Central Intelligence Agency,No,,,
+ncua.gov,National Credit Union Administration,No,,,
+ndep.gov,Department of the Interior,No,,,
+ndop.gov,Department of the Interior,No,,,
+ndsa.gov,Library of Congress,No,,,
+nea.gov,National Endowment for the Arts,Yes*,No,No,
+neglecteddiseases.gov,U.S. Agency for International Development,No,,,
+neh.gov,National Endowment for the Humanities,Yes*,No,No,
+nehrp.gov,Department of Commerce,No,,,
+nel.gov,Department of Agriculture,No,,,
+nemi.gov,Department of the Interior,Yes,No,No,A-
+nepa.gov,Executive Office of the President,No,,,
+nersc.gov,Department of Energy,Yes,No,No,C
+neup.gov,Department of Energy,No,,,
+newmoney.gov,Federal Reserve System,No,,,
+nfpors.gov,Department of the Interior,Yes,Yes,No,C
+nga.gov,National Gallery of Art,Yes,No,No,B
+ngc.gov,Department of Health And Human Services,No,,,
+nhl.gov,Department of Housing And Urban Development,No,,,
+nhtsa.gov,Department of Transportation,No,,,
+nibin.gov,Department of Justice,No,,,
+nic.gov,General Services Administration,Yes,Yes,No,B
+nicic.gov,Department of Justice,No,,,
+niem.gov,Department of Justice,Yes,Yes,No,F
+nifc.gov,Department of the Interior,Yes*,No,No,C
+niftt.gov,Department of the Interior,No,,,
+nigc.gov,National Indian Gaming Commission,Yes*,No,No,
+nih.gov,Department of Health And Human Services,No,,,
+nihseniorhealth.gov,Department of Health And Human Services,Yes,No,No,B
+nij.gov,Department of Justice,No,,,
+niosh.gov,Department of Health And Human Services,No,,,
+nist.gov,Department of Commerce,Yes,No,No,C
+nitrd.gov,Networking Information Technology Research and Development (NITRD),Yes,Yes,No,A-
+nixonlibrary.gov,National Archives and Records Administration,No,,,
+nlm.gov,Department of Health And Human Services,No,,,
+nlrb.gov,National Labor Relations Board,No,,,
+nls.gov,Department of Housing And Urban Development,No,,,
+nmb.gov,National Mediation Board,No,,,
+nmcourt.fed.us,The Judicial Branch (Courts),No,,,
+nmic.gov,Director of National Intelligence,No,,,
+nmsc.gov,Department of Homeland Security,Yes,No,No,A
+nmvtis.gov,Department of Justice,No,,,
+nnlm.gov,Department of Health And Human Services,Yes,No,No,C
+noaa.gov,Department of Commerce,No,,,
+noaawatch.gov,Department of Commerce,No,,,
+nolaenvironmental.gov,Department of the Interior,Yes,No,No,A-
+nonprofit.gov,General Services Administration,No,,,
+notalone.gov,Executive Office of the President,Yes,Yes,Yes,B
+nps.gov,Department of the Interior,No,,,
+nrc.gov,Nuclear Regulatory Commission,No,,,
+nrd.gov,Department of Veterans Affairs,Yes,Yes,No,C
+nrel.gov,Department of Energy,No,,,
+nro.gov,Department of Defense,No,,,
+nrojr.gov,Department of Defense,No,,,
+nsa.gov,Department of Defense,Yes,Yes,No,A
+nsep.gov,Department of Defense,No,,,
+nsf.gov,National Science Foundation,No,,,
+nsopw.gov,Department of Justice,No,,,
+nstic.gov,Executive Office of the President,Yes*,No,No,
+nswp.gov,National Aeronautics and Space Administration,No,,,
+ntdprogram.gov,Department of Transportation,Yes,No,No,A-
+ntis.gov,Department of Commerce,Yes,No,No,F
+ntrc.gov,Department of Energy,No,,,
+ntsb.gov,National Transportation Safety Board,No,,,
+nutrition.gov,Department of Agriculture,No,,,
+nutritionevidencelibrary.gov,Department of Agriculture,No,,,
+nvtc.gov,Department of Justice,No,,,
+nwbc.gov,Small Business Administration,Yes,Yes,No,C
+nwcg.gov,Department of Agriculture,Yes*,No,No,
+occ.gov,Department of the Treasury,No,,,
+occhelps.gov,Department of the Treasury,No,,,
+odni.gov,Director of National Intelligence,No,,,
+oea.gov,Department of Defense,Yes*,No,No,F
+ofcm.gov,Department of Commerce,No,,,
+ofda.gov,U.S. Agency for International Development,Yes,Yes,No,F
+ofee.gov,Environmental Protection Agency,No,,,
+ofr.gov,Government Printing Office,No,,,
+oge.gov,United States Office of Government Ethics,No,,,
+ogis.gov,National Archives and Records Administration,No,,,
+ojjdp.gov,Department of Justice,No,,,
+ojp.gov,Department of Justice,No,,,
+omb.gov,Executive Office of the President,Yes,No,No,A
+omblog.gov,Executive Office of the President,No,,,
+ondcp.gov,Executive Office of the President,Yes,No,No,A
+onguardonline.gov,Federal Trade Commission,Yes,No,No,C
+onhir.gov,Department of the Interior,No,,,
+onlineonguard.gov,Federal Trade Commission,No,,,
+onlinewbc.gov,Small Business Administration,No,,,
+onrr.gov,Department of the Interior,No,,,
+openinternet.gov,Federal Communications Commission,No,,,
+opensource.gov,Central Intelligence Agency,Yes,Yes,No,A-
+openworld.gov,Government Printing Office,No,,,
+opic.gov,Overseas Private Investment Corporation,Yes,Yes,Yes,A+
+opm.gov,Office of Personnel Management,Yes,No,No,A-
+opportunity.gov,Department of Education,No,,,
+orau.gov,Department of Energy,No,,,
+organdonor.gov,Department of Health And Human Services,No,,,
+ornl.gov,Department of Energy,Yes,No,No,A-
+osac.gov,Department of State,Yes,Yes,No,C
+osc.gov,U. S. Office of Special Counsel,Yes,Yes,No,A
+osdbu.gov,Department of Defense,Yes*,No,No,
+osha.gov,Department of Labor,Yes,Yes,No,B
+oshrc.gov,Occupational Safety & Health Review Commission,No,,,
+osm.gov,Department of the Interior,No,,,
+osmre.gov,Department of the Interior,No,,,
+osti.gov,Department of Energy,No,,,
+ostp.gov,Executive Office of the President,Yes,No,No,A
+oti.gov,U.S. Agency for International Development,No,,,
+ots.gov,Department of the Treasury,No,,,
+ourdocuments.gov,National Archives and Records Administration,No,,,
+ovc.gov,Department of Justice,No,,,
+ovcttac.gov,Department of Justice,Yes,Yes,No,B
+pacer.gov,The Judicial Branch (Courts),Yes,Yes,Yes,A
+pandemicflu.gov,Department of Health And Human Services,No,,,
+papahanaumokuakea.gov,Department of Commerce,No,,,
+partner4solutions.gov,General Services Administration,Yes,No,No,C
+patriotbonds.gov,Department of the Treasury,No,,,
+pay.gov,Department of the Treasury,Yes,Yes,No,C
+paymentaccuracy.gov,Executive Office of the President,Yes,Yes,"Yes, and preload-ready",
+pbgc.gov,Pension Benefit Guaranty Corporation,Yes,No,No,C
+pcah.gov,National Endowment for the Humanities,No,,,
+pcip.gov,Department of Health And Human Services,No,,,
+pclob.gov,General Services Administration,Yes,Yes,"Yes, and preload-ready",B
+pdbcecc.gov,The Legislative Branch (Congress),No,,,
+peacecore.gov,U. S. Peace Corps,No,,,
+peacecorp.gov,U. S. Peace Corps,No,,,
+peacecorps.gov,U. S. Peace Corps,No,,,
+pentagon.gov,Department of Defense,No,,,
+pepfar.gov,Department of State,No,,,
+performance.gov,General Services Administration,No,,,
+phe.gov,Department of Health And Human Services,Yes*,No,No,
+pic.gov,General Services Administration,Yes,No,No,F
+piedrasblancas.gov,Department of the Interior,No,,,
+plainlanguage.gov,Department of Transportation,No,,,
+pmf.gov,Office of Personnel Management,Yes,No,No,A-
+pmi.gov,U.S. Agency for International Development,No,,,
+pnl.gov,Department of Energy,Yes,No,No,A-
+pnnl.gov,Department of Energy,Yes,No,No,A
+poolsafely.gov,Consumer Product Safety Commission,No,,,
+poolsafety.gov,Consumer Product Safety Commission,No,,,
+postoffice.gov,U. S. Postal Service,No,,,
+ppdcecc.gov,The Legislative Branch (Congress),No,,,
+ppirs.gov,General Services Administration,Yes*,Yes,No,C
+pracomment.gov,Department of the Treasury,No,,,
+prc.gov,Postal Rate Commission,No,,,
+pregunteleakaren.gov,Department of Agriculture,No,,,
+preserveamerica.gov,Advisory Council on Historic Preservation,No,,,
+presidentialdocuments.gov,Government Printing Office,No,,,
+presidentialserviceawards.gov,Corporation for National & Community Service,No,,,
+presidio.gov,Executive Office of the President,No,,,
+presidiotrust.gov,Executive Office of the President,No,,,
+pretrialservices.gov,Court Services and Offender Supervision,Yes*,No,No,
+primarysources.gov,Library of Congress,No,,,
+projectsafechildhood.gov,Department of Justice,No,,,
+projectsafeneighborhoods.gov,Department of Justice,No,,,
+protecciondelconsumidor.gov,Federal Trade Commission,Yes,No,No,C
+protectyourmove.gov,Department of Transportation,Yes,Yes,No,C
+psa.gov,Court Services and Offender Supervision,Yes*,No,No,F
+psc.gov,Department of Health And Human Services,Yes*,No,No,T
+pscr.gov,Department of Commerce,No,,,
+psob.gov,Department of Justice,Yes,Yes,No,F
+ptf.gov,The Intelligence Community,No,,,
+pubmed.gov,Department of Health And Human Services,Yes,No,No,B
+pubmedcentral.gov,Department of Health And Human Services,No,,,
+qatesttwai.gov,Department of the Treasury,Yes*,Yes,No,T
+quic.gov,Department of Health And Human Services,No,,,
+quick.gov,Department of Health And Human Services,No,,,
+rcfl.gov,Department of Justice,No,,,
+reachhigher.gov,Executive Office of the President,Yes,No,No,A
+read.gov,Library of Congress,No,,,
+ready.gov,Department of Homeland Security,No,,,
+readybusiness.gov,Department of Homeland Security,No,,,
+reaganlibrary.gov,National Archives and Records Administration,No,,,
+realestatesales.gov,General Services Administration,Yes,No,No,B
+realpropertyprofile.gov,General Services Administration,Yes,Yes,No,F
+recalls.gov,Consumer Product Safety Commission,No,,,
+recovery.gov,Recovery Accountability and Transparency Board,No,,,
+recoverymonth.gov,Department of Health And Human Services,No,,,
+recreation.gov,Department of Agriculture,No,,,
+reentry.gov,Department of Justice,No,,,
+reginfo.gov,General Services Administration,No,,,
+regulation.gov,Environmental Protection Agency,No,,,
+regulations.gov,Environmental Protection Agency,No,,,
+relocatefeds.gov,Environmental Protection Agency,No,,,
+reo.gov,Department of Agriculture,No,,,
+reportband.gov,Department of the Interior,No,,,
+republicans.gov,The Legislative Branch (Congress),No,,,
+research.gov,National Science Foundation,Yes,No,No,F
+restorethegulf.gov,Department of Commerce,Yes,No,No,C
+rivers.gov,Department of the Interior,No,,,
+rocis.gov,General Services Administration,Yes*,No,No,C
+rrb.gov,Railroad Retirement Board,No,,,
+sac.gov,National Science Foundation,No,,,
+safecom.gov,Department of the Interior,Yes,No,No,C
+safecomprogram.gov,Department of Homeland Security,No,,,
+safercar.gov,Department of Transportation,No,,,
+saferproduct.gov,Consumer Product Safety Commission,No,,,
+saferproducts.gov,Consumer Product Safety Commission,No,,,
+safertruck.gov,Department of Transportation,No,,,
+safetyact.gov,Department of Homeland Security,Yes*,Yes,No,T
+safetyvideos.gov,U.S. Chemical Safety and Hazard Investigation Board,No,,,
+safeyouth.gov,Department of Health And Human Services,No,,,
+salmonrecovery.gov,Department of Energy,Yes,No,No,C
+sam.gov,General Services Administration,Yes,Yes,No,C
+samhsa.gov,Department of Health And Human Services,No,,,
+sandia.gov,Department of Energy,No,,,
+save.gov,Executive Office of the President,Yes,No,"Yes, and preload-ready",
+saveaward.gov,Executive Office of the President,Yes,No,"Yes, and preload-ready",
+savingsbond.gov,Department of the Treasury,No,,,
+savingsbonds.gov,Department of the Treasury,No,,,
+savingsbondwizard.gov,Department of the Treasury,No,,,
+sba.gov,Small Business Administration,No,,,
+sbir.gov,National Science Foundation,No,,,
+scidac.gov,Department of Energy,No,,,
+science.gov,Department of Energy,Yes,No,No,C
+science360.gov,National Science Foundation,Yes*,No,No,
+sciencebase.gov,Department of the Interior,Yes,Yes,No,A-
+scijinks.gov,National Aeronautics and Space Administration,No,,,
+scra.gov,Department of Justice,No,,,
+sdr.gov,Department of Commerce,No,,,
+sec.gov,Securities and Exchange Commission,Yes,No,No,B
+secretservice.gov,Department of Homeland Security,No,,,
+section108.gov,Library of Congress,No,,,
+section508.gov,General Services Administration,No,,,
+seguridadconsumidor.gov,Consumer Product Safety Commission,No,,,
+segurosocial.gov,Social Security Administration,No,,,
+selectagents.gov,Department of Health And Human Services,No,,,
+selectusa.gov,Department of Commerce,No,,,
+senate.gov,The Legislative Branch (Congress),Yes,No,No,B
+senatecalendar.gov,Government Printing Office,No,,,
+senaterestaurants.gov,The Legislative Branch (Congress),No,,,
+seniorcorps.gov,Corporation for National & Community Service,No,,,
+seniors.gov,General Services Administration,No,,,
+sentinel.gov,Federal Trade Commission,Yes,No,No,A-
+serve.gov,Corporation for National & Community Service,No,,,
+service.gov,Corporation for National & Community Service,No,,,
+servicelearning.gov,Corporation for National & Community Service,No,,,
+servicemembers.gov,Department of Justice,No,,,
+sftool.gov,General Services Administration,Yes,Yes,"Yes, and preload-ready",B
+sharetheroadsafely.gov,Department of Transportation,No,,,
+sierrawild.gov,Department of the Interior,No,,,
+sigtarp.gov,Department of the Treasury,No,,,
+siteidiq.gov,Department of Defense,No,,,
+slgs.gov,Department of the Treasury,No,,,
+smart.gov,Department of Justice,No,,,
+smartcheck.gov,Commodity Futures Trading Commission,No,,,
+smartgrid.gov,Department of Energy,Yes,Yes,No,B
+smokefree.gov,Department of Health And Human Services,Yes*,No,No,
+snap.gov,Department of the Interior,No,,,
+sns.gov,Department of Energy,Yes*,No,No,
+socialsecurity.gov,Social Security Administration,No,,,
+solardecathlon.gov,Department of Energy,No,,,
+spaceweather.gov,Department of Commerce,No,,,
+speaker.gov,The Legislative Branch (Congress),No,,,
+spectrum.gov,Department of Commerce,No,,,
+srs.gov,Department of Energy,No,,,
+ssa.gov,Social Security Administration,No,,,
+ssab.gov,Social Security Advisory Board,No,,,
+sss.gov,Selective Service System,No,,,
+standards.gov,Department of Commerce,No,,,
+start2farm.gov,Department of Agriculture,No,,,
+state.gov,Department of State,No,,,
+stennis.gov,Stennis Center for Public Service,Yes,Yes,No,C
+steroidabuse.gov,Department of Health And Human Services,No,,,
+stopalcoholabuse.gov,Department of Health And Human Services,Yes,No,No,A
+stopbullying.gov,Department of Health And Human Services,No,,,
+stopfakes.gov,Government Printing Office,No,,,
+stopfraud.gov,Department of Justice,No,,,
+stopmedicarefraud.gov,Department of Health And Human Services,No,,,
+strategicsourcing.gov,General Services Administration,Yes,Yes,No,C
+strongmiddleclass.gov,Executive Office of the President,Yes,No,No,A
+strongports.gov,Department of Transportation,No,,,
+studentaid.gov,Department of Education,Yes,No,No,B
+studentloans.gov,Department of Education,Yes,Yes,No,F
+supportthevoter.gov,General Services Administration,Yes,No,No,C
+supremecourt.gov,The Judicial Branch (Courts),No,,,
+supremecourtus.gov,The Judicial Branch (Courts),No,,,
+surgeongeneral.gov,Department of Health And Human Services,No,,,
+sustainability.gov,Environmental Protection Agency,No,,,
+sustainablecommunities.gov,Department of Transportation,No,,,
+swpa.gov,Department of Energy,No,,,
+symbols.gov,Department of Agriculture,Yes,Yes,No,B
+taaps.gov,Department of the Treasury,No,,,
+tax.gov,Department of the Treasury,No,,,
+taxreform.gov,The Legislative Branch (Congress),Yes,Yes,No,F
+teachingprimarysources.gov,Library of Congress,No,,,
+teachingwithprimarysources.gov,Library of Congress,No,,,
+telework.gov,Office of Personnel Management,No,,,
+tfhrc.gov,Department of Transportation,No,,,
+thecoolspot.gov,Department of Health And Human Services,No,,,
+thepeoplesgarden.gov,Department of Agriculture,No,,,
+therealcost.gov,Department of Health And Human Services,No,,,
+thesecondthing.gov,Department of Veterans Affairs,No,,,
+thomas.gov,Library of Congress,No,,,
+tigta.gov,Department of the Treasury,No,,,
+time.gov,Department of Commerce,No,,,
+tissueengineering.gov,Department of Health And Human Services,No,,,
+tobacco.gov,Department of Health And Human Services,No,,,
+tps.gov,Library of Congress,No,,,
+trade.gov,Department of Commerce,No,,,
+trafficsafetymarketing.gov,Department of Transportation,No,,,
+transparency.gov,General Services Administration,No,,,
+transportation.gov,Department of Transportation,No,,,
+transportationresearch.gov,Department of Transportation,No,,,
+treas.gov,Department of the Treasury,No,,,
+treaslockbox.gov,Department of the Treasury,Yes,Yes,No,C
+treasury.fed.us,Department of the Treasury,No,,,
+treasury.gov,Department of the Treasury,No,,,
+treasuryauctions.gov,Department of the Treasury,No,,,
+treasurydirect.gov,Department of the Treasury,No,,,
+treasuryhunt.gov,Department of the Treasury,No,,,
+treasuryscams.gov,Department of the Treasury,No,,,
+tribaljusticeandsafety.gov,Department of Justice,No,,,
+truman.gov,Harry S. Truman Scholarship Foundation,Yes*,No,No,T
+tsa.gov,Department of Homeland Security,Yes,No,No,C
+tsc.gov,Terrorist Screening Center,No,,,
+tsp.gov,Federal Retirement Thrift Investment Board,Yes,Yes,No,B
+tsunami.gov,Department of Commerce,No,,,
+tswg.gov,Department of Defense,No,,,
+ttb.gov,Department of the Treasury,No,,,
+ttbonline.gov,Department of the Treasury,No,,,
+tva.gov,Tennessee Valley Authority,No,,,
+tvaoig.gov,Tennessee Valley Authority,No,,,
+ucrdatatool.gov,Department of Justice,No,,,
+udall.gov,Morris K. Udall Foundation,Yes,No,No,C
+unicor.gov,Department of Justice,No,,,
+unionreports.gov,Department of Labor,No,,,
+unitedstates.gov,General Services Administration,No,,,
+unitedstatescongress.gov,Library of Congress,No,,,
+unitedweride.gov,Department of Transportation,No,,,
+unlocktalent.gov,Office of Personnel Management,Yes,Yes,No,A-
+urbanwaters.gov,Environmental Protection Agency,No,,,
+us-cert.gov,Department of Homeland Security,Yes,Yes,No,C
+us.gov,General Services Administration,No,,,
+usa.gov,General Services Administration,No,,,
+usability.gov,Department of Health And Human Services,No,,,
+usadf.gov,African Development Foundation,No,,,
+usagov.gov,General Services Administration,No,,,
+usaid.gov,U.S. Agency for International Development,No,,,
+usaidallnet.gov,U.S. Agency for International Development,Yes,Yes,No,F
+usajobs.gov,Office of Personnel Management,Yes,Yes,Yes,B
+usalearning.gov,Office of Personnel Management,Yes,Yes,No,C
+usandc.gov,Department of Defense,No,,,
+usap.gov,National Science Foundation,Yes,No,No,C
+usaperformance.gov,General Services Administration,Yes*,No,No,
+usaspending.gov,Department of the Treasury,Yes,Yes,No,B
+usastaffing.gov,Office of Personnel Management,Yes,Yes,No,B
+usbankruptcy.gov,The Judicial Branch (Courts),No,,,
+usbg.gov,The Legislative Branch (Congress),No,,,
+usbr.gov,Department of the Interior,Yes,No,No,B
+uscapital.gov,The Legislative Branch (Congress),No,,,
+uscapitol.gov,The Legislative Branch (Congress),No,,,
+uscapitolpolice.gov,Government Printing Office,No,,,
+uscapitolvisitorcenter.gov,The Legislative Branch (Congress),No,,,
+uscc.gov,Government Printing Office,No,,,
+usccr.gov,Government Printing Office,No,,,
+uscirf.gov,General Services Administration,No,,,
+uscis.gov,Department of Homeland Security,No,,,
+uscode.gov,Government Printing Office,No,,,
+uscongress.gov,Library of Congress,No,,,
+usconsulate.gov,Department of State,Yes*,No,No,
+uscourts.gov,The Judicial Branch (Courts),No,,,
+uscvc.gov,The Legislative Branch (Congress),No,,,
+usda.gov,Department of Agriculture,No,,,
+usdapii.gov,Department of Agriculture,No,,,
+usdebitcard.gov,Department of the Treasury,No,,,
+usdoj.gov,Department of Justice,No,,,
+usembassy-mexico.gov,Department of State,Yes*,No,No,
+usembassy.gov,Department of State,No,,,
+userra.gov,Department of Justice,No,,,
+usgcrp.gov,United Stated Global Change Research Program,No,,,
+usgeo.gov,National Aeronautics and Space Administration,Yes*,No,No,
+usgovernment.gov,General Services Administration,No,,,
+usgovernmentmanual.gov,Government Printing Office,No,,,
+usgs.gov,Department of the Interior,Yes,No,No,A-
+ushmm.gov,U. S. Holocaust Memorial Museum,No,,,
+usich.gov,US Interagency Council on Homelessness,No,,,
+usicn.gov,Federal Trade Commission,No,,,
+usint.gov,Department of State,Yes*,No,No,
+usip.gov,General Services Administration,Yes*,No,No,
+usitc.gov,U. S. International Trade Commission,No,,,
+usmarshals.gov,Department of Justice,No,,,
+usmint.gov,Department of the Treasury,Yes,No,No,C
+usmission.gov,Department of State,Yes*,No,No,
+usoge.gov,United States Office of Government Ethics,No,,,
+usphs.gov,Department of Health And Human Services,No,,,
+uspis.gov,U. S. Postal Service,No,,,
+usprobation.gov,The Judicial Branch (Courts),No,,,
+usps.gov,U. S. Postal Service,Yes,Yes,No,A
+uspsoig.gov,"U.S. Postal Service, Office of Inspector General",Yes,Yes,"Yes, and preload-ready",B
+uspto.gov,Department of Commerce,No,,,
+ussc.gov,The Judicial Branch (Courts),No,,,
+ustaxcourt.gov,The Judicial Branch (Courts),Yes,No,No,B
+ustda.gov,U.S. Trade and Development Agency,Yes*,No,No,F
+ustr.gov,Executive Office of the President,Yes,Yes,No,
+ustreas.gov,Department of the Treasury,No,,,
+usvpp.gov,Department of State,Yes*,No,No,
+utahfireinfo.gov,Department of the Interior,Yes*,No,No,
+va.gov,Department of Veterans Affairs,Yes*,No,No,T
+vaccines.gov,Department of Health And Human Services,No,,,
+vallescaldera.gov,Department of Agriculture,Yes,No,No,F
+vcf.gov,Department of Justice,No,,,
+vef.gov,General Services Administration,Yes,No,No,F
+vehiclehistory.gov,Department of Justice,No,,,
+vetbiz.gov,Department of Veterans Affairs,No,,,
+veterans.gov,Department of Labor,No,,,
+visitthecapital.gov,The Legislative Branch (Congress),No,,,
+visitthecapitol.gov,The Legislative Branch (Congress),Yes,Yes,No,C
+vista.gov,Corporation for National & Community Service,No,,,
+vistacampus.gov,Corporation for National & Community Service,No,,,
+voa.gov,International Broadcasting Bureau,No,,,
+volunteer.gov,Department of the Interior,Yes,No,No,C
+volunteeringinamerica.gov,Corporation for National & Community Service,Yes,No,No,B
+wapa.gov,Department of Energy,Yes,No,No,F
+wartimecontracting.gov,National Archives and Records Administration,No,,,
+watermonitor.gov,Department of the Interior,No,,,
+wdl.gov,Library of Congress,No,,,
+wdol.gov,Department of Commerce,No,,,
+weather.gov,Department of Commerce,No,,,
+webharvest.gov,National Archives and Records Administration,No,,,
+welcometousa.gov,Government Printing Office,No,,,
+wethepeople.gov,National Endowment for the Humanities,No,,,
+wh.gov,Executive Office of the President,Yes,Yes,No,A
+whistleblowers.gov,Department of Labor,No,,,
+whitehouse.gov,Executive Office of the President,Yes,Yes,Yes,A
+whitehouseconferenceonaging.gov,Department of Health And Human Services,No,,,
+whitehousedrugpolicy.gov,Executive Office of the President,Yes,No,No,A
+wildfire.gov,Department of Agriculture,Yes*,No,No,
+wildlifeadaptationstrategy.gov,Department of the Interior,No,,,
+windpoweringamerica.gov,Department of Energy,No,,,
+wizard.gov,Department of the Treasury,No,,,
+wlci.gov,Department of the Interior,Yes,Yes,No,A-
+womenbiz.gov,Small Business Administration,No,,,
+womenfarmerclaims.gov,Department of Agriculture,Yes*,Yes,No,C
+womenshealth.gov,Department of Health And Human Services,No,,,
+womenshistorymonth.gov,Library of Congress,No,,,
+workplace.gov,Department of the Treasury,Yes,Yes,No,A-
+worlddigitallibrary.gov,Library of Congress,No,,,
+worldwar1centennial.gov,The United States World War One Centennial Commission,No,,,
+wrp.gov,Department of Labor,Yes,Yes,No,F
+ymp.gov,Department of Energy,No,,,
+youthgo.gov,Department of the Interior,Yes,Yes,No,C
+youthrules.gov,Department of Labor,No,,,
