@@ -23,9 +23,9 @@ make run
 make watch
 ```
 
-## How to update the data
+## Updating the data in Pulse
 
-Updating Pulse is a multi-step process.
+Updating Pulse is a multi-step process that combines data published by government offices with data scanned from the public internet.
 
 ##### Step 1: Get official data
 
@@ -76,6 +76,8 @@ data:
 ```bash
 ./update
 ```
+
+This will use the scanned data to create the high-level conclusions Pulse displays to users and makes available for download.
 
 * Review the changes, rebuild the site, and if all looks good, commit them to source control.
 
