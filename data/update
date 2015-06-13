@@ -54,22 +54,17 @@ LABELS = {
   # used in export CSVs
   'agency': 'Agency',
   'canonical': 'URL',
-  'domain': 'Domain'
+  'domain': 'Domain',
+  'redirect': 'Redirect',
+  'branch': 'Branch'
 }
 
 # rows to put in public CSV export
-CSV_HTTPS_HEADERS = [
-  'Domain', 'Agency', 'Uses HTTPS', 'Enforces HTTPS', 'Strict Transport Security (HSTS)', 'SSL Labs Grade'
-]
 CSV_HTTPS_DOMAINS = [
-  'domain', 'agency', 'https',  'https_forced', 'hsts', 'grade'
-]
-
-CSV_DAP_HEADERS = [
-  'Domain', 'Agency', 'Participates in DAP?'
+  'domain', 'branch', 'agency', 'redirect', 'https',  'https_forced', 'hsts', 'grade'
 ]
 CSV_DAP_DOMAINS = [
-  'domain', 'agency', 'dap'
+  'domain', 'branch', 'agency', 'redirect', 'dap'
 ]
 
 
@@ -306,6 +301,8 @@ def https_row_for(domain):
   row = {
     "Domain": domain,
     "Canonical": inspect["Canonical"],
+    "Redirect": boolean_yes(inspect["Redirect"]),
+    "Branch": domain_data[domain]['branch'],
     "Agency": domain_data[domain]['agency']
   }
 
@@ -479,6 +476,8 @@ def analytics_row_for(domain):
   row = {
     "Domain": domain,
     "Canonical": inspect["Canonical"],
+    "Redirect": boolean_yes(inspect["Redirect"]),
+    "Branch": domain_data[domain]['branch'],
     "Agency": domain_data[domain]['agency']
   }
 
@@ -537,13 +536,24 @@ def boolean_nice(value):
   else:
     return -1
 
+def boolean_yes(value):
+  return {
+    "True": "Yes",
+    "False": "No",
+    "": ""
+  }[value]
+
 # Given the rows we've made, save them to disk.
 def save_tables():
   https_path = os.path.join(TABLE_DATA, "https/domains.json")
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
 
-  csv_https_rows = [CSV_HTTPS_HEADERS] # headers
+
+  header_row = []
+  for label in CSV_HTTPS_DOMAINS:
+    header_row.append(LABELS[label])
+  csv_https_rows = [header_row]
   for domain in https_domains:
     row = []
     for label in CSV_HTTPS_DOMAINS:
@@ -558,7 +568,10 @@ def save_tables():
     csv_https_rows.append(row)
   save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
 
-  csv_dap_rows = [CSV_DAP_HEADERS]
+  header_row = []
+  for label in CSV_DAP_DOMAINS:
+    header_row.append(LABELS[label])
+  csv_dap_rows = [header_row]
   for domain in analytics_domains:
     row = []
     for label in CSV_DAP_DOMAINS:
