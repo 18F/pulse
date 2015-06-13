@@ -318,7 +318,10 @@ def https_row_for(domain):
   else:
     if (inspect["Valid HTTPS"] == "True"):
       https = 2 # Yes
-    elif (inspect["HTTPS Bad Chain"] == "True"):
+    elif (
+      (inspect["HTTPS Bad Chain"] == "True") and
+      (inspect["HTTPS Bad Hostname"] == "False")
+    ):
       https = 1 # Yes
     else:
       https = -1 # No
