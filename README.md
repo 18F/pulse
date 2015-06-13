@@ -27,12 +27,16 @@ make watch
 
 Updating Pulse is a multi-step process.
 
-**Step 1:** Get the latest official `.gov` domain list, and download the latest DAP participation list.
+##### Step 1: Get official data
+
+Get the latest official `.gov` domain list, and download the latest DAP participation list.
 
 * The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
 * The DAP participation list is published quarterly at https://analytics.usa.gov/data/sites.csv. This will be referred to below as **dap.csv**.
 
-**Step 2:** Run [`domain-scan`](https://github.com/18F/domain-scan) using the `.gov` and DAP lists.
+##### Step 2: Scan domains
+
+Use [`domain-scan`](https://github.com/18F/domain-scan) to scan the `.gov` domain list, using the DAP list as a reference.
 
 * Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan). For right now, this requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
 
@@ -44,9 +48,11 @@ The command for this might look like:
 ./scan domains.csv --scan=inspect,tls,analytics --analytics=dap.csv --output=domain-report --debug
 ```
 
-This will output resulting reports for each scanner &mdash; `inspect.csv`, `tls.csv`, and `analytics.csv` &mdash; to `domain-report/results/`.
+This will output a CSV report for each scanner to `domain-report/results/`.
 
-**Step 3:** Move the report CSVs into this repo, run a script to update Pulse's data, and mark the new date(s) in `_config.yml`.
+##### Step 3: Update Pulse
+
+Move the report CSVs into this repo, run a script to update Pulse's data, and mark the new date(s) in `_config.yml`.
 
 * Copy `inspect.csv`, `tls.csv`, and `analytics.csv` into the `data/` directory of this repository.
 
