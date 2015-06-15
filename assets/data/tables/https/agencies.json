@@ -86,12 +86,12 @@
       "Number of Domains": 2,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 0
+      "Uses HTTPS": 50
     },
     {
       "Agency": "Comm for People Who Are Blind/Severly Disabled",
       "Enforces HTTPS": 0,
-      "Number of Domains": 1,
+      "Number of Domains": 2,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 0
@@ -194,25 +194,25 @@
     },
     {
       "Agency": "Department of Defense",
-      "Enforces HTTPS": 17,
-      "Number of Domains": 23,
+      "Enforces HTTPS": 21,
+      "Number of Domains": 24,
       "SSL Labs (A- or higher)": 4,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 30
+      "Uses HTTPS": 33
     },
     {
       "Agency": "Department of Education",
-      "Enforces HTTPS": 19,
-      "Number of Domains": 16,
-      "SSL Labs (A- or higher)": 6,
-      "Strict Transport Security (HSTS)": 6,
-      "Uses HTTPS": 44
+      "Enforces HTTPS": 21,
+      "Number of Domains": 14,
+      "SSL Labs (A- or higher)": 7,
+      "Strict Transport Security (HSTS)": 7,
+      "Uses HTTPS": 43
     },
     {
       "Agency": "Department of Energy",
-      "Enforces HTTPS": 11,
+      "Enforces HTTPS": 13,
       "Number of Domains": 55,
-      "SSL Labs (A- or higher)": 7,
+      "SSL Labs (A- or higher)": 9,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 40
     },
@@ -220,17 +220,17 @@
       "Agency": "Department of Health And Human Services",
       "Enforces HTTPS": 9,
       "Number of Domains": 112,
-      "SSL Labs (A- or higher)": 11,
+      "SSL Labs (A- or higher)": 9,
       "Strict Transport Security (HSTS)": 4,
-      "Uses HTTPS": 28
+      "Uses HTTPS": 29
     },
     {
       "Agency": "Department of Homeland Security",
-      "Enforces HTTPS": 20,
+      "Enforces HTTPS": 24,
       "Number of Domains": 25,
       "SSL Labs (A- or higher)": 4,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 44
+      "Uses HTTPS": 48
     },
     {
       "Agency": "Department of Housing And Urban Development",
@@ -244,9 +244,9 @@
       "Agency": "Department of Justice",
       "Enforces HTTPS": 15,
       "Number of Domains": 66,
-      "SSL Labs (A- or higher)": 3,
+      "SSL Labs (A- or higher)": 5,
       "Strict Transport Security (HSTS)": 2,
-      "Uses HTTPS": 18
+      "Uses HTTPS": 20
     },
     {
       "Agency": "Department of Labor",
@@ -254,7 +254,7 @@
       "Number of Domains": 20,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 20
+      "Uses HTTPS": 25
     },
     {
       "Agency": "Department of State",
@@ -286,15 +286,15 @@
       "Number of Domains": 83,
       "SSL Labs (A- or higher)": 13,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 30
+      "Uses HTTPS": 34
     },
     {
       "Agency": "Department of the Treasury",
-      "Enforces HTTPS": 20,
-      "Number of Domains": 84,
+      "Enforces HTTPS": 21,
+      "Number of Domains": 85,
       "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 25
+      "Uses HTTPS": 27
     },
     {
       "Agency": "Director of National Intelligence",
@@ -322,10 +322,10 @@
     },
     {
       "Agency": "Executive Office of the President",
-      "Enforces HTTPS": 27,
-      "Number of Domains": 30,
-      "SSL Labs (A- or higher)": 47,
-      "Strict Transport Security (HSTS)": 23,
+      "Enforces HTTPS": 29,
+      "Number of Domains": 31,
+      "SSL Labs (A- or higher)": 48,
+      "Strict Transport Security (HSTS)": 26,
       "Uses HTTPS": 77
     },
     {
@@ -422,7 +422,7 @@
       "Number of Domains": 6,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 83
+      "Uses HTTPS": 67
     },
     {
       "Agency": "Federal Retirement Thrift Investment Board",
@@ -446,7 +446,7 @@
       "Number of Domains": 92,
       "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 7,
-      "Uses HTTPS": 53
+      "Uses HTTPS": 51
     },
     {
       "Agency": "Government Printing Office",
@@ -454,7 +454,7 @@
       "Number of Domains": 22,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 5,
-      "Uses HTTPS": 9
+      "Uses HTTPS": 14
     },
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
@@ -658,7 +658,7 @@
     },
     {
       "Agency": "National Science Foundation",
-      "Enforces HTTPS": 12,
+      "Enforces HTTPS": 0,
       "Number of Domains": 8,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
@@ -716,9 +716,9 @@
       "Agency": "Office of Personnel Management",
       "Enforces HTTPS": 33,
       "Number of Domains": 21,
-      "SSL Labs (A- or higher)": 29,
+      "SSL Labs (A- or higher)": 33,
       "Strict Transport Security (HSTS)": 5,
-      "Uses HTTPS": 57
+      "Uses HTTPS": 62
     },
     {
       "Agency": "Overseas Private Investment Corporation",
@@ -774,15 +774,15 @@
       "Number of Domains": 1,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 100
+      "Uses HTTPS": 0
     },
     {
       "Agency": "Small Business Administration",
-      "Enforces HTTPS": 33,
+      "Enforces HTTPS": 17,
       "Number of Domains": 6,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 33
+      "Uses HTTPS": 17
     },
     {
       "Agency": "Smithsonian Institution",
@@ -854,7 +854,7 @@
       "Number of Domains": 41,
       "SSL Labs (A- or higher)": 2,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 22
+      "Uses HTTPS": 24
     },
     {
       "Agency": "The United States World War One Centennial Commission",
@@ -950,7 +950,7 @@
       "Number of Domains": 1,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 0
+      "Uses HTTPS": 100
     },
     {
       "Agency": "US Interagency Council on Homelessness",
