@@ -10,7 +10,7 @@
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     www.sprymedia.co.uk/contact
  * @copyright   Copyright 2014 SpryMedia Ltd.
- * 
+ *
  * License      MIT - http://datatables.net/license/mit
  *
  * This feature plug-in for DataTables adds page length control links to the
