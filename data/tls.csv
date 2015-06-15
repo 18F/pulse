@@ -1,3 +1,4 @@
+Domain,Grade,Signature Algorithm,Key Type,Key Size,Forward Secrecy,OCSP Stapling,Fallback SCSV,RC4,SSLv3,TLSv1.2,SPDY,Requires SNI,HTTP/2
 18f.gov,A+,SHA256withRSA,RSA,2048,4,False,True,False,False,True,True,True,False
 abandonedmines.gov,A,SHA1withRSA,RSA,2048,2,True,True,False,False,True,True,False,False
 abandonedmines.gov,A,SHA1withRSA,RSA,2048,2,True,True,False,False,True,True,False,False
