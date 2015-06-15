@@ -6,13 +6,24 @@
 #
 # * domains.csv - federal domains, subset of .gov domain list.
 # * inspect.csv - output of domain-scan
+# * tls.csv - output of domain-scan
 # * analytics.csv - output of domain-scan
 #
-# Produce, in the assets/data/ directory:
+# Produce, in the assets/data directory:
 #
-# * https.json - JSON version of HTTPS stats.
-# * analytics.json - JSON version of DAP stats.
-# * stats.json - aggregate numbers for DAP, HTTPS, and a timestamp.
+# = donut power
+# * analytics.csv
+# * https.csv
+#
+# = table power
+# * tables/https/agencies.json
+# * tables/https/domains.json
+# * tables/analytics/agencies.json
+# * tables/analytics/domains.json
+#
+# = table data
+# * tables/https/domains.csv
+# * tables/analytics/domains.csv
 #
 ###
 
@@ -30,11 +41,33 @@ LABELS = {
   'https': 'Uses HTTPS',
   'https_forced': 'Enforces HTTPS',
   'hsts': 'Strict Transport Security (HSTS)',
+  'hsts_age': 'HSTS max-age',
   'grade': 'SSL Labs Grade',
   'grade_agencies': 'SSL Labs (A- or higher)',
   'dap': 'Participates in DAP?',
-  'details': 'Details'
+  'fs': 'Forward Secrecy',
+  'rc4': 'RC4',
+  'sig': 'Signature Algorithm',
+  'ssl3': 'SSLv3',
+  'tls12': 'TLSv1.2',
+
+  # used in export CSVs
+  'agency': 'Agency',
+  'canonical': 'URL',
+  'domain': 'Domain',
+  'redirect': 'Redirect',
+  'branch': 'Branch'
 }
+
+# rows to put in public CSV export
+CSV_HTTPS_DOMAINS = [
+  'domain', 'branch', 'agency', 'redirect', 'https',  'https_forced', 'hsts', 'grade'
+]
+CSV_DAP_DOMAINS = [
+  'domain', 'branch', 'agency', 'redirect', 'dap'
+]
+
+
 
 ## global data
 
@@ -263,27 +296,13 @@ def evaluating_for_analytics(domain):
     (domain_data[domain]['branch'] == "executive")
   )
 
-'''
-Given the data we have about a domain, what's the HTTPS row?
-
-{
-  "Domain": [domain],
-  "Uses HTTPS": [
-    "No" | "Yes (with issues)" | "Yes"
-  ],
-  "Enforces HTTPS": [
-    "No" | "Yes" | "Yes (Strict)"
-  ],
-  "HSTS": [
-    "No" | "Yes (Partial)" | "Yes (Complete)"
-  ]
-}
-'''
 def https_row_for(domain):
   inspect = domain_data[domain]['inspect']
   row = {
     "Domain": domain,
     "Canonical": inspect["Canonical"],
+    "Redirect": boolean_yes(inspect["Redirect"]),
+    "Branch": domain_data[domain]['branch'],
     "Agency": domain_data[domain]['agency']
   }
 
@@ -296,7 +315,10 @@ def https_row_for(domain):
   else:
     if (inspect["Valid HTTPS"] == "True"):
       https = 2 # Yes
-    elif (inspect["HTTPS Bad Chain"] == "True"):
+    elif (
+      (inspect["HTTPS Bad Chain"] == "True") and
+      (inspect["HTTPS Bad Hostname"] == "False")
+    ):
       https = 1 # Yes
     else:
       https = -1 # No
@@ -308,18 +330,22 @@ def https_row_for(domain):
   # Is HTTPS enforced?
 
   if (https <= 0):
-    behavior = -1 # N/A (considered 'No')
+    behavior = 0 # N/A
 
   else:
-    # It's a hard "No" if HTTPS redirects down to HTTP.
-    if (inspect["Downgrades HTTPS"] == "True"):
-      behavior = 0 # Downgrade (considered 'No')
 
     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
     # *and* that HTTP eventually redirects to HTTPS.
-    elif (
+    #
+    # Since a pure redirector domain can't "default" to HTTPS
+    # for itself, we'll say it "Enforces HTTPS" if it immediately
+    # redirects to an HTTPS URL.
+    if (
       (inspect["Strictly Forces HTTPS"] == "True") and
-      (inspect["Defaults to HTTPS"] == "True")
+      (
+        (inspect["Defaults to HTTPS"] == "True") or
+        (inspect["Redirect"] == "True")
+      )
     ):
       behavior = 3 # Yes (Strict)
 
@@ -342,6 +368,11 @@ def https_row_for(domain):
   ###
   # Characterize the presence and completeness of HSTS.
 
+  if inspect["HSTS Max Age"]:
+    hsts_age = int(inspect["HSTS Max Age"])
+  else:
+    hsts_age = None
+
   # Without HTTPS there can be no HSTS.
   if (https <= 0):
     hsts = -1 # N/A (considered 'No')
@@ -352,25 +383,50 @@ def https_row_for(domain):
     if (inspect["HSTS"] == "False"):
       hsts = 0 # No
 
-    # "Complete" means HSTS preload ready (long max-age).
+    # HSTS preload ready already implies a minimum max-age, and
+    # may be fine on the root even if the canonical www is weak.
     elif (inspect["HSTS Preload Ready"] == "True"):
-      hsts = 3 # Complete (considered 'Yes')
+      hsts = 3 # Yes
 
-    # This kind of "Partial" means `includeSubdomains`, but no `preload`.
-    elif (inspect["HSTS All Subdomains"] == "True"):
-      hsts = 2 # Nearly Complete (considered 'Yes')
+    # We'll make a judgment call here.
+    #
+    # The OMB policy wants a 1 year max-age (31536000).
+    # The HSTS preload list wants an 18 week max-age (10886400).
+    #
+    # We don't want to punish preload-ready domains that are between
+    # the two.
+    #
+    # So if you're below 18 weeks, that's a No.
+    # If you're between 18 weeks and 1 year, it's a Yes
+    # (but you'll get a warning in the extended text).
+    # 1 year and up is a yes.
+    elif (hsts_age < 10886400):
+      hsts = 0 # No, too weak
 
-    # This kind of "Partial" means HSTS, but not on subdomains.
-    else: # if (inspect["HSTS"] == "True"):
-      hsts = 1 # Partial (considered 'Yes')
+    else:
+      # This kind of "Partial" means `includeSubdomains`, but no `preload`.
+      if (inspect["HSTS All Subdomains"] == "True"):
+        hsts = 2 # Yes
 
-  row[LABELS['hsts']] = hsts;
+      # This kind of "Partial" means HSTS, but not on subdomains.
+      else: # if (inspect["HSTS"] == "True"):
+
+        hsts = 1 # Yes
+
+  row[LABELS['hsts']] = hsts
+  row[LABELS['hsts_age']] = hsts_age
 
 
   ###
   # Include the SSL Labs grade for a domain.
 
   tls = domain_data[domain].get('tls')
+
+  fs = None
+  sig = None
+  ssl3 = None
+  tls12 = None
+  rc4 = None
 
   # Not relevant if no HTTPS
   if (https <= 0):
@@ -392,22 +448,23 @@ def https_row_for(domain):
       "A+": 6
     }[tls["Grade"]]
 
+    ###
+    # Construct a sentence about the domain's TLS config.
+    #
+    # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
+
+    fs = int(tls["Forward Secrecy"])
+    sig = tls["Signature Algorithm"]
+    rc4 = boolean_for(tls["RC4"])
+    ssl3 = boolean_for(tls["SSLv3"])
+    tls12 = boolean_for(tls["TLSv1.2"])
+
   row[LABELS['grade']] = grade
-
-
-  ###
-  # Construct a sentence explaining the situation.
-
-  if https == 2:
-    details = "This domain is offered over valid HTTPS."
-  elif https == 1:
-    details = "This domain is offered over valid HTTPS, but uses a certificate chain that may cause issues for some visitors."
-  elif https == 0:
-    details = "This domain redirects visitors from HTTPS to HTTP."
-  elif https == -1:
-    details = "This domain does not support HTTPS."
-
-  row[LABELS['details']] = details
+  row[LABELS['fs']] = fs
+  row[LABELS['sig']] = sig
+  row[LABELS['rc4']] = rc4
+  row[LABELS['ssl3']] = ssl3
+  row[LABELS['tls12']] = tls12
 
   return row
 
@@ -419,6 +476,8 @@ def analytics_row_for(domain):
   row = {
     "Domain": domain,
     "Canonical": inspect["Canonical"],
+    "Redirect": boolean_yes(inspect["Redirect"]),
+    "Branch": domain_data[domain]['branch'],
     "Agency": domain_data[domain]['agency']
   }
 
@@ -477,11 +536,56 @@ def boolean_nice(value):
   else:
     return -1
 
+def boolean_yes(value):
+  return {
+    "True": "Yes",
+    "False": "No",
+    "": ""
+  }[value]
+
 # Given the rows we've made, save them to disk.
 def save_tables():
   https_path = os.path.join(TABLE_DATA, "https/domains.json")
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
+
+
+  header_row = []
+  for label in CSV_HTTPS_DOMAINS:
+    header_row.append(LABELS[label])
+  csv_https_rows = [header_row]
+  for domain in https_domains:
+    row = []
+    for label in CSV_HTTPS_DOMAINS:
+      cell = str(domain[LABELS[label]])
+
+      # If we have a display mapping of e.g. 1 -> "Yes", run it.
+      # This is synced manually with the JS mapping, which is bad.
+      if CSV_HTTPS_MAPPING.get(label):
+        cell = CSV_HTTPS_MAPPING[label][cell]
+
+      row.append(cell)
+    csv_https_rows.append(row)
+  save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
+
+  header_row = []
+  for label in CSV_DAP_DOMAINS:
+    header_row.append(LABELS[label])
+  csv_dap_rows = [header_row]
+  for domain in analytics_domains:
+    row = []
+    for label in CSV_DAP_DOMAINS:
+      cell = str(domain[LABELS[label]])
+
+      # If we have a display mapping of e.g. 1 -> "Yes", run it.
+      # This is synced manually with the JS mapping, which is bad.
+      if CSV_DAP_MAPPING.get(label):
+        cell = CSV_DAP_MAPPING[label][cell]
+
+      row.append(cell)
+
+    csv_dap_rows.append(row)
+  save_csv(csv_dap_rows, TABLE_DATA, "analytics/analytics-domains.csv")
 
   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
   https_agencies_data = json_for({'data': https_agencies})
@@ -497,21 +601,24 @@ def save_tables():
 
 # Given the rows we've made, save some top-level #'s to disk.
 def save_stats():
-  f = open(os.path.join(STATS_DATA, "https.csv"), 'w', newline='')
+  save_csv(https_stats, STATS_DATA, "https.csv")
+  save_csv(analytics_stats, STATS_DATA, "analytics.csv")
+
+def save_csv(rows, directory, filename):
+  f = open(os.path.join(directory, filename), 'w', newline='')
   writer = csv.writer(f)
-  for row in https_stats:
+  for row in rows:
     writer.writerow(row)
   f.close()
-
-  f = open(os.path.join(STATS_DATA, "analytics.csv"), 'w', newline='')
-  writer = csv.writer(f)
-  for row in analytics_stats:
-    writer.writerow(row)
-  f.close()
-
 
 
 ### utilities
+
+def boolean_for(string):
+  if string == "False":
+    return False
+  else:
+    return True
 
 def json_for(object):
   return json.dumps(object, sort_keys=True,
@@ -549,6 +656,60 @@ def write(content, destination):
     f = open(destination, 'w', encoding='utf-8')
     f.write(content)
     f.close()
+
+### Stupid mapping sync.
+
+"""
+I don't like this at all, but to keep the presentation synced
+between the front-end table, and the CSV we generate, this is
+getting replicated to the JavaScript files in this repository,
+and needs to be manually synced.
+
+The refactor that takes away from DataTables should also prioritize
+a cleaner way to DRY (don't repeat yourself) this mess up.
+"""
+CSV_HTTPS_MAPPING = {
+
+  'https': {
+    "-1": "No",
+    '0': "No",
+    '1': "Yes", # (with certificate chain issues)
+    '2': "Yes"
+  },
+
+  'https_forced': {
+    '0': "", # N/A (no HTTPS)
+    '1': "No", # Present, not default
+    '2': "Yes", # Defaults eventually to HTTPS
+    '3': "Yes" # Defaults eventually + redirects immediately
+  },
+
+  'hsts': {
+    "-1": "", # N/A
+    '0': "No", # No
+    '1': "Yes", # HSTS on only that domain
+    '2': "Yes", # HSTS on subdomains
+    '3': "Yes, and preload-ready" # HSTS on subdomains + preload
+  },
+
+  'grade': {
+    "-1": "",
+    '0': "F",
+    '1': "T",
+    '2': "C",
+    '3': "B",
+    '4': "A-",
+    '5': "A",
+    '6': "A+"
+  }
+}
+
+CSV_DAP_MAPPING = {
+  'dap': {
+    '0': "No",
+    '1': "Yes"
+  }
+}
 
 ### Run when executed.
 

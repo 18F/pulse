@@ -47,6 +47,13 @@ a {
   }
 }
 
+footer {
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  border-top: 1px solid $dark-blue;
+}
+
 .button {
   padding: 10px;
   text-align: center;
@@ -63,6 +70,25 @@ a {
 
 .wrapper {
   @include outer-container;
+}
+
+a#skipnav {
+    padding: 10px 15px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: $medium-blue;
+    background: transparent;
+    @include transition(top 1s ease-out, background 1s linear);
+    z-index: 100;
+    &:focus {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: white;
+      outline: 0;
+      @include transition(top .1s ease-in, background .5s linear);
+    }
 }
 
 // _includes/header.html
@@ -85,7 +111,7 @@ a {
         margin: 0;
       }
     }
-    .alpha {
+    .stage {
       float: right;
       @include media($large) {
         float: none;
@@ -216,8 +242,14 @@ a {
     .https, .dap {
       @include span-columns(4 of 8);
       @media (max-width: 970px) {
-        @include span-columns(8 of 8);
+        width: 100%
       }
+
+      @include display(flex);
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+
       margin-bottom: 40px;
       text-align: center;
 
@@ -225,11 +257,6 @@ a {
         font-size: 5em;
       }
 
-      .button {
-        @include media($large){
-          margin-left: 25px;
-        }
-      }
     }
   }
 }
@@ -275,7 +302,7 @@ a {
         padding: 0;
         .description {
           @include span-columns(8);
-          padding-top: 60px;
+          padding-top: 30px;
           @include media($medium) {
             @include span-columns(12);
             padding: 40px 20px 20px 20px;
@@ -323,6 +350,7 @@ a {
 
 .https_chart, .dap_chart {
   cursor: pointer;
+  padding-top: 15px;
 }
 
 // pages/analytics/*
@@ -359,6 +387,10 @@ a {
       margin-bottom: 15px;
     }
     li { padding-bottom: 40px; }
+
+    p {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -383,14 +415,46 @@ a {
   }
 }
 
+// pages/404.html
+/////////////////////////////////////////
+#pagenotfound {
+  #main-content {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    h2 {
+      font-size: 10em;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+}
+
 // dataTables
 /////////////////////////////////////////
 
 .dataTables_wrapper {
   padding: 80px 0 40px;
+
   .dataTables_length {
     font-size: 1.1em;
     font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a.active, a.active:hover {
+      text-decoration: none;
+      color: black !important;
+    }
+
     select {
       border: none;
       display: inline-block;
@@ -405,8 +469,29 @@ a {
       appearance: none;
       cursor: pointer;
       background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-blue;
+      &::-ms-expand {
+        display: none;
+      }
     }
   }
+
+  .dataTables_csv {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+
+    a {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      float: none;
+      text-align: center;
+    }
+  }
+
   .dataTables_filter {
     font-size: 1.1em;
     label { float: right; }
@@ -444,17 +529,16 @@ a {
 
     th, td {
       border-bottom: 2px solid #EEE !important;
-      padding: 8px 0 8px 20px !important;
+      padding: 8px 0 8px 40px;
     }
 
-    /* Domain column, to accommodate for More button. */
-    td:first-child {
-      padding-left: 40px !important;
+    td:first {
+      padding: 8px 0 8px 30px !important;
     }
 
     thead {
       .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
-        background-position: center left;
+        background-position: 20px center;
       }
     }
 
@@ -464,7 +548,8 @@ a {
 
     &.domain {
 
-      td:first-child {
+      td.odd:first-child,
+      td.even:first-child {
         white-space: nowrap;
       }
     }
@@ -476,18 +561,39 @@ a {
       }
     }
 
-    tbody > tr.child span.dtr-title {
-      min-width: 50px;
+    > tbody {
+      > tr.child {
+        ul li {
+          border-bottom: none;
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+      }
     }
 
-    tbody > tr.parent > th:first-child:before {
-      background-color: #CCC;
+    &.https.domain {
+      tbody {
+        tr {
+          &.parent {
+            td { border-bottom: none !important; }
+          }
+          &:hover {
+            background-color: #EEE;
+            cursor: pointer;
+            +.child {
+              background-color: #EEE;
+            }
+          }
+        }
+      }
     }
 
     &.agency {
 
       td {
-        padding: 15px 0 !important;
+        padding: 15px 0 15px 40px !important;
 
         @include media($large) {
           padding-left: 32px !important;
@@ -557,4 +663,6 @@ a {
     }
   }
 }
+
+
 

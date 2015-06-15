@@ -1,18 +1,20 @@
 #!/usr/bin/env node
 
 var hookshot = require("hookshot");
-var spawn = require("child_process").spawn;
-var options = require('minimist')(process.argv.slice(2));
+var program  = require("commander");
 
-var branch = options.b || options.branch;
-var command = options.c || options.command;
-var port = options.p || options.port;
+program
+  .option("-b, --branch <branch>", "Git branch to use when waiting for posthooks")
+  .option("-c, --command <command>", "Command to run after posthook.")
+  .option("-p, --port <number>", "Port in which to watch for postcommit web hooks.")
+  .parse(process.argv);
 
-if (!branch || !command || !port) {
+if (!program.branch || !program.command || !program.port) {
   console.error("--branch, --command, and --port are all required.")
+  program.outputHelp();
   process.exit(1);
 }
 
-hookshot('refs/heads/' + branch, command).listen(port);
-
-console.log("Huzzah! Listening on port " + port + " for push events on " + branch + ".")
+hookshot("refs/heads/" + program.branch, program.command).listen(program.port, function() {
+  console.log("Huzzah! Listening on port " + program.port + " for push events on " + program.branch + ".")
+});

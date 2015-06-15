@@ -6,12 +6,28 @@
 </head>
 
 <body id="{{ page.id }}">
+<a id="skipnav" href="#content">Skip to main content</a>
+<!--[if lte IE 9]>
+  <section>
+    <h2>Your browser is out of date.</h2>
+    <p style="color: #000;">
+      You are using an older version of Internet Explorer. For a better
+      experience, please update your browser to the latest version.
+    </p>
+    <p>
+      <a target="_blank"
+         href="http://browsehappy.com/">Learn how to update your browser.</a>
+    </p>
+  </section>
+<![endif]-->
 
 {% include header.html %}
 
 <section id="content">
   {{ content }}
 </section>
+
+{% include footer.html %}
 
 {% include reporting.html %}
 

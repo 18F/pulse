@@ -4,7 +4,9 @@ logs
 
 /_site
 /.sass-cache
-/data/*.csv
 
 # Mac specific
 .DS_Store
+
+# Node
+node_modules/

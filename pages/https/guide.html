@@ -82,7 +82,7 @@ description: "How federal government domains are doing at deploying HTTPS."
 
         <ul>
           <li><strong>Strict Transport Security (HSTS)</strong></li>
-          <li><strong>Values:</strong> No, Yes, "Yes, and preloaded"</li>
+          <li><strong>Values:</strong> No, Yes, "Yes, and preload-ready"</li>
           <li>Whether a domain has implemented <a href="https://https.cio.gov/hsts/">HTTP Strict Transport Security</a>, which ensures that <a href="http://caniuse.com/#search=hsts">supporting browsers</a> will only ever communicate with a domain over HTTPS (even if the user clicks or types in a plain HTTP link).</li>
           <li>"Yes" means that a valid <code>Strict-Transport-Security</code> header with a non-zero <code>max-age</code> is present on the domain's default endpoint.</li>
           <li>"Yes, and preloaded" means that the domain has implemented a strong HSTS header on its <strong>bare domain</strong> whose policy covers all subdomains, and has indicated consent to <a href="https://hstspreload.appspot.com">preloading by all major browsers</a> as HTTPS-only. This effectively means that a domain's namespace is permanently and fully committed to HTTPS.</li>
