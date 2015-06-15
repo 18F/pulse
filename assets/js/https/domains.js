@@ -18,7 +18,7 @@ $(document).ready(function () {
     https: {
       "-1": "No",
       0: "No",
-      1: "Yes*", // (with certificate chain issues)
+      1: "Yes", // (with certificate chain issues)
       2: "Yes"
     },
 
