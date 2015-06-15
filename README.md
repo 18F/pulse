@@ -23,17 +23,72 @@ make run
 make watch
 ```
 
+## Updating the data in Pulse
+
+Updating Pulse is a multi-step process that combines data published by government offices with data scanned from the public internet.
+
+##### Step 1: Get official data
+
+Get the latest official `.gov` domain list, and download the latest DAP participation list.
+
+* The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
+* The DAP participation list is published quarterly at https://analytics.usa.gov/data/sites.csv. This will be referred to below as **dap.csv**.
+
+##### Step 2: Scan domains
+
+Use [`domain-scan`](https://github.com/18F/domain-scan) to scan the `.gov` domain list, using the DAP list as a reference.
+
+* Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan). For right now, this requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
+
+* Tell `domain-scan` to run the `inspect`, `tls`, and `analytics` scanners over the list of `.gov` domains, referencing the DAP participation list. Use `--force` to tell it to ignore any disk cache and to tell SSL Labs to ignore its server-side cache.
+
+The command for this might look like:
+
+```bash
+./scan domains.csv --scan=inspect,tls,analytics --analytics=dap.csv --output=domain-report --debug --force
+```
+
+This will output a CSV report for each scanner to `domain-report/results/`.
+
+##### Step 3: Update Pulse
+
+Move the report CSVs into this repo, run a script to update Pulse's data, and mark the new date(s) in `_config.yml`.
+
+* Copy `inspect.csv`, `tls.csv`, and `analytics.csv` into the `data/` directory of this repository.
+
+* Update `_config.yml` to reflect the latest dates:
+
+```yaml
+data:
+  domains: 2015-03-15
+  dap: 2015-05-29
+  scan: 2015-06-07
+```
+
+`domains`: The date the `.gov` domain list was *generated* by the `.gov` registry.
+
+`dap`: The date the DAP participation list was *generated* by the Digital Analytics Program.
+
+`scan`: The date that `domain-scan` was *executed* and which created `inspect.csv` and `tls.csv`.
+
+* Update Pulse's data from the `data/` directory:
+
+```bash
+./update
+```
+
+This will use the scanned data to create the high-level conclusions Pulse displays to users and makes available for download.
+
+* Review the changes, rebuild the site, and if all looks good, commit them to source control.
+
+
 ## Ideas for later versions
 
 This project is an initial pass - there is much more information that can be represented in dashboards to great effect.  Below are some of the further ideas for both for future work on this project.  Feel free to add your ideas here, too.
 
-* For the HTTPS Dashboard:
-  * Even more HTTPS detail, e.g. SHA-1, forward secrecy
-  * Expand to cover subdomains
 * For the DAP Dashboard
   * Number of pages from a domain reporting into DAP
   * Number or list of subdomains from a domain reporting into DAP
-  * Expand to cover subdomains
   * Test the deeper config options that the DAP snippet should be employing, such as IP anonymization, Event tracking, Demographics turned off, and ?????.  (Possibly using headless browser)
 * Does the site require “www”? Does it require not using “www”?
 * Load time (server-side)
@@ -42,14 +97,14 @@ This project is an initial pass - there is much more information that can be rep
 * Use of third party services
 * 508 compliance (poss. with http://pa11y.org/)
 * Any other items listed in the [OMB letter to OGP passing along .gov domain issuance](https://www.whitehouse.gov/sites/default/files/omb/egov/memo/policies-for-dot-gov-domain-issuance-for-federal-agency-public-websites.pdf)
-* Lighter or fun things - like how many domains start with each letter of the alphabet, what the last 10 that came out were, etc.  
+* Lighter or fun things - like how many domains start with each letter of the alphabet, what the last 10 that came out were, etc.
 * 2FA or Connect.gov ?  - Not sure how it would work but note Section 3's requirement [in this EO](https://www.whitehouse.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions)
 * Anything from/with itdashboard.gov
 * [open source](https://github.com/18F/pulse/issues/204)
 * [Look at what Ben tracked](http://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/)
 * IPv6
 * DNSSEC
-* What else can we get from Verisign?  
+* What else can we get from Verisign?
 
 
 ### Public domain
