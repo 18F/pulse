@@ -715,14 +715,6 @@
     {
       "Agency": "Civil Air Patrol",
       "Branch": "executive",
-      "Canonical": "http://www.cap.gov",
-      "Domain": "cap.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Civil Air Patrol",
-      "Branch": "executive",
       "Canonical": "http://www.capnhq.gov",
       "Domain": "capnhq.gov",
       "Participates in DAP?": 0,
@@ -931,7 +923,7 @@
     {
       "Agency": "Department of Commerce",
       "Branch": "executive",
-      "Canonical": "http://climate.gov",
+      "Canonical": "http://www.climate.gov",
       "Domain": "climate.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -1195,7 +1187,7 @@
     {
       "Agency": "Department of Defense",
       "Branch": "executive",
-      "Canonical": "http://www.cttso.gov",
+      "Canonical": "http://cttso.gov",
       "Domain": "cttso.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -1851,7 +1843,7 @@
     {
       "Agency": "Department of Justice",
       "Branch": "executive",
-      "Canonical": "http://www.fbi.gov",
+      "Canonical": "https://www.fbi.gov",
       "Domain": "fbi.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -2363,7 +2355,7 @@
     {
       "Agency": "Department of State",
       "Branch": "executive",
-      "Canonical": "http://foreignassistance.gov",
+      "Canonical": "http://www.foreignassistance.gov",
       "Domain": "foreignassistance.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -2571,7 +2563,7 @@
     {
       "Agency": "Department of Justice",
       "Branch": "executive",
-      "Canonical": "http://getsmartaboutdrugs.gov",
+      "Canonical": "http://www.getsmartaboutdrugs.gov",
       "Domain": "getsmartaboutdrugs.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -3243,7 +3235,7 @@
     {
       "Agency": "Department of Justice",
       "Branch": "executive",
-      "Canonical": "http://www.iprcenter.gov",
+      "Canonical": "https://www.iprcenter.gov",
       "Domain": "iprcenter.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -3387,7 +3379,7 @@
     {
       "Agency": "Department of Justice",
       "Branch": "executive",
-      "Canonical": "http://justthinktwice.gov",
+      "Canonical": "http://www.justthinktwice.gov",
       "Domain": "justthinktwice.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -3662,14 +3654,6 @@
       "Canonical": "https://mcc.gov",
       "Domain": "mcc.gov",
       "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Department of Defense",
-      "Branch": "executive",
-      "Canonical": "http://www.mcrmc.gov",
-      "Domain": "mcrmc.gov",
-      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -4177,14 +4161,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of the Interior",
-      "Branch": "executive",
-      "Canonical": "http://niftt.gov",
-      "Domain": "niftt.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
       "Agency": "National Indian Gaming Commission",
       "Branch": "executive",
       "Canonical": "http://nigc.gov",
@@ -4382,14 +4358,6 @@
       "Canonical": "http://www.nsopw.gov",
       "Domain": "nsopw.gov",
       "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "National Aeronautics and Space Administration",
-      "Branch": "executive",
-      "Canonical": "http://nswp.gov",
-      "Domain": "nswp.gov",
-      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -4641,14 +4609,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of the Interior",
-      "Branch": "executive",
-      "Canonical": "http://www.osmre.gov",
-      "Domain": "osmre.gov",
-      "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Department of Energy",
       "Branch": "executive",
       "Canonical": "http://www.osti.gov",
@@ -4699,7 +4659,7 @@
     {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "http://partner4solutions.gov",
+      "Canonical": "http://www.partner4solutions.gov",
       "Domain": "partner4solutions.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -4827,7 +4787,7 @@
     {
       "Agency": "Department of Energy",
       "Branch": "executive",
-      "Canonical": "http://www.pnl.gov",
+      "Canonical": "http://pnl.gov",
       "Domain": "pnl.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -5723,7 +5683,7 @@
     {
       "Agency": "Department of Defense",
       "Branch": "executive",
-      "Canonical": "http://www.tswg.gov",
+      "Canonical": "http://tswg.gov",
       "Domain": "tswg.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
