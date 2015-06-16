@@ -21,6 +21,10 @@
 # * tables/analytics/agencies.json
 # * tables/analytics/domains.json
 #
+# = table data
+# * tables/https/domains.csv
+# * tables/analytics/domains.csv
+#
 ###
 
 import csv
@@ -45,8 +49,25 @@ LABELS = {
   'rc4': 'RC4',
   'sig': 'Signature Algorithm',
   'ssl3': 'SSLv3',
-  'tls12': 'TLSv1.2'
+  'tls12': 'TLSv1.2',
+
+  # used in export CSVs
+  'agency': 'Agency',
+  'canonical': 'URL',
+  'domain': 'Domain',
+  'redirect': 'Redirect',
+  'branch': 'Branch'
 }
+
+# rows to put in public CSV export
+CSV_HTTPS_DOMAINS = [
+  'domain', 'branch', 'agency', 'redirect', 'https',  'https_forced', 'hsts', 'grade'
+]
+CSV_DAP_DOMAINS = [
+  'domain', 'branch', 'agency', 'redirect', 'dap'
+]
+
+
 
 ## global data
 
@@ -280,6 +301,8 @@ def https_row_for(domain):
   row = {
     "Domain": domain,
     "Canonical": inspect["Canonical"],
+    "Redirect": boolean_yes(inspect["Redirect"]),
+    "Branch": domain_data[domain]['branch'],
     "Agency": domain_data[domain]['agency']
   }
 
@@ -292,7 +315,10 @@ def https_row_for(domain):
   else:
     if (inspect["Valid HTTPS"] == "True"):
       https = 2 # Yes
-    elif (inspect["HTTPS Bad Chain"] == "True"):
+    elif (
+      (inspect["HTTPS Bad Chain"] == "True") and
+      (inspect["HTTPS Bad Hostname"] == "False")
+    ):
       https = 1 # Yes
     else:
       https = -1 # No
@@ -450,6 +476,8 @@ def analytics_row_for(domain):
   row = {
     "Domain": domain,
     "Canonical": inspect["Canonical"],
+    "Redirect": boolean_yes(inspect["Redirect"]),
+    "Branch": domain_data[domain]['branch'],
     "Agency": domain_data[domain]['agency']
   }
 
@@ -508,11 +536,56 @@ def boolean_nice(value):
   else:
     return -1
 
+def boolean_yes(value):
+  return {
+    "True": "Yes",
+    "False": "No",
+    "": ""
+  }[value]
+
 # Given the rows we've made, save them to disk.
 def save_tables():
   https_path = os.path.join(TABLE_DATA, "https/domains.json")
   https_data = json_for({'data': https_domains})
   write(https_data, https_path)
+
+
+  header_row = []
+  for label in CSV_HTTPS_DOMAINS:
+    header_row.append(LABELS[label])
+  csv_https_rows = [header_row]
+  for domain in https_domains:
+    row = []
+    for label in CSV_HTTPS_DOMAINS:
+      cell = str(domain[LABELS[label]])
+
+      # If we have a display mapping of e.g. 1 -> "Yes", run it.
+      # This is synced manually with the JS mapping, which is bad.
+      if CSV_HTTPS_MAPPING.get(label):
+        cell = CSV_HTTPS_MAPPING[label][cell]
+
+      row.append(cell)
+    csv_https_rows.append(row)
+  save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
+
+  header_row = []
+  for label in CSV_DAP_DOMAINS:
+    header_row.append(LABELS[label])
+  csv_dap_rows = [header_row]
+  for domain in analytics_domains:
+    row = []
+    for label in CSV_DAP_DOMAINS:
+      cell = str(domain[LABELS[label]])
+
+      # If we have a display mapping of e.g. 1 -> "Yes", run it.
+      # This is synced manually with the JS mapping, which is bad.
+      if CSV_DAP_MAPPING.get(label):
+        cell = CSV_DAP_MAPPING[label][cell]
+
+      row.append(cell)
+
+    csv_dap_rows.append(row)
+  save_csv(csv_dap_rows, TABLE_DATA, "analytics/analytics-domains.csv")
 
   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
   https_agencies_data = json_for({'data': https_agencies})
@@ -528,18 +601,15 @@ def save_tables():
 
 # Given the rows we've made, save some top-level #'s to disk.
 def save_stats():
-  f = open(os.path.join(STATS_DATA, "https.csv"), 'w', newline='')
+  save_csv(https_stats, STATS_DATA, "https.csv")
+  save_csv(analytics_stats, STATS_DATA, "analytics.csv")
+
+def save_csv(rows, directory, filename):
+  f = open(os.path.join(directory, filename), 'w', newline='')
   writer = csv.writer(f)
-  for row in https_stats:
+  for row in rows:
     writer.writerow(row)
   f.close()
-
-  f = open(os.path.join(STATS_DATA, "analytics.csv"), 'w', newline='')
-  writer = csv.writer(f)
-  for row in analytics_stats:
-    writer.writerow(row)
-  f.close()
-
 
 
 ### utilities
@@ -586,6 +656,60 @@ def write(content, destination):
     f = open(destination, 'w', encoding='utf-8')
     f.write(content)
     f.close()
+
+### Stupid mapping sync.
+
+"""
+I don't like this at all, but to keep the presentation synced
+between the front-end table, and the CSV we generate, this is
+getting replicated to the JavaScript files in this repository,
+and needs to be manually synced.
+
+The refactor that takes away from DataTables should also prioritize
+a cleaner way to DRY (don't repeat yourself) this mess up.
+"""
+CSV_HTTPS_MAPPING = {
+
+  'https': {
+    "-1": "No",
+    '0': "No",
+    '1': "Yes", # (with certificate chain issues)
+    '2': "Yes"
+  },
+
+  'https_forced': {
+    '0': "", # N/A (no HTTPS)
+    '1': "No", # Present, not default
+    '2': "Yes", # Defaults eventually to HTTPS
+    '3': "Yes" # Defaults eventually + redirects immediately
+  },
+
+  'hsts': {
+    "-1": "", # N/A
+    '0': "No", # No
+    '1': "Yes", # HSTS on only that domain
+    '2': "Yes", # HSTS on subdomains
+    '3': "Yes, and preload-ready" # HSTS on subdomains + preload
+  },
+
+  'grade': {
+    "-1": "",
+    '0': "F",
+    '1': "T",
+    '2': "C",
+    '3': "B",
+    '4': "A-",
+    '5': "A",
+    '6': "A+"
+  }
+}
+
+CSV_DAP_MAPPING = {
+  'dap': {
+    '0': "No",
+    '1': "Yes"
+  }
+}
 
 ### Run when executed.
 

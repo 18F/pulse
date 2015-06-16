@@ -615,6 +615,18 @@ a#skipnav {
       background: url("/assets/images/arrow-down.png") 73%/15% no-repeat #0059b3; }
       .dataTables_wrapper .dataTables_length select::-ms-expand {
         display: none; }
+  .dataTables_wrapper .dataTables_csv {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left; }
+    .dataTables_wrapper .dataTables_csv a {
+      text-decoration: underline; }
+    @media (max-width: 640px) {
+      .dataTables_wrapper .dataTables_csv {
+        float: none;
+        text-align: center; } }
   .dataTables_wrapper .dataTables_filter {
     font-size: 1.1em; }
     .dataTables_wrapper .dataTables_filter label {

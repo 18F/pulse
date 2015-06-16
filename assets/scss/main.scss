@@ -86,7 +86,7 @@ a#skipnav {
       left: 0px;
       top: 0px;
       background: white;
-      outline: 0;  
+      outline: 0;
       @include transition(top .1s ease-in, background .5s linear);
     }
 }
@@ -244,8 +244,8 @@ a#skipnav {
       @media (max-width: 970px) {
         width: 100%
       }
-  
-      @include display(flex); 
+
+      @include display(flex);
       @include flex-direction(column);
       @include align-items(center);
       @include justify-content(center);
@@ -421,9 +421,9 @@ a#skipnav {
   #main-content {
     padding: 40px;
     text-align: center;
-    color: white; 
+    color: white;
     margin: 0 auto;
-    h2 { 
+    h2 {
       font-size: 10em;
       margin-bottom: 8px;
     }
@@ -472,6 +472,23 @@ a#skipnav {
       &::-ms-expand {
         display: none;
       }
+    }
+  }
+
+  .dataTables_csv {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+
+    a {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      float: none;
+      text-align: center;
     }
   }
 
@@ -546,8 +563,8 @@ a#skipnav {
 
     > tbody {
       > tr.child {
-        ul li { 
-          border-bottom: none; 
+        ul li {
+          border-bottom: none;
           padding: 0 0 3px 0;
         }
         span.dtr-title {
@@ -556,7 +573,7 @@ a#skipnav {
       }
     }
 
-    &.https.domain { 
+    &.https.domain {
       tbody {
         tr {
           &.parent {
@@ -572,7 +589,7 @@ a#skipnav {
         }
       }
     }
-    
+
     &.agency {
 
       td {
