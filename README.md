@@ -40,12 +40,12 @@ Use [`domain-scan`](https://github.com/18F/domain-scan) to scan the `.gov` domai
 
 * Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan). For right now, this requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
 
-* Tell `domain-scan` to run the `inspect`, `tls`, and `analytics` scanners over the list of `.gov` domains, referencing the DAP participation list. Use `--force` to tell it to ignore any disk cache and to tell SSL Labs to ignore its server-side cache.
+* Tell `domain-scan` to run the `inspect`, `tls`, and `analytics` scanners over the list of `.gov` domains, referencing the DAP participation list. Use `--force` to tell it to ignore any disk cache and to tell SSL Labs to ignore its server-side cache. Use `--sort` to sort the resulting CSV so that domains are in a consistent order.
 
 The command for this might look like:
 
 ```bash
-./scan domains.csv --scan=inspect,tls,analytics --analytics=dap.csv --output=domain-report --debug --force
+./scan domains.csv --scan=inspect,tls,analytics --analytics=dap.csv --output=domain-report --debug --force --sort
 ```
 
 This will output a CSV report for each scanner to `domain-report/results/`.
