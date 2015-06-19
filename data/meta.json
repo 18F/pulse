@@ -1,5 +1,5 @@
 {
-  "command": "./scan /opt/scan/data/federal-2015-03-15.csv --scan=inspect,tls,analytics --analytics=/opt/scan/data/dap-2015-05-29.csv --debug --sort --output=/opt/scan/reports/federal-2015-06-13/",
-  "end_time": "2015-06-19T20:32:44Z",
-  "start_time": "2015-06-19T20:32:40Z"
+  "command": "./scan /opt/scan/data/federal-2015-03-15.csv --scan=inspect,tls,analytics --analytics=/opt/scan/data/dap-2015-05-29.csv --debug --sort --output=/opt/scan/reports/federal-2015-06-19/",
+  "end_time": "2015-06-19T20:51:21Z",
+  "start_time": "2015-06-19T20:50:46Z"
 }
