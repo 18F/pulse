@@ -80,6 +80,7 @@ bondpro.gov,executive,Department of the Treasury,No,Yes
 bop.gov,executive,Department of Justice,No,Yes
 bpa.gov,executive,Department of Energy,No,No
 brac.gov,executive,Department of Defense,No,Yes
+brc.gov,executive,Department of Energy,No,No
 broadband.gov,executive,Federal Communications Commission,No,No
 broadbandmap.gov,executive,Federal Communications Commission,No,No
 bsee.gov,executive,Department of the Interior,No,No
@@ -409,7 +410,6 @@ irsvideos.gov,executive,Department of the Treasury,No,No
 ise.gov,executive,Director of National Intelligence,No,No
 isotope.gov,executive,Department of Energy,No,No
 isotopes.gov,executive,Department of Energy,No,No
-italladdsup.gov,executive,Department of Transportation,No,Yes
 itap.gov,executive,Department of Agriculture,No,Yes
 itdashboard.gov,executive,Executive Office of the President,No,Yes
 itds.gov,executive,Department of Commerce,No,No
@@ -456,6 +456,7 @@ marview.gov,executive,Department of Transportation,No,No
 max.gov,executive,Executive Office of the President,No,No
 mbda.gov,executive,Department of Commerce,No,No
 mcc.gov,executive,Millennium Challenge Corporation,No,Yes
+mcrmc.gov,executive,Department of Defense,No,No
 mda.gov,executive,Department of Transportation,No,No
 medalofvalor.gov,executive,Department of Justice,No,No
 medicaid.gov,executive,Department of Health And Human Services,No,No
@@ -544,6 +545,7 @@ nsa.gov,executive,Department of Defense,No,No
 nsep.gov,executive,Department of Defense,No,No
 nsf.gov,executive,National Science Foundation,No,Yes
 nsopw.gov,executive,Department of Justice,No,Yes
+nswp.gov,executive,National Aeronautics and Space Administration,No,No
 ntdprogram.gov,executive,Department of Transportation,No,Yes
 ntis.gov,executive,Department of Commerce,No,No
 ntsb.gov,executive,National Transportation Safety Board,No,No
@@ -575,6 +577,7 @@ osc.gov,executive,U. S. Office of Special Counsel,No,No
 osdbu.gov,executive,Department of Defense,No,Yes
 osha.gov,executive,Department of Labor,No,Yes
 oshrc.gov,executive,Occupational Safety & Health Review Commission,No,No
+osmre.gov,executive,Department of the Interior,No,Yes
 osti.gov,executive,Department of Energy,No,No
 ots.gov,executive,Department of the Treasury,No,Yes
 ourdocuments.gov,executive,National Archives and Records Administration,No,Yes
@@ -693,7 +696,6 @@ taaps.gov,executive,Department of the Treasury,No,Yes
 tax.gov,executive,Department of the Treasury,No,No
 telework.gov,executive,Office of Personnel Management,No,Yes
 thecoolspot.gov,executive,Department of Health And Human Services,No,No
-thepeoplesgarden.gov,executive,Department of Agriculture,No,No
 time.gov,executive,Department of Commerce,No,No
 tissueengineering.gov,executive,Department of Health And Human Services,No,No
 trade.gov,executive,Department of Commerce,No,Yes
