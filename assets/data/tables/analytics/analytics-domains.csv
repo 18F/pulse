@@ -86,7 +86,6 @@ broadbandmap.gov,executive,Federal Communications Commission,No,No
 bsee.gov,executive,Department of the Interior,No,No
 buyaccessible.gov,executive,General Services Administration,No,Yes
 buyusa.gov,executive,Department of Commerce,No,Yes
-c3.gov,executive,Department of the Interior,No,No
 cancer.gov,executive,Department of Health And Human Services,No,No
 cao.gov,executive,General Services Administration,No,Yes
 capnhq.gov,executive,Civil Air Patrol,No,No
@@ -172,6 +171,7 @@ dni.gov,executive,Director of National Intelligence,No,No
 dnsops.gov,executive,Department of Commerce,No,No
 docline.gov,executive,Department of Health And Human Services,No,No
 dod.gov,executive,Department of Defense,No,No
+doe.gov,executive,Department of Energy,No,No
 doi.gov,executive,Department of the Interior,No,Yes
 doioig.gov,executive,Department of the Interior,No,No
 dol-esa.gov,executive,Department of Labor,No,No
@@ -373,7 +373,6 @@ humanrights.gov,executive,Department of State,No,No
 hydrogen.gov,executive,Department of Energy,No,No
 iad.gov,executive,Department of Defense,No,Yes
 iaf.gov,executive,Inter-American Foundation,No,No
-iarpa-ideas.gov,executive,Director of National Intelligence,No,No
 iarpa.gov,executive,Director of National Intelligence,No,No
 iat.gov,executive,Department of the Interior,No,No
 iawg.gov,executive,Department of State,No,No
@@ -421,7 +420,6 @@ jem.gov,executive,Department of the Interior,No,No
 jimmycarterlibrary.gov,executive,National Archives and Records Administration,No,Yes
 jobcorps.gov,executive,Department of Labor,No,No
 justice.gov,executive,Department of Justice,No,Yes
-justthinktwice.gov,executive,Department of Justice,No,No
 juvenilecouncil.gov,executive,Department of Justice,No,Yes
 jwod.gov,executive,Comm for People Who Are Blind/Severly Disabled,No,No
 klamathrestoration.gov,executive,Department of the Interior,No,No
@@ -456,7 +454,6 @@ marview.gov,executive,Department of Transportation,No,No
 max.gov,executive,Executive Office of the President,No,No
 mbda.gov,executive,Department of Commerce,No,No
 mcc.gov,executive,Millennium Challenge Corporation,No,Yes
-mcrmc.gov,executive,Department of Defense,No,No
 mda.gov,executive,Department of Transportation,No,No
 medalofvalor.gov,executive,Department of Justice,No,No
 medicaid.gov,executive,Department of Health And Human Services,No,No
@@ -696,6 +693,7 @@ taaps.gov,executive,Department of the Treasury,No,Yes
 tax.gov,executive,Department of the Treasury,No,No
 telework.gov,executive,Office of Personnel Management,No,Yes
 thecoolspot.gov,executive,Department of Health And Human Services,No,No
+thepeoplesgarden.gov,executive,Department of Agriculture,No,No
 time.gov,executive,Department of Commerce,No,No
 tissueengineering.gov,executive,Department of Health And Human Services,No,No
 trade.gov,executive,Department of Commerce,No,Yes
@@ -711,11 +709,9 @@ truman.gov,executive,Harry S. Truman Scholarship Foundation,No,No
 tsa.gov,executive,Department of Homeland Security,No,Yes
 tsp.gov,executive,Federal Retirement Thrift Investment Board,No,No
 tsunami.gov,executive,Department of Commerce,No,No
-tswg.gov,executive,Department of Defense,No,No
 ttb.gov,executive,Department of the Treasury,No,Yes
 ttbonline.gov,executive,Department of the Treasury,No,No
 tva.gov,executive,Tennessee Valley Authority,No,No
-tvaoig.gov,executive,Tennessee Valley Authority,No,No
 ucrdatatool.gov,executive,Department of Justice,No,No
 udall.gov,executive,Morris K. Udall Foundation,No,No
 unicor.gov,executive,Department of Justice,No,Yes
@@ -732,7 +728,6 @@ usajobs.gov,executive,Office of Personnel Management,No,Yes
 usalearning.gov,executive,Office of Personnel Management,No,Yes
 usandc.gov,executive,Department of Defense,No,Yes
 usap.gov,executive,National Science Foundation,No,No
-usaperformance.gov,executive,General Services Administration,No,No
 usaspending.gov,executive,Department of the Treasury,No,No
 usastaffing.gov,executive,Office of Personnel Management,No,No
 usbr.gov,executive,Department of the Interior,No,Yes
