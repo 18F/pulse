@@ -58,7 +58,7 @@
     },
     {
       "Agency": "Armed Forces Retirement Home",
-      "Enforces HTTPS": 100,
+      "Enforces HTTPS": 0,
       "Number of Domains": 1,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
@@ -179,10 +179,10 @@
     {
       "Agency": "Department of Agriculture",
       "Enforces HTTPS": 16,
-      "Number of Domains": 43,
+      "Number of Domains": 44,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 21
+      "Uses HTTPS": 20
     },
     {
       "Agency": "Department of Commerce",
@@ -194,11 +194,11 @@
     },
     {
       "Agency": "Department of Defense",
-      "Enforces HTTPS": 21,
-      "Number of Domains": 24,
-      "SSL Labs (A- or higher)": 4,
+      "Enforces HTTPS": 23,
+      "Number of Domains": 22,
+      "SSL Labs (A- or higher)": 5,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 29
+      "Uses HTTPS": 32
     },
     {
       "Agency": "Department of Education",
@@ -210,8 +210,8 @@
     },
     {
       "Agency": "Department of Energy",
-      "Enforces HTTPS": 12,
-      "Number of Domains": 56,
+      "Enforces HTTPS": 13,
+      "Number of Domains": 55,
       "SSL Labs (A- or higher)": 9,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 36
@@ -246,7 +246,7 @@
       "Number of Domains": 66,
       "SSL Labs (A- or higher)": 8,
       "Strict Transport Security (HSTS)": 2,
-      "Uses HTTPS": 23
+      "Uses HTTPS": 24
     },
     {
       "Agency": "Department of Labor",
@@ -282,11 +282,11 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Enforces HTTPS": 5,
-      "Number of Domains": 82,
-      "SSL Labs (A- or higher)": 12,
+      "Enforces HTTPS": 4,
+      "Number of Domains": 81,
+      "SSL Labs (A- or higher)": 11,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 27
+      "Uses HTTPS": 25
     },
     {
       "Agency": "Department of the Treasury",
@@ -294,15 +294,15 @@
       "Number of Domains": 85,
       "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 24
+      "Uses HTTPS": 25
     },
     {
       "Agency": "Director of National Intelligence",
       "Enforces HTTPS": 0,
-      "Number of Domains": 11,
+      "Number of Domains": 10,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 18
+      "Uses HTTPS": 10
     },
     {
       "Agency": "Environmental Protection Agency",
@@ -442,11 +442,11 @@
     },
     {
       "Agency": "General Services Administration",
-      "Enforces HTTPS": 27,
-      "Number of Domains": 92,
+      "Enforces HTTPS": 26,
+      "Number of Domains": 91,
       "SSL Labs (A- or higher)": 1,
       "Strict Transport Security (HSTS)": 7,
-      "Uses HTTPS": 46
+      "Uses HTTPS": 44
     },
     {
       "Agency": "Government Printing Office",
@@ -819,7 +819,7 @@
     {
       "Agency": "Tennessee Valley Authority",
       "Enforces HTTPS": 0,
-      "Number of Domains": 2,
+      "Number of Domains": 1,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 0
