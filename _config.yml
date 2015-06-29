@@ -14,7 +14,7 @@ data:
   # The export date for the DAP participating sub/domain list.
   dap: 2015-05-29
   # The scan date for HTTP/TLS data.
-  scan: 2015-06-13
+  scan: 2015-06-26
 
 # Markdown configuration.
 highlighter: rouge
