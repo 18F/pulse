@@ -121,12 +121,13 @@ $(document).ready(function () {
   };
 
   var links = {
-    rc4: "https://tools.ietf.org/html/rfc7465",
+    rc4: "https://https.cio.gov/technical-guidelines/#rc4",
     hsts: "https://https.cio.gov/hsts/",
-    sha1: "http://googleonlinesecurity.blogspot.com/2014/09/gradually-sunsetting-sha-1.html",
-    ssl3: "https://www.openssl.org/~bodo/ssl-poodle.pdf",
-    fs: "https://blog.twitter.com/2013/forward-secrecy-at-twitter",
-    preload: "https://hstspreload.appspot.com"
+    sha1: "https://https.cio.gov/technical-guidelines/#signature-algorithms",
+    ssl3: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
+    tls: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
+    fs: "https://https.cio.gov/technical-guidelines/#forward-secrecy",
+    preload: "https://https.cio.gov/hsts/#hsts-preloading"
   };
 
   var l = function(slug, text) {
@@ -157,7 +158,7 @@ $(document).ready(function () {
       config.push("supports the " + l("rc4", "deprecated RC4 cipher"));
 
     if (row["TLSv1.2"] == false)
-      config.push("lacks support for the most recent version of TLS");
+      config.push("lacks support for the " + l("tls", "most recent version of TLS"));
 
     // Don't bother remarking if FS is Modern or Robust.
     if (row["Forward Secrecy"] <= 1)
