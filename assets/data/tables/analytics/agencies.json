@@ -117,8 +117,8 @@
     },
     {
       "Agency": "Department of Defense",
-      "Number of Domains": 21,
-      "Participates in DAP?": 48
+      "Number of Domains": 23,
+      "Participates in DAP?": 43
     },
     {
       "Agency": "Department of Education",
@@ -127,8 +127,8 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 45,
-      "Participates in DAP?": 4
+      "Number of Domains": 33,
+      "Participates in DAP?": 3
     },
     {
       "Agency": "Department of Health And Human Services",
@@ -147,8 +147,8 @@
     },
     {
       "Agency": "Department of Justice",
-      "Number of Domains": 48,
-      "Participates in DAP?": 75
+      "Number of Domains": 49,
+      "Participates in DAP?": 73
     },
     {
       "Agency": "Department of Labor",
@@ -172,8 +172,8 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 72,
-      "Participates in DAP?": 36
+      "Number of Domains": 71,
+      "Participates in DAP?": 35
     },
     {
       "Agency": "Department of the Treasury",
@@ -182,7 +182,7 @@
     },
     {
       "Agency": "Director of National Intelligence",
-      "Number of Domains": 9,
+      "Number of Domains": 10,
       "Participates in DAP?": 0
     },
     {
@@ -272,8 +272,8 @@
     },
     {
       "Agency": "General Services Administration",
-      "Number of Domains": 61,
-      "Participates in DAP?": 72
+      "Number of Domains": 62,
+      "Participates in DAP?": 71
     },
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
@@ -416,11 +416,6 @@
       "Participates in DAP?": 0
     },
     {
-      "Agency": "Nuclear Regulatory Commission",
-      "Number of Domains": 1,
-      "Participates in DAP?": 100
-    },
-    {
       "Agency": "Occupational Safety & Health Review Commission",
       "Number of Domains": 1,
       "Participates in DAP?": 0
@@ -497,7 +492,7 @@
     },
     {
       "Agency": "Tennessee Valley Authority",
-      "Number of Domains": 1,
+      "Number of Domains": 2,
       "Participates in DAP?": 0
     },
     {
