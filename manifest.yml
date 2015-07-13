@@ -2,6 +2,7 @@
 applications:
 - name: pulse
   memory: 64M
+  disk_quota: 128M
   buildpack: https://github.com/cloudfoundry-incubator/staticfile-buildpack.git
   domain: 18f.gov
   env:
