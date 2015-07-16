@@ -386,7 +386,11 @@ def https_row_for(domain):
     # HSTS preload ready already implies a minimum max-age, and
     # may be fine on the root even if the canonical www is weak.
     elif (inspect["HSTS Preload Ready"] == "True"):
-      hsts = 3 # Yes
+
+      if inspect["HSTS Preloaded"] == "True":
+        hsts = 4 # Yes, and preloaded
+      else:
+        hsts = 3 # Yes, and preload-ready
 
     # We'll make a judgment call here.
     #
@@ -689,7 +693,8 @@ CSV_HTTPS_MAPPING = {
     '0': "No", # No
     '1': "Yes", # HSTS on only that domain
     '2': "Yes", # HSTS on subdomains
-    '3': "Yes, and preload-ready" # HSTS on subdomains + preload
+    '3': "Yes, and preload-ready", # HSTS on subdomains + preload flag
+    '4': "Yes, and preloaded" # In the HSTS preload list
   },
 
   'grade': {
