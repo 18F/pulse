@@ -32,7 +32,7 @@ Updating Pulse is a multi-step process that combines data published by governmen
 Get the latest official `.gov` domain list, and download the latest DAP participation list.
 
 * The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
-* The DAP participation list is published quarterly at https://analytics.usa.gov/data/sites.csv. This will be referred to below as **dap.csv**.
+* The DAP participation list of  **second level domains only** is automatically updated daily at [`https://analytics.usa.gov/data/live/second-level-domains.csv`](https://analytics.usa.gov/data/live/second-level-domains.csv. This will be referred to below as **dap.csv**.
 
 ##### Step 2: Scan domains
 
