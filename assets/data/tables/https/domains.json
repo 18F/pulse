@@ -251,7 +251,7 @@
       "SSL Labs Grade": 4,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -523,7 +523,7 @@
       "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -1611,7 +1611,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -2206,7 +2206,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -2580,7 +2580,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -2835,7 +2835,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -3515,7 +3515,7 @@
       "SSL Labs Grade": 4,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -4569,7 +4569,7 @@
       "SSL Labs Grade": 5,
       "SSLv3": false,
       "Signature Algorithm": "SHA1withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -4841,7 +4841,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -5895,7 +5895,7 @@
       "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -6422,7 +6422,7 @@
       "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -7221,7 +7221,7 @@
       "SSL Labs Grade": 2,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": false,
       "Uses HTTPS": 2
     },
@@ -7765,7 +7765,7 @@
       "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -9108,7 +9108,7 @@
       "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -9346,7 +9346,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -10298,7 +10298,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -11471,7 +11471,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -14531,7 +14531,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -14599,7 +14599,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -16027,7 +16027,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -16044,7 +16044,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
@@ -19104,7 +19104,7 @@
       "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 3,
+      "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     },
