@@ -189,7 +189,7 @@ cio.gov,True
 citizencorps.gov,False
 citizencosponsors.gov,False
 citizens.gov,False
-civilianresponsecorps.gov,False
+civilianresponsecorps.gov,True
 civilrightsusa.gov,False
 climate.gov,True
 climatechange.gov,False
@@ -965,7 +965,7 @@ oti.gov,False
 ots.gov,True
 ourdocuments.gov,True
 ovc.gov,True
-ovcttac.gov,False
+ovcttac.gov,True
 pac.gov,False
 pacer.gov,False
 pandemicflu.gov,False
@@ -1322,7 +1322,7 @@ volcano.gov,False
 volunteer.gov,False
 volunteeringinamerica.gov,False
 volunteersforprosperity.gov,False
-wapa.gov,True
+wapa.gov,False
 wartimecontracting.gov,False
 watermonitor.gov,False
 wdl.gov,False
