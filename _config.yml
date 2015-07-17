@@ -12,9 +12,9 @@ data:
   # The export date for the .gov domain list.
   domains: 2015-03-15
   # The export date for the DAP participating sub/domain list.
-  dap: 2015-05-29
+  dap: 2015-07-17
   # The scan date for HTTP/TLS data.
-  scan: 2015-07-03
+  scan: 2015-07-17
 
 # Markdown configuration.
 highlighter: rouge
