@@ -52,7 +52,7 @@
     },
     {
       "Agency": "Civil Air Patrol",
-      "Number of Domains": 2,
+      "Number of Domains": 1,
       "Participates in DAP?": 0
     },
     {
@@ -142,8 +142,8 @@
     },
     {
       "Agency": "Department of Housing And Urban Development",
-      "Number of Domains": 9,
-      "Participates in DAP?": 22
+      "Number of Domains": 8,
+      "Participates in DAP?": 25
     },
     {
       "Agency": "Department of Justice",
@@ -157,13 +157,13 @@
     },
     {
       "Agency": "Department of State",
-      "Number of Domains": 18,
-      "Participates in DAP?": 50
+      "Number of Domains": 17,
+      "Participates in DAP?": 47
     },
     {
       "Agency": "Department of Transportation",
-      "Number of Domains": 23,
-      "Participates in DAP?": 65
+      "Number of Domains": 21,
+      "Participates in DAP?": 67
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -172,13 +172,13 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 72,
-      "Participates in DAP?": 40
+      "Number of Domains": 71,
+      "Participates in DAP?": 34
     },
     {
       "Agency": "Department of the Treasury",
-      "Number of Domains": 72,
-      "Participates in DAP?": 65
+      "Number of Domains": 73,
+      "Participates in DAP?": 63
     },
     {
       "Agency": "Director of National Intelligence",
@@ -187,8 +187,8 @@
     },
     {
       "Agency": "Environmental Protection Agency",
-      "Number of Domains": 12,
-      "Participates in DAP?": 42
+      "Number of Domains": 11,
+      "Participates in DAP?": 45
     },
     {
       "Agency": "Equal Employment Opportunity Commission",
@@ -217,7 +217,7 @@
     },
     {
       "Agency": "Federal Deposit Insurance Corporation",
-      "Number of Domains": 7,
+      "Number of Domains": 5,
       "Participates in DAP?": 0
     },
     {
@@ -272,7 +272,7 @@
     },
     {
       "Agency": "General Services Administration",
-      "Number of Domains": 61,
+      "Number of Domains": 60,
       "Participates in DAP?": 82
     },
     {
