@@ -30,10 +30,7 @@ Updating Pulse is a multi-step process that combines data published by governmen
 
 ##### Step 1: Get official data
 
-Get the latest official `.gov` domain list, and download the latest DAP participation list.
-
-* The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
-* The DAP participation list of  **second level domains only** is automatically updated daily at [`https://analytics.usa.gov/data/live/second-level-domains.csv`](https://analytics.usa.gov/data/live/second-level-domains.csv. This will be referred to below as **dap.csv**.
+The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
 
 ##### Step 2: Scan domains
 
@@ -46,7 +43,7 @@ Use [`domain-scan`](https://github.com/18F/domain-scan) to scan the `.gov` domai
 The command for this might look like:
 
 ```bash
-./scan domains.csv --scan=inspect,tls,analytics --analytics=dap.csv --output=domain-report --debug --force --sort
+./scan domains.csv --scan=inspect,tls,analytics --analytics=https://analytics.usa.gov/data/live/second-level-domains.csv --output=domain-report --debug --force --sort
 ```
 
 This will output a CSV report for each scanner to `domain-report/results/`.
