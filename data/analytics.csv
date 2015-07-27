@@ -189,7 +189,7 @@ cio.gov,True
 citizencorps.gov,False
 citizencosponsors.gov,False
 citizens.gov,False
-civilianresponsecorps.gov,True
+civilianresponsecorps.gov,False
 civilrightsusa.gov,False
 climate.gov,True
 climatechange.gov,False
@@ -252,7 +252,7 @@ csosa.fed.us,False
 csosa.gov,False
 cttso.gov,False
 cuidadodesalud.gov,False
-cupcao.gov,True
+cupcao.gov,False
 cwc.gov,True
 cybercrime.gov,False
 data.gov,True
@@ -530,7 +530,7 @@ fws.gov,False
 g5.gov,True
 gao.gov,False
 gaonet.gov,False
-gcdamp.gov,True
+gcdamp.gov,False
 gcmrc.gov,True
 genbank.gov,False
 genome.gov,False
@@ -723,7 +723,7 @@ law.gov,False
 lbl.gov,False
 lca.gov,False
 lcacommons.gov,True
-lcrmscp.gov,True
+lcrmscp.gov,False
 lctl.gov,False
 learnandserve.gov,False
 learnperformance.gov,True
@@ -781,7 +781,7 @@ mentalhealth.gov,True
 mesh.gov,False
 mha.gov,False
 mimedicare.gov,False
-mitigationcommission.gov,True
+mitigationcommission.gov,False
 mlkday.gov,False
 mmc.gov,False
 mms.gov,False
@@ -790,7 +790,7 @@ moneyfactory.gov,True
 moneyfactorystore.gov,True
 mrgo.gov,False
 mrlc.gov,True
-msb.gov,True
+msb.gov,False
 msha.gov,True
 mspb.gov,False
 mtbs.gov,False
