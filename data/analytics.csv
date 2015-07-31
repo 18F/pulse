@@ -279,7 +279,7 @@ digitalstewardship.gov,False
 digitizationguidelines.gov,False
 directoasucuenta.gov,False
 disability.gov,True
-disasterassistance.gov,True
+disasterassistance.gov,False
 disastercontractingassistance.gov,False
 disasterhousing.gov,False
 distracteddriving.gov,True
@@ -291,7 +291,7 @@ dnsops.gov,False
 doc.gov,False
 docline.gov,False
 dod.gov,False
-doe.gov,True
+doe.gov,False
 doeal.gov,False
 doi.gov,True
 doioig.gov,False
@@ -544,7 +544,7 @@ getyouhome.gov,False
 ghi.gov,True
 ginniemae.gov,True
 girlshealth.gov,False
-globalchange.gov,False
+globalchange.gov,True
 globalentry.gov,False
 globalhealth.gov,True
 globe.gov,False
@@ -715,7 +715,7 @@ klamathrestoration.gov,False
 labor.gov,True
 lacoast.gov,False
 landfire.gov,True
-landimaging.gov,True
+landimaging.gov,False
 lanl.gov,False
 lasegundacosa.gov,False
 latinofarmerclaims.gov,False
@@ -1281,7 +1281,7 @@ usich.gov,False
 usicn.gov,False
 usint.gov,False
 usip.gov,False
-usitc.gov,False
+usitc.gov,True
 usmarshals.gov,True
 usmint.gov,True
 usmission.gov,False
