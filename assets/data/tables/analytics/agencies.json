@@ -113,12 +113,12 @@
     {
       "Agency": "Department of Commerce",
       "Number of Domains": 39,
-      "Participates in DAP?": 62
+      "Participates in DAP?": 59
     },
     {
       "Agency": "Department of Defense",
       "Number of Domains": 23,
-      "Participates in DAP?": 43
+      "Participates in DAP?": 39
     },
     {
       "Agency": "Department of Education",
@@ -127,12 +127,12 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 34,
+      "Number of Domains": 35,
       "Participates in DAP?": 3
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 71,
+      "Number of Domains": 70,
       "Participates in DAP?": 31
     },
     {
@@ -148,7 +148,7 @@
     {
       "Agency": "Department of Justice",
       "Number of Domains": 47,
-      "Participates in DAP?": 79
+      "Participates in DAP?": 77
     },
     {
       "Agency": "Department of Labor",
@@ -158,12 +158,12 @@
     {
       "Agency": "Department of State",
       "Number of Domains": 17,
-      "Participates in DAP?": 47
+      "Participates in DAP?": 53
     },
     {
       "Agency": "Department of Transportation",
-      "Number of Domains": 19,
-      "Participates in DAP?": 68
+      "Number of Domains": 20,
+      "Participates in DAP?": 70
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -172,8 +172,8 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 71,
-      "Participates in DAP?": 34
+      "Number of Domains": 69,
+      "Participates in DAP?": 32
     },
     {
       "Agency": "Department of the Treasury",
@@ -182,7 +182,7 @@
     },
     {
       "Agency": "Director of National Intelligence",
-      "Number of Domains": 9,
+      "Number of Domains": 8,
       "Participates in DAP?": 0
     },
     {
@@ -557,7 +557,7 @@
     },
     {
       "Agency": "US Interagency Council on Homelessness",
-      "Number of Domains": 1,
+      "Number of Domains": 2,
       "Participates in DAP?": 0
     },
     {
