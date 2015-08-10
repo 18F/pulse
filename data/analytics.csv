@@ -37,7 +37,7 @@ aids.gov,True
 airnow.gov,True
 alaskacenters.gov,True
 alertaenlinea.gov,True
-altusandc.gov,True
+altusandc.gov,False
 alzheimers.gov,False
 ama.gov,False
 amberalert.gov,True
@@ -189,7 +189,7 @@ cio.gov,True
 citizencorps.gov,False
 citizencosponsors.gov,False
 citizens.gov,False
-civilianresponsecorps.gov,False
+civilianresponsecorps.gov,True
 civilrightsusa.gov,False
 climate.gov,True
 climatechange.gov,False
@@ -313,7 +313,7 @@ drywallresponse.gov,False
 dsac.gov,False
 dtv.gov,False
 e-qip.gov,False
-e3.gov,True
+e3.gov,False
 eac.gov,False
 eaclearinghouse.gov,False
 earmarks.gov,False
@@ -712,7 +712,7 @@ jwod.gov,False
 kapl.gov,False
 kids.gov,False
 klamathrestoration.gov,False
-labor.gov,True
+labor.gov,False
 lacoast.gov,False
 landfire.gov,True
 landimaging.gov,False
@@ -965,7 +965,7 @@ oti.gov,False
 ots.gov,True
 ourdocuments.gov,True
 ovc.gov,True
-ovcttac.gov,True
+ovcttac.gov,False
 pac.gov,False
 pacer.gov,False
 pandemicflu.gov,False
