@@ -51,7 +51,7 @@ This will output a CSV report for each scanner to `domain-report/results/`.
 
 Move the report CSVs into this repo, run a script to update Pulse's data, and mark the new date(s) in `_config.yml`.
 
-* Copy `inspect.csv`, `tls.csv`, and `analytics.csv` into the `data/` directory of this repository.
+* Copy `inspect.csv`, `tls.csv`, `analytics.csv` and `meta.json` into the `data/` directory of this repository.
 
 * Update `_config.yml` to reflect the latest dates:
 
