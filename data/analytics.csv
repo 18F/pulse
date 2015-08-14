@@ -8,7 +8,7 @@ aapi.gov,False
 abandonedmines.gov,False
 abilityone.fed.us,False
 abilityone.gov,False
-abmc.gov,False
+abmc.gov,True
 access-board-members.gov,False
 access-board.gov,True
 acf.gov,False
@@ -174,7 +174,7 @@ cftc.gov,False
 challenge.gov,True
 challenges.gov,False
 change.gov,False
-chcoc.gov,True
+chcoc.gov,False
 chemsafety.gov,False
 childreninadversity.gov,False
 childstats.gov,True
@@ -189,7 +189,7 @@ cio.gov,True
 citizencorps.gov,False
 citizencosponsors.gov,False
 citizens.gov,False
-civilianresponsecorps.gov,True
+civilianresponsecorps.gov,False
 civilrightsusa.gov,False
 climate.gov,True
 climatechange.gov,False
@@ -715,7 +715,7 @@ klamathrestoration.gov,False
 labor.gov,False
 lacoast.gov,False
 landfire.gov,True
-landimaging.gov,False
+landimaging.gov,True
 lanl.gov,False
 lasegundacosa.gov,False
 latinofarmerclaims.gov,False
@@ -759,7 +759,7 @@ majoritywhip.gov,False
 makinghomeaffordable.gov,True
 malwareinvestigator.gov,False
 manufacturing.gov,True
-mapaplanet.gov,False
+mapaplanet.gov,True
 mapstats.gov,False
 marine.gov,False
 marinecadastre.gov,True
@@ -1222,7 +1222,7 @@ unicor.gov,True
 unionreports.gov,False
 unitedstates.gov,False
 unitedstatescongress.gov,False
-unitedweride.gov,True
+unitedweride.gov,False
 unlocktalent.gov,False
 unnpp.gov,False
 unrpnet.gov,False
