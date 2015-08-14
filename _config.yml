@@ -12,7 +12,7 @@ data:
   # The export date for the .gov domain list.
   domains: 2015-03-15
   # The scan date.
-  scan: 2015-08-07
+  scan: 2015-08-14
 
 # Markdown configuration.
 highlighter: rouge
