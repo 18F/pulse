@@ -189,7 +189,7 @@ cio.gov,True
 citizencorps.gov,False
 citizencosponsors.gov,False
 citizens.gov,False
-civilianresponsecorps.gov,False
+civilianresponsecorps.gov,True
 civilrightsusa.gov,False
 climate.gov,True
 climatechange.gov,False
@@ -712,7 +712,7 @@ jwod.gov,False
 kapl.gov,False
 kids.gov,False
 klamathrestoration.gov,False
-labor.gov,False
+labor.gov,True
 lacoast.gov,False
 landfire.gov,True
 landimaging.gov,True
@@ -769,7 +769,7 @@ mbda.gov,False
 mcc.gov,True
 mcrmc.gov,False
 mda.gov,False
-medalofvalor.gov,False
+medalofvalor.gov,True
 medicaid.gov,False
 medicalcountermeasures.gov,False
 medicalreservecorps.gov,False
