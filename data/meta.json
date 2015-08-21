@@ -1,5 +1,5 @@
 {
-  "command": "./scan /opt/scan/data/federal-2015-03-15.csv --scan=inspect,tls,analytics --analytics=https://analytics.usa.gov/data/live/second-level-domains.csv --debug --force --sort --output=/opt/scan/reports/federal-2015-08-07/",
-  "end_time": "2015-08-08T00:05:18Z",
-  "start_time": "2015-08-07T18:56:52Z"
+  "command": "./scan /opt/scan/data/federal-2015-03-15.csv --scan=inspect,tls,analytics --analytics=https://analytics.usa.gov/data/live/second-level-domains.csv --debug --force --sort --output=/opt/scan/reports/federal-2015-08-14/",
+  "end_time": "2015-08-14T18:37:17Z",
+  "start_time": "2015-08-14T13:25:57Z"
 }
