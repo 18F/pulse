@@ -107,13 +107,13 @@
     },
     {
       "Agency": "Department of Agriculture",
-      "Number of Domains": 33,
-      "Participates in DAP?": 24
+      "Number of Domains": 29,
+      "Participates in DAP?": 28
     },
     {
       "Agency": "Department of Commerce",
-      "Number of Domains": 39,
-      "Participates in DAP?": 59
+      "Number of Domains": 38,
+      "Participates in DAP?": 61
     },
     {
       "Agency": "Department of Defense",
@@ -148,7 +148,7 @@
     {
       "Agency": "Department of Justice",
       "Number of Domains": 47,
-      "Participates in DAP?": 77
+      "Participates in DAP?": 79
     },
     {
       "Agency": "Department of Labor",
@@ -158,7 +158,7 @@
     {
       "Agency": "Department of State",
       "Number of Domains": 17,
-      "Participates in DAP?": 47
+      "Participates in DAP?": 53
     },
     {
       "Agency": "Department of Transportation",
