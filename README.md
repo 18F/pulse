@@ -29,10 +29,7 @@ Updating Pulse is a multi-step process that combines data published by governmen
 
 ##### Step 1: Get official data
 
-Get the latest official `.gov` domain list, and download the latest DAP participation list.
-
-* The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
-* The DAP participation list is published quarterly at https://analytics.usa.gov/data/sites.csv. This will be referred to below as **dap.csv**.
+The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
 
 ##### Step 2: Scan domains
 
@@ -40,12 +37,12 @@ Use [`domain-scan`](https://github.com/18F/domain-scan) to scan the `.gov` domai
 
 * Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan). For right now, this requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
 
-* Tell `domain-scan` to run the `inspect`, `tls`, and `analytics` scanners over the list of `.gov` domains, referencing the DAP participation list. Use `--force` to tell it to ignore any disk cache and to tell SSL Labs to ignore its server-side cache.
+* Tell `domain-scan` to run the `inspect`, `tls`, and `analytics` scanners over the list of `.gov` domains, referencing the DAP participation list. Use `--force` to tell it to ignore any disk cache and to tell SSL Labs to ignore its server-side cache. Use `--sort` to sort the resulting CSV so that domains are in a consistent order.
 
 The command for this might look like:
 
 ```bash
-./scan domains.csv --scan=inspect,tls,analytics --analytics=dap.csv --output=domain-report --debug --force
+./scan domains.csv --scan=inspect,tls,analytics --analytics=https://analytics.usa.gov/data/live/second-level-domains.csv --output=domain-report --debug --force --sort
 ```
 
 This will output a CSV report for each scanner to `domain-report/results/`.
@@ -54,7 +51,7 @@ This will output a CSV report for each scanner to `domain-report/results/`.
 
 Move the report CSVs into this repo, run a script to update Pulse's data, and mark the new date(s) in `_config.yml`.
 
-* Copy `inspect.csv`, `tls.csv`, and `analytics.csv` into the `data/` directory of this repository.
+* Copy `inspect.csv`, `tls.csv`, `analytics.csv` and `meta.json` into the `data/` directory of this repository.
 
 * Update `_config.yml` to reflect the latest dates:
 

@@ -23,7 +23,7 @@
     {
       "Agency": "American Battle Monuments Commission",
       "Number of Domains": 1,
-      "Participates in DAP?": 0
+      "Participates in DAP?": 100
     },
     {
       "Agency": "Appalachian Regional Commission",
@@ -73,7 +73,7 @@
     {
       "Agency": "Consumer Product Safety Commission",
       "Number of Domains": 4,
-      "Participates in DAP?": 75
+      "Participates in DAP?": 100
     },
     {
       "Agency": "Corporation for National & Community Service",
@@ -107,18 +107,18 @@
     },
     {
       "Agency": "Department of Agriculture",
-      "Number of Domains": 33,
-      "Participates in DAP?": 21
+      "Number of Domains": 29,
+      "Participates in DAP?": 28
     },
     {
       "Agency": "Department of Commerce",
-      "Number of Domains": 39,
-      "Participates in DAP?": 64
+      "Number of Domains": 38,
+      "Participates in DAP?": 61
     },
     {
       "Agency": "Department of Defense",
-      "Number of Domains": 22,
-      "Participates in DAP?": 45
+      "Number of Domains": 23,
+      "Participates in DAP?": 39
     },
     {
       "Agency": "Department of Education",
@@ -127,18 +127,18 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 43,
-      "Participates in DAP?": 5
+      "Number of Domains": 34,
+      "Participates in DAP?": 3
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 71,
-      "Participates in DAP?": 34
+      "Number of Domains": 70,
+      "Participates in DAP?": 31
     },
     {
       "Agency": "Department of Homeland Security",
       "Number of Domains": 19,
-      "Participates in DAP?": 63
+      "Participates in DAP?": 58
     },
     {
       "Agency": "Department of Housing And Urban Development",
@@ -147,8 +147,8 @@
     },
     {
       "Agency": "Department of Justice",
-      "Number of Domains": 49,
-      "Participates in DAP?": 73
+      "Number of Domains": 47,
+      "Participates in DAP?": 79
     },
     {
       "Agency": "Department of Labor",
@@ -157,13 +157,13 @@
     },
     {
       "Agency": "Department of State",
-      "Number of Domains": 18,
-      "Participates in DAP?": 50
+      "Number of Domains": 17,
+      "Participates in DAP?": 53
     },
     {
       "Agency": "Department of Transportation",
-      "Number of Domains": 24,
-      "Participates in DAP?": 67
+      "Number of Domains": 20,
+      "Participates in DAP?": 70
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -173,16 +173,16 @@
     {
       "Agency": "Department of the Interior",
       "Number of Domains": 72,
-      "Participates in DAP?": 35
+      "Participates in DAP?": 36
     },
     {
       "Agency": "Department of the Treasury",
-      "Number of Domains": 72,
-      "Participates in DAP?": 64
+      "Number of Domains": 73,
+      "Participates in DAP?": 63
     },
     {
       "Agency": "Director of National Intelligence",
-      "Number of Domains": 10,
+      "Number of Domains": 9,
       "Participates in DAP?": 0
     },
     {
@@ -217,7 +217,7 @@
     },
     {
       "Agency": "Federal Deposit Insurance Corporation",
-      "Number of Domains": 7,
+      "Number of Domains": 6,
       "Participates in DAP?": 0
     },
     {
@@ -272,8 +272,8 @@
     },
     {
       "Agency": "General Services Administration",
-      "Number of Domains": 62,
-      "Participates in DAP?": 71
+      "Number of Domains": 61,
+      "Participates in DAP?": 82
     },
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
@@ -337,13 +337,13 @@
     },
     {
       "Agency": "National Aeronautics and Space Administration",
-      "Number of Domains": 2,
-      "Participates in DAP?": 50
+      "Number of Domains": 3,
+      "Participates in DAP?": 33
     },
     {
       "Agency": "National Archives and Records Administration",
       "Number of Domains": 10,
-      "Participates in DAP?": 60
+      "Participates in DAP?": 70
     },
     {
       "Agency": "National Capital Planning Commission",
@@ -433,7 +433,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Number of Domains": 14,
-      "Participates in DAP?": 93
+      "Participates in DAP?": 79
     },
     {
       "Agency": "Overseas Private Investment Corporation",
@@ -513,7 +513,7 @@
     {
       "Agency": "U. S. International Trade Commission",
       "Number of Domains": 1,
-      "Participates in DAP?": 0
+      "Participates in DAP?": 100
     },
     {
       "Agency": "U. S. Office of Special Counsel",
@@ -557,13 +557,13 @@
     },
     {
       "Agency": "US Interagency Council on Homelessness",
-      "Number of Domains": 1,
+      "Number of Domains": 2,
       "Participates in DAP?": 0
     },
     {
       "Agency": "United Stated Global Change Research Program",
       "Number of Domains": 2,
-      "Participates in DAP?": 0
+      "Participates in DAP?": 50
     },
     {
       "Agency": "United States Office of Government Ethics",
