@@ -17,6 +17,7 @@ bundle install
 make run
 ```
 
+
 * If editing styles during development, keep the Sass auto-compiling with:
 
 ```bash
