@@ -63,7 +63,7 @@ annualcreditreport.gov,False
 anstaskforce.gov,False
 aoa.gov,False
 aoc.gov,False
-ap.gov,True
+ap.gov,False
 applicationmanager.gov,True
 apps.gov,False
 aqi.gov,False
@@ -494,7 +494,7 @@ foodsafety.gov,True
 foodsafetyjobs.gov,False
 foodsafetyworkinggroup.gov,False
 fordlibrarymuseum.gov,True
-foreignassistance.gov,True
+foreignassistance.gov,False
 forestsandrangelands.gov,False
 forfeiture.gov,True
 forms.gov,False
@@ -759,7 +759,7 @@ majoritywhip.gov,False
 makinghomeaffordable.gov,True
 malwareinvestigator.gov,False
 manufacturing.gov,True
-mapaplanet.gov,True
+mapaplanet.gov,False
 mapstats.gov,False
 marine.gov,False
 marinecadastre.gov,True
