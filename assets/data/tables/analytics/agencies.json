@@ -107,8 +107,8 @@
     },
     {
       "Agency": "Department of Agriculture",
-      "Number of Domains": 32,
-      "Participates in DAP?": 25
+      "Number of Domains": 33,
+      "Participates in DAP?": 24
     },
     {
       "Agency": "Department of Commerce",
@@ -133,12 +133,12 @@
     {
       "Agency": "Department of Health And Human Services",
       "Number of Domains": 71,
-      "Participates in DAP?": 31
+      "Participates in DAP?": 32
     },
     {
       "Agency": "Department of Homeland Security",
       "Number of Domains": 19,
-      "Participates in DAP?": 58
+      "Participates in DAP?": 53
     },
     {
       "Agency": "Department of Housing And Urban Development",
@@ -148,7 +148,7 @@
     {
       "Agency": "Department of Justice",
       "Number of Domains": 47,
-      "Participates in DAP?": 79
+      "Participates in DAP?": 77
     },
     {
       "Agency": "Department of Labor",
@@ -158,12 +158,12 @@
     {
       "Agency": "Department of State",
       "Number of Domains": 17,
-      "Participates in DAP?": 47
+      "Participates in DAP?": 41
     },
     {
       "Agency": "Department of Transportation",
-      "Number of Domains": 20,
-      "Participates in DAP?": 70
+      "Number of Domains": 19,
+      "Participates in DAP?": 74
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -172,7 +172,7 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 69,
+      "Number of Domains": 72,
       "Participates in DAP?": 35
     },
     {
@@ -212,7 +212,7 @@
     },
     {
       "Agency": "Federal Communications Commission",
-      "Number of Domains": 3,
+      "Number of Domains": 1,
       "Participates in DAP?": 0
     },
     {
@@ -273,7 +273,7 @@
     {
       "Agency": "General Services Administration",
       "Number of Domains": 61,
-      "Participates in DAP?": 82
+      "Participates in DAP?": 80
     },
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
@@ -432,8 +432,8 @@
     },
     {
       "Agency": "Office of Personnel Management",
-      "Number of Domains": 14,
-      "Participates in DAP?": 79
+      "Number of Domains": 15,
+      "Participates in DAP?": 73
     },
     {
       "Agency": "Overseas Private Investment Corporation",

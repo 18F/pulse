@@ -63,7 +63,7 @@ annualcreditreport.gov,False
 anstaskforce.gov,False
 aoa.gov,False
 aoc.gov,False
-ap.gov,False
+ap.gov,True
 applicationmanager.gov,True
 apps.gov,False
 aqi.gov,False
@@ -189,7 +189,7 @@ cio.gov,True
 citizencorps.gov,False
 citizencosponsors.gov,False
 citizens.gov,False
-civilianresponsecorps.gov,True
+civilianresponsecorps.gov,False
 civilrightsusa.gov,False
 climate.gov,True
 climatechange.gov,False
@@ -478,7 +478,7 @@ fishwatch.gov,False
 fitness.gov,True
 fjc.gov,False
 fleta.gov,True
-fletc.gov,True
+fletc.gov,False
 flightschoolcandidates.gov,False
 floodsmart.gov,True
 flra.gov,False
@@ -526,7 +526,7 @@ ftcefile.gov,False
 fttesttwai.gov,False
 fueleconomy.gov,False
 fvap.gov,False
-fws.gov,False
+fws.gov,True
 g5.gov,True
 gao.gov,False
 gaonet.gov,False
@@ -606,7 +606,7 @@ hill.gov,False
 hispanicfarmerclaims.gov,False
 hispanicheritagemonth.gov,False
 history.gov,False
-hiv.gov,False
+hiv.gov,True
 homeenergyscore.gov,False
 homelandsecurity.gov,False
 homesales.gov,False
@@ -712,7 +712,7 @@ jwod.gov,False
 kapl.gov,False
 kids.gov,False
 klamathrestoration.gov,False
-labor.gov,True
+labor.gov,False
 lacoast.gov,False
 landfire.gov,True
 landimaging.gov,True
@@ -741,7 +741,7 @@ literacy.gov,False
 llis.gov,False
 llnl.gov,False
 lmrcouncil.gov,True
-lmvsci.gov,True
+lmvsci.gov,False
 loc.gov,False
 locatorplus.gov,False
 locimages.gov,False
@@ -769,7 +769,7 @@ mbda.gov,False
 mcc.gov,True
 mcrmc.gov,False
 mda.gov,False
-medalofvalor.gov,True
+medalofvalor.gov,False
 medicaid.gov,False
 medicalcountermeasures.gov,False
 medicalreservecorps.gov,False
@@ -1001,7 +1001,7 @@ poolsafely.gov,True
 poolsafety.gov,True
 postoffice.gov,False
 ppdcecc.gov,False
-ppirs.gov,True
+ppirs.gov,False
 pppl.gov,False
 pracomment.gov,False
 prc.gov,False
