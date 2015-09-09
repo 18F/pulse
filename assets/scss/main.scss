@@ -265,9 +265,10 @@ a#skipnav {
 // pages/analytics/*
 // pages/https/*
 // pages/about.html
+// pages/domains.html
 /////////////////////////////////////////
 
-#analytics, #https, #about {
+#analytics, #https, #about, #domains {
 
   #content {
 
@@ -393,6 +394,63 @@ a#skipnav {
     }
   }
 }
+
+// pages/domains.html
+/////////////////////////////////////////
+#domains {
+
+  #content header h2 {
+    margin-top: 10px;
+  }
+
+  #main-content ul {
+    color: $light-blue;
+    padding: 10px 0;
+
+    li {
+      margin: 30px 0;
+      padding: 25px 15px;
+      border: 1px solid #eee;
+
+      h2 {
+        font-size: 1.7em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      .coverage {
+        width: 300px;
+        padding: 0;
+        margin-right: 35px;
+        display: inline-block;
+
+        li {
+          margin: 0;
+          padding: 5px 0;
+          font-size: 1.2em;
+          text-align: right;
+          border: none;
+
+          .label {
+            padding-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .details {
+        width: 570px;
+        color: #535353;
+        font-size: 1.2em;
+        margin-top: 5px;
+        vertical-align: top;
+        display: inline-block;
+      }
+    }
+  }
+}
+
 
 // pages/**/guides.html
 /////////////////////////////////////////
