@@ -1,12 +1,12 @@
----
-layout: default
-permalink: /analytics/domains/
-id: analytics
-title: "Digital Analytics Program participation in the federal government - All domains"
-description: "Which federal government domains are participating in the Digital Analytics Program"
----
+{% extends "layout.html" %}
 
-{% include analytics/header.html %}
+{% block page_id %}analytics{% endblock %}
+{% block title %}Digital Analytics Program participation in the federal government - All domains{% endblock %}
+{% block description %}Which federal government domains are participating in the Digital Analytics Program.{% endblock %}
+
+{% block content %}
+
+{% include 'includes/analytics/header.html' %}
 
 <section id="main-content" class="white-bkg">
 
@@ -30,4 +30,6 @@ description: "Which federal government domains are participating in the Digital 
   </div>
 </section>
 
-<script src="/static/js/analytics/domains.js?{{ site.time | date: "%Y%m%j%H%M%S" }}"></script>
+<script src="/static/js/analytics/domains.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
+
+{% endblock %}

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/assets/data/tables/analytics/domains.json", function(data) {
+  $.get("/static/data/tables/analytics/domains.json", function(data) {
     renderTable(data.data);
   });
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/assets/data/tables/analytics/analytics-domains.csv",
+      csv: "/static/data/tables/analytics/analytics-domains.csv",
 
       dom: 'LCftrip'
 

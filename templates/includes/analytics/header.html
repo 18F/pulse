@@ -2,18 +2,18 @@
 
   <div class="donut">
     <div class="dap_chart"></div>
-    {% include analytics/donut.html %}
+    {% include 'includes/analytics/donut.html' %}
   </div>
 
   <div class="description">
     <h1>Digital Analytics Program (DAP)</h1>
-    <h2>Last updated <strong>{{ site.data.scan | date: "%B %d, %Y" }}</strong></h2>
+    <h2>Last updated <strong>{{ site.data.scan | date("%B %d, %Y") }}</strong></h2>
     <p>
       The <a href="https://www.digitalgov.gov/services/dap/">Digital Analytics Program</a> (DAP) is a central, shared web analytics service for federal agencies of the United States government, managed by the General Services Administration. Participating federal agencies report web analytics to a central account, and have access to all reported data. Data from the program is also shared publicly at <a href="https://analytics.usa.gov">analytics.usa.gov</a>.
     </p>
 
     <p>
-      Participation in the Digital Analytics Program was last measured on <strong>{{ site.data.scan | date: "%B %d, %Y" }}</strong>.
+      Participation in the Digital Analytics Program was last measured on <strong>{{ site.data.scan | date("%B %d, %Y") }}</strong>.
     </p>
   </div>
 

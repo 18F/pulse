@@ -1,12 +1,12 @@
----
-layout: default
-permalink: /analytics/guidance/
-id: analytics
-title: "Digital Analytics Program participation in the federal government - Implementation guidance"
-description: "Which federal government domains are participating in the Digital Analytics Program."
----
+{% extends "layout.html" %}
 
-{% include analytics/header.html %}
+{% block page_id %}analytics{% endblock %}
+{% block title %}Digital Analytics Program participation in the federal government - Implementation guidance{% endblock %}
+{% block description %}Which federal government domains are participating in the Digital Analytics Program.{% endblock %}
+
+{% block content %}
+
+{% include 'includes/analytics/header.html' %}
 
 <section id="main-content" class="white-bkg">
 
@@ -71,3 +71,5 @@ description: "Which federal government domains are participating in the Digital 
   </div>
 
 </section>
+
+{% endblock %}

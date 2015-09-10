@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/assets/data/tables/https/domains.json", function(data) {
+  $.get("/static/data/tables/https/domains.json", function(data) {
     renderTable(data.data);
   });
 
@@ -244,7 +244,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/assets/data/tables/https/https-domains.csv",
+      csv: "/static/data/tables/https/https-domains.csv",
 
       dom: 'LCftrip'
 

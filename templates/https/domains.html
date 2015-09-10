@@ -1,12 +1,12 @@
----
-layout: default
-permalink: /https/domains/
-id: https
-title: "HTTPS in the federal government - All domains"
-description: "How federal government domains are doing at deploying HTTPS."
----
+{% extends "layout.html" %}
 
-{% include https/header.html %}
+{% block page_id %}https{% endblock %}
+{% block title %}HTTPS in the federal government - All domains{% endblock %}
+{% block description %}How federal government domains are doing at deploying HTTPS.{% endblock %}
+
+{% block content %}
+
+{% include 'includes/https/header.html' %}
 
 <section id="main-content" class="white-bkg">
   <nav class="tab-menu">
@@ -33,4 +33,6 @@ description: "How federal government domains are doing at deploying HTTPS."
   </div>
 </section>
 
-<script src="/static/js/https/domains.js?{{ site.time | date: "%Y%m%j%H%M%S" }}"></script>
+<script src="/static/js/https/domains.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
+
+{% endblock %}

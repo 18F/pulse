@@ -1,12 +1,12 @@
----
-layout: default
-permalink: /https/guidance/
-id: https
-title: "HTTPS in the federal government - Implementation guidance"
-description: "How federal government domains are doing at deploying HTTPS."
----
+{% extends "layout.html" %}
 
-{% include https/header.html %}
+{% block page_id %}https{% endblock %}
+{% block title %}HTTPS in the federal government - Implementation guidance{% endblock %}
+{% block description %}How federal government domains are doing at deploying HTTPS.{% endblock %}
+
+{% block content %}
+
+{% include 'includes/https/header.html' %}
 
 <section id="main-content" class="white-bkg">
 
@@ -105,3 +105,5 @@ description: "How federal government domains are doing at deploying HTTPS."
   </div>
 
 </section>
+
+{% endblock %}

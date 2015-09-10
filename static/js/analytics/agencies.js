@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/assets/data/tables/analytics/agencies.json", function(data) {
+  $.get("/static/data/tables/analytics/agencies.json", function(data) {
     renderTable(data.data);
   });
 
