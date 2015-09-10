@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+<!-- Title and meta description
+================================================== -->
+<title>{% block title %}{% endblock %}</title>
+<meta property="og:title" content="{{ site.title }} | {{ self.title() }}" />
+
+<meta name="description" content="{% block description %}{% endblock %}">
+<meta property="og:description" content="{{ self.description() }}" />
+
+<link rel="canonical" href="{{ site.url }}{{ request.path }}" />
+
 {% include 'includes/head.html' %}
 </head>
 

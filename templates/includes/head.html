@@ -10,16 +10,6 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<!-- Title and meta description
-================================================== -->
-<title>{% block title %}{% endblock %}</title>
-<meta property="og:title" content="{{ self.title() }}" />
-
-<meta name="description" content="{% block description %}{% endblock %}">
-<meta property="og:description" content="{{ self.description() }}" />
-
-<!-- <link rel="canonical" href="TODO" /> -->
-
 <!-- Favicons
 ================================================== -->
 <!-- 128x128 -->
@@ -46,8 +36,7 @@ https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chr
 <link rel="stylesheet" href="/static/css/google-fonts.css">
 <link rel="stylesheet" href="/static/js/vendor/DataTables-1.10.6/media/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="/static/js/vendor/DataTables-1.10.6/media/css/dataTables.responsive.css">
-<link rel="stylesheet" href="/static/css/main.css?">
-<!-- site.time | date: "%Y%m%j%H%M%S" -->
+<link rel="stylesheet" href="/static/css/main.css?{{ now() | date("%Y%m%j%H%M%S") }}">
 
 <!-- Scripts
 ================================================== -->
@@ -59,5 +48,4 @@ https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chr
 <script src="/static/js/dataTables.downloads.js"></script>
 <script src="/static/js/vendor/d3.min.js"></script>
 <script src="/static/js/vendor/querystring.js"></script>
-<script src="/static/js/utils.js?"></script>
-<!-- site.time | date: "%Y%m%j%H%M%S" -->
+<script src="/static/js/utils.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>

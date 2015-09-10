@@ -1,12 +1,13 @@
 {% extends "layout.html" %}
 
 {% block page_id %}home{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
 <div class="wrapper">
   <div class="hero">
-  	<h2>site.name</h2>
-  	<h3>site.description</h3>
+  	<h2>{{ site.name }}</h2>
+  	<h3>{{ site.description }}</h3>
   </div>
 
   <div id="results">
