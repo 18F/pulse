@@ -4,11 +4,18 @@ How the .gov domain space is doing at best practices and federal requirements.
 
 ## Setup
 
-* Install Bundler if necessary, then install dependencies:
+Pulse is a [Flask](http://flask.pocoo.org/) app written in **Python 3**. We recommend [pyenv](https://github.com/yyuu/pyenv) for easy Python version management.
+
+* Install dependencies:
 
 ```bash
-gem install bundler
-bundle install
+pip install -r requirements.txt
+```
+
+* If developing the stylesheets, you will also need [Sass](http://sass-lang.com/), [Bourbon](http://bourbon.io/), [Neat](http://neat.bourbon.io/), and [Bitters](http://bitters.bourbon.io/).
+
+```bash
+gem install sass bourbon neat bitters
 ```
 
 * Now you can run the app:
@@ -16,7 +23,6 @@ bundle install
 ```bash
 make run
 ```
-
 
 * If editing styles during development, keep the Sass auto-compiling with:
 

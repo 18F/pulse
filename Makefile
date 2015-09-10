@@ -4,13 +4,13 @@ css ?= assets/css/main.css
 all: styles
 
 run:
-	bundle exec jekyll serve --watch
+	python pulse.py
 
 styles:
-	bundle exec sass $(scss):$(css)
+	sass $(scss):$(css)
 
 watch:
-	bundle exec sass --watch $(scss):$(css)
+	sass --watch $(scss):$(css)
 
 clean:
 	rm -f $(css)

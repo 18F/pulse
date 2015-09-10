@@ -1,19 +1,9 @@
-language: ruby
-rvm:
-  - 2.2.0
+language: python
+python:
+  - "3.4"
+
 git:
   submodules: false
+sudo: false
 
-script: bundle exec jekyll build --trace
-
-deploy:
-  edge: true
-  provider: cloudfoundry
-  username: deploy-dotgov
-  password:
-    secure: q+bRENhLOlwzM5EH2Ajcasgux+Fwu1Myf1Ljt/VygTJiqoCaKzqN6C/scHcLi747myngpwDvJmqBX/DoUR05fcbNJkmGPMSlOTZivboZVkx573yuQ1k21YA+Shi1e54PKapM9cAws0le0x5U84OZuX3tzTU7FN4mHwpr7tZpdFA=
-  api: https://api.18f.gov
-  organization: dotgov
-  space: prod
-
-sudo: required
+script: echo "ran"
