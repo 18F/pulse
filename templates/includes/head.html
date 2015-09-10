@@ -1,0 +1,63 @@
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="xXEGpPeG9CfACp-aeM0kS8pSS9Vk7Z8OS0QB_EehREs" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- Title and meta description
+================================================== -->
+<title>{% block title %}{% endblock %}</title>
+<meta property="og:title" content="{{ self.title() }}" />
+
+<meta name="description" content="{% block description %}{% endblock %}">
+<meta property="og:description" content="{{ self.description() }}" />
+
+<!-- <link rel="canonical" href="TODO" /> -->
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicons/favicon.ico" />
+<link rel="icon" type="image/png" href="/static/images/favicons/favicon.png" />
+
+<!-- 192x192, as recommended for Android
+https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+-->
+<link rel="icon" type="image/png" sizes="192x192" href="/static/images/favicons/pulse-192.png" />
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/static/images/favicons/pulse-57.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/images/favicons/pulse-72.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/images/favicons/pulse-114.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/images/favicons/pulse-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/static/css/normalize.min.css">
+<link rel="stylesheet" href="/static/css/google-fonts.css">
+<link rel="stylesheet" href="/static/js/vendor/DataTables-1.10.6/media/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="/static/js/vendor/DataTables-1.10.6/media/css/dataTables.responsive.css">
+<link rel="stylesheet" href="/static/css/main.css?">
+<!-- site.time | date: "%Y%m%j%H%M%S" -->
+
+<!-- Scripts
+================================================== -->
+<script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="/static/js/vendor/jquery.min.js"></script>
+<script src="/static/js/vendor/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="/static/js/vendor/DataTables-1.10.6/media/js/dataTables.responsive.js"></script>
+<script src="/static/js/vendor/dataTables.lengthLinks.js"></script>
+<script src="/static/js/dataTables.downloads.js"></script>
+<script src="/static/js/vendor/d3.min.js"></script>
+<script src="/static/js/vendor/querystring.js"></script>
+<script src="/static/js/utils.js?"></script>
+<!-- site.time | date: "%Y%m%j%H%M%S" -->

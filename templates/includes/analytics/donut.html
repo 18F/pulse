@@ -35,7 +35,7 @@
             location.href = "/analytics/domains/";
         });
 
-    d3.csv("/assets/data/analytics.csv", function (error, data) {
+    d3.csv("/static/data/analytics.csv", function (error, data) {
 
         var g = chart.selectAll(".arc")
             .data(pie(data))

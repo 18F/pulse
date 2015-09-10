@@ -1,8 +1,5 @@
-# Logs
 logs
 *.log
-
-/_site
 /.sass-cache
 
 # Mac specific
@@ -12,3 +9,5 @@ __pycache__/
 *.py[cod]
 pip-log.txt
 pip-delete-this-directory.txt
+
+todo.txt

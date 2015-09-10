@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-{% include head.html %}
+{% include 'includes/head.html' %}
 </head>
 
-<body id="{{ page.id }}">
+<body id="{% block page_id %}{% endblock %}">
 <a id="skipnav" href="#content">Skip to main content</a>
 <!--[if lte IE 9]>
   <section>
@@ -21,17 +21,17 @@
   </section>
 <![endif]-->
 
-{% include header.html %}
+{% include 'includes/header.html' %}
 
 <section id="content">
-  {{ content }}
+  {%block content %}{% endblock %}
 </section>
 
-{% include footer.html %}
+{% include 'includes/footer.html' %}
 
-{% include reporting.html %}
+{% include 'includes/reporting.html' %}
 
-<script src="/assets/js/main.js"></script>
+<script src="/static/js/main.js"></script>
 
 </body>
 </html>
