@@ -8,5 +8,7 @@ logs
 # Mac specific
 .DS_Store
 
-# Node
-node_modules/
+__pycache__/
+*.py[cod]
+pip-log.txt
+pip-delete-this-directory.txt
