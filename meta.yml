@@ -1,0 +1,15 @@
+# Site metadata.
+
+# Canonical URL
+url: https://pulse.cio.gov
+
+name: Pulse
+title: "The pulse of the federal .gov space"
+description: "How federal government domains are meeting best practices on the web."
+
+# When the data we used was generated. Manually updated for now.
+data:
+  # The export date for the .gov domain list.
+  domains: 2015-03-15
+  # The scan date.
+  scan: 2015-09-04
