@@ -2,6 +2,13 @@ logs
 *.log
 /.sass-cache
 
+# virtualenv
+.Python
+bin
+include
+lib
+
+
 # Mac specific
 .DS_Store
 
@@ -9,5 +16,6 @@ __pycache__/
 *.py[cod]
 pip-log.txt
 pip-delete-this-directory.txt
+pip-selfcheck.json
 
 todo.txt
