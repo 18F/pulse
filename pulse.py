@@ -10,23 +10,31 @@ import datetime
 app = Flask(__name__)
 app.debug = True
 
+### 
+# Context processors and filters.
+
 # Make site metadata available everywhere.
 meta = yaml.safe_load(open("meta.yml"))
 @app.context_processor
 def inject_meta():
 	return dict(site=meta, now=datetime.datetime.utcnow)
 
-# Routes.
-@app.route("/")
-def index():
-	return render_template("index.html")
-
-# Filters.
 @app.template_filter('date')
 def datetimeformat(value, format='%H:%M / %d-%m-%Y'):
     return value.strftime(format)
 
-# Boot it up.
 
+###
+# Routes
+@app.route("/")
+def index():
+	return render_template("index.html")
+
+@app.route("/about")
+def about():
+	return render_template("about.html")
+
+### 
+# Boot it up.
 if __name__ == "__main__":
     app.run()

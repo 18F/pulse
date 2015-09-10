@@ -1,11 +1,10 @@
----
-layout: default
-id: about
-permalink: /about/
-title: "A project of the General Services Administration that measures how U.S. government domains are following best practices for federal websites."
-description: "Frequently asked questions and information on what it Pulse measures and where to send feedback."
----
+{% extends "layout.html" %}
 
+{% block page_id %}about{% endblock %}
+{% block title %}About{% endblock %}
+{% block description %}Frequently asked questions and information on what it Pulse measures and where to send feedback.{% endblock %}
+
+{% block content %}
 <header>
 
   <h1>About Pulse</h1>
@@ -100,15 +99,15 @@ description: "Frequently asked questions and information on what it Pulse measur
 				<h3>When was the data last updated on Pulse?</h3>
 
 				<p>
-					The list of <code>.gov</code> domains used on Pulse was generated on <strong>{{ site.data.domains | date: "%B %d, %Y" }}</strong>.
+					The list of <code>.gov</code> domains used on Pulse was generated on <strong>{{ site.data.domains | date("%B %d, %Y") }}</strong>.
 				</p>
 
 				<p>
-					Participation in the Digital Analytics Program is current as of <strong>{{ site.data.scan | date: "%B %d, %Y" }}</strong>.
+					Participation in the Digital Analytics Program is current as of <strong>{{ site.data.scan | date("%B %d, %Y") }}</strong>.
 				</p>
 
 				<p>
-					HTTPS and TLS data was last collected through a scan of the public internet on <strong>{{ site.data.scan | date: "%B %d, %Y" }}</strong>.
+					HTTPS and TLS data was last collected through a scan of the public internet on <strong>{{ site.data.scan | date("%B %d, %Y") }}</strong>.
 				</p>
 			</li>
 
@@ -143,3 +142,4 @@ description: "Frequently asked questions and information on what it Pulse measur
 
 	</div>
 </section>
+{% endblock %}
