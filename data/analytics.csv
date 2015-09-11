@@ -37,7 +37,7 @@ aids.gov,True
 airnow.gov,True
 alaskacenters.gov,True
 alertaenlinea.gov,True
-altusandc.gov,False
+altusandc.gov,True
 alzheimers.gov,False
 ama.gov,False
 amberalert.gov,True
@@ -86,10 +86,10 @@ autocommunities.gov,True
 aviationweather.gov,False
 ayudaconmibanco.gov,True
 bam.gov,False
-bankanswers.gov,True
+bankanswers.gov,False
 bankcustomer.gov,True
 bankcustomerassistance.gov,True
-bankhelp.gov,True
+bankhelp.gov,False
 banknet.gov,False
 bankruptcy.gov,False
 bbg.gov,False
@@ -366,6 +366,7 @@ eta-find.gov,False
 ethics.gov,False
 ethicsburg.gov,False
 evergladesrestoration.gov,False
+everykidinapark.gov,True
 execsec.gov,False
 exim.gov,False
 eximcoop.gov,False
@@ -586,7 +587,7 @@ healthcare.gov,False
 healthdata.gov,False
 healthfinder.gov,False
 healthindicators.gov,False
-healthit.gov,False
+healthit.gov,True
 healthreform.gov,False
 healthypeople.gov,False
 hearttruth.gov,False
@@ -596,7 +597,7 @@ helpwithmycheckingaccount.gov,True
 helpwithmycreditcard.gov,True
 helpwithmycreditcardbank.gov,True
 helpwithmymortgage.gov,True
-helpwithmymortgagebank.gov,True
+helpwithmymortgagebank.gov,False
 heritageabroad.gov,False
 hhs.gov,True
 hhsoig.gov,False
@@ -1331,7 +1332,7 @@ weather.gov,True
 webharvest.gov,False
 welcometousa.gov,False
 wethepeople.gov,False
-wh.gov,False
+wh.gov,True
 whaging.gov,False
 whistleblowers.gov,True
 whitehouse.gov,True
