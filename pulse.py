@@ -58,6 +58,16 @@ def analytics_agencies():
 def analytics_guide():
 	return render_template("analytics/guide.html")
 
+# TODO: Take in an agency slug, look up data and pass it to template.
+@app.route("/agency/")
+def agency():
+	return render_template("agency.html")
+
+# TODO: Take in a domain name, look up data and pass it to template.
+@app.route("/domain/")
+def domain():
+	return render_template("domain.html")
+
 
 ### 
 # Boot it up.

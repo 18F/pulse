@@ -1,10 +1,10 @@
----
-layout: default
-id: agency
-permalink: /agency/
-title: "A project of the General Services Administration that measures how U.S. government domains are following best practices for federal websites."
-description: ""
----
+{% extends "layout.html" %}
+
+{% block page_id %}agency{% endblock %}
+{% block title %}Agency Name{% endblock %}
+{% block description %}{{ site.description }}{% endblock %}
+
+{% block content %}
 
 <header>
 
@@ -78,3 +78,5 @@ description: ""
 
 	</div>
 </section>
+
+{% endblock %}
