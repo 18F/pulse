@@ -528,18 +528,16 @@ a#skipnav {
           vertical-align: bottom;
           display: inline-block;
 
-          &.enforces-https .label {
-            font-size: 1.1em;
-          }
 
           .percent {
             height: 45px;
             font-size: 2.5em;
             font-weight: bold;
           }
+
           .label {
             height: 60px;
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-weight: bold;
             text-transform: uppercase;
           }
@@ -550,6 +548,7 @@ a#skipnav {
             background: #D8D8D8;
             position: relative;
           }
+
           .fill {
             background: $light-blue;
             top: 25%;

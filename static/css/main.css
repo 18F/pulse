@@ -641,15 +641,13 @@ a#skipnav {
         text-align: center;
         vertical-align: bottom;
         display: inline-block; }
-        #agency #main-content ul li .charts li.enforces-https .label {
-          font-size: 1.1em; }
         #agency #main-content ul li .charts li .percent {
           height: 45px;
           font-size: 2.5em;
           font-weight: bold; }
         #agency #main-content ul li .charts li .label {
           height: 60px;
-          font-size: 1.3em;
+          font-size: 1.1em;
           font-weight: bold;
           text-transform: uppercase; }
         #agency #main-content ul li .charts li .bar {

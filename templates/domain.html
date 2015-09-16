@@ -1,15 +1,15 @@
----
-layout: default
-id: domain
-permalink: /domain/
-title: "A project of the General Services Administration that measures how U.S. government domains are following best practices for federal websites."
-description: ""
----
+{% extends "layout.html" %}
+
+{% block page_id %}domain{% endblock %}
+{% block title %}{{ domain.domain }}{% endblock %}
+{% block description %}{{ site.description }}{% endblock %}
+
+{% block content %}
 
 <header>
 
-  <h1>example.gov</h1>
-  <h2>Department of the Example</h2>
+  <h1>{{ domain.domain }}</h1>
+  <h2>{{ domain.agency }}</h2>
 
 </header>
 
@@ -18,51 +18,60 @@ description: ""
 
 		<ul>
 
-			<li>
-				<h2>HTTPS Coverage</h2>
+			{% if domain.https %}
+				<li>
+					<h2>HTTPS Coverage</h2>
 
-				<ul class="coverage">
-					<li>
-						<span class="label">Uses HTTPS:</span>
-						<span class="setting">Yes</span>
-					</li>
-					<li>
-						<span class="label">Enforces HTTPS:</span>
-						<span class="setting">Yes</span>
-					</li>
-					<li>
-						<span class="label">Strict Transport Security (HSTS):</span>
-						<span class="setting">Yes</span>
-					</li>
-					<li>
-						<span class="label">SSL Labs Grade:</span>
-						<span class="setting">A+</span>
-					</li>
+					<ul class="coverage">
+						<li>
+							<span class="label">Uses HTTPS:</span>
+							<span class="setting">{{ domain.https['Uses HTTPS'] | field_map('https', 'https') }}</span>
+						</li>
+						<li>
+							<span class="label">Enforces HTTPS:</span>
+							<span class="setting">{{ domain.https['Enforces HTTPS'] | field_map('https', 'https_forced') }}</span>
+						</li>
+						<li>
+							<span class="label">Strict Transport Security (HSTS):</span>
+							<span class="setting">{{ domain.https['Strict Transport Security (HSTS)'] | field_map('https', 'hsts') }}</span>
+						</li>
+						<li>
+							<span class="label">SSL Labs Grade:</span>
+							<span class="setting">{{ domain.https['SSL Labs Grade'] | field_map('https', 'grade') }}</span>
+						</li>
 
-				</ul>
+					</ul>
 
-				<div class="description">
-					<div class="details">
-						<strong>Details:</strong> This domain enforces HTTPS. HSTS is enabled, but not for its subdomains and is not ready for preloading.
+					<div class="description">
+						<!-- <div class="details">
+							<strong>Details:</strong> This domain enforces HTTPS. HSTS is enabled, but not for its subdomains and is not ready for preloading.
+						</div>
+						<div class="tls">
+							<strong>TLS Issues:</strong> See the full SSL Labs report for details.
+						</div> -->
 					</div>
-					<div class="tls">
-						<strong>TLS Issues:</strong> See the full SSL Labs report for details.
-					</div>
-				</div>
-			</li>
+				</li>
 
-			<li>
-				<h2>Digital Analytics Program (DAP)</h2>
+			{% endif %}
 
-				<ul class="coverage">
-					<li>
-						<span class="label">Participates in DAP:</span>
-						<span class="setting">Yes</span>
-					</li>
-				</ul>
-			</li>
+			{% if domain.analytics %}
+
+				<li>
+					<h2>Digital Analytics Program (DAP)</h2>
+
+					<ul class="coverage">
+						<li>
+							<span class="label">Participates in DAP:</span>
+							<span class="setting">{{ domain.analytics['Participates in DAP?'] | field_map('analytics', 'dap') }}</span>
+						</li>
+					</ul>
+				</li>
+
+			{% endif %}
 
 		</ul>
 
 	</div>
 </section>
+
+{% endblock %}
