@@ -3,6 +3,7 @@
 from flask import Flask
 from flask import render_template
 import yaml
+import json
 import datetime
 
 
@@ -10,7 +11,7 @@ import datetime
 app = Flask(__name__)
 app.debug = True
 
-### 
+###
 # Context processors and filters.
 
 # Make site metadata available everywhere.
@@ -22,6 +23,14 @@ def inject_meta():
 @app.template_filter('date')
 def datetimeformat(value, format='%H:%M / %d-%m-%Y'):
     return value.strftime(format)
+
+
+###
+# Load the data into memory.
+#
+
+agencies = json.load(open("static/data/agencies.json"))
+domains = json.load(open("static/data/domains.json"))
 
 
 ###
@@ -59,17 +68,24 @@ def analytics_guide():
 	return render_template("analytics/guide.html")
 
 # TODO: Take in an agency slug, look up data and pass it to template.
-@app.route("/agency/")
-def agency():
-	return render_template("agency.html")
+@app.route("/agency/<slug>")
+def agency(slug=None):
+	if agencies.get(slug) is None:
+		pass # TODO: 404
+
+	return render_template("agency.html", agency=agencies[slug])
 
 # TODO: Take in a domain name, look up data and pass it to template.
-@app.route("/domain/")
-def domain():
-	return render_template("domain.html")
+@app.route("/domain/<hostname>")
+def domain(hostname=None):
+	if domains.get(hostname) is None:
+		pass # TODO: 404
+
+	return render_template("domain.html", domain=domains[hostname])
 
 
-### 
+
+###
 # Boot it up.
 if __name__ == "__main__":
     app.run()
