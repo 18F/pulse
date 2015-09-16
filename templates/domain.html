@@ -8,8 +8,8 @@
 
 <header>
 
-  <h1>example.gov</h1>
-  <h2>Department of the Example</h2>
+  <h1>{{ domain.domain }}</h1>
+  <h2>{{ domain.agency }}</h2>
 
 </header>
 
@@ -24,30 +24,30 @@
 				<ul class="coverage">
 					<li>
 						<span class="label">Uses HTTPS:</span>
-						<span class="setting">Yes</span>
+						<span class="setting">{{ domain.https['Uses HTTPS'] | field_map('https', 'https') }}</span>
 					</li>
 					<li>
 						<span class="label">Enforces HTTPS:</span>
-						<span class="setting">Yes</span>
+						<span class="setting">{{ domain.https['Enforces HTTPS'] | field_map('https', 'https_forced') }}</span>
 					</li>
 					<li>
 						<span class="label">Strict Transport Security (HSTS):</span>
-						<span class="setting">Yes</span>
+						<span class="setting">{{ domain.https['Strict Transport Security (HSTS)'] | field_map('https', 'hsts') }}</span>
 					</li>
 					<li>
 						<span class="label">SSL Labs Grade:</span>
-						<span class="setting">A+</span>
+						<span class="setting">{{ domain.https['SSL Labs Grade'] | field_map('https', 'grade') }}</span>
 					</li>
 
 				</ul>
 
 				<div class="description">
-					<div class="details">
+					<!-- <div class="details">
 						<strong>Details:</strong> This domain enforces HTTPS. HSTS is enabled, but not for its subdomains and is not ready for preloading.
 					</div>
 					<div class="tls">
 						<strong>TLS Issues:</strong> See the full SSL Labs report for details.
-					</div>
+					</div> -->
 				</div>
 			</li>
 
@@ -57,7 +57,7 @@
 				<ul class="coverage">
 					<li>
 						<span class="label">Participates in DAP:</span>
-						<span class="setting">Yes</span>
+						<span class="setting">{{ domain.analytics['Participates in DAP?'] | field_map('analytics', 'dap') }}</span>
 					</li>
 				</ul>
 			</li>

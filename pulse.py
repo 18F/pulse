@@ -12,6 +12,15 @@ app = Flask(__name__)
 app.debug = True
 
 ###
+# Load the data into memory.
+#
+
+agencies = json.load(open("static/data/agencies.json"))
+domains = json.load(open("static/data/domains.json"))
+from app import data
+
+
+###
 # Context processors and filters.
 
 # Make site metadata available everywhere.
@@ -24,14 +33,13 @@ def inject_meta():
 def datetimeformat(value, format='%H:%M / %d-%m-%Y'):
     return value.strftime(format)
 
+@app.template_filter('field_map')
+def field_map(value, category=None, field=None):
+	return data.data[category][field][str(value)]
 
-###
-# Load the data into memory.
-#
-
-agencies = json.load(open("static/data/agencies.json"))
-domains = json.load(open("static/data/domains.json"))
-
+@app.template_filter('analytics_map')
+def analytics_map(value, field=None):
+	return data.data['analytics'][field][str(value)]
 
 ###
 # Routes

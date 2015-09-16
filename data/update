@@ -136,6 +136,7 @@ def load_data():
       if domain not in domains:
         domains.append(domain)
         domain_map[domain] = {
+          'domain': domain,
           'branch': branch,
           'agency': agency,
           'agency_slug': slugify.slugify(agency)
