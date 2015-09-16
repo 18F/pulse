@@ -1,5 +1,5 @@
-scss ?= assets/scss/main.scss
-css ?= assets/css/main.css
+scss ?= static/scss/main.scss
+css ?= static/css/main.css
 
 all: styles
 
