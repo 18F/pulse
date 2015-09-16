@@ -8,6 +8,7 @@ bin
 include
 lib
 
+/deploy/node_modules
 
 # Mac specific
 .DS_Store
