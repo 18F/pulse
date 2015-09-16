@@ -9,11 +9,15 @@
 # * tls.csv - output of domain-scan
 # * analytics.csv - output of domain-scan
 #
-# Produce, in the assets/data directory:
+# Produce, in the static/data directory:
 #
 # = donut power
 # * analytics.csv
 # * https.csv
+#
+# = landing pages
+# * agencies.json
+# * domains.json
 #
 # = table power
 # * tables/https/agencies.json
@@ -30,11 +34,12 @@
 import csv
 import json
 import os
+import slugify
 
 ## Output dirs.
 
-TABLE_DATA = "../assets/data/tables"
-STATS_DATA = "../assets/data"
+TABLE_DATA = "../static/data/tables"
+STATS_DATA = "../static/data"
 
 
 LABELS = {
@@ -79,6 +84,10 @@ agency_data = {}
 domains = []
 agencies = []
 
+# Data as prepared for landing page rendering.
+domain_map = {}
+agency_map = {}
+
 # Data as prepared for table input.
 https_domains = []
 analytics_domains = []
@@ -98,6 +107,7 @@ def run():
   process_stats()
   save_tables()
   save_stats()
+  save_landing_data()
 
 
 # Reads in input CSVs.
@@ -125,21 +135,39 @@ def load_data():
 
       if domain not in domains:
         domains.append(domain)
+        domain_map[domain] = {
+          'branch': branch,
+          'agency': agency,
+          'agency_slug': slugify.slugify(agency)
+        }
 
       if agency not in agencies:
         agencies.append(agency)
+
+        slug = slugify.slugify(agency)
+        agency_map[slug] = {
+          'agency': agency,
+          'agency_slug': slugify.slugify(agency)
+        }
+
         agency_data[agency] = []
 
       agency_data[agency].append(domain)
 
       domain_data[domain] = {
         'branch': branch,
-        'agency': agency
+        'agency': agency,
+        'agency_slug': slugify.slugify(agency)
       }
 
   # sort uniquely seen domains and agencies
   domains.sort()
   agencies.sort()
+
+  # store total domains we found
+  for agency in agencies:
+    slug = slugify.slugify(agency)
+    agency_map[slug]['total_domains'] = len(agency_data[agency])
 
   headers = []
   with open("inspect.csv", newline='') as csvfile:
@@ -209,10 +237,14 @@ def process_domains():
   # First, process all domains.
   for domain in domains:
     if evaluating_for_https(domain):
-      https_domains.append(https_row_for(domain))
+      row = https_row_for(domain)
+      domain_map[domain]['https'] = row
+      https_domains.append(row)
 
     if evaluating_for_analytics(domain):
-      analytics_domains.append(analytics_row_for(domain))
+      row = analytics_row_for(domain)
+      domain_map[domain]['analytics'] = row
+      analytics_domains.append(row)
 
   # Second, process each agency's domains.
   for agency in agencies:
@@ -262,22 +294,31 @@ def process_domains():
         if row[LABELS['dap']] >= 1:
           analytics_stats['dap'] += 1
 
+
     if https_total > 0:
-      https_agencies.append({
+      row = {
         'Agency': agency,
         'Number of Domains': https_total,
         LABELS['https']: percent(https_stats['https'], https_total),
         LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
         LABELS['hsts']: percent(https_stats['hsts'], https_total),
         LABELS['grade_agencies']: percent(https_stats['grade'], https_total)
-      })
+      }
+      https_agencies.append(row)
+      agency_map[slugify.slugify(agency)]['https'] = row
+    else:
+      agency_map[slugify.slugify(agency)]['https'] = None
 
     if analytics_total > 0:
-      analytics_agencies.append({
+      row = {
         'Agency': agency,
         'Number of Domains': analytics_total,
         LABELS['dap']: percent(analytics_stats['dap'], analytics_total)
-      })
+      }
+      analytics_agencies.append(row)
+      agency_map[slugify.slugify(agency)]['analytics'] = row
+    else:
+      agency_map[slugify.slugify(agency)]['analytics'] = None
 
 
 def evaluating_for_https(domain):
@@ -614,6 +655,13 @@ def save_csv(rows, directory, filename):
   for row in rows:
     writer.writerow(row)
   f.close()
+
+def save_landing_data():
+  agency_file = os.path.join(STATS_DATA, "agencies.json")
+  write(json_for(agency_map), agency_file)
+
+  domain_file = os.path.join(STATS_DATA, "domains.json")
+  write(json_for(domain_map), domain_file)
 
 
 ### utilities
