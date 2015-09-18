@@ -37,7 +37,7 @@ aids.gov,True
 airnow.gov,True
 alaskacenters.gov,True
 alertaenlinea.gov,True
-altusandc.gov,False
+altusandc.gov,True
 alzheimers.gov,False
 ama.gov,False
 amberalert.gov,True
@@ -366,6 +366,7 @@ eta-find.gov,False
 ethics.gov,False
 ethicsburg.gov,False
 evergladesrestoration.gov,False
+everykidinapark.gov,True
 execsec.gov,False
 exim.gov,False
 eximcoop.gov,False
@@ -586,7 +587,7 @@ healthcare.gov,False
 healthdata.gov,False
 healthfinder.gov,False
 healthindicators.gov,False
-healthit.gov,False
+healthit.gov,True
 healthreform.gov,False
 healthypeople.gov,False
 hearttruth.gov,False
@@ -741,7 +742,7 @@ literacy.gov,False
 llis.gov,False
 llnl.gov,False
 lmrcouncil.gov,True
-lmvsci.gov,False
+lmvsci.gov,True
 loc.gov,False
 locatorplus.gov,False
 locimages.gov,False
@@ -929,7 +930,7 @@ ofee.gov,False
 ofheo.gov,False
 ofr.gov,False
 oge.gov,False
-ogis.gov,False
+ogis.gov,True
 ojjdp.gov,True
 ojp.gov,True
 omb.gov,False
@@ -1080,6 +1081,7 @@ savingsbonds.gov,True
 savingsbondwizard.gov,True
 sba.gov,True
 sbir.gov,False
+sbst.gov,True
 sc-us.gov,False
 scidac.gov,False
 science.gov,False
@@ -1178,7 +1180,7 @@ thesecondthing.gov,False
 thomas.gov,False
 tigta.gov,False
 tigtanet.gov,False
-time.gov,False
+time.gov,True
 tissueengineering.gov,False
 tobacco.gov,False
 tps.gov,False
@@ -1331,7 +1333,7 @@ weather.gov,True
 webharvest.gov,False
 welcometousa.gov,False
 wethepeople.gov,False
-wh.gov,False
+wh.gov,True
 whaging.gov,False
 whistleblowers.gov,True
 whitehouse.gov,True
