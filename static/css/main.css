@@ -238,9 +238,10 @@ footer {
     clear: both; }
 
 a#skipnav {
+  width: 170px;
   padding: 10px 15px;
   position: absolute;
-  top: -40px;
+  top: -70px;
   left: 0px;
   color: #0059b3;
   background: transparent;
