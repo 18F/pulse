@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<!-- Title and meta description
+================================================== -->
+<title>{% block title %}{% endblock %}</title>
+<meta property="og:title" content="{{ site.title }} | {{ self.title() }}" />
+
+<meta name="description" content="{% block description %}{% endblock %}">
+<meta property="og:description" content="{{ self.description() }}" />
+
+<link rel="canonical" href="{{ site.url }}{{ request.path }}" />
+
+{% include 'includes/head.html' %}
+</head>
+
+<body id="{% block page_id %}{% endblock %}">
+<a id="skipnav" href="#content">Skip to main content</a>
+<!--[if lte IE 9]>
+  <section>
+    <h2>Your browser is out of date.</h2>
+    <p style="color: #000;">
+      You are using an older version of Internet Explorer. For a better
+      experience, please update your browser to the latest version.
+    </p>
+    <p>
+      <a target="_blank"
+         href="http://browsehappy.com/">Learn how to update your browser.</a>
+    </p>
+  </section>
+<![endif]-->
+
+{% include 'includes/header.html' %}
+
+<section id="content">
+  {%block content %}{% endblock %}
+</section>
+
+{% include 'includes/footer.html' %}
+
+{% include 'includes/reporting.html' %}
+
+<script src="/static/js/main.js"></script>
+
+</body>
+</html>

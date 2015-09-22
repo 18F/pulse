@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_id %}home{% endblock %}
+{% block title %}Home{% endblock %}
+{% block description %}{{ site.description }}{% endblock %}
+
+{% block content %}
+<div class="wrapper">
+  <div class="hero">
+  	<h2>{{ site.name }}</h2>
+  	<h3>{{ site.description }}</h3>
+  </div>
+
+  <div id="results">
+    <div class="https">
+    	<div class="https_chart"
+        data-width="287"
+      ></div>
+    	{% include 'includes/https/donut.html' %}
+      <a href="/https/domains/" class="button">View HTTPS Results</a>
+    </div>
+    <div class="dap">
+    	<div class="dap_chart"
+        data-width="287"
+      ></div>
+    	{% include 'includes/analytics/donut.html' %}
+      <a href="/analytics/domains/" class="button">View Analytics Results</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

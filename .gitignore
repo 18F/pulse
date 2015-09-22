@@ -1,12 +1,22 @@
-# Logs
 logs
 *.log
-
-/_site
 /.sass-cache
+
+# virtualenv
+.Python
+bin
+include
+lib
+
+/deploy/node_modules
 
 # Mac specific
 .DS_Store
 
-# Node
-node_modules/
+__pycache__/
+*.py[cod]
+pip-log.txt
+pip-delete-this-directory.txt
+pip-selfcheck.json
+
+todo.txt
