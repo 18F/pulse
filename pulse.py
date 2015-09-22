@@ -3,6 +3,7 @@
 from flask import Flask
 from flask import render_template
 import yaml
+import os
 import json
 import datetime
 
@@ -96,4 +97,4 @@ def domain(hostname=None):
 ###
 # Boot it up.
 if __name__ == "__main__":
-    app.run()
+    app.run(port=int(os.getenv("PORT", 5000)))
