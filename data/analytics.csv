@@ -37,7 +37,7 @@ aids.gov,aids.gov,True
 airnow.gov,airnow.gov,True
 alaskacenters.gov,alaskacenters.gov,True
 alertaenlinea.gov,alertaenlinea.gov,True
-altusandc.gov,altusandc.gov,True
+altusandc.gov,altusandc.gov,False
 alzheimers.gov,alzheimers.gov,False
 ama.gov,ama.gov,False
 amberalert.gov,amberalert.gov,True
@@ -174,7 +174,7 @@ cftc.gov,cftc.gov,False
 challenge.gov,challenge.gov,True
 challenges.gov,challenges.gov,False
 change.gov,change.gov,False
-chcoc.gov,chcoc.gov,False
+chcoc.gov,chcoc.gov,True
 chemsafety.gov,chemsafety.gov,False
 childreninadversity.gov,childreninadversity.gov,False
 childstats.gov,childstats.gov,True
@@ -189,7 +189,7 @@ cio.gov,cio.gov,True
 citizencorps.gov,citizencorps.gov,False
 citizencosponsors.gov,citizencosponsors.gov,False
 citizens.gov,citizens.gov,False
-civilianresponsecorps.gov,civilianresponsecorps.gov,True
+civilianresponsecorps.gov,civilianresponsecorps.gov,False
 civilrightsusa.gov,civilrightsusa.gov,False
 climate.gov,climate.gov,True
 climatechange.gov,climatechange.gov,False
@@ -375,7 +375,7 @@ export.gov,export.gov,True
 exrwh.gov,exrwh.gov,False
 eyenote.gov,eyenote.gov,False
 faa.gov,faa.gov,True
-faasafety.gov,faasafety.gov,True
+faasafety.gov,faasafety.gov,False
 faca.gov,faca.gov,False
 facadatabase.gov,facadatabase.gov,True
 fafsa.gov,fafsa.gov,False
