@@ -9,11 +9,27 @@
       "Redirect": "No"
     },
     {
+      "Agency": "National Archives and Records Administration",
+      "Branch": "executive",
+      "Canonical": "http://9-11commission.gov",
+      "Domain": "9-11commission.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Transportation",
       "Branch": "executive",
       "Canonical": "http://911.gov",
       "Domain": "911.gov",
       "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "National Archives and Records Administration",
+      "Branch": "executive",
+      "Canonical": "http://911commission.gov",
+      "Domain": "911commission.gov",
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -153,6 +169,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Armed Forces Retirement Home",
+      "Branch": "executive",
+      "Canonical": "https://www.afrh.gov",
+      "Domain": "afrh.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Health And Human Services",
       "Branch": "executive",
       "Canonical": "http://www.agingstats.gov",
@@ -205,7 +229,7 @@
       "Branch": "executive",
       "Canonical": "http://www.altusandc.gov",
       "Domain": "altusandc.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -281,6 +305,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "http://www.anstaskforce.gov",
+      "Domain": "anstaskforce.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Health And Human Services",
       "Branch": "executive",
       "Canonical": "http://aoa.gov",
@@ -317,6 +349,22 @@
       "Branch": "executive",
       "Canonical": "http://arcticgas.gov",
       "Domain": "arcticgas.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "http://www.arm.gov",
+      "Domain": "arm.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Agriculture",
+      "Branch": "executive",
+      "Canonical": "http://www.ars-grin.gov",
+      "Domain": "ars-grin.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -545,6 +593,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "https://www.bnl.gov",
+      "Domain": "bnl.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of the Interior",
       "Branch": "executive",
       "Canonical": "http://www.boem.gov",
@@ -609,6 +665,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Federal Communications Commission",
+      "Branch": "executive",
+      "Canonical": "http://broadbandmap.gov",
+      "Domain": "broadbandmap.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of the Interior",
       "Branch": "executive",
       "Canonical": "http://www.bsee.gov",
@@ -638,6 +702,14 @@
       "Canonical": "https://cao.gov",
       "Domain": "cao.gov",
       "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Civil Air Patrol",
+      "Branch": "executive",
+      "Canonical": "http://www.cap.gov",
+      "Domain": "cap.gov",
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -773,7 +845,7 @@
       "Branch": "executive",
       "Canonical": "https://chcoc.gov",
       "Domain": "chcoc.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -829,7 +901,7 @@
       "Branch": "executive",
       "Canonical": "http://civilianresponsecorps.gov",
       "Domain": "civilianresponsecorps.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -1051,7 +1123,7 @@
     {
       "Agency": "Consumer Product Safety Commission",
       "Branch": "executive",
-      "Canonical": "http://cpsc.gov",
+      "Canonical": "http://www.cpsc.gov",
       "Domain": "cpsc.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -1601,14 +1673,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of Justice",
-      "Branch": "executive",
-      "Canonical": "http://espanolforlawenforcement.gov",
-      "Domain": "espanolforlawenforcement.gov",
-      "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
       "Agency": "General Services Administration",
       "Branch": "executive",
       "Canonical": "https://www.esrs.gov",
@@ -1693,6 +1757,14 @@
       "Branch": "executive",
       "Canonical": "https://www.faasafety.gov",
       "Domain": "faasafety.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "http://facadatabase.gov",
+      "Domain": "facadatabase.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
     },
@@ -2273,14 +2345,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of the Interior",
-      "Branch": "executive",
-      "Canonical": "http://frcc.gov",
-      "Domain": "frcc.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Federal Retirement Thrift Investment Board",
       "Branch": "executive",
       "Canonical": "http://frtib.gov",
@@ -2769,6 +2833,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of Health And Human Services",
+      "Branch": "executive",
+      "Canonical": "http://hiv.gov",
+      "Domain": "hiv.gov",
+      "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Housing And Urban Development",
       "Branch": "executive",
       "Canonical": "http://homesales.gov",
@@ -3049,6 +3121,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "http://invasivespecies.gov",
+      "Domain": "invasivespecies.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Agriculture",
       "Branch": "executive",
       "Canonical": "http://www.invasivespeciesinfo.gov",
@@ -3107,7 +3187,7 @@
     {
       "Agency": "Department of the Treasury",
       "Branch": "executive",
-      "Canonical": "http://www.irs.gov",
+      "Canonical": "https://www.irs.gov",
       "Domain": "irs.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -3235,6 +3315,14 @@
     {
       "Agency": "Department of the Interior",
       "Branch": "executive",
+      "Canonical": "http://klamathrestoration.gov",
+      "Domain": "klamathrestoration.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
       "Canonical": "http://www.lacoast.gov",
       "Domain": "lacoast.gov",
       "Participates in DAP?": 0,
@@ -3269,6 +3357,14 @@
       "Branch": "executive",
       "Canonical": "https://www.latinofarmerclaims.gov",
       "Domain": "latinofarmerclaims.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "http://www.lbl.gov",
+      "Domain": "lbl.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -3777,6 +3873,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "https://www.nbc.gov",
+      "Domain": "nbc.gov",
+      "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
       "Agency": "National Council on Disability",
       "Branch": "executive",
       "Canonical": "http://ncd.gov",
@@ -3987,7 +4091,7 @@
     {
       "Agency": "Department of Justice",
       "Branch": "executive",
-      "Canonical": "http://nij.gov",
+      "Canonical": "http://www.nij.gov",
       "Domain": "nij.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -4302,6 +4406,14 @@
       "Canonical": "http://www.onguardonline.gov",
       "Domain": "onguardonline.gov",
       "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "http://onhir.gov",
+      "Domain": "onhir.gov",
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -4835,7 +4947,7 @@
     {
       "Agency": "Department of Commerce",
       "Branch": "executive",
-      "Canonical": "http://www.restorethegulf.gov",
+      "Canonical": "http://restorethegulf.gov",
       "Domain": "restorethegulf.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -4867,7 +4979,7 @@
     {
       "Agency": "National Science Foundation",
       "Branch": "executive",
-      "Canonical": "http://sac.gov",
+      "Canonical": "https://sac.gov",
       "Domain": "sac.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -5177,6 +5289,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "http://www.srs.gov",
+      "Domain": "srs.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Social Security Administration",
       "Branch": "executive",
       "Canonical": "http://ssa.gov",
@@ -5299,7 +5419,7 @@
     {
       "Agency": "Department of Transportation",
       "Branch": "executive",
-      "Canonical": "http://www.sustainablecommunities.gov",
+      "Canonical": "https://www.sustainablecommunities.gov",
       "Domain": "sustainablecommunities.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -5707,7 +5827,7 @@
     {
       "Agency": "Department of the Interior",
       "Branch": "executive",
-      "Canonical": "http://www.usgs.gov",
+      "Canonical": "http://usgs.gov",
       "Domain": "usgs.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -5865,6 +5985,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "https://www.volunteer.gov",
+      "Domain": "volunteer.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Corporation for National & Community Service",
       "Branch": "executive",
       "Canonical": "http://www.volunteeringinamerica.gov",
@@ -5949,6 +6077,14 @@
       "Branch": "executive",
       "Canonical": "http://www.wildfire.gov",
       "Domain": "wildfire.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "http://www.wildlifeadaptationstrategy.gov",
+      "Domain": "wildlifeadaptationstrategy.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
