@@ -36,6 +36,11 @@
       "Participates in DAP?": 0
     },
     {
+      "Agency": "Armed Forces Retirement Home",
+      "Number of Domains": 1,
+      "Participates in DAP?": 0
+    },
+    {
       "Agency": "Central Intelligence Agency",
       "Number of Domains": 3,
       "Participates in DAP?": 0
@@ -102,8 +107,8 @@
     },
     {
       "Agency": "Department of Agriculture",
-      "Number of Domains": 31,
-      "Participates in DAP?": 26
+      "Number of Domains": 32,
+      "Participates in DAP?": 22
     },
     {
       "Agency": "Department of Commerce",
@@ -122,13 +127,13 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 31,
+      "Number of Domains": 33,
       "Participates in DAP?": 3
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 71,
-      "Participates in DAP?": 34
+      "Number of Domains": 72,
+      "Participates in DAP?": 33
     },
     {
       "Agency": "Department of Homeland Security",
@@ -142,8 +147,8 @@
     },
     {
       "Agency": "Department of Justice",
-      "Number of Domains": 47,
-      "Participates in DAP?": 77
+      "Number of Domains": 46,
+      "Participates in DAP?": 76
     },
     {
       "Agency": "Department of Labor",
@@ -153,12 +158,12 @@
     {
       "Agency": "Department of State",
       "Number of Domains": 17,
-      "Participates in DAP?": 47
+      "Participates in DAP?": 41
     },
     {
       "Agency": "Department of Transportation",
       "Number of Domains": 19,
-      "Participates in DAP?": 74
+      "Participates in DAP?": 68
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -167,8 +172,8 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 66,
-      "Participates in DAP?": 39
+      "Number of Domains": 72,
+      "Participates in DAP?": 38
     },
     {
       "Agency": "Department of the Treasury",
@@ -207,7 +212,7 @@
     },
     {
       "Agency": "Federal Communications Commission",
-      "Number of Domains": 2,
+      "Number of Domains": 3,
       "Participates in DAP?": 0
     },
     {
@@ -267,8 +272,8 @@
     },
     {
       "Agency": "General Services Administration",
-      "Number of Domains": 60,
-      "Participates in DAP?": 78
+      "Number of Domains": 61,
+      "Participates in DAP?": 80
     },
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
@@ -337,8 +342,8 @@
     },
     {
       "Agency": "National Archives and Records Administration",
-      "Number of Domains": 9,
-      "Participates in DAP?": 78
+      "Number of Domains": 11,
+      "Participates in DAP?": 64
     },
     {
       "Agency": "National Capital Planning Commission",
@@ -428,7 +433,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Number of Domains": 15,
-      "Participates in DAP?": 73
+      "Participates in DAP?": 80
     },
     {
       "Agency": "Overseas Private Investment Corporation",
