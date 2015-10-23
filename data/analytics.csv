@@ -37,7 +37,7 @@ aids.gov,aids.gov,True
 airnow.gov,airnow.gov,True
 alaskacenters.gov,alaskacenters.gov,True
 alertaenlinea.gov,alertaenlinea.gov,True
-altusandc.gov,altusandc.gov,False
+altusandc.gov,altusandc.gov,True
 alzheimers.gov,alzheimers.gov,False
 ama.gov,ama.gov,False
 amberalert.gov,amberalert.gov,True
@@ -587,7 +587,7 @@ healthcare.gov,healthcare.gov,False
 healthdata.gov,healthdata.gov,False
 healthfinder.gov,healthfinder.gov,False
 healthindicators.gov,healthindicators.gov,False
-healthit.gov,healthit.gov,True
+healthit.gov,healthit.gov,False
 healthreform.gov,healthreform.gov,False
 healthypeople.gov,healthypeople.gov,False
 hearttruth.gov,hearttruth.gov,False
@@ -1002,7 +1002,7 @@ poolsafely.gov,poolsafely.gov,True
 poolsafety.gov,poolsafety.gov,True
 postoffice.gov,postoffice.gov,False
 ppdcecc.gov,ppdcecc.gov,False
-ppirs.gov,ppirs.gov,False
+ppirs.gov,ppirs.gov,True
 pppl.gov,pppl.gov,False
 pracomment.gov,pracomment.gov,False
 prc.gov,prc.gov,False
@@ -1141,7 +1141,7 @@ ssa.gov,ssa.gov,True
 ssab.gov,ssab.gov,False
 sss.gov,sss.gov,False
 standards.gov,standards.gov,False
-start2farm.gov,start2farm.gov,True
+start2farm.gov,start2farm.gov,False
 state.gov,state.gov,True
 stennis.gov,stennis.gov,False
 steroidabuse.gov,steroidabuse.gov,False
@@ -1333,7 +1333,7 @@ weather.gov,weather.gov,True
 webharvest.gov,webharvest.gov,False
 welcometousa.gov,welcometousa.gov,False
 wethepeople.gov,wethepeople.gov,False
-wh.gov,wh.gov,True
+wh.gov,wh.gov,False
 whaging.gov,whaging.gov,False
 whistleblowers.gov,whistleblowers.gov,True
 whitehouse.gov,whitehouse.gov,True
