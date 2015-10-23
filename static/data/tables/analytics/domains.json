@@ -229,7 +229,7 @@
       "Branch": "executive",
       "Canonical": "http://www.altusandc.gov",
       "Domain": "altusandc.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -339,7 +339,7 @@
     {
       "Agency": "National Science Foundation",
       "Branch": "executive",
-      "Canonical": "http://arctic.gov",
+      "Canonical": "https://arctic.gov",
       "Domain": "arctic.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -349,14 +349,6 @@
       "Branch": "executive",
       "Canonical": "http://arcticgas.gov",
       "Domain": "arcticgas.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.arm.gov",
-      "Domain": "arm.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -459,7 +451,7 @@
     {
       "Agency": "Department of the Treasury",
       "Branch": "executive",
-      "Canonical": "http://banknet.gov",
+      "Canonical": "https://www.banknet.gov",
       "Domain": "banknet.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -593,14 +585,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "https://www.bnl.gov",
-      "Domain": "bnl.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Department of the Interior",
       "Branch": "executive",
       "Canonical": "http://www.boem.gov",
@@ -702,14 +686,6 @@
       "Canonical": "https://cao.gov",
       "Domain": "cao.gov",
       "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Civil Air Patrol",
-      "Branch": "executive",
-      "Canonical": "http://www.cap.gov",
-      "Domain": "cap.gov",
-      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -1523,7 +1499,7 @@
     {
       "Agency": "Department of Education",
       "Branch": "executive",
-      "Canonical": "http://www.edpubs.gov",
+      "Canonical": "https://www.edpubs.gov",
       "Domain": "edpubs.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -2379,7 +2355,7 @@
     {
       "Agency": "Department of Education",
       "Branch": "executive",
-      "Canonical": "http://www.fsapubs.gov",
+      "Canonical": "https://fsapubs.gov",
       "Domain": "fsapubs.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -2757,7 +2733,7 @@
       "Branch": "executive",
       "Canonical": "https://www.healthit.gov",
       "Domain": "healthit.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -2955,7 +2931,7 @@
     {
       "Agency": "Department of State",
       "Branch": "executive",
-      "Canonical": "https://www.iawg.gov",
+      "Canonical": "http://iawg.gov",
       "Domain": "iawg.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -4123,7 +4099,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Branch": "executive",
-      "Canonical": "http://www.nlm.gov",
+      "Canonical": "https://www.nlm.gov",
       "Domain": "nlm.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -4733,7 +4709,7 @@
       "Branch": "executive",
       "Canonical": "https://www.ppirs.gov",
       "Domain": "ppirs.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -5163,7 +5139,7 @@
     {
       "Agency": "Social Security Administration",
       "Branch": "executive",
-      "Canonical": "http://segurosocial.gov",
+      "Canonical": "https://segurosocial.gov",
       "Domain": "segurosocial.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -5275,7 +5251,7 @@
     {
       "Agency": "Social Security Administration",
       "Branch": "executive",
-      "Canonical": "http://socialsecurity.gov",
+      "Canonical": "https://socialsecurity.gov",
       "Domain": "socialsecurity.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -5299,7 +5275,7 @@
     {
       "Agency": "Social Security Administration",
       "Branch": "executive",
-      "Canonical": "http://ssa.gov",
+      "Canonical": "https://ssa.gov",
       "Domain": "ssa.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -5325,7 +5301,7 @@
       "Branch": "executive",
       "Canonical": "http://start2farm.gov",
       "Domain": "start2farm.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {

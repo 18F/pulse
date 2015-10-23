@@ -27,7 +27,7 @@ aids.gov,executive,Department of Health And Human Services,No,Yes
 airnow.gov,executive,Environmental Protection Agency,No,Yes
 alaskacenters.gov,executive,Department of the Interior,No,Yes
 alertaenlinea.gov,executive,Federal Trade Commission,No,Yes
-altusandc.gov,executive,Department of Defense,No,No
+altusandc.gov,executive,Department of Defense,No,Yes
 alzheimers.gov,executive,Department of Health And Human Services,No,No
 ama.gov,executive,Department of the Treasury,No,No
 amberalert.gov,executive,Department of Justice,No,Yes
@@ -43,7 +43,6 @@ arc.gov,executive,Appalachian Regional Commission,No,No
 archives.gov,executive,National Archives and Records Administration,No,Yes
 arctic.gov,executive,National Science Foundation,No,Yes
 arcticgas.gov,executive,National Science Foundation,No,No
-arm.gov,executive,Department of Energy,No,No
 ars-grin.gov,executive,Department of Agriculture,No,No
 arts.gov,executive,National Endowment for the Arts,No,No
 asap.gov,executive,Department of the Treasury,No,No
@@ -73,7 +72,6 @@ bjs.gov,executive,Department of Justice,No,No
 bldrdoc.gov,executive,Department of Commerce,No,Yes
 blm.gov,executive,Department of the Interior,No,No
 bls.gov,executive,Department of Labor,No,Yes
-bnl.gov,executive,Department of Energy,No,No
 boem.gov,executive,Department of the Interior,No,No
 boemre.gov,executive,Department of the Interior,No,No
 bondpro.gov,executive,Department of the Treasury,No,Yes
@@ -87,7 +85,6 @@ bsee.gov,executive,Department of the Interior,No,No
 buyusa.gov,executive,Department of Commerce,No,Yes
 cancer.gov,executive,Department of Health And Human Services,No,No
 cao.gov,executive,General Services Administration,No,Yes
-cap.gov,executive,Civil Air Patrol,No,No
 capnhq.gov,executive,Civil Air Patrol,No,No
 cbca.gov,executive,General Services Administration,No,No
 cbp.gov,executive,Department of Commerce,No,Yes
@@ -343,7 +340,7 @@ healthcare.gov,executive,Department of Health And Human Services,No,No
 healthdata.gov,executive,Department of Health And Human Services,No,No
 healthfinder.gov,executive,Department of Health And Human Services,No,No
 healthindicators.gov,executive,Department of Health And Human Services,No,No
-healthit.gov,executive,Department of Health And Human Services,No,Yes
+healthit.gov,executive,Department of Health And Human Services,No,No
 healthypeople.gov,executive,Department of Health And Human Services,No,No
 helpwithmybank.gov,executive,Department of the Treasury,No,Yes
 helpwithmycheckingaccount.gov,executive,Department of the Treasury,No,Yes
@@ -590,7 +587,7 @@ pmi.gov,executive,U.S. Agency for International Development,No,Yes
 pnl.gov,executive,Department of Energy,No,No
 pnnl.gov,executive,Department of Energy,No,No
 poolsafely.gov,executive,Consumer Product Safety Commission,No,Yes
-ppirs.gov,executive,General Services Administration,No,No
+ppirs.gov,executive,General Services Administration,No,Yes
 prc.gov,executive,Postal Rate Commission,No,No
 preserveamerica.gov,executive,Advisory Council on Historic Preservation,No,No
 presidentialserviceawards.gov,executive,Corporation for National & Community Service,No,No
@@ -664,7 +661,7 @@ srs.gov,executive,Department of Energy,No,No
 ssa.gov,executive,Social Security Administration,No,Yes
 ssab.gov,executive,Social Security Advisory Board,No,No
 sss.gov,executive,Selective Service System,No,No
-start2farm.gov,executive,Department of Agriculture,No,Yes
+start2farm.gov,executive,Department of Agriculture,No,No
 state.gov,executive,Department of State,No,Yes
 stennis.gov,executive,Stennis Center for Public Service,No,No
 stopalcoholabuse.gov,executive,Department of Health And Human Services,No,No
