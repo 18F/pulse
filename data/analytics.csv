@@ -135,7 +135,7 @@ budget.gov,budget.gov,False
 buildingamerica.gov,buildingamerica.gov,False
 business.gov,business.gov,False
 businessusa.gov,businessusa.gov,False
-buyaccessible.gov,buyaccessible.gov,True
+buyaccessible.gov,buyaccessible.gov,False
 buyusa.gov,buyusa.gov,True
 c3.gov,c3.gov,False
 cancer.gov,cancer.gov,False
@@ -174,7 +174,7 @@ cftc.gov,cftc.gov,False
 challenge.gov,challenge.gov,True
 challenges.gov,challenges.gov,False
 change.gov,change.gov,False
-chcoc.gov,chcoc.gov,False
+chcoc.gov,chcoc.gov,True
 chemsafety.gov,chemsafety.gov,False
 childreninadversity.gov,childreninadversity.gov,False
 childstats.gov,childstats.gov,True
@@ -411,7 +411,7 @@ fdms.gov,fdms.gov,False
 fdr.gov,fdr.gov,False
 fdsys.gov,fdsys.gov,False
 feb.gov,feb.gov,True
-fec.gov,fec.gov,False
+fec.gov,fec.gov,True
 fed.us,fed.us,False
 fedbizopps.gov,fedbizopps.gov,False
 fedcentennial.gov,fedcentennial.gov,False
@@ -930,7 +930,7 @@ ofee.gov,ofee.gov,False
 ofheo.gov,ofheo.gov,False
 ofr.gov,ofr.gov,False
 oge.gov,oge.gov,False
-ogis.gov,ogis.gov,True
+ogis.gov,ogis.gov,False
 ojjdp.gov,ojjdp.gov,True
 ojp.gov,ojp.gov,True
 omb.gov,omb.gov,False
@@ -966,7 +966,7 @@ oti.gov,oti.gov,False
 ots.gov,ots.gov,True
 ourdocuments.gov,ourdocuments.gov,True
 ovc.gov,ovc.gov,True
-ovcttac.gov,ovcttac.gov,False
+ovcttac.gov,ovcttac.gov,True
 pac.gov,pac.gov,False
 pacer.gov,pacer.gov,False
 pandemicflu.gov,pandemicflu.gov,False
@@ -1257,7 +1257,7 @@ uscavc.gov,uscavc.gov,False
 uscc.gov,uscc.gov,False
 usccr.gov,usccr.gov,False
 uscg.gov,uscg.gov,False
-uscirf.gov,uscirf.gov,False
+uscirf.gov,uscirf.gov,True
 uscis.gov,uscis.gov,True
 uscode.gov,uscode.gov,False
 uscongress.gov,uscongress.gov,False
@@ -1269,7 +1269,7 @@ uscvc.gov,uscvc.gov,False
 usda.gov,usda.gov,True
 usdapii.gov,usdapii.gov,False
 usdebitcard.gov,usdebitcard.gov,False
-usdoj.gov,usdoj.gov,False
+usdoj.gov,usdoj.gov,True
 usembassy-mexico.gov,usembassy-mexico.gov,False
 usembassy.gov,usembassy.gov,True
 userra.gov,userra.gov,False
