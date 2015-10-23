@@ -73,14 +73,16 @@ footer {
 }
 
 a#skipnav {
+    width: 170px;
     padding: 10px 15px;
     position: absolute;
-    top: -40px;
+    top: -70px;
     left: 0px;
     color: $medium-blue;
     background: transparent;
     @include transition(top 1s ease-out, background 1s linear);
     z-index: 100;
+
     &:focus {
       position: absolute;
       left: 0px;
