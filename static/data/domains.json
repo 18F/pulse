@@ -5083,6 +5083,37 @@
       "Uses HTTPS": -1
     }
   },
+  "cloud.gov": {
+    "agency": "General Services Administration",
+    "agency_slug": "general-services-administration",
+    "analytics": {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "https://cloud.gov",
+      "Domain": "cloud.gov",
+      "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    "branch": "executive",
+    "domain": "cloud.gov",
+    "https": {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "https://cloud.gov",
+      "Domain": "cloud.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 4,
+      "HSTS max-age": 31536000,
+      "RC4": false,
+      "Redirect": "No",
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 1,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
+  },
   "clubdrugs.gov": {
     "agency": "Department of Health And Human Services",
     "agency_slug": "department-of-health-and-human-services",
@@ -25181,6 +25212,29 @@
       "Uses HTTPS": -1
     }
   },
+  "pif.gov": {
+    "agency": "General Services Administration",
+    "agency_slug": "general-services-administration",
+    "branch": "executive",
+    "domain": "pif.gov",
+    "https": {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "http://www.pif.gov",
+      "Domain": "pif.gov",
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
+      "HSTS max-age": null,
+      "RC4": null,
+      "Redirect": "Yes",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
+    }
+  },
   "pix.gov": {
     "agency": "Director of National Intelligence",
     "agency_slug": "director-of-national-intelligence",
@@ -25602,6 +25656,37 @@
       "Strict Transport Security (HSTS)": -1,
       "TLSv1.2": null,
       "Uses HTTPS": -1
+    }
+  },
+  "presidentialinnovationfellows.gov": {
+    "agency": "General Services Administration",
+    "agency_slug": "general-services-administration",
+    "analytics": {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "http://presidentialinnovationfellows.gov",
+      "Domain": "presidentialinnovationfellows.gov",
+      "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    "branch": "executive",
+    "domain": "presidentialinnovationfellows.gov",
+    "https": {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "http://presidentialinnovationfellows.gov",
+      "Domain": "presidentialinnovationfellows.gov",
+      "Enforces HTTPS": 1,
+      "Forward Secrecy": 2,
+      "HSTS max-age": null,
+      "RC4": false,
+      "Redirect": "No",
+      "SSL Labs Grade": 5,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
     }
   },
   "presidentialserviceawards.gov": {

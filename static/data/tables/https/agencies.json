@@ -443,9 +443,9 @@
     {
       "Agency": "General Services Administration",
       "Enforces HTTPS": 36,
-      "Number of Domains": 87,
-      "SSL Labs (A- or higher)": 7,
-      "Strict Transport Security (HSTS)": 8,
+      "Number of Domains": 90,
+      "SSL Labs (A- or higher)": 8,
+      "Strict Transport Security (HSTS)": 9,
       "Uses HTTPS": 53
     },
     {

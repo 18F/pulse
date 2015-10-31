@@ -945,6 +945,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "https://cloud.gov",
+      "Domain": "cloud.gov",
+      "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Health And Human Services",
       "Branch": "executive",
       "Canonical": "https://www.cms.gov",
@@ -4766,6 +4774,14 @@
       "Canonical": "http://preserveamerica.gov",
       "Domain": "preserveamerica.gov",
       "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "http://presidentialinnovationfellows.gov",
+      "Domain": "presidentialinnovationfellows.gov",
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
