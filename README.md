@@ -30,6 +30,28 @@ make run
 make watch
 ```
 
+## Deploying the site
+
+The site can be easily deployed (by someone with credentials to the right server) through [Fabric](https://github.com/fabric/fabric), which requires Python 2.
+
+The Fabric script will expect a defined `ssh` configuration called `pulse`, which you should already have defined in your SSH configuration with the right hostname and key.
+
+To deploy to staging, switch to a Python 2 virtualenv with `fabric` installed, and run:
+
+```
+make staging
+```
+
+This will `cd` into `deploy/` and run `fab deploy`.
+
+To deploy to production, activate Python 2 and `fabric` and run:
+
+```
+make production
+```
+
+This will run the fabric command to deploy to production.
+
 ## Updating the data in Pulse
 
 Updating Pulse is a multi-step process that combines data published by government offices with data scanned from the public internet.
