@@ -12,7 +12,7 @@
       "Agency": "Administrative Conference of the United States",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 0,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 100,
       "Uses HTTPS": 100
     },
@@ -36,7 +36,7 @@
       "Agency": "American Battle Monuments Commission",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 100,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -68,7 +68,7 @@
       "Agency": "Central Intelligence Agency",
       "Enforces HTTPS": 67,
       "Number of Domains": 3,
-      "SSL Labs (A- or higher)": 67,
+      "SSL Labs (A- or higher)": 33,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 67
     },
@@ -76,7 +76,7 @@
       "Agency": "Christopher Columbus Fellowship Foundation",
       "Enforces HTTPS": 0,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 100,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -178,15 +178,15 @@
     },
     {
       "Agency": "Department of Agriculture",
-      "Enforces HTTPS": 16,
-      "Number of Domains": 43,
+      "Enforces HTTPS": 17,
+      "Number of Domains": 42,
       "SSL Labs (A- or higher)": 5,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 26
+      "Uses HTTPS": 24
     },
     {
       "Agency": "Department of Commerce",
-      "Enforces HTTPS": 6,
+      "Enforces HTTPS": 8,
       "Number of Domains": 48,
       "SSL Labs (A- or higher)": 12,
       "Strict Transport Security (HSTS)": 2,
@@ -194,39 +194,39 @@
     },
     {
       "Agency": "Department of Defense",
-      "Enforces HTTPS": 23,
-      "Number of Domains": 22,
-      "SSL Labs (A- or higher)": 5,
+      "Enforces HTTPS": 22,
+      "Number of Domains": 23,
+      "SSL Labs (A- or higher)": 4,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 27
+      "Uses HTTPS": 26
     },
     {
       "Agency": "Department of Education",
       "Enforces HTTPS": 47,
       "Number of Domains": 15,
-      "SSL Labs (A- or higher)": 27,
+      "SSL Labs (A- or higher)": 20,
       "Strict Transport Security (HSTS)": 20,
       "Uses HTTPS": 60
     },
     {
       "Agency": "Department of Energy",
-      "Enforces HTTPS": 18,
-      "Number of Domains": 55,
-      "SSL Labs (A- or higher)": 16,
+      "Enforces HTTPS": 17,
+      "Number of Domains": 53,
+      "SSL Labs (A- or higher)": 15,
       "Strict Transport Security (HSTS)": 2,
-      "Uses HTTPS": 36
+      "Uses HTTPS": 34
     },
     {
       "Agency": "Department of Health And Human Services",
       "Enforces HTTPS": 15,
-      "Number of Domains": 110,
+      "Number of Domains": 109,
       "SSL Labs (A- or higher)": 18,
-      "Strict Transport Security (HSTS)": 5,
-      "Uses HTTPS": 31
+      "Strict Transport Security (HSTS)": 6,
+      "Uses HTTPS": 30
     },
     {
       "Agency": "Department of Homeland Security",
-      "Enforces HTTPS": 28,
+      "Enforces HTTPS": 32,
       "Number of Domains": 25,
       "SSL Labs (A- or higher)": 44,
       "Strict Transport Security (HSTS)": 0,
@@ -244,17 +244,17 @@
       "Agency": "Department of Justice",
       "Enforces HTTPS": 23,
       "Number of Domains": 66,
-      "SSL Labs (A- or higher)": 15,
+      "SSL Labs (A- or higher)": 17,
       "Strict Transport Security (HSTS)": 3,
       "Uses HTTPS": 27
     },
     {
       "Agency": "Department of Labor",
-      "Enforces HTTPS": 16,
-      "Number of Domains": 19,
-      "SSL Labs (A- or higher)": 11,
+      "Enforces HTTPS": 15,
+      "Number of Domains": 20,
+      "SSL Labs (A- or higher)": 10,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 26
+      "Uses HTTPS": 25
     },
     {
       "Agency": "Department of State",
@@ -308,7 +308,7 @@
       "Agency": "Environmental Protection Agency",
       "Enforces HTTPS": 15,
       "Number of Domains": 13,
-      "SSL Labs (A- or higher)": 15,
+      "SSL Labs (A- or higher)": 8,
       "Strict Transport Security (HSTS)": 8,
       "Uses HTTPS": 23
     },
@@ -412,7 +412,7 @@
       "Agency": "Federal Mediation and Conciliation Service",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 0,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -442,11 +442,11 @@
     },
     {
       "Agency": "General Services Administration",
-      "Enforces HTTPS": 36,
+      "Enforces HTTPS": 33,
       "Number of Domains": 90,
       "SSL Labs (A- or higher)": 8,
-      "Strict Transport Security (HSTS)": 9,
-      "Uses HTTPS": 53
+      "Strict Transport Security (HSTS)": 10,
+      "Uses HTTPS": 52
     },
     {
       "Agency": "Government Printing Office",
@@ -548,7 +548,7 @@
       "Agency": "Millennium Challenge Corporation",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 100,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -734,7 +734,7 @@
       "Number of Domains": 1,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 100
+      "Uses HTTPS": 0
     },
     {
       "Agency": "Postal Rate Commission",
@@ -764,9 +764,9 @@
       "Agency": "Securities and Exchange Commission",
       "Enforces HTTPS": 0,
       "Number of Domains": 3,
-      "SSL Labs (A- or higher)": 33,
+      "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 67
+      "Uses HTTPS": 33
     },
     {
       "Agency": "Selective Service System",
@@ -850,11 +850,11 @@
     },
     {
       "Agency": "The Legislative Branch (Congress)",
-      "Enforces HTTPS": 11,
-      "Number of Domains": 36,
-      "SSL Labs (A- or higher)": 8,
+      "Enforces HTTPS": 12,
+      "Number of Domains": 34,
+      "SSL Labs (A- or higher)": 6,
       "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 22
+      "Uses HTTPS": 24
     },
     {
       "Agency": "The United States World War One Centennial Commission",
