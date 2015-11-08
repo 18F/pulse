@@ -36,7 +36,7 @@
       "Agency": "American Battle Monuments Commission",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 0,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -73,14 +73,6 @@
       "Uses HTTPS": 67
     },
     {
-      "Agency": "Christopher Columbus Fellowship Foundation",
-      "Enforces HTTPS": 0,
-      "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 0,
-      "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 100
-    },
-    {
       "Agency": "Civil Air Patrol",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
@@ -91,7 +83,7 @@
     {
       "Agency": "Comm for People Who Are Blind/Severly Disabled",
       "Enforces HTTPS": 0,
-      "Number of Domains": 2,
+      "Number of Domains": 1,
       "SSL Labs (A- or higher)": 0,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 0
@@ -444,7 +436,7 @@
       "Agency": "General Services Administration",
       "Enforces HTTPS": 33,
       "Number of Domains": 90,
-      "SSL Labs (A- or higher)": 8,
+      "SSL Labs (A- or higher)": 11,
       "Strict Transport Security (HSTS)": 10,
       "Uses HTTPS": 52
     },
@@ -548,7 +540,7 @@
       "Agency": "Millennium Challenge Corporation",
       "Enforces HTTPS": 100,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 0,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -852,7 +844,7 @@
       "Agency": "The Legislative Branch (Congress)",
       "Enforces HTTPS": 12,
       "Number of Domains": 34,
-      "SSL Labs (A- or higher)": 6,
+      "SSL Labs (A- or higher)": 9,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 24
     },

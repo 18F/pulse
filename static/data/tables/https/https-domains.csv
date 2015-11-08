@@ -1,5 +1,5 @@
 Domain,Branch,Agency,Redirect,Uses HTTPS,Enforces HTTPS,Strict Transport Security (HSTS),SSL Labs Grade
-18f.gov,executive,General Services Administration,Yes,Yes,Yes,"Yes, and preload-ready",
+18f.gov,executive,General Services Administration,Yes,Yes,Yes,"Yes, and preload-ready",A+
 404.gov,executive,Securities and Exchange Commission,No,No,,,
 9-11commission.gov,executive,National Archives and Records Administration,No,No,,,
 911.gov,executive,Department of Transportation,No,No,,,
@@ -7,7 +7,7 @@ Domain,Branch,Agency,Redirect,Uses HTTPS,Enforces HTTPS,Strict Transport Securit
 aapi.gov,executive,Department of Education,Yes,No,,,
 abandonedmines.gov,executive,Department of the Interior,No,No,,,
 abilityone.gov,executive,Comm for People Who Are Blind/Severly Disabled,No,No,,,
-abmc.gov,executive,American Battle Monuments Commission,No,Yes,Yes,No,
+abmc.gov,executive,American Battle Monuments Commission,No,Yes,Yes,No,A
 access-board.gov,executive,U. S. Access Board,No,Yes,No,No,A-
 acf.gov,executive,Department of Health And Human Services,Yes,No,,,
 achp.gov,executive,Advisory Council on Historic Preservation,No,No,,,
@@ -160,7 +160,6 @@ childreninadversity.gov,executive,U.S. Agency for International Development,No,N
 childwelfare.gov,executive,Department of Health And Human Services,No,Yes,Yes,No,A
 chinacommission.gov,legislative,The Legislative Branch (Congress),No,Yes,No,No,C
 choosemyplate.gov,executive,Department of Agriculture,No,No,,,
-christophercolumbusfoundation.gov,executive,Christopher Columbus Fellowship Foundation,No,Yes,No,No,
 cia.gov,executive,Central Intelligence Agency,No,Yes,Yes,No,A
 cio.gov,executive,General Services Administration,No,Yes,Yes,"Yes, and preloaded",
 citizencorps.gov,executive,Department of Homeland Security,Yes,Yes,No,No,A-
@@ -170,7 +169,7 @@ climate.gov,executive,Department of Commerce,No,Yes,Yes,Yes,A+
 clinicaltrial.gov,executive,Department of Health And Human Services,No,No,,,
 clinicaltrials.gov,executive,Department of Health And Human Services,No,Yes,Yes,No,A
 clintonlibrary.gov,executive,National Archives and Records Administration,No,No,,,
-cloud.gov,executive,General Services Administration,No,Yes,Yes,Yes,
+cloud.gov,executive,General Services Administration,No,Yes,Yes,Yes,A+
 clubdrugs.gov,executive,Department of Health And Human Services,Yes,No,,,
 cms.gov,executive,Department of Health And Human Services,No,Yes,Yes,Yes,A+
 cmts.gov,executive,Department of Defense,No,No,,,
@@ -317,7 +316,7 @@ eta-find.gov,executive,Department of the Treasury,No,Yes,Yes,No,A-
 ethics.gov,executive,Executive Office of the President,Yes,Yes,No,No,A
 ethicsburg.gov,executive,Department of the Treasury,No,No,,,
 evergladesrestoration.gov,executive,Department of the Interior,No,No,,,
-everykidinapark.gov,executive,Department of the Interior,No,Yes,Yes,Yes,
+everykidinapark.gov,executive,Department of the Interior,No,Yes,Yes,Yes,B
 execsec.gov,executive,Department of Agriculture,No,No,,,
 exim.gov,executive,Export/Import Bank of the U.S.,No,No,,,
 exploretsp.gov,executive,Federal Retirement Thrift Investment Board,Yes,No,,,
@@ -596,7 +595,7 @@ itrd.gov,executive,Networking Information Technology Research and Development (N
 its.gov,executive,Department of the Treasury,No,Yes,Yes,No,C
 jamesmadison.gov,executive,James Madison Memorial Fellowship Foundation,No,No,,,
 jccs.gov,executive,Department of Defense,No,Yes,No,No,T
-jct.gov,legislative,The Legislative Branch (Congress),No,Yes,Yes,No,
+jct.gov,legislative,The Legislative Branch (Congress),No,Yes,Yes,No,A
 jem.gov,executive,Department of the Interior,No,Yes,No,No,A-
 jewishheritage.gov,legislative,Library of Congress,No,No,,,
 jewishheritagemonth.gov,legislative,Library of Congress,No,No,,,
@@ -608,7 +607,6 @@ judicialconference.gov,judicial,The Judicial Branch (Courts),Yes,No,,,
 justice.gov,executive,Department of Justice,No,No,,,
 justthinktwice.gov,executive,Department of Justice,Yes,No,,,
 juvenilecouncil.gov,executive,Department of Justice,No,No,,,
-jwod.gov,executive,Comm for People Who Are Blind/Severly Disabled,No,No,,,
 kids.gov,executive,General Services Administration,Yes,No,,,
 klamathrestoration.gov,executive,Department of the Interior,No,No,,,
 labor.gov,executive,Department of Labor,Yes,No,,,
@@ -660,7 +658,7 @@ marine.gov,executive,Department of the Interior,No,No,,,
 marinecadastre.gov,executive,Department of Commerce,No,No,,,
 max.gov,executive,Executive Office of the President,No,Yes,Yes,"Yes, and preloaded",
 mbda.gov,executive,Department of Commerce,No,No,,,
-mcc.gov,executive,Millennium Challenge Corporation,No,Yes,Yes,No,
+mcc.gov,executive,Millennium Challenge Corporation,No,Yes,Yes,No,A
 mda.gov,executive,Department of Transportation,No,No,,,
 medalofvalor.gov,executive,Department of Justice,No,Yes,Yes,No,F
 medicaid.gov,executive,Department of Health And Human Services,No,No,,,
@@ -934,7 +932,7 @@ savingsbonds.gov,executive,Department of the Treasury,No,No,,,
 savingsbondwizard.gov,executive,Department of the Treasury,No,No,,,
 sba.gov,executive,Small Business Administration,No,Yes,Yes,No,A
 sbir.gov,executive,National Science Foundation,No,Yes,Yes,No,A
-sbst.gov,executive,General Services Administration,No,Yes,Yes,No,
+sbst.gov,executive,General Services Administration,No,Yes,Yes,No,A
 scidac.gov,executive,Department of Energy,No,No,,,
 science.gov,executive,Department of Energy,No,Yes,No,No,F
 science360.gov,executive,National Science Foundation,No,No,,,

@@ -841,14 +841,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Christopher Columbus Fellowship Foundation",
-      "Branch": "executive",
-      "Canonical": "http://www.christophercolumbusfoundation.gov",
-      "Domain": "christophercolumbusfoundation.gov",
-      "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Central Intelligence Agency",
       "Branch": "executive",
       "Canonical": "https://www.cia.gov",
@@ -3286,14 +3278,6 @@
       "Canonical": "http://juvenilecouncil.gov",
       "Domain": "juvenilecouncil.gov",
       "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Comm for People Who Are Blind/Severly Disabled",
-      "Branch": "executive",
-      "Canonical": "http://jwod.gov",
-      "Domain": "jwod.gov",
-      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
