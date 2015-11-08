@@ -1,4 +1,6 @@
 Domain,Base Domain,Grade,Signature Algorithm,Key Type,Key Size,Forward Secrecy,OCSP Stapling,Fallback SCSV,RC4,SSLv3,TLSv1.2,SPDY,Requires SNI,HTTP/2
+18f.gov,18f.gov,A+,SHA256withRSA,RSA,2048,4,False,True,False,False,True,True,True,False
+abmc.gov,abmc.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
 access-board.gov,access-board.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 access-board.gov,access-board.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 acquisition.gov,acquisition.gov,B,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
@@ -9,6 +11,9 @@ afadvantage.gov,afadvantage.gov,C,SHA256withRSA,RSA,2048,0,False,True,True,True,
 afadvantage.gov,afadvantage.gov,C,SHA256withRSA,RSA,2048,0,False,True,True,True,False,False,False,False
 aff.gov,aff.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 aff.gov,aff.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+aging.gov,aging.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
+aging.gov,aging.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
+aging.gov,aging.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
 aids.gov,aids.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 aids.gov,aids.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 aids.gov,aids.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
@@ -19,6 +24,7 @@ alertaenlinea.gov,alertaenlinea.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,
 ama.gov,ama.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 ameslab.gov,ameslab.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 ameslab.gov,ameslab.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+anchorit.gov,anchorit.gov,B,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
 anl.gov,anl.gov,C,SHA256withRSA,RSA,2048,0,False,True,True,False,True,False,False,False
 anl.gov,anl.gov,C,SHA256withRSA,RSA,2048,0,False,True,True,False,True,False,False,False
 aoc.gov,aoc.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
@@ -117,6 +123,8 @@ clinicaltrials.gov,clinicaltrials.gov,A,SHA256withRSA,RSA,2048,4,False,True,Fals
 clinicaltrials.gov,clinicaltrials.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
 clinicaltrials.gov,clinicaltrials.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
 clinicaltrials.gov,clinicaltrials.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
+cloud.gov,cloud.gov,A+,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+cloud.gov,cloud.gov,A+,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 cms.gov,cms.gov,A+,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 cms.gov,cms.gov,A+,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 cms.gov,cms.gov,A+,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
@@ -272,6 +280,8 @@ ethics.gov,ethics.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,Fal
 ethics.gov,ethics.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 ethics.gov,ethics.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 ethics.gov,ethics.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+everykidinapark.gov,everykidinapark.gov,B,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
+everykidinapark.gov,everykidinapark.gov,B,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
 faa.gov,faa.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
 faa.gov,faa.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
 faa.gov,faa.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
@@ -344,6 +354,9 @@ fedramp.gov,fedramp.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,
 fedramp.gov,fedramp.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,True,False
 fedramp.gov,fedramp.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,True,False
 fedreg.gov,fedreg.gov,F,SHA256withRSA,RSA,4096,0,False,False,True,True,False,False,False,False
+fedspending.gov,fedspending.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
+fedspending.gov,fedspending.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
+fedspending.gov,fedspending.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
 feedthefuture.gov,feedthefuture.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 feedthefuture.gov,feedthefuture.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 fegli.gov,fegli.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
@@ -507,6 +520,10 @@ imls.gov,imls.gov,C,SHA256withRSA,RSA,4096,1,False,True,True,True,True,False,Fal
 inl.gov,inl.gov,F,SHA256withRSA,RSA,2048,0,False,False,False,True,False,False,False,False
 integrity.gov,integrity.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 intelink.gov,intelink.gov,B,SHA1withRSA,RSA,2048,1,False,True,False,False,True,False,False,False
+intelligencecareers.gov,intelligencecareers.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+intelligencecareers.gov,intelligencecareers.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+intelligencecareers.gov,intelligencecareers.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+intelligencecareers.gov,intelligencecareers.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 invasivespeciesinfo.gov,invasivespeciesinfo.gov,B,SHA256withRSA,RSA,2048,1,False,False,False,False,True,False,True,False
 investor.gov,investor.gov,A,SHA256withRSA,RSA,4096,2,False,True,False,False,True,False,False,False
 ioss.gov,ioss.gov,T,SHA1withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
@@ -536,6 +553,7 @@ itis.gov,itis.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,
 its.gov,its.gov,C,SHA256withRSA,RSA,2048,1,False,True,False,True,True,False,False,False
 its.gov,its.gov,C,SHA256withRSA,RSA,2048,1,False,True,False,True,True,False,False,False
 jccs.gov,jccs.gov,T,SHA1withRSA,RSA,2048,0,False,N/A,False,False,False,False,False,False
+jct.gov,jct.gov,A,SHA1withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
 jem.gov,jem.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 jem.gov,jem.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 jobcorps.gov,jobcorps.gov,C,SHA1withRSA,RSA,2048,0,False,N/A,False,False,False,False,False,False
@@ -560,6 +578,7 @@ learnperformance.gov,learnperformance.gov,A-,SHA256withRSA,RSA,2048,1,False,True
 learnperformance.gov,learnperformance.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,True,False
 learnperformance.gov,learnperformance.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,True,False
 learnperformance.gov,learnperformance.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,True,False
+letgirlslearn.gov,letgirlslearn.gov,A,SHA512withRSA,RSA,2048,2,True,True,False,False,True,False,False,False
 lis.gov,lis.gov,C,SHA256withRSA,RSA,2048,1,False,N/A,True,False,False,False,False,False
 llis.gov,llis.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 llis.gov,llis.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
@@ -578,6 +597,8 @@ macpac.gov,macpac.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,Tru
 makinghomeaffordable.gov,makinghomeaffordable.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
 makinghomeaffordable.gov,makinghomeaffordable.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
 makinghomeaffordable.gov,makinghomeaffordable.gov,B,SHA256withRSA,RSA,2048,2,False,True,True,False,True,False,False,False
+mcc.gov,mcc.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+mcc.gov,mcc.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 medalofvalor.gov,medalofvalor.gov,F,SHA256withRSA,RSA,2048,4,False,True,True,True,True,False,False,False
 medalofvalor.gov,medalofvalor.gov,F,SHA256withRSA,RSA,2048,4,False,True,True,True,True,False,False,False
 medicalcountermeasures.gov,medicalcountermeasures.gov,C,SHA256withRSA,RSA,2048,1,True,False,False,True,True,False,False,False
@@ -801,6 +822,8 @@ research.gov,research.gov,B,SHA1withRSA,RSA,2048,1,False,True,False,False,True,F
 research.gov,research.gov,B,SHA1withRSA,RSA,2048,1,False,True,False,False,True,False,False,False
 restorethegulf.gov,restorethegulf.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 restorethegulf.gov,restorethegulf.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
+robodeidentidad.gov,robodeidentidad.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+robodeidentidad.gov,robodeidentidad.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 rocis.gov,rocis.gov,F,SHA256withRSA,RSA,2048,1,False,False,False,False,True,False,False,False
 rocis.gov,rocis.gov,F,SHA256withRSA,RSA,2048,1,False,False,False,False,True,False,False,False
 sac.gov,sac.gov,B,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,False,False
@@ -818,6 +841,14 @@ sam.gov,sam.gov,C,SHA1withRSA,RSA,2048,1,False,N/A,False,False,False,False,False
 sam.gov,sam.gov,C,SHA1withRSA,RSA,2048,1,False,N/A,False,False,False,False,False,False
 sba.gov,sba.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 sbir.gov,sbir.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
+sbst.gov,sbst.gov,A,SHA256withRSA,RSA,2048,2,True,True,False,False,True,False,True,False
 science.gov,science.gov,F,SHA256withRSA,RSA,2048,0,False,True,True,False,True,False,False,False
 sciencebase.gov,sciencebase.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
 sciencebase.gov,sciencebase.gov,A-,SHA256withRSA,RSA,2048,0,False,True,False,False,True,False,False,False
@@ -955,8 +986,10 @@ usastaffing.gov,usastaffing.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,Fals
 usastaffing.gov,usastaffing.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 usastaffing.gov,usastaffing.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 usastaffing.gov,usastaffing.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
+usbg.gov,usbg.gov,A,SHA256withRSA,RSA,4096,2,False,True,False,False,True,False,False,False
 usbr.gov,usbr.gov,A,SHA256withRSA,RSA,2048,2,False,True,False,False,True,False,False,False
 uscis.gov,uscis.gov,A,SHA256withRSA,RSA,2048,4,False,True,False,False,True,False,False,False
+uscurrency.gov,uscurrency.gov,C,SHA256withRSA,RSA,2048,1,True,True,True,True,True,False,False,False
 usgs.gov,usgs.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,False,False
 usgs.gov,usgs.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,False,False
 usgs.gov,usgs.gov,A-,SHA256withRSA,RSA,2048,1,False,True,False,False,True,False,False,False
