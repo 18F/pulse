@@ -9,7 +9,6 @@ abandonedmines.gov,abandonedmines.gov,False
 abilityone.fed.us,fed.us,False
 abilityone.gov,abilityone.gov,False
 abmc.gov,abmc.gov,True
-access-board-members.gov,access-board-members.gov,False
 access-board.gov,access-board.gov,True
 acf.gov,acf.gov,False
 achp.gov,achp.gov,False
@@ -30,9 +29,11 @@ africanamericanhistorymonth.gov,africanamericanhistorymonth.gov,False
 aftac.gov,aftac.gov,False
 afterschool.gov,afterschool.gov,False
 ag.gov,ag.gov,False
+aging.gov,aging.gov,False
 agingstats.gov,agingstats.gov,False
 ahcpr.gov,ahcpr.gov,False
 ahrq.gov,ahrq.gov,True
+aidrefugees.gov,aidrefugees.gov,False
 aids.gov,aids.gov,True
 airnow.gov,airnow.gov,True
 alaskacenters.gov,alaskacenters.gov,True
@@ -58,6 +59,7 @@ americorpsconnect.gov,americorpsconnect.gov,False
 americorpsweek.gov,americorpsweek.gov,False
 ameslab.gov,ameslab.gov,False
 amtrakoig.gov,amtrakoig.gov,False
+anchorit.gov,anchorit.gov,True
 anl.gov,anl.gov,False
 annualcreditreport.gov,annualcreditreport.gov,False
 anstaskforce.gov,anstaskforce.gov,False
@@ -65,8 +67,6 @@ aoa.gov,aoa.gov,False
 aoc.gov,aoc.gov,False
 ap.gov,ap.gov,True
 applicationmanager.gov,applicationmanager.gov,True
-apps.gov,apps.gov,False
-aqi.gov,aqi.gov,False
 arc.gov,arc.gov,False
 archives.gov,archives.gov,True
 arctic.gov,arctic.gov,True
@@ -124,12 +124,12 @@ bop.gov,bop.gov,True
 bor.gov,bor.gov,False
 bpa.gov,bpa.gov,False
 brac.gov,brac.gov,True
+brainhealth.gov,brainhealth.gov,False
 brc.gov,brc.gov,False
 broadband.gov,broadband.gov,False
 broadbandmap.gov,broadbandmap.gov,False
 browsetopics.gov,browsetopics.gov,False
 bsee.gov,bsee.gov,False
-bto.gov,bto.gov,False
 bts.gov,bts.gov,False
 budget.gov,budget.gov,False
 buildingamerica.gov,buildingamerica.gov,False
@@ -137,7 +137,6 @@ business.gov,business.gov,False
 businessusa.gov,businessusa.gov,False
 buyaccessible.gov,buyaccessible.gov,False
 buyusa.gov,buyusa.gov,True
-c3.gov,c3.gov,False
 cancer.gov,cancer.gov,False
 cancernet.gov,cancernet.gov,False
 cao.gov,cao.gov,True
@@ -168,12 +167,14 @@ cfa.gov,cfa.gov,False
 cfda.gov,cfda.gov,True
 cflhd.gov,cflhd.gov,False
 cfo.gov,cfo.gov,True
+cfoc.gov,cfoc.gov,False
 cfpa.gov,cfpa.gov,False
 cfpb.gov,cfpb.gov,False
 cftc.gov,cftc.gov,False
 challenge.gov,challenge.gov,True
 challenges.gov,challenges.gov,False
 change.gov,change.gov,False
+changeofaddress.gov,changeofaddress.gov,False
 chcoc.gov,chcoc.gov,True
 chemsafety.gov,chemsafety.gov,False
 childreninadversity.gov,childreninadversity.gov,False
@@ -220,7 +221,6 @@ congress.gov,congress.gov,False
 congressionaldirectory.gov,congressionaldirectory.gov,False
 congressionalrecord.gov,congressionalrecord.gov,False
 connect.gov,connect.gov,True
-conservation.gov,conservation.gov,False
 consumer.gov,consumer.gov,True
 consumeraction.gov,consumeraction.gov,False
 consumerbureau.gov,consumerbureau.gov,False
@@ -239,7 +239,6 @@ coop-uspto.gov,coop-uspto.gov,False
 copyright.gov,copyright.gov,False
 coralreef.gov,coralreef.gov,True
 cosponsor.gov,cosponsor.gov,False
-counterwmd.gov,counterwmd.gov,False
 cpars.gov,cpars.gov,True
 cpnireporting.gov,cpnireporting.gov,False
 cpsc.gov,cpsc.gov,True
@@ -251,13 +250,13 @@ csb.gov,csb.gov,False
 csce.gov,csce.gov,False
 csosa.fed.us,fed.us,False
 csosa.gov,csosa.gov,False
+ctoc.gov,ctoc.gov,False
 cttso.gov,cttso.gov,False
 cuidadodesalud.gov,cuidadodesalud.gov,False
 cupcao.gov,cupcao.gov,False
 cwc.gov,cwc.gov,True
 cybercrime.gov,cybercrime.gov,False
 data.gov,data.gov,True
-dcpsa.gov,dcpsa.gov,False
 dcsc.gov,dcsc.gov,False
 dea.gov,dea.gov,True
 deadiversion.gov,deadiversion.gov,False
@@ -281,7 +280,6 @@ digitizationguidelines.gov,digitizationguidelines.gov,False
 directoasucuenta.gov,directoasucuenta.gov,False
 disability.gov,disability.gov,True
 disasterassistance.gov,disasterassistance.gov,True
-disastercontractingassistance.gov,disastercontractingassistance.gov,False
 disasterhousing.gov,disasterhousing.gov,False
 distracteddriving.gov,distracteddriving.gov,True
 distraction.gov,distraction.gov,True
@@ -299,13 +297,13 @@ doioig.gov,doioig.gov,False
 dol-esa.gov,dol-esa.gov,False
 dol.gov,dol.gov,True
 doleta.gov,doleta.gov,True
+donaciondeorganos.gov,donaciondeorganos.gov,True
 donotcall.gov,donotcall.gov,True
 dontserveteens.gov,dontserveteens.gov,False
 dot.gov,dot.gov,True
 dotgov.gov,dotgov.gov,True
 dotideahub.gov,dotideahub.gov,False
 dottrafficrecords.gov,dottrafficrecords.gov,False
-dottrcc.gov,dottrcc.gov,False
 dra.gov,dra.gov,False
 drought.gov,drought.gov,True
 drugabuse.gov,drugabuse.gov,True
@@ -314,7 +312,6 @@ drywallresponse.gov,drywallresponse.gov,False
 dsac.gov,dsac.gov,False
 dtv.gov,dtv.gov,False
 e-qip.gov,e-qip.gov,False
-e3.gov,e3.gov,False
 eac.gov,eac.gov,False
 eaclearinghouse.gov,eaclearinghouse.gov,False
 earmarks.gov,earmarks.gov,False
@@ -332,8 +329,6 @@ edpubs.gov,edpubs.gov,True
 education.gov,education.gov,True
 educationjobsfund.gov,educationjobsfund.gov,False
 eeoc.gov,eeoc.gov,False
-efaca.gov,efaca.gov,False
-eforms.gov,eforms.gov,False
 eftps.gov,eftps.gov,False
 egov.gov,egov.gov,False
 eia.gov,eia.gov,False
@@ -351,8 +346,6 @@ energysaver.gov,energysaver.gov,False
 energysavers.gov,energysavers.gov,False
 energystar.gov,energystar.gov,True
 eop.gov,eop.gov,False
-epa-echo.gov,epa-echo.gov,False
-epa-otis.gov,epa-otis.gov,False
 epa.gov,epa.gov,True
 epls.gov,epls.gov,True
 erdc.gov,erdc.gov,False
@@ -360,13 +353,13 @@ errp.gov,errp.gov,False
 esa.gov,esa.gov,False
 esc.gov,esc.gov,False
 eseclab.gov,eseclab.gov,False
-espanol.gov,espanol.gov,False
-espanolforlawenforcement.gov,espanolforlawenforcement.gov,True
+espanolforlawenforcement.gov,espanolforlawenforcement.gov,False
 esrs.gov,esrs.gov,True
 eta-find.gov,eta-find.gov,False
 ethics.gov,ethics.gov,False
 ethicsburg.gov,ethicsburg.gov,False
 evergladesrestoration.gov,evergladesrestoration.gov,False
+everykid.gov,everykid.gov,False
 everykidinapark.gov,everykidinapark.gov,True
 execsec.gov,execsec.gov,False
 exim.gov,exim.gov,False
@@ -376,7 +369,7 @@ export.gov,export.gov,True
 exrwh.gov,exrwh.gov,False
 eyenote.gov,eyenote.gov,False
 faa.gov,faa.gov,True
-faasafety.gov,faasafety.gov,False
+faasafety.gov,faasafety.gov,True
 faca.gov,faca.gov,False
 facadatabase.gov,facadatabase.gov,True
 fafsa.gov,fafsa.gov,False
@@ -409,8 +402,8 @@ fdicsales.gov,fdicsales.gov,False
 fdicseguro.gov,fdicseguro.gov,False
 fdlp.gov,fdlp.gov,False
 fdms.gov,fdms.gov,False
-fdr.gov,fdr.gov,False
 fdsys.gov,fdsys.gov,False
+fea.gov,fea.gov,True
 feb.gov,feb.gov,True
 fec.gov,fec.gov,True
 fed.us,fed.us,False
@@ -433,18 +426,18 @@ federalreservecentennial.gov,federalreservecentennial.gov,False
 federalreservecentennialcelebration.gov,federalreservecentennialcelebration.gov,False
 federalreserveconsumerhelp.gov,federalreserveconsumerhelp.gov,False
 federalrules.gov,federalrules.gov,False
+federalspending.gov,federalspending.gov,False
 federaltransparency.gov,federaltransparency.gov,False
-fedforms.gov,fedforms.gov,False
 fedidcard.gov,fedidcard.gov,False
 fedinfo.gov,fedinfo.gov,False
 fedinvest.gov,fedinvest.gov,True
 fedjobs.gov,fedjobs.gov,False
 fedpartnership.gov,fedpartnership.gov,False
 fedramp.gov,fedramp.gov,True
-fedrealestate.gov,fedrealestate.gov,False
 fedreg.gov,fedreg.gov,False
 fedrooms.gov,fedrooms.gov,False
 fedshirevets.gov,fedshirevets.gov,True
+fedspending.gov,fedspending.gov,False
 fedstats.gov,fedstats.gov,False
 feedthefuture.gov,feedthefuture.gov,True
 fegli.gov,fegli.gov,False
@@ -452,7 +445,6 @@ fema.gov,fema.gov,True
 femalefarmerclaims.gov,femalefarmerclaims.gov,False
 ferc.gov,ferc.gov,True
 fercalt.gov,fercalt.gov,False
-fero.gov,fero.gov,False
 ffiec.gov,ffiec.gov,False
 fgdc.gov,fgdc.gov,True
 fha.gov,fha.gov,False
@@ -488,7 +480,6 @@ flu.gov,flu.gov,True
 fmc.gov,fmc.gov,False
 fmcs.gov,fmcs.gov,False
 fmi.gov,fmi.gov,True
-fmip.gov,fmip.gov,False
 fmshrc.gov,fmshrc.gov,False
 fnal.gov,fnal.gov,False
 foia.gov,foia.gov,True
@@ -501,13 +492,14 @@ forestsandrangelands.gov,forestsandrangelands.gov,False
 forfeiture.gov,forfeiture.gov,True
 forms.gov,forms.gov,False
 fpds.gov,fpds.gov,True
+fpi.gov,fpi.gov,False
 fpki-lab.gov,fpki-lab.gov,False
 fpki.gov,fpki.gov,False
 frb.fed.us,fed.us,False
 frb.gov,frb.gov,False
 frc.gov,frc.gov,False
-frcc.gov,frcc.gov,False
 freecreditreport.gov,freecreditreport.gov,False
+freshempire.gov,freshempire.gov,False
 frpp-pa.gov,frpp-pa.gov,False
 frs.gov,frs.gov,False
 frtib.gov,frtib.gov,False
@@ -521,7 +513,6 @@ fsd.gov,fsd.gov,True
 fsgb.gov,fsgb.gov,False
 fsoc.gov,fsoc.gov,False
 fsrs.gov,fsrs.gov,True
-fswg.gov,fswg.gov,False
 ftc.gov,ftc.gov,True
 ftccomplaintassistant.gov,ftccomplaintassistant.gov,True
 ftcefile.gov,ftcefile.gov,False
@@ -588,7 +579,7 @@ healthcare.gov,healthcare.gov,False
 healthdata.gov,healthdata.gov,False
 healthfinder.gov,healthfinder.gov,False
 healthindicators.gov,healthindicators.gov,False
-healthit.gov,healthit.gov,False
+healthit.gov,healthit.gov,True
 healthreform.gov,healthreform.gov,False
 healthypeople.gov,healthypeople.gov,False
 hearttruth.gov,hearttruth.gov,False
@@ -626,6 +617,7 @@ hsa.gov,hsa.gov,False
 hsr.gov,hsr.gov,False
 hud.gov,hud.gov,False
 hudoig.gov,hudoig.gov,True
+huduser.gov,huduser.gov,False
 humanities.gov,humanities.gov,False
 humanrights.gov,humanrights.gov,False
 hurricanes.gov,hurricanes.gov,False
@@ -646,9 +638,10 @@ icbemp.gov,icbemp.gov,False
 ice.gov,ice.gov,True
 ich.gov,ich.gov,False
 icjointduty.gov,icjointduty.gov,False
+idealab.gov,idealab.gov,False
 identitytheft.gov,identitytheft.gov,True
 idmanagement.gov,idmanagement.gov,True
-idtheft.gov,idtheft.gov,True
+idtheft.gov,idtheft.gov,False
 iedison.gov,iedison.gov,False
 ignet.gov,ignet.gov,False
 ihs.gov,ihs.gov,False
@@ -662,7 +655,8 @@ insurekidsnow.gov,insurekidsnow.gov,False
 integrity.gov,integrity.gov,False
 intelink.gov,intelink.gov,False
 intelligence.gov,intelligence.gov,False
-interior.gov,interior.gov,True
+intelligencecareers.gov,intelligencecareers.gov,False
+interior.gov,interior.gov,False
 interpol.gov,interpol.gov,False
 invasivespecies.gov,invasivespecies.gov,False
 invasivespeciesinfo.gov,invasivespeciesinfo.gov,True
@@ -678,7 +672,6 @@ irsauctions.gov,irsauctions.gov,False
 irsnet.gov,irsnet.gov,False
 irssales.gov,irssales.gov,False
 irsvideos.gov,irsvideos.gov,False
-iscience.gov,iscience.gov,False
 ise.gov,ise.gov,False
 isitdoneyet.gov,isitdoneyet.gov,False
 isotope.gov,isotope.gov,False
@@ -700,7 +693,6 @@ jem.gov,jem.gov,False
 jewishheritage.gov,jewishheritage.gov,False
 jewishheritagemonth.gov,jewishheritagemonth.gov,False
 jimmycarterlibrary.gov,jimmycarterlibrary.gov,True
-jmc.gov,jmc.gov,False
 jobcenter.gov,jobcenter.gov,False
 jobcorps.gov,jobcorps.gov,False
 joiningforces.gov,joiningforces.gov,False
@@ -714,12 +706,12 @@ jwod.gov,jwod.gov,False
 kapl.gov,kapl.gov,False
 kids.gov,kids.gov,False
 klamathrestoration.gov,klamathrestoration.gov,False
-labor.gov,labor.gov,True
+knowthefactsfirst.gov,knowthefactsfirst.gov,False
+labor.gov,labor.gov,False
 lacoast.gov,lacoast.gov,False
 landfire.gov,landfire.gov,True
 landimaging.gov,landimaging.gov,True
 lanl.gov,lanl.gov,False
-lasegundacosa.gov,lasegundacosa.gov,False
 latinofarmerclaims.gov,latinofarmerclaims.gov,False
 law.gov,law.gov,False
 lbl.gov,lbl.gov,False
@@ -732,6 +724,7 @@ learnperformance.gov,learnperformance.gov,True
 legislative.gov,legislative.gov,False
 legislativebranch.gov,legislativebranch.gov,False
 lep.gov,lep.gov,True
+letgirlslearn.gov,letgirlslearn.gov,False
 letsmove.gov,letsmove.gov,True
 library-of-congress.gov,library-of-congress.gov,False
 libraryofcongress.gov,libraryofcongress.gov,False
@@ -761,7 +754,7 @@ majoritywhip.gov,majoritywhip.gov,False
 makinghomeaffordable.gov,makinghomeaffordable.gov,True
 malwareinvestigator.gov,malwareinvestigator.gov,False
 manufacturing.gov,manufacturing.gov,True
-mapaplanet.gov,mapaplanet.gov,True
+mapaplanet.gov,mapaplanet.gov,False
 mapstats.gov,mapstats.gov,False
 marine.gov,marine.gov,False
 marinecadastre.gov,marinecadastre.gov,True
@@ -781,6 +774,7 @@ medlineplus.gov,medlineplus.gov,False
 medpac.gov,medpac.gov,False
 mentalhealth.gov,mentalhealth.gov,True
 mesh.gov,mesh.gov,False
+mgi.gov,mgi.gov,True
 mha.gov,mha.gov,False
 mimedicare.gov,mimedicare.gov,False
 mitigationcommission.gov,mitigationcommission.gov,False
@@ -829,6 +823,7 @@ nationalservicegear.gov,nationalservicegear.gov,False
 nationalserviceresources.gov,nationalserviceresources.gov,False
 nationsreportcard.gov,nationsreportcard.gov,True
 nativeamericanheritagemonth.gov,nativeamericanheritagemonth.gov,False
+nativeonestop.gov,nativeonestop.gov,False
 navycash.gov,navycash.gov,False
 nbc.gov,nbc.gov,True
 nbm.gov,nbm.gov,False
@@ -844,6 +839,7 @@ ncpc.gov,ncpc.gov,False
 ncpw.gov,ncpw.gov,True
 ncr.gov,ncr.gov,False
 ncrc.gov,ncrc.gov,False
+ncsc.gov,ncsc.gov,False
 nctc.gov,nctc.gov,False
 ncua.gov,ncua.gov,False
 ndep.gov,ndep.gov,True
@@ -870,7 +866,6 @@ nic.gov,nic.gov,False
 nicic.gov,nicic.gov,True
 niem.gov,niem.gov,True
 nifc.gov,nifc.gov,False
-niftt.gov,niftt.gov,False
 nigc.gov,nigc.gov,False
 nih.gov,nih.gov,True
 nihseniorhealth.gov,nihseniorhealth.gov,True
@@ -889,9 +884,7 @@ nmsc.gov,nmsc.gov,False
 nmvtis.gov,nmvtis.gov,False
 nnlm.gov,nnlm.gov,False
 noaa.gov,noaa.gov,True
-noaawatch.gov,noaawatch.gov,False
 nolaenvironmental.gov,nolaenvironmental.gov,False
-nonprofit.gov,nonprofit.gov,False
 notalone.gov,notalone.gov,True
 nps.gov,nps.gov,True
 nrc-gateway.gov,nrc-gateway.gov,False
@@ -963,7 +956,6 @@ osm.gov,osm.gov,False
 osmre.gov,osmre.gov,True
 osti.gov,osti.gov,False
 ostp.gov,ostp.gov,False
-oti.gov,oti.gov,False
 ots.gov,ots.gov,True
 ourdocuments.gov,ourdocuments.gov,True
 ovc.gov,ovc.gov,True
@@ -972,7 +964,6 @@ pac.gov,pac.gov,False
 pacer.gov,pacer.gov,False
 pandemicflu.gov,pandemicflu.gov,False
 papahanaumokuakea.gov,papahanaumokuakea.gov,True
-paperworkreduction.gov,paperworkreduction.gov,False
 partner4solutions.gov,partner4solutions.gov,True
 patriotbonds.gov,patriotbonds.gov,True
 pay.gov,pay.gov,False
@@ -1030,6 +1021,7 @@ ptt.gov,ptt.gov,False
 pubmed.gov,pubmed.gov,False
 pubmedcentral.gov,pubmedcentral.gov,False
 purchasing.gov,purchasing.gov,False
+qart.gov,qart.gov,False
 qatesttwai.gov,qatesttwai.gov,False
 quic.gov,quic.gov,False
 quick.gov,quick.gov,False
@@ -1059,6 +1051,7 @@ research.gov,research.gov,False
 restorethegulf.gov,restorethegulf.gov,False
 rivers.gov,rivers.gov,False
 rl.gov,rl.gov,False
+robodeidentidad.gov,robodeidentidad.gov,True
 rocis.gov,rocis.gov,True
 rrb.gov,rrb.gov,True
 sac.gov,sac.gov,False
@@ -1110,7 +1103,6 @@ senate.gov,senate.gov,False
 senatecalendar.gov,senatecalendar.gov,False
 senaterestaurants.gov,senaterestaurants.gov,False
 seniorcorps.gov,seniorcorps.gov,False
-seniors.gov,seniors.gov,False
 sentinel.gov,sentinel.gov,False
 serve.gov,serve.gov,False
 serveindiana.gov,serveindiana.gov,False
@@ -1118,14 +1110,13 @@ service.gov,service.gov,False
 servicelearning.gov,servicelearning.gov,False
 servicemembers.gov,servicemembers.gov,False
 servir.gov,servir.gov,False
-sftool.gov,sftool.gov,False
+sftool.gov,sftool.gov,True
 sharetheroadsafely.gov,sharetheroadsafely.gov,True
 sierrawild.gov,sierrawild.gov,False
 sigtarp.gov,sigtarp.gov,True
 siteidiq.gov,siteidiq.gov,False
 sji.gov,sji.gov,False
 slgs.gov,slgs.gov,True
-smallbusiness.gov,smallbusiness.gov,False
 smart.gov,smart.gov,True
 smartcheck.gov,smartcheck.gov,False
 smartgrid.gov,smartgrid.gov,False
@@ -1134,7 +1125,6 @@ smokeybear.gov,smokeybear.gov,False
 snap.gov,snap.gov,False
 sns.gov,sns.gov,False
 socialsecurity.gov,socialsecurity.gov,True
-socialsecurityadvisoryboard.gov,socialsecurityadvisoryboard.gov,False
 solardecathlon.gov,solardecathlon.gov,False
 spaceweather.gov,spaceweather.gov,False
 speaker.gov,speaker.gov,False
@@ -1171,7 +1161,6 @@ taaps.gov,taaps.gov,True
 tax.gov,tax.gov,False
 taxreform.gov,taxreform.gov,False
 tcis.gov,tcis.gov,False
-tda.gov,tda.gov,False
 teachingprimarysources.gov,teachingprimarysources.gov,False
 teachingwithprimarysources.gov,teachingwithprimarysources.gov,False
 telework.gov,telework.gov,True
@@ -1179,7 +1168,6 @@ tfhrc.gov,tfhrc.gov,False
 thecoolspot.gov,thecoolspot.gov,False
 thepeoplesgarden.gov,thepeoplesgarden.gov,False
 therealcost.gov,therealcost.gov,False
-thesecondthing.gov,thesecondthing.gov,False
 thomas.gov,thomas.gov,False
 tigta.gov,tigta.gov,False
 tigtanet.gov,tigtanet.gov,False
@@ -1191,8 +1179,7 @@ trade.gov,trade.gov,True
 trafficsafetymarketing.gov,trafficsafetymarketing.gov,True
 transparency.gov,transparency.gov,False
 transportation.gov,transportation.gov,True
-transportationresearch.gov,transportationresearch.gov,False
-treas.gov,treas.gov,False
+treas.gov,treas.gov,True
 treaslockbox.gov,treaslockbox.gov,False
 treasury.fed.us,fed.us,False
 treasury.gov,treasury.gov,True
@@ -1267,6 +1254,7 @@ uscongress.gov,uscongress.gov,False
 usconsulate.gov,usconsulate.gov,False
 uscourts.gov,uscourts.gov,False
 uscp.gov,uscp.gov,False
+uscurrency.gov,uscurrency.gov,False
 uscva.gov,uscva.gov,False
 uscvc.gov,uscvc.gov,False
 usda.gov,usda.gov,True
@@ -1312,11 +1300,10 @@ vcf.gov,vcf.gov,True
 vef.gov,vef.gov,True
 vehiclehistory.gov,vehiclehistory.gov,True
 verifypayment.gov,verifypayment.gov,False
-vet-biz.gov,vet-biz.gov,False
 vetapp.gov,vetapp.gov,False
 vetbiz.gov,vetbiz.gov,True
 veterans.gov,veterans.gov,False
-vetsuccess.gov,vetsuccess.gov,False
+vets.gov,vets.gov,False
 visitthecapital.gov,visitthecapital.gov,False
 visitthecapitol.gov,visitthecapitol.gov,False
 vista.gov,vista.gov,False
@@ -1326,7 +1313,7 @@ voa.gov,voa.gov,False
 volcano.gov,volcano.gov,False
 volunteer.gov,volunteer.gov,False
 volunteeringinamerica.gov,volunteeringinamerica.gov,False
-volunteersforprosperity.gov,volunteersforprosperity.gov,False
+vote.gov,vote.gov,False
 wapa.gov,wapa.gov,False
 wartimecontracting.gov,wartimecontracting.gov,False
 watermonitor.gov,watermonitor.gov,False
@@ -1359,5 +1346,6 @@ worlddigitallibrary.gov,worlddigitallibrary.gov,False
 worldwar1centennial.gov,worldwar1centennial.gov,False
 wrp.gov,wrp.gov,True
 ymp.gov,ymp.gov,False
+youth.gov,youth.gov,False
 youthgo.gov,youthgo.gov,False
 youthrules.gov,youthrules.gov,True

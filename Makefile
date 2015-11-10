@@ -3,6 +3,12 @@ css ?= static/css/main.css
 
 all: styles
 
+staging:
+	cd deploy/ && fab deploy && cd ..
+
+production:
+	cd deploy/ && fab deploy --set environment=production && cd ..
+
 run:
 	python pulse.py
 
