@@ -46,18 +46,13 @@
       "Participates in DAP?": 0
     },
     {
-      "Agency": "Christopher Columbus Fellowship Foundation",
-      "Number of Domains": 1,
-      "Participates in DAP?": 100
-    },
-    {
       "Agency": "Civil Air Patrol",
       "Number of Domains": 1,
       "Participates in DAP?": 0
     },
     {
       "Agency": "Comm for People Who Are Blind/Severly Disabled",
-      "Number of Domains": 2,
+      "Number of Domains": 1,
       "Participates in DAP?": 0
     },
     {
@@ -107,8 +102,8 @@
     },
     {
       "Agency": "Department of Agriculture",
-      "Number of Domains": 32,
-      "Participates in DAP?": 22
+      "Number of Domains": 31,
+      "Participates in DAP?": 23
     },
     {
       "Agency": "Department of Commerce",
@@ -117,8 +112,8 @@
     },
     {
       "Agency": "Department of Defense",
-      "Number of Domains": 21,
-      "Participates in DAP?": 48
+      "Number of Domains": 22,
+      "Participates in DAP?": 50
     },
     {
       "Agency": "Department of Education",
@@ -127,13 +122,13 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 44,
+      "Number of Domains": 41,
       "Participates in DAP?": 2
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 71,
-      "Participates in DAP?": 32
+      "Number of Domains": 70,
+      "Participates in DAP?": 34
     },
     {
       "Agency": "Department of Homeland Security",
@@ -163,7 +158,7 @@
     {
       "Agency": "Department of Transportation",
       "Number of Domains": 19,
-      "Participates in DAP?": 68
+      "Participates in DAP?": 74
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -172,8 +167,8 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 72,
-      "Participates in DAP?": 40
+      "Number of Domains": 69,
+      "Participates in DAP?": 38
     },
     {
       "Agency": "Department of the Treasury",
@@ -273,7 +268,7 @@
     {
       "Agency": "General Services Administration",
       "Number of Domains": 63,
-      "Participates in DAP?": 81
+      "Participates in DAP?": 83
     },
     {
       "Agency": "Harry S. Truman Scholarship Foundation",
