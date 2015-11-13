@@ -599,7 +599,7 @@ hill.gov,hill.gov,False
 hispanicfarmerclaims.gov,hispanicfarmerclaims.gov,False
 hispanicheritagemonth.gov,hispanicheritagemonth.gov,False
 history.gov,history.gov,False
-hiv.gov,hiv.gov,True
+hiv.gov,hiv.gov,False
 homeenergyscore.gov,homeenergyscore.gov,False
 homelandsecurity.gov,homelandsecurity.gov,False
 homesales.gov,homesales.gov,False
@@ -751,7 +751,7 @@ macpac.gov,macpac.gov,False
 mail.gov,mail.gov,False
 majorityleader.gov,majorityleader.gov,False
 majoritywhip.gov,majoritywhip.gov,False
-makinghomeaffordable.gov,makinghomeaffordable.gov,True
+makinghomeaffordable.gov,makinghomeaffordable.gov,False
 malwareinvestigator.gov,malwareinvestigator.gov,False
 manufacturing.gov,manufacturing.gov,True
 mapaplanet.gov,mapaplanet.gov,False
@@ -1171,7 +1171,7 @@ therealcost.gov,therealcost.gov,False
 thomas.gov,thomas.gov,False
 tigta.gov,tigta.gov,False
 tigtanet.gov,tigtanet.gov,False
-time.gov,time.gov,True
+time.gov,time.gov,False
 tissueengineering.gov,tissueengineering.gov,False
 tobacco.gov,tobacco.gov,False
 tps.gov,tps.gov,False
@@ -1302,8 +1302,8 @@ vehiclehistory.gov,vehiclehistory.gov,True
 verifypayment.gov,verifypayment.gov,False
 vetapp.gov,vetapp.gov,False
 vetbiz.gov,vetbiz.gov,True
-veterans.gov,veterans.gov,False
-vets.gov,vets.gov,False
+veterans.gov,veterans.gov,True
+vets.gov,vets.gov,True
 visitthecapital.gov,visitthecapital.gov,False
 visitthecapitol.gov,visitthecapitol.gov,False
 vista.gov,vista.gov,False
