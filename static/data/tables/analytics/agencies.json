@@ -46,13 +46,18 @@
       "Participates in DAP?": 0
     },
     {
+      "Agency": "Christopher Columbus Fellowship Foundation",
+      "Number of Domains": 1,
+      "Participates in DAP?": 100
+    },
+    {
       "Agency": "Civil Air Patrol",
       "Number of Domains": 1,
       "Participates in DAP?": 0
     },
     {
       "Agency": "Comm for People Who Are Blind/Severly Disabled",
-      "Number of Domains": 1,
+      "Number of Domains": 2,
       "Participates in DAP?": 0
     },
     {
@@ -108,12 +113,12 @@
     {
       "Agency": "Department of Commerce",
       "Number of Domains": 38,
-      "Participates in DAP?": 66
+      "Participates in DAP?": 63
     },
     {
       "Agency": "Department of Defense",
-      "Number of Domains": 23,
-      "Participates in DAP?": 48
+      "Number of Domains": 24,
+      "Participates in DAP?": 46
     },
     {
       "Agency": "Department of Education",
@@ -122,7 +127,7 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 41,
+      "Number of Domains": 42,
       "Participates in DAP?": 2
     },
     {
@@ -147,8 +152,8 @@
     },
     {
       "Agency": "Department of Labor",
-      "Number of Domains": 14,
-      "Participates in DAP?": 86
+      "Number of Domains": 15,
+      "Participates in DAP?": 87
     },
     {
       "Agency": "Department of State",
@@ -163,17 +168,17 @@
     {
       "Agency": "Department of Veterans Affairs",
       "Number of Domains": 3,
-      "Participates in DAP?": 67
+      "Participates in DAP?": 100
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 69,
+      "Number of Domains": 70,
       "Participates in DAP?": 36
     },
     {
       "Agency": "Department of the Treasury",
       "Number of Domains": 72,
-      "Participates in DAP?": 62
+      "Participates in DAP?": 61
     },
     {
       "Agency": "Director of National Intelligence",
