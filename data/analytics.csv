@@ -38,7 +38,7 @@ aids.gov,aids.gov,True
 airnow.gov,airnow.gov,True
 alaskacenters.gov,alaskacenters.gov,True
 alertaenlinea.gov,alertaenlinea.gov,True
-altusandc.gov,altusandc.gov,True
+altusandc.gov,altusandc.gov,False
 alzheimers.gov,alzheimers.gov,False
 ama.gov,ama.gov,False
 amberalert.gov,amberalert.gov,True
@@ -369,7 +369,7 @@ export.gov,export.gov,True
 exrwh.gov,exrwh.gov,False
 eyenote.gov,eyenote.gov,False
 faa.gov,faa.gov,True
-faasafety.gov,faasafety.gov,True
+faasafety.gov,faasafety.gov,False
 faca.gov,faca.gov,False
 facadatabase.gov,facadatabase.gov,True
 fafsa.gov,fafsa.gov,False
@@ -694,7 +694,7 @@ jewishheritage.gov,jewishheritage.gov,False
 jewishheritagemonth.gov,jewishheritagemonth.gov,False
 jimmycarterlibrary.gov,jimmycarterlibrary.gov,True
 jobcenter.gov,jobcenter.gov,False
-jobcorps.gov,jobcorps.gov,False
+jobcorps.gov,jobcorps.gov,True
 joiningforces.gov,joiningforces.gov,False
 judicialconference.gov,judicialconference.gov,False
 juniorforestranger.gov,juniorforestranger.gov,False
@@ -707,7 +707,7 @@ kapl.gov,kapl.gov,False
 kids.gov,kids.gov,False
 klamathrestoration.gov,klamathrestoration.gov,False
 knowthefactsfirst.gov,knowthefactsfirst.gov,False
-labor.gov,labor.gov,False
+labor.gov,labor.gov,True
 lacoast.gov,lacoast.gov,False
 landfire.gov,landfire.gov,True
 landimaging.gov,landimaging.gov,True
@@ -751,7 +751,7 @@ macpac.gov,macpac.gov,False
 mail.gov,mail.gov,False
 majorityleader.gov,majorityleader.gov,False
 majoritywhip.gov,majoritywhip.gov,False
-makinghomeaffordable.gov,makinghomeaffordable.gov,False
+makinghomeaffordable.gov,makinghomeaffordable.gov,True
 malwareinvestigator.gov,malwareinvestigator.gov,False
 manufacturing.gov,manufacturing.gov,True
 mapaplanet.gov,mapaplanet.gov,False
@@ -825,7 +825,7 @@ nationsreportcard.gov,nationsreportcard.gov,True
 nativeamericanheritagemonth.gov,nativeamericanheritagemonth.gov,False
 nativeonestop.gov,nativeonestop.gov,False
 navycash.gov,navycash.gov,False
-nbc.gov,nbc.gov,True
+nbc.gov,nbc.gov,False
 nbm.gov,nbm.gov,False
 nbrc.gov,nbrc.gov,False
 nccrc.gov,nccrc.gov,False
@@ -1199,7 +1199,7 @@ tsptest.gov,tsptest.gov,False
 tsunami.gov,tsunami.gov,False
 tswg.gov,tswg.gov,False
 ttb.gov,ttb.gov,True
-ttbonline.gov,ttbonline.gov,False
+ttbonline.gov,ttbonline.gov,True
 ttic.gov,ttic.gov,False
 ttlplus.gov,ttlplus.gov,False
 tva.gov,tva.gov,False
