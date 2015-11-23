@@ -117,8 +117,8 @@
     },
     {
       "Agency": "Department of Defense",
-      "Number of Domains": 24,
-      "Participates in DAP?": 46
+      "Number of Domains": 23,
+      "Participates in DAP?": 43
     },
     {
       "Agency": "Department of Education",
@@ -127,13 +127,13 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 42,
-      "Participates in DAP?": 2
+      "Number of Domains": 39,
+      "Participates in DAP?": 3
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 73,
-      "Participates in DAP?": 34
+      "Number of Domains": 72,
+      "Participates in DAP?": 35
     },
     {
       "Agency": "Department of Homeland Security",
@@ -147,23 +147,23 @@
     },
     {
       "Agency": "Department of Justice",
-      "Number of Domains": 46,
-      "Participates in DAP?": 76
+      "Number of Domains": 45,
+      "Participates in DAP?": 78
     },
     {
       "Agency": "Department of Labor",
       "Number of Domains": 15,
-      "Participates in DAP?": 87
+      "Participates in DAP?": 93
     },
     {
       "Agency": "Department of State",
-      "Number of Domains": 16,
-      "Participates in DAP?": 44
+      "Number of Domains": 17,
+      "Participates in DAP?": 41
     },
     {
       "Agency": "Department of Transportation",
       "Number of Domains": 19,
-      "Participates in DAP?": 74
+      "Participates in DAP?": 68
     },
     {
       "Agency": "Department of Veterans Affairs",
@@ -172,13 +172,13 @@
     },
     {
       "Agency": "Department of the Interior",
-      "Number of Domains": 70,
-      "Participates in DAP?": 36
+      "Number of Domains": 71,
+      "Participates in DAP?": 35
     },
     {
       "Agency": "Department of the Treasury",
       "Number of Domains": 72,
-      "Participates in DAP?": 61
+      "Participates in DAP?": 64
     },
     {
       "Agency": "Director of National Intelligence",
