@@ -27,7 +27,7 @@ aids.gov,executive,Department of Health And Human Services,No,Yes
 airnow.gov,executive,Environmental Protection Agency,No,Yes
 alaskacenters.gov,executive,Department of the Interior,No,Yes
 alertaenlinea.gov,executive,Federal Trade Commission,No,Yes
-altusandc.gov,executive,Department of Defense,No,Yes
+altusandc.gov,executive,Department of Defense,No,No
 alzheimers.gov,executive,Department of Health And Human Services,No,No
 ama.gov,executive,Department of the Treasury,No,No
 amberalert.gov,executive,Department of Justice,No,Yes
@@ -37,14 +37,12 @@ americorpsweek.gov,executive,Corporation for National & Community Service,No,No
 ameslab.gov,executive,Department of Energy,No,No
 amtrakoig.gov,executive,AMTRAK,No,No
 anchorit.gov,executive,Consumer Product Safety Commission,No,Yes
-anl.gov,executive,Department of Energy,No,No
 anstaskforce.gov,executive,Department of the Interior,No,No
 aoa.gov,executive,Department of Health And Human Services,No,No
 arc.gov,executive,Appalachian Regional Commission,No,No
 archives.gov,executive,National Archives and Records Administration,No,Yes
 arctic.gov,executive,National Science Foundation,No,Yes
 arcticgas.gov,executive,National Science Foundation,No,No
-arm.gov,executive,Department of Energy,No,No
 ars-grin.gov,executive,Department of Agriculture,No,No
 arts.gov,executive,National Endowment for the Arts,No,No
 asap.gov,executive,Department of the Treasury,No,No
@@ -65,7 +63,6 @@ bep.gov,executive,Department of the Treasury,No,Yes
 bfem.gov,executive,Department of the Treasury,No,No
 bia.gov,executive,Department of the Interior,No,Yes
 bioeco.gov,executive,Department of the Interior,No,No
-bioethics.gov,executive,Department of Health And Human Services,No,No
 biomassboard.gov,executive,Department of Energy,No,No
 biometrics.gov,executive,Department of Homeland Security,No,No
 biopreferred.gov,executive,Department of Agriculture,No,No
@@ -74,7 +71,6 @@ bjs.gov,executive,Department of Justice,No,No
 bldrdoc.gov,executive,Department of Commerce,No,Yes
 blm.gov,executive,Department of the Interior,No,No
 bls.gov,executive,Department of Labor,No,Yes
-bnl.gov,executive,Department of Energy,No,No
 boem.gov,executive,Department of the Interior,No,No
 boemre.gov,executive,Department of the Interior,No,No
 bondpro.gov,executive,Department of the Treasury,No,Yes
@@ -173,6 +169,7 @@ dni.gov,executive,Director of National Intelligence,No,No
 dnsops.gov,executive,Department of Commerce,No,No
 docline.gov,executive,Department of Health And Human Services,No,No
 dod.gov,executive,Department of Defense,No,No
+doe.gov,executive,Department of Energy,No,No
 doi.gov,executive,Department of the Interior,No,Yes
 doioig.gov,executive,Department of the Interior,No,No
 dol-esa.gov,executive,Department of Labor,No,No
@@ -222,7 +219,7 @@ exim.gov,executive,Export/Import Bank of the U.S.,No,No
 export.gov,executive,Department of Commerce,No,Yes
 eyenote.gov,executive,Department of the Treasury,No,No
 faa.gov,executive,Department of Transportation,No,Yes
-faasafety.gov,executive,Department of Transportation,No,Yes
+faasafety.gov,executive,Department of Transportation,No,No
 facadatabase.gov,executive,General Services Administration,No,Yes
 fafsa.gov,executive,Department of Education,No,No
 fai.gov,executive,General Services Administration,No,Yes
@@ -412,10 +409,9 @@ itds.gov,executive,Department of Commerce,No,No
 itis.gov,executive,Smithsonian Institution,No,Yes
 its.gov,executive,Department of the Treasury,No,No
 jamesmadison.gov,executive,James Madison Memorial Fellowship Foundation,No,No
-jccs.gov,executive,Department of Defense,No,No
 jem.gov,executive,Department of the Interior,No,No
 jimmycarterlibrary.gov,executive,National Archives and Records Administration,No,Yes
-jobcorps.gov,executive,Department of Labor,No,No
+jobcorps.gov,executive,Department of Labor,No,Yes
 justice.gov,executive,Department of Justice,No,Yes
 juvenilecouncil.gov,executive,Department of Justice,No,Yes
 jwod.gov,executive,Comm for People Who Are Blind/Severly Disabled,No,No
@@ -426,7 +422,6 @@ landfire.gov,executive,Department of the Interior,No,Yes
 landimaging.gov,executive,Department of the Interior,No,Yes
 lanl.gov,executive,Department of Energy,No,No
 latinofarmerclaims.gov,executive,Department of Agriculture,No,No
-lbl.gov,executive,Department of Energy,No,No
 lca.gov,executive,Department of the Interior,No,No
 lcacommons.gov,executive,Department of Agriculture,No,Yes
 lcrmscp.gov,executive,Department of the Interior,No,No
@@ -440,11 +435,11 @@ lmrcouncil.gov,executive,Office of Personnel Management,No,Yes
 lmvsci.gov,executive,Department of the Interior,No,Yes
 locatorplus.gov,executive,Department of Health And Human Services,No,No
 longtermcare.gov,executive,Department of Health And Human Services,No,No
+lowermississippivalleyscience.gov,executive,Department of the Interior,No,Yes
 lps.gov,executive,National Security Agency,No,No
 lsc.gov,executive,Legal Services Corporation,No,No
 macpac.gov,executive,Medicaid and CHIP Payment and Access Commission,No,No
-makinghomeaffordable.gov,executive,Department of the Treasury,No,No
-malwareinvestigator.gov,executive,Department of Justice,No,No
+makinghomeaffordable.gov,executive,Department of the Treasury,No,Yes
 manufacturing.gov,executive,Department of Commerce,No,Yes
 mapaplanet.gov,executive,Department of the Interior,No,No
 marine.gov,executive,Department of the Interior,No,No
@@ -492,7 +487,7 @@ nationalservice.gov,executive,Corporation for National & Community Service,No,No
 nationsreportcard.gov,executive,Department of Education,No,Yes
 nativeonestop.gov,executive,Department of the Interior,No,No
 navycash.gov,executive,Department of the Treasury,No,No
-nbc.gov,executive,Department of the Interior,No,Yes
+nbc.gov,executive,Department of the Interior,No,No
 nccrc.gov,executive,Department of Energy,No,No
 ncd.gov,executive,National Council on Disability,No,No
 ncirc.gov,executive,Department of Justice,No,Yes
@@ -714,7 +709,7 @@ tsp.gov,executive,Federal Retirement Thrift Investment Board,No,No
 tsunami.gov,executive,Department of Commerce,No,No
 tswg.gov,executive,Department of Defense,No,No
 ttb.gov,executive,Department of the Treasury,No,Yes
-ttbonline.gov,executive,Department of the Treasury,No,No
+ttbonline.gov,executive,Department of the Treasury,No,Yes
 tva.gov,executive,Tennessee Valley Authority,No,No
 tvaoig.gov,executive,Tennessee Valley Authority,No,No
 ucrdatatool.gov,executive,Department of Justice,No,No
@@ -744,6 +739,7 @@ usembassy.gov,executive,Department of State,No,Yes
 usgs.gov,executive,Department of the Interior,No,Yes
 usich.gov,executive,US Interagency Council on Homelessness,No,No
 usicn.gov,executive,Federal Trade Commission,No,No
+usint.gov,executive,Department of State,No,No
 usitc.gov,executive,U. S. International Trade Commission,No,Yes
 usmarshals.gov,executive,Department of Justice,No,Yes
 usmint.gov,executive,Department of the Treasury,No,Yes

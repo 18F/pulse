@@ -13,7 +13,7 @@ access-board.gov,access-board.gov,http://www.access-board.gov,True,False,,True,F
 acf.gov,acf.gov,http://www.acf.gov,True,True,http://www.acf.hhs.gov/,False,False,False,False,False,True,False,max-age=0,0,False,False,False,False,False
 achp.gov,achp.gov,http://achp.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 acl.gov,acl.gov,http://acl.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-acquisition.gov,acquisition.gov,https://www.acquisition.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
+acquisition.gov,acquisition.gov,https://www.acquisition.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 acus.gov,acus.gov,https://www.acus.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 acwi.gov,acwi.gov,http://acwi.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 ada.gov,ada.gov,http://www.ada.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -21,8 +21,8 @@ adf.gov,adf.gov,http://adf.gov,True,False,,False,False,False,False,False,False,F
 adlnet.gov,adlnet.gov,http://adlnet.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 admongo.gov,admongo.gov,http://www.admongo.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 adr.gov,adr.gov,http://www.adr.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-advantage.gov,advantage.gov,http://www.advantage.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,False,False
-afadvantage.gov,afadvantage.gov,https://afadvantage.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+advantage.gov,advantage.gov,http://www.advantage.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,True,False
+afadvantage.gov,afadvantage.gov,https://www.afadvantage.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 aff.gov,aff.gov,http://www.aff.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,True,False
 afrh.gov,afrh.gov,https://www.afrh.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
 africanamericanhistorymonth.gov,africanamericanhistorymonth.gov,http://africanamericanhistorymonth.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -33,7 +33,7 @@ aging.gov,aging.gov,http://www.aging.gov,True,True,http://www.hhs.gov/aging/,Tru
 agingstats.gov,agingstats.gov,http://www.agingstats.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 ahcpr.gov,ahcpr.gov,http://www.ahcpr.gov,True,True,http://www.ahrq.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 ahrq.gov,ahrq.gov,http://www.ahrq.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-aidrefugees.gov,aidrefugees.gov,http://www.aidrefugees.gov,True,True,https://www.whitehouse.gov/campaign/aidrefugees,False,False,False,False,False,True,False,,,False,False,False,False,False
+aidrefugees.gov,aidrefugees.gov,http://www.aidrefugees.gov,True,True,https://www.whitehouse.gov/campaign/aidrefugees,True,False,False,False,False,False,False,,,False,False,False,False,False
 aids.gov,aids.gov,https://www.aids.gov,True,False,,True,True,False,True,False,False,False,"['max-age=31536000; includeSubDomains; preload', 'max-age=31536000; includeSubDomains; preload']",,True,True,True,False,False
 airnow.gov,airnow.gov,http://airnow.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 alaskacenters.gov,alaskacenters.gov,http://alaskacenters.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -43,7 +43,7 @@ alzheimers.gov,alzheimers.gov,http://alzheimers.gov,True,False,,False,False,Fals
 ama.gov,ama.gov,https://www.ama.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
 amberalert.gov,amberalert.gov,http://amberalert.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 america.gov,america.gov,http://www.america.gov,True,True,http://iipdigital.usembassy.gov/,False,False,False,False,True,True,False,,,False,False,False,False,False
-americanjobcenter.gov,americanjobcenter.gov,http://www.americanjobcenter.gov,True,True,http://jobcenter.usa.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
+americanjobcenter.gov,americanjobcenter.gov,http://www.americanjobcenter.gov,True,True,http://jobcenter.usa.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 americanlatinomuseum.gov,americanlatinomuseum.gov,http://americanlatinomuseum.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 americanmemory.gov,americanmemory.gov,http://www.americanmemory.gov,True,True,http://www.loc.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 americasgreatoutdoors.gov,americasgreatoutdoors.gov,http://americasgreatoutdoors.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
@@ -60,18 +60,18 @@ americorpsweek.gov,americorpsweek.gov,http://americorpsweek.gov,True,False,,Fals
 ameslab.gov,ameslab.gov,https://www.ameslab.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 amtrakoig.gov,amtrakoig.gov,https://amtrakoig.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 anchorit.gov,anchorit.gov,http://www.anchorit.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-anl.gov,anl.gov,http://www.anl.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,True,False
+anl.gov,anl.gov,http://anl.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 annualcreditreport.gov,annualcreditreport.gov,http://www.annualcreditreport.gov,True,True,http://www.consumer.ftc.gov/articles/0155-free-credit-reports,False,False,False,False,False,False,False,,,False,False,False,False,False
 anstaskforce.gov,anstaskforce.gov,http://www.anstaskforce.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 aoa.gov,aoa.gov,http://aoa.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 aoc.gov,aoc.gov,http://www.aoc.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 ap.gov,ap.gov,http://www.ap.gov,True,True,http://www.bis.doc.gov/index.php/other-areas/additional-protocol-ap,False,False,False,False,False,True,False,,,False,False,False,False,False
-applicationmanager.gov,applicationmanager.gov,https://www.applicationmanager.gov,True,True,https://login.usajobs.gov/account/signin?returnurl=%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fapplicationmanager.gov%252f%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252f%26wct%3d2015-11-13t04%253a10%253a55z&wa=wsignin1.0&wtrealm=https%3a%2f%2fapplicationmanager.gov%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252f&wct=2015-11-13t04%3a10%3a55z,True,True,False,True,False,False,False,,,False,False,False,False,False
+applicationmanager.gov,applicationmanager.gov,https://www.applicationmanager.gov,True,True,https://login.usajobs.gov/account/signin?returnurl=%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fapplicationmanager.gov%252f%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252f%26wct%3d2015-11-21t23%253a58%253a35z&wa=wsignin1.0&wtrealm=https%3a%2f%2fapplicationmanager.gov%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252f&wct=2015-11-21t23%3a58%3a35z,True,True,False,True,False,False,False,,,False,False,False,False,False
 arc.gov,arc.gov,http://www.arc.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 archives.gov,archives.gov,http://archives.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 arctic.gov,arctic.gov,https://arctic.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 arcticgas.gov,arcticgas.gov,http://arcticgas.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
-arm.gov,arm.gov,http://www.arm.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+arm.gov,arm.gov,http://arm.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 ars-grin.gov,ars-grin.gov,http://www.ars-grin.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 arsusda.gov,arsusda.gov,http://arsusda.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 arts.gov,arts.gov,https://www.arts.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
@@ -83,7 +83,7 @@ astrongmiddleclass.gov,astrongmiddleclass.gov,http://www.astrongmiddleclass.gov,
 atf.gov,atf.gov,https://www.atf.gov,True,False,,True,True,False,True,False,False,True,max-age=15984000; preload,15984000,False,False,False,True,False
 atvsafety.gov,atvsafety.gov,http://www.atvsafety.gov,True,True,http://www.cpsc.gov/en/safety-education/safety-education-centers/atv-safety-information-center/,False,False,False,False,False,True,False,,,False,False,False,False,False
 autocommunities.gov,autocommunities.gov,http://www.autocommunities.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
-aviationweather.gov,aviationweather.gov,http://aviationweather.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
+aviationweather.gov,aviationweather.gov,http://aviationweather.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 ayudaconmibanco.gov,ayudaconmibanco.gov,http://ayudaconmibanco.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 bam.gov,bam.gov,http://www.bam.gov,True,True,http://www.cdc.gov/bam/,False,False,False,False,False,False,False,,,False,False,False,True,False
 bankanswers.gov,bankanswers.gov,http://bankanswers.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -101,10 +101,10 @@ bep.gov,bep.gov,http://bep.gov,True,False,,False,False,False,False,False,False,F
 bestbonesforever.gov,bestbonesforever.gov,http://www.bestbonesforever.gov,True,True,http://www.bestbonesforever.org/,False,False,False,False,False,True,False,,,False,False,False,False,False
 betobaccofree.gov,betobaccofree.gov,http://www.betobaccofree.gov,True,True,http://betobaccofree.hhs.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 bfelob.gov,bfelob.gov,http://www.bfelob.gov,True,True,https://bfelob.max.gov/,True,False,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
-bfem.gov,bfem.gov,http://bfem.gov,True,False,,False,False,False,True,True,False,False,,,False,False,False,False,False
+bfem.gov,bfem.gov,http://bfem.gov,True,False,,True,False,False,True,False,False,False,,,False,False,False,False,False
 bia.gov,bia.gov,http://bia.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 bioeco.gov,bioeco.gov,http://www.bioeco.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
-bioethics.gov,bioethics.gov,http://bioethics.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+bioethics.gov,bioethics.gov,http://bioethics.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 biomassboard.gov,biomassboard.gov,http://biomassboard.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 biometriccoe.gov,biometriccoe.gov,http://www.biometriccoe.gov,True,True,https://www.fbi.gov/about-us/cjis/fingerprints_biometrics/biometric-center-of-excellence/,False,False,False,False,False,False,False,,,False,False,False,False,False
 biometrics.gov,biometrics.gov,http://biometrics.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -116,13 +116,13 @@ bldrdoc.gov,bldrdoc.gov,http://www.bldrdoc.gov,True,False,,False,False,False,Fal
 blm.gov,blm.gov,http://www.blm.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 blmntl.gov,blmntl.gov,http://blmntl.gov,True,True,,False,False,False,False,False,True,False,,,False,False,False,False,True
 bls.gov,bls.gov,http://www.bls.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-bnl.gov,bnl.gov,https://www.bnl.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+bnl.gov,bnl.gov,http://bnl.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 boem.gov,boem.gov,http://www.boem.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 boemre.gov,boemre.gov,http://boemre.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 bondpro.gov,bondpro.gov,http://bondpro.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 bop.gov,bop.gov,http://www.bop.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,True,False
 bor.gov,bor.gov,http://bor.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-bpa.gov,bpa.gov,http://www.bpa.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+bpa.gov,bpa.gov,http://www.bpa.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 brac.gov,brac.gov,http://brac.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 brainhealth.gov,brainhealth.gov,http://www.brainhealth.gov,True,True,http://www.brainhealth.acl.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 brc.gov,brc.gov,http://www.brc.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -132,7 +132,7 @@ browsetopics.gov,browsetopics.gov,http://www.browsetopics.gov,True,True,http://w
 bsee.gov,bsee.gov,http://www.bsee.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 bts.gov,bts.gov,http://www.bts.gov,True,True,http://www.rita.dot.gov/bts/,False,False,False,False,False,True,False,,,False,False,False,True,False
 budget.gov,budget.gov,http://www.budget.gov,True,True,https://www.whitehouse.gov/omb,True,False,False,False,False,False,False,,,False,False,False,False,False
-buildingamerica.gov,buildingamerica.gov,http://www.buildingamerica.gov,True,True,http://energy.gov/eere/buildings/building-america-bringing-building-innovations-market,False,False,False,False,True,True,False,,,False,False,False,False,False
+buildingamerica.gov,buildingamerica.gov,http://www.buildingamerica.gov,True,True,http://energy.gov/eere/buildings/building-america-bringing-building-innovations-market,False,False,False,False,False,True,False,,,False,False,False,False,False
 business.gov,business.gov,http://www.business.gov,True,True,https://www.sba.gov/,False,False,False,True,False,True,False,,,False,False,False,False,False
 businessusa.gov,businessusa.gov,http://www.businessusa.gov,True,True,http://business.usa.gov/,True,False,False,False,False,False,False,,,False,False,False,False,False
 buyaccessible.gov,buyaccessible.gov,http://www.buyaccessible.gov,True,True,https://www.section508.gov/,True,False,False,True,False,False,False,,,False,False,False,False,False
@@ -159,7 +159,7 @@ ccr.gov,ccr.gov,http://www.ccr.gov,True,False,,False,False,False,True,False,True
 cdc.gov,cdc.gov,http://www.cdc.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 cdco.gov,cdco.gov,http://www.cdco.gov,True,True,http://www.cdco.va.gov/,False,False,False,False,False,False,False,,,False,False,False,True,False
 cdfifund.gov,cdfifund.gov,https://www.cdfifund.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
-cebaf.gov,cebaf.gov,http://www.cebaf.gov,True,True,https://www.jlab.org/,False,False,False,False,False,True,False,,,False,False,False,False,False
+cebaf.gov,cebaf.gov,http://cebaf.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 cecc.gov,cecc.gov,http://www.cecc.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 cendi.gov,cendi.gov,http://cendi.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 census.gov,census.gov,http://census.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -170,9 +170,9 @@ cfo.gov,cfo.gov,https://cfo.gov,True,False,,True,True,False,True,False,False,Tru
 cfoc.gov,cfoc.gov,http://www.cfoc.gov,True,True,,False,False,False,False,False,True,False,,,False,False,False,True,False
 cfpa.gov,cfpa.gov,http://www.cfpa.gov,True,True,http://www.consumerfinance.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 cfpb.gov,cfpb.gov,http://www.cfpb.gov,True,True,http://www.consumerfinance.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
-cftc.gov,cftc.gov,http://www.cftc.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
+cftc.gov,cftc.gov,http://www.cftc.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,True,False
 challenge.gov,challenge.gov,https://www.challenge.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
-challenges.gov,challenges.gov,http://www.challenges.gov,True,True,https://www.challenge.gov/list/,False,False,False,False,False,True,False,,,False,False,False,False,False
+challenges.gov,challenges.gov,http://www.challenges.gov,True,True,https://www.challenge.gov/list/,False,False,False,False,False,False,False,,,False,False,False,False,False
 change.gov,change.gov,http://change.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 changeofaddress.gov,changeofaddress.gov,http://changeofaddress.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 chcoc.gov,chcoc.gov,https://chcoc.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
@@ -207,12 +207,12 @@ cns.gov,cns.gov,http://www.cns.gov,True,True,http://www.nationalservice.gov/,Fal
 cnss.gov,cnss.gov,https://www.cnss.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
 coast2050.gov,coast2050.gov,http://coast2050.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 coastalamerica.gov,coastalamerica.gov,http://coastalamerica.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-college.gov,college.gov,http://www.college.gov,True,True,https://studentaid.ed.gov/sa/redirects/college-gov,False,False,False,False,False,False,False,,,False,False,False,False,False
-collegedrinkingprevention.gov,collegedrinkingprevention.gov,http://collegedrinkingprevention.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
+college.gov,college.gov,http://www.college.gov,True,True,https://studentaid.ed.gov/sa/,False,False,False,False,False,False,False,,,False,False,False,False,False
+collegedrinkingprevention.gov,collegedrinkingprevention.gov,http://collegedrinkingprevention.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 collegenavigator.gov,collegenavigator.gov,http://collegenavigator.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,True
 commerce.gov,commerce.gov,https://www.commerce.gov,True,False,,True,True,False,True,False,False,True,max-age=7200,7200,False,False,False,False,False
 commission.gov,commission.gov,http://commission.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-complaintreferralexpress.gov,complaintreferralexpress.gov,https://www.complaintreferralexpress.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
+complaintreferralexpress.gov,complaintreferralexpress.gov,http://www.complaintreferralexpress.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 compliance.gov,compliance.gov,http://www.compliance.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 comptrollerofthecurrency.gov,comptrollerofthecurrency.gov,http://comptrollerofthecurrency.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 computers4learning.gov,computers4learning.gov,http://www.computers4learning.gov,True,True,http://computersforlearning.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -222,7 +222,7 @@ congressionaldirectory.gov,congressionaldirectory.gov,http://www.congressionaldi
 congressionalrecord.gov,congressionalrecord.gov,http://www.congressionalrecord.gov,True,True,http://www.gpo.gov/fdsys/browse/collection.action?collectioncode=crec,False,False,False,False,False,False,False,,,False,False,False,False,False
 connect.gov,connect.gov,http://www.connect.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 consumer.gov,consumer.gov,http://www.consumer.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-consumeraction.gov,consumeraction.gov,http://www.consumeraction.gov,True,True,https://www.usa.gov/,False,False,False,True,False,True,False,,,False,False,False,False,False
+consumeraction.gov,consumeraction.gov,http://www.consumeraction.gov,True,True,https://www.usa.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 consumerbureau.gov,consumerbureau.gov,http://www.consumerbureau.gov,True,True,http://www.consumerfinance.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 consumerfinance.gov,consumerfinance.gov,http://www.consumerfinance.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 consumerfinancial.gov,consumerfinancial.gov,http://www.consumerfinancial.gov,True,True,http://www.consumerfinance.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -233,13 +233,13 @@ consumerprotectionbureau.gov,consumerprotectionbureau.gov,http://www.consumerpro
 consumersentinel.gov,consumersentinel.gov,https://consumersentinel.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 consumersentinelnetwork.gov,consumersentinelnetwork.gov,http://consumersentinelnetwork.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 consumidor.gov,consumidor.gov,http://www.consumidor.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-continentalshelf.gov,continentalshelf.gov,http://continentalshelf.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+continentalshelf.gov,continentalshelf.gov,http://www.continentalshelf.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 contractdirectory.gov,contractdirectory.gov,https://www.contractdirectory.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 coop-uspto.gov,coop-uspto.gov,http://www.coop-uspto.gov,True,True,http://coop.uspto.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 copyright.gov,copyright.gov,http://copyright.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 coralreef.gov,coralreef.gov,http://www.coralreef.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 cosponsor.gov,cosponsor.gov,http://cosponsor.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-cpars.gov,cpars.gov,http://www.cpars.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
+cpars.gov,cpars.gov,https://www.cpars.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
 cpnireporting.gov,cpnireporting.gov,https://www.cpnireporting.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 cpsc.gov,cpsc.gov,http://www.cpsc.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 crimesolutions.gov,crimesolutions.gov,http://www.crimesolutions.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -290,7 +290,7 @@ dnsops.gov,dnsops.gov,http://www.dnsops.gov,True,False,,False,False,False,False,
 doc.gov,doc.gov,http://www.doc.gov,True,True,https://www.commerce.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 docline.gov,docline.gov,https://www.docline.gov,True,False,,True,True,True,True,False,False,False,,,False,False,False,False,False
 dod.gov,dod.gov,http://www.dod.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
-doe.gov,doe.gov,http://www.doe.gov,True,True,http://www.energy.gov/,False,False,False,False,False,False,False,,,False,False,False,True,False
+doe.gov,doe.gov,http://www.doe.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 doeal.gov,doeal.gov,http://doeal.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 doi.gov,doi.gov,https://www.doi.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 doioig.gov,doioig.gov,https://www.doioig.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
@@ -315,7 +315,7 @@ e-qip.gov,e-qip.gov,http://e-qip.gov,False,False,,False,False,False,False,False,
 eac.gov,eac.gov,http://www.eac.gov,True,False,,False,False,True,False,False,True,False,,,False,False,False,False,False
 eaclearinghouse.gov,eaclearinghouse.gov,http://eaclearinghouse.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 earmarks.gov,earmarks.gov,http://www.earmarks.gov,True,True,https://earmarks.omb.gov/earmarks-public/,True,False,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
-earthquake.gov,earthquake.gov,http://www.earthquake.gov,True,True,http://earthquake.usgs.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
+earthquake.gov,earthquake.gov,http://www.earthquake.gov,True,True,http://earthquake.usgs.gov/,False,False,False,False,True,True,False,,,False,False,False,False,False
 ecfr.gov,ecfr.gov,http://www.ecfr.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 economicinclusion.gov,economicinclusion.gov,https://economicinclusion.gov,True,False,,True,True,False,True,False,False,False,"""max-age=157680000""",,False,False,False,False,False
 econsumer.gov,econsumer.gov,https://econsumer.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
@@ -325,13 +325,13 @@ ecr.gov,ecr.gov,http://www.ecr.gov,True,True,http://www.udall.gov/ourprograms/in
 ed.gov,ed.gov,http://www.ed.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 eda.gov,eda.gov,http://eda.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 edison.gov,edison.gov,http://www.edison.gov,True,True,https://public.era.nih.gov/iedison/public/login.do?type=33554433&realmoid=06-dc4d00e8-1464-45e1-937f-0525407c30fd&guid=&smauthreason=0&method=get&smagentname=-sm-938pymolvb4vrdexo04lzudvdvc%2b3899byineajusuvwnigfb2zrpwicivygcogg&target=-sm-http%3a%2f%2fpublic%2eera%2enih%2egov%2fiedison,False,False,False,False,False,True,False,,,False,False,False,False,False
-edpubs.gov,edpubs.gov,https://edpubs.gov,True,False,,False,True,False,False,True,False,False,max-age=31536000; includeSubDomains; preload,31536000,False,False,False,False,False
+edpubs.gov,edpubs.gov,https://edpubs.gov,True,False,,True,True,False,False,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 education.gov,education.gov,http://www.education.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 educationjobsfund.gov,educationjobsfund.gov,http://www.educationjobsfund.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
 eeoc.gov,eeoc.gov,http://eeoc.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 eftps.gov,eftps.gov,https://www.eftps.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 egov.gov,egov.gov,http://www.egov.gov,True,True,https://www.whitehouse.gov/omb/e-gov,True,False,False,False,False,False,False,,,False,False,False,False,False
-eia.gov,eia.gov,http://www.eia.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+eia.gov,eia.gov,http://www.eia.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 eisenhowermemorial.gov,eisenhowermemorial.gov,http://eisenhowermemorial.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 eldercare.gov,eldercare.gov,http://www.eldercare.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 emergency-federal-register.gov,emergency-federal-register.gov,http://www.emergency-federal-register.gov,True,True,http://www.archives.gov/federal-register/index.html,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -341,7 +341,7 @@ ems.gov,ems.gov,http://ems.gov,True,False,,False,False,False,False,False,False,F
 endingthedocumentgame.gov,endingthedocumentgame.gov,http://endingthedocumentgame.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 energy.gov,energy.gov,http://energy.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 energycodes.gov,energycodes.gov,https://www.energycodes.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
-energyplus.gov,energyplus.gov,http://www.energyplus.gov,True,True,http://apps1.eere.energy.gov/buildings/energyplus/?utm_source=energyplus&utm_medium=redirect&utm_campaign=energyplus%2bredirect%2b1,False,False,False,False,True,True,False,,,False,False,False,False,False
+energyplus.gov,energyplus.gov,http://www.energyplus.gov,True,True,http://apps1.eere.energy.gov/buildings/energyplus/?utm_source=energyplus&utm_medium=redirect&utm_campaign=energyplus%2bredirect%2b1,False,False,False,False,False,True,False,,,False,False,False,False,False
 energysaver.gov,energysaver.gov,http://www.energysaver.gov,True,True,http://energy.gov/energysaver/energy-saver,False,False,False,False,False,False,False,,,False,False,False,False,False
 energysavers.gov,energysavers.gov,http://www.energysavers.gov,True,True,http://energy.gov/energysaver/energy-saver,False,False,False,False,False,False,False,,,False,False,False,False,False
 energystar.gov,energystar.gov,http://www.energystar.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
@@ -350,7 +350,7 @@ epa.gov,epa.gov,http://www.epa.gov,True,False,,False,False,False,False,False,Tru
 epls.gov,epls.gov,http://www.epls.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,False,False
 erdc.gov,erdc.gov,http://erdc.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 errp.gov,errp.gov,http://www.errp.gov,True,True,https://www.cms.gov/cciio/programs-and-initiatives/insurance-programs/early-retiree-reinsurance-program.html,False,False,False,False,False,True,False,,,False,False,False,False,False
-esa.gov,esa.gov,http://esa.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
+esa.gov,esa.gov,http://esa.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 esc.gov,esc.gov,http://www.esc.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 eseclab.gov,eseclab.gov,http://eseclab.gov,True,True,,False,False,False,True,True,True,False,,,False,False,False,False,True
 espanolforlawenforcement.gov,espanolforlawenforcement.gov,http://www.espanolforlawenforcement.gov,True,True,http://nij.gov/training/pages/espanol-training-has-moved.aspx,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -375,7 +375,7 @@ facadatabase.gov,facadatabase.gov,http://facadatabase.gov,True,False,,False,Fals
 fafsa.gov,fafsa.gov,https://fafsa.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 fai.gov,fai.gov,http://www.fai.gov,True,False,,False,False,True,False,True,False,False,,,False,False,False,False,False
 fan.gov,fan.gov,https://www.fan.gov,True,False,,False,True,False,False,True,False,False,,,False,False,False,False,False
-fapiis.gov,fapiis.gov,https://www.fapiis.gov,True,False,,False,True,True,True,True,False,False,,,False,False,False,False,False
+fapiis.gov,fapiis.gov,https://fapiis.gov,True,False,,False,True,True,True,True,False,False,,,False,False,False,False,True
 faq.gov,faq.gov,http://www.faq.gov,True,True,https://www.usa.gov/contact-by-topic,False,False,False,False,False,True,False,,,False,False,False,False,False
 fara.gov,fara.gov,http://www.fara.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 farmerclaims.gov,farmerclaims.gov,https://www.farmerclaims.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
@@ -383,14 +383,14 @@ fasab.gov,fasab.gov,http://fasab.gov,True,False,,False,False,False,False,False,F
 fatherhood.gov,fatherhood.gov,https://fatherhood.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 fbi.gov,fbi.gov,https://www.fbi.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 fbiic.gov,fbiic.gov,http://www.fbiic.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,True,False
-fbijobs.gov,fbijobs.gov,https://www.fbijobs.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
+fbijobs.gov,fbijobs.gov,https://www.fbijobs.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 fbo.gov,fbo.gov,https://www.fbo.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
-fca.gov,fca.gov,http://fca.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+fca.gov,fca.gov,http://fca.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 fcc.gov,fcc.gov,https://www.fcc.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
 fccuniversity.gov,fccuniversity.gov,http://www.fccuniversity.gov,True,True,https://gm2.geolearning.com/geonext/fcc/login.geo,False,False,False,True,False,True,False,,,False,False,False,False,False
 fcg.gov,fcg.gov,https://www.fcg.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
 fcic.gov,fcic.gov,http://www.fcic.gov,True,True,http://cybercemetery.unt.edu/archive/fcic/20110310172443/http://fcic.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
-fcsic.gov,fcsic.gov,http://fcsic.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+fcsic.gov,fcsic.gov,http://fcsic.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 fcsm.gov,fcsm.gov,http://fcsm.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 fda.gov,fda.gov,http://www.fda.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 fdic.gov,fdic.gov,https://fdic.gov,True,False,,True,True,False,True,False,False,False,"""max-age=157680000""",,False,False,False,False,False
@@ -460,7 +460,7 @@ firecode.gov,firecode.gov,http://www.firecode.gov,True,False,,True,False,False,F
 fireinstitute.gov,fireinstitute.gov,http://fireinstitute.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 fireleadership.gov,fireleadership.gov,http://www.fireleadership.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,True,False
 firenet.gov,firenet.gov,http://www.firenet.gov,True,True,https://sites.google.com/a/firenet.gov/www/,False,False,False,False,False,False,False,,,False,False,False,True,False
-firescience.gov,firescience.gov,http://www.firescience.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
+firescience.gov,firescience.gov,http://www.firescience.gov,True,False,,True,False,False,True,False,False,False,,,False,False,False,False,False
 firstfreedom.gov,firstfreedom.gov,http://www.firstfreedom.gov,True,True,http://www.justice.gov/crt/religiousdiscrimination,False,False,False,False,False,False,False,,,False,False,False,False,False
 firstgov.gov,firstgov.gov,http://www.firstgov.gov,True,True,https://www.usa.gov//,False,False,False,False,False,True,False,,,False,False,False,False,False
 firstnet.gov,firstnet.gov,http://firstnet.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
@@ -489,7 +489,7 @@ fordlibrarymuseum.gov,fordlibrarymuseum.gov,http://fordlibrarymuseum.gov,True,Fa
 foreignassistance.gov,foreignassistance.gov,http://www.foreignassistance.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 forestsandrangelands.gov,forestsandrangelands.gov,http://forestsandrangelands.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 forfeiture.gov,forfeiture.gov,http://www.forfeiture.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
-forms.gov,forms.gov,http://www.forms.gov,True,True,https://www.usa.gov/federal-agencies/a,False,False,False,True,False,False,False,,,False,False,False,False,False
+forms.gov,forms.gov,http://www.forms.gov,True,True,https://www.usa.gov/federal-agencies/a,False,False,False,True,False,True,False,,,False,False,False,False,False
 fpds.gov,fpds.gov,http://www.fpds.gov,True,False,,True,False,False,True,False,False,False,,,False,False,False,False,False
 fpi.gov,fpi.gov,http://fpi.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 fpki-lab.gov,fpki-lab.gov,http://fpki-lab.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
@@ -503,11 +503,11 @@ frpp-pa.gov,frpp-pa.gov,http://frpp-pa.gov,False,False,,False,False,False,False,
 frs.gov,frs.gov,http://frs.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 frtib.gov,frtib.gov,http://frtib.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 frtibtest.gov,frtibtest.gov,http://frtibtest.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-frtr.gov,frtr.gov,https://frtr.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
+frtr.gov,frtr.gov,http://frtr.gov,True,False,,True,False,False,False,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 fruitsandveggiesmatter.gov,fruitsandveggiesmatter.gov,http://www.fruitsandveggiesmatter.gov,True,True,http://www.choosemyplate.gov/myplate,False,False,False,False,False,False,False,,,False,False,False,True,False
 fs.fed.us,fed.us,http://fs.fed.us,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 fsafeds.gov,fsafeds.gov,http://www.fsafeds.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,True,False
-fsapubs.gov,fsapubs.gov,https://fsapubs.gov,True,False,,False,True,False,False,True,False,False,max-age=31536000; includeSubDomains; preload,31536000,False,False,False,False,False
+fsapubs.gov,fsapubs.gov,https://fsapubs.gov,True,False,,True,True,False,False,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 fsd.gov,fsd.gov,https://www.fsd.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 fsgb.gov,fsgb.gov,http://www.fsgb.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,True,False
 fsoc.gov,fsoc.gov,http://www.fsoc.gov,True,True,http://www.treasury.gov/initiatives/fsoc/pages/home.aspx,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -519,7 +519,7 @@ fttesttwai.gov,fttesttwai.gov,https://www.fttesttwai.gov,True,False,,False,True,
 fueleconomy.gov,fueleconomy.gov,http://fueleconomy.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 fvap.gov,fvap.gov,http://www.fvap.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 fws.gov,fws.gov,http://www.fws.gov,True,False,,True,False,False,False,False,False,False,max-age=0,0,False,False,False,False,False
-g5.gov,g5.gov,https://www.g5.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+g5.gov,g5.gov,https://www.g5.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 gao.gov,gao.gov,http://gao.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 gaonet.gov,gaonet.gov,http://gaonet.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 gcdamp.gov,gcdamp.gov,http://www.gcdamp.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
@@ -561,9 +561,9 @@ grantsolutions.gov,grantsolutions.gov,https://grantsolutions.gov,True,False,,Tru
 green.gov,green.gov,http://www.green.gov,True,True,https://www.whitehouse.gov/greengov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 greengov.gov,greengov.gov,http://greengov.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 gsa.gov,gsa.gov,http://www.gsa.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-gsaadvantage.gov,gsaadvantage.gov,https://gsaadvantage.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+gsaadvantage.gov,gsaadvantage.gov,https://www.gsaadvantage.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 gsaauctions.gov,gsaauctions.gov,http://www.gsaauctions.gov,True,False,,False,False,True,False,False,True,False,,,False,False,False,False,False
-gsadvantage.gov,gsadvantage.gov,http://www.gsadvantage.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,False,False
+gsadvantage.gov,gsadvantage.gov,http://www.gsadvantage.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,True,False
 gsaig.gov,gsaig.gov,https://www.gsaig.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
 gsaxcess.gov,gsaxcess.gov,http://gsaxcess.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 guideline.gov,guideline.gov,http://www.guideline.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
@@ -593,7 +593,7 @@ heritageabroad.gov,heritageabroad.gov,http://heritageabroad.gov,True,False,,Fals
 hhs.gov,hhs.gov,http://www.hhs.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 hhsoig.gov,hhsoig.gov,http://www.hhsoig.gov,True,True,,False,False,False,False,False,True,False,,,False,False,False,False,False
 hhsops.gov,hhsops.gov,http://hhsops.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-highperformancebuildings.gov,highperformancebuildings.gov,http://www.highperformancebuildings.gov,True,True,http://energy.gov/eere/buildings/commercial-buildings-integration,False,False,False,False,True,True,False,,,False,False,False,False,False
+highperformancebuildings.gov,highperformancebuildings.gov,http://www.highperformancebuildings.gov,True,True,http://energy.gov/eere/buildings/commercial-buildings-integration,False,False,False,False,False,True,False,,,False,False,False,False,False
 hill.gov,hill.gov,http://www.hill.gov,True,True,http://www.loc.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 hispanicfarmerclaims.gov,hispanicfarmerclaims.gov,https://www.hispanicfarmerclaims.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 hispanicheritagemonth.gov,hispanicheritagemonth.gov,http://hispanicheritagemonth.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -616,14 +616,14 @@ hsa.gov,hsa.gov,http://hsa.gov,True,False,,False,False,False,False,False,False,F
 hsr.gov,hsr.gov,https://hsr.gov,True,False,,True,True,False,True,False,False,True,max-age=10886400; includeSubDomains; preload,10886400,True,True,True,False,False
 hud.gov,hud.gov,http://hud.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 hudoig.gov,hudoig.gov,https://www.hudoig.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
-huduser.gov,huduser.gov,http://www.huduser.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+huduser.gov,huduser.gov,http://www.huduser.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 humanities.gov,humanities.gov,http://www.humanities.gov,True,True,,False,False,False,False,True,True,False,,,False,False,False,False,False
 humanrights.gov,humanrights.gov,http://www.humanrights.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 hurricanes.gov,hurricanes.gov,http://www.hurricanes.gov,True,True,http://www.nhc.noaa.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 hydrogen.gov,hydrogen.gov,http://hydrogen.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 iab.gov,iab.gov,https://iab.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 iad.gov,iad.gov,https://www.iad.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
-iaf.gov,iaf.gov,http://www.iaf.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+iaf.gov,iaf.gov,http://iaf.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 iarpa-ideas.gov,iarpa-ideas.gov,http://iarpa-ideas.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 iarpa.gov,iarpa.gov,http://www.iarpa.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 iat.gov,iat.gov,https://www.iat.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
@@ -638,17 +638,17 @@ ice.gov,ice.gov,https://www.ice.gov,True,False,,True,True,False,False,False,Fals
 ich.gov,ich.gov,http://ich.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 icjointduty.gov,icjointduty.gov,http://icjointduty.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 idealab.gov,idealab.gov,http://www.idealab.gov,True,True,http://www.hhs.gov/idealab/,False,False,False,False,False,True,False,max-age=31536000; includeSubDomains; preload,31536000,False,False,False,False,False
-identitytheft.gov,identitytheft.gov,https://www.identitytheft.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+identitytheft.gov,identitytheft.gov,https://www.identitytheft.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 idmanagement.gov,idmanagement.gov,http://idmanagement.gov,True,False,,False,False,True,False,False,True,False,,,False,False,False,False,False
-idtheft.gov,idtheft.gov,http://www.idtheft.gov,True,True,https://www.identitytheft.gov/,True,False,False,False,False,False,False,,,False,False,False,False,False
+idtheft.gov,idtheft.gov,http://www.idtheft.gov,True,True,https://www.identitytheft.gov/,True,False,False,False,False,False,False,,,False,False,False,True,False
 iedison.gov,iedison.gov,http://www.iedison.gov,True,True,https://public.era.nih.gov/iedison/public/login.do?type=33554433&realmoid=06-dc4d00e8-1464-45e1-937f-0525407c30fd&guid=&smauthreason=0&method=get&smagentname=-sm-938pymolvb4vrdexo04lzudvdvc%2b3899byineajusuvwnigfb2zrpwicivygcogg&target=-sm-http%3a%2f%2fpublic%2eera%2enih%2egov%2fiedison,False,False,False,False,False,True,False,,,False,False,False,False,False
 ignet.gov,ignet.gov,https://www.ignet.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 ihs.gov,ihs.gov,http://www.ihs.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 iiog.gov,iiog.gov,http://iiog.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 imls.gov,imls.gov,https://www.imls.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 indianaffairs.gov,indianaffairs.gov,http://indianaffairs.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-inel.gov,inel.gov,http://www.inel.gov,True,True,https://www.inl.gov/,False,False,False,True,False,True,False,,,False,False,False,True,False
-info.gov,info.gov,http://www.info.gov,True,True,https://www.usa.gov/federal-agencies/a,False,False,False,True,False,True,False,,,False,False,False,False,False
+inel.gov,inel.gov,http://www.inel.gov,True,True,https://www.inl.gov/,True,False,False,True,False,False,False,,,False,False,False,True,False
+info.gov,info.gov,http://www.info.gov,True,True,https://www.usa.gov/federal-agencies/a,False,False,False,False,False,False,False,,,False,False,False,False,False
 inl.gov,inl.gov,https://www.inl.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 insurekidsnow.gov,insurekidsnow.gov,http://insurekidsnow.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 integrity.gov,integrity.gov,https://www.integrity.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
@@ -658,12 +658,12 @@ intelligencecareers.gov,intelligencecareers.gov,https://www.intelligencecareers.
 interior.gov,interior.gov,http://www.interior.gov,True,True,https://www.doi.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 interpol.gov,interpol.gov,http://www.interpol.gov,True,True,http://www.justice.gov/interpol-washington,False,False,False,False,False,False,False,,,False,False,False,False,False
 invasivespecies.gov,invasivespecies.gov,http://invasivespecies.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-invasivespeciesinfo.gov,invasivespeciesinfo.gov,http://www.invasivespeciesinfo.gov,True,False,,True,False,True,False,False,False,False,max-age=-130377491; includeSubDomains,-130377491,False,False,False,False,False
-investor.gov,investor.gov,http://investor.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
+invasivespeciesinfo.gov,invasivespeciesinfo.gov,http://www.invasivespeciesinfo.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
+investor.gov,investor.gov,http://investor.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 ioss.gov,ioss.gov,https://www.ioss.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
 ipac.gov,ipac.gov,https://www.ipac.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 ipcc-wg2.gov,ipcc-wg2.gov,http://ipcc-wg2.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-ipm.gov,ipm.gov,http://www.ipm.gov,True,True,http://www.ipmcenters.org/,False,False,False,False,False,True,False,,,False,False,False,False,False
+ipm.gov,ipm.gov,http://ipm.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 ipp.gov,ipp.gov,http://www.ipp.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 iprcenter.gov,iprcenter.gov,https://www.iprcenter.gov,True,False,,True,True,False,True,False,False,False,max-age=0; preload,0,False,False,False,False,False
 irs.gov,irs.gov,https://www.irs.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
@@ -671,28 +671,28 @@ irsauctions.gov,irsauctions.gov,http://www.irsauctions.gov,True,True,https://www
 irsnet.gov,irsnet.gov,http://irsnet.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 irssales.gov,irssales.gov,http://www.irssales.gov,True,True,https://www.treasury.gov/auctions/irs/index.html,False,False,False,False,False,True,False,,,False,False,False,False,False
 irsvideos.gov,irsvideos.gov,http://www.irsvideos.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-ise.gov,ise.gov,https://www.ise.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+ise.gov,ise.gov,http://www.ise.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 isitdoneyet.gov,isitdoneyet.gov,http://www.isitdoneyet.gov,True,True,http://www.fsis.usda.gov/wps/portal/fsis/topics/food-safety-education/teach-others/fsis-educational-campaigns/is-it-done-yet,False,False,False,False,False,True,False,,,False,False,False,False,False
 isotope.gov,isotope.gov,https://isotope.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 isotopes.gov,isotopes.gov,https://isotopes.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 istac.gov,istac.gov,http://istac.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 italladdsup.gov,italladdsup.gov,http://www.italladdsup.gov,True,True,http://www.fhwa.dot.gov/environment/air_quality/it_all_adds_up/,False,False,False,False,False,True,False,,,False,False,False,True,False
-itap.gov,itap.gov,http://www.itap.gov,True,False,,True,False,False,False,False,False,False,max-age=-130377494; includeSubDomains,-130377494,False,False,False,False,False
+itap.gov,itap.gov,http://www.itap.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 itc.gov,itc.gov,http://itc.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 itdashboard.gov,itdashboard.gov,https://itdashboard.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 itds.gov,itds.gov,http://itds.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 itis.gov,itis.gov,http://www.itis.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
-itrd.gov,itrd.gov,http://www.itrd.gov,True,True,https://www.nitrd.gov/,False,False,False,True,True,True,False,,,False,False,False,False,False
+itrd.gov,itrd.gov,http://www.itrd.gov,True,True,https://www.nitrd.gov/,False,False,False,True,False,True,False,,,False,False,False,False,False
 its.gov,its.gov,https://www.its.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 jamesmadison.gov,jamesmadison.gov,http://www.jamesmadison.gov,True,False,,False,False,False,False,False,True,False,includeSubDomains,,False,False,False,False,False
 jccbi.gov,jccbi.gov,http://jccbi.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-jccs.gov,jccs.gov,http://www.jccs.gov,True,False,,False,False,False,True,True,False,False,,,False,False,False,True,False
+jccs.gov,jccs.gov,http://jccs.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 jct.gov,jct.gov,https://www.jct.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
 jem.gov,jem.gov,http://jem.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 jewishheritage.gov,jewishheritage.gov,http://jewishheritage.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 jewishheritagemonth.gov,jewishheritagemonth.gov,http://jewishheritagemonth.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 jimmycarterlibrary.gov,jimmycarterlibrary.gov,http://www.jimmycarterlibrary.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-jobcenter.gov,jobcenter.gov,http://www.jobcenter.gov,True,True,http://jobcenter.usa.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
+jobcenter.gov,jobcenter.gov,http://www.jobcenter.gov,True,True,http://jobcenter.usa.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 jobcorps.gov,jobcorps.gov,http://jobcorps.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 joiningforces.gov,joiningforces.gov,http://www.joiningforces.gov,True,True,https://www.whitehouse.gov/joiningforces,True,False,False,False,False,False,False,,,False,False,False,False,False
 judicialconference.gov,judicialconference.gov,http://www.judicialconference.gov,True,True,http://www.uscourts.gov/about-federal-courts/governance-judicial-conference,False,False,False,False,False,True,False,,,False,False,False,True,False
@@ -709,11 +709,11 @@ knowthefactsfirst.gov,knowthefactsfirst.gov,http://knowthefactsfirst.gov,True,Fa
 labor.gov,labor.gov,http://www.labor.gov,True,True,,False,False,False,False,False,True,False,,,False,False,False,True,False
 lacoast.gov,lacoast.gov,http://www.lacoast.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 landfire.gov,landfire.gov,http://landfire.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-landimaging.gov,landimaging.gov,http://www.landimaging.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+landimaging.gov,landimaging.gov,http://www.landimaging.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 lanl.gov,lanl.gov,http://lanl.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 latinofarmerclaims.gov,latinofarmerclaims.gov,https://www.latinofarmerclaims.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 law.gov,law.gov,http://www.law.gov,True,True,http://www.loc.gov/law/,False,False,False,False,False,True,False,,,False,False,False,False,False
-lbl.gov,lbl.gov,http://www.lbl.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+lbl.gov,lbl.gov,http://www.lbl.gov,True,True,,True,False,False,False,False,False,False,,,False,False,False,True,False
 lca.gov,lca.gov,http://lca.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 lcacommons.gov,lcacommons.gov,http://www.lcacommons.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 lcrmscp.gov,lcrmscp.gov,http://www.lcrmscp.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
@@ -743,15 +743,15 @@ locstore.gov,locstore.gov,http://www.locstore.gov,True,True,http://www.loc.gov/,
 loctps.gov,loctps.gov,http://www.loctps.gov,True,True,http://www.loc.gov/teachers/tps/,False,False,False,False,False,True,False,,,False,False,False,False,False
 longtermcare.gov,longtermcare.gov,http://longtermcare.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 lookstoogoodtobetrue.gov,lookstoogoodtobetrue.gov,http://www.lookstoogoodtobetrue.gov,True,True,http://www.lookstoogoodtobetrue.com/,False,False,False,False,False,False,False,,,False,False,False,False,False
-lowermississippivalleyscience.gov,lowermississippivalleyscience.gov,http://lowermississippivalleyscience.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
+lowermississippivalleyscience.gov,lowermississippivalleyscience.gov,http://www.lowermississippivalleyscience.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 lps.gov,lps.gov,http://www.lps.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 lsc.gov,lsc.gov,http://lsc.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-macpac.gov,macpac.gov,https://www.macpac.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
+macpac.gov,macpac.gov,https://www.macpac.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 mail.gov,mail.gov,http://www.mail.gov,True,True,https://www.usps.com/,False,False,False,False,False,False,False,,,False,False,False,False,False
 majorityleader.gov,majorityleader.gov,http://www.majorityleader.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 majoritywhip.gov,majoritywhip.gov,http://www.majoritywhip.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 makinghomeaffordable.gov,makinghomeaffordable.gov,http://www.makinghomeaffordable.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-malwareinvestigator.gov,malwareinvestigator.gov,http://malwareinvestigator.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+malwareinvestigator.gov,malwareinvestigator.gov,http://malwareinvestigator.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 manufacturing.gov,manufacturing.gov,http://manufacturing.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 mapaplanet.gov,mapaplanet.gov,http://www.mapaplanet.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 mapstats.gov,mapstats.gov,http://mapstats.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
@@ -765,7 +765,7 @@ mcrmc.gov,mcrmc.gov,http://www.mcrmc.gov,True,False,,False,False,False,False,Fal
 mda.gov,mda.gov,http://mda.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,True
 medalofvalor.gov,medalofvalor.gov,https://www.medalofvalor.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 medicaid.gov,medicaid.gov,http://medicaid.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-medicalcountermeasures.gov,medicalcountermeasures.gov,http://www.medicalcountermeasures.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,True,False
+medicalcountermeasures.gov,medicalcountermeasures.gov,http://www.medicalcountermeasures.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,True,False
 medicalreservecorps.gov,medicalreservecorps.gov,https://www.medicalreservecorps.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 medicare.gov,medicare.gov,https://www.medicare.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 medline.gov,medline.gov,http://www.medline.gov,True,True,http://misuse.ncbi.nlm.nih.gov/error/abuse.shtml,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -822,7 +822,7 @@ nationalservicegear.gov,nationalservicegear.gov,http://nationalservicegear.gov,F
 nationalserviceresources.gov,nationalserviceresources.gov,https://www.nationalserviceresources.gov,True,True,http://www.nationalservice.gov/resources,True,True,False,True,False,False,False,,,False,False,False,False,False
 nationsreportcard.gov,nationsreportcard.gov,http://www.nationsreportcard.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 nativeamericanheritagemonth.gov,nativeamericanheritagemonth.gov,http://nativeamericanheritagemonth.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-nativeonestop.gov,nativeonestop.gov,http://www.nativeonestop.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
+nativeonestop.gov,nativeonestop.gov,http://nativeonestop.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,True
 navycash.gov,navycash.gov,http://www.navycash.gov,True,False,,False,False,False,True,False,True,False,,,False,False,False,True,False
 nbc.gov,nbc.gov,https://www.nbc.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 nbm.gov,nbm.gov,http://www.nbm.gov,True,True,http://www.broadbandmap.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -841,7 +841,7 @@ ncrc.gov,ncrc.gov,http://www.ncrc.gov,True,False,,True,False,False,False,False,F
 ncsc.gov,ncsc.gov,http://ncsc.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 nctc.gov,nctc.gov,http://www.nctc.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 ncua.gov,ncua.gov,http://www.ncua.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-ndep.gov,ndep.gov,http://www.ndep.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
+ndep.gov,ndep.gov,http://www.ndep.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 ndop.gov,ndop.gov,http://www.ndop.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 ndsa.gov,ndsa.gov,http://www.ndsa.gov,True,True,http://www.digitalpreservation.gov/ndsa/,False,False,False,False,False,True,False,,,False,False,False,False,False
 nea.gov,nea.gov,http://www.nea.gov,True,True,https://www.arts.gov/,False,False,False,False,True,True,False,,,False,False,False,False,False
@@ -861,7 +861,7 @@ ngc.gov,ngc.gov,http://www.ngc.gov,True,True,http://www.guideline.gov/,False,Fal
 nhl.gov,nhl.gov,http://nhl.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 nhtsa.gov,nhtsa.gov,http://www.nhtsa.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 nibin.gov,nibin.gov,http://www.nibin.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,True,False
-nic.gov,nic.gov,http://www.nic.gov,True,True,https://www.dotgov.gov/portal/web/dotgov;jsessionid=jlgmwfvg81jtsgj22sp12mvly6cvwh3cddfyzj5vp3pkdhmrpfnjys4yyd92nyq9tjnqvlzndlskqn1vpqnpptdnbpqvswjv0lvxdvjqlytvvlpt7vmrkh1zqlgwfdrw!-377379658!1447387718121,True,False,False,True,False,False,False,,,False,False,False,False,False
+nic.gov,nic.gov,http://www.nic.gov,True,True,https://www.dotgov.gov/portal/web/dotgov;jsessionid=4pcqwrgfvlzqflwvj3sqhyb26bbd4ypt4hxlxcbf1zj8mjh5gxylfqgrnpp6y1stpnvnqtnpzklv9hf55kjk3d9n4dbpjzng71nc6dsydhdhmwqgfp1mmnrhppycyzjp!-1674874300!1448150175983,True,False,False,True,False,False,False,,,False,False,False,False,False
 nicic.gov,nicic.gov,http://nicic.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 niem.gov,niem.gov,https://www.niem.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 nifc.gov,nifc.gov,http://www.nifc.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
@@ -871,7 +871,7 @@ nihseniorhealth.gov,nihseniorhealth.gov,http://nihseniorhealth.gov,True,False,,T
 nij.gov,nij.gov,http://www.nij.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 niosh.gov,niosh.gov,http://www.niosh.gov,True,True,http://www.cdc.gov/niosh/,False,False,False,False,False,False,False,,,False,False,False,True,False
 nist.gov,nist.gov,http://nist.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-nitrd.gov,nitrd.gov,https://nitrd.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
+nitrd.gov,nitrd.gov,https://nitrd.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 nixonlibrary.gov,nixonlibrary.gov,http://nixonlibrary.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 nlm.gov,nlm.gov,https://www.nlm.gov,True,False,,False,True,False,True,False,True,False,,,False,False,False,False,False
 nlrb.gov,nlrb.gov,https://www.nlrb.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
@@ -905,7 +905,7 @@ ntis.gov,ntis.gov,http://www.ntis.gov,True,False,,True,False,False,False,False,F
 ntrc.gov,ntrc.gov,http://www.ntrc.gov,True,True,http://web.ornl.gov/sci/transportation/facilities/ntrc/index.shtml,False,False,False,False,False,True,False,,,False,False,False,True,False
 ntsb.gov,ntsb.gov,http://www.ntsb.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 nuclear.gov,nuclear.gov,http://nuclear.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-nutrition.gov,nutrition.gov,http://www.nutrition.gov,True,False,,True,False,False,False,False,False,False,max-age=-130377501; includeSubDomains,-130377501,False,False,False,False,False
+nutrition.gov,nutrition.gov,http://www.nutrition.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 nutritionevidencelibrary.gov,nutritionevidencelibrary.gov,http://www.nutritionevidencelibrary.gov,True,True,,False,False,False,False,False,False,False,,,False,False,False,False,False
 nvtc.gov,nvtc.gov,http://www.nvtc.gov,True,True,https://www.fbi.gov/about-us/intelligence/national-virtual-translation-center-nvtc,False,False,False,False,False,False,False,,,False,False,False,False,False
 nwbc.gov,nwbc.gov,https://www.nwbc.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
@@ -981,7 +981,7 @@ pentagon.gov,pentagon.gov,http://www.pentagon.gov,True,True,http://www.defense.g
 pepfar.gov,pepfar.gov,http://www.pepfar.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 performance.gov,performance.gov,http://www.performance.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 phe.gov,phe.gov,http://www.phe.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
-pic.gov,pic.gov,http://pic.gov,True,False,,True,False,False,False,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,False,False,False
+pic.gov,pic.gov,http://pic.gov,True,False,,True,False,False,False,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,False,False,True
 piedrasblancas.gov,piedrasblancas.gov,http://www.piedrasblancas.gov,True,True,http://www.blm.gov/pgdata/content/ca/en/prog/nlcs/pbls.html,False,False,False,False,False,True,False,,,False,False,False,False,False
 pif.gov,pif.gov,http://www.pif.gov,True,True,https://presidentialinnovationfellows.gov/,False,False,False,False,False,False,False,,,False,False,False,False,False
 pix.gov,pix.gov,http://pix.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
@@ -1005,13 +1005,13 @@ presidentialinnovationfellows.gov,presidentialinnovationfellows.gov,https://pres
 presidentialserviceawards.gov,presidentialserviceawards.gov,http://www.presidentialserviceawards.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
 presidio.gov,presidio.gov,http://www.presidio.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 presidiotrust.gov,presidiotrust.gov,http://presidiotrust.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-pretrialservices.gov,pretrialservices.gov,http://pretrialservices.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+pretrialservices.gov,pretrialservices.gov,http://pretrialservices.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 primarysources.gov,primarysources.gov,http://www.primarysources.gov,True,True,http://www.loc.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 projectsafechildhood.gov,projectsafechildhood.gov,http://www.projectsafechildhood.gov,True,True,http://www.justice.gov/psc,False,False,False,False,False,False,False,,,False,False,False,False,False
 projectsafeneighborhoods.gov,projectsafeneighborhoods.gov,http://www.projectsafeneighborhoods.gov,True,True,https://www.bja.gov/programdetails.aspx?program_id=74,False,False,False,False,False,False,False,,,False,False,False,False,False
 protecciondelconsumidor.gov,protecciondelconsumidor.gov,http://www.protecciondelconsumidor.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 protectyourmove.gov,protectyourmove.gov,https://www.protectyourmove.gov,True,True,https://www.fmcsa.dot.gov/protect-your-move,True,True,False,True,False,False,False,,,False,False,False,True,False
-psa.gov,psa.gov,http://psa.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+psa.gov,psa.gov,http://psa.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 psc.gov,psc.gov,http://www.psc.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
 pscr.gov,pscr.gov,http://www.pscr.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 psob.gov,psob.gov,https://www.psob.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
@@ -1050,21 +1050,21 @@ research.gov,research.gov,http://www.research.gov,True,False,,True,False,False,F
 restorethegulf.gov,restorethegulf.gov,https://restorethegulf.gov,True,False,,True,True,False,True,False,False,False,max-age=0,0,False,False,False,False,False
 rivers.gov,rivers.gov,http://rivers.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 rl.gov,rl.gov,http://rl.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-robodeidentidad.gov,robodeidentidad.gov,https://www.robodeidentidad.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+robodeidentidad.gov,robodeidentidad.gov,https://www.robodeidentidad.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 rocis.gov,rocis.gov,http://rocis.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 rrb.gov,rrb.gov,http://www.rrb.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 sac.gov,sac.gov,https://sac.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 safecom.gov,safecom.gov,https://www.safecom.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 safecomprogram.gov,safecomprogram.gov,http://www.safecomprogram.gov,True,True,http://www.dhs.gov/safecom,True,False,False,False,False,False,False,,,False,False,False,False,False
 safercar.gov,safercar.gov,http://www.safercar.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
-saferproduct.gov,saferproduct.gov,http://www.saferproduct.gov,True,True,http://www.saferproducts.gov/default.aspx,False,False,False,False,False,True,False,,,False,False,False,False,False
-saferproducts.gov,saferproducts.gov,http://www.saferproducts.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
-safertruck.gov,safertruck.gov,http://www.safertruck.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+saferproduct.gov,saferproduct.gov,http://www.saferproduct.gov,True,True,http://www.saferproducts.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
+saferproducts.gov,saferproducts.gov,http://www.saferproducts.gov,True,False,,True,False,True,False,False,False,False,,,False,False,False,False,False
+safertruck.gov,safertruck.gov,http://safertruck.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 safetyact.gov,safetyact.gov,https://safetyact.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,False,False
 safetyvideos.gov,safetyvideos.gov,http://www.safetyvideos.gov,True,True,http://www.csb.gov/videos/,False,False,False,False,False,False,False,,,False,False,False,True,False
 safexchange.gov,safexchange.gov,http://safexchange.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 safeyouth.gov,safeyouth.gov,http://www.safeyouth.gov,True,True,http://vetoviolence.cdc.gov/apps/stryve/,False,False,False,False,False,False,False,,,False,False,False,True,False
-salmonrecovery.gov,salmonrecovery.gov,http://www.salmonrecovery.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+salmonrecovery.gov,salmonrecovery.gov,http://www.salmonrecovery.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 sam.gov,sam.gov,https://www.sam.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 samhsa.gov,samhsa.gov,http://www.samhsa.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 sandbox.gov,sandbox.gov,http://sandbox.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
@@ -1131,7 +1131,7 @@ spectrum.gov,spectrum.gov,http://www.spectrum.gov,True,True,http://www.ntia.doc.
 srs.gov,srs.gov,http://www.srs.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 ssa.gov,ssa.gov,https://ssa.gov,True,False,,True,True,False,True,False,False,True,max-age=63113904,63113904,False,False,True,False,False
 ssab.gov,ssab.gov,http://ssab.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-sss.gov,sss.gov,https://www.sss.gov,True,False,,False,True,False,True,True,False,False,,,False,False,False,True,False
+sss.gov,sss.gov,https://www.sss.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
 standards.gov,standards.gov,https://www.standards.gov,True,True,http://www.nist.gov/standardsgov/,True,True,False,False,False,False,False,,,False,False,False,False,False
 start2farm.gov,start2farm.gov,http://start2farm.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 state.gov,state.gov,http://www.state.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -1146,16 +1146,16 @@ strategicsourcing.gov,strategicsourcing.gov,https://strategicsourcing.gov,True,F
 strongmiddleclass.gov,strongmiddleclass.gov,http://www.strongmiddleclass.gov,True,True,https://www.whitehouse.gov/strongmiddleclass,True,False,False,False,False,False,False,,,False,False,False,False,False
 strongports.gov,strongports.gov,http://www.strongports.gov,True,True,http://www.marad.dot.gov/ports/strongports/,False,False,False,False,False,True,False,,,False,False,False,False,False
 studentaid.gov,studentaid.gov,http://www.studentaid.gov,True,True,https://studentaid.ed.gov/sa/,True,False,False,False,False,False,False,,,False,False,False,False,False
-studentloans.gov,studentloans.gov,https://www.studentloans.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+studentloans.gov,studentloans.gov,https://www.studentloans.gov,True,False,,True,True,True,True,False,False,False,,,False,False,False,False,False
 supportthevoter.gov,supportthevoter.gov,http://www.supportthevoter.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 supreme-court.gov,supreme-court.gov,http://supreme-court.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 supremecourt.gov,supremecourt.gov,http://www.supremecourt.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 supremecourtus.gov,supremecourtus.gov,http://www.supremecourtus.gov,True,True,http://www.supremecourt.gov/,False,False,False,False,False,True,False,,,False,False,False,True,False
 surgeongeneral.gov,surgeongeneral.gov,http://www.surgeongeneral.gov,True,False,,False,False,False,False,False,True,False,max-age=31536000; includeSubDomains; preload,31536000,False,False,False,False,False
 sustainability.gov,sustainability.gov,http://sustainability.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-sustainablecommunities.gov,sustainablecommunities.gov,https://www.sustainablecommunities.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,True,False
+sustainablecommunities.gov,sustainablecommunities.gov,http://www.sustainablecommunities.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
 swpa.gov,swpa.gov,http://swpa.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-symbols.gov,symbols.gov,https://www.symbols.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+symbols.gov,symbols.gov,https://symbols.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 taaps.gov,taaps.gov,http://taaps.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 tax.gov,tax.gov,http://www.tax.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 taxreform.gov,taxreform.gov,https://taxreform.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
@@ -1164,7 +1164,7 @@ teachingprimarysources.gov,teachingprimarysources.gov,http://www.teachingprimary
 teachingwithprimarysources.gov,teachingwithprimarysources.gov,http://www.teachingwithprimarysources.gov,True,True,http://www.loc.gov/teachers/tps/,False,False,False,False,False,True,False,,,False,False,False,False,False
 telework.gov,telework.gov,https://telework.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 tfhrc.gov,tfhrc.gov,http://www.tfhrc.gov,True,True,http://www.fhwa.dot.gov/research/,False,False,False,False,False,True,False,,,False,False,False,True,False
-thecoolspot.gov,thecoolspot.gov,http://thecoolspot.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
+thecoolspot.gov,thecoolspot.gov,http://thecoolspot.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
 thepeoplesgarden.gov,thepeoplesgarden.gov,http://thepeoplesgarden.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 therealcost.gov,therealcost.gov,http://www.therealcost.gov,True,True,http://therealcost.betobaccofree.hhs.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
 thomas.gov,thomas.gov,http://www.thomas.gov,True,True,https://www.congress.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -1195,7 +1195,7 @@ tsa.gov,tsa.gov,http://www.tsa.gov,True,False,,True,False,False,False,False,Fals
 tsc.gov,tsc.gov,http://www.tsc.gov,True,True,https://www.fbi.gov/about-us/nsb/tsc,False,False,False,False,False,False,False,,,False,False,False,True,False
 tsp.gov,tsp.gov,https://www.tsp.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
 tsptest.gov,tsptest.gov,http://tsptest.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-tsunami.gov,tsunami.gov,http://www.tsunami.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,False
+tsunami.gov,tsunami.gov,http://www.tsunami.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 tswg.gov,tswg.gov,http://tswg.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 ttb.gov,ttb.gov,http://ttb.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 ttbonline.gov,ttbonline.gov,https://ttbonline.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
@@ -1209,7 +1209,7 @@ ucia.gov,ucia.gov,http://ucia.gov,False,False,,False,False,False,False,False,Fal
 ucrdatatool.gov,ucrdatatool.gov,http://ucrdatatool.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 udall.gov,udall.gov,http://udall.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 ugov.gov,ugov.gov,http://ugov.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-unicor.gov,unicor.gov,http://www.unicor.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
+unicor.gov,unicor.gov,http://unicor.gov,True,False,,False,False,False,False,False,True,False,,,False,False,False,False,True
 unionreports.gov,unionreports.gov,http://www.unionreports.gov,True,True,http://www.dol.gov/olms/regs/compliance/rrlo/lmrda.htm,False,False,False,False,False,True,False,,,False,False,False,True,False
 unitedstates.gov,unitedstates.gov,http://www.unitedstates.gov,True,True,https://www.usa.gov/,False,False,False,True,False,True,False,,,False,False,False,False,False
 unitedstatescongress.gov,unitedstatescongress.gov,http://www.unitedstatescongress.gov,True,True,https://www.congress.gov/,False,False,False,False,False,True,False,,,False,False,False,False,False
@@ -1267,11 +1267,11 @@ usgcrp.gov,usgcrp.gov,http://www.usgcrp.gov,True,True,http://www.globalchange.go
 usgeo.gov,usgeo.gov,http://www.usgeo.gov,True,True,https://www.whitehouse.gov/administration/eop/ostp/nstc/committees/cenrs/usgeo,False,False,False,False,True,True,False,,,False,False,False,False,False
 usgovernment.gov,usgovernment.gov,http://www.usgovernment.gov,True,True,https://www.usa.gov/,False,False,False,True,False,True,False,,,False,False,False,False,False
 usgovernmentmanual.gov,usgovernmentmanual.gov,http://www.usgovernmentmanual.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
-usgs.gov,usgs.gov,http://usgs.gov,True,False,,False,False,False,False,True,False,False,,,False,False,False,False,False
+usgs.gov,usgs.gov,http://usgs.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 ushmm.gov,ushmm.gov,http://www.ushmm.gov,True,True,http://www.ushmm.org/,False,False,False,False,False,True,False,,,False,False,False,False,False
 usich.gov,usich.gov,http://usich.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 usicn.gov,usicn.gov,http://www.usicn.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,True,False
-usint.gov,usint.gov,http://usint.gov,True,True,http://havana.usembassy.gov/,False,False,False,False,True,True,False,,,False,False,False,False,True
+usint.gov,usint.gov,http://usint.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,True
 usip.gov,usip.gov,http://www.usip.gov,True,True,http://www.usip.org/,False,False,False,False,True,True,False,,,False,False,False,False,False
 usitc.gov,usitc.gov,http://usitc.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
 usmarshals.gov,usmarshals.gov,http://www.usmarshals.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
