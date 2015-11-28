@@ -1179,7 +1179,7 @@ trade.gov,trade.gov,True
 trafficsafetymarketing.gov,trafficsafetymarketing.gov,True
 transparency.gov,transparency.gov,False
 transportation.gov,transportation.gov,True
-treas.gov,treas.gov,True
+treas.gov,treas.gov,False
 treaslockbox.gov,treaslockbox.gov,False
 treasury.fed.us,fed.us,False
 treasury.gov,treasury.gov,True
@@ -1260,7 +1260,7 @@ uscvc.gov,uscvc.gov,False
 usda.gov,usda.gov,True
 usdapii.gov,usdapii.gov,False
 usdebitcard.gov,usdebitcard.gov,False
-usdoj.gov,usdoj.gov,True
+usdoj.gov,usdoj.gov,False
 usembassy-mexico.gov,usembassy-mexico.gov,False
 usembassy.gov,usembassy.gov,True
 userra.gov,userra.gov,False
