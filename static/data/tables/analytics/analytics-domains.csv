@@ -37,6 +37,7 @@ americorpsweek.gov,executive,Corporation for National & Community Service,No,No
 ameslab.gov,executive,Department of Energy,No,No
 amtrakoig.gov,executive,AMTRAK,No,No
 anchorit.gov,executive,Consumer Product Safety Commission,No,Yes
+anl.gov,executive,Department of Energy,No,No
 anstaskforce.gov,executive,Department of the Interior,No,No
 aoa.gov,executive,Department of Health And Human Services,No,No
 arc.gov,executive,Appalachian Regional Commission,No,No
@@ -63,6 +64,7 @@ bep.gov,executive,Department of the Treasury,No,Yes
 bfem.gov,executive,Department of the Treasury,No,No
 bia.gov,executive,Department of the Interior,No,Yes
 bioeco.gov,executive,Department of the Interior,No,No
+bioethics.gov,executive,Department of Health And Human Services,No,No
 biomassboard.gov,executive,Department of Energy,No,No
 biometrics.gov,executive,Department of Homeland Security,No,No
 biopreferred.gov,executive,Department of Agriculture,No,No
@@ -108,7 +110,6 @@ choosemyplate.gov,executive,Department of Agriculture,No,Yes
 christophercolumbusfoundation.gov,executive,Christopher Columbus Fellowship Foundation,No,Yes
 cia.gov,executive,Central Intelligence Agency,No,No
 cio.gov,executive,General Services Administration,No,Yes
-civilianresponsecorps.gov,executive,Department of State,No,No
 civilrightsusa.gov,executive,Department of Commerce,No,No
 climate.gov,executive,Department of Commerce,No,Yes
 clinicaltrial.gov,executive,Department of Health And Human Services,No,No
@@ -169,7 +170,6 @@ dni.gov,executive,Director of National Intelligence,No,No
 dnsops.gov,executive,Department of Commerce,No,No
 docline.gov,executive,Department of Health And Human Services,No,No
 dod.gov,executive,Department of Defense,No,No
-doe.gov,executive,Department of Energy,No,No
 doi.gov,executive,Department of the Interior,No,Yes
 doioig.gov,executive,Department of the Interior,No,No
 dol-esa.gov,executive,Department of Labor,No,No
@@ -371,6 +371,7 @@ iaf.gov,executive,Inter-American Foundation,No,No
 iarpa-ideas.gov,executive,Director of National Intelligence,No,No
 iarpa.gov,executive,Director of National Intelligence,No,No
 iat.gov,executive,Department of the Interior,No,No
+iawg.gov,executive,Department of State,No,No
 ibwc.gov,executive,Department of State,No,Yes
 ic3.gov,executive,Department of Justice,No,Yes
 icass.gov,executive,Department of State,No,No
@@ -409,6 +410,7 @@ itds.gov,executive,Department of Commerce,No,No
 itis.gov,executive,Smithsonian Institution,No,Yes
 its.gov,executive,Department of the Treasury,No,No
 jamesmadison.gov,executive,James Madison Memorial Fellowship Foundation,No,No
+jccs.gov,executive,Department of Defense,No,No
 jem.gov,executive,Department of the Interior,No,No
 jimmycarterlibrary.gov,executive,National Archives and Records Administration,No,Yes
 jobcorps.gov,executive,Department of Labor,No,Yes
