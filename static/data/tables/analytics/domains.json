@@ -229,7 +229,7 @@
       "Branch": "executive",
       "Canonical": "http://www.altusandc.gov",
       "Domain": "altusandc.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -357,6 +357,14 @@
       "Branch": "executive",
       "Canonical": "http://arcticgas.gov",
       "Domain": "arcticgas.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "http://www.arm.gov",
+      "Domain": "arm.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -593,6 +601,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "https://www.bnl.gov",
+      "Domain": "bnl.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of the Interior",
       "Branch": "executive",
       "Canonical": "http://www.boem.gov",
@@ -641,6 +657,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of Health And Human Services",
+      "Branch": "executive",
+      "Canonical": "http://brainhealth.gov",
+      "Domain": "brainhealth.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Energy",
       "Branch": "executive",
       "Canonical": "http://www.brc.gov",
@@ -670,6 +694,14 @@
       "Canonical": "http://www.bsee.gov",
       "Domain": "bsee.gov",
       "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "General Services Administration",
+      "Branch": "executive",
+      "Canonical": "http://buyaccessible.gov",
+      "Domain": "buyaccessible.gov",
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -955,7 +987,7 @@
     {
       "Agency": "Corporation for National & Community Service",
       "Branch": "executive",
-      "Canonical": "http://www.cncsoig.gov",
+      "Canonical": "https://www.cncsoig.gov",
       "Domain": "cncsoig.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -2507,7 +2539,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Branch": "executive",
-      "Canonical": "http://www.genome.gov",
+      "Canonical": "http://genome.gov",
       "Domain": "genome.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -3317,7 +3349,7 @@
       "Branch": "executive",
       "Canonical": "http://jobcorps.gov",
       "Domain": "jobcorps.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -3349,14 +3381,6 @@
       "Branch": "executive",
       "Canonical": "http://klamathrestoration.gov",
       "Domain": "klamathrestoration.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Department of Health And Human Services",
-      "Branch": "executive",
-      "Canonical": "http://knowthefactsfirst.gov",
-      "Domain": "knowthefactsfirst.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -3509,7 +3533,7 @@
       "Branch": "executive",
       "Canonical": "http://www.lowermississippivalleyscience.gov",
       "Domain": "lowermississippivalleyscience.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -3541,7 +3565,15 @@
       "Branch": "executive",
       "Canonical": "http://www.makinghomeaffordable.gov",
       "Domain": "makinghomeaffordable.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Justice",
+      "Branch": "executive",
+      "Canonical": "http://www.malwareinvestigator.gov",
+      "Domain": "malwareinvestigator.gov",
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -3557,7 +3589,7 @@
       "Branch": "executive",
       "Canonical": "http://www.mapaplanet.gov",
       "Domain": "mapaplanet.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -3601,14 +3633,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of Defense",
-      "Branch": "executive",
-      "Canonical": "http://www.mcrmc.gov",
-      "Domain": "mcrmc.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Department of Transportation",
       "Branch": "executive",
       "Canonical": "http://mda.gov",
@@ -3630,14 +3654,6 @@
       "Canonical": "http://medicaid.gov",
       "Domain": "medicaid.gov",
       "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Department of Health And Human Services",
-      "Branch": "executive",
-      "Canonical": "http://www.medicalcountermeasures.gov",
-      "Domain": "medicalcountermeasures.gov",
-      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -4003,7 +4019,7 @@
     {
       "Agency": "National Credit Union Administration",
       "Branch": "executive",
-      "Canonical": "http://www.ncua.gov",
+      "Canonical": "https://www.ncua.gov",
       "Domain": "ncua.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -4755,7 +4771,7 @@
     {
       "Agency": "Office of Personnel Management",
       "Branch": "executive",
-      "Canonical": "http://www.pmf.gov",
+      "Canonical": "http://pmf.gov",
       "Domain": "pmf.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -4877,7 +4893,7 @@
       "Branch": "executive",
       "Canonical": "http://www.pscr.gov",
       "Domain": "pscr.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -5091,7 +5107,7 @@
     {
       "Agency": "Department of Transportation",
       "Branch": "executive",
-      "Canonical": "http://www.safertruck.gov",
+      "Canonical": "http://safertruck.gov",
       "Domain": "safertruck.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -5491,7 +5507,7 @@
     {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "http://www.supportthevoter.gov",
+      "Canonical": "http://supportthevoter.gov",
       "Domain": "supportthevoter.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
