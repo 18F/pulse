@@ -38,7 +38,7 @@ aids.gov,aids.gov,True
 airnow.gov,airnow.gov,True
 alaskacenters.gov,alaskacenters.gov,True
 alertaenlinea.gov,alertaenlinea.gov,True
-altusandc.gov,altusandc.gov,False
+altusandc.gov,altusandc.gov,True
 alzheimers.gov,alzheimers.gov,False
 ama.gov,ama.gov,False
 amberalert.gov,amberalert.gov,True
@@ -135,7 +135,7 @@ budget.gov,budget.gov,False
 buildingamerica.gov,buildingamerica.gov,False
 business.gov,business.gov,False
 businessusa.gov,businessusa.gov,False
-buyaccessible.gov,buyaccessible.gov,False
+buyaccessible.gov,buyaccessible.gov,True
 buyusa.gov,buyusa.gov,True
 cancer.gov,cancer.gov,False
 cancernet.gov,cancernet.gov,False
@@ -694,7 +694,7 @@ jewishheritage.gov,jewishheritage.gov,False
 jewishheritagemonth.gov,jewishheritagemonth.gov,False
 jimmycarterlibrary.gov,jimmycarterlibrary.gov,True
 jobcenter.gov,jobcenter.gov,False
-jobcorps.gov,jobcorps.gov,True
+jobcorps.gov,jobcorps.gov,False
 joiningforces.gov,joiningforces.gov,False
 judicialconference.gov,judicialconference.gov,False
 juniorforestranger.gov,juniorforestranger.gov,False
@@ -707,7 +707,7 @@ kapl.gov,kapl.gov,False
 kids.gov,kids.gov,False
 klamathrestoration.gov,klamathrestoration.gov,False
 knowthefactsfirst.gov,knowthefactsfirst.gov,False
-labor.gov,labor.gov,True
+labor.gov,labor.gov,False
 lacoast.gov,lacoast.gov,False
 landfire.gov,landfire.gov,True
 landimaging.gov,landimaging.gov,True
@@ -744,17 +744,17 @@ locstore.gov,locstore.gov,False
 loctps.gov,loctps.gov,False
 longtermcare.gov,longtermcare.gov,False
 lookstoogoodtobetrue.gov,lookstoogoodtobetrue.gov,False
-lowermississippivalleyscience.gov,lowermississippivalleyscience.gov,True
+lowermississippivalleyscience.gov,lowermississippivalleyscience.gov,False
 lps.gov,lps.gov,False
 lsc.gov,lsc.gov,False
 macpac.gov,macpac.gov,False
 mail.gov,mail.gov,False
 majorityleader.gov,majorityleader.gov,False
 majoritywhip.gov,majoritywhip.gov,False
-makinghomeaffordable.gov,makinghomeaffordable.gov,True
+makinghomeaffordable.gov,makinghomeaffordable.gov,False
 malwareinvestigator.gov,malwareinvestigator.gov,False
 manufacturing.gov,manufacturing.gov,True
-mapaplanet.gov,mapaplanet.gov,False
+mapaplanet.gov,mapaplanet.gov,True
 mapstats.gov,mapstats.gov,False
 marine.gov,marine.gov,False
 marinecadastre.gov,marinecadastre.gov,True
@@ -1014,7 +1014,7 @@ protecciondelconsumidor.gov,protecciondelconsumidor.gov,True
 protectyourmove.gov,protectyourmove.gov,False
 psa.gov,psa.gov,False
 psc.gov,psc.gov,False
-pscr.gov,pscr.gov,True
+pscr.gov,pscr.gov,False
 psob.gov,psob.gov,True
 ptf.gov,ptf.gov,False
 ptt.gov,ptt.gov,False
@@ -1260,7 +1260,7 @@ uscvc.gov,uscvc.gov,False
 usda.gov,usda.gov,True
 usdapii.gov,usdapii.gov,False
 usdebitcard.gov,usdebitcard.gov,False
-usdoj.gov,usdoj.gov,False
+usdoj.gov,usdoj.gov,True
 usembassy-mexico.gov,usembassy-mexico.gov,False
 usembassy.gov,usembassy.gov,True
 userra.gov,userra.gov,False
