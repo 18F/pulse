@@ -44,7 +44,6 @@ arc.gov,executive,Appalachian Regional Commission,No,No
 archives.gov,executive,National Archives and Records Administration,No,Yes
 arctic.gov,executive,National Science Foundation,No,Yes
 arcticgas.gov,executive,National Science Foundation,No,No
-arm.gov,executive,Department of Energy,No,No
 ars-grin.gov,executive,Department of Agriculture,No,No
 arts.gov,executive,National Endowment for the Arts,No,No
 asap.gov,executive,Department of the Treasury,No,No
@@ -74,7 +73,6 @@ bjs.gov,executive,Department of Justice,No,No
 bldrdoc.gov,executive,Department of Commerce,No,Yes
 blm.gov,executive,Department of the Interior,No,No
 bls.gov,executive,Department of Labor,No,Yes
-bnl.gov,executive,Department of Energy,No,No
 boem.gov,executive,Department of the Interior,No,No
 boemre.gov,executive,Department of the Interior,No,No
 bondpro.gov,executive,Department of the Treasury,No,Yes
@@ -174,6 +172,7 @@ dni.gov,executive,Director of National Intelligence,No,No
 dnsops.gov,executive,Department of Commerce,No,No
 docline.gov,executive,Department of Health And Human Services,No,No
 dod.gov,executive,Department of Defense,No,No
+doe.gov,executive,Department of Energy,No,No
 doi.gov,executive,Department of the Interior,No,Yes
 doioig.gov,executive,Department of the Interior,No,No
 dol-esa.gov,executive,Department of Labor,No,No
@@ -384,6 +383,7 @@ ice.gov,executive,Department of Homeland Security,No,Yes
 ich.gov,executive,US Interagency Council on Homelessness,No,No
 identitytheft.gov,executive,Federal Trade Commission,No,Yes
 idmanagement.gov,executive,General Services Administration,No,Yes
+idtheft.gov,executive,Federal Trade Commission,No,No
 ignet.gov,executive,Council of Inspector General on Integrity and Efficiency,No,No
 ihs.gov,executive,Department of Health And Human Services,No,No
 iiog.gov,executive,Department of Agriculture,No,No
@@ -453,9 +453,11 @@ marinecadastre.gov,executive,Department of Commerce,No,Yes
 max.gov,executive,Executive Office of the President,No,No
 mbda.gov,executive,Department of Commerce,No,No
 mcc.gov,executive,Millennium Challenge Corporation,No,Yes
+mcrmc.gov,executive,Department of Defense,No,No
 mda.gov,executive,Department of Transportation,No,No
 medalofvalor.gov,executive,Department of Justice,No,No
 medicaid.gov,executive,Department of Health And Human Services,No,No
+medicalcountermeasures.gov,executive,Department of Health And Human Services,No,Yes
 medicalreservecorps.gov,executive,Department of Health And Human Services,No,No
 medicare.gov,executive,Department of Health And Human Services,No,No
 medpac.gov,executive,Medical Payment Advisory Commission,No,No
@@ -488,6 +490,7 @@ nationalhousing.gov,executive,Department of Housing And Urban Development,No,No
 nationalhousinglocator.gov,executive,Department of Housing And Urban Development,No,No
 nationalmap.gov,executive,Department of the Interior,No,Yes
 nationalservice.gov,executive,Corporation for National & Community Service,No,No
+nationalserviceresources.gov,executive,Corporation for National & Community Service,No,No
 nationsreportcard.gov,executive,Department of Education,No,Yes
 nativeonestop.gov,executive,Department of the Interior,No,No
 navycash.gov,executive,Department of the Treasury,No,No
@@ -552,7 +555,6 @@ nwcg.gov,executive,Department of Agriculture,No,No
 occ.gov,executive,Department of the Treasury,No,Yes
 occhelps.gov,executive,Department of the Treasury,No,Yes
 odni.gov,executive,Director of National Intelligence,No,No
-oea.gov,executive,Department of Defense,No,Yes
 ofcm.gov,executive,Department of Commerce,No,No
 ofda.gov,executive,U.S. Agency for International Development,No,No
 ofee.gov,executive,Environmental Protection Agency,No,No
@@ -612,6 +614,7 @@ psa.gov,executive,Court Services and Offender Supervision,No,No
 psc.gov,executive,Department of Health And Human Services,No,No
 pscr.gov,executive,Department of Commerce,No,No
 psob.gov,executive,Department of Justice,No,Yes
+qart.gov,executive,Director of National Intelligence,No,No
 qatesttwai.gov,executive,Department of the Treasury,No,No
 rcfl.gov,executive,Department of Justice,No,No
 ready.gov,executive,Department of Homeland Security,No,Yes

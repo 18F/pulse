@@ -77,7 +77,7 @@
     },
     {
       "Agency": "Corporation for National & Community Service",
-      "Number of Domains": 7,
+      "Number of Domains": 8,
       "Participates in DAP?": 0
     },
     {
@@ -118,7 +118,7 @@
     {
       "Agency": "Department of Defense",
       "Number of Domains": 23,
-      "Participates in DAP?": 48
+      "Participates in DAP?": 43
     },
     {
       "Agency": "Department of Education",
@@ -127,13 +127,13 @@
     },
     {
       "Agency": "Department of Energy",
-      "Number of Domains": 41,
+      "Number of Domains": 40,
       "Participates in DAP?": 2
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 72,
-      "Participates in DAP?": 33
+      "Number of Domains": 73,
+      "Participates in DAP?": 34
     },
     {
       "Agency": "Department of Homeland Security",
@@ -182,7 +182,7 @@
     },
     {
       "Agency": "Director of National Intelligence",
-      "Number of Domains": 8,
+      "Number of Domains": 9,
       "Participates in DAP?": 0
     },
     {
@@ -267,8 +267,8 @@
     },
     {
       "Agency": "Federal Trade Commission",
-      "Number of Domains": 17,
-      "Participates in DAP?": 71
+      "Number of Domains": 18,
+      "Participates in DAP?": 67
     },
     {
       "Agency": "General Services Administration",
