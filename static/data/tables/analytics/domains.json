@@ -361,14 +361,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.arm.gov",
-      "Domain": "arm.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Department of Agriculture",
       "Branch": "executive",
       "Canonical": "http://www.ars-grin.gov",
@@ -598,14 +590,6 @@
       "Canonical": "http://www.bls.gov",
       "Domain": "bls.gov",
       "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "https://www.bnl.gov",
-      "Domain": "bnl.gov",
-      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -1397,6 +1381,14 @@
       "Branch": "executive",
       "Canonical": "http://www.dod.gov",
       "Domain": "dod.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "http://www.doe.gov",
+      "Domain": "doe.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -2539,7 +2531,7 @@
     {
       "Agency": "Department of Health And Human Services",
       "Branch": "executive",
-      "Canonical": "http://genome.gov",
+      "Canonical": "http://www.genome.gov",
       "Domain": "genome.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -3067,7 +3059,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Branch": "executive",
-      "Canonical": "https://www.identitytheft.gov",
+      "Canonical": "https://identitytheft.gov",
       "Domain": "identitytheft.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -3078,6 +3070,14 @@
       "Canonical": "http://idmanagement.gov",
       "Domain": "idmanagement.gov",
       "Participates in DAP?": 1,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Federal Trade Commission",
+      "Branch": "executive",
+      "Canonical": "http://idtheft.gov",
+      "Domain": "idtheft.gov",
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     {
@@ -3633,6 +3633,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Department of Defense",
+      "Branch": "executive",
+      "Canonical": "http://www.mcrmc.gov",
+      "Domain": "mcrmc.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of Transportation",
       "Branch": "executive",
       "Canonical": "http://mda.gov",
@@ -3654,6 +3662,14 @@
       "Canonical": "http://medicaid.gov",
       "Domain": "medicaid.gov",
       "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Department of Health And Human Services",
+      "Branch": "executive",
+      "Canonical": "http://www.medicalcountermeasures.gov",
+      "Domain": "medicalcountermeasures.gov",
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
@@ -3909,6 +3925,14 @@
       "Branch": "executive",
       "Canonical": "http://www.nationalservice.gov",
       "Domain": "nationalservice.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
+      "Agency": "Corporation for National & Community Service",
+      "Branch": "executive",
+      "Canonical": "https://www.nationalserviceresources.gov",
+      "Domain": "nationalserviceresources.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
     },
@@ -4425,14 +4449,6 @@
       "Redirect": "No"
     },
     {
-      "Agency": "Department of Defense",
-      "Branch": "executive",
-      "Canonical": "http://www.oea.gov",
-      "Domain": "oea.gov",
-      "Participates in DAP?": 1,
-      "Redirect": "No"
-    },
-    {
       "Agency": "Department of Commerce",
       "Branch": "executive",
       "Canonical": "http://www.ofcm.gov",
@@ -4905,6 +4921,14 @@
       "Redirect": "No"
     },
     {
+      "Agency": "Director of National Intelligence",
+      "Branch": "executive",
+      "Canonical": "http://www.qart.gov",
+      "Domain": "qart.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
+    {
       "Agency": "Department of the Treasury",
       "Branch": "executive",
       "Canonical": "https://www.qatesttwai.gov",
@@ -5051,7 +5075,7 @@
     {
       "Agency": "Federal Trade Commission",
       "Branch": "executive",
-      "Canonical": "https://www.robodeidentidad.gov",
+      "Canonical": "https://robodeidentidad.gov",
       "Domain": "robodeidentidad.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -6123,7 +6147,7 @@
     {
       "Agency": "Corporation for National & Community Service",
       "Branch": "executive",
-      "Canonical": "http://www.volunteeringinamerica.gov",
+      "Canonical": "https://www.volunteeringinamerica.gov",
       "Domain": "volunteeringinamerica.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
