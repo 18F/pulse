@@ -65,7 +65,7 @@
       "Agency": "American Battle Monuments Commission",
       "Enforces HTTPS": 0,
       "Number of Domains": 1,
-      "SSL Labs (A- or higher)": 0,
+      "SSL Labs (A- or higher)": 100,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 100
     },
@@ -493,7 +493,7 @@
       "Agency": "Department of Health And Human Services",
       "Enforces HTTPS": 16,
       "Number of Domains": 115,
-      "SSL Labs (A- or higher)": 18,
+      "SSL Labs (A- or higher)": 19,
       "Strict Transport Security (HSTS)": 6,
       "Uses HTTPS": 31
     },
@@ -505,7 +505,7 @@
     "analytics": {
       "Agency": "Department of Homeland Security",
       "Number of Domains": 21,
-      "Participates in DAP?": 43
+      "Participates in DAP?": 48
     },
     "https": {
       "Agency": "Department of Homeland Security",
@@ -601,7 +601,7 @@
       "Agency": "Department of the Interior",
       "Enforces HTTPS": 14,
       "Number of Domains": 80,
-      "SSL Labs (A- or higher)": 15,
+      "SSL Labs (A- or higher)": 16,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 29
     },
@@ -619,7 +619,7 @@
       "Agency": "Department of the Treasury",
       "Enforces HTTPS": 26,
       "Number of Domains": 87,
-      "SSL Labs (A- or higher)": 14,
+      "SSL Labs (A- or higher)": 15,
       "Strict Transport Security (HSTS)": 1,
       "Uses HTTPS": 39
     },
@@ -727,7 +727,7 @@
       "Agency": "Executive Office of the President",
       "Enforces HTTPS": 33,
       "Number of Domains": 30,
-      "SSL Labs (A- or higher)": 50,
+      "SSL Labs (A- or higher)": 53,
       "Strict Transport Security (HSTS)": 27,
       "Uses HTTPS": 80
     },
@@ -959,11 +959,11 @@
     },
     "https": {
       "Agency": "Federal Retirement Thrift Investment Board",
-      "Enforces HTTPS": 33,
+      "Enforces HTTPS": 67,
       "Number of Domains": 3,
-      "SSL Labs (A- or higher)": 0,
-      "Strict Transport Security (HSTS)": 0,
-      "Uses HTTPS": 33
+      "SSL Labs (A- or higher)": 67,
+      "Strict Transport Security (HSTS)": 67,
+      "Uses HTTPS": 67
     },
     "total_domains": 5
   },
@@ -979,7 +979,7 @@
       "Agency": "Federal Trade Commission",
       "Enforces HTTPS": 39,
       "Number of Domains": 23,
-      "SSL Labs (A- or higher)": 65,
+      "SSL Labs (A- or higher)": 74,
       "Strict Transport Security (HSTS)": 26,
       "Uses HTTPS": 74
     },
@@ -1367,7 +1367,7 @@
       "Agency": "National Endowment for the Arts",
       "Enforces HTTPS": 50,
       "Number of Domains": 2,
-      "SSL Labs (A- or higher)": 0,
+      "SSL Labs (A- or higher)": 50,
       "Strict Transport Security (HSTS)": 0,
       "Uses HTTPS": 50
     },

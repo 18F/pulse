@@ -2395,7 +2395,7 @@
     {
       "Agency": "Federal Retirement Thrift Investment Board",
       "Branch": "executive",
-      "Canonical": "http://frtib.gov",
+      "Canonical": "https://frtib.gov",
       "Domain": "frtib.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -3053,7 +3053,7 @@
       "Branch": "executive",
       "Canonical": "https://www.ice.gov",
       "Domain": "ice.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     {
