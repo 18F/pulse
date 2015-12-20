@@ -501,7 +501,7 @@ freecreditreport.gov,freecreditreport.gov,http://www.freecreditreport.gov,True,T
 freshempire.gov,freshempire.gov,http://www.freshempire.gov,True,True,https://freshempire.betobaccofree.hhs.gov/,True,False,False,True,False,False,False,,,False,False,False,False,False
 frpp-pa.gov,frpp-pa.gov,http://frpp-pa.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 frs.gov,frs.gov,http://frs.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
-frtib.gov,frtib.gov,http://frtib.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
+frtib.gov,frtib.gov,https://frtib.gov,True,False,,True,True,False,True,False,False,True,max-age=1480879294; preload,1480879294,False,False,False,False,False
 frtibtest.gov,frtibtest.gov,http://frtibtest.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 frtr.gov,frtr.gov,https://frtr.gov,True,False,,True,True,False,True,False,False,True,max-age=31536000; includeSubDomains; preload,31536000,True,True,True,False,False
 fruitsandveggiesmatter.gov,fruitsandveggiesmatter.gov,http://www.fruitsandveggiesmatter.gov,True,True,http://www.choosemyplate.gov/myplate,False,False,False,False,False,False,False,,,False,False,False,True,False
@@ -1193,7 +1193,7 @@ trs.gov,trs.gov,http://trs.gov,False,False,,False,False,False,False,False,False,
 truman.gov,truman.gov,http://truman.gov,True,False,,True,False,False,False,False,False,False,,,False,False,False,False,False
 tsa.gov,tsa.gov,https://www.tsa.gov,True,False,,True,True,False,False,False,False,False,,,False,False,False,False,False
 tsc.gov,tsc.gov,http://www.tsc.gov,True,True,https://www.fbi.gov/about-us/nsb/tsc,False,False,False,False,False,False,False,,,False,False,False,True,False
-tsp.gov,tsp.gov,https://www.tsp.gov,True,False,,True,True,False,True,False,False,False,,,False,False,False,False,False
+tsp.gov,tsp.gov,https://www.tsp.gov,True,False,,True,True,False,True,False,False,True,max-age=1480879294; preload,1480879294,False,False,False,False,False
 tsptest.gov,tsptest.gov,http://tsptest.gov,False,False,,False,False,False,False,False,False,False,,,False,False,False,True,True
 tsunami.gov,tsunami.gov,http://www.tsunami.gov,True,False,,False,False,False,False,True,True,False,,,False,False,False,False,False
 tswg.gov,tswg.gov,http://tswg.gov,True,False,,False,False,False,False,False,False,False,,,False,False,False,False,False
