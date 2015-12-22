@@ -18,7 +18,7 @@ acus.gov,acus.gov,False
 acwi.gov,acwi.gov,True
 ada.gov,ada.gov,True
 adf.gov,adf.gov,False
-adlnet.gov,adlnet.gov,True
+adlnet.gov,adlnet.gov,False
 admongo.gov,admongo.gov,False
 adr.gov,adr.gov,True
 advantage.gov,advantage.gov,False
@@ -564,7 +564,7 @@ greengov.gov,greengov.gov,False
 gsa.gov,gsa.gov,True
 gsaadvantage.gov,gsaadvantage.gov,True
 gsaauctions.gov,gsaauctions.gov,True
-gsadvantage.gov,gsadvantage.gov,False
+gsadvantage.gov,gsadvantage.gov,True
 gsaig.gov,gsaig.gov,False
 gsaxcess.gov,gsaxcess.gov,True
 guideline.gov,guideline.gov,True
@@ -744,7 +744,7 @@ locstore.gov,locstore.gov,False
 loctps.gov,loctps.gov,False
 longtermcare.gov,longtermcare.gov,False
 lookstoogoodtobetrue.gov,lookstoogoodtobetrue.gov,False
-lowermississippivalleyscience.gov,lowermississippivalleyscience.gov,False
+lowermississippivalleyscience.gov,lowermississippivalleyscience.gov,True
 lps.gov,lps.gov,False
 lsc.gov,lsc.gov,False
 macpac.gov,macpac.gov,False
@@ -754,7 +754,7 @@ majoritywhip.gov,majoritywhip.gov,False
 makinghomeaffordable.gov,makinghomeaffordable.gov,False
 malwareinvestigator.gov,malwareinvestigator.gov,False
 manufacturing.gov,manufacturing.gov,True
-mapaplanet.gov,mapaplanet.gov,True
+mapaplanet.gov,mapaplanet.gov,False
 mapstats.gov,mapstats.gov,False
 marine.gov,marine.gov,False
 marinecadastre.gov,marinecadastre.gov,True
@@ -1029,7 +1029,7 @@ ratb.gov,ratb.gov,False
 rcfl.gov,rcfl.gov,False
 reachhigher.gov,reachhigher.gov,False
 read.gov,read.gov,False
-ready.gov,ready.gov,True
+ready.gov,ready.gov,False
 readybusiness.gov,readybusiness.gov,False
 reaganlibrary.gov,reaganlibrary.gov,True
 realestatesales.gov,realestatesales.gov,True
@@ -1260,7 +1260,7 @@ uscvc.gov,uscvc.gov,False
 usda.gov,usda.gov,True
 usdapii.gov,usdapii.gov,False
 usdebitcard.gov,usdebitcard.gov,False
-usdoj.gov,usdoj.gov,True
+usdoj.gov,usdoj.gov,False
 usembassy-mexico.gov,usembassy-mexico.gov,False
 usembassy.gov,usembassy.gov,True
 userra.gov,userra.gov,False
