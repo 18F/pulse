@@ -538,6 +538,8 @@ def process_stats():
 
   total = len(https_domains)
   enabled = 0
+  enforced = 0
+  hsts = 0
   for row in https_domains:
     # HTTPS needs to be enabled.
     # It's okay if it has a bad chain.
@@ -547,6 +549,18 @@ def process_stats():
       (row[LABELS['https_forced']] >= 1)
     ):
       enabled += 1
+
+    # Needs to be Default or Strict to be 'Yes'
+    if row[LABELS['https_forced']] >= 2:
+      enforced += 1
+
+    # Needs to be at least partially present
+    if row[LABELS['hsts']] >= 1:
+      hsts += 1
+
+  print("Uses HTTPS: %i%%" % percent(enabled, total))
+  print("Enforces HTTPS: %i%%" % percent(enforced, total))
+  print("Uses HSTS: %i%%" % percent(hsts, total))
 
   pct = percent(enabled, total)
 

@@ -4,7 +4,7 @@ data = {
 
     'https': {
       "-1": "No",
-      '0': "No",
+      '0': "No", # (downgrade redirect)
       '1': "Yes", # (with certificate chain issues)
       '2': "Yes"
     },
