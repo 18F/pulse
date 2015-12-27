@@ -564,7 +564,7 @@ greengov.gov,greengov.gov,False
 gsa.gov,gsa.gov,True
 gsaadvantage.gov,gsaadvantage.gov,True
 gsaauctions.gov,gsaauctions.gov,True
-gsadvantage.gov,gsadvantage.gov,True
+gsadvantage.gov,gsadvantage.gov,False
 gsaig.gov,gsaig.gov,False
 gsaxcess.gov,gsaxcess.gov,True
 guideline.gov,guideline.gov,True
@@ -1029,7 +1029,7 @@ ratb.gov,ratb.gov,False
 rcfl.gov,rcfl.gov,False
 reachhigher.gov,reachhigher.gov,False
 read.gov,read.gov,False
-ready.gov,ready.gov,False
+ready.gov,ready.gov,True
 readybusiness.gov,readybusiness.gov,False
 reaganlibrary.gov,reaganlibrary.gov,True
 realestatesales.gov,realestatesales.gov,True
