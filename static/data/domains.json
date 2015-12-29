@@ -325,33 +325,8 @@
   "achp.gov": {
     "agency": "Advisory Council on Historic Preservation",
     "agency_slug": "advisory-council-on-historic-preservation",
-    "analytics": {
-      "Agency": "Advisory Council on Historic Preservation",
-      "Branch": "executive",
-      "Canonical": "http://achp.gov",
-      "Domain": "achp.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "achp.gov",
-    "https": {
-      "Agency": "Advisory Council on Historic Preservation",
-      "Branch": "executive",
-      "Canonical": "http://achp.gov",
-      "Domain": "achp.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "achp.gov"
   },
   "acl.gov": {
     "agency": "Department of Health And Human Services",
@@ -1057,15 +1032,15 @@
       "Canonical": "http://www.alertaenlinea.gov",
       "Domain": "alertaenlinea.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -1595,15 +1570,15 @@
       "Canonical": "https://amtrakoig.gov",
       "Domain": "amtrakoig.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 1,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": true,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 2,
+      "SSLv3": true,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -1626,15 +1601,15 @@
       "Canonical": "http://www.anchorit.gov",
       "Domain": "anchorit.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 4,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -2096,15 +2071,15 @@
       "Canonical": "https://www.asc.gov",
       "Domain": "asc.gov",
       "Enforces HTTPS": 2,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 2,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 5,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -3730,17 +3705,17 @@
       "Branch": "executive",
       "Canonical": "http://buyaccessible.gov",
       "Domain": "buyaccessible.gov",
-      "Enforces HTTPS": 1,
-      "Forward Secrecy": 0,
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": true,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 0,
-      "SSLv3": true,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": false,
-      "Uses HTTPS": 2
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
     }
   },
   "buyusa.gov": {
@@ -3942,15 +3917,15 @@
       "Canonical": "https://www.capnhq.gov",
       "Domain": "capnhq.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 2,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -3963,33 +3938,8 @@
   "casl.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.casl.gov",
-      "Domain": "casl.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "casl.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.casl.gov",
-      "Domain": "casl.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "casl.gov"
   },
   "cavc.gov": {
     "agency": "The Judicial Branch (Courts)",
@@ -4973,11 +4923,11 @@
       "Canonical": "http://www.citizencorps.gov",
       "Domain": "citizencorps.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 0,
+      "Forward Secrecy": 4,
       "HSTS max-age": null,
       "RC4": false,
       "Redirect": "Yes",
-      "SSL Labs Grade": 4,
+      "SSL Labs Grade": 5,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
@@ -5394,7 +5344,7 @@
     "analytics": {
       "Agency": "Department of the Interior",
       "Branch": "executive",
-      "Canonical": "http://www.coast2050.gov",
+      "Canonical": "http://coast2050.gov",
       "Domain": "coast2050.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -5404,7 +5354,7 @@
     "https": {
       "Agency": "Department of the Interior",
       "Branch": "executive",
-      "Canonical": "http://www.coast2050.gov",
+      "Canonical": "http://coast2050.gov",
       "Domain": "coast2050.gov",
       "Enforces HTTPS": 0,
       "Forward Secrecy": null,
@@ -5738,13 +5688,47 @@
     "agency": "Government Printing Office",
     "agency_slug": "government-printing-office",
     "branch": "legislative",
-    "domain": "congressionaldirectory.gov"
+    "domain": "congressionaldirectory.gov",
+    "https": {
+      "Agency": "Government Printing Office",
+      "Branch": "legislative",
+      "Canonical": "https://www.congressionaldirectory.gov",
+      "Domain": "congressionaldirectory.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 1,
+      "HSTS max-age": null,
+      "RC4": false,
+      "Redirect": "Yes",
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
   },
   "congressionalrecord.gov": {
     "agency": "Government Printing Office",
     "agency_slug": "government-printing-office",
     "branch": "legislative",
-    "domain": "congressionalrecord.gov"
+    "domain": "congressionalrecord.gov",
+    "https": {
+      "Agency": "Government Printing Office",
+      "Branch": "legislative",
+      "Canonical": "https://www.congressionalrecord.gov",
+      "Domain": "congressionalrecord.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 1,
+      "HSTS max-age": null,
+      "RC4": false,
+      "Redirect": "Yes",
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
   },
   "connect.gov": {
     "agency": "General Services Administration",
@@ -5796,15 +5780,15 @@
       "Canonical": "http://www.consumer.gov",
       "Domain": "consumer.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -6039,15 +6023,15 @@
       "Canonical": "http://www.consumidor.gov",
       "Domain": "consumidor.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -6254,7 +6238,7 @@
       "SSLv3": true,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": false,
+      "TLSv1.2": true,
       "Uses HTTPS": 1
     }
   },
@@ -7794,9 +7778,9 @@
       "HSTS max-age": 31536000,
       "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
+      "SSL Labs Grade": 6,
       "SSLv3": false,
-      "Signature Algorithm": "SHA1withRSA",
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 4,
       "TLSv1.2": true,
       "Uses HTTPS": 2
@@ -8716,12 +8700,12 @@
       "HSTS max-age": null,
       "RC4": true,
       "Redirect": "No",
-      "SSL Labs Grade": 2,
+      "SSL Labs Grade": 1,
       "SSLv3": true,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
       "TLSv1.2": true,
-      "Uses HTTPS": 2
+      "Uses HTTPS": 1
     }
   },
   "emergency-federal-register.gov": {
@@ -9021,15 +9005,15 @@
       "Canonical": "http://www.energystar.gov",
       "Domain": "energystar.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 1,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 2,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": false,
       "Uses HTTPS": 2
     }
   },
@@ -9689,7 +9673,7 @@
     "analytics": {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "http://facadatabase.gov",
+      "Canonical": "http://www.facadatabase.gov",
       "Domain": "facadatabase.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -9699,7 +9683,7 @@
     "https": {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "http://facadatabase.gov",
+      "Canonical": "http://www.facadatabase.gov",
       "Domain": "facadatabase.gov",
       "Enforces HTTPS": 0,
       "Forward Secrecy": null,
@@ -9911,15 +9895,15 @@
       "Canonical": "https://www.farmerclaims.gov",
       "Domain": "farmerclaims.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 0,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 0,
+      "SSLv3": true,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": false,
       "Uses HTTPS": 1
     }
   },
@@ -10062,7 +10046,7 @@
       "HSTS max-age": null,
       "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": 0,
+      "SSL Labs Grade": 4,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
@@ -10396,14 +10380,56 @@
   "fdicig.gov": {
     "agency": "Federal Deposit Insurance Corporation",
     "agency_slug": "federal-deposit-insurance-corporation",
+    "analytics": {
+      "Agency": "Federal Deposit Insurance Corporation",
+      "Branch": "executive",
+      "Canonical": "https://www.fdicig.gov",
+      "Domain": "fdicig.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
     "branch": "executive",
-    "domain": "fdicig.gov"
+    "domain": "fdicig.gov",
+    "https": {
+      "Agency": "Federal Deposit Insurance Corporation",
+      "Branch": "executive",
+      "Canonical": "https://www.fdicig.gov",
+      "Domain": "fdicig.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 1,
+      "HSTS max-age": null,
+      "RC4": true,
+      "Redirect": "No",
+      "SSL Labs Grade": 0,
+      "SSLv3": true,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
   },
   "fdicoig.gov": {
     "agency": "Federal Deposit Insurance Corporation",
     "agency_slug": "federal-deposit-insurance-corporation",
     "branch": "executive",
-    "domain": "fdicoig.gov"
+    "domain": "fdicoig.gov",
+    "https": {
+      "Agency": "Federal Deposit Insurance Corporation",
+      "Branch": "executive",
+      "Canonical": "http://www.fdicoig.gov",
+      "Domain": "fdicoig.gov",
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
+      "HSTS max-age": null,
+      "RC4": null,
+      "Redirect": "Yes",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
+    }
   },
   "fdicsales.gov": {
     "agency": "Federal Deposit Insurance Corporation",
@@ -11672,14 +11698,14 @@
       "Domain": "fincen.gov",
       "Enforces HTTPS": 3,
       "Forward Secrecy": 1,
-      "HSTS max-age": null,
+      "HSTS max-age": 31536000,
       "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": 2,
+      "SSL Labs Grade": 3,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": false,
+      "TLSv1.2": true,
       "Uses HTTPS": 1
     }
   },
@@ -12349,17 +12375,17 @@
       "Branch": "executive",
       "Canonical": "http://fmi.gov",
       "Domain": "fmi.gov",
-      "Enforces HTTPS": 1,
-      "Forward Secrecy": 0,
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": true,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 0,
-      "SSLv3": true,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": false,
-      "Uses HTTPS": 2
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
     }
   },
   "fmshrc.gov": {
@@ -12404,15 +12430,15 @@
       "Canonical": "http://fnal.gov",
       "Domain": "fnal.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 1,
+      "Forward Secrecy": 4,
       "HSTS max-age": null,
-      "RC4": true,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": 2,
+      "SSL Labs Grade": 5,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": false,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -13123,7 +13149,7 @@
       "Canonical": "https://www.ftc.gov",
       "Domain": "ftc.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": 4,
       "HSTS max-age": null,
       "RC4": false,
       "Redirect": "No",
@@ -13185,15 +13211,15 @@
       "Canonical": "https://ftcefile.gov",
       "Domain": "ftcefile.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": 31536000,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 1,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -13231,33 +13257,8 @@
   "fueleconomy.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://fueleconomy.gov",
-      "Domain": "fueleconomy.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "fueleconomy.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://fueleconomy.gov",
-      "Domain": "fueleconomy.gov",
-      "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
-      "HSTS max-age": null,
-      "RC4": true,
-      "Redirect": "No",
-      "SSL Labs Grade": 3,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
-      "Uses HTTPS": 2
-    }
+    "domain": "fueleconomy.gov"
   },
   "fvap.gov": {
     "agency": "Department of Defense",
@@ -14490,7 +14491,7 @@
       "Branch": "executive",
       "Canonical": "http://www.gsadvantage.gov",
       "Domain": "gsadvantage.gov",
-      "Participates in DAP?": 1,
+      "Participates in DAP?": 0,
       "Redirect": "No"
     },
     "branch": "executive",
@@ -14519,7 +14520,7 @@
     "analytics": {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "https://www.gsaig.gov",
+      "Canonical": "https://gsaig.gov",
       "Domain": "gsaig.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -14529,17 +14530,17 @@
     "https": {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "https://www.gsaig.gov",
+      "Canonical": "https://gsaig.gov",
       "Domain": "gsaig.gov",
-      "Enforces HTTPS": 2,
-      "Forward Secrecy": 1,
-      "HSTS max-age": null,
-      "RC4": true,
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 2,
+      "HSTS max-age": 31536000,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": 3,
+      "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
+      "Strict Transport Security (HSTS)": 1,
       "TLSv1.2": true,
       "Uses HTTPS": 2
     }
@@ -15533,7 +15534,24 @@
     "agency": "Government Printing Office",
     "agency_slug": "government-printing-office",
     "branch": "legislative",
-    "domain": "housecalendar.gov"
+    "domain": "housecalendar.gov",
+    "https": {
+      "Agency": "Government Printing Office",
+      "Branch": "legislative",
+      "Canonical": "https://www.housecalendar.gov",
+      "Domain": "housecalendar.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 1,
+      "HSTS max-age": null,
+      "RC4": false,
+      "Redirect": "Yes",
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
   },
   "housecommunications.gov": {
     "agency": "The Legislative Branch (Congress)",
@@ -15768,15 +15786,15 @@
       "Canonical": "https://hsr.gov",
       "Domain": "hsr.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": 4,
+      "Forward Secrecy": null,
       "HSTS max-age": 31536000,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 6,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 4,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -16430,15 +16448,15 @@
       "Canonical": "https://identitytheft.gov",
       "Domain": "identitytheft.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -16470,7 +16488,7 @@
       "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": -1,
       "TLSv1.2": null,
-      "Uses HTTPS": 0
+      "Uses HTTPS": -1
     }
   },
   "idtheft.gov": {
@@ -16492,15 +16510,15 @@
       "Canonical": "http://idtheft.gov",
       "Domain": "idtheft.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -17402,64 +17420,14 @@
   "isotope.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "https://isotope.gov",
-      "Domain": "isotope.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "isotope.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "https://isotope.gov",
-      "Domain": "isotope.gov",
-      "Enforces HTTPS": 3,
-      "Forward Secrecy": 1,
-      "HSTS max-age": null,
-      "RC4": true,
-      "Redirect": "No",
-      "SSL Labs Grade": 3,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
-      "Uses HTTPS": 2
-    }
+    "domain": "isotope.gov"
   },
   "isotopes.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "https://isotopes.gov",
-      "Domain": "isotopes.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "isotopes.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "https://isotopes.gov",
-      "Domain": "isotopes.gov",
-      "Enforces HTTPS": 3,
-      "Forward Secrecy": 1,
-      "HSTS max-age": null,
-      "RC4": true,
-      "Redirect": "No",
-      "SSL Labs Grade": 3,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
-      "Uses HTTPS": 2
-    }
+    "domain": "isotopes.gov"
   },
   "istac.gov": {
     "agency": "Central Intelligence Agency",
@@ -18382,6 +18350,14 @@
   "lbl.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
+    "analytics": {
+      "Agency": "Department of Energy",
+      "Branch": "executive",
+      "Canonical": "http://www.lbl.gov",
+      "Domain": "lbl.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
     "branch": "executive",
     "domain": "lbl.gov",
     "https": {
@@ -18393,7 +18369,7 @@
       "Forward Secrecy": 1,
       "HSTS max-age": null,
       "RC4": false,
-      "Redirect": "Yes",
+      "Redirect": "No",
       "SSL Labs Grade": 4,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
@@ -18408,7 +18384,7 @@
     "analytics": {
       "Agency": "Department of the Interior",
       "Branch": "executive",
-      "Canonical": "http://www.lca.gov",
+      "Canonical": "http://lca.gov",
       "Domain": "lca.gov",
       "Participates in DAP?": 0,
       "Redirect": "No"
@@ -18418,7 +18394,7 @@
     "https": {
       "Agency": "Department of the Interior",
       "Branch": "executive",
-      "Canonical": "http://www.lca.gov",
+      "Canonical": "http://lca.gov",
       "Domain": "lca.gov",
       "Enforces HTTPS": 0,
       "Forward Secrecy": null,
@@ -18857,11 +18833,11 @@
       "Canonical": "http://www.llis.gov",
       "Domain": "llis.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 0,
+      "Forward Secrecy": 4,
       "HSTS max-age": null,
       "RC4": false,
       "Redirect": "Yes",
-      "SSL Labs Grade": 4,
+      "SSL Labs Grade": 5,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
@@ -19618,33 +19594,8 @@
   "mcrmc.gov": {
     "agency": "Department of Defense",
     "agency_slug": "department-of-defense",
-    "analytics": {
-      "Agency": "Department of Defense",
-      "Branch": "executive",
-      "Canonical": "http://www.mcrmc.gov",
-      "Domain": "mcrmc.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "mcrmc.gov",
-    "https": {
-      "Agency": "Department of Defense",
-      "Branch": "executive",
-      "Canonical": "http://www.mcrmc.gov",
-      "Domain": "mcrmc.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "mcrmc.gov"
   },
   "mda.gov": {
     "agency": "Department of Transportation",
@@ -20315,7 +20266,7 @@
       "Domain": "msb.gov",
       "Enforces HTTPS": 0,
       "Forward Secrecy": null,
-      "HSTS max-age": null,
+      "HSTS max-age": 31536000,
       "RC4": null,
       "Redirect": "Yes",
       "SSL Labs Grade": -1,
@@ -21370,56 +21321,14 @@
   "nccrc.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://nccrc.gov",
-      "Domain": "nccrc.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "nccrc.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://nccrc.gov",
-      "Domain": "nccrc.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "nccrc.gov"
   },
   "nccs.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
     "branch": "executive",
-    "domain": "nccs.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.nccs.gov",
-      "Domain": "nccs.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "Yes",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "nccs.gov"
   },
   "ncd.gov": {
     "agency": "National Council on Disability",
@@ -21618,15 +21527,15 @@
       "Canonical": "http://www.ncpw.gov",
       "Domain": "ncpw.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -21639,33 +21548,8 @@
   "ncrc.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.ncrc.gov",
-      "Domain": "ncrc.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "ncrc.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.ncrc.gov",
-      "Domain": "ncrc.gov",
-      "Enforces HTTPS": 1,
-      "Forward Secrecy": 1,
-      "HSTS max-age": null,
-      "RC4": true,
-      "Redirect": "No",
-      "SSL Labs Grade": 2,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
-      "Uses HTTPS": 2
-    }
+    "domain": "ncrc.gov"
   },
   "ncsc.gov": {
     "agency": "Director of National Intelligence",
@@ -23350,24 +23234,7 @@
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
     "branch": "executive",
-    "domain": "ntrc.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.ntrc.gov",
-      "Domain": "ntrc.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "Yes",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "ntrc.gov"
   },
   "ntsb.gov": {
     "agency": "National Transportation Safety Board",
@@ -24007,15 +23874,15 @@
       "Canonical": "http://www.onguardonline.gov",
       "Domain": "onguardonline.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -24177,15 +24044,15 @@
       "Canonical": "https://www.opensource.gov",
       "Domain": "opensource.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 1,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 4,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -24230,17 +24097,17 @@
       "Branch": "executive",
       "Canonical": "https://www.opic.gov",
       "Domain": "opic.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 4,
+      "HSTS max-age": 15768000,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
+      "SSL Labs Grade": 6,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 1,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
     }
   },
   "opm.gov": {
@@ -25355,17 +25222,17 @@
       "Branch": "executive",
       "Canonical": "http://pic.gov",
       "Domain": "pic.gov",
-      "Enforces HTTPS": 1,
-      "Forward Secrecy": 0,
-      "HSTS max-age": 31536000,
-      "RC4": true,
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
+      "HSTS max-age": null,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 0,
-      "SSLv3": true,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 4,
-      "TLSv1.2": false,
-      "Uses HTTPS": 2
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
     }
   },
   "piedrasblancas.gov": {
@@ -25457,7 +25324,7 @@
     "analytics": {
       "Agency": "Office of Personnel Management",
       "Branch": "executive",
-      "Canonical": "http://www.pmf.gov",
+      "Canonical": "http://pmf.gov",
       "Domain": "pmf.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -25467,7 +25334,7 @@
     "https": {
       "Agency": "Office of Personnel Management",
       "Branch": "executive",
-      "Canonical": "http://www.pmf.gov",
+      "Canonical": "http://pmf.gov",
       "Domain": "pmf.gov",
       "Enforces HTTPS": 1,
       "Forward Secrecy": 2,
@@ -25786,39 +25653,31 @@
   "preserveamerica.gov": {
     "agency": "Advisory Council on Historic Preservation",
     "agency_slug": "advisory-council-on-historic-preservation",
-    "analytics": {
-      "Agency": "Advisory Council on Historic Preservation",
-      "Branch": "executive",
-      "Canonical": "http://preserveamerica.gov",
-      "Domain": "preserveamerica.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "preserveamerica.gov",
-    "https": {
-      "Agency": "Advisory Council on Historic Preservation",
-      "Branch": "executive",
-      "Canonical": "http://preserveamerica.gov",
-      "Domain": "preserveamerica.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "preserveamerica.gov"
   },
   "presidentialdocuments.gov": {
     "agency": "Government Printing Office",
     "agency_slug": "government-printing-office",
     "branch": "legislative",
-    "domain": "presidentialdocuments.gov"
+    "domain": "presidentialdocuments.gov",
+    "https": {
+      "Agency": "Government Printing Office",
+      "Branch": "legislative",
+      "Canonical": "https://www.presidentialdocuments.gov",
+      "Domain": "presidentialdocuments.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 1,
+      "HSTS max-age": null,
+      "RC4": false,
+      "Redirect": "Yes",
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
   },
   "presidentialinnovationfellows.gov": {
     "agency": "General Services Administration",
@@ -25917,7 +25776,24 @@
     "agency": "Executive Office of the President",
     "agency_slug": "executive-office-of-the-president",
     "branch": "executive",
-    "domain": "presidiotrust.gov"
+    "domain": "presidiotrust.gov",
+    "https": {
+      "Agency": "Executive Office of the President",
+      "Branch": "executive",
+      "Canonical": "http://www.presidiotrust.gov",
+      "Domain": "presidiotrust.gov",
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
+      "HSTS max-age": null,
+      "RC4": null,
+      "Redirect": "Yes",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
+    }
   },
   "pretrialservices.gov": {
     "agency": "Court Services and Offender Supervision",
@@ -26038,15 +25914,15 @@
       "Canonical": "http://www.protecciondelconsumidor.gov",
       "Domain": "protecciondelconsumidor.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -26092,15 +25968,15 @@
       "Canonical": "http://psa.gov",
       "Domain": "psa.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": null,
+      "Forward Secrecy": 2,
       "HSTS max-age": null,
-      "RC4": null,
+      "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
+      "SSL Labs Grade": 5,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": null,
+      "TLSv1.2": true,
       "Uses HTTPS": 2
     }
   },
@@ -26477,7 +26353,7 @@
       "Branch": "executive",
       "Canonical": "http://www.ready.gov",
       "Domain": "ready.gov",
-      "Participates in DAP?": 0,
+      "Participates in DAP?": 1,
       "Redirect": "No"
     },
     "branch": "executive",
@@ -27071,15 +26947,15 @@
       "Canonical": "https://robodeidentidad.gov",
       "Domain": "robodeidentidad.gov",
       "Enforces HTTPS": 3,
-      "Forward Secrecy": 2,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
       "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
+      "TLSv1.2": null,
       "Uses HTTPS": 2
     }
   },
@@ -27321,7 +27197,7 @@
     "analytics": {
       "Agency": "Department of Transportation",
       "Branch": "executive",
-      "Canonical": "http://safertruck.gov",
+      "Canonical": "http://www.safertruck.gov",
       "Domain": "safertruck.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -27331,7 +27207,7 @@
     "https": {
       "Agency": "Department of Transportation",
       "Branch": "executive",
-      "Canonical": "http://safertruck.gov",
+      "Canonical": "http://www.safertruck.gov",
       "Domain": "safertruck.gov",
       "Enforces HTTPS": 0,
       "Forward Secrecy": null,
@@ -27800,33 +27676,8 @@
   "scidac.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.scidac.gov",
-      "Domain": "scidac.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "scidac.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://www.scidac.gov",
-      "Domain": "scidac.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "scidac.gov"
   },
   "science.gov": {
     "agency": "Department of Energy",
@@ -28806,33 +28657,8 @@
   "sns.gov": {
     "agency": "Department of Energy",
     "agency_slug": "department-of-energy",
-    "analytics": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://sns.gov",
-      "Domain": "sns.gov",
-      "Participates in DAP?": 0,
-      "Redirect": "No"
-    },
     "branch": "executive",
-    "domain": "sns.gov",
-    "https": {
-      "Agency": "Department of Energy",
-      "Branch": "executive",
-      "Canonical": "http://sns.gov",
-      "Domain": "sns.gov",
-      "Enforces HTTPS": 0,
-      "Forward Secrecy": null,
-      "HSTS max-age": null,
-      "RC4": null,
-      "Redirect": "No",
-      "SSL Labs Grade": -1,
-      "SSLv3": null,
-      "Signature Algorithm": null,
-      "Strict Transport Security (HSTS)": -1,
-      "TLSv1.2": null,
-      "Uses HTTPS": -1
-    }
+    "domain": "sns.gov"
   },
   "socialsecurity.gov": {
     "agency": "Social Security Administration",
@@ -29512,7 +29338,7 @@
     "analytics": {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "http://supportthevoter.gov",
+      "Canonical": "http://www.supportthevoter.gov",
       "Domain": "supportthevoter.gov",
       "Participates in DAP?": 1,
       "Redirect": "No"
@@ -29522,7 +29348,7 @@
     "https": {
       "Agency": "General Services Administration",
       "Branch": "executive",
-      "Canonical": "http://supportthevoter.gov",
+      "Canonical": "http://www.supportthevoter.gov",
       "Domain": "supportthevoter.gov",
       "Enforces HTTPS": 1,
       "Forward Secrecy": 1,
@@ -30624,7 +30450,7 @@
       "Domain": "tsp.gov",
       "Enforces HTTPS": 3,
       "Forward Secrecy": 2,
-      "HSTS max-age": 1480879294,
+      "HSTS max-age": 1482523841,
       "RC4": false,
       "Redirect": "No",
       "SSL Labs Grade": 6,
@@ -31547,7 +31373,7 @@
       "HSTS max-age": null,
       "RC4": false,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
+      "SSL Labs Grade": 6,
       "SSLv3": false,
       "Signature Algorithm": "SHA256withRSA",
       "Strict Transport Security (HSTS)": 0,
@@ -31586,19 +31412,19 @@
     "https": {
       "Agency": "The Legislative Branch (Congress)",
       "Branch": "legislative",
-      "Canonical": "https://www.usbg.gov",
+      "Canonical": "http://usbg.gov",
       "Domain": "usbg.gov",
-      "Enforces HTTPS": 3,
-      "Forward Secrecy": 2,
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
       "HSTS max-age": null,
-      "RC4": false,
+      "RC4": null,
       "Redirect": "No",
-      "SSL Labs Grade": 5,
-      "SSLv3": false,
-      "Signature Algorithm": "SHA256withRSA",
-      "Strict Transport Security (HSTS)": 0,
-      "TLSv1.2": true,
-      "Uses HTTPS": 2
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
     }
   },
   "usbm.gov": {
@@ -31843,7 +31669,24 @@
     "agency": "Government Printing Office",
     "agency_slug": "government-printing-office",
     "branch": "legislative",
-    "domain": "uscode.gov"
+    "domain": "uscode.gov",
+    "https": {
+      "Agency": "Government Printing Office",
+      "Branch": "legislative",
+      "Canonical": "https://www.uscode.gov",
+      "Domain": "uscode.gov",
+      "Enforces HTTPS": 3,
+      "Forward Secrecy": 1,
+      "HSTS max-age": null,
+      "RC4": false,
+      "Redirect": "Yes",
+      "SSL Labs Grade": 3,
+      "SSLv3": false,
+      "Signature Algorithm": "SHA256withRSA",
+      "Strict Transport Security (HSTS)": 0,
+      "TLSv1.2": true,
+      "Uses HTTPS": 2
+    }
   },
   "uscongress.gov": {
     "agency": "Library of Congress",
@@ -32767,7 +32610,7 @@
       "Canonical": "http://ustaxcourt.gov",
       "Domain": "ustaxcourt.gov",
       "Enforces HTTPS": 1,
-      "Forward Secrecy": 1,
+      "Forward Secrecy": 2,
       "HSTS max-age": null,
       "RC4": true,
       "Redirect": "No",
@@ -33316,8 +33159,33 @@
   "volcano.gov": {
     "agency": "Department of the Interior",
     "agency_slug": "department-of-the-interior",
+    "analytics": {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "http://www.volcano.gov",
+      "Domain": "volcano.gov",
+      "Participates in DAP?": 0,
+      "Redirect": "No"
+    },
     "branch": "executive",
-    "domain": "volcano.gov"
+    "domain": "volcano.gov",
+    "https": {
+      "Agency": "Department of the Interior",
+      "Branch": "executive",
+      "Canonical": "http://www.volcano.gov",
+      "Domain": "volcano.gov",
+      "Enforces HTTPS": 0,
+      "Forward Secrecy": null,
+      "HSTS max-age": null,
+      "RC4": null,
+      "Redirect": "No",
+      "SSL Labs Grade": -1,
+      "SSLv3": null,
+      "Signature Algorithm": null,
+      "Strict Transport Security (HSTS)": -1,
+      "TLSv1.2": null,
+      "Uses HTTPS": -1
+    }
   },
   "volunteer.gov": {
     "agency": "Department of the Interior",
