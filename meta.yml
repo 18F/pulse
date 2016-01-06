@@ -10,6 +10,6 @@ description: "How federal government domains are meeting best practices on the w
 # When the data we used was generated. Manually updated for now.
 data:
   # The export date for the .gov domain list.
-  domains: 2015-03-15
+  domains: 2015-11-03
   # The scan date.
-  scan: 2015-12-26
+  scan: 2016-01-02
