@@ -17,7 +17,7 @@
     },
     {
       "Agency": "African Development Foundation",
-      "Number of Domains": 1,
+      "Number of Domains": 2,
       "Participates in DAP?": 0
     },
     {
@@ -118,7 +118,7 @@
     {
       "Agency": "Department of Defense",
       "Number of Domains": 24,
-      "Participates in DAP?": 38
+      "Participates in DAP?": 46
     },
     {
       "Agency": "Department of Education",
@@ -132,7 +132,7 @@
     },
     {
       "Agency": "Department of Health And Human Services",
-      "Number of Domains": 74,
+      "Number of Domains": 75,
       "Participates in DAP?": 32
     },
     {
@@ -147,8 +147,8 @@
     },
     {
       "Agency": "Department of Justice",
-      "Number of Domains": 23,
-      "Participates in DAP?": 65
+      "Number of Domains": 24,
+      "Participates in DAP?": 67
     },
     {
       "Agency": "Department of Labor",
@@ -158,7 +158,7 @@
     {
       "Agency": "Department of State",
       "Number of Domains": 16,
-      "Participates in DAP?": 44
+      "Participates in DAP?": 50
     },
     {
       "Agency": "Department of Transportation",
@@ -178,7 +178,7 @@
     {
       "Agency": "Department of the Treasury",
       "Number of Domains": 72,
-      "Participates in DAP?": 62
+      "Participates in DAP?": 64
     },
     {
       "Agency": "Director of National Intelligence",
@@ -188,7 +188,7 @@
     {
       "Agency": "Environmental Protection Agency",
       "Number of Domains": 11,
-      "Participates in DAP?": 55
+      "Participates in DAP?": 73
     },
     {
       "Agency": "Equal Employment Opportunity Commission",
@@ -554,11 +554,6 @@
       "Agency": "U.S. Postal Service, Office of Inspector General",
       "Number of Domains": 1,
       "Participates in DAP?": 0
-    },
-    {
-      "Agency": "U.S. Trade and Development Agency",
-      "Number of Domains": 1,
-      "Participates in DAP?": 100
     },
     {
       "Agency": "US Interagency Council on Homelessness",
