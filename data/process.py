@@ -2,7 +2,7 @@
 
 ###
 #
-# Given, in the data/ directory:
+# Given, in the data/output/scan/results directory:
 #
 # * domains.csv - federal domains, subset of .gov domain list.
 # * inspect.csv - output of domain-scan
