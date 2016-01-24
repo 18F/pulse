@@ -16,8 +16,10 @@ app.debug = True
 # Load the data into memory.
 #
 
-agencies = json.load(open("static/data/agencies.json"))
-domains = json.load(open("static/data/domains.json"))
+# TODO: Where am I getting this from now that these are in S3?
+# TODO: Uncomment landing pages.
+# agencies = json.load(open("static/data/agencies.json"))
+# domains = json.load(open("static/data/domains.json"))
 from app import data
 
 
@@ -76,21 +78,19 @@ def analytics_agencies():
 def analytics_guide():
     return render_template("analytics/guide.html")
 
-# TODO: Take in an agency slug, look up data and pass it to template.
-@app.route("/agency/<slug>")
-def agency(slug=None):
-    if agencies.get(slug) is None:
-        pass # TODO: 404
+# @app.route("/agency/<slug>")
+# def agency(slug=None):
+#     if agencies.get(slug) is None:
+#         pass # TODO: 404
 
-    return render_template("agency.html", agency=agencies[slug])
+#     return render_template("agency.html", agency=agencies[slug])
 
-# TODO: Take in a domain name, look up data and pass it to template.
-@app.route("/domain/<hostname>")
-def domain(hostname=None):
-    if domains.get(hostname) is None:
-        pass # TODO: 404
+# @app.route("/domain/<hostname>")
+# def domain(hostname=None):
+#     if domains.get(hostname) is None:
+#         pass # TODO: 404
 
-    return render_template("domain.html", domain=domains[hostname])
+#     return render_template("domain.html", domain=domains[hostname])
 
 
 
