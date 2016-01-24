@@ -30,6 +30,14 @@ make run
 make watch
 ```
 
+* If necessary, download the last published scan and processed data from the production S3 bucket by running:
+
+```bash
+make data_init
+```
+
+You will need the `aws` CLI installed and configured with valid S3 access credentials.
+
 ## Deploying the site
 
 The site can be easily deployed (by someone with credentials to the right server) through [Fabric](https://github.com/fabric/fabric), which requires Python 2.
@@ -105,10 +113,10 @@ This will use the scanned data to create the high-level conclusions Pulse displa
 * Upload Pulse's data to S3 using the `aws` command line tool. Tested on version `1.10.0` of the `awscli` package in `pip`.
 
 ```bash
-aws s3 sync data/output/processed/ s3://pulse.cio.gov/live/data/ --acl=public-read
-
-today=$(date +%Y-%m-%d) aws s3 sync data/output/processed/ s3://pulse.cio.gov/$today/data/ --acl=public-read
+make data_publish
 ```
+
+This runs a set of `aws s3 sync` commands that publishes some of the contents of `data/output` to our production S3 bucket.
 
 
 ## Ideas for later versions
