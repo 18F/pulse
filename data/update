@@ -9,7 +9,7 @@
 # * tls.csv - output of domain-scan
 # * analytics.csv - output of domain-scan
 #
-# Produce, in the static/data directory:
+# Produce, in the data/output/processed directory:
 #
 # = donut power
 # * analytics.csv
@@ -38,8 +38,8 @@ import slugify
 
 ## Output dirs.
 
-TABLE_DATA = "../static/data/tables"
-STATS_DATA = "../static/data"
+TABLE_DATA = "./output/processed/tables"
+STATS_DATA = "./output/processed"
 
 
 LABELS = {
@@ -665,6 +665,8 @@ def save_stats():
   save_csv(analytics_stats, STATS_DATA, "analytics.csv")
 
 def save_csv(rows, directory, filename):
+  full_output = os.path.join(directory, filename)
+  os.makedirs(os.path.dirname(full_output), exist_ok=True)
   f = open(os.path.join(directory, filename), 'w', newline='')
   writer = csv.writer(f)
   for row in rows:
@@ -723,6 +725,7 @@ def write(content, destination):
     f = open(destination, 'w', encoding='utf-8')
     f.write(content)
     f.close()
+
 
 ### Stupid mapping sync.
 
