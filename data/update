@@ -36,10 +36,15 @@ import json
 import os
 import slugify
 
-## Output dirs.
 
-TABLE_DATA = "./output/processed/tables"
-STATS_DATA = "./output/processed"
+## Input and output dirs, relative to this file.
+this_dir = os.path.dirname(__file__)
+
+TABLE_DATA = os.path.join(this_dir, "./output/processed/tables")
+STATS_DATA = os.path.join(this_dir, "./output/processed")
+
+INPUT_DOMAINS_DATA = os.path.join(this_dir, "./")
+INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")
 
 
 LABELS = {
@@ -115,7 +120,7 @@ def load_data():
 
   # load in base data from the .gov domain list
 
-  with open("domains.csv", newline='') as csvfile:
+  with open(os.path.join(INPUT_DOMAINS_DATA, "domains.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
       if row[0].lower().startswith("domain"):
         continue
@@ -171,7 +176,7 @@ def load_data():
     agency_map[slug]['total_domains'] = len(agency_data[agency])
 
   headers = []
-  with open("inspect.csv", newline='') as csvfile:
+  with open(os.path.join(INPUT_SCAN_DATA, "inspect.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
       if (row[0].lower() == "domain"):
         headers = row
@@ -188,7 +193,7 @@ def load_data():
       domain_data[domain]['inspect'] = dict_row
 
   headers = []
-  with open("tls.csv", newline='') as csvfile:
+  with open(os.path.join(INPUT_SCAN_DATA, "tls.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
       if (row[0].lower() == "domain"):
         headers = row
@@ -209,7 +214,7 @@ def load_data():
 
   # Now, analytics measurement.
   headers = []
-  with open("analytics.csv", newline='') as csvfile:
+  with open(os.path.join(INPUT_SCAN_DATA, "analytics.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
       if (row[0].lower() == "domain"):
         headers = row
