@@ -102,10 +102,12 @@ data:
 
 This will use the scanned data to create the high-level conclusions Pulse displays to users and makes available for download.
 
-* Upload Pulse's data to S3.
+* Upload Pulse's data to S3 using the `aws` command line tool. Tested on version `1.10.0` of the `awscli` package in `pip`.
 
 ```bash
-today=$(date +%Y-%m-%d) s3cmd put --recursive --no-preserve -P -M --add-header="Cache-Control:max-age=0" data/output/processed/* s3://pulse.cio.gov/live/data/ && s3cmd put --recursive --no-preserve -P -M --add-header="Cache-Control:max-age=0" data/output/processed/* s3://pulse.cio.gov/snapshots/$today/data/
+aws s3 sync data/output/processed/ s3://pulse.cio.gov/live/data/ --acl=public-read
+
+today=$(date +%Y-%m-%d) aws s3 sync data/output/processed/ s3://pulse.cio.gov/$today/data/ --acl=public-read
 ```
 
 
