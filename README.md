@@ -105,7 +105,7 @@ This will use the scanned data to create the high-level conclusions Pulse displa
 * Upload Pulse's data to S3.
 
 ```bash
-today=$(date +%Y-%m-%d) s3cmd put --recursive -P -M --add-header="Cache-Control:max-age=0" data/output/processed/* s3://pulse.cio.gov/live/data/ && s3cmd put --recursive -P -M --add-header="Cache-Control:max-age=0" data/output/processed/* s3://pulse.cio.gov/snapshots/$today/data/
+today=$(date +%Y-%m-%d) s3cmd put --recursive --no-preserve -P -M --add-header="Cache-Control:max-age=0" data/output/processed/* s3://pulse.cio.gov/live/data/ && s3cmd put --recursive --no-preserve -P -M --add-header="Cache-Control:max-age=0" data/output/processed/* s3://pulse.cio.gov/snapshots/$today/data/
 ```
 
 
