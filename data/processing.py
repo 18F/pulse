@@ -741,7 +741,7 @@ getting replicated to the JavaScript files in this repository,
 and needs to be manually synced.
 
 The refactor that takes away from DataTables should also prioritize
-a cleaner way to DRY (don't repeat yourself) this mess up.
+a cleaner way to DRY ("don't repeat yourself") this mess up.
 """
 CSV_HTTPS_MAPPING = {
 
