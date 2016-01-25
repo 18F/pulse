@@ -1,5 +1,7 @@
 /data/output
 
+.env
+
 logs
 *.log
 /.sass-cache
