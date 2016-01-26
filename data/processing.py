@@ -11,11 +11,6 @@
 #
 # Produce, in the data/output/processed directory:
 #
-#
-# = landing pages
-# * agencies.json
-# * domains.json
-#
 # = table power
 # * tables/https/agencies.json
 # * tables/https/domains.json
@@ -44,37 +39,6 @@ INPUT_DOMAINS_DATA = os.path.join(this_dir, "./")
 INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")
 
 
-LABELS = {
-  'https': 'Uses HTTPS',
-  'https_forced': 'Enforces HTTPS',
-  'hsts': 'Strict Transport Security (HSTS)',
-  'hsts_age': 'HSTS max-age',
-  'grade': 'SSL Labs Grade',
-  'grade_agencies': 'SSL Labs (A- or higher)',
-  'dap': 'Participates in DAP?',
-  'fs': 'Forward Secrecy',
-  'rc4': 'RC4',
-  'sig': 'Signature Algorithm',
-  'ssl3': 'SSLv3',
-  'tls12': 'TLSv1.2',
-
-  # used in export CSVs
-  'agency': 'Agency',
-  'canonical': 'URL',
-  'domain': 'Domain',
-  'redirect': 'Redirect',
-  'branch': 'Branch'
-}
-
-# rows to put in public CSV export
-CSV_HTTPS_DOMAINS = [
-  'domain', 'branch', 'agency', 'redirect', 'https',  'https_forced', 'hsts', 'grade'
-]
-CSV_DAP_DOMAINS = [
-  'domain', 'branch', 'agency', 'redirect', 'dap'
-]
-
-
 
 ## global data
 
@@ -83,8 +47,8 @@ domain_data = {}
 agency_data = {}
 
 # lists of uniquely seen domains and agencies, in order
-domains = []
-agencies = []
+all_domains = []
+all_agencies = []
 
 # Data as prepared for landing page rendering.
 domain_map = {}
@@ -100,6 +64,7 @@ analytics_agencies = []
 # Main task flow.
 
 from app import models
+from app.data import LABELS, CSV_HTTPS_DOMAINS, CSV_DAP_DOMAINS
 
 def run(date):
   models.clear_database()
@@ -114,6 +79,7 @@ def run(date):
   # Create report percents for each category, save them.
   reports = latest_reports()
   for report in reports:
+    print(report)
     models.Report.update(report)
 
   # Save domains.json and agencies.json for all types.
@@ -125,6 +91,7 @@ def load_data():
 
   # load in base data from the .gov domain list
 
+  # TODO: get rid of domains.csv in the repo
   with open(os.path.join(INPUT_DOMAINS_DATA, "domains.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
       if row[0].lower().startswith("domain"):
@@ -143,8 +110,8 @@ def load_data():
       if branch == "non-federal":
         continue
 
-      if domain not in domains:
-        domains.append(domain)
+      if domain not in all_domains:
+        all_domains.append(domain)
         domain_map[domain] = {
           'domain': domain,
           'branch': branch,
@@ -152,8 +119,8 @@ def load_data():
           'agency_slug': slugify.slugify(agency)
         }
 
-      if agency not in agencies:
-        agencies.append(agency)
+      if agency not in all_agencies:
+        all_agencies.append(agency)
 
         slug = slugify.slugify(agency)
         agency_map[slug] = {
@@ -172,11 +139,11 @@ def load_data():
       }
 
   # sort uniquely seen domains and agencies
-  domains.sort()
-  agencies.sort()
+  all_domains.sort()
+  all_agencies.sort()
 
   # store total domains we found
-  for agency in agencies:
+  for agency in all_agencies:
     slug = slugify.slugify(agency)
     agency_map[slug]['total_domains'] = len(agency_data[agency])
 
@@ -246,7 +213,7 @@ def load_data():
 def process_domains():
 
   # First, process all domains.
-  for domain in domains:
+  for domain in all_domains:
     if evaluating_for_https(domain):
       row = https_row_for(domain)
       domain_map[domain]['https'] = row
@@ -258,7 +225,7 @@ def process_domains():
       analytics_domains.append(row)
 
   # Second, process each agency's domains.
-  for agency in agencies:
+  for agency in all_agencies:
 
     https_total = 0
     https_stats = {
@@ -566,10 +533,6 @@ def latest_reports():
     # Needs to be at least partially present
     if row[LABELS['hsts']] >= 1:
       hsts += 1
-
-  print("Uses HTTPS: %i%%" % percent(enabled, total))
-  print("Enforces HTTPS: %i%%" % percent(enforced, total))
-  print("Uses HSTS: %i%%" % percent(hsts, total))
 
   https_report = {
     'https': {
