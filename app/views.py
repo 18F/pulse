@@ -1,11 +1,10 @@
 
-from flask import render_template
+from flask import render_template, Response
 from app import models
+import ujson
 
 def register(app):
 
-  ###
-  # Routes
   @app.route("/")
   def index():
       return render_template("index.html")
@@ -13,6 +12,16 @@ def register(app):
   @app.route("/about/")
   def about():
       return render_template("about.html")
+
+  ##
+  # Data endpoints.
+
+  @app.route("/data/reports/<report_name>.json")
+  def report(report_name):
+    response = Response(ujson.dumps(models.Report.latest().get(report_name, {})))
+    response.headers['Content-Type'] = 'application/json'
+    return response
+
 
   @app.route("/https/domains/")
   def https_domains():
