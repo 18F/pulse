@@ -21,6 +21,10 @@ watch:
 clean:
 	rm -f $(css)
 
+# Runs the data update script.
+update:
+	python -m data.update
+
 # downloads latest snapshot of data locally
 data_init:
 	aws s3 sync s3://pulse.cio.gov/live/scan/ data/output/scan/results/

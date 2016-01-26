@@ -57,7 +57,7 @@ This will run the fabric command to deploy to production.
 The command to update the data in Pulse and publish it to production is simple:
 
 ```
-./data/update
+python -m data.update
 ```
 
 **But you will need to do some setup first.**
@@ -92,7 +92,7 @@ And link it to AWS credentials that allow authorized write access to the `pulse.
 From the Pulse root directory:
 
 ```
-./data/update
+python -m data.update
 ```
 
 This will kick off the `domain-scan` scanning process for HTTP/HTTPS and DAP participation, using the `.gov` domain list as specified in `meta.yml` for the base set of domains to scan.
