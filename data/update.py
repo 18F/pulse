@@ -1,12 +1,17 @@
-#!/usr/bin/env python
+##
+# This file must be run as a module in order for it to access
+# modules in sibling directories.
+#
+# Run with:
+#   python -m data.update
 
 import subprocess
 import datetime
-import processing
 import os
 import yaml
 import logging
 
+import data.processing
 
 # Orchestrate the overall regular Pulse update process.
 #
@@ -19,13 +24,11 @@ import logging
 #    - TODO: How should an admin be notified of an error?
 #
 # 2. Run processing.py to generate front-end-ready data.
+#    - TODO: Refresh application database with latest data.
 #    - TODO: Slim down what this generates, make more server-generated.
 #    - Will drop results into data/output/processed
 #
-# 3. TODO: Refresh application database with latest data.
-#    - Likely to be SQLite.
-#
-# 4. Upload data to S3.
+# 3. Upload data to S3.
 #    - Depends on the AWS CLI and access credentials already being configured.
 #    - TODO: Stop uploading to /live/, make it server-generated.
 #    - TODO: Consider moving from aws CLI to Python library.
@@ -47,6 +50,11 @@ SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
 SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics")
 ANALYTICS_URL = "https://analytics.usa.gov/data/live/second-level-domains.csv"
 
+# TODO:
+# --date: override date
+# --skip-scan: skip the scanning part (rely on local scan data)
+# --skip-upload: don't bother uploading anything to S3
+
 def run():
   # Definitive scan date for the run.
   the_date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
@@ -54,23 +62,21 @@ def run():
   # Kick off domain-scan.
   print("[%s] Kicking off a scan." % the_date)
   print()
-  scan()
+  # scan()
   print()
   print("[%s] Domain-scan complete." % the_date)
 
   # 2. Process scan data to be front-end-ready.
   print("[%s] Running Pulse post-processor." % the_date)
   print()
-  processing.run()
+  data.processing.run(the_date)
   print()
   print("[%s] Processed data now in output/data/processed." % the_date)
 
-  # TODO: Refresh application database.
-
-  # 4. Upload data to S3.
+  # 3. Upload data to S3.
   print("[%s] Syncing processed data to S3." % the_date)
   print()
-  upload(the_date)
+  # upload(the_date)
   print()
   print("[%s] Processed data now in S3." % the_date)
 

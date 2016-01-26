@@ -11,9 +11,6 @@
 #
 # Produce, in the data/output/processed directory:
 #
-# = donut power
-# * analytics.csv
-# * https.csv
 #
 # = landing pages
 # * agencies.json
@@ -99,20 +96,28 @@ analytics_domains = []
 https_agencies = []
 analytics_agencies = []
 
-# Stats data as prepared for direct rendering.
-https_stats = []
-analytics_stats = []
-
 ###
 # Main task flow.
 
-def run():
+from app import models
+
+def run(date):
+  models.clear_database()
+  models.Report.create(date)
+
+  # Read in scan CSVs.
   load_data()
+
+  # Calculate high-level conclusions.
   process_domains()
-  process_stats()
+
+  # Create report percents for each category, save them.
+  reports = latest_reports()
+  for report in reports:
+    models.Report.update(report)
+
+  # Save domains.json and agencies.json for all types.
   save_tables()
-  save_stats()
-  save_landing_data()
 
 
 # Reads in input CSVs.
@@ -538,8 +543,7 @@ def analytics_row_for(domain):
   return row
 
 # Make a tiny CSV about each stat, to be downloaded for D3 rendering.
-def process_stats():
-  global https_stats, analytics_stats
+def latest_reports():
 
   total = len(https_domains)
   enabled = 0
@@ -567,13 +571,14 @@ def process_stats():
   print("Enforces HTTPS: %i%%" % percent(enforced, total))
   print("Uses HSTS: %i%%" % percent(hsts, total))
 
-  pct = percent(enabled, total)
-
-  https_stats = [
-    ['status', 'value'],
-    ['active', pct],
-    ['inactive', 100-pct]
-  ]
+  https_report = {
+    'https': {
+      'eligible': total,
+      'uses': percent(enabled, total),
+      'enforces': percent(enforced, total),
+      'hsts': percent(hsts, total)
+    }
+  }
 
   total = len(analytics_domains)
   enabled = 0
@@ -581,14 +586,16 @@ def process_stats():
     # Enabled ('Yes')
     if row[LABELS['dap']] >= 1:
       enabled += 1
-  pct = percent(enabled, total)
 
-  analytics_stats = [
-    ['status', 'value'],
-    ['active', pct],
-    ['inactive', 100-pct]
-  ]
 
+  analytics_report = {
+    'analytics': {
+      'eligible': total,
+      'participating': percent(enabled, total)
+    }
+  }
+
+  return [https_report, analytics_report]
 
 def percent(num, denom):
   return round((num / denom) * 100)
@@ -664,11 +671,6 @@ def save_tables():
   analytics_agencies_data = json_for({'data': analytics_agencies})
   write(analytics_agencies_data, analytics_agencies_path)
 
-# Given the rows we've made, save some top-level #'s to disk.
-def save_stats():
-  save_csv(https_stats, STATS_DATA, "https.csv")
-  save_csv(analytics_stats, STATS_DATA, "analytics.csv")
-
 def save_csv(rows, directory, filename):
   full_output = os.path.join(directory, filename)
   os.makedirs(os.path.dirname(full_output), exist_ok=True)
@@ -677,13 +679,6 @@ def save_csv(rows, directory, filename):
   for row in rows:
     writer.writerow(row)
   f.close()
-
-def save_landing_data():
-  agency_file = os.path.join(STATS_DATA, "agencies.json")
-  write(json_for(agency_map), agency_file)
-
-  domain_file = os.path.join(STATS_DATA, "domains.json")
-  write(json_for(domain_map), domain_file)
 
 
 ### utilities
