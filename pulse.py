@@ -64,6 +64,18 @@ def https_agencies():
 def https_guide():
     return render_template("https/guide.html")
 
+@app.route("/accessibility/domains/")
+def accessibility_domains():
+    return render_template("accessibility/domains.html")
+
+@app.route("/accessibility/agencies/")
+def accessibility_agencies():
+    return render_template("accessibility/agencies.html")
+
+@app.route("/accessibility/guidance/")
+def accessibility_guide():
+    return render_template("accessibility/guide.html")
+
 @app.route("/analytics/domains/")
 def analytics_domains():
     return render_template("analytics/domains.html")
