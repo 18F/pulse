@@ -6,7 +6,8 @@
       "Canonical": "http://www.18f.gov",
       "Domain": "18f.gov",
       "Errors": "0",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "From the details field in domains.json"
     },
     {
       "Agency": "National Archives and Records Administration",
@@ -14,7 +15,8 @@
       "Canonical": "http://9-11commission.gov",
       "Domain": "9-11commission.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "Department of Transportation",
@@ -22,7 +24,8 @@
       "Canonical": "http://www.911.gov",
       "Domain": "911.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "National Archives and Records Administration",
@@ -30,7 +33,8 @@
       "Canonical": "http://911commission.gov",
       "Domain": "911commission.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "Department of Education",
@@ -38,7 +42,8 @@
       "Canonical": "http://www.aapi.gov",
       "Domain": "aapi.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "Department of the Interior",
@@ -46,7 +51,8 @@
       "Canonical": "http://www.abandonedmines.gov",
       "Domain": "abandonedmines.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "Comm for People Who Are Blind/Severly Disabled",
@@ -54,7 +60,8 @@
       "Canonical": "http://abilityone.gov",
       "Domain": "abilityone.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "American Battle Monuments Commission",
@@ -62,7 +69,8 @@
       "Canonical": "http://abmc.gov",
       "Domain": "abmc.gov",
       "Errors": "4",
-      "Warnings": "445"
+      "Warnings": "445",
+      "Details": "blah"
     },
     {
       "Agency": "U. S. Access Board",
@@ -70,7 +78,8 @@
       "Canonical": "https://www.access-board.gov",
       "Domain": "access-board.gov",
       "Errors": "41",
-      "Warnings": "425"
+      "Warnings": "425",
+      "Details": "blah"
     },
     {
       "Agency": "Department of Health And Human Services",
@@ -78,7 +87,8 @@
       "Canonical": "http://www.acf.gov",
       "Domain": "acf.gov",
       "Errors": "4",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "Advisory Council on Historic Preservation",
@@ -86,7 +96,8 @@
       "Canonical": "http://achp.gov",
       "Domain": "achp.gov",
       "Errors": "42",
-      "Warnings": "435"
+      "Warnings": "435",
+      "Details": "blah"
     },
     {
       "Agency": "Department of Health And Human Services",
@@ -94,7 +105,8 @@
       "Canonical": "http://acl.gov",
       "Domain": "acl.gov",
       "Errors": "455",
-      "Warnings": "145"
+      "Warnings": "145",
+      "Details": "blah"
     },
     {
       "Agency": "General Services Administration",
@@ -102,7 +114,8 @@
       "Canonical": "https://www.acquisition.gov",
       "Domain": "acquisition.gov",
       "Errors": "4",
-      "Warnings": "435"
+      "Warnings": "435",
+      "Details": "blah"
     },
     {
       "Agency": "Administrative Conference of the United States",
@@ -110,7 +123,8 @@
       "Canonical": "https://www.acus.gov",
       "Domain": "acus.gov",
       "Errors": "1",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     },
     {
       "Agency": "Department of the Interior",
@@ -118,7 +132,8 @@
       "Canonical": "http://acwi.gov",
       "Domain": "acwi.gov",
       "Errors": "43",
-      "Warnings": "45"
+      "Warnings": "45",
+      "Details": "blah"
     }
   ]
 }
