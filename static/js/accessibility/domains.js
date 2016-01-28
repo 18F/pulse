@@ -78,47 +78,13 @@ $(document).ready(function () {
 
 
   // Construct a sentence explaining the HTTP situation.
-  var httpDetails = function(data, type, row) {
-    if (type == "sort")
-      return null;
-
-    var https = row["Uses HTTPS"];
-    var behavior = row["Enforces HTTPS"];
-    var hsts = row["Strict Transport Security (HSTS)"];
-    var hsts_age = row["HSTS max-age"];
-
-    var details;
-
-    if (https >= 1) {
-      if (behavior >= 2)
-        details = "This domain enforces HTTPS. "
-      else
-        details = "This domain supports HTTPS, but does not enforce it. "
-
-      if (hsts == 0) {
-        // HSTS is considered a No *because* its max-age is too weak.
-        if ((hsts_age > 0) && (hsts_age < 10886400))
-          details += "The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
-        else
-          details += l("hsts", "HSTS") + " is not enabled.";
-      }
-      else if (hsts == 1)
-        details += l("hsts", "HSTS") + " is enabled, but not for its subdomains and is not ready for " + l("preload", "preloading") + ".";
-      else if (hsts == 2)
-        details += l("hsts", "HSTS") + " is enabled for all subdomains, but is not ready for " + l("preload", "preloading into browsers") + ".";
-      else if (hsts == 3)
-        details += l("hsts", "HSTS") + " is enabled for all subdomains, and can be " + l("preload", "preloaded into browsers") + ".";
-
-      // HSTS is strong enough to get a yes, but still less than a year.
-      if (hsts > 0 && (hsts_age < 31536000))
-        details += " The HSTS max-age (" + hsts_age + " seconds) should be increased to at least 1 year (31536000 seconds)."
-
-    } else if (https == 0)
-      details = "This domain redirects visitors from HTTPS down to HTTP."
-    else if (https == -1)
-      details = "This domain does not support HTTPS."
-
-    return details;
+  var accessibilityDetails = function(data, type, row) {
+    var errors= ["Duplicate id attribute value \"\" found on the web page. *this is not real data", "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.4:1. Recommendation: change text colour to #636363. *this is not real data"];
+    var error_string = '';
+    for (var i=0; i<errors.length; i++){
+      error_string += "<hr/><li>" + errors[i] + "</li>";
+    }
+    return "<ol>" + error_string + "</ol>";
   };
 
   var links = {
@@ -200,7 +166,11 @@ $(document).ready(function () {
           render: Utils.linkDomain
         },
         {data: "Errors"},
-        {data: "Warnings"}
+        {data: "Agency"},
+        {
+          data: "Error Details",
+          render: accessibilityDetails
+        }
       ],
 
       columnDefs: [
