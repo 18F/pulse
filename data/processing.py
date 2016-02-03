@@ -1,25 +1,12 @@
-#!/usr/bin/env python
-
 ###
 #
 # Given, in the data/output/scan/results directory:
 #
 # * domains.csv - federal domains, subset of .gov domain list.
-# * inspect.csv - output of domain-scan
-# * tls.csv - output of domain-scan
-# * analytics.csv - output of domain-scan
 #
-# Produce, in the data/output/processed directory:
-#
-# = table power
-# * tables/https/agencies.json
-# * tables/https/domains.json
-# * tables/analytics/agencies.json
-# * tables/analytics/domains.json
-#
-# = table data
-# * tables/https/domains.csv
-# * tables/analytics/domains.csv
+# * inspect.csv - domain-scan, based on site-inspector
+# * tls.csv - domain-scan, based on ssllabs-scan
+# * analytics.csv - domain-scan, based on analytics.usa.gov data
 #
 ###
 
@@ -27,69 +14,92 @@ import csv
 import json
 import os
 import slugify
+import datetime
 
 
 ## Input and output dirs, relative to this file.
 this_dir = os.path.dirname(__file__)
-
-TABLE_DATA = os.path.join(this_dir, "./output/processed/tables")
-STATS_DATA = os.path.join(this_dir, "./output/processed")
-
 INPUT_DOMAINS_DATA = os.path.join(this_dir, "./")
 INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")
 
-
-
-## global data
-
-# big dict of everything in input CSVs
-domain_data = {}
-agency_data = {}
-
-# lists of uniquely seen domains and agencies, in order
-all_domains = []
-all_agencies = []
-
-# Data as prepared for landing page rendering.
-domain_map = {}
-agency_map = {}
-
-# Data as prepared for table input.
-https_domains = []
-analytics_domains = []
-https_agencies = []
-analytics_agencies = []
 
 ###
 # Main task flow.
 
 from app import models
+from app.models import Report, Domain, Agency
 from app.data import LABELS, CSV_HTTPS_DOMAINS, CSV_DAP_DOMAINS
+from app.data import CSV_DAP_MAPPING, CSV_HTTPS_MAPPING
+
+
+# Read in data from domains.csv, and scan data from domain-scan.
+# All database operations are made in the run() method.
+#
+# This method blows away the database and rebuilds it from the given data.
 
 def run(date):
-  models.clear_database()
-  models.Report.create(date)
+  if date is None:
+    date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
 
-  # Read in scan CSVs.
-  load_data()
+  # Reset the database.
+  print("Clearing the database.")
+  models.clear_database()
+  Report.create(date)
+
+  # Read in domains and agencies from domains.csv.
+  # Returns dicts of values ready for saving as Domain and Agency objects.
+  domains, agencies = load_domain_data()
+
+  # Read in domain-scan CSV data.
+  scan_data = load_scan_data(domains)
+
+  # Pull out a few inspect.csv fields as general domain metadata.
+  for domain_name in scan_data.keys():
+    inspect = scan_data[domain_name].get('inspect', None)
+    if inspect is None:
+      # generally means scan was on different domains.csv, but
+      # invalid domains can hit this (e.g. fed.us).
+      print("[%s][WARNING] No inspect data for domain!" % domain_name)
+
+      # Remove the domain from further consideration.
+      del domains[domain_name]
+    else:
+      # print("[%s] Updating with inspection metadata." % domain_name)
+      domains[domain_name]['live'] = inspect['Live']
+      domains[domain_name]['redirect'] = inspect['Redirect']
+      domains[domain_name]['canonical'] = inspect['Canonical']
+
+  # Save what we've got to the database so far.
+
+  for domain_name in domains.keys():
+    Domain.create(domains[domain_name])
+    print("[%s] Created." % domain_name)
+  for agency_name in agencies.keys():
+    Agency.create(agencies[agency_name])
+    # print("[%s] Created." % agency_name)
+
 
   # Calculate high-level conclusions.
-  process_domains()
+  analytics_reports = process_domains(domains, agencies, scan_data)
 
-  # Create report percents for each category, save them.
+  print(analytics_reports)
+  exit()
+
+  # Create Report percents for each category, save them.
   reports = latest_reports()
   for report in reports:
     print(report)
-    models.Report.update(report)
+    Report.update(report)
 
-  # Save domains.json and agencies.json for all types.
-  save_tables()
+  # TODO: rewrite
+  # save_tables()
 
 
 # Reads in input CSVs.
-def load_data():
+def load_domain_data():
 
-  # load in base data from the .gov domain list
+  domain_map = {}
+  agency_map = {}
 
   # TODO: get rid of domains.csv in the repo
   with open(os.path.join(INPUT_DOMAINS_DATA, "domains.csv"), newline='') as csvfile:
@@ -97,10 +107,11 @@ def load_data():
       if row[0].lower().startswith("domain"):
         continue
 
-      domain = row[0].lower()
-      domain_type = row[1]
-      agency = row[2]
-      branch = branch_for(agency)
+      domain_name = row[0].lower().strip()
+      domain_type = row[1].strip()
+      agency_name = row[2].strip()
+      agency_slug = slugify.slugify(agency_name)
+      branch = branch_for(agency_name)
 
       # Exclude cities, counties, tribes, etc.
       if domain_type != "Federal Agency":
@@ -110,42 +121,35 @@ def load_data():
       if branch == "non-federal":
         continue
 
-      if domain not in all_domains:
-        all_domains.append(domain)
-        domain_map[domain] = {
-          'domain': domain,
+      if domain_name not in domain_map:
+        domain_map[domain_name] = {
+          'domain': domain_name,
+          'agency_name': agency_name,
+          'agency_slug': agency_slug,
           'branch': branch,
-          'agency': agency,
-          'agency_slug': slugify.slugify(agency)
         }
 
-      if agency not in all_agencies:
-        all_agencies.append(agency)
-
-        slug = slugify.slugify(agency)
-        agency_map[slug] = {
-          'agency': agency,
-          'agency_slug': slugify.slugify(agency)
+      if agency_slug not in agency_map:
+        agency_map[agency_slug] = {
+          'name': agency_name,
+          'slug': agency_slug,
+          'branch': branch,
+          'total_domains': 1
         }
 
-        agency_data[agency] = []
+      else:
+        agency_map[agency_slug]['total_domains'] += 1
 
-      agency_data[agency].append(domain)
+  return domain_map, agency_map
 
-      domain_data[domain] = {
-        'branch': branch,
-        'agency': agency,
-        'agency_slug': slugify.slugify(agency)
-      }
 
-  # sort uniquely seen domains and agencies
-  all_domains.sort()
-  all_agencies.sort()
+# Load in data from the CSVs produced by domain-scan.
+# The 'domains' map is sent in to ignore untracked domains.
+def load_scan_data(domains):
 
-  # store total domains we found
-  for agency in all_agencies:
-    slug = slugify.slugify(agency)
-    agency_map[slug]['total_domains'] = len(agency_data[agency])
+  scan_data = {}
+  for domain_name in domains.keys():
+    scan_data[domain_name] = {}
 
   headers = []
   with open(os.path.join(INPUT_SCAN_DATA, "inspect.csv"), newline='') as csvfile:
@@ -155,14 +159,14 @@ def load_data():
         continue
 
       domain = row[0].lower()
-      if not domain_data.get(domain):
+      if not domains.get(domain):
         # print("[inspect] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       dict_row = {}
       for i, cell in enumerate(row):
         dict_row[headers[i]] = cell
-      domain_data[domain]['inspect'] = dict_row
+      scan_data[domain]['inspect'] = dict_row
 
   headers = []
   with open(os.path.join(INPUT_SCAN_DATA, "tls.csv"), newline='') as csvfile:
@@ -172,7 +176,7 @@ def load_data():
         continue
 
       domain = row[0].lower()
-      if not domain_data.get(domain):
+      if not domains.get(domain):
         # print("[tls] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
@@ -181,7 +185,7 @@ def load_data():
         dict_row[headers[i]] = cell
 
       # For now: overwrite previous rows if present, use last endpoint.
-      domain_data[domain]['tls'] = dict_row
+      scan_data[domain]['tls'] = dict_row
 
 
   # Now, analytics measurement.
@@ -193,342 +197,353 @@ def load_data():
         continue
 
       domain = row[0].lower()
-      if not domain_data.get(domain):
+      if not domains.get(domain):
         # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       # If it didn't appear in the inspect data, skip it, we need this.
-      if not domain_data[domain].get('inspect'):
-        # print("[analytics] Skipping %s, did not appear in inspect.csv." % domain)
-        continue
+      # if not domains[domain].get('inspect'):
+      #   print("[analytics] Skipping %s, did not appear in inspect.csv." % domain)
+      #   continue
 
       dict_row = {}
       for i, cell in enumerate(row):
         dict_row[headers[i]] = cell
 
-      domain_data[domain]['analytics'] = dict_row
+      scan_data[domain]['analytics'] = dict_row
+
+  return scan_data
 
 # Given the domain data loaded in from CSVs, draw conclusions,
 # and filter/transform data into form needed for display.
-def process_domains():
+def process_domains(domains, agencies, scan_data):
 
-  # First, process all domains.
-  for domain in all_domains:
-    if evaluating_for_https(domain):
-      row = https_row_for(domain)
-      domain_map[domain]['https'] = row
-      https_domains.append(row)
+  all_domains = list(domains.keys())
+  all_domains.sort()
 
-    if evaluating_for_analytics(domain):
-      row = analytics_row_for(domain)
-      domain_map[domain]['analytics'] = row
-      analytics_domains.append(row)
-
-  # Second, process each agency's domains.
-  for agency in all_agencies:
-
-    https_total = 0
-    https_stats = {
-      'https': 0,
-      'https_forced': 0,
-      'hsts': 0,
-      'grade': 0
-    }
-
-    analytics_total = 0
-    analytics_stats = {
-      'dap': 0
-    }
-
-    for domain in agency_data[agency]:
-
-      if evaluating_for_https(domain):
-
-        https_total += 1
-        row = https_row_for(domain)
-
-        # Needs to be enabled, with issues is allowed
-        if row[LABELS['https']] >= 1:
-          https_stats['https'] += 1
-
-        # Needs to be Default or Strict to be 'Yes'
-        if row[LABELS['https_forced']] >= 2:
-          https_stats['https_forced'] += 1
-
-        # Needs to be at least partially present
-        if row[LABELS['hsts']] >= 1:
-          https_stats['hsts'] += 1
-
-        # Needs to be A- or above
-        if row[LABELS['grade']] >= 4:
-          https_stats['grade'] += 1
-
-      if evaluating_for_analytics(domain):
-
-        analytics_total += 1
-        row = analytics_row_for(domain)
-
-        # Enabled ('Yes')
-        if row[LABELS['dap']] >= 1:
-          analytics_stats['dap'] += 1
+  all_agencies = list(agencies.keys())
+  all_agencies.sort()
 
 
-    if https_total > 0:
-      row = {
-        'Agency': agency,
-        'Number of Domains': https_total,
-        LABELS['https']: percent(https_stats['https'], https_total),
-        LABELS['https_forced']: percent(https_stats['https_forced'], https_total),
-        LABELS['hsts']: percent(https_stats['hsts'], https_total),
-        LABELS['grade_agencies']: percent(https_stats['grade'], https_total)
-      }
-      https_agencies.append(row)
-      agency_map[slugify.slugify(agency)]['https'] = row
-    else:
-      agency_map[slugify.slugify(agency)]['https'] = None
+  # For each domain, determine eligibility and, if eligible,
+  # use the scan data to draw conclusions.
+  for domain_name in all_domains:
+    # if evaluating_for_https(domain):
+    #   row = https_row_for(domain)
+    #   domain_map[domain]['https'] = row
+    #   https_domains.append(row)
 
-    if analytics_total > 0:
-      row = {
-        'Agency': agency,
-        'Number of Domains': analytics_total,
-        LABELS['dap']: percent(analytics_stats['dap'], analytics_total)
-      }
-      analytics_agencies.append(row)
-      agency_map[slugify.slugify(agency)]['analytics'] = row
-    else:
-      agency_map[slugify.slugify(agency)]['analytics'] = None
-
-
-def evaluating_for_https(domain):
-  return (
-    (domain_data[domain].get('inspect') is not None) and
-    (domain_data[domain]['inspect']["Live"] == "True")
-  )
-
-def evaluating_for_analytics(domain):
-  return (
-    (domain_data[domain].get('inspect') is not None) and
-    (domain_data[domain].get('analytics') is not None) and
-
-    (domain_data[domain]['inspect']["Live"] == "True") and
-    (domain_data[domain]['inspect']["Redirect"] == "False") and
-    (domain_data[domain]['branch'] == "executive")
-  )
-
-def https_row_for(domain):
-  inspect = domain_data[domain]['inspect']
-  row = {
-    "Domain": domain,
-    "Canonical": inspect["Canonical"],
-    "Redirect": boolean_yes(inspect["Redirect"]),
-    "Branch": domain_data[domain]['branch'],
-    "Agency": domain_data[domain]['agency']
-  }
-
-  ###
-  # Is it there? There for most clients? Not there?
-
-  # assumes that HTTPS would be technically present, with or without issues
-  if (inspect["Downgrades HTTPS"] == "True"):
-    https = 0 # No
-  else:
-    if (inspect["Valid HTTPS"] == "True"):
-      https = 2 # Yes
-    elif (
-      (inspect["HTTPS Bad Chain"] == "True") and
-      (inspect["HTTPS Bad Hostname"] == "False")
-    ):
-      https = 1 # Yes
-    else:
-      https = -1 # No
-
-  row[LABELS['https']] = https;
-
-
-  ###
-  # Is HTTPS enforced?
-
-  if (https <= 0):
-    behavior = 0 # N/A
-
-  else:
-
-    # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
-    # *and* that HTTP eventually redirects to HTTPS.
-    #
-    # Since a pure redirector domain can't "default" to HTTPS
-    # for itself, we'll say it "Enforces HTTPS" if it immediately
-    # redirects to an HTTPS URL.
-    if (
-      (inspect["Strictly Forces HTTPS"] == "True") and
-      (
-        (inspect["Defaults to HTTPS"] == "True") or
-        (inspect["Redirect"] == "True")
+    if eligible_for_analytics(domains[domain_name]):
+      report = analytics_report_for(
+        domain_name, domains[domain_name], scan_data
       )
-    ):
-      behavior = 3 # Yes (Strict)
+      Domain.add_report(domain_name, 'analytics', report)
 
-    # "Yes" means HTTP eventually redirects to HTTPS.
-    elif (
-      (inspect["Strictly Forces HTTPS"] == "False") and
-      (inspect["Defaults to HTTPS"] == "True")
-    ):
-      behavior = 2 # Yes
+  # For each agency, update their report counts for every domain they have.
+  for agency_slug in all_agencies:
 
-    # Either both are False, or just 'Strict Force' is True,
-    # which doesn't matter on its own.
-    # A "present" is better than a downgrade.
-    else:
-      behavior = 1 # Present (considered 'No')
+    analytics_participating = 0
+    eligible = Domain.eligible_for_agency(agency_slug, 'analytics')
+    for domain in eligible:
+      if domain['reports']['analytics']['participating']:
+        analytics_participating += 1
 
-  row[LABELS['https_forced']] = behavior;
-
-
-  ###
-  # Characterize the presence and completeness of HSTS.
-
-  if inspect["HSTS Max Age"]:
-    hsts_age = int(inspect["HSTS Max Age"])
-  else:
-    hsts_age = None
-
-  # Without HTTPS there can be no HSTS.
-  if (https <= 0):
-    hsts = -1 # N/A (considered 'No')
-
-  else:
-
-    # HTTPS is there, but no HSTS header.
-    if (inspect["HSTS"] == "False"):
-      hsts = 0 # No
-
-    # HSTS preload ready already implies a minimum max-age, and
-    # may be fine on the root even if the canonical www is weak.
-    elif (inspect["HSTS Preload Ready"] == "True"):
-
-      if inspect["HSTS Preloaded"] == "True":
-        hsts = 4 # Yes, and preloaded
-      else:
-        hsts = 3 # Yes, and preload-ready
-
-    # We'll make a judgment call here.
-    #
-    # The OMB policy wants a 1 year max-age (31536000).
-    # The HSTS preload list wants an 18 week max-age (10886400).
-    #
-    # We don't want to punish preload-ready domains that are between
-    # the two.
-    #
-    # So if you're below 18 weeks, that's a No.
-    # If you're between 18 weeks and 1 year, it's a Yes
-    # (but you'll get a warning in the extended text).
-    # 1 year and up is a yes.
-    elif (hsts_age < 10886400):
-      hsts = 0 # No, too weak
-
-    else:
-      # This kind of "Partial" means `includeSubdomains`, but no `preload`.
-      if (inspect["HSTS All Subdomains"] == "True"):
-        hsts = 2 # Yes
-
-      # This kind of "Partial" means HSTS, but not on subdomains.
-      else: # if (inspect["HSTS"] == "True"):
-
-        hsts = 1 # Yes
-
-  row[LABELS['hsts']] = hsts
-  row[LABELS['hsts_age']] = hsts_age
+    Agency.add_report(
+      agency_slug, 'analytics', {
+        'eligible': len(eligible),
+        'participating': analytics_participating
+      }
+    )
 
 
-  ###
-  # Include the SSL Labs grade for a domain.
+    # https_total = 0
+    # https_stats = {
+    #   'https': 0,
+    #   'https_forced': 0,
+    #   'hsts': 0,
+    #   'grade': 0
+    # }
 
-  tls = domain_data[domain].get('tls')
 
-  fs = None
-  sig = None
-  ssl3 = None
-  tls12 = None
-  rc4 = None
+    # for domain in agency_scan_data[agency]:
 
-  # Not relevant if no HTTPS
-  if (https <= 0):
-    grade = -1 # N/A
+      # if evaluating_for_https(domain):
 
-  elif tls is None:
-    # print("[https][%s] No TLS scan data found." % domain)
-    grade = -1 # N/A
+      #   https_total += 1
+      #   row = https_row_for(domain)
 
-  else:
+      #   # Needs to be enabled, with issues is allowed
+      #   if row[LABELS['https']['uses']] >= 1:
+      #     https_stats['uses'] += 1
 
-    grade = {
-      "F": 0,
-      "T": 1,
-      "C": 2,
-      "B": 3,
-      "A-": 4,
-      "A": 5,
-      "A+": 6
-    }[tls["Grade"]]
+      #   # Needs to be Default or Strict to be 'Yes'
+      #   if row[LABELS['https']['enforces']] >= 2:
+      #     https_stats['enforces'] += 1
 
-    ###
-    # Construct a sentence about the domain's TLS config.
-    #
-    # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
+      #   # Needs to be at least partially present
+      #   if row[LABELS['https']['hsts']] >= 1:
+      #     https_stats['hsts'] += 1
 
-    fs = int(tls["Forward Secrecy"])
-    sig = tls["Signature Algorithm"]
-    rc4 = boolean_for(tls["RC4"])
-    ssl3 = boolean_for(tls["SSLv3"])
-    tls12 = boolean_for(tls["TLSv1.2"])
+      #   # Needs to be A- or above
+      #   if row[LABELS['https']['grade']] >= 4:
+      #     https_stats['grade'] += 1
 
-  row[LABELS['grade']] = grade
-  row[LABELS['fs']] = fs
-  row[LABELS['sig']] = sig
-  row[LABELS['rc4']] = rc4
-  row[LABELS['ssl3']] = ssl3
-  row[LABELS['tls12']] = tls12
+      # if eligible_for_analytics(domain):
 
-  return row
+      #   analytics_total += 1
+      #   row = analytics_row_for(domain)
 
-# Given the data we have about a domain, what's the DAP row?
-def analytics_row_for(domain):
-  analytics = domain_data[domain]['analytics']
-  inspect = domain_data[domain]['inspect']
+      #   # Enabled ('Yes')
+      #   if row[LABELS['analytics']['participating']] >= 1:
+      #     analytics_stats['participating'] += 1
 
-  row = {
-    "Domain": domain,
-    "Canonical": inspect["Canonical"],
-    "Redirect": boolean_yes(inspect["Redirect"]),
-    "Branch": domain_data[domain]['branch'],
-    "Agency": domain_data[domain]['agency']
+
+    # if https_total > 0:
+    #   row = {
+    #     LABELS['agency']: agency_map[agency_slug]['agency'],
+    #     LABELS['total_domains']: https_total,
+    #     LABELS['https']['uses']: percent(https_stats['uses'], https_total),
+    #     LABELS['https']['enforces']: percent(https_stats['enforces'], https_total),
+    #     LABELS['https']['hsts']: percent(https_stats['hsts'], https_total),
+    #     LABELS['https']['grade_agencies']: percent(https_stats['grade'], https_total)
+    #   }
+    #   agency_map[agency_slug]['https'] = row
+    # else:
+    #   agency_map[agency_slug]['https'] = None
+
+    # if analytics_total > 0:
+    #   row = {
+    #     LABELS['agency']: agency,
+    #     LABELS['total_domains']: analytics_total,
+    #     LABELS['analytics']['participating']: percent(analytics_stats['participating'], analytics_total)
+    #   }
+    #   agency_map[agency_slug]['analytics'] = row
+    # else:
+    #   agency_map[agency_slug]['analytics'] = None
+
+
+# def evaluating_for_https(domain):
+#   return (
+#     (scan_data[domain].get('inspect') is not None) and
+#     (scan_data[domain]['inspect']["Live"] == "True")
+#   )
+
+def eligible_for_analytics(domain):
+  return (
+    (domain["live"] == True) and
+    (domain["redirect"] == False) and
+    (domain["branch"] == "executive")
+  )
+
+
+# def https_row_for(domain):
+#   inspect = scan_data[domain]['inspect']
+#   row = {
+#     LABELS["domain"]: domain,
+#     LABELS["canonical"]: inspect["Canonical"],
+#     LABELS["redirect"]: boolean_yes(inspect["Redirect"]),
+#     LABELS["branch"]: scan_data[domain]['branch'],
+#     LABELS["agency"]: scan_data[domain]['agency']
+#   }
+
+#   ###
+#   # Is it there? There for most clients? Not there?
+
+#   # assumes that HTTPS would be technically present, with or without issues
+#   if (inspect["Downgrades HTTPS"] == "True"):
+#     https = 0 # No
+#   else:
+#     if (inspect["Valid HTTPS"] == "True"):
+#       https = 2 # Yes
+#     elif (
+#       (inspect["HTTPS Bad Chain"] == "True") and
+#       (inspect["HTTPS Bad Hostname"] == "False")
+#     ):
+#       https = 1 # Yes
+#     else:
+#       https = -1 # No
+
+#   row[LABELS['https']] = https;
+
+
+#   ###
+#   # Is HTTPS enforced?
+
+#   if (https <= 0):
+#     behavior = 0 # N/A
+
+#   else:
+
+#     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
+#     # *and* that HTTP eventually redirects to HTTPS.
+#     #
+#     # Since a pure redirector domain can't "default" to HTTPS
+#     # for itself, we'll say it "Enforces HTTPS" if it immediately
+#     # redirects to an HTTPS URL.
+#     if (
+#       (inspect["Strictly Forces HTTPS"] == "True") and
+#       (
+#         (inspect["Defaults to HTTPS"] == "True") or
+#         (inspect["Redirect"] == "True")
+#       )
+#     ):
+#       behavior = 3 # Yes (Strict)
+
+#     # "Yes" means HTTP eventually redirects to HTTPS.
+#     elif (
+#       (inspect["Strictly Forces HTTPS"] == "False") and
+#       (inspect["Defaults to HTTPS"] == "True")
+#     ):
+#       behavior = 2 # Yes
+
+#     # Either both are False, or just 'Strict Force' is True,
+#     # which doesn't matter on its own.
+#     # A "present" is better than a downgrade.
+#     else:
+#       behavior = 1 # Present (considered 'No')
+
+#   row[LABELS['https_forced']] = behavior;
+
+
+#   ###
+#   # Characterize the presence and completeness of HSTS.
+
+#   if inspect["HSTS Max Age"]:
+#     hsts_age = int(inspect["HSTS Max Age"])
+#   else:
+#     hsts_age = None
+
+#   # Without HTTPS there can be no HSTS.
+#   if (https <= 0):
+#     hsts = -1 # N/A (considered 'No')
+
+#   else:
+
+#     # HTTPS is there, but no HSTS header.
+#     if (inspect["HSTS"] == "False"):
+#       hsts = 0 # No
+
+#     # HSTS preload ready already implies a minimum max-age, and
+#     # may be fine on the root even if the canonical www is weak.
+#     elif (inspect["HSTS Preload Ready"] == "True"):
+
+#       if inspect["HSTS Preloaded"] == "True":
+#         hsts = 4 # Yes, and preloaded
+#       else:
+#         hsts = 3 # Yes, and preload-ready
+
+#     # We'll make a judgment call here.
+#     #
+#     # The OMB policy wants a 1 year max-age (31536000).
+#     # The HSTS preload list wants an 18 week max-age (10886400).
+#     #
+#     # We don't want to punish preload-ready domains that are between
+#     # the two.
+#     #
+#     # So if you're below 18 weeks, that's a No.
+#     # If you're between 18 weeks and 1 year, it's a Yes
+#     # (but you'll get a warning in the extended text).
+#     # 1 year and up is a yes.
+#     elif (hsts_age < 10886400):
+#       hsts = 0 # No, too weak
+
+#     else:
+#       # This kind of "Partial" means `includeSubdomains`, but no `preload`.
+#       if (inspect["HSTS All Subdomains"] == "True"):
+#         hsts = 2 # Yes
+
+#       # This kind of "Partial" means HSTS, but not on subdomains.
+#       else: # if (inspect["HSTS"] == "True"):
+
+#         hsts = 1 # Yes
+
+#   row[LABELS['hsts']] = hsts
+#   row[LABELS['hsts_age']] = hsts_age
+
+
+#   ###
+#   # Include the SSL Labs grade for a domain.
+
+#   tls = scan_data[domain].get('tls')
+
+#   fs = None
+#   sig = None
+#   ssl3 = None
+#   tls12 = None
+#   rc4 = None
+
+#   # Not relevant if no HTTPS
+#   if (https <= 0):
+#     grade = -1 # N/A
+
+#   elif tls is None:
+#     # print("[https][%s] No TLS scan data found." % domain)
+#     grade = -1 # N/A
+
+#   else:
+
+#     grade = {
+#       "F": 0,
+#       "T": 1,
+#       "C": 2,
+#       "B": 3,
+#       "A-": 4,
+#       "A": 5,
+#       "A+": 6
+#     }[tls["Grade"]]
+
+#     ###
+#     # Construct a sentence about the domain's TLS config.
+#     #
+#     # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
+
+#     fs = int(tls["Forward Secrecy"])
+#     sig = tls["Signature Algorithm"]
+#     rc4 = boolean_for(tls["RC4"])
+#     ssl3 = boolean_for(tls["SSLv3"])
+#     tls12 = boolean_for(tls["TLSv1.2"])
+
+#   row[LABELS['grade']] = grade
+
+#   row[LABELS['fs']] = fs
+#   row[LABELS['sig']] = sig
+#   row[LABELS['rc4']] = rc4
+#   row[LABELS['ssl3']] = ssl3
+#   row[LABELS['tls12']] = tls12
+
+#   return row
+
+# Given the domain-scan data for a domain, what's the analytics row?
+def analytics_report_for(domain_name, domain, scan_data):
+  analytics = scan_data[domain_name]['analytics']
+  inspect = scan_data[domain_name]['inspect']
+
+  return {
+    'participating': analytics['Participates in Analytics']
   }
 
-  # rename column in process
-  row[LABELS['dap']] = boolean_nice(analytics['Participates in Analytics'])
-
-  return row
-
-# Make a tiny CSV about each stat, to be downloaded for D3 rendering.
+# Create a Report about each tracked stat.
 def latest_reports():
 
+  # TODO: needs https_domains and analytics_domains analogues
+
   total = len(https_domains)
-  enabled = 0
-  enforced = 0
+  uses = 0
+  enforces = 0
   hsts = 0
   for row in https_domains:
     # HTTPS needs to be enabled.
     # It's okay if it has a bad chain.
     # However, it's not okay if HTTPS is downgraded.
     if (
-      (row[LABELS['https']] >= 1) and
-      (row[LABELS['https_forced']] >= 1)
+      (row[LABELS['uses']] >= 1) and
+      (row[LABELS['enforces']] >= 1)
     ):
-      enabled += 1
+      uses += 1
 
     # Needs to be Default or Strict to be 'Yes'
-    if row[LABELS['https_forced']] >= 2:
-      enforced += 1
+    if row[LABELS['enforces']] >= 2:
+      enforces += 1
 
     # Needs to be at least partially present
     if row[LABELS['hsts']] >= 1:
@@ -537,46 +552,29 @@ def latest_reports():
   https_report = {
     'https': {
       'eligible': total,
-      'uses': percent(enabled, total),
-      'enforces': percent(enforced, total),
+      'uses': percent(uses, total),
+      'enforces': percent(enforces, total),
       'hsts': percent(hsts, total)
     }
   }
 
   total = len(analytics_domains)
-  enabled = 0
+  participating = 0
   for row in analytics_domains:
     # Enabled ('Yes')
-    if row[LABELS['dap']] >= 1:
-      enabled += 1
+    if row[LABELS['analytics']['participating']] >= 1:
+      participating += 1
 
 
   analytics_report = {
     'analytics': {
       'eligible': total,
-      'participating': percent(enabled, total)
+      'participating': percent(participating, total)
     }
   }
 
   return [https_report, analytics_report]
 
-def percent(num, denom):
-  return round((num / denom) * 100)
-
-def boolean_nice(value):
-  if value == "True":
-    return 1
-  elif value == "False":
-    return 0
-  else:
-    return -1
-
-def boolean_yes(value):
-  return {
-    "True": "Yes",
-    "False": "No",
-    "": ""
-  }[value]
 
 # Given the rows we've made, save them to disk.
 def save_tables():
@@ -586,8 +584,11 @@ def save_tables():
 
 
   header_row = []
-  for label in CSV_HTTPS_DOMAINS:
+  for label in CSV_COMMON:
     header_row.append(LABELS[label])
+  for label in CSV_HTTPS_DOMAINS:
+    header_tow.append(LABELS['https'][label])
+
   csv_https_rows = [header_row]
   for domain in https_domains:
     row = []
@@ -604,8 +605,11 @@ def save_tables():
   save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
 
   header_row = []
-  for label in CSV_DAP_DOMAINS:
+  for label in CSV_COMMON:
     header_row.append(LABELS[label])
+  for label in CSV_DAP_DOMAINS:
+    header_row.append(LABELS['analytics'][label])
+
   csv_dap_rows = [header_row]
   for domain in analytics_domains:
     row = []
@@ -634,6 +638,7 @@ def save_tables():
   analytics_agencies_data = json_for({'data': analytics_agencies})
   write(analytics_agencies_data, analytics_agencies_path)
 
+
 def save_csv(rows, directory, filename):
   full_output = os.path.join(directory, filename)
   os.makedirs(os.path.dirname(full_output), exist_ok=True)
@@ -645,6 +650,25 @@ def save_csv(rows, directory, filename):
 
 
 ### utilities
+
+def percent(num, denom):
+  return round((num / denom) * 100)
+
+def boolean_nice(value):
+  if value == "True":
+    return 1
+  elif value == "False":
+    return 0
+  else:
+    return -1
+
+def boolean_yes(value):
+  return {
+    "True": "Yes",
+    "False": "No",
+    "": ""
+  }[value]
+
 
 def boolean_for(string):
   if string == "False":
@@ -690,62 +714,7 @@ def write(content, destination):
     f.close()
 
 
-### Stupid mapping sync.
-
-"""
-I don't like this at all, but to keep the presentation synced
-between the front-end table, and the CSV we generate, this is
-getting replicated to the JavaScript files in this repository,
-and needs to be manually synced.
-
-The refactor that takes away from DataTables should also prioritize
-a cleaner way to DRY ("don't repeat yourself") this mess up.
-"""
-CSV_HTTPS_MAPPING = {
-
-  'https': {
-    "-1": "No",
-    '0': "No",
-    '1': "Yes", # (with certificate chain issues)
-    '2': "Yes"
-  },
-
-  'https_forced': {
-    '0': "", # N/A (no HTTPS)
-    '1': "No", # Present, not default
-    '2': "Yes", # Defaults eventually to HTTPS
-    '3': "Yes" # Defaults eventually + redirects immediately
-  },
-
-  'hsts': {
-    "-1": "", # N/A
-    '0': "No", # No
-    '1': "Yes", # HSTS on only that domain
-    '2': "Yes", # HSTS on subdomains
-    '3': "Yes, and preload-ready", # HSTS on subdomains + preload flag
-    '4': "Yes, and preloaded" # In the HSTS preload list
-  },
-
-  'grade': {
-    "-1": "",
-    '0': "F",
-    '1': "T",
-    '2': "C",
-    '3': "B",
-    '4': "A-",
-    '5': "A",
-    '6': "A+"
-  }
-}
-
-CSV_DAP_MAPPING = {
-  'dap': {
-    '0': "No",
-    '1': "Yes"
-  }
-}
-
 ### Run when executed.
 
 if __name__ == '__main__':
-    run()
+    run(None)

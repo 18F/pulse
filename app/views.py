@@ -16,12 +16,20 @@ def register(app):
   ##
   # Data endpoints.
 
+  # High-level %'s, used to power the donuts.
   @app.route("/data/reports/<report_name>.json")
   def report(report_name):
     response = Response(ujson.dumps(models.Report.latest().get(report_name, {})))
     response.headers['Content-Type'] = 'application/json'
     return response
 
+  # Detailed data per-domain, used to power the data tables.
+  @app.route("/data/domains/<report_name>.json")
+  def domain_report(report_name):
+    domains = models.Domain.eligible(report_name)
+    response = Response(ujson.dumps({'data': domains}))
+    response.headers['Content-Type'] = 'application/json'
+    return response
 
   @app.route("/https/domains/")
   def https_domains():
