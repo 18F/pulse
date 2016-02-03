@@ -42,9 +42,9 @@ def run(date):
     date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
 
   # Reset the database.
-  print("Clearing the database.")
-  models.clear_database()
-  Report.create(date)
+  # print("Clearing the database.")
+  # models.clear_database()
+  # Report.create(date)
 
   # Read in domains and agencies from domains.csv.
   # Returns dicts of values ready for saving as Domain and Agency objects.
@@ -65,24 +65,29 @@ def run(date):
       del domains[domain_name]
     else:
       # print("[%s] Updating with inspection metadata." % domain_name)
-      domains[domain_name]['live'] = inspect['Live']
-      domains[domain_name]['redirect'] = inspect['Redirect']
-      domains[domain_name]['canonical'] = inspect['Canonical']
+      domains[domain_name]['live'] = boolean_for(inspect['Live'])
+      domains[domain_name]['redirect'] = boolean_for(inspect['Redirect'])
+      domains[domain_name]['canonical'] = boolean_for(inspect['Canonical'])
 
   # Save what we've got to the database so far.
 
-  for domain_name in domains.keys():
-    Domain.create(domains[domain_name])
-    print("[%s] Created." % domain_name)
-  for agency_name in agencies.keys():
-    Agency.create(agencies[agency_name])
-    # print("[%s] Created." % agency_name)
+  # for domain_name in domains.keys():
+  #   Domain.create(domains[domain_name])
+  #   print("[%s] Created." % domain_name)
+  # for agency_name in agencies.keys():
+  #   Agency.create(agencies[agency_name])
+  #   # print("[%s] Created." % agency_name)
 
 
-  # Calculate high-level conclusions.
-  analytics_reports = process_domains(domains, agencies, scan_data)
+  # Calculate high-level per-domain conclusions for each report.
+  domain_reports = process_domains(domains, agencies, scan_data)
+  # Save them in the database.
+  for report_type in domain_reports.keys():
+    for domain_name in domain_reports[report_type].keys():
+      print("[%s][%s] Adding report." % (report_type, domain_name))
+      Domain.add_report(domain_name, report_type, domain_reports[report_type][domain_name])
 
-  print(analytics_reports)
+  print("Done.")
   exit()
 
   # Create Report percents for each category, save them.
@@ -221,9 +226,10 @@ def process_domains(domains, agencies, scan_data):
   all_domains = list(domains.keys())
   all_domains.sort()
 
-  all_agencies = list(agencies.keys())
-  all_agencies.sort()
-
+  reports = {
+    'analytics': {},
+    'https': {}
+  }
 
   # For each domain, determine eligibility and, if eligible,
   # use the scan data to draw conclusions.
@@ -234,10 +240,15 @@ def process_domains(domains, agencies, scan_data):
     #   https_domains.append(row)
 
     if eligible_for_analytics(domains[domain_name]):
-      report = analytics_report_for(
+      reports['analytics'][domain_name] = analytics_report_for(
         domain_name, domains[domain_name], scan_data
       )
-      Domain.add_report(domain_name, 'analytics', report)
+
+  return reports
+
+def update_agency_totals():
+  all_agencies = list(agencies.keys())
+  all_agencies.sort()
 
   # For each agency, update their report counts for every domain they have.
   for agency_slug in all_agencies:
