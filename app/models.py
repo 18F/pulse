@@ -15,11 +15,11 @@ def clear_database():
 class Report:
   # report_date (string, YYYY-MM-DD)
   # https.eligible (number)
-  # https.uses (number, %)
-  # https.enforces (number, %)
-  # https.hsts (number, %)
-  # analytics.eligible (number, %)
-  # analytics.participates (number, %)
+  # https.uses (number)
+  # https.enforces (number)
+  # https.hsts (number)
+  # analytics.eligible (number)
+  # analytics.participates (number)
 
   # Initialize a report with a given date.
   def create(report_date):
@@ -105,13 +105,15 @@ class Agency:
   # total_domains (number)
   #
   # https {
-  #   uses (number, %)
-  #   enforces (number, %)
-  #   hsts (number, %)
-  #   grade (number, % >= A-)
+  #   eligible (number)
+  #   uses (number)
+  #   enforces (number)
+  #   hsts (number)
+  #   grade (number, >= A-)
   # }
   # analytics {
-  #   participating (number, %)
+  #   eligible (number)
+  #   participating (number)
   # }
   #
 

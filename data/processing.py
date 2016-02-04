@@ -42,9 +42,9 @@ def run(date):
     date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
 
   # Reset the database.
-  # print("Clearing the database.")
-  # models.clear_database()
-  # Report.create(date)
+  print("Clearing the database.")
+  models.clear_database()
+  Report.create(date)
 
   # Read in domains and agencies from domains.csv.
   # Returns dicts of values ready for saving as Domain and Agency objects.
@@ -71,12 +71,12 @@ def run(date):
 
   # Save what we've got to the database so far.
 
-  # for domain_name in domains.keys():
-  #   Domain.create(domains[domain_name])
-  #   print("[%s] Created." % domain_name)
-  # for agency_name in agencies.keys():
-  #   Agency.create(agencies[agency_name])
-  #   # print("[%s] Created." % agency_name)
+  for domain_name in domains.keys():
+    Domain.create(domains[domain_name])
+    print("[%s] Created." % domain_name)
+  for agency_name in agencies.keys():
+    Agency.create(agencies[agency_name])
+    # print("[%s] Created." % agency_name)
 
 
   # Calculate high-level per-domain conclusions for each report.
@@ -93,9 +93,9 @@ def run(date):
   # Create top-level summaries.
   reports = latest_reports()
   for report in reports:
-    print(report)
     Report.update(report)
 
+  print_report()
 
 
 # Reads in input CSVs.
@@ -252,32 +252,28 @@ def update_agency_totals():
     # TODO: Do direct DB queries for answers, rather than iterating.
 
     # Analytics
+
+    eligible = Domain.eligible_for_agency(agency['slug'], 'analytics')
+
     agency_report = {
       'eligible': len(eligible),
       'participating': 0
     }
-    eligible = Domain.eligible_for_agency(agency['slug'], 'analytics')
+
     for domain in eligible:
       report = domain['analytics']
       if report['participating'] == True:
         agency_report['participating'] += 1
 
-    agency_report['participating'] = percent(
-      agency_report['participating'],
-      agency_report['eligible']
-    )
-
-    Agency.add_report(agency['slug'], 'analytics', {
-      'eligible': agency_report['eligible'],
-      'participating': percent(agency_report['participating'], agency_report['eligible'])
-    })
+    print("[%s][%s] Adding report." % (agency['slug'], 'analytics'))
+    Agency.add_report(agency['slug'], 'analytics', agency_report)
 
 
     # HTTPS
     eligible = Domain.eligible_for_agency(agency['slug'], 'https')
 
     agency_report = {
-      'eligible': len(eligible)
+      'eligible': len(eligible),
       'uses': 0,
       'enforces': 0,
       'hsts': 0,
@@ -295,62 +291,16 @@ def update_agency_totals():
       if report['enforces'] >= 2:
         agency_report['enforces'] += 1
 
-    Agency.add_report(
-      agency['slug'], 'https', {
-        'eligible': len(eligible),
-        'participating': analytics_participating
-      }
-    )
+      # Needs to be at least partially present
+      if report['hsts'] >= 1:
+        agency_report['hsts'] += 1
 
+      # Needs to be A- or above
+      if report['grade'] >= 4:
+        agency_report['grade'] += 1
 
-
-      #   if row[LABELS['https']
-      #     https_stats['uses'] += 1
-
-
-      if row[LABELS['https']['enforces']] >= 2:
-        https_stats['enforces'] += 1
-
-      #   # Needs to be at least partially present
-      #   if row[LABELS['https']['hsts']] >= 1:
-      #     https_stats['hsts'] += 1
-
-      #   # Needs to be A- or above
-      #   if row[LABELS['https']['grade']] >= 4:
-      #     https_stats['grade'] += 1
-
-      # if eligible_for_analytics(domain):
-
-      #   analytics_total += 1
-      #   row = analytics_row_for(domain)
-
-      #   # Enabled ('Yes')
-      #   if row[LABELS['analytics']['participating']] >= 1:
-      #     analytics_stats['participating'] += 1
-
-
-    # if https_total > 0:
-    #   row = {
-    #     LABELS['agency']: agency_map[agency_slug]['agency'],
-    #     LABELS['total_domains']: https_total,
-    #     LABELS['https']['uses']: percent(https_stats['uses'], https_total),
-    #     LABELS['https']['enforces']: percent(https_stats['enforces'], https_total),
-    #     LABELS['https']['hsts']: percent(https_stats['hsts'], https_total),
-    #     LABELS['https']['grade_agencies']: percent(https_stats['grade'], https_total)
-    #   }
-    #   agency_map[agency_slug]['https'] = row
-    # else:
-    #   agency_map[agency_slug]['https'] = None
-
-    # if analytics_total > 0:
-    #   row = {
-    #     LABELS['agency']: agency,
-    #     LABELS['total_domains']: analytics_total,
-    #     LABELS['analytics']['participating']: percent(analytics_stats['participating'], analytics_total)
-    #   }
-    #   agency_map[agency_slug]['analytics'] = row
-    # else:
-    #   agency_map[agency_slug]['analytics'] = None
+    print("[%s][%s] Adding report." % (agency['slug'], 'https'))
+    Agency.add_report(agency['slug'], 'https', agency_report)
 
 
 def eligible_for_https(domain):
@@ -578,9 +528,9 @@ def latest_reports():
   https_report = {
     'https': {
       'eligible': total,
-      'uses': percent(uses, total),
-      'enforces': percent(enforces, total),
-      'hsts': percent(hsts, total)
+      'uses': uses,
+      'enforces': enforces,
+      'hsts': hsts
     }
   }
 
@@ -595,74 +545,30 @@ def latest_reports():
   analytics_report = {
     'analytics': {
       'eligible': total,
-      'participating': percent(participating, total)
+      'participating': participating
     }
   }
 
   return [https_report, analytics_report]
 
+# Hacky helper - print out the %'s after the command finishes.
+def print_report():
+  print()
 
-# Given the rows we've made, save them to disk.
-# def save_tables():
-#   https_path = os.path.join(TABLE_DATA, "https/domains.json")
-#   https_data = json_for({'data': https_domains})
-#   write(https_data, https_path)
+  report = Report.latest()
+  for report_type in report.keys():
+    if report_type == "report_date":
+      continue
+
+    print("[%s]" % report_type)
+    eligible = report[report_type]["eligible"]
+    for key in report[report_type].keys():
+      if key == "eligible":
+        continue
+      print("%s: %i" % (key, percent(report[report_type][key], eligible)))
+    print()
 
 
-#   header_row = []
-#   for label in CSV_COMMON:
-#     header_row.append(LABELS[label])
-#   for label in CSV_HTTPS_DOMAINS:
-#     header_tow.append(LABELS['https'][label])
-
-#   csv_https_rows = [header_row]
-#   for domain in https_domains:
-#     row = []
-#     for label in CSV_HTTPS_DOMAINS:
-#       cell = str(domain[LABELS[label]])
-
-#       # If we have a display mapping of e.g. 1 -> "Yes", run it.
-#       # This is synced manually with the JS mapping, which is bad.
-#       if CSV_HTTPS_MAPPING.get(label):
-#         cell = CSV_HTTPS_MAPPING[label][cell]
-
-#       row.append(cell)
-#     csv_https_rows.append(row)
-#   save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
-
-#   header_row = []
-#   for label in CSV_COMMON:
-#     header_row.append(LABELS[label])
-#   for label in CSV_DAP_DOMAINS:
-#     header_row.append(LABELS['analytics'][label])
-
-#   csv_dap_rows = [header_row]
-#   for domain in analytics_domains:
-#     row = []
-#     for label in CSV_DAP_DOMAINS:
-#       cell = str(domain[LABELS[label]])
-
-#       # If we have a display mapping of e.g. 1 -> "Yes", run it.
-#       # This is synced manually with the JS mapping, which is bad.
-#       if CSV_DAP_MAPPING.get(label):
-#         cell = CSV_DAP_MAPPING[label][cell]
-
-#       row.append(cell)
-
-#     csv_dap_rows.append(row)
-#   save_csv(csv_dap_rows, TABLE_DATA, "analytics/analytics-domains.csv")
-
-#   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
-#   https_agencies_data = json_for({'data': https_agencies})
-#   write(https_agencies_data, https_agencies_path)
-
-#   analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
-#   analytics_data = json_for({'data': analytics_domains})
-#   write(analytics_data, analytics_path)
-
-#   analytics_agencies_path = os.path.join(TABLE_DATA, "analytics/agencies.json")
-#   analytics_agencies_data = json_for({'data': analytics_agencies})
-#   write(analytics_agencies_data, analytics_agencies_path)
 
 
 def save_csv(rows, directory, filename):
