@@ -52,13 +52,11 @@ class Domain:
   # redirect? (boolean)
   # canonical (string, URL)
   #
-  # reports {
-  #   https: {
-  #     [many things]
-  #   },
-  #   analytics: {
-  #     participating? (boolean)
-  #   }
+  # https: {
+  #   [many things]
+  # },
+  # analytics: {
+  #   participating? (boolean)
   # }
   #
 
@@ -74,9 +72,7 @@ class Domain:
   def add_report(domain_name, report_name, report):
     return db.table('domains').update(
       {
-        'reports': {
-          report_name: report
-        },
+        report_name: report
       },
       where('domain') == domain_name
     )
@@ -90,14 +86,17 @@ class Domain:
 
   def eligible(report_name):
     return db.table('domains').search(
-      Query()['reports'][report_name].exists()
+      Query()[report_name].exists()
     )
 
   def eligible_for_agency(agency_slug, report_name):
     return db.table('domains').search(
-      (Query()['reports'][report_name].exists()) &
+      (Query()[report_name].exists()) &
       (where("agency_slug") == agency_slug)
     )
+
+  def db():
+    return db
 
 class Agency:
   # agency_slug (string)
@@ -105,19 +104,16 @@ class Agency:
   # branch (string)
   # total_domains (number)
   #
-  # reports {
-  #   https {
-  #     eligible (number)
-  #     uses (number, %)
-  #     enforces (number, %)
-  #     hsts (number, %)
-  #     grade (number, % >= A-)
-  #   }
-  #   analytics {
-  #     eligible (number)
-  #     participating (number, %)
-  #   }
+  # https {
+  #   uses (number, %)
+  #   enforces (number, %)
+  #   hsts (number, %)
+  #   grade (number, % >= A-)
   # }
+  # analytics {
+  #   participating (number, %)
+  # }
+  #
 
   # Create a new Agency record with a given name, slug, and total domain count.
   def create(data):
@@ -127,9 +123,7 @@ class Agency:
   def add_report(slug, report_name, report):
     return db.table('agencies').update(
       {
-        'reports': {
-          report_name: report
-        },
+        report_name: report
       },
       where('slug') == slug
     )

@@ -87,17 +87,15 @@ def run(date):
       print("[%s][%s] Adding report." % (report_type, domain_name))
       Domain.add_report(domain_name, report_type, domain_reports[report_type][domain_name])
 
-  print("Done.")
-  exit()
+  # Calculate agency-level summaries.
+  update_agency_totals()
 
-  # Create Report percents for each category, save them.
+  # Create top-level summaries.
   reports = latest_reports()
   for report in reports:
     print(report)
     Report.update(report)
 
-  # TODO: rewrite
-  # save_tables()
 
 
 # Reads in input CSVs.
@@ -223,9 +221,6 @@ def load_scan_data(domains):
 # and filter/transform data into form needed for display.
 def process_domains(domains, agencies, scan_data):
 
-  all_domains = list(domains.keys())
-  all_domains.sort()
-
   reports = {
     'analytics': {},
     'https': {}
@@ -233,63 +228,88 @@ def process_domains(domains, agencies, scan_data):
 
   # For each domain, determine eligibility and, if eligible,
   # use the scan data to draw conclusions.
-  for domain_name in all_domains:
-    # if evaluating_for_https(domain):
-    #   row = https_row_for(domain)
-    #   domain_map[domain]['https'] = row
-    #   https_domains.append(row)
+  for domain_name in domains.keys():
 
     if eligible_for_analytics(domains[domain_name]):
       reports['analytics'][domain_name] = analytics_report_for(
         domain_name, domains[domain_name], scan_data
       )
 
+    if eligible_for_https(domains[domain_name]):
+      reports['https'][domain_name] = https_report_for(
+        domain_name, domains[domain_name], scan_data
+      )
+
   return reports
 
+# Go through each report type and add agency totals for each type.
 def update_agency_totals():
-  all_agencies = list(agencies.keys())
-  all_agencies.sort()
+  all_agencies = Agency.all()
 
   # For each agency, update their report counts for every domain they have.
-  for agency_slug in all_agencies:
+  for agency in all_agencies:
 
-    analytics_participating = 0
-    eligible = Domain.eligible_for_agency(agency_slug, 'analytics')
+    # TODO: Do direct DB queries for answers, rather than iterating.
+
+    # Analytics
+    agency_report = {
+      'eligible': len(eligible),
+      'participating': 0
+    }
+    eligible = Domain.eligible_for_agency(agency['slug'], 'analytics')
     for domain in eligible:
-      if domain['reports']['analytics']['participating']:
-        analytics_participating += 1
+      report = domain['analytics']
+      if report['participating'] == True:
+        agency_report['participating'] += 1
+
+    agency_report['participating'] = percent(
+      agency_report['participating'],
+      agency_report['eligible']
+    )
+
+    Agency.add_report(agency['slug'], 'analytics', {
+      'eligible': agency_report['eligible'],
+      'participating': percent(agency_report['participating'], agency_report['eligible'])
+    })
+
+
+    # HTTPS
+    eligible = Domain.eligible_for_agency(agency['slug'], 'https')
+
+    agency_report = {
+      'eligible': len(eligible)
+      'uses': 0,
+      'enforces': 0,
+      'hsts': 0,
+      'grade': 0
+    }
+
+    for domain in eligible:
+      report = domain['https']
+
+      # Needs to be enabled, with issues is allowed
+      if report['uses'] >= 1:
+        agency_report['uses'] += 1
+
+      # Needs to be Default or Strict to be 'Yes'
+      if report['enforces'] >= 2:
+        agency_report['enforces'] += 1
 
     Agency.add_report(
-      agency_slug, 'analytics', {
+      agency['slug'], 'https', {
         'eligible': len(eligible),
         'participating': analytics_participating
       }
     )
 
 
-    # https_total = 0
-    # https_stats = {
-    #   'https': 0,
-    #   'https_forced': 0,
-    #   'hsts': 0,
-    #   'grade': 0
-    # }
 
-
-    # for domain in agency_scan_data[agency]:
-
-      # if evaluating_for_https(domain):
-
-      #   https_total += 1
-      #   row = https_row_for(domain)
-
-      #   # Needs to be enabled, with issues is allowed
-      #   if row[LABELS['https']['uses']] >= 1:
+      #   if row[LABELS['https']
       #     https_stats['uses'] += 1
 
-      #   # Needs to be Default or Strict to be 'Yes'
-      #   if row[LABELS['https']['enforces']] >= 2:
-      #     https_stats['enforces'] += 1
+
+      if row[LABELS['https']['enforces']] >= 2:
+        https_stats['enforces'] += 1
 
       #   # Needs to be at least partially present
       #   if row[LABELS['https']['hsts']] >= 1:
@@ -333,11 +353,8 @@ def update_agency_totals():
     #   agency_map[agency_slug]['analytics'] = None
 
 
-# def evaluating_for_https(domain):
-#   return (
-#     (scan_data[domain].get('inspect') is not None) and
-#     (scan_data[domain]['inspect']["Live"] == "True")
-#   )
+def eligible_for_https(domain):
+  return (domain["live"] == True)
 
 def eligible_for_analytics(domain):
   return (
@@ -346,218 +363,216 @@ def eligible_for_analytics(domain):
     (domain["branch"] == "executive")
   )
 
-
-# def https_row_for(domain):
-#   inspect = scan_data[domain]['inspect']
-#   row = {
-#     LABELS["domain"]: domain,
-#     LABELS["canonical"]: inspect["Canonical"],
-#     LABELS["redirect"]: boolean_yes(inspect["Redirect"]),
-#     LABELS["branch"]: scan_data[domain]['branch'],
-#     LABELS["agency"]: scan_data[domain]['agency']
-#   }
-
-#   ###
-#   # Is it there? There for most clients? Not there?
-
-#   # assumes that HTTPS would be technically present, with or without issues
-#   if (inspect["Downgrades HTTPS"] == "True"):
-#     https = 0 # No
-#   else:
-#     if (inspect["Valid HTTPS"] == "True"):
-#       https = 2 # Yes
-#     elif (
-#       (inspect["HTTPS Bad Chain"] == "True") and
-#       (inspect["HTTPS Bad Hostname"] == "False")
-#     ):
-#       https = 1 # Yes
-#     else:
-#       https = -1 # No
-
-#   row[LABELS['https']] = https;
-
-
-#   ###
-#   # Is HTTPS enforced?
-
-#   if (https <= 0):
-#     behavior = 0 # N/A
-
-#   else:
-
-#     # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
-#     # *and* that HTTP eventually redirects to HTTPS.
-#     #
-#     # Since a pure redirector domain can't "default" to HTTPS
-#     # for itself, we'll say it "Enforces HTTPS" if it immediately
-#     # redirects to an HTTPS URL.
-#     if (
-#       (inspect["Strictly Forces HTTPS"] == "True") and
-#       (
-#         (inspect["Defaults to HTTPS"] == "True") or
-#         (inspect["Redirect"] == "True")
-#       )
-#     ):
-#       behavior = 3 # Yes (Strict)
-
-#     # "Yes" means HTTP eventually redirects to HTTPS.
-#     elif (
-#       (inspect["Strictly Forces HTTPS"] == "False") and
-#       (inspect["Defaults to HTTPS"] == "True")
-#     ):
-#       behavior = 2 # Yes
-
-#     # Either both are False, or just 'Strict Force' is True,
-#     # which doesn't matter on its own.
-#     # A "present" is better than a downgrade.
-#     else:
-#       behavior = 1 # Present (considered 'No')
-
-#   row[LABELS['https_forced']] = behavior;
-
-
-#   ###
-#   # Characterize the presence and completeness of HSTS.
-
-#   if inspect["HSTS Max Age"]:
-#     hsts_age = int(inspect["HSTS Max Age"])
-#   else:
-#     hsts_age = None
-
-#   # Without HTTPS there can be no HSTS.
-#   if (https <= 0):
-#     hsts = -1 # N/A (considered 'No')
-
-#   else:
-
-#     # HTTPS is there, but no HSTS header.
-#     if (inspect["HSTS"] == "False"):
-#       hsts = 0 # No
-
-#     # HSTS preload ready already implies a minimum max-age, and
-#     # may be fine on the root even if the canonical www is weak.
-#     elif (inspect["HSTS Preload Ready"] == "True"):
-
-#       if inspect["HSTS Preloaded"] == "True":
-#         hsts = 4 # Yes, and preloaded
-#       else:
-#         hsts = 3 # Yes, and preload-ready
-
-#     # We'll make a judgment call here.
-#     #
-#     # The OMB policy wants a 1 year max-age (31536000).
-#     # The HSTS preload list wants an 18 week max-age (10886400).
-#     #
-#     # We don't want to punish preload-ready domains that are between
-#     # the two.
-#     #
-#     # So if you're below 18 weeks, that's a No.
-#     # If you're between 18 weeks and 1 year, it's a Yes
-#     # (but you'll get a warning in the extended text).
-#     # 1 year and up is a yes.
-#     elif (hsts_age < 10886400):
-#       hsts = 0 # No, too weak
-
-#     else:
-#       # This kind of "Partial" means `includeSubdomains`, but no `preload`.
-#       if (inspect["HSTS All Subdomains"] == "True"):
-#         hsts = 2 # Yes
-
-#       # This kind of "Partial" means HSTS, but not on subdomains.
-#       else: # if (inspect["HSTS"] == "True"):
-
-#         hsts = 1 # Yes
-
-#   row[LABELS['hsts']] = hsts
-#   row[LABELS['hsts_age']] = hsts_age
-
-
-#   ###
-#   # Include the SSL Labs grade for a domain.
-
-#   tls = scan_data[domain].get('tls')
-
-#   fs = None
-#   sig = None
-#   ssl3 = None
-#   tls12 = None
-#   rc4 = None
-
-#   # Not relevant if no HTTPS
-#   if (https <= 0):
-#     grade = -1 # N/A
-
-#   elif tls is None:
-#     # print("[https][%s] No TLS scan data found." % domain)
-#     grade = -1 # N/A
-
-#   else:
-
-#     grade = {
-#       "F": 0,
-#       "T": 1,
-#       "C": 2,
-#       "B": 3,
-#       "A-": 4,
-#       "A": 5,
-#       "A+": 6
-#     }[tls["Grade"]]
-
-#     ###
-#     # Construct a sentence about the domain's TLS config.
-#     #
-#     # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
-
-#     fs = int(tls["Forward Secrecy"])
-#     sig = tls["Signature Algorithm"]
-#     rc4 = boolean_for(tls["RC4"])
-#     ssl3 = boolean_for(tls["SSLv3"])
-#     tls12 = boolean_for(tls["TLSv1.2"])
-
-#   row[LABELS['grade']] = grade
-
-#   row[LABELS['fs']] = fs
-#   row[LABELS['sig']] = sig
-#   row[LABELS['rc4']] = rc4
-#   row[LABELS['ssl3']] = ssl3
-#   row[LABELS['tls12']] = tls12
-
-#   return row
-
-# Given the domain-scan data for a domain, what's the analytics row?
+# Analytics conclusions for a domain based on analytics domain-scan data.
 def analytics_report_for(domain_name, domain, scan_data):
   analytics = scan_data[domain_name]['analytics']
   inspect = scan_data[domain_name]['inspect']
 
   return {
-    'participating': analytics['Participates in Analytics']
+    'participating': boolean_for(analytics['Participates in Analytics'])
   }
+
+# HTTPS conclusions for a domain based on inspect/tls domain-scan data.
+def https_report_for(domain_name, domain, scan_data):
+  inspect = scan_data[domain_name]['inspect']
+
+  report = {}
+
+  ###
+  # Is it there? There for most clients? Not there?
+
+  # assumes that HTTPS would be technically present, with or without issues
+  if (inspect["Downgrades HTTPS"] == "True"):
+    https = 0 # No
+  else:
+    if (inspect["Valid HTTPS"] == "True"):
+      https = 2 # Yes
+    elif (
+      (inspect["HTTPS Bad Chain"] == "True") and
+      (inspect["HTTPS Bad Hostname"] == "False")
+    ):
+      https = 1 # Yes
+    else:
+      https = -1 # No
+
+  report['uses'] = https
+
+
+  ###
+  # Is HTTPS enforced?
+
+  if (https <= 0):
+    behavior = 0 # N/A
+
+  else:
+
+    # "Yes (Strict)" means HTTP immediately redirects to HTTPS,
+    # *and* that HTTP eventually redirects to HTTPS.
+    #
+    # Since a pure redirector domain can't "default" to HTTPS
+    # for itself, we'll say it "Enforces HTTPS" if it immediately
+    # redirects to an HTTPS URL.
+    if (
+      (inspect["Strictly Forces HTTPS"] == "True") and
+      (
+        (inspect["Defaults to HTTPS"] == "True") or
+        (inspect["Redirect"] == "True")
+      )
+    ):
+      behavior = 3 # Yes (Strict)
+
+    # "Yes" means HTTP eventually redirects to HTTPS.
+    elif (
+      (inspect["Strictly Forces HTTPS"] == "False") and
+      (inspect["Defaults to HTTPS"] == "True")
+    ):
+      behavior = 2 # Yes
+
+    # Either both are False, or just 'Strict Force' is True,
+    # which doesn't matter on its own.
+    # A "present" is better than a downgrade.
+    else:
+      behavior = 1 # Present (considered 'No')
+
+  report['enforces'] = behavior
+
+
+  ###
+  # Characterize the presence and completeness of HSTS.
+
+  if inspect["HSTS Max Age"]:
+    hsts_age = int(inspect["HSTS Max Age"])
+  else:
+    hsts_age = None
+
+  # Without HTTPS there can be no HSTS.
+  if (https <= 0):
+    hsts = -1 # N/A (considered 'No')
+
+  else:
+
+    # HTTPS is there, but no HSTS header.
+    if (inspect["HSTS"] == "False"):
+      hsts = 0 # No
+
+    # HSTS preload ready already implies a minimum max-age, and
+    # may be fine on the root even if the canonical www is weak.
+    elif (inspect["HSTS Preload Ready"] == "True"):
+
+      if inspect["HSTS Preloaded"] == "True":
+        hsts = 4 # Yes, and preloaded
+      else:
+        hsts = 3 # Yes, and preload-ready
+
+    # We'll make a judgment call here.
+    #
+    # The OMB policy wants a 1 year max-age (31536000).
+    # The HSTS preload list wants an 18 week max-age (10886400).
+    #
+    # We don't want to punish preload-ready domains that are between
+    # the two.
+    #
+    # So if you're below 18 weeks, that's a No.
+    # If you're between 18 weeks and 1 year, it's a Yes
+    # (but you'll get a warning in the extended text).
+    # 1 year and up is a yes.
+    elif (hsts_age < 10886400):
+      hsts = 0 # No, too weak
+
+    else:
+      # This kind of "Partial" means `includeSubdomains`, but no `preload`.
+      if (inspect["HSTS All Subdomains"] == "True"):
+        hsts = 2 # Yes
+
+      # This kind of "Partial" means HSTS, but not on subdomains.
+      else: # if (inspect["HSTS"] == "True"):
+
+        hsts = 1 # Yes
+
+  report['hsts'] = hsts
+  report['hsts_age'] = hsts_age
+
+
+  ###
+  # Include the SSL Labs grade for a domain.
+
+  # We may not have gotten any scan data from SSL Labs - it happens.
+  tls = scan_data[domain_name].get('tls', None)
+
+  fs = None
+  sig = None
+  ssl3 = None
+  tls12 = None
+  rc4 = None
+
+  # Not relevant if no HTTPS
+  if (https <= 0):
+    grade = -1 # N/A
+
+  elif tls is None:
+    # print("[https][%s] No TLS scan data found." % domain)
+    grade = -1 # N/A
+
+  else:
+
+    grade = {
+      "F": 0,
+      "T": 1,
+      "C": 2,
+      "B": 3,
+      "A-": 4,
+      "A": 5,
+      "A+": 6
+    }[tls["Grade"]]
+
+    ###
+    # Construct a sentence about the domain's TLS config.
+    #
+    # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
+
+    fs = int(tls["Forward Secrecy"])
+    sig = tls["Signature Algorithm"]
+    rc4 = boolean_for(tls["RC4"])
+    ssl3 = boolean_for(tls["SSLv3"])
+    tls12 = boolean_for(tls["TLSv1.2"])
+
+  report['grade'] = grade
+
+  report['fs'] = fs
+  report['sig'] = sig
+  report['rc4'] = rc4
+  report['ssl3'] = ssl3
+  report['tls12'] = tls12
+
+  return report
+
 
 # Create a Report about each tracked stat.
 def latest_reports():
 
-  # TODO: needs https_domains and analytics_domains analogues
+  https_domains = Domain.eligible('https')
 
   total = len(https_domains)
   uses = 0
   enforces = 0
   hsts = 0
-  for row in https_domains:
+  for domain in https_domains:
+    report = domain['https']
     # HTTPS needs to be enabled.
     # It's okay if it has a bad chain.
     # However, it's not okay if HTTPS is downgraded.
     if (
-      (row[LABELS['uses']] >= 1) and
-      (row[LABELS['enforces']] >= 1)
+      (report['uses'] >= 1) and
+      (report['enforces'] >= 1)
     ):
       uses += 1
 
     # Needs to be Default or Strict to be 'Yes'
-    if row[LABELS['enforces']] >= 2:
+    if report['enforces'] >= 2:
       enforces += 1
 
     # Needs to be at least partially present
-    if row[LABELS['hsts']] >= 1:
+    if report['hsts'] >= 1:
       hsts += 1
 
   https_report = {
@@ -569,13 +584,13 @@ def latest_reports():
     }
   }
 
+  analytics_domains = Domain.eligible('analytics')
   total = len(analytics_domains)
   participating = 0
-  for row in analytics_domains:
-    # Enabled ('Yes')
-    if row[LABELS['analytics']['participating']] >= 1:
+  for domain in analytics_domains:
+    report = domain['analytics']
+    if report['participating'] == True:
       participating += 1
-
 
   analytics_report = {
     'analytics': {
@@ -588,66 +603,66 @@ def latest_reports():
 
 
 # Given the rows we've made, save them to disk.
-def save_tables():
-  https_path = os.path.join(TABLE_DATA, "https/domains.json")
-  https_data = json_for({'data': https_domains})
-  write(https_data, https_path)
+# def save_tables():
+#   https_path = os.path.join(TABLE_DATA, "https/domains.json")
+#   https_data = json_for({'data': https_domains})
+#   write(https_data, https_path)
 
 
-  header_row = []
-  for label in CSV_COMMON:
-    header_row.append(LABELS[label])
-  for label in CSV_HTTPS_DOMAINS:
-    header_tow.append(LABELS['https'][label])
+#   header_row = []
+#   for label in CSV_COMMON:
+#     header_row.append(LABELS[label])
+#   for label in CSV_HTTPS_DOMAINS:
+#     header_tow.append(LABELS['https'][label])
 
-  csv_https_rows = [header_row]
-  for domain in https_domains:
-    row = []
-    for label in CSV_HTTPS_DOMAINS:
-      cell = str(domain[LABELS[label]])
+#   csv_https_rows = [header_row]
+#   for domain in https_domains:
+#     row = []
+#     for label in CSV_HTTPS_DOMAINS:
+#       cell = str(domain[LABELS[label]])
 
-      # If we have a display mapping of e.g. 1 -> "Yes", run it.
-      # This is synced manually with the JS mapping, which is bad.
-      if CSV_HTTPS_MAPPING.get(label):
-        cell = CSV_HTTPS_MAPPING[label][cell]
+#       # If we have a display mapping of e.g. 1 -> "Yes", run it.
+#       # This is synced manually with the JS mapping, which is bad.
+#       if CSV_HTTPS_MAPPING.get(label):
+#         cell = CSV_HTTPS_MAPPING[label][cell]
 
-      row.append(cell)
-    csv_https_rows.append(row)
-  save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
+#       row.append(cell)
+#     csv_https_rows.append(row)
+#   save_csv(csv_https_rows, TABLE_DATA, "https/https-domains.csv")
 
-  header_row = []
-  for label in CSV_COMMON:
-    header_row.append(LABELS[label])
-  for label in CSV_DAP_DOMAINS:
-    header_row.append(LABELS['analytics'][label])
+#   header_row = []
+#   for label in CSV_COMMON:
+#     header_row.append(LABELS[label])
+#   for label in CSV_DAP_DOMAINS:
+#     header_row.append(LABELS['analytics'][label])
 
-  csv_dap_rows = [header_row]
-  for domain in analytics_domains:
-    row = []
-    for label in CSV_DAP_DOMAINS:
-      cell = str(domain[LABELS[label]])
+#   csv_dap_rows = [header_row]
+#   for domain in analytics_domains:
+#     row = []
+#     for label in CSV_DAP_DOMAINS:
+#       cell = str(domain[LABELS[label]])
 
-      # If we have a display mapping of e.g. 1 -> "Yes", run it.
-      # This is synced manually with the JS mapping, which is bad.
-      if CSV_DAP_MAPPING.get(label):
-        cell = CSV_DAP_MAPPING[label][cell]
+#       # If we have a display mapping of e.g. 1 -> "Yes", run it.
+#       # This is synced manually with the JS mapping, which is bad.
+#       if CSV_DAP_MAPPING.get(label):
+#         cell = CSV_DAP_MAPPING[label][cell]
 
-      row.append(cell)
+#       row.append(cell)
 
-    csv_dap_rows.append(row)
-  save_csv(csv_dap_rows, TABLE_DATA, "analytics/analytics-domains.csv")
+#     csv_dap_rows.append(row)
+#   save_csv(csv_dap_rows, TABLE_DATA, "analytics/analytics-domains.csv")
 
-  https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
-  https_agencies_data = json_for({'data': https_agencies})
-  write(https_agencies_data, https_agencies_path)
+#   https_agencies_path = os.path.join(TABLE_DATA, "https/agencies.json")
+#   https_agencies_data = json_for({'data': https_agencies})
+#   write(https_agencies_data, https_agencies_path)
 
-  analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
-  analytics_data = json_for({'data': analytics_domains})
-  write(analytics_data, analytics_path)
+#   analytics_path = os.path.join(TABLE_DATA, "analytics/domains.json")
+#   analytics_data = json_for({'data': analytics_domains})
+#   write(analytics_data, analytics_path)
 
-  analytics_agencies_path = os.path.join(TABLE_DATA, "analytics/agencies.json")
-  analytics_agencies_data = json_for({'data': analytics_agencies})
-  write(analytics_agencies_data, analytics_agencies_path)
+#   analytics_agencies_path = os.path.join(TABLE_DATA, "analytics/agencies.json")
+#   analytics_agencies_data = json_for({'data': analytics_agencies})
+#   write(analytics_agencies_data, analytics_agencies_path)
 
 
 def save_csv(rows, directory, filename):
