@@ -17,7 +17,7 @@ import slugify
 import datetime
 
 
-## Input and output dirs, relative to this file.
+## Input dirs, relative to this file.
 this_dir = os.path.dirname(__file__)
 INPUT_DOMAINS_DATA = os.path.join(this_dir, "./")
 INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")

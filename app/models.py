@@ -2,7 +2,7 @@ from tinydb import TinyDB, where, Query
 import os
 
 this_dir = os.path.dirname(__file__)
-db = TinyDB(os.path.join(this_dir, '../db.json'))
+db = TinyDB(os.path.join(this_dir, '../data/db.json'))
 
 # These functions are meant to be the only ones that access the db
 # directly. If we ever decide to migrate from tinydb, that can all be
