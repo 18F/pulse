@@ -31,6 +31,13 @@ def register(app):
     response.headers['Content-Type'] = 'application/json'
     return response
 
+  @app.route("/data/agencies/<report_name>.json")
+  def agency_report(report_name):
+    domains = models.Agency.eligible(report_name)
+    response = Response(ujson.dumps({'data': domains}))
+    response.headers['Content-Type'] = 'application/json'
+    return response
+
   @app.route("/https/domains/")
   def https_domains():
       return render_template("https/domains.html")
