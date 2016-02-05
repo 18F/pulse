@@ -569,36 +569,10 @@ def print_report():
 
 
 
-
-def save_csv(rows, directory, filename):
-  full_output = os.path.join(directory, filename)
-  os.makedirs(os.path.dirname(full_output), exist_ok=True)
-  f = open(os.path.join(directory, filename), 'w', newline='')
-  writer = csv.writer(f)
-  for row in rows:
-    writer.writerow(row)
-  f.close()
-
-
 ### utilities
 
 def percent(num, denom):
   return round((num / denom) * 100)
-
-def boolean_nice(value):
-  if value == "True":
-    return 1
-  elif value == "False":
-    return 0
-  else:
-    return -1
-
-def boolean_yes(value):
-  return {
-    "True": "Yes",
-    "False": "No",
-    "": ""
-  }[value]
 
 
 def boolean_for(string):
@@ -606,19 +580,6 @@ def boolean_for(string):
     return False
   else:
     return True
-
-def json_for(object):
-  return json.dumps(object, sort_keys=True,
-                    indent=2, default=format_datetime)
-
-def format_datetime(obj):
-    if isinstance(obj, datetime.date):
-        return obj.isoformat()
-    elif isinstance(obj, str):
-        return obj
-    else:
-        return None
-
 
 def branch_for(agency):
   if agency in [
@@ -637,13 +598,6 @@ def branch_for(agency):
 
   else:
     return "executive"
-
-def write(content, destination):
-    os.makedirs(os.path.dirname(destination), exist_ok=True)
-    f = open(destination, 'w', encoding='utf-8')
-    f.write(content)
-    f.close()
-
 
 ### Run when executed.
 
