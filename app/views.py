@@ -24,11 +24,16 @@ def register(app):
     return response
 
   # Detailed data per-domain, used to power the data tables.
-  @app.route("/data/domains/<report_name>.json")
-  def domain_report(report_name):
+  @app.route("/data/domains/<report_name>.<ext>")
+  def domain_report(report_name, ext):
     domains = models.Domain.eligible(report_name)
-    response = Response(ujson.dumps({'data': domains}))
-    response.headers['Content-Type'] = 'application/json'
+
+    if ext == "json":
+      response = Response(ujson.dumps({'data': domains}))
+      response.headers['Content-Type'] = 'application/json'
+    elif ext == "csv":
+      response = Response(models.Domain.to_csv(domains, report_name))
+      response.headers['Content-Type'] = 'text/csv'
     return response
 
   @app.route("/data/agencies/<report_name>.json")

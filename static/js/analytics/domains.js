@@ -72,7 +72,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "https://pulse.cio.gov/data/tables/analytics/analytics-domains.csv",
+      csv: "/data/domains/analytics.csv",
 
       dom: 'LCftrip'
 

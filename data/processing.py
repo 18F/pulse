@@ -28,8 +28,7 @@ INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")
 
 from app import models
 from app.models import Report, Domain, Agency
-from app.data import LABELS, CSV_HTTPS_DOMAINS, CSV_DAP_DOMAINS
-from app.data import CSV_DAP_MAPPING, CSV_HTTPS_MAPPING
+from app.data import LABELS
 
 
 # Read in data from domains.csv, and scan data from domain-scan.
@@ -67,7 +66,7 @@ def run(date):
       # print("[%s] Updating with inspection metadata." % domain_name)
       domains[domain_name]['live'] = boolean_for(inspect['Live'])
       domains[domain_name]['redirect'] = boolean_for(inspect['Redirect'])
-      domains[domain_name]['canonical'] = boolean_for(inspect['Canonical'])
+      domains[domain_name]['canonical'] = inspect['Canonical']
 
   # Save what we've got to the database so far.
 

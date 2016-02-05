@@ -1,5 +1,8 @@
 from tinydb import TinyDB, where, Query
 import os
+import io
+import csv
+from app.data import CSV_FIELDS, CSV_MAPPING, LABELS
 
 this_dir = os.path.dirname(__file__)
 db = TinyDB(os.path.join(this_dir, '../data/db.json'))
@@ -11,6 +14,7 @@ db = TinyDB(os.path.join(this_dir, '../data/db.json'))
 # Data loads should clear the entire database first.
 def clear_database():
   db.purge_tables()
+
 
 class Report:
   # report_date (string, YYYY-MM-DD)
@@ -97,6 +101,34 @@ class Domain:
 
   def db():
     return db
+
+
+  def to_csv(domains, report_type):
+    output = io.StringIO()
+    writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC)
+
+    # initialize with a header row
+    header = []
+    for field in CSV_FIELDS['common']:
+      header.append(LABELS[field])
+    for field in CSV_FIELDS[report_type]:
+      header.append(LABELS[report_type][field])
+    writer.writerow(header)
+
+    for domain in domains:
+      row = []
+      for field in CSV_FIELDS['common']:
+        if CSV_MAPPING.get(field):
+          row.append(CSV_MAPPING[field][domain[field]])
+        else:
+          row.append(domain[field])
+      for field in CSV_FIELDS[report_type]:
+        row.append(CSV_MAPPING[report_type][field][domain[report_type][field]])
+      writer.writerow(row)
+
+    return output.getvalue()
+
+
 
 class Agency:
   # agency_slug (string)
