@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("https://pulse.cio.gov/data/tables/analytics/agencies.json", function(data) {
+  $.get("/data/agencies/analytics.json", function(data) {
     renderTable(data.data);
   });
 
@@ -13,12 +13,14 @@ $(document).ready(function () {
       initComplete: Utils.searchLinks,
 
       columns: [
-        {data: "Agency"},
+        {data: "name"},
         {
-          data: "Number of Domains",
+          data: "analytics.eligible",
           render: Utils.filterAgency("analytics")
         },
-        {data: "Participates in DAP?"}
+        {
+          data: "analytics.participating",
+        }
       ],
 
       // order by number of domains
@@ -33,7 +35,13 @@ $(document).ready(function () {
           }
         },
         {
-          render: Utils.progressBar,
+          render: function(data, type, row) {
+            if (type == "sort")
+              return null;
+            return Utils.progressBar(Utils.percent(
+              row.analytics.participating, row.analytics.eligible
+            ));
+          },
           targets: 2,
         }
       ],

@@ -2,6 +2,9 @@
 var Utils = {
   // ignores the 'type' and 'row' args if sent as datatables callback
 
+  percent: function(num, denom) {
+    return Math.round((num / denom) * 100);
+  },
 
   progressBar: function(data) {
 
