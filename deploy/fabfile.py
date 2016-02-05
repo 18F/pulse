@@ -6,7 +6,7 @@ from fabric.api import run, execute, env
 environment = env.get('environment', None)
 
 env.use_ssh_config = True
-env.hosts = ["site@pulse2"]
+env.hosts = ["site@pulse"]
 
 repo = "https://github.com/18F/pulse"
 
