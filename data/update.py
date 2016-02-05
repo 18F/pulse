@@ -27,8 +27,6 @@ import data.processing
 #
 # 3. Upload data to S3.
 #    - Depends on the AWS CLI and access credentials already being configured.
-#    - TODO: Stop uploading processed data to /live/.
-#    - TODO: Upload db.json to as a backup.
 #    - TODO: Consider moving from aws CLI to Python library.
 
 this_dir = os.path.dirname(__file__)
