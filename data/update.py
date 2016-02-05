@@ -23,14 +23,12 @@ import data.processing
 #    - If exits with non-0 code, this should exit with non-0 code.
 #    - TODO: How should an admin be notified of an error?
 #
-# 2. Run processing.py to generate front-end-ready data.
-#    - TODO: Refresh application database with latest data.
-#    - TODO: Slim down what this generates, make more server-generated.
-#    - Will drop results into data/output/processed
+# 2. Run processing.py to generate front-end-ready data as data/db.json.
 #
 # 3. Upload data to S3.
 #    - Depends on the AWS CLI and access credentials already being configured.
-#    - TODO: Stop uploading to /live/, make it server-generated.
+#    - TODO: Stop uploading processed data to /live/.
+#    - TODO: Upload db.json to as a backup.
 #    - TODO: Consider moving from aws CLI to Python library.
 
 this_dir = os.path.dirname(__file__)
@@ -41,7 +39,7 @@ DOMAINS = os.environ.get("DOMAINS", META["data"]["domains_url"])
 
 # post-processing and uploading information
 SCANNED_DATA = os.path.join(this_dir, "./output/scan/results")
-PROCESSED_DATA = os.path.join(this_dir, "./output/processed")
+DB_DATA = os.path.join(this_dir, "./db.json")
 BUCKET_NAME = "pulse.cio.gov"
 
 # domain-scan information
@@ -62,7 +60,7 @@ def run():
   # Kick off domain-scan.
   print("[%s] Kicking off a scan." % the_date)
   print()
-  # scan()
+  scan()
   print()
   print("[%s] Domain-scan complete." % the_date)
 
@@ -76,7 +74,7 @@ def run():
   # 3. Upload data to S3.
   print("[%s] Syncing processed data to S3." % the_date)
   print()
-  # upload(the_date)
+  upload(the_date)
   print()
   print("[%s] Processed data now in S3." % the_date)
 
@@ -86,16 +84,16 @@ def run():
 # Upload the scan + processed data to /live/ and /archive/ locations by date.
 def upload(date):
   live_scanned = "s3://%s/live/scan/" % (BUCKET_NAME)
-  live_processed = "s3://%s/live/processed/" % (BUCKET_NAME)
+  live_db = "s3://%s/live/db/" % (BUCKET_NAME)
   archive_scanned = "s3://%s/archive/%s/scan/" % (BUCKET_NAME, date)
-  archive_processed = "s3://%s/archive/%s/processed/" % (BUCKET_NAME, date)
+  archive_db = "s3://%s/archive/%s/db/" % (BUCKET_NAME, date)
 
   acl = "--acl=public-read"
 
   shell_out(["aws", "s3", "sync", SCANNED_DATA, live_scanned, acl])
-  shell_out(["aws", "s3", "sync", PROCESSED_DATA, live_processed, acl])
+  shell_out(["aws", "s3", "cp", DB_DATA, live_db, acl])
   shell_out(["aws", "s3", "sync", SCANNED_DATA, archive_scanned, acl])
-  shell_out(["aws", "s3", "sync", PROCESSED_DATA, archive_processed, acl])
+  shell_out(["aws", "s3", "cp", DB_DATA, archive_db, acl])
 
 
 # Use domain-scan to scan .gov domains from the set domain URL.
