@@ -37,9 +37,12 @@
 
     d3.json("/data/reports/https.json", function (error, data) {
 
+        // calculate % client-side
+        var uses = Math.round((data.uses / data.eligible) * 100);
+
         var pie_data = [
-            {status: 'active', value: data.uses},
-            {status: 'inactive', value: (100-data.uses)},
+            {status: 'active', value: uses},
+            {status: 'inactive', value: (100-uses)},
         ]
 
         var g = chart.selectAll(".arc")
