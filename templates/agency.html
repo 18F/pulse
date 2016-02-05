@@ -8,7 +8,7 @@
 
 <header>
 
-  <h1>{{ agency.agency }}</h1>
+  <h1>{{ agency.name }}</h1>
   <h2>Total number of domains: {{ agency.total_domains }}</h2>
 
 </header>
@@ -24,7 +24,7 @@
 
 					<div class="description">
 						<h2>Secure HTTPS</h2>
-						<h3>Domains: {{ agency.https['Number of Domains'] }}</h3>
+						<h3>Domains: {{ agency.https.eligible }}</h3>
 
 						<p>This data measures whether federal domains support the HTTPS protocol (https://), and the strength of that support. HTTPS provides a secure connection across the internet between websites and their visitors, and is becoming the new baseline for public web services. As part of this shift, the U.S. federal government is in the process of transitioning entirely to HTTPS.</p>
 
@@ -33,24 +33,24 @@
 					<ul class="charts">
 
 						<li class="https-coverage">
-							<div class="percent">{{ agency.https['Uses HTTPS'] }}%</div>
+							<div class="percent">{{ agency.https.uses | percent(agency.https.eligible) }}%</div>
 							<div class="label">Uses HTTPS</div>
 							<div class="bar">
-								<div class="fill" style="top: {{ 100 - agency.https['Uses HTTPS'] }}%"></div>
+								<div class="fill" style="top: {{ agency.https.uses | percent_not(agency.https.eligible) }}%"></div>
 							</div>
 						</li>
 						<li class="enforces-https">
-							<div class="percent">{{ agency.https['Enforces HTTPS'] }}%</div>
+							<div class="percent">{{ agency.https.enforces | percent(agency.https.eligible) }}%</div>
 							<div class="label">Enforces<br/>HTTPS</div>
 							<div class="bar">
-								<div class="fill" style="top: {{ 100 - agency.https['Enforces HTTPS'] }}%"></div>
+								<div class="fill" style="top: {{ agency.https.enforces | percent_not(agency.https.eligible) }}%"></div>
 							</div>
 						</li>
 						<li class="hsts">
-							<div class="percent">{{ agency.https['Strict Transport Security (HSTS)'] }}%</div>
+							<div class="percent">{{ agency.https.hsts | percent(agency.https.eligible) }}%</div>
 							<div class="label">HSTS</div>
 							<div class="bar">
-								<div class="fill"style="top: {{ 100 - agency.https['Strict Transport Security (HSTS)'] }}%"></div>
+								<div class="fill"style="top: {{ agency.https.hsts | percent_not(agency.https.eligible) }}%"></div>
 							</div>
 						</li>
 
@@ -64,9 +64,9 @@
 					<ul class="charts">
 
 						<li>
-							<div class="percent">{{ agency.analytics['Participates in DAP?'] }}%</div>
+							<div class="percent">{{ agency.analytics.participating | percent(agency.analytics.eligible) }}%</div>
 							<div class="bar">
-								<div class="fill" style="top: {{ 100 - agency.analytics['Participates in DAP?'] }}%"></div>
+								<div class="fill" style="top: {{ agency.analytics.participating | percent_not(agency.analytics.eligible) }}%"></div>
 							</div>
 						</li>
 
@@ -74,7 +74,7 @@
 
 					<div class="description">
 						<h2>Digital Analytics Program (DAP)</h2>
-						<h3>Domains: {{ agency.analytics['Number of Domains'] }}</h3>
+						<h3>Domains: {{ agency.analytics.eligible }}</h3>
 						<p>The <strong>Digital Analytics Program</strong> (DAP) is a central, shared web analytics service for federal agencies of the United States government, managed by the General Services Administration. Participating federal agencies report web analytics to a central account, and have access to all reported data. Data from the program is also shared publicly at <a href="https://analytics.usa.gov">analytics.usa.gov</a>.</p>
 					</div>
 				</li>

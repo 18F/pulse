@@ -2,7 +2,7 @@ from tinydb import TinyDB, where, Query
 import os
 import io
 import csv
-from app.data import CSV_FIELDS, CSV_MAPPING, LABELS
+from app.data import CSV_FIELDS, FIELD_MAPPING, LABELS
 
 this_dir = os.path.dirname(__file__)
 db = TinyDB(os.path.join(this_dir, '../data/db.json'))
@@ -118,12 +118,12 @@ class Domain:
     for domain in domains:
       row = []
       for field in CSV_FIELDS['common']:
-        if CSV_MAPPING.get(field):
-          row.append(CSV_MAPPING[field][domain[field]])
+        if FIELD_MAPPING.get(field):
+          row.append(FIELD_MAPPING[field][domain[field]])
         else:
           row.append(domain[field])
       for field in CSV_FIELDS[report_type]:
-        row.append(CSV_MAPPING[report_type][field][domain[report_type][field]])
+        row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
       writer.writerow(row)
 
     return output.getvalue()

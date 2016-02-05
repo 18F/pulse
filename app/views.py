@@ -1,6 +1,7 @@
 
 from flask import render_template, Response
 from app import models
+from app.data import FIELD_MAPPING
 import ujson
 
 def register(app):
@@ -67,17 +68,31 @@ def register(app):
   def analytics_guide():
       return render_template("analytics/guide.html")
 
-  # @app.route("/agency/<slug>")
-  # def agency(slug=None):
-  #     if agencies.get(slug) is None:
-  #         pass # TODO: 404
+  @app.route("/agency/<slug>")
+  def agency(slug=None):
+      agency = models.Agency.find(slug)
+      if agency is None:
+          pass # TODO: 404
 
-  #     return render_template("agency.html", agency=agencies[slug])
+      return render_template("agency.html", agency=agency)
 
-  # @app.route("/domain/<hostname>")
-  # def domain(hostname=None):
-  #     if domains.get(hostname) is None:
-  #         pass # TODO: 404
+  @app.route("/domain/<hostname>")
+  def domain(hostname=None):
+      domain = models.Domain.find(hostname)
+      if domain is None:
+          pass # TODO: 404
 
-  #     return render_template("domain.html", domain=domains[hostname])
+      return render_template("domain.html", domain=domain)
 
+
+  @app.template_filter('field_map')
+  def field_map(value, category=None, field=None):
+      return FIELD_MAPPING[category][field][value]
+
+  @app.template_filter('percent')
+  def percent(num, denom):
+    return round((num / denom) * 100)
+
+  @app.template_filter('percent_not')
+  def percent_not(num, denom):
+    return (100 - round((num / denom) * 100))
