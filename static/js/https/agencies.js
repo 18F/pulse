@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/static/data/tables/https/agencies.json", function(data) {
+  $.get("https://pulse.cio.gov/data/tables/https/agencies.json", function(data) {
     renderTable(data.data);
   });
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
           }
         },
         {
-          render: Utils.progressBar, 
+          render: Utils.progressBar,
           targets: [2,3,4,5],
         }
       ],

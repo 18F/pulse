@@ -35,7 +35,7 @@
             location.href = "/https/domains/";
         });
 
-    d3.csv("/static/data/https.csv", function (error, data) {
+    d3.csv("https://pulse.cio.gov/data/https.csv", function (error, data) {
 
         var g = chart.selectAll(".arc")
             .data(pie(data))

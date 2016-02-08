@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/static/data/tables/analytics/domains.json", function(data) {
+  $.get("https://pulse.cio.gov/data/tables/analytics/domains.json", function(data) {
     renderTable(data.data);
   });
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/static/data/tables/analytics/analytics-domains.csv",
+      csv: "https://pulse.cio.gov/data/tables/analytics/analytics-domains.csv",
 
       dom: 'LCftrip'
 

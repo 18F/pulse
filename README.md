@@ -87,13 +87,10 @@ Move the report CSVs into this repo, run a script to update Pulse's data, and ma
 ```yaml
 data:
   domains: 2015-03-15
-  dap: 2015-05-29
   scan: 2015-06-07
 ```
 
 `domains`: The date the `.gov` domain list was *generated* by the `.gov` registry.
-
-`dap`: The date the DAP participation list was *generated* by the Digital Analytics Program.
 
 `scan`: The date that `domain-scan` was *executed* and which created `inspect.csv` and `tls.csv`.
 
@@ -105,7 +102,13 @@ data:
 
 This will use the scanned data to create the high-level conclusions Pulse displays to users and makes available for download.
 
-* Review the changes, rebuild the site, and if all looks good, commit them to source control.
+* Upload Pulse's data to S3 using the `aws` command line tool. Tested on version `1.10.0` of the `awscli` package in `pip`.
+
+```bash
+aws s3 sync data/output/processed/ s3://pulse.cio.gov/live/data/ --acl=public-read
+
+today=$(date +%Y-%m-%d) aws s3 sync data/output/processed/ s3://pulse.cio.gov/$today/data/ --acl=public-read
+```
 
 
 ## Ideas for later versions
