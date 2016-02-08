@@ -21,7 +21,7 @@ var Utils = {
       return data;
     else
       return "" +
-        "<a href=\"" + row['Canonical'] + "\" target=\"blank\">" +
+        "<a href=\"" + row['canonical'] + "\" target=\"blank\">" +
           data +
         "</a>";
   },
