@@ -34,7 +34,7 @@ var Utils = {
       else
         return "" +
           "<a href=\"/" + page + "/domains/#" +
-            QueryString.stringify({q: row["Agency"]}) + "\">" +
+            QueryString.stringify({q: row["name"]}) + "\">" +
             data +
           "</a>";
     }
