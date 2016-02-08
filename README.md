@@ -30,6 +30,16 @@ make run
 make watch
 ```
 
+### Initializing dataset
+
+To initialize the dataset with the last production scan data and database, there's a convenience function:
+
+```
+make data_init
+```
+
+This will download (using `curl`) the current live production database and scan data to the local `data/` directory.
+
 ## Deploying the site
 
 The site can be easily deployed (by someone with credentials to the right server) through [Fabric](https://github.com/fabric/fabric), which requires Python 2.
