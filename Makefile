@@ -27,5 +27,9 @@ update:
 
 # downloads latest snapshot of data locally
 data_init:
-	aws s3 sync s3://pulse.cio.gov/live/scan/ data/output/scan/results/
-	aws s3 cp s3://pulse.cio.gov/live/db/db.json data/db.json
+	mkdir -p data/output/scan/results/
+	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/analytics.csv -O data/output/scan/results/analytics.csv
+	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/inspect.csv -O data/output/scan/results/inspect.csv
+	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/tls.csv -O data/output/scan/results/tls.csv
+	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/meta.json -O data/output/scan/results/meta.json
+	wget https://s3.amazonaws.com/pulse.cio.gov/live/db/db.json -O data/db.json
