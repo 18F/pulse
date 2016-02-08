@@ -28,8 +28,8 @@ update:
 # downloads latest snapshot of data locally
 data_init:
 	mkdir -p data/output/scan/results/
-	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/analytics.csv -O data/output/scan/results/analytics.csv
-	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/inspect.csv -O data/output/scan/results/inspect.csv
-	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/tls.csv -O data/output/scan/results/tls.csv
-	wget https://s3.amazonaws.com/pulse.cio.gov/live/scan/meta.json -O data/output/scan/results/meta.json
-	wget https://s3.amazonaws.com/pulse.cio.gov/live/db/db.json -O data/db.json
+	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/analytics.csv > data/output/scan/results/analytics.csv
+	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/inspect.csv > data/output/scan/results/inspect.csv
+	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/tls.csv > data/output/scan/results/tls.csv
+	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/meta.json > data/output/scan/results/meta.json
+	curl https://s3.amazonaws.com/pulse.cio.gov/live/db/db.json > data/db.json
