@@ -9,7 +9,7 @@
 <header>
 
   <h1>{{ domain.domain }}</h1>
-  <h2>{{ domain.agency }}</h2>
+  <h2>{{ domain.agency_name }}</h2>
 
 </header>
 
@@ -25,19 +25,19 @@
 					<ul class="coverage">
 						<li>
 							<span class="label">Uses HTTPS:</span>
-							<span class="setting">{{ domain.https['Uses HTTPS'] | field_map('https', 'https') }}</span>
+							<span class="setting">{{ domain.https.uses | field_map('https', 'uses') }}</span>
 						</li>
 						<li>
 							<span class="label">Enforces HTTPS:</span>
-							<span class="setting">{{ domain.https['Enforces HTTPS'] | field_map('https', 'https_forced') }}</span>
+							<span class="setting">{{ domain.https.enforces | field_map('https', 'enforces') }}</span>
 						</li>
 						<li>
 							<span class="label">Strict Transport Security (HSTS):</span>
-							<span class="setting">{{ domain.https['Strict Transport Security (HSTS)'] | field_map('https', 'hsts') }}</span>
+							<span class="setting">{{ domain.https.hsts | field_map('https', 'hsts') }}</span>
 						</li>
 						<li>
 							<span class="label">SSL Labs Grade:</span>
-							<span class="setting">{{ domain.https['SSL Labs Grade'] | field_map('https', 'grade') }}</span>
+							<span class="setting">{{ domain.https.grade | field_map('https', 'grade') }}</span>
 						</li>
 
 					</ul>
@@ -62,7 +62,7 @@
 					<ul class="coverage">
 						<li>
 							<span class="label">Participates in DAP:</span>
-							<span class="setting">{{ domain.analytics['Participates in DAP?'] | field_map('analytics', 'dap') }}</span>
+							<span class="setting">{{ domain.analytics.participating | field_map('analytics', 'participating') }}</span>
 						</li>
 					</ul>
 				</li>

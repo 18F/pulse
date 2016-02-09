@@ -35,10 +35,18 @@
             location.href = "/analytics/domains/";
         });
 
-    d3.csv("https://pulse.cio.gov/data/analytics.csv", function (error, data) {
+    d3.json("/data/reports/analytics.json", function (error, data) {
+
+        // calculate % client-side
+        var participating = Math.round((data.participating / data.eligible) * 100);
+
+        var pie_data = [
+            {status: 'active', value: participating},
+            {status: 'inactive', value: (100-participating)}
+        ]
 
         var g = chart.selectAll(".arc")
-            .data(pie(data))
+            .data(pie(pie_data))
             .enter().append("g")
             .attr("class", "arc");
 
@@ -62,7 +70,7 @@
             .attr("class", "total-value")
             .attr("fill", "white")
             .text(function (d) {
-                return "" + data[0].value + "%";
+                return "" + pie_data[0].value + "%";
         });
 
         g.append("text")

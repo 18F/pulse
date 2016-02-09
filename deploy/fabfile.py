@@ -15,7 +15,7 @@ if environment == "production":
   port = 3000
 else:
   environment = "staging"
-  branch = "master"
+  branch = "staging"
   port = 6000
 
 home = "/home/site/pulse/%s" % environment
@@ -58,8 +58,8 @@ def cleanup():
 def start():
   run(
     (
-      "cd %s && PORT=%i gunicorn %s -D --log-file=%s --pid %s"
-    ) % (current_path, port, wsgi, log_file, pid_file), pty=False
+      "cd %s && workon %s && PORT=%i gunicorn %s -D --log-file=%s --pid %s"
+    ) % (current_path, virtualenv, port, wsgi, log_file, pid_file), pty=False
   )
 
 def stop():
