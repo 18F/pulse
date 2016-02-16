@@ -7,3 +7,7 @@ git:
 sudo: false
 
 script: echo "ran"
+
+branches:
+  except:
+    - data-tracking
