@@ -44,6 +44,10 @@ def dependencies():
 def make_current():
   run('rm -f %s && ln -s %s %s' % (current_path, version_path, current_path))
 
+def links():
+  run("ln -s %s/data/db.json %s/data/db.json" % (shared_path, version_path))
+  run("ln -s %s/data/output %s/data/output" % (shared_path, version_path))
+
 def cleanup():
   versions = run("ls -x %s" % versions_path).split()
   destroy = versions[:-keep]
@@ -71,12 +75,18 @@ def restart():
 
 def deploy():
   execute(checkout)
+  execute(links)
   execute(dependencies)
   execute(make_current)
   execute(restart)
   execute(cleanup)
 
-
+def deploy_cold():
+  execute(checkout)
+  execute(links)
+  execute(dependencies)
+  execute(make_current)
+  execute(start)
 
 # import time
 # from fabric.api import run, execute, env, cd
