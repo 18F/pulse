@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/static/data/tables/analytics/domains.json", function(data) {
+  $.get("/data/domains/analytics.json", function(data) {
     renderTable(data.data);
   });
 
@@ -16,8 +16,8 @@ $(document).ready(function () {
 
   var names = {
     dap: {
-      0: "No",
-      1: "Yes"
+      false: "No",
+      true: "Yes"
     }
   };
 
@@ -43,14 +43,14 @@ $(document).ready(function () {
 
       columns: [
         {
-          data: "Domain",
+          data: "domain",
           width: "210px",
           render: Utils.linkDomain
         },
-        {data: "Canonical"},
-        {data: "Agency"},
+        {data: "canonical"},
+        {data: "agency_name"},
         {
-          data: "Participates in DAP?",
+          data: "analytics.participating",
           render: display(names.dap)
         }
       ],
@@ -72,7 +72,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/static/data/tables/analytics/analytics-domains.csv",
+      csv: "/data/domains/analytics.csv",
 
       dom: 'LCftrip'
 

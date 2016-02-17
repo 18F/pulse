@@ -30,6 +30,16 @@ make run
 make watch
 ```
 
+### Initializing dataset
+
+To initialize the dataset with the last production scan data and database, there's a convenience function:
+
+```
+make data_init
+```
+
+This will download (using `curl`) the current live production database and scan data to the local `data/` directory.
+
 ## Deploying the site
 
 The site can be easily deployed (by someone with credentials to the right server) through [Fabric](https://github.com/fabric/fabric), which requires Python 2.
@@ -54,59 +64,52 @@ This will run the fabric command to deploy to production.
 
 ## Updating the data in Pulse
 
-Updating Pulse is a multi-step process that combines data published by government offices with data scanned from the public internet.
+The command to update the data in Pulse and publish it to production is simple:
 
-##### Step 1: Get official data
-
-The official `.gov` domain list is published quarterly in [this directory](https://github.com/GSA/data/tree/gh-pages/dotgov-domains). Download the `federal` CSV for the most recent date. This will be referred to below as **domains.csv**.
-
-##### Step 2: Scan domains
-
-Use [`domain-scan`](https://github.com/18F/domain-scan) to scan the `.gov` domain list, using the DAP list as a reference.
-
-* Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan). For right now, this requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
-
-* Tell `domain-scan` to run the `inspect`, `tls`, and `analytics` scanners over the list of `.gov` domains, referencing the DAP participation list. Use `--force` to tell it to ignore any disk cache and to tell SSL Labs to ignore its server-side cache. Use `--sort` to sort the resulting CSV so that domains are in a consistent order.
-
-The command for this might look like:
-
-```bash
-./scan domains.csv --scan=inspect,tls,analytics --analytics=https://analytics.usa.gov/data/live/second-level-domains.csv --output=domain-report --debug --force --sort
+```
+python -m data.update
 ```
 
-This will output a CSV report for each scanner to `domain-report/results/`.
+**But you will need to do some setup first.**
 
-##### Step 3: Update Pulse
+### Install domain-scan and dependencies
 
-Move the report CSVs into this repo, run a script to update Pulse's data, and mark the new date(s) in `_config.yml`.
+Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan).
 
-* Copy `inspect.csv`, `tls.csv`, `analytics.csv` and `meta.json` into the `data/` directory of this repository.
+`domain-scan` in turn requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
 
-* Update `_config.yml` to reflect the latest dates:
+Pulse requires you to set one environment variable:
 
-```yaml
-data:
-  domains: 2015-03-15
-  dap: 2015-05-29
-  scan: 2015-06-07
+* `DOMAIN_SCAN_PATH`: A path to `domain-scan`'s `scan` binary.
+
+However, `domain-scan` may need you to set a couple others if the binaries it uses aren't on your path:
+
+* `SITE_INSPECTOR_PATH`: Path to the `site-inspector` binary.
+* `SSLLABS_PATH`: Path to the `ssllabs-scan` binary.
+
+### Configure the AWS CLI
+
+To publish the resulting data to the production S3 bucket, install the official AWS CLI:
+
+```
+pip install awscli
 ```
 
-`domains`: The date the `.gov` domain list was *generated* by the `.gov` registry.
+And link it to AWS credentials that allow authorized write access to the `pulse.cio.gov` S3 bucket.
 
-`dap`: The date the DAP participation list was *generated* by the Digital Analytics Program.
+### Then run it
 
-`scan`: The date that `domain-scan` was *executed* and which created `inspect.csv` and `tls.csv`.
+From the Pulse root directory:
 
-* Update Pulse's data from the `data/` directory:
-
-```bash
-./update
+```
+python -m data.update
 ```
 
-This will use the scanned data to create the high-level conclusions Pulse displays to users and makes available for download.
+This will kick off the `domain-scan` scanning process for HTTP/HTTPS and DAP participation, using the `.gov` domain list as specified in `meta.yml` for the base set of domains to scan.
 
-* Review the changes, rebuild the site, and if all looks good, commit them to source control.
+Then it will run the scan data through post-processing to produce some JSON and CSV files the Pulse front-end uses to render data.
 
+Finally, this data will be uploaded to the production S3 bucket.
 
 ## Ideas for later versions
 

@@ -1,8 +1,0 @@
-{
-  "https": {
-    "enabled": 413,
-    "enforced": 146,
-    "hsts": 30,
-    "total": 1207
-  }
-}

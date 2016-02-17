@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/static/data/tables/https/domains.json", function(data) {
+  $.get("/data/domains/https.json", function(data) {
     renderTable(data.data);
   });
 
@@ -15,14 +15,14 @@ $(document).ready(function () {
   */
 
   var names = {
-    https: {
+    uses: {
       "-1": "No",
       0: "No",
       1: "Yes", // (with certificate chain issues)
       2: "Yes"
     },
 
-    https_forced: {
+    enforces: {
       0: "", // N/A (no HTTPS)
       1: "No", // Present, not default
       2: "Yes", // Defaults eventually to HTTPS
@@ -51,7 +51,7 @@ $(document).ready(function () {
   };
 
   var display = function(set) {
-    return function(data, type) {
+    return function(data, type, row) {
       if (type == "sort")
         return data;
       else
@@ -67,7 +67,7 @@ $(document).ready(function () {
       return ""
     else
       return "" +
-        "<a href=\"" + labsUrlFor(row['Domain']) + "\" target=\"blank\">" +
+        "<a href=\"" + labsUrlFor(row.domain) + "\" target=\"blank\">" +
           grade +
         "</a>";
   };
@@ -82,10 +82,10 @@ $(document).ready(function () {
     if (type == "sort")
       return null;
 
-    var https = row["Uses HTTPS"];
-    var behavior = row["Enforces HTTPS"];
-    var hsts = row["Strict Transport Security (HSTS)"];
-    var hsts_age = row["HSTS max-age"];
+    var https = row.https.uses;
+    var behavior = row.https.enforces;
+    var hsts = row.https.hsts;
+    var hsts_age = row.https.hsts_age;
 
     var details;
 
@@ -141,35 +141,35 @@ $(document).ready(function () {
     if (type == "sort")
       return null;
 
-    if (row["SSL Labs Grade"] < 0)
+    if (row.https.grade < 0)
       return "No data.";
 
     var config = [];
 
-    if (row["Uses HTTPS"] == 1)
+    if (row.https.uses == 1)
       config.push("uses a certificate chain that may be invalid for some visitors");
 
-    if (row["Signature Algorithm"] == "SHA1withRSA")
+    if (row.https.sig == "SHA1withRSA")
       config.push("uses a certificate with a " + l("sha1", "weak SHA-1 signature"));
 
-    if (row["SSLv3"] == true)
+    if (row.https.ssl3 == true)
       config.push("supports the " + l("ssl3", "insecure SSLv3 protocol"));
 
-    if (row["RC4"] == true)
+    if (row.https.rc4 == true)
       config.push("supports the " + l("rc4", "deprecated RC4 cipher"));
 
-    if (row["TLSv1.2"] == false)
+    if (row.https.tls12 == false)
       config.push("lacks support for the " + l("tls", "most recent version of TLS"));
 
     // Don't bother remarking if FS is Modern or Robust.
-    if (row["Forward Secrecy"] <= 1)
+    if (row.https.fs <= 1)
       config.push("should enable " + l("fs", "forward secrecy"));
 
     var issues = "";
     if (config.length > 0)
       issues += "This domain " + config.join(", ") + ". ";
 
-    issues += "See the " + l(labsUrlFor(row["Domain"]), "full SSL Labs report") + " for details.";
+    issues += "See the " + l(labsUrlFor(row.domain), "full SSL Labs report") + " for details.";
 
     return issues;
   };
@@ -195,26 +195,26 @@ $(document).ready(function () {
 
       columns: [
         {
-          data: "Domain",
+          data: "domain",
           width: "210px",
           render: Utils.linkDomain
         },
-        {data: "Canonical"},
-        {data: "Agency"},
+        {data: "canonical"},
+        {data: "agency_name"},
         {
-          data: "Uses HTTPS",
-          render: display(names.https)
+          data: "https.uses",
+          render: display(names.uses)
         },
         {
-          data: "Enforces HTTPS",
-          render: display(names.https_forced)
+          data: "https.enforces",
+          render: display(names.enforces)
         },
         {
-          data: "Strict Transport Security (HSTS)",
+          data: "https.hsts",
           render: display(names.hsts)
         },
         {
-          data: "SSL Labs Grade",
+          data: "https.grade",
           render: linkGrade
         },
         {
@@ -244,7 +244,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/static/data/tables/https/https-domains.csv",
+      csv: "/data/domains/https.csv",
 
       dom: 'LCftrip'
 

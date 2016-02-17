@@ -15,7 +15,7 @@ if environment == "production":
   port = 3000
 else:
   environment = "staging"
-  branch = "master"
+  branch = "staging"
   port = 6000
 
 home = "/home/site/pulse/%s" % environment
@@ -44,6 +44,10 @@ def dependencies():
 def make_current():
   run('rm -f %s && ln -s %s %s' % (current_path, version_path, current_path))
 
+def links():
+  run("ln -s %s/data/db.json %s/data/db.json" % (shared_path, version_path))
+  run("ln -s %s/data/output %s/data/output" % (shared_path, version_path))
+
 def cleanup():
   versions = run("ls -x %s" % versions_path).split()
   destroy = versions[:-keep]
@@ -58,8 +62,8 @@ def cleanup():
 def start():
   run(
     (
-      "cd %s && PORT=%i gunicorn %s -D --log-file=%s --pid %s"
-    ) % (current_path, port, wsgi, log_file, pid_file), pty=False
+      "cd %s && workon %s && PORT=%i gunicorn %s -D --log-file=%s --pid %s"
+    ) % (current_path, virtualenv, port, wsgi, log_file, pid_file), pty=False
   )
 
 def stop():
@@ -71,12 +75,18 @@ def restart():
 
 def deploy():
   execute(checkout)
+  execute(links)
   execute(dependencies)
   execute(make_current)
   execute(restart)
   execute(cleanup)
 
-
+def deploy_cold():
+  execute(checkout)
+  execute(links)
+  execute(dependencies)
+  execute(make_current)
+  execute(start)
 
 # import time
 # from fabric.api import run, execute, env, cd

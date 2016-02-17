@@ -1,3 +1,7 @@
+/data/output
+db.json
+.env
+
 logs
 *.log
 /.sass-cache
