@@ -10,7 +10,7 @@ description: "How federal government domains are meeting best practices on the w
 # When the data we used was generated. Manually updated for now.
 data:
   # The scan date.
-  scan: 2016-01-23
+  scan: 2016-02-12
 
   # URL where we download the .gov domain list from.
   domains_url: https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/2016-01-19-federal.csv
