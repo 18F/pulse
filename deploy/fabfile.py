@@ -15,7 +15,7 @@ if environment == "production":
   port = 3000
 else:
   environment = "staging"
-  branch = "staging"
+  branch = "master"
   port = 6000
 
 home = "/home/site/pulse/%s" % environment
@@ -48,6 +48,13 @@ def links():
   run("ln -s %s/data/db.json %s/data/db.json" % (shared_path, version_path))
   run("ln -s %s/data/output %s/data/output" % (shared_path, version_path))
 
+# Only done on cold deploy.
+def init():
+  run("mkdir -p %s/data/output" % shared_path)
+  run("rmvirtualenv %s" % virtualenv)
+  run("mkvirtualenv %s" % virtualenv)
+  run("cd %s && make data_init" % version_path)
+
 def cleanup():
   versions = run("ls -x %s" % versions_path).split()
   destroy = versions[:-keep]
@@ -73,6 +80,7 @@ def restart():
   run("kill -HUP `cat %s`" % pid_file)
 
 
+
 def deploy():
   execute(checkout)
   execute(links)
@@ -84,6 +92,7 @@ def deploy():
 def deploy_cold():
   execute(checkout)
   execute(links)
+  execute(init)
   execute(dependencies)
   execute(make_current)
   execute(start)
