@@ -4,7 +4,7 @@ css ?= static/css/main.css
 all: styles
 
 staging:
-	cd deploy/ && fab deploy && cd ..
+	cd deploy/ && fab deploy --set environment=staging && cd ..
 
 production:
 	cd deploy/ && fab deploy --set environment=production && cd ..
