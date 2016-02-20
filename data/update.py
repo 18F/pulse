@@ -49,12 +49,10 @@ ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
 # Options:
 # --date: override date
-# TODO:
 # --scan=[skip,download,here]
 #     skip: skip all scanning, assume CSVs are locally cached
 #     download: download scan data from S3
 #     here: run the default full scan
-# --skip-scan: skip the scanning part (rely on local scan data)
 # --upload: upload scan data and resulting db.json anything to S3
 
 def run(options):
@@ -78,8 +76,6 @@ def run(options):
     print()
     print("[%s] Download complete." % the_date)
 
-  exit()
-
   # 2. Process and load data into Pulse's database.
   print("[%s] Loading data into Pulse." % the_date)
   print()
@@ -87,12 +83,13 @@ def run(options):
   print()
   print("[%s] Data now loaded into Pulse." % the_date)
 
-  # 3. Upload data to S3.
-  print("[%s] Syncing scan data and database to S3." % the_date)
-  print()
-  upload(the_date)
-  print()
-  print("[%s] Scan data and database now in S3." % the_date)
+  # 3. Upload data to S3 (if requested).
+  if options.get("upload", False):
+    print("[%s] Syncing scan data and database to S3." % the_date)
+    print()
+    upload(the_date)
+    print()
+    print("[%s] Scan data and database now in S3." % the_date)
 
   print("[%s] All done." % the_date)
 
