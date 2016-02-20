@@ -8,6 +8,7 @@
 import subprocess
 import datetime
 import os
+import sys
 import yaml
 import logging
 
@@ -46,21 +47,38 @@ SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
 SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics,sslyze")
 ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
-# TODO:
+# Options:
 # --date: override date
+# TODO:
+# --scan=[skip,download,here]
+#     skip: skip all scanning, assume CSVs are locally cached
+#     download: download scan data from S3
+#     here: run the default full scan
 # --skip-scan: skip the scanning part (rely on local scan data)
-# --skip-upload: don't bother uploading anything to S3
+# --upload: upload scan data and resulting db.json anything to S3
 
-def run():
+def run(options):
   # Definitive scan date for the run.
-  the_date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
+  today = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
+  the_date = options.get("date", today)
 
-  # Kick off domain-scan.
-  print("[%s] Kicking off a scan." % the_date)
-  print()
-  scan()
-  print()
-  print("[%s] Domain-scan complete." % the_date)
+  # Download scan data, do a new scan, or skip altogether.
+  scan_mode = options.get("scan", "skip")
+  if scan_mode == "here":
+    print("[%s] Kicking off a scan." % the_date)
+    print()
+    scan()
+    print()
+    print("[%s] Domain-scan complete." % the_date)
+  elif scan_mode == "download":
+    print("[%s] Downloading latest production scan data from S3." % the_date)
+    print()
+    live_scanned = "s3://%s/live/scan/" % (BUCKET_NAME)
+    shell_out(["aws", "s3", "sync", live_scanned, SCANNED_DATA])
+    print()
+    print("[%s] Download complete." % the_date)
+
+  exit()
 
   # 2. Process and load data into Pulse's database.
   print("[%s] Loading data into Pulse." % the_date)
@@ -123,9 +141,29 @@ def shell_out(command, env=None):
         exit(1)
         return None
 
+# Quick and dirty CLI options parser.
+def options():
+  options = {}
+  for arg in sys.argv[1:]:
+    if arg.startswith("--"):
+
+      if "=" in arg:
+        key, value = arg.split('=')
+      else:
+        key, value = arg, "true"
+
+      key = key.split("--")[1]
+      key = key.lower()
+      value = value.lower()
+
+      if value == 'true': value = True
+      elif value == 'false': value = False
+      options[key] = value
+
+  return options
 
 
 ### Run when executed.
 
 if __name__ == '__main__':
-    run()
+    run(options())

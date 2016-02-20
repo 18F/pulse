@@ -21,9 +21,17 @@ watch:
 clean:
 	rm -f $(css)
 
-# Runs the data update script.
-update:
-	python -m data.update
+# Production data update process:
+#
+# Run a fresh scan, update the database, and upload data to S3.
+update_production:
+	python -m data.update --scan=here --upload
+
+# Staging data update process:
+#
+# Download last production scan data, update the database.
+update_staging:
+	python -m data.update --scan=download
 
 # downloads latest snapshot of data locally
 data_init:
