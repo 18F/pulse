@@ -43,8 +43,8 @@ BUCKET_NAME = "pulse.cio.gov"
 # domain-scan information
 SCAN_TARGET = os.path.join(this_dir, "./output/scan")
 SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
-SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics")
-ANALYTICS_URL = "https://analytics.usa.gov/data/live/second-level-domains.csv"
+SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics,sslyze")
+ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
 # TODO:
 # --date: override date

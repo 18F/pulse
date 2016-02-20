@@ -15,5 +15,8 @@ data:
   # URL where we download the .gov domain list from.
   domains_url: https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/2016-01-19-federal.csv
 
+  # URL where we download the participating DAP .gov list from.
+  analytics_url: https://analytics.usa.gov/data/live/second-level-domains.csv
+
   # The export date for the .gov domain list. Increasingly non-relevant.
   domains: 2015-11-03
