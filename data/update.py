@@ -62,19 +62,19 @@ def run():
   print()
   print("[%s] Domain-scan complete." % the_date)
 
-  # 2. Process scan data to be front-end-ready.
-  print("[%s] Running Pulse post-processor." % the_date)
+  # 2. Process and load data into Pulse's database.
+  print("[%s] Loading data into Pulse." % the_date)
   print()
   data.processing.run(the_date)
   print()
-  print("[%s] Processed data now in output/data/processed." % the_date)
+  print("[%s] Data now loaded into Pulse." % the_date)
 
   # 3. Upload data to S3.
-  print("[%s] Syncing processed data to S3." % the_date)
+  print("[%s] Syncing scan data and database to S3." % the_date)
   print()
   upload(the_date)
   print()
-  print("[%s] Processed data now in S3." % the_date)
+  print("[%s] Scan data and database now in S3." % the_date)
 
   print("[%s] All done." % the_date)
 
