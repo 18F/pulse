@@ -33,6 +33,12 @@ update_production:
 update_staging:
 	python -m data.update --scan=download
 
+# Development data update process:
+#
+# Don't scan or download latest data (rely on local cache), update database.
+update_development:
+	python -m data.update --scan=skip
+
 # downloads latest snapshot of data locally
 data_init:
 	mkdir -p data/output/scan/results/
