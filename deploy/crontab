@@ -1,0 +1,12 @@
+# m h  dom mon dow   command
+
+# Begin production scans on Thursday night.
+#
+# Currently, they take ~25 hours with single-threaded SSL Labs API requests
+# to 500+ domains.
+0 0 * * 5 PULSE_ENV=production /home/site/pulse/production/current/deploy/cron.sh > /home/site/pulse/production/shared/cron.log 2>&1
+
+# Follow up with staging updates on Saturday night.
+#
+# This will still work even if production failed, it'll just be old data.
+0 0 * * 0 PULSE_ENV=staging /home/site/pulse/staging/current/deploy/cron.sh > /home/site/pulse/staging/shared/cron.log 2>&1
