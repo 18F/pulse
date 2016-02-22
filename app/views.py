@@ -87,6 +87,4 @@ def register(app):
     # Sanity-check RSS feed, shows the latest report.
     @app.route("/data/reports/feed/")
     def report_feed():
-        report = models.Report.latest()
-        report_time = models.Report.report_time(report['report_date'])
-        return render_template("feed.xml", report=report, report_time=report_time)
+        return render_template("feed.xml")
