@@ -18,12 +18,6 @@ pip install -r requirements.txt
 gem install sass bourbon neat bitters
 ```
 
-* Now you can run the app:
-
-```bash
-make run
-```
-
 * If editing styles during development, keep the Sass auto-compiling with:
 
 ```bash

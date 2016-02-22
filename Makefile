@@ -9,8 +9,8 @@ staging:
 production:
 	cd deploy/ && fab deploy --set environment=production && cd ..
 
-run:
-	python pulse.py
+debug:
+	DEBUG=true python pulse.py
 
 styles:
 	sass $(scss):$(css)
