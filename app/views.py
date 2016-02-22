@@ -84,7 +84,12 @@ def register(app):
 
         return render_template("domain.html", domain=domain)
 
-
+    # Sanity-check RSS feed, shows the latest report.
+    @app.route("/data/reports/feed/")
+    def report_feed():
+        report = models.Report.latest()
+        report_time = models.Report.report_time(report['report_date'])
+        return render_template("feed.xml", report=report, report_time=report_time)
 
     @app.template_filter('field_map')
     def field_map(value, category=None, field=None):

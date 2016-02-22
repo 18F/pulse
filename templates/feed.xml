@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name }} | {{ site.title }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description }}</description>
+    <language>en-us</language>
+    <atom:link href="{{ site.url }}/data/reports/feed/" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Report: {{ report_time | date("%B %d, %Y") }}</title>
+      <description><![CDATA[
+        Data updated for {{ report_time | date("%B %d, %Y")}}
+      ]]></description>
+
+      <link>{{ site.url }}/#{{ report_time | date("%Y-%m-%d") }}</link>
+      <guid>{{ site.url }}/#{{ report_time | date("%Y-%m-%d") }}</guid>
+      <pubDate>{{ report_time | date("%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
+    </item>
+
+  </channel>
+</rss>
