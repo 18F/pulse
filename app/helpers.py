@@ -20,3 +20,15 @@ def register(app):
   # @app.template_filter('field_map')
   # def field_map(value, category=None, field=None):
   #     return data.data[category][field][str(value)]
+
+  @app.template_filter('field_map')
+  def field_map(value, category=None, field=None):
+      return FIELD_MAPPING[category][field][value]
+
+  @app.template_filter('percent')
+  def percent(num, denom):
+      return round((num / denom) * 100)
+
+  @app.template_filter('percent_not')
+  def percent_not(num, denom):
+      return (100 - round((num / denom) * 100))

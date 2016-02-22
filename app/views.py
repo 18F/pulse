@@ -90,15 +90,3 @@ def register(app):
         report = models.Report.latest()
         report_time = models.Report.report_time(report['report_date'])
         return render_template("feed.xml", report=report, report_time=report_time)
-
-    @app.template_filter('field_map')
-    def field_map(value, category=None, field=None):
-        return FIELD_MAPPING[category][field][value]
-
-    @app.template_filter('percent')
-    def percent(num, denom):
-        return round((num / denom) * 100)
-
-    @app.template_filter('percent_not')
-    def percent_not(num, denom):
-        return (100 - round((num / denom) * 100))
