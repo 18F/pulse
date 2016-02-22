@@ -10,6 +10,7 @@ import datetime
 import os
 import sys
 import yaml
+import ujson
 import logging
 
 import data.processing
@@ -48,7 +49,7 @@ SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics,sslyze")
 ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
 # Options:
-# --date: override date
+# --date: override date, defaults to contents of meta.json
 # --scan=[skip,download,here]
 #     skip: skip all scanning, assume CSVs are locally cached
 #     download: download scan data from S3
@@ -58,23 +59,36 @@ ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 def run(options):
   # Definitive scan date for the run.
   today = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
-  the_date = options.get("date", today)
 
   # Download scan data, do a new scan, or skip altogether.
   scan_mode = options.get("scan", "skip")
   if scan_mode == "here":
-    print("[%s] Kicking off a scan." % the_date)
+    print("Kicking off a scan.")
     print()
     scan()
     print()
-    print("[%s] Domain-scan complete." % the_date)
+    print("Domain-scan complete.")
   elif scan_mode == "download":
-    print("[%s] Downloading latest production scan data from S3." % the_date)
+    print("Downloading latest production scan data from S3.")
     print()
     live_scanned = "s3://%s/live/scan/" % (BUCKET_NAME)
     shell_out(["aws", "s3", "sync", live_scanned, SCANNED_DATA])
     print()
-    print("[%s] Download complete." % the_date)
+    print("Download complete.")
+
+  # Sanity check to make sure we have what we need.
+  if not os.path.exists(os.path.join(SCANNED_DATA, "meta.json")):
+    print("No scan metadata downloaded, aborting.")
+    exit()
+
+  # Date can be overridden if need be, but defaults to meta.json.
+  if options.get("date", None) is not None:
+    the_date = options.get("date")
+  else:
+    # depends on YYYY-MM-DD coming first in meta.json time format
+    scan_meta = ujson.load(open("data/output/scan/results/meta.json"))
+    the_date = scan_meta['start_time'][0:10]
+
 
   # 2. Process and load data into Pulse's database.
   print("[%s] Loading data into Pulse." % the_date)
