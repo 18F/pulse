@@ -20,83 +20,87 @@
 
     <div class="guide">
 
-      <h2>Below you will find some helpful tips to help guide you towards getting a better score on Pulse for your domain or agency. For any further questions, please visit our <a href="/about/">frequently asked questions</a>.</h2>
-
       <article>
 
-        <h3>What domains are measured?</h3>
+<h2>Accessibility Standards</h3>
 
-        <p>
-          Pulse measures the presence, enforcement, and quality of HTTPS for <strong>publicly accessible <code>.gov</code> domains</strong> in the federal government's <strong>executive, legislative, and judicial branches</strong>. Domains which do nothing but redirect to other websites <strong>are measured</strong>.
-        </p>
+<h3>Section 508</h3>
+<p>
+In 2000, Section 508 of the Rehabilitation Act of 1973 was amended to include technical requirements that required all Federal government Electronic & Information Technology (EIT) be made accessible to persons with disabilities. ‘Section 508’ has since become synonymous with accessibility standards in government jargon. Section 508 is a sweeping law mandating accessibility for everything from computer hardware to mobile phones to government websites. 
+</p>
+<p>
+While Section 508 laid out rules and definitions for how information technology could be made accessible, it did not lay out strict, testable standards for websites. The state of the web has changed dramatically in the intervening 18 years. As a result, it is impossible to fully automate the measurement of Section 508 conformance, and only a professional evaluator can certify if a technology is in conformance with Section 508 requirements. As such, the error reports generated on Pulse DO NOT constitute an evaluation of 508 conformance; rather, the error reports are meant as a guide to help web developers and content managers correct and avoid common accessibility errors that could contribute to making a site inaccessible.
+</p>
+<h3>WCAG 2.0</h3>
+<p>
+Around the same time that the government was amending Section 508, the World Wide Web Consortium (W3C) was busy developing their own standards. The first official version, released in 1999, was call the Web Content Accessibility Guidelines (WCAG 1.0). To keep pace with the evolving online environment, the standards were updated in 2008 to their current version, WCAG 2.0. 
+</p>
+<p>
+WCAG 2.0 consists of 12 broad standards organized under four overarching accessibility principles. Each of the 12 broad standards are further subdivided into more specific standards. The four guiding principles are that websites should be:
+<ul>
+  <li>Perceivable</li>
+  <li>Operable</li>
+  <li>Understandable</li>
+  <li>Robust</li>
+</ul>
+We will not review all of the WCAG standards here, but you can read more about the WCAG 2.0 guidelines on the W3C’s WCAG 2.0 site. 
+</p>
 
-        <p>
-          This currently amounts to around 1,200 domains.
-        </p>
+<p>
+<u>Common accessibility errors and who they affect</u>
+</p>
+<p>
+The WCAG 2.0 standards define a wide range of requirements for accessible web content. Here are a few examples of common accessibility errors:
+<ul>
+  <li>A website uses an image to convey information without including a descriptive alt text attribute. This error would make it impossible for the visually impaired to access the information conveyed by the image.</li>
+  <li>The text on a page has poor contrast with the background color (for instance, light green text on a dark green background). This makes it difficult or impossible for those with some visual impairments (such as colorblindness) to make use of the information on the webpage.</li>
+  <li>Information is conveyed to the user through a video or audio file without captions or a transcript of the content. Those with auditory impairments would not be able to access the information.</li>
+  <li>A site contains animation with flashing colors or lights that could induce seizures in those with medical conditions like epilepsy.</li>
+  <li>A site requires the user to utilize a visually-based element, such as a Flash animation, to navigate a site (without an alternate navigation option). This would make it impossible for people using some assistive technologies like screen readers to navigate the site.</li>
+</p>
+<p>
+<u>Why is this important?</u> 
+</p>
+<p>
+Citizens rely on their government for a range of essential services. Many people rely on government services for their well-being, be it through medicare/medicaid/social security support, assistance in finding low-income housing, travel information from the State Department, health information from the CDC, etc. Disabled veterans rely on the support of the Department of Veteran’s Affairs for a range of vital services. All citizens must file an annual tax return. Many small companies access government websites to bid on government contracts and grow their business. 
+</p>
+<p>
+When this information is presented in a way that is not accessible to people with disabilities, those people are shut out from essential services and opportunities that should be available to all Americans. Additionally, a large number of Americans with disabilities are employed by the federal government, and having accessible technology is essential for them to be able to perform their work effectively. The government has therefore made accessibility a priority in information technology management, and the government’s dedication to accessibility was reinforced by the recent White House web standards memo which included a requirement for all federal websites to be compliant with accessibility regulations.
+</p>
+<p>
+<u>Limitations</u>
+</p>
+<p>
+Automatically measuring full compliance with 508 standards or complete adherence to the WCAG 2.0 guidelines is not possible with the current state of technology. For instance, while we can automatically check if an image on a website has an alt text attribute, we cannot measure if that alt text is sufficiently descriptive; a picture of a dog with an alt text attribute that reads “cow” would satisfy the requirement of having alt text, but the alt text would not provide the correct information that would make the image accessible. While we can detect the background color and text color by reading a page’s CSS, we may not be able to detect the color of an image; if text is overlayed on a background image, we would not be able to measure if the level of contrast is sufficient. We can measure if closed captions or transcripts are available for audio content, but we cannot automatically verify the accuracy or comprehensiveness of the text content. It is for these reasons that fully assessing a site’s accessibility still requires evaluation by an accessibility professional.
+</p>
+<p>
+<u>pA11y and how we measure</u>
+</p>
+<p>
+While we cannot fully measure accessibility with automated tools, we can measure for broader errors on websites, such as whether an image does or does not contain alt text, whether there is sufficient contrast between the text and background, whether a page is properly structured for someone using a screen reader to access the information, etc. To do this, we are employing an open-source tool known as pA11y. pA11y uses another open-source tool, the HTML_Codesniffer, to identify errors which violate the principles and standards defined in WCAG 2.0. 
+</p>
+<p>
+<u>Other tools available (FAE 2.0, HTML_Codesniffer, etc)</u>
+</p>
+<p>
+While pA11y is the tool we chose to measure accessibility on Pulse, there are a range of other excellent proprietary and open-source tools available to assist web developers and IT managers in understanding how to build accessible technology. 
+</p>
+<p>
+The HTML_Codesniffer, the technology behind pA11y, is a browser extension that can be used to automatically detect some accessibility errors on a webpage. The HTML_Codesniffer will point out the particular code snippet with the error, the location of the error on the page, and the principle violated by the error.
+</p>
+<p>
+The University of Illinois has been working for several years on developing another free, open-source tool, the Functional Accessibility Evaluator (FAE). While the tool is still under development, the currently available version is an excellent way to evaluate a full website; in contrast to pA11y, the FAE can crawl the subdomains of a website, allowing a more comprehensive scan that can identify more potential accessibility issues. 
+</p>
+<p>
+<u>How do I correct accessibility errors on my webpage?</u>
+</p>
+<p>
+The majority of the accessibility errors detected by Pulse are fairly straightforward to correct. The tools listed above provide web developers and content managers with the information they need to pinpoint the errors on their pages, and most of these errors can be corrected by deleting errant tags, making minor CSS adjustments, and adding alt text to images. Some other errors may involve a significant overhaul of a site’s architecture. If you are a web content manager or developer who wants assistance with ensuring that your content is accessible, your agency’s 508 coordinator should be able to answer your questions and help you improve your site’s accessibility. 
+</p>
+<p>
+Additionally, GSA’s Office of Governmentwide Policy (OGP) has a program aimed at improving technology accessibility across the government. OGP conducts training programs to help 508 coordinators and IT professionals better understand how to build accessible technology. If you are interested in learning more about accessible technology, you can contact ______ at GSA OGP for more information.
+</p>
 
-      </article>
-
-      <article>
-
-        <h3>Implementing HTTPS</h3>
-
-        <p>
-          The process of enabling and enforcing strong HTTPS for a web service can vary widely based on the technology, size, and age of the service.
-        </p>
-
-        <p>
-          Agencies working on deploying HTTPS are encouraged to consult <a href="https://https.cio.gov">https.cio.gov</a> for detailed best practices and technical guidance. <a href="https://https.cio.gov">https.cio.gov</a> is <a href="https://github.com/gsa/https">open source</a>, and agencies are also very much encouraged to contribute their own expertise and case studies.
-        </p>
-
-      </article>
-
-      <article>
-
-        <h3>Measuring HTTPS</h3>
-
-        <p>
-          Pulse analyzes the behavior of four "endpoints" of every domain: <code>http://</code>, <code>http://www</code>, <code>https://</code>, and <code>https://www</code>. Data from these endpoints is used to characterize the overall behavior of a domain.
-        </p>
-
-        <p>
-          These measurements are performed using <a href="https://github.com/benbalter/site-inspector">open source</a> <a href="https://github.com/18F/domain-scan">tools</a> and the <a href="https://www.ssllabs.com">SSL Labs</a> <a href="https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md">API</a>.
-        </p>
-
-      </article>
-
-      <article>
-
-        <h3>Fields</h3>
-
-        <ul>
-          <li><strong>Uses HTTPS</strong></li>
-          <li><strong>Values:</strong> No, Yes</li>
-          <li>Whether a site can be used over HTTPS, on either its bare domain or its <code>www</code> subdomain. Sites that appear to redirect "down" from HTTPS to HTTP are considered a "No".</li>
-        </ul>
-
-        <ul>
-          <li><strong>Enforces HTTPS</strong></li>
-          <li><strong>Values:</strong> No, Yes</li>
-          <li>Whether a domain appears to "default" to using HTTPS. This can be done either by redirecting its HTTP endpoints to HTTPS, or by only being available over HTTPS.</li>
-        </ul>
-
-        <ul>
-          <li><strong>Strict Transport Security (HSTS)</strong></li>
-          <li><strong>Values:</strong> No, Yes, "Yes, and preload-ready", "Yes, and preloaded"</li>
-          <li>Whether a domain has implemented <a href="https://https.cio.gov/hsts/">HTTP Strict Transport Security</a>, which ensures that <a href="http://caniuse.com/#search=hsts">supporting browsers</a> will only ever communicate with a domain over HTTPS (even if the user clicks or types in a plain HTTP link).</li>
-          <li>"Yes" means that a valid <code>Strict-Transport-Security</code> header with a non-zero <code>max-age</code> is present on the domain's default endpoint.</li>
-          <li>"Yes, and preload-ready" means that the domain has implemented a strong HSTS header on its <strong>bare domain</strong> whose policy covers all subdomains, and has indicated consent to <a href="https://hstspreload.appspot.com">preloading by all major browsers</a> as HTTPS-only.</li>
-          <li>"Yes, and preloaded" means that the domain is visibly preload-ready (meets the above criteria), <strong>and</strong> that the domain is actually in the public versioned <a href="https://chromium.googlesource.com/chromium/src/+/master/net/http/transport_security_state_static.json">Chrome preload list</a>. Reaching this step effectively means that a domain's namespace is permanently and fully committed to HTTPS.
-          </li>
-        </ul>
-
-        <ul>
-          <li><strong>SSL Labs Grade</strong></li>
-          <li><strong>Values:</strong> T, F, C, B, A-, A, A+</li>
-          <li>A grade measuring the <em>quality</em> of HTTPS configuration, as calculated by <a href="https://www.ssllabs.com">SSL Labs</a>. SSL Labs operates a free and universally referenced benchmarking service.</li>
-          <li>Grades are calculated using a <a href="https://www.ssllabs.com/downloads/SSL_Server_Rating_Guide.pdf">detailed methodology</a> that looks at the strength of cryptographic keys, choices of ciphers, supported protocols, and other relevant standards (such as HSTS).</li>
-          <li>Grades are hyperlinked to detailed reports for each domain on SSL Labs. As an example, view the <a href="https://www.ssllabs.com/ssltest/analyze.html?d=pulse.cio.gov">SSL Labs report for Pulse itself</a>.</li>
-        </ul>
 
       </article>
 
