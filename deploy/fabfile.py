@@ -99,3 +99,7 @@ def deploy_cold():
 # Will affect production and staging environments.
 def update_crontab():
   run("cat %s/deploy/crontab | crontab" % (current_path))
+
+# Update the environment with the latest S3 data.
+def data_init():
+  run("cd %s && workon %s && make data_init" % (current_path, virtualenv))
