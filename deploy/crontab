@@ -1,5 +1,3 @@
-# m h  dom mon dow   command
-
 # Begin production scans on Thursday night.
 #
 # Currently, they take ~25 hours with single-threaded SSL Labs API requests
