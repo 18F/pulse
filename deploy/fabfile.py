@@ -15,7 +15,7 @@ if environment == "production":
   port = 3000
 else:
   environment = "staging"
-  branch = "automation"
+  branch = "master"
   port = 6000
 
 home = "/home/site/pulse/%s" % environment
