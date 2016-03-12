@@ -8,7 +8,9 @@
 import subprocess
 import datetime
 import os
+import sys
 import yaml
+import ujson
 import logging
 
 import data.processing
@@ -43,38 +45,65 @@ BUCKET_NAME = "pulse.cio.gov"
 # domain-scan information
 SCAN_TARGET = os.path.join(this_dir, "./output/scan")
 SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
-SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics")
-ANALYTICS_URL = "https://analytics.usa.gov/data/live/second-level-domains.csv"
+SCANNERS = os.environ.get("SCANNERS", "inspect,tls,analytics,sslyze")
+ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
-# TODO:
-# --date: override date
-# --skip-scan: skip the scanning part (rely on local scan data)
-# --skip-upload: don't bother uploading anything to S3
+# Options:
+# --date: override date, defaults to contents of meta.json
+# --scan=[skip,download,here]
+#     skip: skip all scanning, assume CSVs are locally cached
+#     download: download scan data from S3
+#     here: run the default full scan
+# --upload: upload scan data and resulting db.json anything to S3
 
-def run():
+def run(options):
   # Definitive scan date for the run.
-  the_date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
+  today = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
 
-  # Kick off domain-scan.
-  print("[%s] Kicking off a scan." % the_date)
-  print()
-  scan()
-  print()
-  print("[%s] Domain-scan complete." % the_date)
+  # Download scan data, do a new scan, or skip altogether.
+  scan_mode = options.get("scan", "skip")
+  if scan_mode == "here":
+    print("Kicking off a scan.")
+    print()
+    scan()
+    print()
+    print("Domain-scan complete.")
+  elif scan_mode == "download":
+    print("Downloading latest production scan data from S3.")
+    print()
+    live_scanned = "s3://%s/live/scan/" % (BUCKET_NAME)
+    shell_out(["aws", "s3", "sync", live_scanned, SCANNED_DATA])
+    print()
+    print("Download complete.")
 
-  # 2. Process scan data to be front-end-ready.
-  print("[%s] Running Pulse post-processor." % the_date)
+  # Sanity check to make sure we have what we need.
+  if not os.path.exists(os.path.join(SCANNED_DATA, "meta.json")):
+    print("No scan metadata downloaded, aborting.")
+    exit()
+
+  # Date can be overridden if need be, but defaults to meta.json.
+  if options.get("date", None) is not None:
+    the_date = options.get("date")
+  else:
+    # depends on YYYY-MM-DD coming first in meta.json time format
+    scan_meta = ujson.load(open("data/output/scan/results/meta.json"))
+    the_date = scan_meta['start_time'][0:10]
+
+
+  # 2. Process and load data into Pulse's database.
+  print("[%s] Loading data into Pulse." % the_date)
   print()
   data.processing.run(the_date)
   print()
-  print("[%s] Processed data now in output/data/processed." % the_date)
+  print("[%s] Data now loaded into Pulse." % the_date)
 
-  # 3. Upload data to S3.
-  print("[%s] Syncing processed data to S3." % the_date)
-  print()
-  upload(the_date)
-  print()
-  print("[%s] Processed data now in S3." % the_date)
+  # 3. Upload data to S3 (if requested).
+  if options.get("upload", False):
+    print("[%s] Syncing scan data and database to S3." % the_date)
+    print()
+    upload(the_date)
+    print()
+    print("[%s] Scan data and database now in S3." % the_date)
 
   print("[%s] All done." % the_date)
 
@@ -123,9 +152,29 @@ def shell_out(command, env=None):
         exit(1)
         return None
 
+# Quick and dirty CLI options parser.
+def options():
+  options = {}
+  for arg in sys.argv[1:]:
+    if arg.startswith("--"):
+
+      if "=" in arg:
+        key, value = arg.split('=')
+      else:
+        key, value = arg, "true"
+
+      key = key.split("--")[1]
+      key = key.lower()
+      value = value.lower()
+
+      if value == 'true': value = True
+      elif value == 'false': value = False
+      options[key] = value
+
+  return options
 
 
 ### Run when executed.
 
 if __name__ == '__main__':
-    run()
+    run(options())

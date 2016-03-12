@@ -36,11 +36,12 @@ $(document).ready(function () {
         },
         {
           render: function(data, type, row) {
-            if (type == "sort")
-              return null;
-            return Utils.progressBar(Utils.percent(
+            var percent = Utils.percent(
               row.analytics.participating, row.analytics.eligible
-            ));
+            )
+            if (type == "sort")
+              return percent;
+            return Utils.progressBar(percent);
           },
           targets: 2,
         }

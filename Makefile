@@ -4,13 +4,13 @@ css ?= static/css/main.css
 all: styles
 
 staging:
-	cd deploy/ && fab deploy && cd ..
+	cd deploy/ && fab deploy --set environment=staging && cd ..
 
 production:
 	cd deploy/ && fab deploy --set environment=production && cd ..
 
-run:
-	python pulse.py
+debug:
+	DEBUG=true python pulse.py
 
 styles:
 	sass $(scss):$(css)
@@ -21,9 +21,23 @@ watch:
 clean:
 	rm -f $(css)
 
-# Runs the data update script.
-update:
-	python -m data.update
+# Production data update process:
+#
+# Run a fresh scan, update the database, and upload data to S3.
+update_production:
+	python -m data.update --scan=here --upload
+
+# Staging data update process:
+#
+# Download last production scan data, update the database.
+update_staging:
+	python -m data.update --scan=download
+
+# Development data update process:
+#
+# Don't scan or download latest data (rely on local cache), update database.
+update_development:
+	python -m data.update --scan=skip
 
 # downloads latest snapshot of data locally
 data_init:

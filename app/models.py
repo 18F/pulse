@@ -1,6 +1,7 @@
 from tinydb import TinyDB, where, Query
 import os
 import io
+import datetime
 import csv
 from app.data import CSV_FIELDS, FIELD_MAPPING, LABELS
 
@@ -28,6 +29,9 @@ class Report:
   # Initialize a report with a given date.
   def create(report_date):
     db.table('reports').insert({'report_date': report_date})
+
+  def report_time(report_date):
+    return datetime.datetime.strptime(report_date, "%Y-%m-%d")
 
   # There's only ever one.
   def latest():
