@@ -26,6 +26,7 @@ ABILITYONE.GOV,Federal Agency,Comm for People Who Are Blind/Severly Disabled,Arl
 JWOD.GOV,Federal Agency,Comm for People Who Are Blind/Severly Disabled,Arlington,VA
 CFTC.GOV,Federal Agency,Commodity Futures Trading Commission,Washington,DC
 SMARTCHECK.GOV,Federal Agency,Commodity Futures Trading Commission,Washington,DC
+WHISTLEBLOWER.GOV,Federal Agency,Commodity Futures Trading Commission,Washington,DC
 COMPLIANCE.GOV,Federal Agency,Congressional Office of Compliance,Washington,DC
 BCFP.GOV,Federal Agency,Consumer Financial Protection Bureau,Washington,DC
 CFPA.GOV,Federal Agency,Consumer Financial Protection Bureau,Washington,DC
@@ -73,6 +74,7 @@ VISTACAMPUS.GOV,Federal Agency,Corporation for National & Community Service,Wash
 VOLUNTEERINGINAMERICA.GOV,Federal Agency,Corporation for National & Community Service,Washington,DC
 CIGIE.GOV,Federal Agency,Council of Inspector General on Integrity and Efficiency,WASHINGTON,DC
 IGNET.GOV,Federal Agency,Council of Inspector General on Integrity and Efficiency,Washington,DC
+OVERSIGHT.GOV,Federal Agency,Council of Inspector General on Integrity and Efficiency,Washington,DC
 CSOSA.FED.US,Federal Agency,Court Services and Offender Supervision,Washington,DC
 CSOSA.GOV,Federal Agency,Court Services and Offender Supervision,Washington,DC
 PRETRIALSERVICES.GOV,Federal Agency,Court Services and Offender Supervision,Washington,DC
@@ -392,7 +394,6 @@ NLM.GOV,Federal Agency,Department of Health And Human Services,Bethesda,MD
 NNLM.GOV,Federal Agency,Department of Health And Human Services,Bethesda,MD
 ORGANDONOR.GOV,Federal Agency,Department of Health And Human Services,Rockville,MD
 PANDEMICFLU.GOV,Federal Agency,Department of Health And Human Services,Washington,DC
-PCIP.GOV,Federal Agency,Department of Health And Human Services,New Orleans,LA
 PHE.GOV,Federal Agency,Department of Health And Human Services,Washington,DC
 PSC.GOV,Federal Agency,Department of Health And Human Services,Rockville,MD
 PUBMED.GOV,Federal Agency,Department of Health And Human Services,Bethesda,MD
@@ -549,7 +550,6 @@ WHISTLEBLOWERS.GOV,Federal Agency,Department of Labor,Washington,DC
 WRP.GOV,Federal Agency,Department of Labor,Washington,DC
 YOUTHRULES.GOV,Federal Agency,Department of Labor,Washington,DC
 AMERICA.GOV,Federal Agency,Department of State,Washington,DC
-CIVILIANRESPONSECORPS.GOV,Federal Agency,Department of State,Washington,DC
 CONTINENTALSHELF.GOV,Federal Agency,Department of State,Washington,DC
 CWC.GOV,Federal Agency,Department of State,Washington,DC
 ECOPARTNERSHIPS.GOV,Federal Agency,Department of State,Washington,DC
@@ -705,6 +705,7 @@ MHA.GOV,Federal Agency,Department of the Treasury,Washington,DC
 MONEYFACTORY.GOV,Federal Agency,Department of the Treasury,Washington,DC
 MONEYFACTORYSTORE.GOV,Federal Agency,Department of the Treasury,Washington,DC
 MSB.GOV,Federal Agency,Department of the Treasury,Vienna,VA
+MYIRA.GOV,Federal Agency,Department of the Treasury,Washington,DC
 MYMONEY.GOV,Federal Agency,Department of the Treasury,Washington,DC
 MYRA.GOV,Federal Agency,Department of the Treasury,Washington,DC
 NATIONALBANK.GOV,Federal Agency,Department of the Treasury,McLean,VA
@@ -772,6 +773,7 @@ NHTSA.GOV,Federal Agency,Department of Transportation,Washington,DC
 NTDPROGRAM.GOV,Federal Agency,Department of Transportation,Washington,DC
 PLAINLANGUAGE.GOV,Federal Agency,Department of Transportation,Washington,DC
 PROTECTYOURMOVE.GOV,Federal Agency,Department of Transportation,Washington,DC
+SAFEOCS.GOV,Federal Agency,Department of Transportation,Washington,DC
 SAFERCAR.GOV,Federal Agency,Department of Transportation,Washington,DC
 SAFERTRUCK.GOV,Federal Agency,Department of Transportation,Washington,DC
 SHARETHEROADSAFELY.GOV,Federal Agency,Department of Transportation,Washington,DC
@@ -1029,6 +1031,7 @@ USAPERFORMANCE.GOV,Federal Agency,General Services Administration,Washington,DC
 USCIRF.GOV,Federal Agency,General Services Administration,Washington,DC
 USGOVERNMENT.GOV,Federal Agency,General Services Administration,Washington,DC
 USIP.GOV,Federal Agency,General Services Administration,Washington,DC
+USSM.GOV,Federal Agency,General Services Administration,Washington,DC
 VEF.GOV,Federal Agency,General Services Administration,Arlington,VA
 VITM.GOV,Federal Agency,General Services Administration,Arlington,VA
 BROWSETOPICS.GOV,Federal Agency,Government Printing Office,Washington,DC
@@ -1076,7 +1079,6 @@ CONGRESS.GOV,Federal Agency,Library of Congress,Washington,DC
 COPYRIGHT.GOV,Federal Agency,Library of Congress,Washington,DC
 CRS.GOV,Federal Agency,Library of Congress,Washington,DC
 DIGITALPRESERVATION.GOV,Federal Agency,Library of Congress,Washington,DC
-DIGITALSTEWARDSHIP.GOV,Federal Agency,Library of Congress,Washington,DC
 DIGITIZATIONGUIDELINES.GOV,Federal Agency,Library of Congress,Washington,DC
 HILL.GOV,Federal Agency,Library of Congress,Washington,DC
 HISPANICHERITAGEMONTH.GOV,Federal Agency,Library of Congress,Washington,DC
@@ -1094,9 +1096,7 @@ LOC.GOV,Federal Agency,Library of Congress,Washington,DC
 LOCIMAGES.GOV,Federal Agency,Library of Congress,Washington,DC
 LOCSTORE.GOV,Federal Agency,Library of Congress,Washington,DC
 LOCTPS.GOV,Federal Agency,Library of Congress,Washington,DC
-MYLOC.GOV,Federal Agency,Library of Congress,Washington,DC
 NATIVEAMERICANHERITAGEMONTH.GOV,Federal Agency,Library of Congress,Washington,DC
-NDSA.GOV,Federal Agency,Library of Congress,Washington,DC
 PRIMARYSOURCES.GOV,Federal Agency,Library of Congress,Washington,DC
 READ.GOV,Federal Agency,Library of Congress,Washington,DC
 SECTION108.GOV,Federal Agency,Library of Congress,Washington,DC
@@ -1108,7 +1108,6 @@ UNITEDSTATESCONGRESS.GOV,Federal Agency,Library of Congress,Washington,DC
 USCONGRESS.GOV,Federal Agency,Library of Congress,Washington,DC
 WDL.GOV,Federal Agency,Library of Congress,Washington,DC
 WOMENSHISTORYMONTH.GOV,Federal Agency,Library of Congress,Washington,DC
-WORLDDIGITALLIBRARY.GOV,Federal Agency,Library of Congress,Washington,DC
 MMC.GOV,Federal Agency,Marine Mammal Commission,Bethesda,MD
 MACPAC.GOV,Federal Agency,Medicaid and CHIP Payment and Access Commission,Washington,DC
 MEDPAC.GOV,Federal Agency,Medical Payment Advisory Commission,Washington,DC
@@ -1161,7 +1160,6 @@ ARCTICGAS.GOV,Federal Agency,National Science Foundation,Washington,DC
 NSF.GOV,Federal Agency,National Science Foundation,Arlington,VA
 RESEARCH.GOV,Federal Agency,National Science Foundation,Arlington,VA
 SAC.GOV,Federal Agency,National Science Foundation,Arlington,VA
-SBIR.GOV,Federal Agency,National Science Foundation,Arlington,VA
 SCIENCE360.GOV,Federal Agency,National Science Foundation,Arlington,VA
 USAP.GOV,Federal Agency,National Science Foundation,Arlington,VA
 INTELLIGENCECAREERS.GOV,Federal Agency,National Security Agency,Ft. Meade,MD
@@ -1222,6 +1220,7 @@ HSA.GOV,Federal Agency,Small Business Administration,Washington,DC
 NWBC.GOV,Federal Agency,Small Business Administration,Washington,DC
 ONLINEWBC.GOV,Federal Agency,Small Business Administration,Washington,DC
 SBA.GOV,Federal Agency,Small Business Administration,Washington,DC
+SBIR.GOV,Federal Agency,Small Business Administration,Arlington,VA
 WOMENBIZ.GOV,Federal Agency,Small Business Administration,Washington,DC
 ITIS.GOV,Federal Agency,Smithsonian Institution,Washington,DC
 SEGUROSOCIAL.GOV,Federal Agency,Social Security Administration,Baltimore,MD

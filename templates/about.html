@@ -99,15 +99,7 @@
 				<h3>When was the data last updated on Pulse?</h3>
 
 				<p>
-					The list of <code>.gov</code> domains used on Pulse was generated on <strong>{{ site.data.domains | date("%B %d, %Y") }}</strong>.
-				</p>
-
-				<p>
-					Participation in the Digital Analytics Program is current as of <strong>{{ site.data.scan | date("%B %d, %Y") }}</strong>.
-				</p>
-
-				<p>
-					HTTPS and TLS data was last collected through a scan of the public internet on <strong>{{ site.data.scan | date("%B %d, %Y") }}</strong>.
+					All data was last measured on <strong>{{ scan_date | date("%B %d, %Y") }}</strong>.
 				</p>
 			</li>
 

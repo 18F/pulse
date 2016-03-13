@@ -26,9 +26,9 @@ $(document).ready(function () {
   var display = function(set) {
     return function(data, type) {
       if (type == "sort")
-        return data;
+        return set[data];
       else
-        return set[data.toString()];
+        return set[data];
     }
   };
 

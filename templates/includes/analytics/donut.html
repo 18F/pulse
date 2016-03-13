@@ -40,6 +40,11 @@
         // calculate % client-side
         var participating = Math.round((data.participating / data.eligible) * 100);
 
+        // just abort and leave it blank if something's wrong
+        // (instead of showing "NaN%" visually)
+        if (isNaN(participating))
+            return;
+
         var pie_data = [
             {status: 'active', value: participating},
             {status: 'inactive', value: (100-participating)}

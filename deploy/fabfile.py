@@ -15,7 +15,7 @@ if environment == "production":
   port = 3000
 else:
   environment = "staging"
-  branch = "staging"
+  branch = "master"
   port = 6000
 
 home = "/home/site/pulse/%s" % environment
@@ -47,6 +47,13 @@ def make_current():
 def links():
   run("ln -s %s/data/db.json %s/data/db.json" % (shared_path, version_path))
   run("ln -s %s/data/output %s/data/output" % (shared_path, version_path))
+
+# Only done on cold deploy.
+def init():
+  run("mkdir -p %s/data/output" % shared_path)
+  run("rmvirtualenv %s" % virtualenv)
+  run("mkvirtualenv %s" % virtualenv)
+  run("cd %s && make data_init" % version_path)
 
 def cleanup():
   versions = run("ls -x %s" % versions_path).split()
@@ -84,50 +91,15 @@ def deploy():
 def deploy_cold():
   execute(checkout)
   execute(links)
+  execute(init)
   execute(dependencies)
   execute(make_current)
   execute(start)
 
-# import time
-# from fabric.api import run, execute, env, cd
+# Will affect production and staging environments.
+def update_crontab():
+  run("cat %s/deploy/crontab | crontab" % (current_path))
 
-# """
-# Manage auto-deploy webhooks remotely.
-
-# Production hook:
-
-#   forever start -l $HOME/pulse/hookshot.log -a deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull && bundle exec jekyll build >> $HOME/pulse/hookshot.log"
-#   forever restart deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull && bundle exec jekyll build >> $HOME/pulse/hookshot.log"
-#   forever stop deploy/hookshot.js -p 5000 -b production -c "cd $HOME/pulse/production/current && git pull && bundle exec jekyll build >> $HOME/pulse/hookshot.log"
-# """
-
-# environment = "production"
-# branch = "production"
-# port = 5000
-
-# env.use_ssh_config = True
-
-# home = "/home/site/pulse"
-# log = "%s/hookshot.log" % home
-# current = "%s/%s/current" % (home, environment)
-
-# # principal command to run upon update
-# command = "cd %s && git pull && bundle exec jekyll build >> %s" % (current, log)
-
-# def start():
-#   run(
-#     "cd %s && forever start -l %s -a deploy/hookshot.js -p %i -b %s -c \"%s\""
-#     % (current, log, port, branch, command)
-#   )
-
-# def stop():
-#   run(
-#     "cd %s && forever stop deploy/hookshot.js -p %i -b %s -c \"%s\""
-#     % (current, port, branch, command)
-#   )
-
-# def restart():
-#   run(
-#     "cd %s && forever restart deploy/hookshot.js -p %i -b %s -c \"%s\""
-#     % (current, port, branch, command)
-#   )
+# Update the environment with the latest S3 data.
+def data_init():
+  run("cd %s && workon %s && make data_init" % (current_path, virtualenv))
