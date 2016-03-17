@@ -12,16 +12,20 @@
 
 import csv
 import json
+import yaml
 import os
 import slugify
 import datetime
+import subprocess
 
-
-## Input dirs, relative to this file.
 this_dir = os.path.dirname(__file__)
-INPUT_DOMAINS_DATA = os.path.join(this_dir, "./")
-INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")
 
+META = yaml.safe_load(open(os.path.join(this_dir, "../meta.yml")))
+DOMAINS = os.environ.get("DOMAINS", META["data"]["domains_url"])
+
+# domains.csv is downloaded and live-cached during the scan
+INPUT_DOMAINS_DATA = os.path.join(this_dir, "./output/scan/cache")
+INPUT_SCAN_DATA = os.path.join(this_dir, "./output/scan/results")
 
 ###
 # Main task flow.
@@ -103,8 +107,18 @@ def load_domain_data():
   domain_map = {}
   agency_map = {}
 
-  # TODO: get rid of domains.csv in the repo
-  with open(os.path.join(INPUT_DOMAINS_DATA, "domains.csv"), newline='') as csvfile:
+  # if domains.csv wasn't cached, download it anew
+  domains_path = os.path.join(INPUT_DOMAINS_DATA, "domains.csv")
+  if not os.path.exists(domains_path):
+    print("Downloading domains.csv...")
+    mkdir_p(INPUT_DOMAINS_DATA)
+    shell_out(["wget", DOMAINS, "-O", domains_path])
+
+  if not os.path.exists(domains_path):
+    print("Couldn't download domains.csv")
+    exit(1)
+
+  with open(domains_path, newline='') as csvfile:
     for row in csv.reader(csvfile):
       if row[0].lower().startswith("domain"):
         continue
@@ -571,9 +585,31 @@ def print_report():
 
 ### utilities
 
+def shell_out(command, env=None):
+    try:
+        print("[cmd] %s" % str.join(" ", command))
+        response = subprocess.check_output(command, shell=False, env=env)
+        output = str(response, encoding='UTF-8')
+        print(output)
+        return output
+    except subprocess.CalledProcessError:
+        logging.warn("Error running %s." % (str(command)))
+        exit(1)
+        return None
+
 def percent(num, denom):
   return round((num / denom) * 100)
 
+# mkdir -p in python, from:
+# http://stackoverflow.com/questions/600268/mkdir-p-functionality-in-python
+def mkdir_p(path):
+    try:
+        os.makedirs(path)
+    except OSError as exc:  # Python >2.5
+        if exc.errno == errno.EEXIST:
+            pass
+        else:
+            raise
 
 def boolean_for(string):
   if string == "False":
