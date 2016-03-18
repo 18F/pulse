@@ -8,6 +8,7 @@ logs
 
 # virtualenv
 .Python
+.python-version
 bin
 include
 lib

@@ -19,16 +19,17 @@
         <thead>
           <tr>
             <th class="all" scope="col">Agency</th>
-            <th class="all" scope="col">No. of Domains</th>
-            <th class="min-tablet" scope="col">Uses HTTPS</th>
-            <th class="min-tablet" scope="col">Enforces HTTPS</th>
-            <th class="desktop" scope="col">Strict Transport Security (HSTS)</th>
-            <th class="desktop" scope="col">SSL Labs (A- or higher)</th>
+            <th class="all" scope="col">No. of Errors</th>
+            <th class="min-tablet" scope="col">Contrast Errors</th>
+            <th class="min-tablet" scope="col">Layout Errors</th>
+            <th class="desktop" scope="col">Form Errors</th>
+            <th class="desktop" scope="col">Table Errors</th>
+            <th class="desktop" scope="col">Meta Information Errors</th>
           </tr>
         </thead>
     </table>
   </div>
 </section>
 
-<script src="/static/js/https/agencies.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
+<script src="/static/js/accessibility/agencies.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
 {% endblock %}
