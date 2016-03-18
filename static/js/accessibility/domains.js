@@ -77,14 +77,20 @@ $(document).ready(function () {
   };
 
 
-  // Construct a sentence explaining the HTTP situation.
+  // Construct a summary of errors
   var accessibilityDetails = function(data, type, row) {
-    var errors= ["Duplicate id attribute value \"\" found on the web page. *this is not real data", "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.4:1. Recommendation: change text colour to #636363. *this is not real data"];
+    var errors= ["Contrast Errrors: 5", 
+                 "Anchor Errors: 11",
+                 "Layout Errors: 2",
+                 "Form Errors: 3",
+                 "Table Errors: 5",
+                 "Meta Information Errors: 10",
+                 ];
     var error_string = '';
     for (var i=0; i<errors.length; i++){
-      error_string += "<hr/><li>" + errors[i] + "</li>";
+      error_string += "<div style='float:left; margin:5px;'>" + errors[i] + "</div>";
     }
-    return "<ol>" + error_string + "</ol>";
+    return "</hr><ol><li>" + error_string + "</li></ol></hr>";
   };
 
   var links = {
@@ -101,44 +107,7 @@ $(document).ready(function () {
     return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\">" + text + "</a>";
   };
 
-  // Mention a few high-impact TLS issues that will have affected
-  // the SSL Labs grade.
-  var tlsDetails = function(data, type, row) {
-    if (type == "sort")
-      return null;
-
-    if (row["SSL Labs Grade"] < 0)
-      return "No data.";
-
-    var config = [];
-
-    if (row["Uses HTTPS"] == 1)
-      config.push("uses a certificate chain that may be invalid for some visitors");
-
-    if (row["Signature Algorithm"] == "SHA1withRSA")
-      config.push("uses a certificate with a " + l("sha1", "weak SHA-1 signature"));
-
-    if (row["SSLv3"] == true)
-      config.push("supports the " + l("ssl3", "insecure SSLv3 protocol"));
-
-    if (row["RC4"] == true)
-      config.push("supports the " + l("rc4", "deprecated RC4 cipher"));
-
-    if (row["TLSv1.2"] == false)
-      config.push("lacks support for the " + l("tls", "most recent version of TLS"));
-
-    // Don't bother remarking if FS is Modern or Robust.
-    if (row["Forward Secrecy"] <= 1)
-      config.push("should enable " + l("fs", "forward secrecy"));
-
-    var issues = "";
-    if (config.length > 0)
-      issues += "This domain " + config.join(", ") + ". ";
-
-    issues += "See the " + l(labsUrlFor(row["Domain"]), "full SSL Labs report") + " for details.";
-
-    return issues;
-  };
+  
 
   var detailsKeyboardCtrl = function(){
       $('table tbody tr td:first-child').attr('tabindex','0')
