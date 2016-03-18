@@ -44,26 +44,6 @@ $(document).ready(function () {
           createdCell: function (td) {
             td.scope = "row";
           }
-        },
-        {
-          render: percentBar("uses"),
-          targets: 2,
-        },
-        {
-          render: percentBar("enforces"),
-          targets: 3,
-        },
-        {
-          render: percentBar("hsts"),
-          targets: 4,
-        },
-        {
-          render: percentBar("grade"),
-          targets: 5,
-        },
-        {
-          render: percentBar("uses"),
-          targets: 6,
         }
       ],
 
