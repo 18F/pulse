@@ -56,8 +56,20 @@ def run(date):
   # Read in domain-scan CSV data.
   scan_data = load_scan_data(domains)
 
+  # Load in some manual exclusion data.
+  analytics_ineligible = yaml.safe_load(open(os.path.join(this_dir, "ineligible/analytics.yml")))
+  analytics_ineligible_map = {}
+  for domain in analytics_ineligible:
+    analytics_ineligible_map[domain] = True
+
   # Pull out a few inspect.csv fields as general domain metadata.
   for domain_name in scan_data.keys():
+    analytics = scan_data[domain_name].get('analytics', None)
+    if analytics:
+      ineligible = analytics_ineligible_map.get(domain_name, False)
+      domains[domain_name]['exclude']['analytics'] = ineligible
+
+
     inspect = scan_data[domain_name].get('inspect', None)
     if inspect is None:
       # generally means scan was on different domains.csv, but
@@ -65,12 +77,15 @@ def run(date):
       print("[%s][WARNING] No inspect data for domain!" % domain_name)
 
       # Remove the domain from further consideration.
+      # Destructive, so have this done last.
       del domains[domain_name]
     else:
       # print("[%s] Updating with inspection metadata." % domain_name)
       domains[domain_name]['live'] = boolean_for(inspect['Live'])
       domains[domain_name]['redirect'] = boolean_for(inspect['Redirect'])
       domains[domain_name]['canonical'] = inspect['Canonical']
+
+
 
   # Save what we've got to the database so far.
 
@@ -143,6 +158,7 @@ def load_domain_data():
           'agency_name': agency_name,
           'agency_slug': agency_slug,
           'branch': branch,
+          'exclude': {}
         }
 
       if agency_slug not in agency_map:
@@ -205,6 +221,7 @@ def load_scan_data(domains):
 
 
   # Now, analytics measurement.
+
   headers = []
   with open(os.path.join(INPUT_SCAN_DATA, "analytics.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
@@ -323,7 +340,9 @@ def eligible_for_analytics(domain):
   return (
     (domain["live"] == True) and
     (domain["redirect"] == False) and
-    (domain["branch"] == "executive")
+    (domain["branch"] == "executive") and
+    # managed in data/ineligible/analytics.yml
+    (domain["exclude"]["analytics"] == False)
   )
 
 # Analytics conclusions for a domain based on analytics domain-scan data.
