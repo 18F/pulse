@@ -98,7 +98,12 @@ a#skipnav {
   }
 }
 
-#analytics, #https, #about, #domain, #agency, #accessibility {
+#https,
+#domain,
+#agency,
+#analytics,
+#accessibility,
+#about {
 
   #content {
 
@@ -146,6 +151,7 @@ a#skipnav {
     }
 
     #main-content {
+
       .tab-menu {
         width: 100%;
         margin-top: 40px;
@@ -189,21 +195,34 @@ a#skipnav {
   }
 }
 
-.https_chart, .dap_chart {
+.https_chart,
+.dap_chart {
   cursor: pointer;
   padding-top: 15px;
 }
 
-@import "includes/header.scss";
 
+// Includes for:
+// - Pulse site header and navigation
+// - Landing page
+// - By Domain
+// - By Agency
+// - Guidance
+// - Accessibility
+// - DAP
+// - datatables
+// - About
+// - 404
+/////////////////////////////////////////
+
+@import "includes/header.scss";
 @import "pages/home.scss";
 @import "pages/domain.scss";
 @import "pages/agency.scss";
 @import "pages/guidance.scss";
-@import "pages/analytics.scss";
+@import "includes/accessibility.scss";
+@import "includes/analytics.scss";
+@import "includes/datatables.scss";
 @import "pages/about.scss";
 @import "pages/notfound.scss";
-
-@import "includes/datatables.scss";
-
 
