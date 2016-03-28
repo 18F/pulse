@@ -1,0 +1,51 @@
+// pages/index.html
+/////////////////////////////////////////
+
+#home {
+  .hero {
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+
+    @include span-columns(8);
+    @include shift(2);
+
+    h2 {
+      font-size: $base-font-size * 7;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: $base-font-size * 2;
+      font-weight: 100;
+      padding-top: 15px;
+    }
+  }
+
+  #results {
+    padding: 40px 0;
+
+    @include span-columns(8);
+    @include shift(2);
+
+    .https, .dap {
+      margin-bottom: 40px;
+      text-align: center;
+
+      @include span-columns(4 of 8);
+
+      @media (max-width: 970px) {
+        width: 100%
+      }
+
+      @include display(flex);
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+
+      .total-value {
+        font-size: 5em;
+      }
+    }
+  }
+}

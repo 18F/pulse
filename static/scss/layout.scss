@@ -1,0 +1,390 @@
+// Generic layout for:
+// pages/analytics/*
+// pages/https/*
+// pages/about.html
+// pages/domains.html
+// agency
+// accessibility
+// pages/**/guides.html
+// 404
+/////////////////////////////////////////
+
+#analytics, #https, #about, #domain, #agency, #accessibility {
+
+  #content {
+
+    > header {
+      @include outer-container;
+      color: white;
+      padding: 30px 0;
+
+      p {
+        margin-top: 12px;
+      }
+
+      a {
+        font-weight: bold;
+        color: white;
+      }
+
+      .donut {
+        @include span-columns(3);
+        @include media($medium) {
+          display: none;
+        }
+
+        .total-value {
+          font-size: 3em;
+        }
+
+        .total-desc {
+          font-size: 0.8em;
+        }
+      }
+
+      &.chart {
+        padding: 0;
+
+        .description {
+          @include span-columns(8);
+          padding-top: 30px;
+          @include media($medium) {
+            @include span-columns(12);
+            padding: 40px 20px 20px 20px;
+          }
+        }
+      }
+    }
+
+    #main-content {
+      .tab-menu {
+        width: 100%;
+        margin-top: 40px;
+
+        .tab {
+          width: 33.33%;
+          margin: 0;
+          float: left;
+          text-align: center;
+          padding: 30px 0;
+          font-size: 1.5em;
+        }
+
+        a.tab {
+          background-color: $medium-blue;
+          color: white;
+
+          &:hover,
+          &:focus {
+            background-color: lighten($medium-blue, 10%);
+            color: white;
+          }
+        }
+      }
+
+      &.white-bkg {
+        background-color: white;
+
+        a {
+          color: $light-blue;
+          font-weight: 900;
+
+          &:hover,
+          &:focus {
+            color: $light-blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.https_chart, .dap_chart {
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+// pages/analytics/*
+/////////////////////////////////////////
+#analytics {
+
+  #content {
+    > header .donut .total-value {
+      font-size: 3.5em;
+    }
+  }
+
+  .dataTables_wrapper table.dataTable td:first-child {
+      padding: 8px 0 8px 20px !important;
+
+      @include media($medium) {
+        padding-left: 40px !important;
+      }
+  }
+
+}
+
+// pages/about.html
+/////////////////////////////////////////
+#about {
+
+  #content header {
+    padding: 40px;
+  }
+
+  .faq-questions {
+    padding: 20px 0;
+  }
+
+  .faq-answers {
+    padding: 0 40px;
+
+    h3 {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    li {
+      padding-bottom: 40px;
+    }
+
+    p {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+
+// pages/accessibility/*
+/////////////////////////////////////////
+#accessibility {
+  #content {
+    > header.chart .description {
+      @include span-columns(12);
+    }
+  }
+}
+
+
+// pages/domains.html
+/////////////////////////////////////////
+#domain {
+
+  #content header h2 {
+    margin-top: 10px;
+  }
+
+  #main-content ul {
+    color: $light-blue;
+    padding: 10px 0;
+
+    li {
+      border: 1px solid #eee;
+      margin: 30px 0;
+      padding: 25px 25px;
+
+      h2 {
+        border-bottom: 1px solid #eee;
+        font-size: 2em;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+      }
+
+      .coverage {
+        display: inline-block;
+        padding: 0;
+        margin-right: 35px;
+        width: 290px;
+
+        li {
+          border: none;
+          font-size: 1.2em;
+          margin: 0;
+          padding: 5px 0;
+          text-align: right;
+
+          .label {
+            font-weight: bold;
+            padding-right: 10px;
+          }
+        }
+      }
+
+      .description {
+        color: #535353;
+        display: inline-block;
+        font-size: 1.2em;
+        margin-top: 5px;
+        vertical-align: top;
+        width: 570px;
+
+        div {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+// pages/agency.html
+/////////////////////////////////////////
+#agency {
+
+  #content header h2 {
+    margin-top: 10px;
+  }
+
+  #main-content ul {
+    color: $light-blue;
+    padding: 10px 0;
+
+    li {
+      margin: 30px 0;
+      border: 1px solid #eee;
+
+      @include clearfix();
+
+      .description {
+        display: inline-block;
+        margin-top: 30px;
+        vertical-align: top;
+        width: 475px;
+
+        h2 {
+          font-size: 2em;
+          margin-bottom: 15px;
+        }
+
+        p {
+          padding: 10px 0;
+        }
+      }
+
+      &.https {
+
+        .description {
+          margin-left: 30px;
+        }
+
+        .charts {
+          float: right;
+          margin-left: 25px;
+          vertical-align: top;
+          width: 350px;
+        }
+      }
+
+      &.dap {
+
+        .description {
+          width: 730px;
+        }
+
+        .charts {
+          margin: 20px 20px 0 20px;
+        }
+      }
+
+      .charts {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 0;
+
+        li {
+          border: none;
+          display: inline-block;
+          margin: 0 10px;
+          padding: 0;
+          text-align: center;
+          vertical-align: bottom;
+          width: 75px;
+
+          .percent {
+            font-size: 2.5em;
+            font-weight: bold;
+            height: 45px;
+          }
+
+          .label {
+            font-size: 1.1em;
+            font-weight: bold;
+            height: 60px;
+            text-transform: uppercase;
+          }
+
+          .bar {
+            background: #D8D8D8;
+            height: 170px;
+            margin-top: 10px;
+            position: relative;
+          }
+
+          .fill {
+            background: $light-blue;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 25%;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// pages/**/guides.html
+/////////////////////////////////////////
+.guide {
+  clear: both;
+  padding: 60px 0 40px;
+
+  @include media($medium) {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  article {
+    padding-bottom: 25px;
+
+    h3,
+    h4 {
+      margin-bottom: 12px;
+    }
+
+    ul,
+    p {
+      padding-bottom: 20px;
+
+      li {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+// pages/404.html
+/////////////////////////////////////////
+#pagenotfound {
+  #main-content {
+    color: white;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+
+    h2 {
+      font-size: 10em;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 2em;
+    }
+  }
+}

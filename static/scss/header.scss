@@ -1,0 +1,136 @@
+// _includes/header.html
+/////////////////////////////////////////
+
+.site-header {
+
+  .disclaimer {
+    background-color: $dark-blue;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+
+    @include media($small) {
+      font-size: 0.8em;
+      padding: 10px 20px;
+    }
+
+    .us-official {
+      margin-left: 177px;
+
+      @include media($large) {
+        margin: 0;
+      }
+    }
+
+    .stage {
+      float: right;
+
+      @include media($large) {
+        display: block;
+        float: none;
+      }
+    }
+  }
+
+  > nav {
+    border-bottom: 1px solid $dark-blue;
+
+    #main-nav {
+      padding: 10px 0;
+
+      @include media($large) {
+        padding: 10px 20px;
+      }
+      @include outer-container;
+
+      a {
+        color: white;
+      }
+
+      h1#branding {
+        font-size: 1.875em;
+        font-weight: 300;
+
+        @include span-columns(5);
+        @include media($medium) {
+          @include span-columns(9);
+        }
+      }
+
+      ul {
+        float: right;
+        margin-top: 6px;
+
+        @include media($medium) {
+          display: none;
+        }
+
+        li {
+          display: inline;
+
+          a {
+            padding: 17px 24px;
+
+            &:hover {
+              background-color: white;
+              color: $medium-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #menu-btn {
+    display: none;
+
+    @include media($medium) {
+      display: inline;
+      text-align: right;
+      margin-top: 6px;
+      @include span-columns(3);
+    }
+  }
+
+  #menu-content{
+    $sliding-panel-width: 220px;
+    background: #fff;
+    overflow-y: auto;
+    z-index: 999999;
+    -webkit-overflow-scrolling: touch;
+
+    @include position(fixed, 0 auto 0 0);
+    @include size($sliding-panel-width 100%);
+    @include transform(translateX(- $sliding-panel-width));
+    @include transition(all 0.25s linear);
+
+    a {
+      color: #4A4A4A;
+    }
+
+    ul {
+      font-weight: 300;
+      line-height: 1.8em;
+      padding: 14px;
+    }
+
+    &.is-visible {
+      @include transform(translateX(0));
+    }
+  }
+
+  .overlay {
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+
+    @include position(fixed, 0 0 0 0);
+    @include transition;
+
+    &.is-visible {
+      visibility: visible;
+    }
+  }
+  // Based on code by Diego Eis
+}
