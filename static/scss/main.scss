@@ -98,7 +98,112 @@ a#skipnav {
   }
 }
 
-@import "header.scss";
-@import "home.scss";
-@import "layout.scss";
-@import "datatables.scss";
+#analytics, #https, #about, #domain, #agency, #accessibility {
+
+  #content {
+
+    > header {
+      @include outer-container;
+      color: white;
+      padding: 30px 0;
+
+      p {
+        margin-top: 12px;
+      }
+
+      a {
+        font-weight: bold;
+        color: white;
+      }
+
+      .donut {
+        @include span-columns(3);
+        @include media($medium) {
+          display: none;
+        }
+
+        .total-value {
+          font-size: 3em;
+        }
+
+        .total-desc {
+          font-size: 0.8em;
+        }
+      }
+
+      &.chart {
+        padding: 0;
+
+        .description {
+          @include span-columns(8);
+          padding-top: 30px;
+          @include media($medium) {
+            @include span-columns(12);
+            padding: 40px 20px 20px 20px;
+          }
+        }
+      }
+    }
+
+    #main-content {
+      .tab-menu {
+        width: 100%;
+        margin-top: 40px;
+
+        .tab {
+          width: 33.33%;
+          margin: 0;
+          float: left;
+          text-align: center;
+          padding: 30px 0;
+          font-size: 1.5em;
+        }
+
+        a.tab {
+          background-color: $medium-blue;
+          color: white;
+
+          &:hover,
+          &:focus {
+            background-color: lighten($medium-blue, 10%);
+            color: white;
+          }
+        }
+      }
+
+      &.white-bkg {
+        background-color: white;
+
+        a {
+          color: $light-blue;
+          font-weight: 900;
+
+          &:hover,
+          &:focus {
+            color: $light-blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.https_chart, .dap_chart {
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+@import "includes/header.scss";
+
+@import "pages/home.scss";
+@import "pages/domain.scss";
+@import "pages/agency.scss";
+@import "pages/guidance.scss";
+@import "pages/analytics.scss";
+@import "pages/about.scss";
+@import "pages/notfound.scss";
+
+@import "includes/datatables.scss";
+
+

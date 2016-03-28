@@ -1,0 +1,10 @@
+// Accessibliity
+/////////////////////////////////////////
+
+#accessibility {
+  #content {
+    > header.chart .description {
+      @include span-columns(12);
+    }
+  }
+}

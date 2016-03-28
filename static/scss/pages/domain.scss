@@ -1,0 +1,60 @@
+// By Domain
+/////////////////////////////////////////
+
+#domain {
+
+  #content header h2 {
+    margin-top: 10px;
+  }
+
+  #main-content ul {
+    color: $light-blue;
+    padding: 10px 0;
+
+    li {
+      border: 1px solid #eee;
+      margin: 30px 0;
+      padding: 25px 25px;
+
+      h2 {
+        border-bottom: 1px solid #eee;
+        font-size: 2em;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+      }
+
+      .coverage {
+        display: inline-block;
+        padding: 0;
+        margin-right: 35px;
+        width: 290px;
+
+        li {
+          border: none;
+          font-size: 1.2em;
+          margin: 0;
+          padding: 5px 0;
+          text-align: right;
+
+          .label {
+            font-weight: bold;
+            padding-right: 10px;
+          }
+        }
+      }
+
+      .description {
+        color: #535353;
+        display: inline-block;
+        font-size: 1.2em;
+        margin-top: 5px;
+        vertical-align: top;
+        width: 570px;
+
+        div {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

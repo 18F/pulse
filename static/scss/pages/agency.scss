@@ -1,0 +1,108 @@
+// By Agency
+/////////////////////////////////////////
+
+
+#agency {
+
+  #content header h2 {
+    margin-top: 10px;
+  }
+
+  #main-content ul {
+    color: $light-blue;
+    padding: 10px 0;
+
+    li {
+      margin: 30px 0;
+      border: 1px solid #eee;
+
+      @include clearfix();
+
+      .description {
+        display: inline-block;
+        margin-top: 30px;
+        vertical-align: top;
+        width: 475px;
+
+        h2 {
+          font-size: 2em;
+          margin-bottom: 15px;
+        }
+
+        p {
+          padding: 10px 0;
+        }
+      }
+
+      &.https {
+
+        .description {
+          margin-left: 30px;
+        }
+
+        .charts {
+          float: right;
+          margin-left: 25px;
+          vertical-align: top;
+          width: 350px;
+        }
+      }
+
+      &.dap {
+
+        .description {
+          width: 730px;
+        }
+
+        .charts {
+          margin: 20px 20px 0 20px;
+        }
+      }
+
+      .charts {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 0;
+
+        li {
+          border: none;
+          display: inline-block;
+          margin: 0 10px;
+          padding: 0;
+          text-align: center;
+          vertical-align: bottom;
+          width: 75px;
+
+          .percent {
+            font-size: 2.5em;
+            font-weight: bold;
+            height: 45px;
+          }
+
+          .label {
+            font-size: 1.1em;
+            font-weight: bold;
+            height: 60px;
+            text-transform: uppercase;
+          }
+
+          .bar {
+            background: #D8D8D8;
+            height: 170px;
+            margin-top: 10px;
+            position: relative;
+          }
+
+          .fill {
+            background: $light-blue;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 25%;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
