@@ -399,6 +399,18 @@ a#skipnav {
   }
 }
 
+
+// pages/accessibility/*
+/////////////////////////////////////////
+#accessibility {
+  #content {
+    > header.chart .description {
+      @include span-columns(12);
+    }
+  }
+}
+
+
 // pages/domains.html
 /////////////////////////////////////////
 #domain {

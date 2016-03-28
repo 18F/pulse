@@ -559,6 +559,14 @@ a#skipnav {
   #about .faq-answers p {
     padding-bottom: 15px; }
 
+#accessibility #content > header.chart .description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #accessibility #content > header.chart .description:last-child {
+    margin-right: 0; }
+
 #domain #content header h2 {
   margin-top: 10px; }
 #domain #main-content ul {
