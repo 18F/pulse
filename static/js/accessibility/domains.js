@@ -79,7 +79,7 @@ $(document).ready(function () {
 
   // Construct a summary of errors
   var accessibilityDetails = function(data, type, row) {
-    var errors= ["Contrast Errrors: 5", 
+    var errors= ["Contrast Errrors: 5",
                  "Anchor Errors: 11",
                  "Layout Errors: 2",
                  "Form Errors: 3",
@@ -87,10 +87,11 @@ $(document).ready(function () {
                  "Meta Information Errors: 10",
                  ];
     var error_string = '';
+
     for (var i=0; i<errors.length; i++){
-      error_string += "<div style='float:left; margin:5px;'>" + errors[i] + "</div>";
+      error_string += "<li>" + errors[i] + "</li>";
     }
-    return "</hr><ol><li>" + error_string + "</li></ol></hr>";
+    return "</hr><ul class=\"errorList\">" + error_string + "</ul></hr>";
   };
 
   var links = {
@@ -107,7 +108,7 @@ $(document).ready(function () {
     return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\">" + text + "</a>";
   };
 
-  
+
 
   var detailsKeyboardCtrl = function(){
       $('table tbody tr td:first-child').attr('tabindex','0')

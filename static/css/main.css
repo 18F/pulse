@@ -785,6 +785,15 @@ a#skipnav {
   width: 100%; }
   #accessibility #content > header.chart .description:last-child {
     margin-right: 0; }
+#accessibility #content .errorList {
+  margin: 7px 0 5px -60px; }
+  #accessibility #content .errorList li {
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px; }
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
