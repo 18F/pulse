@@ -48,5 +48,17 @@ var Utils = {
       $("input[type=search]").val(query);
       api.search(query).draw();
     }
+  },
+
+  errorList: function(data) {
+
+    var errorListOutput = "";
+
+    $.each(data, function(key, value) {
+      errorListOutput += "<li>" + key + ": " + value + "</li>";
+    });
+
+    return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
+
   }
 };

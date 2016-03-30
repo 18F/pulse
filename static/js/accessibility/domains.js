@@ -77,23 +77,6 @@ $(document).ready(function () {
   };
 
 
-  // Construct a summary of errors
-  var accessibilityDetails = function(data, type, row) {
-    var errors= ["Contrast Errrors: 5",
-                 "Anchor Errors: 11",
-                 "Layout Errors: 2",
-                 "Form Errors: 3",
-                 "Table Errors: 5",
-                 "Meta Information Errors: 10",
-                 ];
-    var error_string = '';
-
-    for (var i=0; i<errors.length; i++){
-      error_string += "<li>" + errors[i] + "</li>";
-    }
-    return "</hr><ul class=\"errorList\">" + error_string + "</ul></hr>";
-  };
-
   var links = {
     rc4: "https://https.cio.gov/technical-guidelines/#rc4",
     hsts: "https://https.cio.gov/hsts/",
@@ -131,15 +114,18 @@ $(document).ready(function () {
 
       columns: [
         {
-          data: "Domain",
+          data: "domain",
           width: "210px",
           render: Utils.linkDomain
         },
-        {data: "Errors"},
-        {data: "Agency"},
         {
-          data: "Error Details",
-          render: accessibilityDetails
+          data: "errors",
+          width: "60px",
+          },
+        {data: "agency"},
+        {
+          data: "errorlist",
+          render: Utils.errorList
         }
       ],
 
