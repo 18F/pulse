@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/data/agencies/https.json", function(data) {
+  $.get("/static/data/tables/accessibility/agencies.json", function(data) {
     renderTable(data.data);
   });
 
@@ -22,16 +22,13 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {data: "name"},
-        {
-          data: "https.eligible",
-          render: Utils.filterAgency("accessibility")
-        },
-        {data: "https.uses"},
-        {data: "https.enforces"},
-        {data: "https.hsts"},
-        {data: "https.grade"},
-        {data: "https.uses"}
+        {data: "Agency"},
+        {data: "Errors"},
+        {data: "Color Contrast Errors"},
+        {data: "HTML/Attribute Errors"},
+        {data: "Form Errors"},
+        {data: "Alt Tag Errors"},
+        {data: "Other Errors"}
       ],
 
       // order by number of domains
