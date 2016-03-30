@@ -4,16 +4,6 @@ $(document).ready(function () {
     renderTable(data.data);
   });
 
-  var percentBar = function(field) {
-    return function(data, type, row) {
-      if (type == "sort")
-        return null;
-      return Utils.progressBar(Utils.percent(
-        row.https[field], row.https.eligible
-      ));
-    };
-  }
-
   var renderTable = function(data) {
     $("table").DataTable({
       responsive: true,
@@ -55,5 +45,4 @@ $(document).ready(function () {
 
     });
   };
-
 });
