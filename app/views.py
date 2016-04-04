@@ -100,3 +100,7 @@ def register(app):
     @app.route("/accessibility/guidance/")
     def accessibility_guide():
       return render_template("accessibility/guide.html")
+
+    @app.errorhandler(404)
+    def page_not_found(e):
+      return render_template('404.html'), 404
