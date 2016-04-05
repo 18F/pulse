@@ -84,6 +84,10 @@ def register(app):
 
         return render_template("domain.html", domain=domain)
 
+    @app.route("/accessibility/domain/<hostname>")
+    def a11ydomain(hostname=None):
+      return render_template("a11y.html", domain=hostname)
+
     # Sanity-check RSS feed, shows the latest report.
     @app.route("/data/reports/feed/")
     def report_feed():

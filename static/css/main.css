@@ -794,6 +794,15 @@ a#skipnav {
     display: inline-block;
     padding: 5px 10px;
     margin: 0 10px; }
+#accessibility .a11y {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0; }
+  #accessibility .a11y:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
