@@ -1,0 +1,30 @@
+// About
+/////////////////////////////////////////
+
+#about {
+
+  #content header {
+    padding: 40px;
+  }
+
+  .faq-questions {
+    padding: 20px 0;
+  }
+
+  .faq-answers {
+    padding: 0 40px;
+
+    h3 {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    li {
+      padding-bottom: 40px;
+    }
+
+    p {
+      padding-bottom: 15px;
+    }
+  }
+}

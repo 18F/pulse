@@ -1,18 +1,8 @@
 $(document).ready(function () {
 
-  $.get("/data/agencies/https.json", function(data) {
+  $.get("/static/data/tables/accessibility/agencies.json", function(data) {
     renderTable(data.data);
   });
-
-  var percentBar = function(field) {
-    return function(data, type, row) {
-      if (type == "sort")
-        return null;
-      return Utils.progressBar(Utils.percent(
-        row.https[field], row.https.eligible
-      ));
-    };
-  }
 
   var renderTable = function(data) {
     $("table").DataTable({
@@ -22,16 +12,13 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {data: "name"},
-        {
-          data: "https.eligible",
-          render: Utils.filterAgency("accessibility")
-        },
-        {data: "https.uses"},
-        {data: "https.enforces"},
-        {data: "https.hsts"},
-        {data: "https.grade"},
-        {data: "https.uses"}
+        {data: "Agency"},
+        {data: "Errors"},
+        {data: "Color Contrast Errors"},
+        {data: "HTML/Attribute Errors"},
+        {data: "Form Errors"},
+        {data: "Alt Tag Errors"},
+        {data: "Other Errors"}
       ],
 
       // order by number of domains
@@ -58,5 +45,4 @@ $(document).ready(function () {
 
     });
   };
-
 });
