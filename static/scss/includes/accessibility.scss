@@ -1,0 +1,71 @@
+// Accessibliity
+/////////////////////////////////////////
+
+#accessibility {
+  #content {
+    > header.chart .description {
+      @include span-columns(12);
+    }
+
+    .errorList {
+      margin: 7px 0 5px -60px;
+
+      li {
+        display: inline-block;
+
+        a {
+          border: 1px solid #ccc;
+          background: #eee;
+          border-radius: 5px;
+          color: #4A4A4A !important;
+          display: block;
+          text-decoration: none;
+          padding: 5px 10px;
+          margin: 0 10px;
+
+          &:hover {
+            background: #ddd;
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .dataTables_csv {
+    display: none;
+  }
+
+  .a11y {
+    @include outer-container;
+    padding: 50px 0;
+
+    .category {
+      border: 1px solid #CCC;
+      padding: 25px;
+      margin-bottom: 45px;
+
+      h2 {
+        border-bottom: 2px solid #CCC;
+        padding-bottom: 5px;
+      }
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    li {
+      padding: 10px 0;
+
+      span {
+        font-weight: bold;
+      }
+
+      .code {
+        font-size: 1.15em;
+        font-weight: bold;
+      }
+    }
+  }
+}

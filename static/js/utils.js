@@ -48,5 +48,17 @@ var Utils = {
       $("input[type=search]").val(query);
       api.search(query).draw();
     }
+  },
+
+  a11yErrorList: function(data, type, row) {
+
+    var errorListOutput = "";
+
+    $.each(data, function(key, value) {
+      errorListOutput += "<li><a href=\"/accessibility/domain/" + row['canonical'].replace(/http:\/\//i, '') + "#" + key.replace(/\s/g, '').replace(/\//i, '') + "\" target=\"_blank\">" + key + ": " + value + "</a></li>";
+    });
+
+    return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
+
   }
 };

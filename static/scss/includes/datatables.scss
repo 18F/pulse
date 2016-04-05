@@ -1,0 +1,230 @@
+// dataTables
+/////////////////////////////////////////
+
+.dataTables_wrapper {
+  padding: 80px 0 40px;
+
+  .dataTables_length {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a.active, a.active:hover {
+      text-decoration: none;
+      color: black !important;
+    }
+
+    select {
+      border: none;
+      display: inline-block;
+      color: white;
+      width: 60px;
+      border-radius: 0px;
+      padding: 0 8px;
+      margin: 0 5px;
+      height: 30px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      background: url("/assets/images/arrow-down.png") 73% / 15% no-repeat $medium-blue;
+      &::-ms-expand {
+        display: none;
+      }
+    }
+  }
+
+  .dataTables_csv {
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+
+    a {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .dataTables_filter {
+    font-size: 1.1em;
+    label { float: right; }
+
+    input {
+      display: inline-block;
+      width: auto;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      height: 40px;
+      width: 400px;
+      box-shadow: none;
+      font-size: 1.1em;
+      font-weight: 200;
+    }
+
+    @include media($small) {
+      label {
+        float: none;
+      }
+
+      input {
+        width: 200px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  table.dataTable {
+    padding: 20px 0;
+
+    a {
+      text-decoration: underline;
+    }
+
+    th, td {
+      border-bottom: 2px solid #EEE !important;
+      padding: 8px 0 8px 40px;
+    }
+
+    td:first {
+      padding: 8px 0 8px 30px !important;
+    }
+
+    thead {
+      .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
+        background-position: 20px center;
+      }
+    }
+
+    &.no-footer {
+      border: none;
+    }
+
+    &.domain {
+
+      td.odd:first-child,
+      td.even:first-child {
+        white-space: nowrap;
+      }
+    }
+
+    &.dtr-inline.collapsed {
+      td:first-child:before {
+        top: 9px;
+        background-color: lighten($light-blue, 20%);
+      }
+    }
+
+    > tbody {
+      > tr.child {
+        ul li {
+          border-bottom: none;
+          padding: 0 0 3px 0;
+        }
+        span.dtr-title {
+          min-width: 50px;
+        }
+      }
+    }
+
+    &.https.domain {
+      tbody {
+        tr {
+          &.parent {
+            td { border-bottom: none !important; }
+          }
+          &:hover {
+            background-color: #EEE;
+            cursor: pointer;
+            +.child {
+              background-color: #EEE;
+            }
+          }
+        }
+      }
+    }
+
+    &.agency {
+
+      td {
+        padding: 15px 0 15px 40px !important;
+
+        @include media($large) {
+          padding-left: 32px !important;
+          &:first-child:before { top: 30px !important; }
+        }
+        @include media ($medium) {
+          &:first-child:before { top: 15px !important; }
+        }
+      }
+
+      .progress-bar-indication {
+        background-color: #CCC;
+        border-radius: 20px;
+        width: 70%;
+
+        > .meter {
+          @include box-sizing(border-box);
+          background-color: $light-blue;
+          background-repeat: repeat-x;
+          background-size: 40px 40px;
+          border-radius: 20px 0 0 20px;
+          margin: 15px 0;
+          display: block;
+          height: 100%;
+          width: 60%;
+          &.width100 {
+            border-radius: 20px;
+          }
+          @for $i from 1 through 3 {
+            &.width#{$i} { background-color: transparent }
+          }
+        }
+
+        p {
+          font-weight: 900;
+          font-size: 0.875em;
+          position: relative;
+          top: -18px;
+        }
+      }
+    }
+  }
+  .dataTables_info {
+    padding-top: 0 !important;
+  }
+  .dataTables_paginate {
+    a.paginate_button {
+      padding: 0 8px !important;
+      font-size: 0.875em;
+      border: none !important;
+      &.current {
+        background: $medium-blue !important;
+        color: white !important;
+        &:hover {
+          color: white !important;
+        }
+      }
+      &:hover, &:focus {
+        background: $medium-blue !important;
+        color: white !important;
+      }
+      &.disabled {
+        &:hover, &:focus {
+          background: transparent !important;
+        }
+      }
+    }
+  }
+}

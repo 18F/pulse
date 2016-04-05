@@ -1,0 +1,33 @@
+// Guidance
+/////////////////////////////////////////
+
+.guide {
+  clear: both;
+  padding: 60px 0 40px;
+
+  @include media($medium) {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  article {
+    padding-bottom: 25px;
+
+    h3,
+    h4 {
+      margin-bottom: 12px;
+    }
+
+    ul,
+    p {
+      padding-bottom: 20px;
+
+      li {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
