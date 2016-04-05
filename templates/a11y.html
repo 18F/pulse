@@ -9,7 +9,7 @@
 <header>
 
   <div class="description">
-    <h1>Accessibility</h1>
+    <h1>{{ domain }} a11y results</h1>
     <p>
     	The a11y scan results for this website were detected on <strong>{{ scan_date | date("%B %d, %Y") }}</strong>.
     </p>
@@ -18,11 +18,7 @@
 </header>
 
 <section id="main-content" class="white-bkg" data-domain="{{ domain }}">
-	<div class="a11y">
-
-		<p>test content.</p>
-
-	</div>
+	<div class="a11y"></div>
 </section>
 
 <script src="/static/js/accessibility/a11y.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>

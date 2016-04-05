@@ -803,6 +803,13 @@ a#skipnav {
     content: "";
     display: table;
     clear: both; }
+  #accessibility .a11y ul {
+    margin: 10px 0 35px 0; }
+  #accessibility .a11y li {
+    padding: 10px 0; }
+    #accessibility .a11y li .code {
+      font-size: 1.15em;
+      font-weight: bold; }
 
 #analytics #content > header .donut .total-value {
   font-size: 3.5em; }
