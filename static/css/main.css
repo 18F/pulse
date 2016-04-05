@@ -788,19 +788,19 @@ a#skipnav {
 #accessibility #content .errorList {
   margin: 7px 0 5px -60px; }
   #accessibility #content .errorList li {
-    border: 1px solid #ccc;
-    background: #eee;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 0 10px; }
+    display: inline-block; }
     #accessibility #content .errorList li a {
+      border: 1px solid #ccc;
+      background: #eee;
+      border-radius: 5px;
       color: #4A4A4A !important;
-      text-decoration: none; }
+      display: block;
+      text-decoration: none;
+      padding: 5px 10px;
+      margin: 0 10px; }
       #accessibility #content .errorList li a:hover {
+        background: #ddd;
         text-decoration: none !important; }
-    #accessibility #content .errorList li:hover {
-      background: #ddd; }
 #accessibility .dataTables_csv {
   display: none; }
 #accessibility .a11y {

@@ -13,9 +13,10 @@ $(document).ready(function () {
         for (var category in categories) {
 
           $element.append(
-            '<div class="category">' +
+            '<div id="' + category.replace(/\s/g, '').replace(/\//i, '') + '" class="category">' +
             '<h2>' + category + ' (' + categories[category].length + ')</h2>' +
-            '<ul></ul></div>'
+            '<ul></ul>' +
+            '</div>'
           );
 
           $(categories[category]).each(function(key, error)  {

@@ -11,24 +11,22 @@
       margin: 7px 0 5px -60px;
 
       li {
-        border: 1px solid #ccc;
-        background: #eee;
-        border-radius: 5px;
         display: inline-block;
-        padding: 5px 10px;
-        margin: 0 10px;
 
         a {
+          border: 1px solid #ccc;
+          background: #eee;
+          border-radius: 5px;
           color: #4A4A4A !important;
+          display: block;
           text-decoration: none;
+          padding: 5px 10px;
+          margin: 0 10px;
 
           &:hover {
+            background: #ddd;
             text-decoration: none !important;
           }
-        }
-
-        &:hover {
-          background: #ddd;
         }
       }
     }
