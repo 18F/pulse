@@ -25,12 +25,27 @@
     @include outer-container;
     padding: 50px 0;
 
+    .category {
+      border: 1px solid #CCC;
+      padding: 25px;
+      margin-bottom: 45px;
+
+      h2 {
+        border-bottom: 2px solid #CCC;
+        padding-bottom: 5px;
+      }
+    }
+
     ul {
-      margin: 10px 0 35px 0;
+      margin-top: 10px;
     }
 
     li {
       padding: 10px 0;
+
+      span {
+        font-weight: bold;
+      }
 
       .code {
         font-size: 1.15em;

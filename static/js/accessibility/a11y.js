@@ -12,9 +12,11 @@ $(document).ready(function () {
         var categories = data.data[key];
         for (var category in categories) {
 
-          $element.append('<h2>' + category + ' (' + categories[category].length + ')</h2>');
-
-          $element.append('<ul>');
+          $element.append(
+            '<div class="category">' +
+            '<h2>' + category + ' (' + categories[category].length + ')</h2>' +
+            '<ul></ul></div>'
+          );
 
           $(categories[category]).each(function(key, error)  {
 
@@ -23,8 +25,8 @@ $(document).ready(function () {
             $list.append(
               '<li>' +
               '<div class="code">' + error['code'] + '</div>' +
-              '<div class="selector">Selector: ' + error['selector'] + '</div>' +
-              '<div class="context">Context: <code>' + error['context'].replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') +
+              '<div class="selector"><span>Selector:</span> ' + error['selector'] + '</div>' +
+              '<div class="context"><span>Context:</span> <code>' + error['context'].replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') +
               '</code></div></li>'
             );
           });

@@ -803,10 +803,19 @@ a#skipnav {
     content: "";
     display: table;
     clear: both; }
+  #accessibility .a11y .category {
+    border: 1px solid #CCC;
+    padding: 25px;
+    margin-bottom: 45px; }
+    #accessibility .a11y .category h2 {
+      border-bottom: 2px solid #CCC;
+      padding-bottom: 5px; }
   #accessibility .a11y ul {
-    margin: 10px 0 35px 0; }
+    margin-top: 10px; }
   #accessibility .a11y li {
     padding: 10px 0; }
+    #accessibility .a11y li span {
+      font-weight: bold; }
     #accessibility .a11y li .code {
       font-size: 1.15em;
       font-weight: bold; }
