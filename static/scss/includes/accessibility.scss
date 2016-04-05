@@ -17,8 +17,25 @@
         display: inline-block;
         padding: 5px 10px;
         margin: 0 10px;
+
+        a {
+          color: #4A4A4A !important;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none !important;
+          }
+        }
+
+        &:hover {
+          background: #ddd;
+        }
       }
     }
+  }
+
+  .dataTables_csv {
+    display: none;
   }
 
   .a11y {

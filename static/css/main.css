@@ -794,6 +794,15 @@ a#skipnav {
     display: inline-block;
     padding: 5px 10px;
     margin: 0 10px; }
+    #accessibility #content .errorList li a {
+      color: #4A4A4A !important;
+      text-decoration: none; }
+      #accessibility #content .errorList li a:hover {
+        text-decoration: none !important; }
+    #accessibility #content .errorList li:hover {
+      background: #ddd; }
+#accessibility .dataTables_csv {
+  display: none; }
 #accessibility .a11y {
   max-width: 68em;
   margin-left: auto;

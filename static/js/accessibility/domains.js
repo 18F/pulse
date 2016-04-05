@@ -36,7 +36,7 @@ $(document).ready(function () {
         {data: "agency"},
         {
           data: "errorlist",
-          render: Utils.errorList
+          render: Utils.a11yErrorList
         }
       ],
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/static/data/tables/https/https-domains.csv",
+      // csv: "/static/data/tables/https/https-domains.csv",
 
       dom: 'LCftrip'
 
