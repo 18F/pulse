@@ -801,6 +801,9 @@ a#skipnav {
       #accessibility #content .errorList li a:hover {
         background: #ddd;
         text-decoration: none !important; }
+#accessibility #content .noErrors {
+  font-weight: bold;
+  margin-left: -50px; }
 #accessibility .dataTables_csv {
   display: none; }
 #accessibility .a11y {

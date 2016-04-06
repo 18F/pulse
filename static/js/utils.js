@@ -58,6 +58,10 @@ var Utils = {
       errorListOutput += "<li><a href=\"/accessibility/domain/" + row['canonical'].replace(/http:\/\//i, '') + "#" + key.replace(/\s/g, '').replace(/\//i, '') + "\" target=\"_blank\">" + key + ": " + value + "</a></li>";
     });
 
+    if (!errorListOutput) {
+      return "</hr><span class=\"noErrors\">No errors found.</span>";
+    }
+
     return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
 
   }

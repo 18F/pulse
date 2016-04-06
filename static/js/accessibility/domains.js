@@ -8,9 +8,10 @@ $(document).ready(function () {
       $('table tbody tr td:first-child').attr('tabindex','0')
       .attr('aria-label','Select for additional details')
       .on('keydown',function(e){
-        if (e.keyCode == 13)
-          $(this).click();
-          $(this).parent().next('tr.child').focus();
+        if (e.keyCode == 13) {
+          // $(this).click();
+          // $(this).parent().next('tr.child').focus();
+        }
       });
     };
 
