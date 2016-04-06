@@ -60,9 +60,9 @@ var Utils = {
 
     if (!errorListOutput) {
       return "</hr><span class=\"noErrors\">No errors found.</span>";
+    } else {
+      return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
     }
-
-    return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
 
   }
 };
