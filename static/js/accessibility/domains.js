@@ -9,8 +9,8 @@ $(document).ready(function () {
       .attr('aria-label','Select for additional details')
       .on('keydown',function(e){
         if (e.keyCode == 13) {
-          // $(this).click();
-          // $(this).parent().next('tr.child').focus();
+          $(this).click();
+          $(this).parent().next('tr.child').focus();
         }
       });
     };
