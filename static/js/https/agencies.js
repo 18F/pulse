@@ -6,11 +6,13 @@ $(document).ready(function () {
 
   var percentBar = function(field) {
     return function(data, type, row) {
-      if (type == "sort")
-        return null;
-      return Utils.progressBar(Utils.percent(
+      percent = Utils.percent(
         row.https[field], row.https.eligible
-      ));
+      );
+
+      if (type == "sort")
+        return percent;
+      return Utils.progressBar(percent);
     };
   }
 
