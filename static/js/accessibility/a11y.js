@@ -20,7 +20,6 @@ $(document).ready(function () {
           );
 
           $(categories[category]).each(function(key, error)  {
-
             $list = $('ul').last();
 
             $list.append(
@@ -28,7 +27,9 @@ $(document).ready(function () {
               '<div class="code">' + error['code'] + '</div>' +
               '<div class="selector"><span>Selector:</span> ' + error['selector'] + '</div>' +
               '<div class="context"><span>Context:</span> <code>' + error['context'].replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') +
-              '</code></div></li>'
+              '</code></div>' +
+              '<div class="description"><span>Description:</span> ' + error['description'] +
+              '</div></li>'
             );
           });
 
