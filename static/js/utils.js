@@ -1,4 +1,3 @@
-
 var Utils = {
   // ignores the 'type' and 'row' args if sent as datatables callback
 
@@ -37,7 +36,7 @@ var Utils = {
             QueryString.stringify({q: row["name"]}) + "\">" +
             data +
           "</a>";
-    }
+    };
   },
 
   searchLinks: function() {
@@ -51,7 +50,6 @@ var Utils = {
   },
 
   a11yErrorList: function(data, type, row) {
-
     var errorListOutput = "";
 
     $.each(data, function(key, value) {
@@ -63,6 +61,6 @@ var Utils = {
     } else {
       return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
     }
-
   }
+
 };

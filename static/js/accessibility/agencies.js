@@ -13,7 +13,9 @@ $(document).ready(function () {
 
       columns: [
         {data: "Agency"},
-        {data: "Errors"},
+        {data: function(row, type, val, meta) {
+          return Math.round(row["Average Errors per Page"]);
+        }},
         {data: "Color Contrast Errors"},
         {data: "HTML/Attribute Errors"},
         {data: "Form Errors"},
@@ -21,7 +23,6 @@ $(document).ready(function () {
         {data: "Other Errors"}
       ],
 
-      // order by number of domains
       order: [[1, "desc"]],
 
       columnDefs: [
