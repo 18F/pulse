@@ -16,4 +16,9 @@ $(function(){
     //   location.hash = '';
   });
 
+  // add label for attribute for search after page is loaded
+  $(window).load(function() {
+    $('.dataTables_filter label').attr('for', 'search');
+  });
+
 });
