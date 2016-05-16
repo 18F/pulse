@@ -37,7 +37,7 @@ var Utils = {
             QueryString.stringify({q: row["name"]}) + "\">" +
             data +
           "</a>";
-    }
+    };
   },
 
   searchLinks: function() {

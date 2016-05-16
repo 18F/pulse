@@ -16,8 +16,8 @@ $(function(){
     //   location.hash = '';
   });
 
-  // add label for attribute for search after page is loaded
-  $(window).load(function() {
+  $('table').on('draw.dt', function() {
+    // add label for attribute for search
     $('.dataTables_filter label').attr('for', 'search');
   });
 
