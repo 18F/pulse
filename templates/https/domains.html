@@ -9,12 +9,14 @@
 {% include 'includes/https/header.html' %}
 
 <section id="main-content" class="white-bkg">
-  <nav class="tab-menu">
-    <span class="tab">By Domain</span>
-    <a href="/https/agencies/" class="tab">By Agency</a>
-    <a href="/https/guidance/" class="tab">Guidance</a>
+
+  <nav class="tab-menu" role="tablist">
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Domain</span>
+    <a href="/https/agencies/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Agency</a>
+    <a href="/https/guidance/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
   </nav>
-  <div class="wrapper">
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="domain responsive https">
       <caption>Secure HTTP(S) By Domain</caption>
       <thead>
@@ -32,6 +34,7 @@
       </thead>
     </table>
   </div>
+
 </section>
 
 <script src="/static/js/https/domains.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>

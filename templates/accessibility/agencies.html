@@ -9,12 +9,14 @@
 {% include 'includes/accessibility/header.html' %}
 
 <section id="main-content" class="white-bkg">
-  <nav class="tab-menu">
-    <a href="/accessibility/domains/" class="tab">By Domain</a>
-    <span class="tab">By Agency</span>
-    <a href="/accessibility/guidance/" class="tab">Guidance</a>
+
+  <nav class="tab-menu" role="tablist">
+    <a href="/accessibility/domains/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Agency</span>
+    <a href="/accessibility/guidance/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
   </nav>
-  <div class="wrapper">
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="agency responsive https">
       <caption>Accessibility By Agency</caption>
       <thead>
@@ -30,6 +32,7 @@
       </thead>
     </table>
   </div>
+
 </section>
 
 <script src="/static/js/accessibility/agencies.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>

@@ -10,13 +10,13 @@
 
 <section id="main-content" class="white-bkg">
 
-  <nav class="tab-menu">
-    <a href="/https/domains/" class="tab">By Domain</a>
-    <a href="/https/agencies/" class="tab">By Agency</a>
-    <span class="tab">Guidance</span>
+  <nav class="tab-menu" role="tablist">
+    <a href="/https/domains/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <a href="/https/agencies/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Agency</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">Guidance</span>
   </nav>
 
-  <div class="wrapper">
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
 
     <div class="guide">
 
