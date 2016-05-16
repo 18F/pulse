@@ -579,6 +579,11 @@ a#skipnav {
   .site-header .overlay.is-visible {
     visibility: visible; }
 
+.chart h2 {
+  font-size: 2.25em; }
+.chart h3 {
+  font-size: 1.5em; }
+
 #home .hero {
   color: white;
   padding-top: 40px;
@@ -764,11 +769,13 @@ a#skipnav {
   @media screen and (max-width: 767px) {
     .guide {
       padding: 40px 20px; } }
-  .guide h2 {
+  .guide h3 {
+    font-size: 1.5em;
     margin-bottom: 60px; }
+  .guide h4 {
+    font-size: 1.25em; }
   .guide article {
     padding-bottom: 25px; }
-    .guide article h3,
     .guide article h4 {
       margin-bottom: 12px; }
     .guide article ul,
