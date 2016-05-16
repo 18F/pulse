@@ -847,6 +847,9 @@ a#skipnav {
     #analytics .dataTables_wrapper table.dataTable td:first-child {
       padding-left: 40px !important; } }
 
+table caption {
+  display: none; }
+
 .dataTables_wrapper {
   padding: 80px 0 40px; }
   .dataTables_wrapper .dataTables_length {
