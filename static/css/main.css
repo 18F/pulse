@@ -207,9 +207,11 @@ body {
 a {
   color: white;
   font-weight: 900; }
-  a:hover, a:focus {
+  a:hover {
     color: white;
     text-decoration: underline; }
+  a:focus {
+    outline: dotted 1px; }
 
 footer {
   border-top: 1px solid #003366;
@@ -451,6 +453,14 @@ a#skipnav {
 .dap_chart {
   cursor: pointer;
   padding-top: 15px; }
+
+.sr-only {
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
 
 .site-header .disclaimer {
   background-color: #003366;
@@ -863,8 +873,6 @@ table caption {
     .dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
       text-decoration: none;
       color: black !important; }
-    .dataTables_wrapper .dataTables_length a:focus {
-      outline: dotted 1px; }
     .dataTables_wrapper .dataTables_length select {
       border: none;
       display: inline-block;
