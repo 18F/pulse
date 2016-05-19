@@ -16,4 +16,13 @@ $(function(){
     //   location.hash = '';
   });
 
+  $('table').on('draw.dt', function() {
+    // set max width on dataTable
+    $(this).css('width', '100%');
+
+    // add label for attribute for search
+    $('.dataTables_filter label').attr('for', 'datatables-search');
+    $('#DataTables_Table_0_filter').find('input[type="search"]').attr('id', 'datatables-search');
+  });
+
 });
