@@ -1002,11 +1002,16 @@ table caption {
 
 #about #content header {
   padding: 40px; }
+  #about #content header h2 {
+    font-size: 2.25em; }
+#about #main-content h3 {
+  font-size: 1.5em; }
 #about .faq-questions {
   padding: 20px 0; }
 #about .faq-answers {
   padding: 0 40px; }
-  #about .faq-answers h3 {
+  #about .faq-answers h4 {
+    font-size: 1.25em;
     font-style: italic;
     margin-bottom: 15px; }
   #about .faq-answers li {
