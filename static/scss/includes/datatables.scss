@@ -24,6 +24,10 @@ table caption {
       color: black !important;
     }
 
+    a:focus {
+      outline: dotted 1px;
+    }
+
     select {
       border: none;
       display: inline-block;

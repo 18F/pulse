@@ -63,8 +63,8 @@ $.fn.dataTable.LengthLinks = function ( inst ) {
 
 		var out = $.map( lens, function (el, i) {
 			return el == api.page.len() ?
-				'<a class="active" data-length="'+lens[i]+'" href="" tabindex="0">'+lang[i]+'</a>' :
-				'<a data-length="'+lens[i]+'" href="" tabindex="0">'+lang[i]+'</a>';
+				'<a class="active" data-length="'+lens[i]+'" href="" tabindex="0" aria-label="Show '+ lens[i]+' entries">'+lang[i]+'</a>' :
+				'<a data-length="'+lens[i]+'" href="" tabindex="0" aria-label="Show '+ lens[i]+' entries">'+lang[i]+'</a>';
 		} );
 
 		container.html( settings.oLanguage.sLengthMenu.replace( '_MENU_', out.join(' | ') ) );

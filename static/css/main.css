@@ -863,6 +863,8 @@ table caption {
     .dataTables_wrapper .dataTables_length a.active, .dataTables_wrapper .dataTables_length a.active:hover {
       text-decoration: none;
       color: black !important; }
+    .dataTables_wrapper .dataTables_length a:focus {
+      outline: dotted 1px; }
     .dataTables_wrapper .dataTables_length select {
       border: none;
       display: inline-block;
