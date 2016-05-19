@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_id %}https{% endblock %}
-{% block title %}HTTPS in the federal government - By agency{% endblock %}
+{% block title %}Secure HTTP (HTTPS) - Pulse{% endblock %}
 {% block description %}How federal government domains are doing at deploying HTTPS.{% endblock %}
 
 {% block content %}
@@ -9,25 +9,29 @@
 {% include 'includes/https/header.html' %}
 
 <section id="main-content" class="white-bkg">
-  <nav class="tab-menu">
-    <a href="/https/domains/" class="tab">By Domain</a>
-    <span class="tab">By Agency</span>
-    <a href="/https/guidance/" class="tab">Guidance</a>
+
+  <nav class="tab-menu" role="tablist">
+    <a href="/https/domains/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Agency</span>
+    <a href="/https/guidance/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
   </nav>
-  <div class="wrapper">
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="agency responsive https">
-        <thead>
-          <tr>
-            <th class="all" scope="col">Agency</th>
-            <th class="all" scope="col">No. of Domains</th>
-            <th class="min-tablet" scope="col">Uses HTTPS</th>
-            <th class="min-tablet" scope="col">Enforces HTTPS</th>
-            <th class="desktop" scope="col">Strict Transport Security (HSTS)</th>
-            <th class="desktop" scope="col">SSL Labs (A- or higher)</th>
-          </tr>
-        </thead>
+      <caption>Secure HTTP(S) By Agency</caption>
+      <thead>
+        <tr>
+          <th class="all" scope="col">Agency</th>
+          <th class="all" scope="col">No. of Domains</th>
+          <th class="min-tablet" scope="col">Uses HTTPS</th>
+          <th class="min-tablet" scope="col">Enforces HTTPS</th>
+          <th class="desktop" scope="col">Strict Transport Security (HSTS)</th>
+          <th class="desktop" scope="col">SSL Labs (A- or higher)</th>
+        </tr>
+      </thead>
     </table>
   </div>
+
 </section>
 
 <script src="/static/js/https/agencies.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>

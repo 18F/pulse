@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_id %}accessibility{% endblock %}
-{% block title %}Accessibility in the federal government - By agency{% endblock %}
+{% block title %}Accessibility - Pulse{% endblock %}
 {% block description %}How federal government domains are doing at accessibility.{% endblock %}
 
 {% block content %}
@@ -9,26 +9,30 @@
 {% include 'includes/accessibility/header.html' %}
 
 <section id="main-content" class="white-bkg">
-  <nav class="tab-menu">
-    <a href="/accessibility/domains/" class="tab">By Domain</a>
-    <span class="tab">By Agency</span>
-    <a href="/accessibility/guidance/" class="tab">Guidance</a>
+
+  <nav class="tab-menu" role="tablist">
+    <a href="/accessibility/domains/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Agency</span>
+    <a href="/accessibility/guidance/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
   </nav>
-  <div class="wrapper">
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="agency responsive https">
-        <thead>
-          <tr>
-            <th class="all" scope="col">Agency</th>
-            <th class="all" scope="col">No. of Errors</th>
-            <th class="min-tablet" scope="col">Color Constrast Errors</th>
-            <th class="min-tablet" scope="col">HTML/Attribute Errors</th>
-            <th class="desktop" scope="col">Form Errors</th>
-            <th class="desktop" scope="col">Alt Tag Errors</th>
-            <th class="desktop" scope="col">Other Errors</th>
-          </tr>
-        </thead>
+      <caption>Accessibility By Agency</caption>
+      <thead>
+        <tr>
+          <th class="all" scope="col">Agency</th>
+          <th class="all" scope="col">No. of Errors</th>
+          <th class="min-tablet" scope="col">Color Constrast Errors</th>
+          <th class="min-tablet" scope="col">HTML/Attribute Errors</th>
+          <th class="desktop" scope="col">Form Errors</th>
+          <th class="desktop" scope="col">Alt Tag Errors</th>
+          <th class="desktop" scope="col">Other Errors</th>
+        </tr>
+      </thead>
     </table>
   </div>
+
 </section>
 
 <script src="/static/js/accessibility/agencies.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
