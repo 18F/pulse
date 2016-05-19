@@ -18,7 +18,8 @@ $(function(){
 
   $('table').on('draw.dt', function() {
     // add label for attribute for search
-    $('.dataTables_filter label').attr('for', 'search');
+    $('.dataTables_filter label').attr('for', 'datatables-search');
+    $('#DataTables_Table_0_filter').find('input[type="search"]').attr('id', 'datatables-search');
   });
 
 });
