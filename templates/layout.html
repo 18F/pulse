@@ -5,7 +5,7 @@
 
 <!-- Title and meta description
 ================================================== -->
-<title>Pulse</title>
+<title>{% block title %}{% endblock title %}</title>
 <meta property="og:title" content="{{ site.title }} | {{ self.title() }}" />
 
 <meta name="description" content="{% block description %}{% endblock %}">
