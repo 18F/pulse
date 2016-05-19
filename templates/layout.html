@@ -17,7 +17,7 @@
 </head>
 
 <body id="{% block page_id %}{% endblock %}">
-<a id="skipnav" href="#content" onclick="document.getElementById('target').focus()">Skip to main content</a>
+<a id="skipnav" href="#skip-target" onclick="document.getElementById('skip-target').focus()">Skip to main content</a>
 <!--[if lte IE 9]>
   <section>
     <h2>Your browser is out of date.</h2>
@@ -35,6 +35,7 @@
 {% include 'includes/header.html' %}
 
 <section id="content" role="main">
+  <a name="skip-target" id="skip-target" tab-index='-1' href='#' class="sr-only">Start of Main Content</a>
   {%block content %}{% endblock %}
 </section>
 
