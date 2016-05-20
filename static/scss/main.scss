@@ -42,11 +42,14 @@ a {
   color: white;
   font-weight: 900;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: white;
     text-decoration: underline;
   }
+  &:focus {
+    outline: dotted 1px;
+  }
+
 }
 
 footer {
@@ -97,6 +100,7 @@ a#skipnav {
     @include transition(top .1s ease-in, background .5s linear);
   }
 }
+
 
 #https,
 #domain,
@@ -201,6 +205,14 @@ a#skipnav {
   padding-top: 15px;
 }
 
+.sr-only {
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
 
 // Includes for:
 // - Pulse site header and navigation

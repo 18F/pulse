@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_id %}analytics{% endblock %}
-{% block title %}Digital Analytics Program participation in the federal government - By agency{% endblock %}
+{% block title %}Digital Analytics Program (DAP) - Pulse{% endblock %}
 {% block description %}Which federal government domains are participating in the Digital Analytics Program.{% endblock %}
 
 {% block content %}
@@ -10,14 +10,15 @@
 
 <section id="main-content" class="white-bkg">
 
-  <nav class="tab-menu">
-    <a href="/analytics/domains/" class="tab">By Domain</a>
-    <span class="tab">By Agency</span>
-    <a href="/analytics/guidance/" class="tab">Guidance</a>
+  <nav class="tab-menu" role="tablist">
+    <a href="/analytics/domains/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Agency</span>
+    <a href="/analytics/guidance/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
   </nav>
 
-  <div class="wrapper">
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="agency responsive analytics">
+      <caption>Participation in the Digital Analytics Program (DAP) By Agency</caption>
       <thead>
         <th class="all" scope="col">Agency</th>
         <th class="all" scope="col">Number of Domains</th>

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_id %}accessibility{% endblock %}
-{% block title %}Accessibility in the federal government - By agency{% endblock %}
+{% block title %}Accessibility - Pulse{% endblock %}
 {% block description %}How federal government domains are doing at accessibility.{% endblock %}
 
 {% block content %}
@@ -9,23 +9,27 @@
 {% include 'includes/accessibility/header.html' %}
 
 <section id="main-content" class="white-bkg">
-  <nav class="tab-menu">
-    <span class="tab">By Domain</span>
-    <a href="/accessibility/agencies/" class="tab">By Agency</a>
-    <a href="/accessibility/guidance/" class="tab">Guidance</a>
+
+  <nav class="tab-menu" role="tablist">
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Domain</span>
+    <a href="/accessibility/agencies/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Agency</a>
+    <a href="/accessibility/guidance/" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
   </nav>
-  <div class="wrapper">
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="domain responsive https">
-        <thead>
-          <tr>
-            <th class="all">Domain</th>
-            <th class="all">Errors</th>
-            <th class="all">Agency</th>
-            <th class="none" scope="col"></th>
-          </tr>
-        </thead>
+      <caption>Accessibility By Domain</caption>
+      <thead>
+        <tr>
+          <th class="all">Domain</th>
+          <th class="all">Errors</th>
+          <th class="all">Agency</th>
+          <th class="none" scope="col"></th>
+        </tr>
+      </thead>
     </table>
   </div>
+
 </section>
 
 <script src="/static/js/accessibility/domains.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>

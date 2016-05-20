@@ -207,9 +207,11 @@ body {
 a {
   color: white;
   font-weight: 900; }
-  a:hover, a:focus {
+  a:hover {
     color: white;
     text-decoration: underline; }
+  a:focus {
+    outline: dotted 1px; }
 
 footer {
   border-top: 1px solid #003366;
@@ -452,6 +454,14 @@ a#skipnav {
   cursor: pointer;
   padding-top: 15px; }
 
+.sr-only {
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
+
 .site-header .disclaimer {
   background-color: #003366;
   color: white;
@@ -578,6 +588,11 @@ a#skipnav {
   transition: all 0.15s ease-out 0s; }
   .site-header .overlay.is-visible {
     visibility: visible; }
+
+.chart h2 {
+  font-size: 2.25em; }
+.chart h3 {
+  font-size: 1.5em; }
 
 #home .hero {
   color: white;
@@ -764,11 +779,13 @@ a#skipnav {
   @media screen and (max-width: 767px) {
     .guide {
       padding: 40px 20px; } }
-  .guide h2 {
+  .guide h3 {
+    font-size: 1.5em;
     margin-bottom: 60px; }
+  .guide h4 {
+    font-size: 1.25em; }
   .guide article {
     padding-bottom: 25px; }
-    .guide article h3,
     .guide article h4 {
       margin-bottom: 12px; }
     .guide article ul,
@@ -839,6 +856,9 @@ a#skipnav {
   @media screen and (max-width: 767px) {
     #analytics .dataTables_wrapper table.dataTable td:first-child {
       padding-left: 40px !important; } }
+
+table caption {
+  display: none; }
 
 .dataTables_wrapper {
   padding: 80px 0 40px; }
@@ -990,11 +1010,16 @@ a#skipnav {
 
 #about #content header {
   padding: 40px; }
+  #about #content header h2 {
+    font-size: 2.25em; }
+#about #main-content h3 {
+  font-size: 1.5em; }
 #about .faq-questions {
   padding: 20px 0; }
 #about .faq-answers {
   padding: 0 40px; }
-  #about .faq-answers h3 {
+  #about .faq-answers h4 {
+    font-size: 1.25em;
     font-style: italic;
     margin-bottom: 15px; }
   #about .faq-answers li {
