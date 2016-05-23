@@ -12,16 +12,33 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {data: "Agency"},
-        {data: "Errors"},
-        {data: "Color Contrast Errors"},
-        {data: "HTML/Attribute Errors"},
-        {data: "Form Errors"},
-        {data: "Alt Tag Errors"},
-        {data: "Other Errors"}
+        {
+          data: "Agency"
+        },
+        {
+          data: function(row, type, val, meta) {
+            return Math.round(row["Average Errors per Page"]);
+          },
+          width: "76px"
+        },
+        {
+          data: "Color Contrast Errors",
+          width: "76px"
+        },
+        {
+          data: "HTML/Attribute Errors"
+        },
+        {
+          data: "Form Errors"
+        },
+        {
+          data: "Alt Tag Errors"
+        },
+        {
+          data: "Other Errors"
+        }
       ],
 
-      // order by number of domains
       order: [[1, "desc"]],
 
       columnDefs: [
