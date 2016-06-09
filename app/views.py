@@ -84,26 +84,26 @@ def register(app):
 
         return render_template("domain.html", domain=domain)
 
-    @app.route("/accessibility/domain/<hostname>")
-    def a11ydomain(hostname=None):
-      return render_template("a11y.html", domain=hostname)
+    # @app.route("/accessibility/domain/<hostname>")
+    # def a11ydomain(hostname=None):
+    #   return render_template("a11y.html", domain=hostname)
 
-    # Sanity-check RSS feed, shows the latest report.
-    @app.route("/data/reports/feed/")
-    def report_feed():
-        return render_template("feed.xml")
+    # # Sanity-check RSS feed, shows the latest report.
+    # @app.route("/data/reports/feed/")
+    # def report_feed():
+    #     return render_template("feed.xml")
 
-    @app.route("/accessibility/domains/")
-    def accessibility_domains():
-      return render_template("accessibility/domains.html")
+    # @app.route("/accessibility/domains/")
+    # def accessibility_domains():
+    #   return render_template("accessibility/domains.html")
 
-    @app.route("/accessibility/agencies/")
-    def accessibility_agencies():
-      return render_template("accessibility/agencies.html")
+    # @app.route("/accessibility/agencies/")
+    # def accessibility_agencies():
+    #   return render_template("accessibility/agencies.html")
 
-    @app.route("/accessibility/guidance/")
-    def accessibility_guide():
-      return render_template("accessibility/guide.html")
+    # @app.route("/accessibility/guidance/")
+    # def accessibility_guide():
+    #   return render_template("accessibility/guide.html")
 
     @app.errorhandler(404)
     def page_not_found(e):
