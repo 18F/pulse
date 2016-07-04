@@ -10,7 +10,7 @@ description: "How federal government domains are meeting best practices on the w
 # Data source URLs. They shouldn't require manual updates.
 data:
   # URL where we download the .gov domain list from.
-  domains_url: https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/current-full.csv
+  domains_url: https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/current-federal.csv
 
   # URL where we download the participating DAP .gov list from.
   analytics_url: https://analytics.usa.gov/data/live/second-level-domains.csv
