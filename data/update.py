@@ -127,7 +127,7 @@ def upload(date):
   # Ask S3 to do the copying, to save on time and bandwidth
   shell_out(["aws", "s3", "sync", live_scanned, archive_scanned, acl])
   shell_out(["aws", "s3", "sync", live_cached, archive_cached, acl])
-  shell_out(["aws", "s3", "cp", live_db, archive_db, acl])
+  shell_out(["aws", "s3", "sync", live_db, archive_db, acl])
 
 
 # Use domain-scan to scan .gov domains from the set domain URL.
