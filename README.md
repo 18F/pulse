@@ -2,7 +2,7 @@
 
 How the .gov domain space is doing at best practices and federal requirements.
 
-Other forks of the project in use include:  
+Other forks of the project in use include:
 
 * https://nrkbeta.no/https-norge/
 * https://https.jetzt
@@ -29,6 +29,14 @@ gem install sass bourbon neat bitters
 ```bash
 make watch
 ```
+
+* And to run the app in development, use:
+
+```bash
+make debug
+```
+
+This will run the app with `DEBUG` mode on, showing full error messages in-browser when they occur.
 
 ### Initializing dataset
 
