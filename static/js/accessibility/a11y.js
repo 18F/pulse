@@ -41,6 +41,13 @@ $(document).ready(function () {
       $element.html('No results found for ' + domain);
     }
 
+  }).done(function () {
+
+    // if url hash present, scroll to div
+    if (window.location.hash) {
+      $('html, body').scrollTop(parseInt($(location.hash).offset().top));
+    }
+
   });
 
 });
