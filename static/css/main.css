@@ -207,11 +207,16 @@ body {
 a {
   color: white;
   font-weight: 900; }
+  a:active {
+    color: white; }
   a:hover {
     color: white;
     text-decoration: underline; }
   a:focus {
+    color: white;
     outline: dotted 1px; }
+  a:visited {
+    color: white; }
 
 footer {
   border-top: 1px solid #003366;
