@@ -41,7 +41,7 @@ $(document).ready(function () {
       columnDefs: [
         {
           targets: 0,
-          cellType: "td",
+          cellType: "th",
           createdCell: function (td) {
             td.scope = "row";
           }

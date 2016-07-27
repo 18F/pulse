@@ -128,6 +128,10 @@ table caption {
         top: 9px;
         background-color: lighten($light-blue, 20%);
       }
+      th:first-child:before {
+        top: 9px;
+        background-color: lighten($light-blue, 20%);
+      }
     }
 
     > tbody {

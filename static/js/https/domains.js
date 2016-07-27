@@ -197,6 +197,7 @@ $(document).ready(function () {
         {
           data: "domain",
           width: "210px",
+          cellType: "th",
           render: Utils.linkDomain
         },
         {data: "canonical"},
@@ -264,7 +265,7 @@ $(document).ready(function () {
     * send it to its sibling. The first cell is already wired.
     */
     $('table tbody').on('click', 'td:not(.sorting_1)', function(e) {
-      $(this).siblings("td.sorting_1").click();
+      $(this).siblings("th.sorting_1").click();
     });
 
 
