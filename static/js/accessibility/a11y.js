@@ -12,12 +12,16 @@ $(document).ready(function () {
         var categories = data.data[key];
         for (var category in categories) {
 
-          $element.append(
-            '<div id="' + category.replace(/\s/g, '').replace(/\//i, '') + '" class="category">' +
-            '<h2>' + category + ' (' + categories[category].length + ')</h2>' +
-            '<ul></ul>' +
-            '</div>'
-          );
+          if (categories[category].length) {
+
+            $element.append(
+              '<div id="' + category.replace(/\s/g, '').replace(/\//i, '') + '" class="category">' +
+              '<h2>' + category + ' (' + categories[category].length + ')</h2>' +
+              '<ul></ul>' +
+              '</div>'
+            );
+
+          }
 
           $(categories[category]).each(function(key, error)  {
             $list = $('ul').last();
