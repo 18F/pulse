@@ -45,6 +45,7 @@ $(document).ready(function () {
         {
           data: "domain",
           width: "210px",
+          cellType: "th",
           render: Utils.linkDomain
         },
         {data: "canonical"},

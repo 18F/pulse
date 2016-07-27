@@ -13,7 +13,8 @@ $(document).ready(function () {
 
       columns: [
         {
-          data: "Agency"
+          data: "Agency",
+          cellType: "th"
         },
         {
           data: function(row, type, val, meta) {
@@ -44,7 +45,7 @@ $(document).ready(function () {
       columnDefs: [
         {
           targets: 0,
-          cellType: "td",
+          cellType: "th",
           createdCell: function (td) {
             td.scope = "row";
           }

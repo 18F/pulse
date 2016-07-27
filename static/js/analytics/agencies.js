@@ -13,7 +13,10 @@ $(document).ready(function () {
       initComplete: Utils.searchLinks,
 
       columns: [
-        {data: "name"},
+        {
+          data: "name",
+          cellType: "th"
+        },
         {
           data: "analytics.eligible",
           render: Utils.filterAgency("analytics")

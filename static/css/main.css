@@ -945,6 +945,9 @@ table caption {
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
       background-color: #3399ff; }
+    .dataTables_wrapper table.dataTable.dtr-inline.collapsed th:first-child:before {
+      top: 9px;
+      background-color: #3399ff; }
     .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
       border-bottom: none;
       padding: 0 0 3px 0; }
