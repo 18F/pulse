@@ -32,7 +32,7 @@ $(document).ready(function () {
               '<div class="selector"><span>Selector:</span> ' + error['selector'] + '</div>' +
               '<div class="context"><span>Context:</span> <code>' + error['context'].replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') +
               '</code></div>' +
-              '<div class="description"><span>Description:</span> ' + error['description'] +
+              '<div class="description"><span>Description:</span> ' + error['message'] +
               '</div></li>'
             );
           });
