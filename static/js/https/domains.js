@@ -174,16 +174,6 @@ $(document).ready(function () {
     return issues;
   };
 
-  var detailsKeyboardCtrl = function(){
-      $('table tbody tr td:first-child').attr('tabindex','0')
-      .attr('aria-label','Select for additional details')
-      .on('keydown',function(e){
-        if (e.keyCode == 13)
-          $(this).click();
-          $(this).parent().next('tr.child').focus();
-      })
-    };
-
   var renderTable = function(data) {
     var table = $("table").DataTable({
 
@@ -270,10 +260,11 @@ $(document).ready(function () {
 
 
     //Adds keyboard control to first cell of table
-    detailsKeyboardCtrl();
-
+    Utils.detailsKeyboardCtrl();
+    Utils.updatePagination();
     table.on("draw.dt",function(){
-       detailsKeyboardCtrl();
+       Utils.detailsKeyboardCtrl();
+       Utils.updatePagination();
     });
 
   }
