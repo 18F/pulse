@@ -2,7 +2,12 @@
 /////////////////////////////////////////
 
 table caption {
-  display: none;
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
 
 .dataTables_wrapper {

@@ -214,7 +214,8 @@ a {
     text-decoration: underline; }
   a:focus {
     color: white;
-    outline: dotted 1px; }
+    outline: dotted 1px;
+    text-decoration: underline; }
   a:visited {
     color: white; }
 
@@ -451,7 +452,7 @@ a#skipnav {
     #accessibility #content #main-content.white-bkg a:focus,
     #about #content #main-content.white-bkg a:hover,
     #about #content #main-content.white-bkg a:focus {
-      color: #0066CC;
+      color: #003366;
       text-decoration: underline; }
 
 .https_chart,
@@ -863,7 +864,12 @@ a#skipnav {
       padding-left: 40px !important; } }
 
 table caption {
-  display: none; }
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
 
 .dataTables_wrapper {
   padding: 80px 0 40px; }

@@ -52,6 +52,7 @@ a {
   &:focus {
     color: white;
     outline: dotted 1px;
+    text-decoration: underline;
   }
   &:visited {
     color: white;
@@ -196,7 +197,7 @@ a#skipnav {
 
           &:hover,
           &:focus {
-            color: $light-blue;
+            color: $dark-blue;
             text-decoration: underline;
           }
         }
