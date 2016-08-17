@@ -133,6 +133,7 @@ This project is an initial pass - there is much more information that can be rep
 * Mobile friendliness (poss. using Google's [Mobile Friendly Test](http://www.nextgov.com/mobile/2015/04/here-are-agency-websites-google-doesnt-think-are-mobile-friendly/110812/?oref=ng-relatedstories))
 * Mixed content detection (linking to insecure resources)
 * Use of third party services
+* [STARTTLS email server encryption](https://github.com/18F/pulse/issues/218)
 * 508 compliance (poss. with http://pa11y.org/)
 * Any other items listed in the [OMB letter to OGP passing along .gov domain issuance](https://www.whitehouse.gov/sites/default/files/omb/egov/memo/policies-for-dot-gov-domain-issuance-for-federal-agency-public-websites.pdf)
 * Lighter or fun things - like how many domains start with each letter of the alphabet, what the last 10 that came out were, etc.
