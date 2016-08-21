@@ -43,7 +43,7 @@ update_development:
 data_init:
 	mkdir -p data/output/scan/results/
 	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/analytics.csv > data/output/scan/results/analytics.csv
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/inspect.csv > data/output/scan/results/inspect.csv
+	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/pshtt.csv > data/output/scan/results/pshtt.csv
 	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/tls.csv > data/output/scan/results/tls.csv
 	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/meta.json > data/output/scan/results/meta.json
 	curl https://s3.amazonaws.com/pulse.cio.gov/live/db/db.json > data/db.json
