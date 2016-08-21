@@ -46,7 +46,7 @@ BUCKET_NAME = "pulse.cio.gov"
 # domain-scan information
 SCAN_TARGET = os.path.join(this_dir, "./output/scan")
 SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
-SCANNERS = os.environ.get("SCANNERS", "inspect,analytics,sslyze,tls")
+SCANNERS = os.environ.get("SCANNERS", "pshtt,analytics,sslyze,inspect,tls")
 ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
 # Options:
