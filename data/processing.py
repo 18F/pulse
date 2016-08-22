@@ -4,7 +4,7 @@
 #
 # * domains.csv - federal domains, subset of .gov domain list.
 #
-# * inspect.csv - domain-scan, based on site-inspector
+# * pshtt.csv - domain-scan, based on pshtt
 # * tls.csv - domain-scan, based on ssllabs-scan
 # * analytics.csv - domain-scan, based on analytics.usa.gov data
 #
@@ -62,7 +62,7 @@ def run(date):
   for domain in analytics_ineligible:
     analytics_ineligible_map[domain] = True
 
-  # Pull out a few inspect.csv fields as general domain metadata.
+  # Pull out a few pshtt.csv fields as general domain metadata.
   for domain_name in scan_data.keys():
     analytics = scan_data[domain_name].get('analytics', None)
     if analytics:
@@ -70,21 +70,20 @@ def run(date):
       domains[domain_name]['exclude']['analytics'] = ineligible
 
 
-    inspect = scan_data[domain_name].get('inspect', None)
-    if inspect is None:
+    pshtt = scan_data[domain_name].get('pshtt', None)
+    if pshtt is None:
       # generally means scan was on different domains.csv, but
-      # invalid domains can hit this (e.g. fed.us).
-      print("[%s][WARNING] No inspect data for domain!" % domain_name)
+      # invalid domains can hit this.
+      print("[%s][WARNING] No pshtt data for domain!" % domain_name)
 
       # Remove the domain from further consideration.
       # Destructive, so have this done last.
       del domains[domain_name]
     else:
-      # print("[%s] Updating with inspection metadata." % domain_name)
-      domains[domain_name]['live'] = boolean_for(inspect['Live'])
-      domains[domain_name]['redirect'] = boolean_for(inspect['Redirect'])
-      domains[domain_name]['canonical'] = inspect['Canonical']
-
+      # print("[%s] Updating with pshtt metadata." % domain_name)
+      domains[domain_name]['live'] = boolean_for(pshtt['Live'])
+      domains[domain_name]['redirect'] = boolean_for(pshtt['Redirect'])
+      domains[domain_name]['canonical'] = pshtt['Canonical URL']
 
 
   # Save what we've got to the database so far.
@@ -184,7 +183,7 @@ def load_scan_data(domains):
     scan_data[domain_name] = {}
 
   headers = []
-  with open(os.path.join(INPUT_SCAN_DATA, "inspect.csv"), newline='') as csvfile:
+  with open(os.path.join(INPUT_SCAN_DATA, "pshtt.csv"), newline='') as csvfile:
     for row in csv.reader(csvfile):
       if (row[0].lower() == "domain"):
         headers = row
@@ -192,13 +191,13 @@ def load_scan_data(domains):
 
       domain = row[0].lower()
       if not domains.get(domain):
-        # print("[inspect] Skipping %s, not a federal domain from domains.csv." % domain)
+        # print("[pshtt] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       dict_row = {}
       for i, cell in enumerate(row):
         dict_row[headers[i]] = cell
-      scan_data[domain]['inspect'] = dict_row
+      scan_data[domain]['pshtt'] = dict_row
 
   headers = []
   with open(os.path.join(INPUT_SCAN_DATA, "tls.csv"), newline='') as csvfile:
@@ -234,9 +233,9 @@ def load_scan_data(domains):
         # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
-      # If it didn't appear in the inspect data, skip it, we need this.
-      # if not domains[domain].get('inspect'):
-      #   print("[analytics] Skipping %s, did not appear in inspect.csv." % domain)
+      # If it didn't appear in the pshtt data, skip it, we need this.
+      # if not domains[domain].get('pshtt'):
+      #   print("[analytics] Skipping %s, did not appear in pshtt.csv." % domain)
       #   continue
 
       dict_row = {}
@@ -348,15 +347,15 @@ def eligible_for_analytics(domain):
 # Analytics conclusions for a domain based on analytics domain-scan data.
 def analytics_report_for(domain_name, domain, scan_data):
   analytics = scan_data[domain_name]['analytics']
-  inspect = scan_data[domain_name]['inspect']
+  pshtt = scan_data[domain_name]['pshtt']
 
   return {
     'participating': boolean_for(analytics['Participates in Analytics'])
   }
 
-# HTTPS conclusions for a domain based on inspect/tls domain-scan data.
+# HTTPS conclusions for a domain based on pshtt/tls domain-scan data.
 def https_report_for(domain_name, domain, scan_data):
-  inspect = scan_data[domain_name]['inspect']
+  pshtt = scan_data[domain_name]['pshtt']
 
   report = {}
 
@@ -364,14 +363,14 @@ def https_report_for(domain_name, domain, scan_data):
   # Is it there? There for most clients? Not there?
 
   # assumes that HTTPS would be technically present, with or without issues
-  if (inspect["Downgrades HTTPS"] == "True"):
+  if (pshtt["Downgrades HTTPS"] == "True"):
     https = 0 # No
   else:
-    if (inspect["Valid HTTPS"] == "True"):
+    if (pshtt["Valid HTTPS"] == "True"):
       https = 2 # Yes
     elif (
-      (inspect["HTTPS Bad Chain"] == "True") and
-      (inspect["HTTPS Bad Hostname"] == "False")
+      (pshtt["HTTPS Bad Chain"] == "True") and
+      (pshtt["HTTPS Bad Hostname"] == "False")
     ):
       https = 1 # Yes
     else:
@@ -395,18 +394,18 @@ def https_report_for(domain_name, domain, scan_data):
     # for itself, we'll say it "Enforces HTTPS" if it immediately
     # redirects to an HTTPS URL.
     if (
-      (inspect["Strictly Forces HTTPS"] == "True") and
+      (pshtt["Strictly Forces HTTPS"] == "True") and
       (
-        (inspect["Defaults to HTTPS"] == "True") or
-        (inspect["Redirect"] == "True")
+        (pshtt["Defaults to HTTPS"] == "True") or
+        (pshtt["Redirect"] == "True")
       )
     ):
       behavior = 3 # Yes (Strict)
 
     # "Yes" means HTTP eventually redirects to HTTPS.
     elif (
-      (inspect["Strictly Forces HTTPS"] == "False") and
-      (inspect["Defaults to HTTPS"] == "True")
+      (pshtt["Strictly Forces HTTPS"] == "False") and
+      (pshtt["Defaults to HTTPS"] == "True")
     ):
       behavior = 2 # Yes
 
@@ -422,8 +421,8 @@ def https_report_for(domain_name, domain, scan_data):
   ###
   # Characterize the presence and completeness of HSTS.
 
-  if inspect["HSTS Max Age"]:
-    hsts_age = int(inspect["HSTS Max Age"])
+  if pshtt["HSTS Max Age"]:
+    hsts_age = int(pshtt["HSTS Max Age"])
   else:
     hsts_age = None
 
@@ -434,14 +433,14 @@ def https_report_for(domain_name, domain, scan_data):
   else:
 
     # HTTPS is there, but no HSTS header.
-    if (inspect["HSTS"] == "False"):
+    if (pshtt["HSTS"] == "False"):
       hsts = 0 # No
 
     # HSTS preload ready already implies a minimum max-age, and
     # may be fine on the root even if the canonical www is weak.
-    elif (inspect["HSTS Preload Ready"] == "True"):
+    elif (pshtt["HSTS Preload Ready"] == "True"):
 
-      if inspect["HSTS Preloaded"] == "True":
+      if pshtt["HSTS Preloaded"] == "True":
         hsts = 4 # Yes, and preloaded
       else:
         hsts = 3 # Yes, and preload-ready
@@ -463,11 +462,11 @@ def https_report_for(domain_name, domain, scan_data):
 
     else:
       # This kind of "Partial" means `includeSubdomains`, but no `preload`.
-      if (inspect["HSTS All Subdomains"] == "True"):
+      if (pshtt["HSTS Entire Domain"] == "True"):
         hsts = 2 # Yes
 
       # This kind of "Partial" means HSTS, but not on subdomains.
-      else: # if (inspect["HSTS"] == "True"):
+      else: # if (pshtt["HSTS"] == "True"):
 
         hsts = 1 # Yes
 
