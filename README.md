@@ -84,7 +84,7 @@ python -m data.update
 
 Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan).
 
-`domain-scan` in turn requires [`site-inspector`](https://rubygems.org/gems/site-inspector) **1.0.2** (not 2.0) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan).
+`domain-scan` in turn requires [`pshtt`](https://github.com/dhs-ncat/pshtt) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan). These currently both need to be cloned from GitHub and set up individually.
 
 Pulse requires you to set one environment variable:
 
@@ -92,7 +92,7 @@ Pulse requires you to set one environment variable:
 
 However, `domain-scan` may need you to set a couple others if the binaries it uses aren't on your path:
 
-* `SITE_INSPECTOR_PATH`: Path to the `site-inspector` binary.
+* `PSHTT_PATH`: Path to the `pshtt_cli` binary.
 * `SSLLABS_PATH`: Path to the `ssllabs-scan` binary.
 
 ### Configure the AWS CLI
