@@ -923,6 +923,10 @@ table caption {
         margin-left: 10px; } }
   .dataTables_wrapper table.dataTable {
     padding: 20px 0; }
+    .dataTables_wrapper table.dataTable .great {
+      color: #2da52d; }
+    .dataTables_wrapper table.dataTable .warning {
+      color: #ca1b1b; }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
