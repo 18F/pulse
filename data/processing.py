@@ -640,11 +640,18 @@ def branch_for(agency):
     "Library of Congress",
     "The Legislative Branch (Congress)",
     "Government Printing Office",
-    "Congressional Office of Compliance"
+    "Government Publishing Office",
+    "Congressional Office of Compliance",
+    "Stennis Center for Public Service",
+    "U.S. Capitol Police"
   ]:
     return "legislative"
 
-  if agency in ["The Judicial Branch (Courts)"]:
+  if agency in [
+    "The Judicial Branch (Courts)",
+    "The Supreme Court",
+    "U.S Courts"
+  ]:
     return "judicial"
 
   if agency in ["Non-Federal Agency"]:
