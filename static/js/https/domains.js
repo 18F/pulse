@@ -226,7 +226,7 @@ $(document).ready(function () {
   };
 
   var g = function(text) {
-    return "<strong class=\"great\">" + text + "</strong>";
+    return "<strong class=\"success\">" + text + "</strong>";
   };
 
   var w = function(text) {
