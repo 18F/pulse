@@ -174,13 +174,17 @@ $(document).ready(function () {
     else if ((https >= 1) && (behavior < 2) && (hsts == 2))
       details = n("Caution:") + " Domain uses " + l("hsts", "HSTS") + ", but is not redirecting clients to HTTPS.";
 
-    // CASE: HTTPS supported and enforced, weak/no HSTS.
-    else if ((https >= 1) && (behavior >= 2) && (hsts < 2)) {
+    // CASE: HTTPS w/valid chain supported and enforced, weak/no HSTS.
+    else if ((https == 2) && (behavior >= 2) && (hsts < 2)) {
       if (hsts == 0)
         details = n("Almost:") + " Enable " + l("hsts", "HSTS") + " so that clients can enforce HTTPS.";
       else if (hsts == 1)
         details = n("Almost:") + " The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
     }
+
+    // CASE: HTTPS w/invalid chain supported and enforced, no HSTS.
+    else if ((https == 1) && (behavior >= 2) && (hsts < 2))
+      details = n("Almost:") + " Domain is missing " + l("hsts", "HSTS") + ", but the presented certificate chain may not be valid for all public clients. HSTS prevents users from clicking through certificate warnings. See " + l(labsUrlFor(row.canonical), "the SSL Labs report") + " for details.";
 
     // CASE: HTTPS supported, not enforced, no HSTS.
     else if ((https >= 1) && (behavior < 2) && (hsts < 2))
