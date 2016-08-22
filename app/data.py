@@ -43,7 +43,7 @@ FIELD_MAPPING = {
 
     'uses': {
       -1: "No",
-      0: "No",
+      0: "No",  # Downgrades HTTPS -> HTTP
       1: "Yes", # (with certificate chain issues)
       2: "Yes"
     },
@@ -64,7 +64,7 @@ FIELD_MAPPING = {
 
     'preloaded': {
       0: "",  # No (leave blank, since not required)
-      1: "Ready for submission",  # Preload-ready
+      1: "Ready",  # Preload-ready
       2: "Yes"  # Yes
     },
 
