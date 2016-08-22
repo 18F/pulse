@@ -63,7 +63,7 @@ FIELD_MAPPING = {
     },
 
     'preloaded': {
-      0: "No",  # No
+      0: "",  # No (leave blank, since not required)
       1: "Ready for submission",  # Preload-ready
       2: "Yes"  # Yes
     },
