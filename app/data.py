@@ -14,6 +14,7 @@ LABELS = {
     'uses': 'Uses HTTPS',
     'enforces': 'Enforces HTTPS',
     'hsts': 'Strict Transport Security (HSTS)',
+    'preloaded': 'Preloaded (recommended)',
     'grade': 'SSL Labs Grade',
 
     'hsts_age': 'HSTS max-age',
@@ -48,19 +49,23 @@ FIELD_MAPPING = {
     },
 
     'enforces': {
-      0: "", # N/A (no HTTPS)
-      1: "No", # Present, not default
-      2: "Yes", # Defaults eventually to HTTPS
-      3: "Yes" # Defaults eventually + redirects immediately
+      0: "",  # N/A (no HTTPS)
+      1: "No",  # Present, not default
+      2: "Yes",  # Defaults eventually to HTTPS
+      3: "Yes"  # Defaults eventually + redirects immediately
     },
 
     'hsts': {
-      -1: "", # N/A
-      0: "No", # No
-      1: "Yes", # HSTS on only that domain
-      2: "Yes", # HSTS on subdomains
-      3: "Yes, and preload-ready", # HSTS on subdomains + preload flag
-      4: "Yes, and preloaded" # In the HSTS preload list
+      -1: "",  # N/A
+      0: "No",  # No
+      1: "No",  # No, HSTS with short max-age (for canonical endpoint)
+      2: "Yes",  # Yes, HSTS for >= 1 year (for canonical endpoint)
+    },
+
+    'preloaded': {
+      0: "No",  # No
+      1: "Ready for submission",  # Preload-ready
+      2: "Yes"  # Yes
     },
 
     'grade': {
@@ -85,6 +90,6 @@ FIELD_MAPPING = {
 
 CSV_FIELDS = {
   'common': ['domain', 'canonical', 'branch', 'agency_name', 'redirect'],
-  'https': ['uses',  'enforces', 'hsts', 'grade'],
+  'https': ['uses',  'enforces', 'hsts', 'preloaded', 'grade'],
   'analytics': ['participating']
 }
