@@ -10,6 +10,8 @@
 #
 ###
 
+import errno
+import logging
 import csv
 import json
 import yaml
@@ -320,8 +322,8 @@ def update_agency_totals():
       if report['enforces'] >= 2:
         agency_report['enforces'] += 1
 
-      # Needs to be at least partially present
-      if report['hsts'] >= 1:
+      # Needs to be present with >= 1 year max-age for canonical endpoint
+      if report['hsts'] >= 2:
         agency_report['hsts'] += 1
 
       # Needs to be A- or above
@@ -428,50 +430,36 @@ def https_report_for(domain_name, domain, scan_data):
 
   # Without HTTPS there can be no HSTS.
   if (https <= 0):
-    hsts = -1 # N/A (considered 'No')
+    hsts = -1  # N/A (considered 'No')
 
   else:
 
-    # HTTPS is there, but no HSTS header.
-    if (pshtt["HSTS"] == "False"):
-      hsts = 0 # No
+    # HSTS is present for the canonical endpoint.
+    if (pshtt["HSTS"] == "True"):
 
-    # HSTS preload ready already implies a minimum max-age, and
-    # may be fine on the root even if the canonical www is weak.
-    elif (pshtt["HSTS Preload Ready"] == "True"):
-
-      if pshtt["HSTS Preloaded"] == "True":
-        hsts = 4 # Yes, and preloaded
+      # Say No for too-short max-age's, and note in the extended details.
+      if hsts_age >= 31536000:
+        hsts = 2  # Yes
       else:
-        hsts = 3 # Yes, and preload-ready
-
-    # We'll make a judgment call here.
-    #
-    # The OMB policy wants a 1 year max-age (31536000).
-    # The HSTS preload list wants an 18 week max-age (10886400).
-    #
-    # We don't want to punish preload-ready domains that are between
-    # the two.
-    #
-    # So if you're below 18 weeks, that's a No.
-    # If you're between 18 weeks and 1 year, it's a Yes
-    # (but you'll get a warning in the extended text).
-    # 1 year and up is a yes.
-    elif (hsts_age < 10886400):
-      hsts = 0 # No, too weak
+        hsts = 1  # No
 
     else:
-      # This kind of "Partial" means `includeSubdomains`, but no `preload`.
-      if (pshtt["HSTS Entire Domain"] == "True"):
-        hsts = 2 # Yes
+      hsts = 0  # No
 
-      # This kind of "Partial" means HSTS, but not on subdomains.
-      else: # if (pshtt["HSTS"] == "True"):
-
-        hsts = 1 # Yes
+  # Separate preload status from HSTS status:
+  #
+  # * Domains can be preloaded through manual overrides.
+  # * Confusing to mix an endpoint-level decision with a domain-level decision.
+  if pshtt["HSTS Preloaded"] == "True":
+    preloaded = 2  # Yes
+  elif (pshtt["HSTS Preload Ready"] == "True"):
+    preloaded = 1  # Ready for submission
+  else:
+    preloaded = 0  # No
 
   report['hsts'] = hsts
   report['hsts_age'] = hsts_age
+  report['preloaded'] = preloaded
 
 
   ###
@@ -552,8 +540,8 @@ def latest_reports():
     if report['enforces'] >= 2:
       enforces += 1
 
-    # Needs to be at least partially present
-    if report['hsts'] >= 1:
+    # Needs to be present with >= 1 year max-age on canonical endpoint
+    if report['hsts'] >= 2:
       hsts += 1
 
   https_report = {
@@ -640,11 +628,18 @@ def branch_for(agency):
     "Library of Congress",
     "The Legislative Branch (Congress)",
     "Government Printing Office",
-    "Congressional Office of Compliance"
+    "Government Publishing Office",
+    "Congressional Office of Compliance",
+    "Stennis Center for Public Service",
+    "U.S. Capitol Police"
   ]:
     return "legislative"
 
-  if agency in ["The Judicial Branch (Courts)"]:
+  if agency in [
+    "The Judicial Branch (Courts)",
+    "The Supreme Court",
+    "U.S Courts"
+  ]:
     return "judicial"
 
   if agency in ["Non-Federal Agency"]:
