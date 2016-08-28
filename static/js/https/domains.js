@@ -57,7 +57,7 @@ $(document).ready(function () {
   var display = function(set) {
     return function(data, type, row) {
       if (type == "sort")
-        return data;
+        return data.toString();
       else
         return set[data.toString()];
     }
