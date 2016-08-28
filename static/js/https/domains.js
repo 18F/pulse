@@ -17,7 +17,7 @@ $(document).ready(function () {
   var names = {
     uses: {
       "-1": "No",
-      0: "No",
+      0: "No",  // Downgrades HTTPS -> HTTP
       1: "Yes", // (with certificate chain issues)
       2: "Yes"
     },
@@ -31,11 +31,15 @@ $(document).ready(function () {
 
     hsts: {
       "-1": "", // N/A
-      0: "No", // No
-      1: "Yes", // HSTS on only that domain
-      2: "Yes", // HSTS on subdomains
-      3: "Yes, and preload-ready", // HSTS on subdomains + preload flag
-      4: "Yes, and preloaded" // In the HSTS preload list
+      0: "No",  // No
+      1: "No", // No, HSTS with short max-age (for canonical endpoint)
+      2: "Yes" // Yes, HSTS for >= 1 year (for canonical endpoint)
+    },
+
+    preloaded: {
+      0: "",  // No (don't display, since it's optional)
+      1: "Ready",  // Preload-ready
+      2: "Yes"  // Yes
     },
 
     grade: {
@@ -67,7 +71,7 @@ $(document).ready(function () {
       return ""
     else
       return "" +
-        "<a href=\"" + labsUrlFor(row.domain) + "\" target=\"blank\">" +
+        "<a href=\"" + labsUrlFor(row.canonical) + "\" target=\"blank\">" +
           grade +
         "</a>";
   };
@@ -79,6 +83,7 @@ $(document).ready(function () {
 
   // Construct a sentence explaining the HTTP situation.
   var httpDetails = function(data, type, row) {
+
     if (type == "sort")
       return null;
 
@@ -86,100 +91,163 @@ $(document).ready(function () {
     var behavior = row.https.enforces;
     var hsts = row.https.hsts;
     var hsts_age = row.https.hsts_age;
+    var preloaded = row.https.preloaded;
+    var grade = row.https.grade;
+
+    var tls = [];
+
+    // If an SSL Labs grade exists at all...
+    if (row.https.grade >= 0) {
+
+      if (row.https.sig == "SHA1withRSA")
+        tls.push("Certificate uses a " + l("sha1", "weak SHA-1 signature"));
+
+      if (row.https.ssl3 == true)
+        tls.push("Supports the " + l("ssl3", "insecure SSLv3 protocol"));
+
+      if (row.https.tls12 == false)
+        tls.push("Lacks support for the " + l("tls12", "most recent version of TLS"));
+    }
+
+    // Though not found through SSL Labs, this is a TLS issue.
+    if (https == 1)
+      tls.push("Certificate chain not valid for all public clients. See " + l(labsUrlFor(row.canonical), "SSL Labs") + " for details.");
+
+    // Non-urgent TLS details.
+    var tlsDetails = "";
+    if (grade >= 0) {
+      if (tls.length > 0)
+        tlsDetails += tls.join(". ") + ".";
+      else if (grade < 6)
+        tlsDetails += l(labsUrlFor(row.canonical), "Review SSL Labs report") + " to resolve TLS quality issues.";
+    }
+
+    // Principles of message crafting:
+    //
+    // * Only grant "perfect score!" if TLS quality issues are gone.
+    // * Don't show TLS quality issues when pushing to preload.
+    // * All flagged TLS quality issues should be reflected in the
+    //   SSL Labs grade, so that agencies have fair warning of issues
+    //   even before we show them.
+    // * Don't speak explicitly about M-15-13, since not all domains
+    //   are subject to OMB requirements.
 
     var details;
+    // By default, if it's an F grade, *always* give TLS details.
+    var urgent = (grade == 0);
 
-    if (https >= 1) {
-      if (behavior >= 2)
-        details = "This domain enforces HTTPS. "
-      else
-        details = "This domain supports HTTPS, but does not enforce it. "
+    // CASE: Perfect score!
+    if (
+        (https >= 1) && (behavior >= 2) &&
+        (hsts == 2) && (preloaded == 2) &&
+        (tls.length == 0) && (grade == 6))
+      details = g("Perfect score! HTTPS is strictly enforced throughout the zone.");
 
-      if (hsts == 0) {
-        // HSTS is considered a No *because* its max-age is too weak.
-        if ((hsts_age > 0) && (hsts_age < 10886400))
-          details += "The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
-        else
-          details += l("hsts", "HSTS") + " is not enabled.";
-      }
+    // CASE: Only issue is TLS quality issues.
+    else if (
+        (https >= 1) && (behavior >= 2) &&
+        (hsts == 2) && (preloaded == 2)) {
+      details = g("Almost perfect!") + " " + tlsDetails;
+      // Override F grade override.
+      urgent = false;
+    }
+
+    // CASE: HSTS preloaded, but HSTS header is missing.
+    else if (
+        (https >= 1) && (behavior >= 2) &&
+        (hsts < 1) && (preloaded == 2))
+      details = n("Caution:") + " Domain is preloaded, but HSTS header is missing. This may " + l("stay_preloaded", "cause the domain to be un-preloaded") + ".";
+
+    // CASE: HTTPS+HSTS, preload-ready but not preloaded.
+    else if (
+        (https >= 1) && (behavior >= 2) &&
+        (hsts == 2) && (preloaded == 1))
+      details = g("Almost there! ") + "Domain is ready to be " + l("submit", "submitted to the HSTS preload list") + ".";
+
+    // CASE: HTTPS+HSTS (M-15-13 compliant), but no preloading.
+    else if (
+        (https >= 1) && (behavior >= 2) &&
+        (hsts == 2) && (preloaded == 0))
+      details = g("HTTPS enforced. ") + n(l("preload", "Consider preloading this domain")) + " to enforce HTTPS across the entire zone.";
+
+    // CASE: HSTS, but HTTPS not enforced.
+    else if ((https >= 1) && (behavior < 2) && (hsts == 2))
+      details = n("Caution:") + " Domain uses " + l("hsts", "HSTS") + ", but is not redirecting clients to HTTPS.";
+
+    // CASE: HTTPS w/valid chain supported and enforced, weak/no HSTS.
+    else if ((https == 2) && (behavior >= 2) && (hsts < 2)) {
+      if (hsts == 0)
+        details = n("Almost:") + " Enable " + l("hsts", "HSTS") + " so that clients can enforce HTTPS.";
       else if (hsts == 1)
-        details += l("hsts", "HSTS") + " is enabled, but not for its subdomains and is not ready for " + l("preload", "preloading") + ".";
-      else if (hsts == 2)
-        details += l("hsts", "HSTS") + " is enabled for all subdomains, but is not ready for " + l("preload", "preloading into browsers") + ".";
-      else if (hsts == 3)
-        details += l("hsts", "HSTS") + " is enabled for all subdomains, and can be " + l("preload", "preloaded into browsers") + ".";
+        details = n("Almost:") + " The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
+    }
 
-      // HSTS is strong enough to get a yes, but still less than a year.
-      if (hsts > 0 && (hsts_age < 31536000))
-        details += " The HSTS max-age (" + hsts_age + " seconds) should be increased to at least 1 year (31536000 seconds)."
+    // CASE: HTTPS w/invalid chain supported and enforced, no HSTS.
+    else if ((https == 1) && (behavior >= 2) && (hsts < 2))
+      details = n("Almost:") + " Domain is missing " + l("hsts", "HSTS") + ", but the presented certificate chain may not be valid for all public clients. HSTS prevents users from clicking through certificate warnings. See " + l(labsUrlFor(row.canonical), "the SSL Labs report") + " for details.";
 
-    } else if (https == 0)
-      details = "This domain redirects visitors from HTTPS down to HTTP."
+    // CASE: HTTPS supported, not enforced, no HSTS.
+    else if ((https >= 1) && (behavior < 2) && (hsts < 2))
+      details = "HTTPS supported, but not enforced.";
+
+    // CASE: HTTPS downgrades.
+    else if (https == 0)
+      details = "HTTPS redirects visitors down to HTTP."
+
+    // CASE: HTTPS isn't supported at all.
     else if (https == -1)
-      details = "This domain does not support HTTPS."
+      // TODO SUBCASE: It's a "redirect domain".
+      // SUBCASE: Everything else.
+      details = "No support for HTTPS."
 
-    return details;
+    else
+      details = "";
+
+    // If there's an F grade, and TLS details weren't already included,
+    // add an urgent warning.
+    if (urgent)
+      return details + " " + w("Warning: ") + l(labsUrlFor(row.canonical), "review SSL Labs report") + " to resolve TLS quality issues."
+    else
+      return details;
   };
 
   var links = {
-    rc4: "https://https.cio.gov/technical-guidelines/#rc4",
     hsts: "https://https.cio.gov/hsts/",
     sha1: "https://https.cio.gov/technical-guidelines/#signature-algorithms",
     ssl3: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
-    tls: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
-    fs: "https://https.cio.gov/technical-guidelines/#forward-secrecy",
-    preload: "https://https.cio.gov/hsts/#hsts-preloading"
+    tls12: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
+    preload: "https://https.cio.gov/hsts/#hsts-preloading",
+    stay_preloaded: "https://hstspreload.appspot.com/#continued-requirements",
+    submit: "https://hstspreload.appspot.com"
   };
 
   var l = function(slug, text) {
     return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\">" + text + "</a>";
   };
 
-  // Mention a few high-impact TLS issues that will have affected
-  // the SSL Labs grade.
-  var tlsDetails = function(data, type, row) {
-    if (type == "sort")
-      return null;
-
-    if (row.https.grade < 0)
-      return "No data.";
-
-    var config = [];
-
-    if (row.https.uses == 1)
-      config.push("uses a certificate chain that may be invalid for some visitors");
-
-    if (row.https.sig == "SHA1withRSA")
-      config.push("uses a certificate with a " + l("sha1", "weak SHA-1 signature"));
-
-    if (row.https.ssl3 == true)
-      config.push("supports the " + l("ssl3", "insecure SSLv3 protocol"));
-
-    if (row.https.rc4 == true)
-      config.push("supports the " + l("rc4", "deprecated RC4 cipher"));
-
-    if (row.https.tls12 == false)
-      config.push("lacks support for the " + l("tls", "most recent version of TLS"));
-
-    // Don't bother remarking if FS is Modern or Robust.
-    if (row.https.fs <= 1)
-      config.push("should enable " + l("fs", "forward secrecy"));
-
-    var issues = "";
-    if (config.length > 0)
-      issues += "This domain " + config.join(", ") + ". ";
-
-    issues += "See the " + l(labsUrlFor(row.domain), "full SSL Labs report") + " for details.";
-
-    return issues;
+  var g = function(text) {
+    return "<strong class=\"success\">" + text + "</strong>";
   };
+
+  var w = function(text) {
+    return "<strong class=\"warning\">" + text + "</strong>";
+  };
+
+  var n = function(text) {
+    return "<strong class=\"neutral\">" + text + "</strong>";
+  }
 
   var renderTable = function(data) {
     var table = $("table").DataTable({
 
-      responsive: true,
-
       data: data,
+
+      responsive: {
+          details: {
+              type: "",
+              display: $.fn.dataTable.Responsive.display.childRowImmediate
+          }
+      },
 
       initComplete: Utils.searchLinks,
 
@@ -205,16 +273,16 @@ $(document).ready(function () {
           render: display(names.hsts)
         },
         {
+          data: "https.preloaded",
+          render: display(names.preloaded)
+        },
+        {
           data: "https.grade",
           render: linkGrade
         },
         {
-          data: "Details",
+          data: "",
           render: httpDetails
-        },
-        {
-          data: "TLS Issues",
-          render: tlsDetails
         }
       ],
 
@@ -239,32 +307,6 @@ $(document).ready(function () {
 
       dom: 'LCftrip'
 
-    });
-
-
-    /**
-    * Make the row expand when any cell in it is clicked.
-    *
-    * DataTables' child row API doesn't appear to work, likely
-    * because we're getting child rows through the Responsive
-    * plugin, not directly. We can't put the click event on the
-    * whole row, because then sending the click to the first cell
-    * will cause a recursive loop and stack overflow.
-    *
-    * So, we put the click on every cell except the first one, and
-    * send it to its sibling. The first cell is already wired.
-    */
-    $('table tbody').on('click', 'td:not(.sorting_1)', function(e) {
-      $(this).siblings("th.sorting_1").click();
-    });
-
-
-    //Adds keyboard control to first cell of table
-    Utils.detailsKeyboardCtrl();
-    Utils.updatePagination();
-    table.on("draw.dt",function(){
-       Utils.detailsKeyboardCtrl();
-       Utils.updatePagination();
     });
 
   }

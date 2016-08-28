@@ -34,18 +34,26 @@ https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chr
 ================================================== -->
 <link rel="stylesheet" href="/static/css/normalize.min.css">
 <link rel="stylesheet" href="/static/css/google-fonts.css">
-<link rel="stylesheet" href="/static/js/vendor/DataTables-1.10.6/media/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="/static/js/vendor/DataTables-1.10.6/media/css/dataTables.responsive.css">
+
 <link rel="stylesheet" href="/static/css/main.css?{{ now() | date("%Y%m%j%H%M%S") }}">
 
 <!-- Scripts
 ================================================== -->
 <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
 <script src="/static/js/vendor/jquery.min.js"></script>
-<script src="/static/js/vendor/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
-<script src="/static/js/vendor/DataTables-1.10.6/media/js/dataTables.responsive.js"></script>
-<script src="/static/js/vendor/dataTables.lengthLinks.js"></script>
-<script src="/static/js/dataTables.downloads.js"></script>
+
 <script src="/static/js/vendor/d3.min.js"></script>
 <script src="/static/js/vendor/querystring.js"></script>
 <script src="/static/js/utils.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
+
+
+<!-- sigh, datatables -->
+
+<link rel="stylesheet" type="text/css" href="/static/DataTables-1.10.12/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/Responsive-2.1.0/css/responsive.dataTables.min.css"/>
+
+<script type="text/javascript" src="/static/DataTables-1.10.12/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/static/Responsive-2.1.0/js/dataTables.responsive.min.js"></script>
+
+<script src="/static/js/dataTables.lengthLinks.js"></script>
+<script src="/static/js/dataTables.downloads.js"></script>

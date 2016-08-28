@@ -97,6 +97,16 @@ table caption {
   table.dataTable {
     padding: 20px 0;
 
+    // reward!
+    .success {
+      color: $green;
+    }
+
+    // punishment!
+    .warning {
+      color: $red;
+    }
+
     a {
       text-decoration: underline;
     }
