@@ -28,6 +28,7 @@ def register(app):
     @app.route("/data/domains/<report_name>.<ext>")
     def domain_report(report_name, ext):
         domains = models.Domain.eligible(report_name)
+        domains = sorted(domains, key=lambda k: k['domain'])
 
         if ext == "json":
           response = Response(ujson.dumps({'data': domains}))
