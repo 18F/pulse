@@ -207,11 +207,17 @@ body {
 a {
   color: white;
   font-weight: 900; }
+  a:active {
+    color: white; }
   a:hover {
     color: white;
     text-decoration: underline; }
   a:focus {
-    outline: dotted 1px; }
+    color: white;
+    outline: dotted 1px;
+    text-decoration: underline; }
+  a:visited {
+    color: white; }
 
 footer {
   border-top: 1px solid #003366;
@@ -446,7 +452,7 @@ a#skipnav {
     #accessibility #content #main-content.white-bkg a:focus,
     #about #content #main-content.white-bkg a:hover,
     #about #content #main-content.white-bkg a:focus {
-      color: #0066CC;
+      color: #003366;
       text-decoration: underline; }
 
 .https_chart,
@@ -858,7 +864,12 @@ a#skipnav {
       padding-left: 40px !important; } }
 
 table caption {
-  display: none; }
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
 
 .dataTables_wrapper {
   padding: 80px 0 40px; }
@@ -942,6 +953,9 @@ table caption {
     .dataTables_wrapper table.dataTable.domain td.even:first-child {
       white-space: nowrap; }
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
+      top: 9px;
+      background-color: #3399ff; }
+    .dataTables_wrapper table.dataTable.dtr-inline.collapsed th:first-child:before {
       top: 9px;
       background-color: #3399ff; }
     .dataTables_wrapper table.dataTable > tbody > tr.child ul li {

@@ -17,7 +17,7 @@ $(document).ready(function () {
   }
 
   var renderTable = function(data) {
-    $("table").DataTable({
+    var table = $("table").DataTable({
       responsive: true,
       initComplete: Utils.searchLinks,
 
@@ -41,7 +41,7 @@ $(document).ready(function () {
       columnDefs: [
         {
           targets: 0,
-          cellType: "td",
+          cellType: "th",
           createdCell: function (td) {
             td.scope = "row";
           }
@@ -73,6 +73,11 @@ $(document).ready(function () {
 
       dom: 'Lftrip'
 
+    });
+
+    Utils.updatePagination();
+    table.on("draw.dt",function(){
+      Utils.updatePagination();
     });
   };
 

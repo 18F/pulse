@@ -5,7 +5,7 @@ $(document).ready(function () {
   });
 
   var renderTable = function(data) {
-    $("table").DataTable({
+    var table = $("table").DataTable({
       responsive: true,
 
       data: data,
@@ -13,7 +13,10 @@ $(document).ready(function () {
       initComplete: Utils.searchLinks,
 
       columns: [
-        {data: "name"},
+        {
+          data: "name",
+          cellType: "th"
+        },
         {
           data: "analytics.eligible",
           render: Utils.filterAgency("analytics")
@@ -56,6 +59,11 @@ $(document).ready(function () {
 
       dom: 'Lftrip'
 
+    });
+
+    Utils.updatePagination();
+    table.on("draw.dt",function(){
+      Utils.updatePagination();
     });
   };
 

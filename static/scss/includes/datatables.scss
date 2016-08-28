@@ -2,7 +2,12 @@
 /////////////////////////////////////////
 
 table caption {
-  display: none;
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
 
 .dataTables_wrapper {
@@ -135,6 +140,10 @@ table caption {
 
     &.dtr-inline.collapsed {
       td:first-child:before {
+        top: 9px;
+        background-color: lighten($light-blue, 20%);
+      }
+      th:first-child:before {
         top: 9px;
         background-color: lighten($light-blue, 20%);
       }

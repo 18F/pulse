@@ -4,16 +4,6 @@ $(document).ready(function () {
     renderTable(data.data);
   });
 
-  var detailsKeyboardCtrl = function(){
-      $('table tbody tr td:first-child').attr('tabindex','0')
-      .attr('aria-label','Select for additional details')
-      .on('keydown',function(e){
-        if (e.keyCode == 13) {
-          $(this).click();
-          $(this).parent().next('tr.child').focus();
-        }
-      });
-    };
 
   var renderTable = function(data) {
     var table = $("table").DataTable({
@@ -28,6 +18,7 @@ $(document).ready(function () {
         {
           data: "domain",
           width: "210px",
+          cellType: "th",
           render: Utils.linkDomain
         },
         {
@@ -78,14 +69,15 @@ $(document).ready(function () {
     * send it to its sibling. The first cell is already wired.
     */
     $('table tbody').on('click', 'td:not(.sorting_1)', function(e) {
-      $(this).siblings("td.sorting_1").click();
+      $(this).siblings("th.sorting_1").click();
     });
 
     //Adds keyboard control to first cell of table
-    detailsKeyboardCtrl();
-
+    Utils.detailsKeyboardCtrl();
+    Utils.updatePagination();
     table.on("draw.dt",function(){
-       detailsKeyboardCtrl();
+       Utils.detailsKeyboardCtrl();
+       Utils.updatePagination();
     });
 
   };

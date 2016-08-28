@@ -44,14 +44,21 @@ a {
   color: white;
   font-weight: 900;
 
+  &:active {
+    color: white;
+  }
   &:hover {
     color: white;
     text-decoration: underline;
   }
   &:focus {
+    color: white;
     outline: dotted 1px;
+    text-decoration: underline;
   }
-
+  &:visited {
+    color: white;
+  }
 }
 
 footer {
@@ -192,7 +199,7 @@ a#skipnav {
 
           &:hover,
           &:focus {
-            color: $light-blue;
+            color: $dark-blue;
             text-decoration: underline;
           }
         }

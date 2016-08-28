@@ -33,7 +33,7 @@ $(document).ready(function () {
   };
 
   var renderTable = function(data) {
-    $("table").DataTable({
+    var table = $("table").DataTable({
 
       responsive: true,
 
@@ -45,6 +45,7 @@ $(document).ready(function () {
         {
           data: "domain",
           width: "210px",
+          cellType: "th",
           render: Utils.linkDomain
         },
         {data: "canonical"},
@@ -76,6 +77,10 @@ $(document).ready(function () {
 
       dom: 'LCftrip'
 
+    });
+    Utils.updatePagination();
+    table.on("draw.dt",function(){
+      Utils.updatePagination();
     });
   };
 

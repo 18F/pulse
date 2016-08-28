@@ -20,53 +20,135 @@
 
     <div class="guide">
 
-      <h3>Accessibility Standards</h3>
+      <h3>Below you will find some helpful tips to help guide you towards getting a better score on Pulse for your domain or agency. For any further questions, please visit our <a href="/about/">frequently asked questions</a>.</h3>
 
       <article>
-        <h4>Section 508</h4>
+        <h4>What domains are measured?</h4>
         <p>
-        In 2000, Section 508 of the Rehabilitation Act of 1973 was amended to include technical requirements that required all Federal government Electronic & Information Technology (EIT) be made accessible to persons with disabilities. ‘Section 508’ has since become synonymous with accessibility standards in government jargon. Section 508 is a sweeping law mandating accessibility for everything from computer hardware to mobile phones to government websites.
+        Pulse scans for certain accessibility issues on <strong>publicly accessibile .gov domains</strong> in the federal government's <strong>executive branch</strong>.  Domains which do nothing but redirect to other websites <strong>are not measured</strong>.  
         </p>
         <p>
-        While Section 508 laid out rules and definitions for how information technology could be made accessible, it did not lay out strict, testable standards for websites. The state of the web has changed dramatically in the intervening 16 years, and will continue to evolve over time. As a result, it is impossible to fully automate the measurement of Section 508 conformance, and only a professional evaluator can certify if a technology conforms with Section 508 requirements. As such, the error reports generated on Pulse DO NOT constitute a full evaluation of 508 conformance; rather, the error reports are meant to help web developers and content managers correct and avoid common accessibility errors that could contribute to making a site inaccessible.
+        This currently amounts to around 800 domains.
+        </p>
+        <p>
+        Pulse scans second-level federal .gov domains (e.g., agency.gov), checking the <a href="https://github.com/GSA/data/tree/gh-pages/dotgov-domains">official .gov domain list</a>.  Note that third-level federal domains (e.g., program.agency.gov), .mil, .edu, and state, local, and Native Sovereign Nation (NSN) domains are NOT currently scanned by Pulse.
+        </p>
+      </article>
+
+
+      <article>
+        <h4>PULSE Accessibility Spot Checks</h4>
+        <p>
+        The PULSE Accessibility Module performs the following spot checks, informed by the current Section 508 standards.  The chart below outlines how the spot checks map to the current Section 508 Standards, as well as the WCAG 2.0 Level 1 success criteria:
+        </p>
+        <p>
+        
+  <table>
+  <caption>WCAG 2.0 and 508 Mapping</caption>
+  <tr>
+    <th scope="col">
+      (WCAG 2.0 Success Criteria [Level])
+    </th>
+    <th scope="col">
+      Existing 508 Corresponding Provision
+    </th>
+    <th scope="col">
+      Summary
+    </th>
+  </tr>
+  <tr>
+    <td>1.1.1 Non-text Content [A]</td>
+    <td>1194.22(a)</td>
+    <td>Provides for text alternatives of images and other non-text content, including user interface components</td>
+  </tr>
+  <tr>
+    <td>1.3.1 Information and Relationships [A]</td>
+    <td>1194.22(e) through (h)</td>
+    <td>Use with low vision Core component of trusted tester methodology</td>
+  </tr>
+  <tr>
+    <td>1.4.3 Contrast (Minimum) [AA]</td>
+    <td>1194.31(b) -- Low vision</td>
+    <td>Provides that information, structure, and relationships conveyed visually are available to users of assistive technology
+Provides that semantic markup be used for headings, lists, emphasized or special text, and tabular data, including the association of data cells with their headers</td>
+  </tr>
+  <tr>
+    <td>2.1.1 Keyboard [A]</td>
+    <td>1194.21(a)</td>
+    <td>Provides for functionality when using only the keyboard interface</td>
+  </tr>
+  <tr>
+    <td>2.2.1 Timing Adjustable [A]</td>
+    <td>1194.22(p)</td>
+    <td>Provides for flexible time limits</td>
+  </tr>
+  <tr>
+    <td>2.2.2 Pause, Stop, Hide [A]</td>
+    <td>1194.21(h)</td>
+    <td>Provides for user control over moving, blinking, scrolling, and information that updates automatically</td>
+  </tr>
+  <tr>
+    <td>2.4.1 Bypass Blocks [A]</td>
+    <td>1194.22(o)</td>
+    <td>Provides for a skip navigation link or other means to bypass repetitive content</td>
+  </tr>
+  <tr>
+    <td>2.4.2 Page Title [A]</td>
+    <td>1194.22(i)</td>
+    <td>Provides for descriptive and informative page titles</td>
+  </tr>
+  <tr>
+    <td>3.2.2 On Input [A]</td>
+    <td>1194.21(l) and .22(n)</td>
+    <td>Provides that changing the setting of user interface components does not automatically cause a change of context</td>
+  </tr>
+  <tr>
+    <td>4.1.2 Name, Role, Value [A]</td>
+    <td>1194.21(d)</td>
+    <td>Provides that sufficient information (including identity, operation, and state) about user interface components is available to assistive technology</td>
+  </tr>
+</table>
+        </p>
+        <p>
+        It’s impossible to fully automate the measurement of Section 508 conformance, and <strong>only a professional evaluator can certify if a technology conforms with Section 508 requirements</strong>. As such, the accessibility spot check error reports generated on Pulse DO NOT constitute a full evaluation of 508 conformance; rather, the error reports are meant to help web developers and content managers correct and avoid common accessibility errors that could contribute to making a site inaccessible.
+        </p>
+        <p>
+        The PULSE Accessibility Module only conducts spot-checks of common accessibility issues that can be tested with a high degree of confidence via automated testing tools -- it’s not meant to provide a complete picture of a website’s overall accessibility. Agencies should use manual tests in concert with automated tests to fully assess whether their website fully addresses the Section 508 regulatory standards. For testing guidance, please refer to the <a href="https://www.dhs.gov/sites/default/files/publications/Baseline_Tests_for_Software_and_Web_Accessibility_3.pdf">Harmonized Testing Process for Section 508 Compliance: Baseline Tests for Software and Web Accessibility</a>.
+        </p>
+      </article>
+
+      <article>
+        <h4>Section 508 Accessibility Standards</h4>
+        <p>
+        In 2000, Section 508 of the Rehabilitation Act of 1973 was amended to include technical requirements that required all Federal government Electronic & Information Technology (EIT) be made accessible to persons with disabilities. ‘Section 508’ has since become synonymous with accessibility standards in government jargon. Section 508 is a sweeping law mandating accessibility for everything from computer hardware to mobile phones to government websites.  Refer to the <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards">Section 508 standards</a> for more information.
         </p>
       </article>
 
       <article>
         <h4>WCAG 2.0</h4>
         <p>
-        Around the same time that the government was amending Section 508, the World Wide Web Consortium (W3C) was busy developing their own standards. The first official version, released in 1999, was call the Web Content Accessibility Guidelines (WCAG 1.0). To keep pace with the evolving online environment, the standards were updated in 2008 to their current version, WCAG 2.0.  In the proposed Section 508 Standards refresh, the web content section formally incorporates the more detailed WCAG 2.0 Level AA standards. This chart illustrates the <a href='http://www.access-board.gov/wcag2-508'>differences between Existing 508 and WCAG 2.0 Standards</a>.
+        Around the same time that the government was amending Section 508, the World Wide Web Consortium (W3C) was busy developing their own standards. The first official version, released in 1999, was call the Web Content Accessibility Guidelines (WCAG 1.0). To keep pace with the evolving online environment, the standards were updated in 2008 to their current version, WCAG 2.0.  In the proposed Section 508 Standards refresh, the web content section formally incorporates the more detailed WCAG 2.0 Level AA standards.  Refer to the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 Guidelines</a> for more informations.
         </p>
         <p>
-        WCAG 2.0 consists of 12 broad standards organized under four overarching accessibility principles. Each of the 12 broad standards are further subdivided into more specific standards. The four guiding principles are that websites should be:
-        <ul>
-          <li>Perceivable</li>
-          <li>Operable</li>
-          <li>Understandable</li>
-          <li>Robust</li>
-        </ul>
-        We will not review all of the WCAG standards here, but you can read more about the WCAG 2.0 guidelines on the W3C’s WCAG 2.0 site.
-        </p>
-        <p>
-        <u>Why is this important?</u>
+        <strong>Why is this important?</strong>
         </p>
         <p>
         Citizens rely on their government for a range of essential services that impact their well-being, such as medicare/medicaid/social security support, assistance in finding low-income housing, travel information from the State Department, health information from the CDC, etc. Disabled veterans rely on the support of the Department of Veteran’s Affairs for a range of vital services. All citizens must file an annual tax return. Many small companies access government websites to bid on government contracts and grow their business.
         </p>
         <p>
-        When this information is presented in a way that is not accessible to people with disabilities, those people are shut out from essential services and opportunities that should be available to all Americans. Additionally, a large number of Americans with disabilities are employed by the federal government, and having accessible technology is essential for them to be able to perform their work effectively. Accessibility has long been a priority for the federal government, and a recent White House web standards memo further reinforced our commitment that all federal websites comply with accessibility regulations.
+        When this information is presented in a way that is not accessible to people with disabilities, those people are shut out from essential services and opportunities that should be available to all Americans. Additionally, a large number of Americans with disabilities are employed by the federal government, and having accessible technology is essential for them to be able to perform their work effectively. Accessibility has long been a priority for the federal government, and a recent <a href="https://www.whitehouse.gov/sites/default/files/omb/egov/memo/policies-for-dot-gov-domain-issuance-for-federal-agency-public-websites.pdf">White House web standards memo</a> further reinforced our commitment that all federal websites comply with accessibility regulations.
         </p>
         <p>
-        <u>Limitations</u>
+        <strong>Limitations</strong>
         </p>
         <p>
-        Automatically measuring full compliance with 508 standards or WCAG 2.0 guidelines is not possible with the current state of technology. For instance, while we can automatically check if an image on a website has an alt text attribute, we cannot measure if that alt text is sufficiently descriptive; a picture of a dog with an alt text attribute that reads “cow” would pass the automatic check, but since the alt text is incorrect, the image is not accessible. While we can detect the background color and text color by reading a page’s CSS, we may not be able to detect the color of an image; if text is overlayed on a background image, we would not be able to measure if the level of contrast is sufficient. We can measure if closed captions or transcripts are available for audio content, but we cannot automatically verify the accuracy or comprehensiveness of the text content. It is for these reasons that fully assessing a site’s accessibility still requires evaluation by an accessibility professional.
+        Automatically measuring compliance with 508 standards or WCAG 2.0 guidelines is not possible with the current state of technology. For instance, while we can automatically check if an image on a website has an alt text attribute, we cannot measure if that alt text is sufficiently descriptive; a picture of a dog with an alt text attribute that reads “cow” would pass the automatic check, but since the alt text is incorrect, the image is not accessible. While we can detect the background color and text color by reading a page’s Cascading Style Sheets (CSS), we may not be able to detect the color of an image; if text is overlayed on a background image, we would not be able to measure if the level of contrast is sufficient. We can measure if closed captions or transcripts are available for audio content, but we cannot automatically verify the accuracy or comprehensiveness of the text content. It is for these reasons that fully assessing a site’s accessibility still requires evaluation by an accessibility professional.
         </p>
         <p>
-        <u>How common accessibility errors impact website visitors</u>
+        <strong>How common accessibility errors impact website visitors</strong>
         </p>
         <p>
-        The WCAG 2.0 standards define a wide range of requirements for accessible web content. Here are a few examples of common accessibility errors:
+        There are a wide range of requirements for accessible web content. Here are a few examples of common accessibility errors:
         <ul>
           <li>A website uses an image to convey information without including a descriptive alt text attribute. This error would make it impossible for the visually impaired to access the information conveyed by the image.</li>
           <li>The text on a page has poor contrast with the background color (for instance, light green text on a dark green background). This makes it difficult or impossible for those with some visual impairments (such as colorblindness) to use the information.</li>
@@ -75,31 +157,31 @@
           <li>A site requires the reader to use a visually-based element, such as animation, to navigate a site, without an alternate navigation option. This would make it impossible for people using some assistive technologies like screen readers to navigate the site.</li>
         </p>
         <p>
-        <u>How we measure</u>
+        <strong>How we measure accessibility on Pulse</strong>
         </p>
         <p>
-        While we cannot fully measure accessibility with automated tools, we can measure for broader errors on websites, such as whether an image does or does not contain alt text, whether there is sufficient contrast between the text and background, whether a page is properly structured for someone using a screen reader to access the information, etc. To do this, we employ an open-source tool known as pA11y. pA11y uses another open-source tool, the HTML_Codesniffer, to identify errors which violate the principles and standards defined in WCAG 2.0.
+        While we cannot fully measure accessibility with automated tools, we can measure for broader errors on websites, such as whether an image does or does not contain alt text, whether there is sufficient contrast between the text and background, whether a page is properly structured for someone using a screen reader to access the information, etc. To do this, we employ an open-source tool known as Pa11y. Pa11y uses another open-source tool, the HTML_Codesniffer, to identify accessibility errors.
         </p>
         <p>
-        <u>Other measurement tools</u>
+        <strong>Other measurement tools</strong>
         </p>
         <p>
-        While pA11y is the tool we chose to measure accessibility on Pulse, there are a range of other excellent proprietary and open-source tools available to assist web developers and IT managers in understanding how to build accessible technology.
+        While Pa11y is the tool we chose to measure accessibility on Pulse, there are a range of other excellent proprietary and open-source tools available to assist web developers and IT managers in understanding how to build accessible technology.
         </p>
         <p>
-        The HTML_Codesniffer, the technology behind pA11y, is a browser extension that can be used to automatically detect some accessibility errors on a webpage. The HTML_Codesniffer will point out the particular code snippet with the error, the location of the error on the page, and the principle violated by the error.
+        The HTML_Codesniffer, the technology behind Pa11y, is a browser extension that can be used to automatically detect some accessibility errors on a webpage. The HTML_Codesniffer will point out the particular code snippet with the error, the location of the error on the page, and the principle violated by the error.
         </p>
         <p>
-        The University of Illinois has been working for several years to develop another free, open-source tool, the <a href='http://fae20.cita.illinois.edu/'>Functional Accessibility Evaluator (FAE)</a>. While the tool is still under development, the current version is an excellent way to evaluate a full website; in contrast to pA11y, the FAE can crawl the subdomains of a website, allowing a more comprehensive scan that can identify more potential accessibility issues.
+        To showcase another example, the University of Illinois has been working for several years to develop another free, open-source tool, the <a href='http://fae20.cita.illinois.edu/'>Functional Accessibility Evaluator (FAE)</a>. While the tool is still under development, the current version is an excellent way to evaluate a full website; in contrast to Pa11y, the FAE can crawl the subdomains of a website, allowing a more comprehensive scan that can identify more potential accessibility issues.
         </p>
         <p>
-        <u>How to correct accessibility errors</u>
+        <strong></strong>How to correct accessibility errors</strong>
         </p>
         <p>
         The majority of the accessibility errors detected by Pulse are fairly straightforward to correct. The tools listed above provide web developers and content managers with the information they need to pinpoint the errors on their pages. While some errors may involve a significant overhaul of a site’s architecture, most can be corrected by deleting errant tags, making minor CSS adjustments, and adding alt text to images. If you need help fixing errors identified in Pulse, contact your agency’s 508 coordinator.
         </p>
         <p>
-        Additionally, GSA’s Office of Governmentwide Policy (OGP) conducts training to help 508 coordinators and IT/content professionals better understand how to build accessible technology. To learn more about accessible technology, contact the Government-wide Section 508 Program at <a href='mailto:mailto:Section.508@gsa.gov'>Section.508@gsa.gov</a>.
+        Additionally, GSA’s Office of Governmentwide Policy (OGP) conducts training to help 508 coordinators and IT/content professionals better understand how to build accessible technology. To learn more about accessible technology, contact the Government-wide Section 508 Program at <a href='mailto:mailto:Section.508@gsa.gov'>Section.508@gsa.gov</a> or visit <a href="https://section508.gov/">https://section508.gov/</a>.
         </p>
       </article>
 
