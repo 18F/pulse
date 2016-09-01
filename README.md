@@ -145,6 +145,7 @@ This project is an initial pass - there is much more information that can be rep
 * [Look at what Ben tracked](http://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/)
 * IPv6
 * DNSSEC
+* https://monitor.dnsops.gov/
 * What else can we get from Verisign?
 
 
