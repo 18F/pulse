@@ -17,26 +17,13 @@ $(document).ready(function () {
           cellType: "th"
         },
         {
-          data: function(row, type, val, meta) {
-            return Math.round(row["Average Errors per Page"]);
-          },
-          width: "76px"
-        },
-        {
-          data: "Color Contrast Errors",
-          width: "76px"
+          data: "Color Contrast Errors"
         },
         {
           data: "HTML/Attribute Errors"
         },
         {
-          data: "Form Errors"
-        },
-        {
           data: "Alt Tag Errors"
-        },
-        {
-          data: "Other Errors"
         }
       ],
 
