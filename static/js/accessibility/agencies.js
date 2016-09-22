@@ -20,7 +20,7 @@ $(document).ready(function () {
           data: "Color Contrast Errors"
         },
         {
-          data: "HTML/Attribute Errors"
+          data: "HTML Attribute Errors"
         },
         {
           data: "Alt Tag Errors"
