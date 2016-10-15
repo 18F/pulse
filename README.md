@@ -84,7 +84,7 @@ python -m data.update
 
 Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan).
 
-`domain-scan` in turn requires [`pshtt`](https://github.com/dhs-ncat/pshtt) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan). These currently both need to be cloned from GitHub and set up individually.
+`domain-scan` in turn requires [`pshtt`](https://github.com/dhs-ncats/pshtt) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan). These currently both need to be cloned from GitHub and set up individually.
 
 Pulse requires you to set one environment variable:
 
