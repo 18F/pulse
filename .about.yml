@@ -1,10 +1,14 @@
 ---
 project: "Pulse"
+full_name: pulse.cio.gov
 name: pulse
 github:
 - 18F/pulse
 - 18F/domain-scan
 description: A lightweight dashboard that uses the official .gov domain list to measure HTTPS integration and participation in the Digital Analytics Program.  
+impact: We designed a website that makes public and easy to understand several basic characteristics of a .gov website, such as HTTPS implementation and participation in the Digital Analytics Program.   
+owner_type: project
+testable: true 
 partners:
 - General Services Administration
 stage: beta
@@ -14,10 +18,26 @@ milestones:
 - 'June 2015: Pulse.CIO.gov announced'
 contact:
 - pulse@cio.gov
-stack: jeykll, ruby
-team: gray, julia, eric
+stack: 
+- jeykll
+- ruby
+- domain scan
+team: 
+- github: gbinal
+  role: lead
+  id: gray
+- github: ericschles
+  role: developer
+  id: ericschles
+type: app
 licenses:
-  pulse: Public Domain (CC0)
+licenses:
+  pulse:
+    name: Public Domain (CC0)
+    url: https://github.com/18F/pulse/blob/master/LICENSE.md
+  domain-scan:
+    name: Public Domain (CC0)
+    url: https://github.com/18F/domain-scan/blob/master/LICENSE.md
 links:
 - https://pulse.cio.gov
 status: 
