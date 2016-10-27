@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/18F/pulse/badges/gpa.svg)](https://codeclimate.com/github/18F/pulse)  
+
+
 ## The pulse of the federal .gov webspace
 
 How the .gov domain space is doing at best practices and federal requirements.
