@@ -94,19 +94,19 @@ def register(app):
     hide_accessibility = (os.getenv("HIDE_ACCESSIBILITY", "false").lower() == "true")
 
     if not hide_accessibility:
-        @app.route("/accessibility/domain/<hostname>")
+        @app.route("/a11y/domain/<hostname>")
         def a11ydomain(hostname=None):
           return render_template("a11y.html", domain=hostname)
 
-        @app.route("/accessibility/domains/")
+        @app.route("/a11y/domains/")
         def accessibility_domains():
           return render_template("accessibility/domains.html")
 
-        @app.route("/accessibility/agencies/")
+        @app.route("/a11y/agencies/")
         def accessibility_agencies():
           return render_template("accessibility/agencies.html")
 
-        @app.route("/accessibility/guidance/")
+        @app.route("/a11y/guidance/")
         def accessibility_guide():
           return render_template("accessibility/guide.html")
 
