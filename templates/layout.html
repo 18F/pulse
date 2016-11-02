@@ -7,9 +7,11 @@
 ================================================== -->
 <title>{% block title %}{% endblock title %}</title>
 <meta property="og:title" content="{{ site.title }} | {{ self.title() }}" />
+<meta name="twitter:title" content="{{ self.title() }}" />
 
 <meta name="description" content="{% block description %}{% endblock %}">
 <meta property="og:description" content="{{ self.description() }}" />
+<meta name="twitter:description" content="{{ self.description() }}" />
 
 <link rel="canonical" href="{{ site.url }}{{ request.path }}" />
 

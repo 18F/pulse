@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/18F/pulse/badges/gpa.svg)](https://codeclimate.com/github/18F/pulse)  
+
+
 ## The pulse of the federal .gov webspace
 
 How the .gov domain space is doing at best practices and federal requirements.
@@ -84,7 +87,7 @@ python -m data.update
 
 Download and set up `domain-scan` [from GitHub](https://github.com/18F/domain-scan).
 
-`domain-scan` in turn requires [`pshtt`](https://github.com/dhs-ncat/pshtt) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan). These currently both need to be cloned from GitHub and set up individually.
+`domain-scan` in turn requires [`pshtt`](https://github.com/dhs-ncats/pshtt) and [`ssllabs-scan`](https://github.com/ssllabs/ssllabs-scan). These currently both need to be cloned from GitHub and set up individually.
 
 Pulse requires you to set one environment variable:
 
@@ -129,6 +132,7 @@ This project is an initial pass - there is much more information that can be rep
   * Test the deeper config options that the DAP snippet should be employing, such as IP anonymization, Event tracking, Demographics turned off, and ?????.  (Possibly using headless browser)
 * Does the site require “www”? Does it require not using “www”?
 * Load time (server-side)
+* More of the scans in [observatory.mozilla.org](https://observatory.mozilla.org)
 * [Scan for SPF records](https://github.com/18F/pulse/issues/424)
 * Mobile friendliness (poss. using Google's [Mobile Friendly Test](http://www.nextgov.com/mobile/2015/04/here-are-agency-websites-google-doesnt-think-are-mobile-friendly/110812/?oref=ng-relatedstories))
 * Mixed content detection (linking to insecure resources)
@@ -144,6 +148,7 @@ This project is an initial pass - there is much more information that can be rep
 * [Look at what Ben tracked](http://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/)
 * IPv6
 * DNSSEC
+* https://monitor.dnsops.gov/
 * What else can we get from Verisign?
 
 
