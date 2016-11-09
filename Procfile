@@ -1,1 +1,1 @@
-web: gunicorn pulse:app --log-file=-
+web: python pulse.py

@@ -54,7 +54,7 @@ var Utils = {
 
     $.each(data, function(key, value) {
       if (value) {
-        errorListOutput += "<li><a href=\"/accessibility/domain/" + row['domain'].replace(/http:\/\//i, '') + "#" + key.replace(/\s/g, '').replace(/\//i, '') + "\" target=\"_blank\">" + key + ": " + value + "</a></li>";
+        errorListOutput += "<li><a href=\"/a11y/domain/" + row['domain'].replace(/http:\/\//i, '') + "#" + key.replace(/\s/g, '').replace(/\//i, '') + "\" target=\"_blank\">" + key + ": " + value + "</a></li>";
       }
     });
 

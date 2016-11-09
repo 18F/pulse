@@ -1,0 +1,10 @@
+---
+applications:
+- name: pulse
+  memory: 512M
+  instances: 1
+  buildpack: python_buildpack
+- name: pulse-staging
+  memory: 512M
+  instances: 1
+  buildpack: python_buildpack
