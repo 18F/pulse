@@ -8,3 +8,7 @@ applications:
   memory: 512M
   instances: 1
   buildpack: python_buildpack
+- name: pulse-subdomains
+  memory: 512M
+  instances: 1
+  buildpack: python_buildpack
