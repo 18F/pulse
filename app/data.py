@@ -7,6 +7,8 @@ LABELS = {
   'branch': 'Branch',
   'redirect': 'Redirect',
   'agency_name': 'Agency',
+  'base': 'Base Domain',
+  'source': 'Source',
 
   'total_domains': 'Number of Domains',
 
@@ -92,4 +94,9 @@ CSV_FIELDS = {
   'common': ['domain', 'canonical', 'branch', 'agency_name', 'redirect'],
   'https': ['uses',  'enforces', 'hsts', 'preloaded', 'grade'],
   'analytics': ['participating']
+}
+
+CSV_FIELDS_SUBDOMAINS = {
+  'common': ['domain', 'base', 'agency_name', 'source'],
+  'https': ['uses', 'enforces', 'hsts']
 }

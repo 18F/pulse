@@ -1,5 +1,6 @@
 /data/output
 /data/*.json
+/data/*.env
 db.json
 .env
 

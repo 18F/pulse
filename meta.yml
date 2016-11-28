@@ -7,10 +7,13 @@ name: Pulse
 title: "The pulse of the federal .gov space"
 description: "How federal government domains are meeting best practices on the web."
 
-# Data source URLs. They shouldn't require manual updates.
+# Data sources. These URLs should have their content updated in-place.
 data:
   # URL where we download the .gov domain list from.
-  domains_url: https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/current-federal.csv
+  domains_url: "https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/current-federal.csv"
 
   # URL where we download the participating DAP .gov list from.
-  analytics_url: https://analytics.usa.gov/data/live/second-level-domains.csv
+  analytics_url: "https://analytics.usa.gov/data/live/second-level-domains.csv"
+
+  # DAP URL where we source public .gov subdomains from.
+  analytics_subdomains_url: "https://analytics.usa.gov/data/live/sites.csv"

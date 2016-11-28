@@ -938,6 +938,11 @@ table caption {
       color: #2da52d; }
     .dataTables_wrapper table.dataTable .warning {
       color: #ca1b1b; }
+    .dataTables_wrapper table.dataTable .indents {
+      padding-left: 80px;
+      line-height: 23px; }
+      .dataTables_wrapper table.dataTable .indents a {
+        font-weight: normal !important; }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {

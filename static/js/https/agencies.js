@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   var percentBar = function(field) {
     return function(data, type, row) {
-      percent = Utils.percent(
+      var percent = Utils.percent(
         row.https[field], row.https.eligible
       );
 
@@ -14,12 +14,43 @@ $(document).ready(function () {
         return percent;
       return Utils.progressBar(percent);
     };
-  }
+  };
+
+  // var enforcesSubdomains = function(data, type, row) {
+  //   if (row.https.subdomains && row.https.subdomains.eligible > 0) {
+  //     var percent = Utils.percent(
+  //       row.https.subdomains.enforces, row.https.subdomains.eligible
+  //     );
+  //     if (type == "sort")
+  //       return percent;
+  //     return Utils.progressBar(percent);
+  //   } else {
+  //     if (type == "sort")
+  //       return 0;
+  //     return "";
+  //   }
+  // };
+
+  // var subdomains = function(data, type, row) {
+  //   if (type == "sort") return null;
+
+  //   if (!row.https.subdomains.eligible || row.https.subdomains.eligible <= 0)
+  //     return "";
+
+  //   var pct = Utils.percent(row.https.subdomains.enforces, row.https.subdomains.eligible);
+  //   return "" + pct;
+  // };
 
   var renderTable = function(data) {
     var table = $("table").DataTable({
-      responsive: true,
       initComplete: Utils.searchLinks,
+
+      responsive: {
+          details: {
+              type: "",
+              display: $.fn.dataTable.Responsive.display.childRowImmediate
+          }
+      },
 
       data: data,
 
@@ -61,7 +92,7 @@ $(document).ready(function () {
         {
           render: percentBar("grade"),
           targets: 5,
-        }
+        },
       ],
 
       "oLanguage": {

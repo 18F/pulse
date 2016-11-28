@@ -107,6 +107,16 @@ table caption {
       color: $red;
     }
 
+    // inline indents for e.g. subdomains
+    .indents {
+      padding-left: 80px;
+      line-height: 23px;
+
+      a {
+        font-weight: normal !important;
+      }
+    }
+
     a {
       text-decoration: underline;
     }

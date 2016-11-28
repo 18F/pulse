@@ -3,7 +3,7 @@ import os
 import io
 import datetime
 import csv
-from app.data import CSV_FIELDS, FIELD_MAPPING, LABELS
+from app.data import CSV_FIELDS, CSV_FIELDS_SUBDOMAINS, FIELD_MAPPING, LABELS
 
 this_dir = os.path.dirname(__file__)
 db = TinyDB(os.path.join(this_dir, '../data/db.json'))
@@ -23,6 +23,8 @@ class Report:
   # https.uses (number)
   # https.enforces (number)
   # https.hsts (number)
+  # https.subdomains_eligible
+  # https.subdomains_uses
   # analytics.eligible (number)
   # analytics.participates (number)
 
@@ -61,7 +63,15 @@ class Domain:
   # canonical (string, URL)
   #
   # https: {
-  #   [many things]
+  #   [many things],
+  #   subdomains: {
+  #     [censys, url, etc.] {
+  #       eligible,
+  #       uses,
+  #       enforces,
+  #       hsts
+  #     }
+  #   }
   # },
   # analytics: {
   #   participating? (boolean)
@@ -132,6 +142,34 @@ class Domain:
 
     return output.getvalue()
 
+  # Given an array of straight subdomain results,
+  def subdomains_to_csv(subdomains):
+    output = io.StringIO()
+    writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC)
+
+    report_type = "https"
+
+    # initialize with a header row
+    header = []
+    for field in CSV_FIELDS_SUBDOMAINS['common']:
+      header.append(LABELS[field])
+    for field in CSV_FIELDS_SUBDOMAINS[report_type]:
+      header.append(LABELS[report_type][field])
+    writer.writerow(header)
+
+    for domain in subdomains:
+      row = []
+      for field in CSV_FIELDS_SUBDOMAINS['common']:
+        if FIELD_MAPPING.get(field):
+          row.append(FIELD_MAPPING[field][domain[field]])
+        else:
+          row.append(domain[field])
+      for field in CSV_FIELDS_SUBDOMAINS[report_type]:
+        row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
+      writer.writerow(row)
+
+    return output.getvalue()
+
 
 
 class Agency:
@@ -146,6 +184,12 @@ class Agency:
   #   enforces (number)
   #   hsts (number)
   #   grade (number, >= A-)
+  #   subdomains {
+  #     eligible (number)
+  #     uses (number)
+  #     enforces (number)
+  #     hsts (number)
+  #   }
   # }
   # analytics {
   #   eligible (number)
