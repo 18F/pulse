@@ -39,7 +39,7 @@
       <article>
         <h4>PULSE Accessibility Spot Checks</h4>
         <p>
-        The PULSE Accessibility Module performs the following spot checks, informed by the current Section 508 standards. The checks use the WCAG 2.0 success criteria associated with each standard to inform the testing approach. 
+        The PULSE Accessibility Module performs the following spot checks, informed by the current Section 508 standards. The checks use the WCAG 2.0 success criteria associated with each standard to inform the testing approach.
         </p>
         <p>
 
@@ -83,7 +83,7 @@
       <h4>Disclaimer</h4>
       </p>
         <p>
-        The Pulse reports <strong><u>do not</u> constitute a complete accessibility evaluation</strong>.  Rather, they display the initial results of limited automated scans that address only a small portion of what’s required to make a website fully accessible. In addition, although significant effort has been taken to ensure accuracy, Pulse may occasionally cite potential errors that, through additional manual testing, are found to be false positives. Due to limitations of automated testing, the Pulse checks are not intended to be authoritative, and are not intended to convey a Section 508 conformance assessment.
+        The Pulse reports <strong><u>do not</u> constitute a complete accessibility evaluation</strong>.  Rather, they display the initial results of limited automated scans that address only a small portion of what’s required to make a website fully accessible. In addition, although significant effort has been taken to ensure accuracy, Pulse may occasionally cite initial findings that, through additional manual testing, are found to be false positives. Due to limitations of automated testing, the Pulse checks are not intended to be authoritative, and are not intended to convey a Section 508 conformance assessment.
         </p>
         <p>
         <strong>Only a professional evaluator can perform a complete accessibility evaluation</strong>. Agencies should use both manual and automated tests to fully assess whether their website is accessible.  For testing guidance, please refer to the <a href="https://www.dhs.gov/sites/default/files/publications/Baseline_Tests_for_Software_and_Web_Accessibility_3.pdf">Harmonized Testing Process for Section 508 Compliance: Baseline Tests for Software and Web Accessibility</a>.
@@ -118,12 +118,12 @@
        All issues which prevent full access to websites is not possible with the current state of automated testing tools.  For instance, while we can automatically check if an image on a website has an alt text attribute, we cannot measure if that alt text is sufficiently descriptive; a picture of a dog with an alt text attribute that reads “cow” would pass the automatic check, but since the alt text is incorrect, the image is not accessible. While we can detect the background color and text color by reading a page’s Cascading Style Sheets (CSS), we may not be able to detect the color of an image; if text is overlayed on a background image, we would not be able to measure whether the level of contrast is sufficient. It is for these reasons that fully assessing a site’s accessibility still requires manual evaluation by an accessibility professional.
         </p>
         <p>
-        <strong>How common accessibility errors impact website visitors</strong>
+        <strong>How common accessibility findings impact website visitors</strong>
         </p>
         <p>
-        There are a wide range of requirements for accessible web content. Here are a few examples of common accessibility errors:
+        There are a wide range of requirements for accessible web content. Here are a few examples of common accessibility findings:
         <ul>
-          <li>A website uses an image to convey information without including a descriptive alt text attribute. This error would make it impossible for the visually impaired to access the information conveyed by the image.</li>
+          <li>A website uses an image to convey information without including a descriptive alt text attribute. This finding would make it impossible for the visually impaired to access the information conveyed by the image.</li>
           <li>The text on a page has poor contrast with the background color (for instance, light green text on a dark green background). This makes it difficult or impossible for those with some visual impairments (such as colorblindness) to use the information.</li>
           <li>When the web page includes custom controls where the name, role and value cannot be programmatically determined, it could be difficult or impossible for people with visual impairments to know the controls exist, what types of controls they are, and in some cases what value is associated with the control (for example - a missing link or skip to main content that is not working).</li>
         </p>
@@ -131,7 +131,7 @@
         <strong>How we measure accessibility on Pulse</strong>
         </p>
         <p>
-        While we cannot fully measure accessibility with automated tools, we can measure for broader potential issues on websites, such as whether an image does or does not contain alt text, whether there is sufficient contrast between the text and background, whether a page is properly structured for someone using a screen reader to access the information, etc. To do this, we employ an open-source tool known as Pa11y. Pa11y uses another open-source tool, the HTML_Codesniffer, to identify accessibility errors.
+        While we cannot fully measure accessibility with automated tools, we can measure for broader potential issues on websites, such as whether an image does or does not contain alt text, whether there is sufficient contrast between the text and background, whether a page is properly structured for someone using a screen reader to access the information, etc. To do this, we employ an open-source tool known as Pa11y. Pa11y uses another open-source tool, the HTML_Codesniffer, to identify accessibility findings.
         </p>
         <p>
         <strong>Other measurement tools</strong>
@@ -140,16 +140,16 @@
         While Pa11y is the tool we chose to measure accessibility on Pulse, there are a range of other excellent proprietary and open-source tools available to assist web developers and IT managers in understanding how to build accessible technology.
         </p>
         <p>
-        The HTML_Codesniffer, the technology behind Pa11y, is a browser extension that can be used to automatically detect some accessibility errors on a webpage. The HTML_Codesniffer will point out the particular code snippet with the error, the location of the error on the page, and the principle violated by the error.
+        The HTML_Codesniffer, the technology behind Pa11y, is a browser extension that can be used to automatically detect some accessibility findings on a webpage. The HTML_Codesniffer will point out the particular code snippet with the finding, the location of the finding on the page, and the principle violated by the finding.
         </p>
         <p>
         To showcase another example, the University of Illinois has been working for several years to develop another free, open-source tool, the <a href='http://fae20.cita.illinois.edu/'>Functional Accessibility Evaluator (FAE)</a>. While the tool is still under development, the current version is an excellent way to evaluate a full website; in contrast to Pa11y, the FAE can crawl the subdomains of a website, allowing a more comprehensive scan that can identify more potential accessibility issues.
         </p>
         <p>
-        <strong>How to correct accessibility errors</strong>
+        <strong>How to correct accessibility findings</strong>
         </p>
         <p>
-        The tools listed above provide web developers and content managers with the information they need to pinpoint the errors on their pages. While some errors may involve a significant overhaul of a site’s architecture, most can be corrected by deleting errant tags, making minor CSS adjustments, and adding alt text to images. 
+        The tools listed above provide web developers and content managers with the information they need to pinpoint the findings on their pages. While some findings may involve a significant overhaul of a site’s architecture, most can be corrected by deleting errant tags, making minor CSS adjustments, and adding alt text to images.
         </p>
         <p>
 Technical Guidance:
@@ -157,8 +157,8 @@ Technical Guidance:
             <li><a href="https://www.ssa.gov/accessibility/files/SSA_Alternative_Text_Guide.pdf">How to fix images with missing descriptions</li>
             <li><a href="/static/color_contrast-evaluation.docx">How to fix color contrast issues</a></li>
             <li><a href="/static/name_role_value.docx">How to fix name, role, value issues</a></li>
-          </ul>      
-        If you need help fixing errors identified in Pulse, contact your agency’s 508 coordinator.  Additionally, GSA’s Office of Governmentwide Policy (OGP) conducts training to help 508 coordinators and IT/content professionals better understand how to build accessible technology. To learn more about accessible technology, contact the Government-wide Section 508 Program at <a href='mailto:mailto:Section.508@gsa.gov'>Section.508@gsa.gov</a> or visit <a href="https://section508.gov/">https://section508.gov/</a>.
+          </ul>
+        If you need help fixing findings identified in Pulse, contact your agency’s 508 coordinator.  Additionally, GSA’s Office of Governmentwide Policy (OGP) conducts training to help 508 coordinators and IT/content professionals better understand how to build accessible technology. To learn more about accessible technology, contact the Government-wide Section 508 Program at <a href='mailto:mailto:Section.508@gsa.gov'>Section.508@gsa.gov</a> or visit <a href="https://section508.gov/">https://section508.gov/</a>.
         </p>
       </article>
 
