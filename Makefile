@@ -9,6 +9,12 @@ staging:
 production:
 	cd deploy/ && fab deploy --set environment=production && cd ..
 
+cg_production:
+	make data_init && cf target -o gsa-ogp-pulse -s pulse && cf push pulse
+
+cg_staging:
+	make data_init && cf target -o gsa-ogp-pulse -s pulse && cf push pulse-staging
+
 debug:
 	DEBUG=true python pulse.py
 
@@ -40,6 +46,10 @@ update_development:
 	python -m data.update --scan=skip
 
 # downloads latest snapshot of data locally
+# Pending cloud.gov production bucket:
+# cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084
+# Pending cloud.gov backup bucket:
+# cg-72ce4caf-d81b-4771-9b96-3624b5554587
 data_init:
 	mkdir -p data/output/scan/results/
 	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/analytics.csv > data/output/scan/results/analytics.csv

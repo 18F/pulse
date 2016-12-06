@@ -11,7 +11,7 @@ env.hosts = ["site@pulse"]
 repo = "https://github.com/18F/pulse"
 
 if environment == "production":
-  branch = "production"
+  branch = "master"
   port = 3000
 else:
   environment = "staging"
@@ -45,6 +45,7 @@ def make_current():
   run('rm -f %s && ln -s %s %s' % (current_path, version_path, current_path))
 
 def links():
+  run("ln -s %s/data/db.json %s/data/db.json" % (shared_path, version_path))
   run("ln -s %s/config.env %s/data/config.env" % (shared_path, version_path))
   run("ln -s %s/data/output %s/data/output" % (shared_path, version_path))
 

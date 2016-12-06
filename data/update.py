@@ -61,7 +61,7 @@ GATHER_SUFFIX = ".gov"
 GATHER_ANALYTICS_URL = META["data"]["analytics_subdomains_url"]
 GATHER_PARENTS = DOMAINS  # Limit subdomains to set of base domains.
 GATHERERS = [
-  ["censys"],
+  ["censys", "--export"],
   ["url", "--url=%s" % GATHER_ANALYTICS_URL]
 ]
 SUBDOMAIN_SCAN_TARGET = os.path.join(this_dir, "./output/subdomains/scan")
