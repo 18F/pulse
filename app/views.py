@@ -7,6 +7,10 @@ import ujson
 
 def register(app):
 
+    @app.route("/data/")
+    def data():
+        return render_template("data.html")
+
     @app.route("/")
     def index():
         return render_template("index.html")

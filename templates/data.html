@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_id %}about{% endblock %}
+{% block title %}About Pulse{% endblock %}
+{% block description %}Frequently asked questions and information on what it Pulse measures and where to send feedback.{% endblock %}
+
+{% block content %}
+
+<header>
+  <h2>Open Data</h2>
+
+  <p>
+    Pulse is a project of the General Services Administration that measures how U.S. government domains are following best practices for federal websites and it produces a lot of data in the process.  
+  </p>
+
+  <p>
+    You can download that data below for reuse.  It's not required, but if you use this data to do something interesting, we'd love it if you <a href="https://github.com/18f/pulse/issues">opened a ticket</a> or <a href="mailto:pulse@cio.gov">dropped us a line</a> to tell us about it!
+  </p>
+</header>
+
+<section id="main-content" class="white-bkg">
+
+<div class="wrapper">
+  <header>
+			<h3>Data</h3>
+  </header>
+
+	<ul class="faq-answers">
+		<li id="site-wide">
+			<h4>Site Wide</h4>
+			<p>Datasets that power the entire pulse.cio.gov website.</p>
+				<ul><li>
+				Domain Inspect Results - <a href="https://s3.amazonaws.com/pulse.cio.gov/live/scan/inspect.csv">CSV</a>
+				</li></ul>
+ <!--   		</li>
+	</ul>-->
+<!--	<ul class="faq-answers">
+		<li id="https">-->
+			<h4>HTTPS</h4>
+			<p>Datasets that are specific to the HTTPS section of the pulse.cio.gov website.</p>
+				<ul><li>
+				HTTPS Scan Results - <a href="https://pulse.cio.gov/data/domains/https.csv">CSV</a>
+				</li></ul>
+<!--    		</li>
+	</ul>-->
+<!--	<ul class="faq-answers">
+		<li id="dap">-->
+			<h4>Digital Analytics Program </h4>
+			<p>Datasets that are specific to the Digital Analytics Program section of the pulse.cio.gov website.</p>
+				<p>
+				Scan Data - <a href="https://pulse.cio.gov/data/domains/analytics.csv">CSV</a></br>
+				Participating DAP sites - <a href="https://analytics.usa.gov/data/live/sites.csv">CSV</a>
+		</p>
+    		</li>
+	</ul>
+</div>
+
+</section>
+
+{% endblock %}
