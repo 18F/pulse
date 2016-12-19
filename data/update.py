@@ -51,7 +51,7 @@ BUCKET_NAME = "pulse.cio.gov"
 # domain-scan information
 SCAN_TARGET = os.path.join(this_dir, "./output/scan")
 SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
-SCANNERS = os.environ.get("SCANNERS", "pshtt,analytics,sslyze,inspect,tls")
+SCANNERS = os.environ.get("SCANNERS", "pshtt,analytics,sslyze,tls")
 ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
 # subdomain gathering/scanning information
@@ -65,7 +65,7 @@ GATHERERS = [
   ["url", "--url=%s" % GATHER_ANALYTICS_URL]
 ]
 SUBDOMAIN_SCAN_TARGET = os.path.join(this_dir, "./output/subdomains/scan")
-SUBDOMAIN_SCANNERS = "pshtt"
+SUBDOMAIN_SCANNERS = "pshtt,sslyze"
 
 
 # Options:
