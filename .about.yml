@@ -26,9 +26,9 @@ team:
 - github: gbinal
   role: lead
   id: gray
-- github: ericschles
+- github: micahsaul
   role: developer
-  id: ericschles
+  id: micahsaul
 type: app
 licenses:
 licenses:
