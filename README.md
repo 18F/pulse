@@ -16,6 +16,11 @@ And part of Pulse's underlying infrastructure, [`pshtt`](https://github.com/dhs-
 
 * https://securethe.news ([inspired](https://securethe.news/blog/introducing-secure-news-automated-tool-tracking-adoption-https-encryption-across-news-websites/) by Pulse)
 
+## Project Links
+
+* [Project Information](https://github.com/18F/pulse/blob/master/.about.yml)
+* [System Security Plan](https://github.com/18F/pulse/blob/master/system-security-plan.yml)
+
 ## Setup
 
 Pulse is a [Flask](http://flask.pocoo.org/) app written in **Python 3**. We recommend [pyenv](https://github.com/yyuu/pyenv) for easy Python version management.
