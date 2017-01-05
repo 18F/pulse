@@ -8,9 +8,9 @@ How the .gov domain space is doing at best practices and federal requirements.
 | Documentation  |  Other Links |
 |---|---|
 | [Setup and Deploy Instructions](https://github.com/18F/pulse/blob/master/docs/setup.md)  | [Open Source Reuse of the site](https://github.com/18F/pulse/blob/master/docs/reuse.md)  |
-| [Project Information](https://github.com/18F/pulse/blob/master/.about.yml)  | [Ideas for new sections to add to the site](https://github.com/18F/pulse/blob/master/docs/other-sections.md) |
-|  [System Security Plan](https://github.com/18F/pulse/blob/master/system-security-plan.yml) |   |
-
+| [Ongoing Work](https://github.com/18F/pulse/blob/master/docs/project-outline.md) | [Ideas for new sections to add to the site](https://github.com/18F/pulse/blob/master/docs/other-sections.md) |
+|  [Project Information](https://github.com/18F/pulse/blob/master/.about.yml)   |   |
+|  [System Security Plan](https://github.com/18F/pulse/blob/master/system-security-plan.yml) |  |
 
 
 
