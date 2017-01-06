@@ -1,0 +1,15 @@
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - python
+  fixme:
+    enabled: true
+  radon:
+    enabled: true
+exclude_paths:
+  - "**/vendor/"
+  - "static/DataTables-1.10.12"
+  - "static/Responsive-2.1.0"
