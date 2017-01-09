@@ -25,7 +25,7 @@ This project is an initial pass - there is much more information that can be rep
 * Anything from/with itdashboard.gov
 * [Site hosting details](https://github.com/18F/pulse/issues/217)
 * [open source](https://github.com/18F/pulse/issues/204)
-* [Look at what Ben tracked](http://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/)
+* [Look at what Ben tracked](http://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/) - [example](https://site-inspector.herokuapp.com/domains/state.gov)
 * IPv6
 * DNSSEC
 * https://monitor.dnsops.gov/
