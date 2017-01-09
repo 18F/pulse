@@ -9,6 +9,9 @@ engines:
     enabled: true
   radon:
     enabled: true
+ratings:
+  paths:
+    - "**.py"
 exclude_paths:
   - "**/vendor/"
   - "static/DataTables-1.10.12"
