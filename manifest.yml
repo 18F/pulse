@@ -12,4 +12,4 @@ services:
   - pulse-creds-prod
 env:
   NEW_RELIC_CONFIG_FILE: newrelic.ini
-  NEW_RELIC_APP_NAME: YOUR_APP_NAME
+  NEW_RELIC_APP_NAME: Pulse
