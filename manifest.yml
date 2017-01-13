@@ -8,3 +8,8 @@ applications:
   memory: 128M
   instances: 1
   buildpack: python_buildpack
+services:
+  - pulse-creds-prod
+env:
+  NEW_RELIC_CONFIG_FILE: newrelic.ini
+  NEW_RELIC_APP_NAME: YOUR_APP_NAME
