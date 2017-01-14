@@ -8,3 +8,4 @@ The major sections of work can be tracked using the following milestones:
 * [O & M/Documenting the handoff](https://github.com/18F/pulse/milestone/28)
 * [Releasing the a11y section](https://github.com/18F/pulse/milestone/26)
 
+Another means of tracking recent work is to view the project's [entire issue tracker, sorted by recent activity](https://github.com/18f/pulse/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).  
