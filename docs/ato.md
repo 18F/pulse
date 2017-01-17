@@ -16,5 +16,3 @@ Here are major components, with links to the resulting artifacts:
 5. [x] Add a [System Security Plan](https://github.com/18F/pulse/blob/master/system-security-plan.yml) to the repository
 6. [x] [Set up Compliance Masonry documentation](https://github.com/18F/pulse/blob/master/compliance/component.yaml)
 7. [ ] [Implement the controls](https://pages.18f.gov/before-you-ship/ato/walkthrough/#step-3--implement-the-controls)
-### Authorizing Official
-- [ ] Final review and risk acceptance signatures (ATO)
