@@ -52,9 +52,9 @@ update_development:
 # cg-72ce4caf-d81b-4771-9b96-3624b5554587
 data_init:
 	mkdir -p data/output/scan/results/
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/analytics.csv > data/output/scan/results/analytics.csv
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/pshtt.csv > data/output/scan/results/pshtt.csv
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/tls.csv > data/output/scan/results/tls.csv
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/sslyze.csv > data/output/scan/results/sslyze.csv
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/scan/meta.json > data/output/scan/results/meta.json
-	curl https://s3.amazonaws.com/pulse.cio.gov/live/db/db.json > data/db.json
+	curl https://s3.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/scan/analytics.csv > data/output/scan/results/analytics.csv
+	curl https://s3.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/scan/pshtt.csv > data/output/scan/results/pshtt.csv
+	curl https://s3.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/scan/tls.csv > data/output/scan/results/tls.csv
+	curl https://s3.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/scan/sslyze.csv > data/output/scan/results/sslyze.csv
+	curl https://s3.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/scan/meta.json > data/output/scan/results/meta.json
+	curl https://s3.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/db/db.json > data/db.json
