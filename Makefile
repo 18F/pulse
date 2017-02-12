@@ -10,7 +10,9 @@ production:
 	cd deploy/ && fab deploy --set environment=production && cd ..
 
 # standalone push, don't download data (assume it's present)
-cg_production_alone:
+# suitable for automatic deploy from an unattended server
+# uses credentials from the "scan-box-deployer" service
+cg_production_autodeploy:
 	cf login -a $$CF_API -u $$CF_USERNAME -p $$CF_PASSWORD -o gsa-ogp-pulse -s pulse && cf push pulse
 
 # download data externally and then deploy to production
