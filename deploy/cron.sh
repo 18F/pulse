@@ -8,9 +8,6 @@ export DOMAIN_GATHER_PATH=/opt/scan/domain-scan/gather
 export PULSE_ENV=production
 export PULSE_HOME=/opt/scan/pulse
 
-# Read in private credentials. (See data/config.env.example.)
-source /opt/credentials/config.env
-
 # Go to pulse environment home
 cd $PULSE_HOME
 
