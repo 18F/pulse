@@ -204,6 +204,7 @@ def subdomains(options):
       "--output=%s" % gatherer_output,
       "--parents=%s" % GATHER_PARENTS,
       "--sort",
+      "--force",
       "--debug"
     ]
 
