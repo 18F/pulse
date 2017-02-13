@@ -46,7 +46,7 @@ SCANNED_DATA = os.path.join(this_dir, "./output/scan/results")
 CACHE_DATA = os.path.join(this_dir, "./output/scan/cache")
 SUBDOMAIN_DATA = os.path.join(this_dir, "./output/subdomains")
 DB_DATA = os.path.join(this_dir, "./db.json")
-BUCKET_NAME = "pulse.cio.gov"
+BUCKET_NAME = META['bucket']
 
 # domain-scan information
 SCAN_TARGET = os.path.join(this_dir, "./output/scan")
@@ -204,13 +204,9 @@ def subdomains(options):
       "--output=%s" % gatherer_output,
       "--parents=%s" % GATHER_PARENTS,
       "--sort",
+      "--force",
       "--debug"
     ]
-
-    # Debug mode, limit censys gathering to 1 page
-    # (targeted at getting a small set of federal domains)
-    if options.get("debug"):
-      full_command += ["--end=200", "--start=200"]
 
     shell_out(full_command)
 

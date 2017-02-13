@@ -4,15 +4,20 @@
 export DOMAIN_SCAN_PATH=/opt/scan/domain-scan/scan
 export DOMAIN_GATHER_PATH=/opt/scan/domain-scan/gather
 
-# Read in private credentials. (See data/config.env.example.)
-source $HOME/pulse/$PULSE_ENV/current/data/config.env
+# Baseline where Pulse is checked out to, what env we're using.
+export PULSE_ENV=production
+export PULSE_HOME=/opt/scan/pulse
 
-# go to pulse environment home
-cd $HOME/pulse/$PULSE_ENV/current
+# Go to pulse environment home
+cd $PULSE_HOME
 
-# load environment and virtualenv
+# Load environment
 source $HOME/.bashrc
-workon pulse-$PULSE_ENV
 
 # run the relevant env-specific data update path
 make update_$PULSE_ENV
+
+# scan data was turned into db.json, and all data has been uploaded to S3.
+
+# Finally, deploy the production website.
+make cg_production_autodeploy

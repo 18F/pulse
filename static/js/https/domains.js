@@ -137,7 +137,7 @@ $(document).ready(function () {
   };
 
   var agencyDownloadFor = function(row) {
-    return "https://s3.amazonaws.com/pulse.cio.gov/live/subdomains/agencies/" + row["agency_slug"] + "/https.csv";
+    return "https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/agencies/" + row["agency_slug"] + "/https.csv";
   };
 
   // Construct a sentence explaining the HTTP situation.
