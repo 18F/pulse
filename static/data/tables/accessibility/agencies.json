@@ -1,1048 +1,1048 @@
 {
   "data": [
     {
+      "Color Contrast Errors": 8.1,
+      "HTML Attribute Errors": 1.62,
+      "Agency": "Department of Defense",
+      "pages_count": 21,
       "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 2,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 1,
-      "Agency": "AMTRAK",
-      "Average Errors per Page": 3.0
+      "Alt Tag Errors": 0.86,
+      "Average Errors per Page": 10.57
     },
     {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 33,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 2.5,
-      "Agency": "U.S. Agency for International Development",
-      "Average Errors per Page": 35.5
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 10,
-      "Color Contrast Errors": 8.2,
-      "Alt Tag Errors": 0.7,
-      "HTML Attribute Errors": 0.5,
-      "Agency": "Department of Transportation",
-      "Average Errors per Page": 9.4
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
       "Color Contrast Errors": 0,
-      "Alt Tag Errors": 3,
       "HTML Attribute Errors": 0,
-      "Agency": "Federal Housing Finance Agency Office of Inspector General",
-      "Average Errors per Page": 3.0
+      "Agency": "National Mediation Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 1,
       "Color Contrast Errors": 0,
-      "Alt Tag Errors": 13,
-      "HTML Attribute Errors": 19,
-      "Agency": "U.S. Chemical Safety and Hazard Investigation Board",
-      "Average Errors per Page": 32.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 21,
-      "Alt Tag Errors": 0,
       "HTML Attribute Errors": 0,
-      "Agency": "Marine Mammal Commission",
-      "Average Errors per Page": 21.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 4,
-      "Color Contrast Errors": 8.25,
-      "Alt Tag Errors": 2.75,
-      "HTML Attribute Errors": 5.5,
-      "Agency": "Consumer Product Safety Commission",
-      "Average Errors per Page": 16.5
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 9,
-      "Color Contrast Errors": 5.67,
-      "Alt Tag Errors": 1.56,
-      "HTML Attribute Errors": 0.78,
-      "Agency": "Federal Trade Commission",
-      "Average Errors per Page": 8.0
-    },
-    {
-      "Form Errors": 0,
+      "Agency": "Railroad Retirement Board",
       "pages_count": 1,
-      "Color Contrast Errors": 3,
+      "Form Errors": 0,
       "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Institute of Museum and Library Services",
-      "Average Errors per Page": 3.0
+      "Average Errors per Page": 0.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 9,
-      "Color Contrast Errors": 6.33,
-      "Alt Tag Errors": 3.67,
-      "HTML Attribute Errors": 2.22,
-      "Agency": "Department of State",
-      "Average Errors per Page": 12.22
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 25,
-      "Color Contrast Errors": 4.48,
-      "Alt Tag Errors": 3.36,
-      "HTML Attribute Errors": 0.52,
-      "Agency": "Department of Justice",
-      "Average Errors per Page": 8.36
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "U. S. Office of Special Counsel",
-      "Average Errors per Page": 1.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 14,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 1,
-      "Agency": "U.S. Commission on Civil Rights",
-      "Average Errors per Page": 15.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
       "Color Contrast Errors": 0.5,
-      "Alt Tag Errors": 3.5,
-      "HTML Attribute Errors": 0,
-      "Agency": "National Credit Union Administration",
-      "Average Errors per Page": 4.0
+      "HTML Attribute Errors": 2.5,
+      "Agency": "Advisory Council on Historic Preservation",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 12.5,
+      "Average Errors per Page": 15.5
     },
     {
-      "Form Errors": 0,
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 4,
+      "Agency": "National Nuclear Security Administration",
       "pages_count": 1,
-      "Color Contrast Errors": 33,
-      "Alt Tag Errors": 11,
-      "HTML Attribute Errors": 0,
-      "Agency": "U.S. Postal Service, Office of Inspector General",
-      "Average Errors per Page": 44.0
-    },
-    {
       "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 10,
-      "Alt Tag Errors": 7,
-      "HTML Attribute Errors": 0,
-      "Agency": "Denali Commission",
-      "Average Errors per Page": 17.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 11,
-      "Alt Tag Errors": 11,
-      "HTML Attribute Errors": 11,
-      "Agency": "U.S. Trade and Development Agency",
-      "Average Errors per Page": 33.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 6,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Federal Labor Relations Authority",
+      "Alt Tag Errors": 2,
       "Average Errors per Page": 6.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 5,
-      "Color Contrast Errors": 3,
-      "Alt Tag Errors": 0.6,
-      "HTML Attribute Errors": 0.2,
-      "Agency": "Environmental Protection Agency",
-      "Average Errors per Page": 3.8
-    },
-    {
-      "Form Errors": 0,
+      "Color Contrast Errors": 7,
+      "HTML Attribute Errors": 9.5,
+      "Agency": "National Aeronautics and Space Administration",
       "pages_count": 2,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 3,
-      "Agency": "Comm for People Who Are Blind/Severly Disabled",
-      "Average Errors per Page": 3.0
+      "Form Errors": 0,
+      "Alt Tag Errors": 18,
+      "Average Errors per Page": 34.5
     },
     {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 3,
-      "Alt Tag Errors": 0,
+      "Color Contrast Errors": 0,
       "HTML Attribute Errors": 0,
-      "Agency": "Medical Payment Advisory Commission",
-      "Average Errors per Page": 3.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 10,
-      "Color Contrast Errors": 5.4,
-      "Alt Tag Errors": 4.9,
-      "HTML Attribute Errors": 3.2,
-      "Agency": "Department of Homeland Security",
-      "Average Errors per Page": 13.5
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 0.5,
-      "HTML Attribute Errors": 0.5,
-      "Agency": "Department of Veterans Affairs",
-      "Average Errors per Page": 1.0
-    },
-    {
-      "Form Errors": 0,
+      "Agency": "Federal Elections Commission",
       "pages_count": 1,
-      "Color Contrast Errors": 33,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2,
+      "Average Errors per Page": 2.0
+    },
+    {
+      "Color Contrast Errors": 0.85,
+      "HTML Attribute Errors": 0.08,
+      "Agency": "Department of Labor",
+      "pages_count": 13,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.85,
+      "Average Errors per Page": 1.77
+    },
+    {
+      "Color Contrast Errors": 41,
+      "HTML Attribute Errors": 6,
+      "Agency": "U. S. International Trade Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
       "Alt Tag Errors": 0,
+      "Average Errors per Page": 47.0
+    },
+    {
+      "Color Contrast Errors": 50,
+      "HTML Attribute Errors": 0,
+      "Agency": "United States Office of Government Ethics",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3,
+      "Average Errors per Page": 53.0
+    },
+    {
+      "Color Contrast Errors": 1,
+      "HTML Attribute Errors": 1,
+      "Agency": "Securities and Exchange Commission",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 2.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Commodity Futures Trading Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 33,
       "HTML Attribute Errors": 0,
       "Agency": "Morris K. Udall Foundation",
-      "Average Errors per Page": 33.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 10,
-      "HTML Attribute Errors": 2.5,
-      "Agency": "Advisory Council on Historic Preservation",
-      "Average Errors per Page": 12.5
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 11,
-      "Color Contrast Errors": 14.45,
-      "Alt Tag Errors": 1.64,
-      "HTML Attribute Errors": 3.27,
-      "Agency": "Department of Defense",
-      "Average Errors per Page": 19.36
-    },
-    {
-      "Form Errors": 0,
       "pages_count": 1,
-      "Color Contrast Errors": 8,
-      "Alt Tag Errors": 24,
-      "HTML Attribute Errors": 2,
-      "Agency": "Networking Information Technology Research and Development (NITRD)",
+      "Form Errors": 0,
+      "Alt Tag Errors": 1,
       "Average Errors per Page": 34.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 10,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 2,
-      "Agency": "Federal Mediation and Conciliation Service",
-      "Average Errors per Page": 12.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 7,
-      "Alt Tag Errors": 1,
-      "HTML Attribute Errors": 6,
-      "Agency": "Council of Inspector General on Integrity and Efficiency",
-      "Average Errors per Page": 14.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 5,
-      "Alt Tag Errors": 14,
-      "HTML Attribute Errors": 0,
-      "Agency": "National Nanotechnology Coordination Office",
-      "Average Errors per Page": 19.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 3,
-      "Color Contrast Errors": 6.67,
-      "Alt Tag Errors": 7.67,
-      "HTML Attribute Errors": 4,
-      "Agency": "National Science Foundation",
-      "Average Errors per Page": 18.33
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 51,
-      "Alt Tag Errors": 7,
-      "HTML Attribute Errors": 3,
-      "Agency": "National Labor Relations Board",
-      "Average Errors per Page": 61.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 12,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 9,
-      "Agency": "Gulf Coast Ecosystem Restoration Council (GCERC)",
-      "Average Errors per Page": 21.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 20,
-      "Color Contrast Errors": 6.95,
-      "Alt Tag Errors": 3.9,
-      "HTML Attribute Errors": 5.85,
-      "Agency": "Department of Energy",
-      "Average Errors per Page": 16.7
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
       "Color Contrast Errors": 0,
-      "Alt Tag Errors": 1,
-      "HTML Attribute Errors": 4,
-      "Agency": "African Development Foundation",
-      "Average Errors per Page": 5.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 0,
       "HTML Attribute Errors": 0,
-      "Agency": "Occupational Safety & Health Review Commission",
+      "Agency": "U.S. Commission of Fine Arts",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 7,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 3,
-      "Agency": "Overseas Private Investment Corporation",
-      "Average Errors per Page": 10.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 3,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0.5,
-      "Agency": "Securities and Exchange Commission",
-      "Average Errors per Page": 3.5
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 17,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Federal Mine Safety and Health Review Company",
-      "Average Errors per Page": 17.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 32,
-      "Color Contrast Errors": 5.5,
-      "Alt Tag Errors": 2.03,
-      "HTML Attribute Errors": 0.78,
-      "Agency": "Department of the Treasury",
-      "Average Errors per Page": 8.31
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 4,
-      "Alt Tag Errors": 3,
-      "HTML Attribute Errors": 0,
-      "Agency": "Millennium Challenge Corporation",
-      "Average Errors per Page": 7.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 8,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 2,
-      "Agency": "National Council on Disability",
-      "Average Errors per Page": 10.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 3,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Farm Credit Administration",
-      "Average Errors per Page": 3.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 4,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 21,
-      "Agency": "U. S. Peace Corps",
-      "Average Errors per Page": 25.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 3,
-      "Color Contrast Errors": 6.33,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 1,
-      "Agency": "Federal Reserve System",
-      "Average Errors per Page": 7.33
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 24,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Merit Systems Protection Board",
-      "Average Errors per Page": 24.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 9,
-      "Alt Tag Errors": 2,
-      "HTML Attribute Errors": 0,
-      "Agency": "Harry S. Truman Scholarship Foundation",
-      "Average Errors per Page": 11.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
       "Color Contrast Errors": 2,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Federal Retirement Thrift Investment Board",
-      "Average Errors per Page": 2.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 24,
-      "Color Contrast Errors": 9.71,
-      "Alt Tag Errors": 5.88,
       "HTML Attribute Errors": 2,
-      "Agency": "General Services Administration",
-      "Average Errors per Page": 17.58
+      "Agency": "AMTRAK",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 4.0
     },
     {
-      "Form Errors": 0,
+      "Color Contrast Errors": 24,
+      "HTML Attribute Errors": 6,
+      "Agency": "US Interagency Council on Homelessness",
       "pages_count": 1,
-      "Color Contrast Errors": 12,
-      "Alt Tag Errors": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 4,
+      "Average Errors per Page": 34.0
+    },
+    {
+      "Color Contrast Errors": 2.92,
+      "HTML Attribute Errors": 0.41,
+      "Agency": "Department of the Treasury",
+      "pages_count": 71,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1.2,
+      "Average Errors per Page": 4.52
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Equal Employment Opportunity Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 13,
       "HTML Attribute Errors": 0,
       "Agency": "Postal Rate Commission",
-      "Average Errors per Page": 14.0
-    },
-    {
-      "Form Errors": 0,
       "pages_count": 1,
-      "Color Contrast Errors": 4,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Legal Services Corporation",
-      "Average Errors per Page": 4.0
-    },
-    {
       "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 26,
-      "Alt Tag Errors": 3,
-      "HTML Attribute Errors": 0,
-      "Agency": "United Stated Global Change Research Program",
-      "Average Errors per Page": 29.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 4,
       "Alt Tag Errors": 2,
-      "HTML Attribute Errors": 3,
-      "Agency": "James Madison Memorial Fellowship Foundation",
-      "Average Errors per Page": 9.0
+      "Average Errors per Page": 15.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 3,
-      "Color Contrast Errors": 13,
-      "Alt Tag Errors": 10.33,
-      "HTML Attribute Errors": 16.67,
-      "Agency": "Federal Deposit Insurance Corporation",
-      "Average Errors per Page": 40.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 49,
-      "Alt Tag Errors": 3,
-      "HTML Attribute Errors": 0,
-      "Agency": "United States Office of Government Ethics",
-      "Average Errors per Page": 52.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 5,
-      "Color Contrast Errors": 7,
-      "Alt Tag Errors": 0.8,
-      "HTML Attribute Errors": 0.2,
-      "Agency": "Department of Education",
-      "Average Errors per Page": 8.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 1,
-      "Alt Tag Errors": 3,
-      "HTML Attribute Errors": 13,
-      "Agency": "International Broadcasting Bureau",
-      "Average Errors per Page": 17.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
       "Color Contrast Errors": 0,
-      "Alt Tag Errors": 0,
       "HTML Attribute Errors": 0,
-      "Agency": "Pension Benefit Guaranty Corporation",
+      "Agency": "Christopher Columbus Fellowship Foundation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 5,
-      "Alt Tag Errors": 0,
+      "Color Contrast Errors": 6,
       "HTML Attribute Errors": 0,
       "Agency": "Smithsonian Institution",
-      "Average Errors per Page": 5.0
-    },
-    {
-      "Form Errors": 0,
       "pages_count": 1,
-      "Color Contrast Errors": 12,
-      "Alt Tag Errors": 7,
-      "HTML Attribute Errors": 7,
-      "Agency": "National Indian Gaming Commission",
-      "Average Errors per Page": 26.0
-    },
-    {
       "Form Errors": 0,
-      "pages_count": 6,
-      "Color Contrast Errors": 5.5,
-      "Alt Tag Errors": 5.67,
-      "HTML Attribute Errors": 2.33,
-      "Agency": "Executive Office of the President",
-      "Average Errors per Page": 13.5
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 46,
-      "Color Contrast Errors": 5.02,
-      "Alt Tag Errors": 2.78,
-      "HTML Attribute Errors": 1,
-      "Agency": "Department of Health And Human Services",
-      "Average Errors per Page": 8.8
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 1,
-      "HTML Attribute Errors": 4,
-      "Agency": "National Nuclear Security Administration",
-      "Average Errors per Page": 5.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 11,
-      "Color Contrast Errors": 9.27,
-      "Alt Tag Errors": 2.82,
-      "HTML Attribute Errors": 2.55,
-      "Agency": "Department of Agriculture",
-      "Average Errors per Page": 14.64
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 24,
-      "Color Contrast Errors": 8.92,
-      "Alt Tag Errors": 3,
-      "HTML Attribute Errors": 0.54,
-      "Agency": "Department of the Interior",
-      "Average Errors per Page": 12.46
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 20,
-      "Alt Tag Errors": 1,
-      "HTML Attribute Errors": 0,
-      "Agency": "Federal Maritime Commission",
-      "Average Errors per Page": 21.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 19,
-      "Color Contrast Errors": 5.47,
-      "Alt Tag Errors": 5.84,
-      "HTML Attribute Errors": 1.68,
-      "Agency": "Department of Commerce",
-      "Average Errors per Page": 13.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 12,
-      "Alt Tag Errors": 7.5,
-      "HTML Attribute Errors": 2.5,
-      "Agency": "US Interagency Council on Homelessness",
-      "Average Errors per Page": 22.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 6,
-      "Color Contrast Errors": 1.67,
-      "Alt Tag Errors": 2,
-      "HTML Attribute Errors": 0.33,
-      "Agency": "Department of Labor",
-      "Average Errors per Page": 4.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
       "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Surface Transportation Board (STB)",
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 2,
-      "Agency": "National Transportation Safety Board",
-      "Average Errors per Page": 3.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 5,
-      "Color Contrast Errors": 2.4,
-      "Alt Tag Errors": 0.4,
-      "HTML Attribute Errors": 15.6,
-      "Agency": "Director of National Intelligence",
-      "Average Errors per Page": 18.4
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 3,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 12.67,
-      "HTML Attribute Errors": 0.33,
-      "Agency": "Central Intelligence Agency",
-      "Average Errors per Page": 13.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 40,
-      "Alt Tag Errors": 1,
-      "HTML Attribute Errors": 2,
-      "Agency": "Tennessee Valley Authority",
-      "Average Errors per Page": 43.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 4,
-      "Color Contrast Errors": 12,
-      "Alt Tag Errors": 2.75,
-      "HTML Attribute Errors": 3.25,
-      "Agency": "Corporation for National & Community Service",
-      "Average Errors per Page": 18.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 9,
-      "Alt Tag Errors": 3,
-      "HTML Attribute Errors": 5,
-      "Agency": "Social Security Advisory Board",
-      "Average Errors per Page": 17.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 40,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 6,
-      "Agency": "U. S. International Trade Commission",
-      "Average Errors per Page": 46.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 22,
-      "HTML Attribute Errors": 5,
-      "Agency": "Delta Regional Authority",
-      "Average Errors per Page": 27.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 1,
-      "Agency": "Department of Housing And Urban Development",
-      "Average Errors per Page": 1.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 1,
-      "HTML Attribute Errors": 0,
-      "Agency": "Federal Elections Commission",
-      "Average Errors per Page": 1.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 9,
-      "Alt Tag Errors": 17,
-      "HTML Attribute Errors": 11,
-      "Agency": "National Aeronautics and Space Administration",
-      "Average Errors per Page": 37.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Agency": "Medicaid and CHIP Payment and Access Commission",
-      "Average Errors per Page": 1.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 3,
-      "Color Contrast Errors": 10,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 6,
-      "Agency": "Court Services and Offender Supervision",
-      "Average Errors per Page": 16.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 3,
-      "Color Contrast Errors": 3.67,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 1.33,
-      "Agency": "Small Business Administration",
-      "Average Errors per Page": 5.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 10,
-      "Color Contrast Errors": 14.3,
-      "Alt Tag Errors": 0.4,
-      "HTML Attribute Errors": 0.2,
-      "Agency": "Office of Personnel Management",
-      "Average Errors per Page": 14.9
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 5,
-      "HTML Attribute Errors": 0,
-      "Agency": "Federal Energy Regulatory Commission",
-      "Average Errors per Page": 5.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 2,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 4,
-      "Agency": "Appalachian Regional Commission",
       "Average Errors per Page": 6.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 1,
-      "Color Contrast Errors": 0,
-      "Alt Tag Errors": 1,
+      "Color Contrast Errors": 3.11,
       "HTML Attribute Errors": 1,
-      "Agency": "National Endowment for the Arts",
+      "Agency": "Department of State",
+      "pages_count": 18,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2.33,
+      "Average Errors per Page": 6.44
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Selective Service System",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "U. S. Access Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 7.2,
+      "HTML Attribute Errors": 10.2,
+      "Agency": "Federal Deposit Insurance Corporation",
+      "pages_count": 5,
+      "Form Errors": 0,
+      "Alt Tag Errors": 6.4,
+      "Average Errors per Page": 23.8
+    },
+    {
+      "Color Contrast Errors": 51,
+      "HTML Attribute Errors": 4,
+      "Agency": "National Labor Relations Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 7,
+      "Average Errors per Page": 62.0
+    },
+    {
+      "Color Contrast Errors": 3.93,
+      "HTML Attribute Errors": 4.14,
+      "Agency": "Department of the Interior",
+      "pages_count": 58,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1.72,
+      "Average Errors per Page": 9.79
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Inter-American Foundation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 4.83,
+      "HTML Attribute Errors": 3.39,
+      "Agency": "Department of Energy",
+      "pages_count": 36,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2,
+      "Average Errors per Page": 10.22
+    },
+    {
+      "Color Contrast Errors": 2,
+      "HTML Attribute Errors": 0,
+      "Agency": "Medicaid and CHIP Payment and Access Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 2.0
     },
     {
+      "Color Contrast Errors": 12,
+      "HTML Attribute Errors": 9,
+      "Agency": "Gulf Coast Ecosystem Restoration Council (GCERC)",
+      "pages_count": 1,
       "Form Errors": 0,
-      "pages_count": 7,
-      "Color Contrast Errors": 8.43,
-      "Alt Tag Errors": 3.43,
-      "HTML Attribute Errors": 1.57,
-      "Agency": "National Archives and Records Administration",
-      "Average Errors per Page": 13.43
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 21.0
     },
     {
-      "Form Errors": 0,
-      "pages_count": 2,
       "Color Contrast Errors": 0,
-      "Alt Tag Errors": 4,
+      "HTML Attribute Errors": 0,
+      "Agency": "National Capital Planning Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 5,
+      "HTML Attribute Errors": 18,
+      "Agency": "U. S. Peace Corps",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 23.0
+    },
+    {
+      "Color Contrast Errors": 1.56,
+      "HTML Attribute Errors": 0.11,
+      "Agency": "Environmental Protection Agency",
+      "pages_count": 9,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.33,
+      "Average Errors per Page": 2.0
+    },
+    {
+      "Color Contrast Errors": 8,
+      "HTML Attribute Errors": 2,
+      "Agency": "Networking Information Technology Research and Development (NITRD)",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 25,
+      "Average Errors per Page": 35.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Federal Communications Commission",
+      "pages_count": 3,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Nuclear Regulatory Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Defense Nuclear Facilities Safety Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 9.67,
+      "HTML Attribute Errors": 1.33,
+      "Agency": "Small Business Administration",
+      "pages_count": 3,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.33,
+      "Average Errors per Page": 11.33
+    },
+    {
+      "Color Contrast Errors": 1,
+      "HTML Attribute Errors": 0,
+      "Agency": "U. S. Office of Special Counsel",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1,
+      "Average Errors per Page": 2.0
+    },
+    {
+      "Color Contrast Errors": 3.8,
+      "HTML Attribute Errors": 0.59,
+      "Agency": "Department of Health And Human Services",
+      "pages_count": 66,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2.05,
+      "Average Errors per Page": 6.44
+    },
+    {
+      "Color Contrast Errors": 9,
+      "HTML Attribute Errors": 1,
+      "Agency": "National Endowment for the Humanities",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.5,
+      "Average Errors per Page": 10.5
+    },
+    {
+      "Color Contrast Errors": 3.17,
+      "HTML Attribute Errors": 3.67,
+      "Agency": "National Science Foundation",
+      "pages_count": 6,
+      "Form Errors": 0,
+      "Alt Tag Errors": 5.33,
+      "Average Errors per Page": 12.17
+    },
+    {
+      "Color Contrast Errors": 4.73,
+      "HTML Attribute Errors": 1.36,
+      "Agency": "Department of Agriculture",
+      "pages_count": 22,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1.45,
+      "Average Errors per Page": 7.55
+    },
+    {
+      "Color Contrast Errors": 6.17,
+      "HTML Attribute Errors": 1.08,
+      "Agency": "National Archives and Records Administration",
+      "pages_count": 12,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2.08,
+      "Average Errors per Page": 9.33
+    },
+    {
+      "Color Contrast Errors": 0.67,
+      "HTML Attribute Errors": 0.33,
+      "Agency": "Department of Veterans Affairs",
+      "pages_count": 3,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.33,
+      "Average Errors per Page": 1.33
+    },
+    {
+      "Color Contrast Errors": 12,
+      "HTML Attribute Errors": 7,
+      "Agency": "National Indian Gaming Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 8,
+      "Average Errors per Page": 27.0
+    },
+    {
+      "Color Contrast Errors": 0,
       "HTML Attribute Errors": 4,
-      "Agency": "U. S. Postal Service",
+      "Agency": "Comm for People Who Are Blind/Severly Disabled",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 4.0
+    },
+    {
+      "Color Contrast Errors": 4,
+      "HTML Attribute Errors": 1,
+      "Agency": "James Madison Memorial Fellowship Foundation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2,
+      "Average Errors per Page": 7.0
+    },
+    {
+      "Color Contrast Errors": 1.5,
+      "HTML Attribute Errors": 0,
+      "Agency": "Federal Retirement Thrift Investment Board",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 1.5
+    },
+    {
+      "Color Contrast Errors": 3.06,
+      "HTML Attribute Errors": 1.11,
+      "Agency": "Department of Commerce",
+      "pages_count": 36,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3.86,
+      "Average Errors per Page": 8.03
+    },
+    {
+      "Color Contrast Errors": 7,
+      "HTML Attribute Errors": 0,
+      "Agency": "Federal Labor Relations Authority",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 7.0
+    },
+    {
+      "Color Contrast Errors": 2,
+      "HTML Attribute Errors": 5,
+      "Agency": "Appalachian Regional Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 7.0
+    },
+    {
+      "Color Contrast Errors": 5,
+      "HTML Attribute Errors": 0,
+      "Agency": "Millennium Challenge Corporation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3,
       "Average Errors per Page": 8.0
     },
     {
-      "Agency": "Administrative Conference of the United States",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
       "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "American Battle Monuments Commission",
-      "pages_count": 33,
-      "Alt Tag Errors": 0,
       "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Appraisal Subcommittee",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Armed Forces Retirement Home",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },    
-    {
-      "Average Errors per Page": 14.0,
-      "Alt Tag Errors": 9,
-      "pages_count": 1,
-      "HTML Attribute Errors": 0,
-      "Color Contrast Errors": 5,
-      "Form Errors": 0,
-      "Agency": "Christopher Columbus Fellowship Foundation"
-    },
-    {
-      "Agency": "Civil Air Patrol",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Commodity Futures Trading Commission",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Consumer Financial Protection Bureau",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Defense Nuclear Facilities Safety Board",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Department of State OIG",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Equal Employment Opportunity Commission",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Export/Import Bank of the U.S.",
-      "pages_count": 4,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "Federal Communications Commission",
-      "pages_count": 4,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
       "Agency": "Federal Housing Finance Agency",
       "pages_count": 2,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Average Errors per Page": 1.0,
-      "Alt Tag Errors": 0,
+      "Color Contrast Errors": 7,
+      "HTML Attribute Errors": 3,
+      "Agency": "Overseas Private Investment Corporation",
       "pages_count": 1,
-      "HTML Attribute Errors": 0,
-      "Color Contrast Errors": 1,
       "Form Errors": 0,
-      "Agency": "Inter-American Foundation"
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 10.0
     },
     {
-      "Agency": "National Capital Planning Commission",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
+      "Color Contrast Errors": 0.5,
+      "HTML Attribute Errors": 2,
+      "Agency": "African Development Foundation",
+      "pages_count": 2,
       "Form Errors": 0,
+      "Alt Tag Errors": 0.5,
+      "Average Errors per Page": 3.0
+    },
+    {
       "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "American Battle Monuments Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Agency": "National Gallery of Art",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
+      "Color Contrast Errors": 2.49,
+      "HTML Attribute Errors": 0.26,
+      "Agency": "Department of Justice",
+      "pages_count": 53,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
+      "Alt Tag Errors": 1.4,
+      "Average Errors per Page": 4.15
     },
     {
-      "Agency": "Nuclear Regulatory Commission",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
+      "Color Contrast Errors": 9.57,
+      "HTML Attribute Errors": 0.71,
+      "Agency": "U.S. Agency for International Development",
+      "pages_count": 7,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 10.29
     },
     {
+      "Color Contrast Errors": 10.4,
+      "HTML Attribute Errors": 2.6,
+      "Agency": "Corporation for National & Community Service",
+      "pages_count": 5,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2.2,
+      "Average Errors per Page": 15.2
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
       "Agency": "National Security Agency",
       "pages_count": 2,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Agency": "National Mediation Board",
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Armed Forces Retirement Home",
       "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Agency": "Railroad Retirement Board",
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "National Nanotechnology Coordination Office",
       "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
+      "Alt Tag Errors": 0,
       "Average Errors per Page": 0.0
     },
     {
-      "Agency": "Selective Service System",
+      "Color Contrast Errors": 41,
+      "HTML Attribute Errors": 2,
+      "Agency": "Tennessee Valley Authority",
       "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
+      "Alt Tag Errors": 1,
+      "Average Errors per Page": 44.0
     },
     {
-      "Agency": "Social Security Administration",
-      "pages_count": 2,
-      "Alt Tag Errors": 0,
+      "Color Contrast Errors": 1,
       "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Agency": "U. S. Access Board",
+      "Agency": "Surface Transportation Board (STB)",
       "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
       "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 1.0
     },
     {
-      "Agency": "U.S. Commission of Fine Arts",
-      "pages_count": 1,
-      "Alt Tag Errors": 0,
-      "HTML Attribute Errors": 0,
-      "Form Errors": 0,
-      "Color Contrast Errors": 0,
-      "Average Errors per Page": 0.0
-    },
-    {
-      "Form Errors": 0,
-      "pages_count": 2,
-      "Color Contrast Errors": 9,
-      "Alt Tag Errors": 0.5,
+      "Color Contrast Errors": 14,
       "HTML Attribute Errors": 1,
-      "Agency": "National Endowment for the Humanities",
-      "Average Errors per Page": 10.5
+      "Agency": "U.S. Commission on Civil Rights",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1,
+      "Average Errors per Page": 16.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Federal Energy Regulatory Commission",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 6.5,
+      "Average Errors per Page": 6.5
+    },
+    {
+      "Color Contrast Errors": 1,
+      "HTML Attribute Errors": 3,
+      "Agency": "National Transportation Safety Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 4.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Appraisal Subcommittee",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 5.8,
+      "HTML Attribute Errors": 0.8,
+      "Agency": "Federal Trade Commission",
+      "pages_count": 10,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1.3,
+      "Average Errors per Page": 7.9
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Office of Government Ethics",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 4,
+      "HTML Attribute Errors": 1,
+      "Agency": "Legal Services Corporation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 5.0
+    },
+    {
+      "Color Contrast Errors": 5.24,
+      "HTML Attribute Errors": 0.41,
+      "Agency": "Department of Transportation",
+      "pages_count": 17,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.47,
+      "Average Errors per Page": 6.12
+    },
+    {
+      "Color Contrast Errors": 5,
+      "HTML Attribute Errors": 0,
+      "Agency": "U.S. Postal Service, Office of Inspector General",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 6,
+      "Average Errors per Page": 11.0
+    },
+    {
+      "Color Contrast Errors": 9,
+      "HTML Attribute Errors": 2,
+      "Agency": "National Council on Disability",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 11.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Social Security Administration",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0.67,
+      "Agency": "Central Intelligence Agency",
+      "pages_count": 3,
+      "Form Errors": 0,
+      "Alt Tag Errors": 13.33,
+      "Average Errors per Page": 14.0
+    },
+    {
+      "Color Contrast Errors": 2.83,
+      "HTML Attribute Errors": 1.33,
+      "Agency": "Executive Office of the President",
+      "pages_count": 12,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2.67,
+      "Average Errors per Page": 6.83
+    },
+    {
+      "Color Contrast Errors": 10,
+      "HTML Attribute Errors": 0,
+      "Agency": "Harry S. Truman Scholarship Foundation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2,
+      "Average Errors per Page": 12.0
+    },
+    {
+      "Color Contrast Errors": 1.5,
+      "HTML Attribute Errors": 5.12,
+      "Agency": "Director of National Intelligence",
+      "pages_count": 8,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.62,
+      "Average Errors per Page": 7.25
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Administrative Conference of the United States",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 11,
+      "HTML Attribute Errors": 12,
+      "Agency": "U.S. Trade and Development Agency",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 11,
+      "Average Errors per Page": 34.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Department of State OIG",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Civil Air Patrol",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Marine Mammal Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 19,
+      "Agency": "U.S. Chemical Safety and Hazard Investigation Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 14,
+      "Average Errors per Page": 33.0
+    },
+    {
+      "Color Contrast Errors": 27,
+      "HTML Attribute Errors": 0,
+      "Agency": "United Stated Global Change Research Program",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3,
+      "Average Errors per Page": 30.0
+    },
+    {
+      "Color Contrast Errors": 3.44,
+      "HTML Attribute Errors": 0.11,
+      "Agency": "Department of Education",
+      "pages_count": 9,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.33,
+      "Average Errors per Page": 3.89
+    },
+    {
+      "Color Contrast Errors": 30,
+      "HTML Attribute Errors": 11,
+      "Agency": "National Gallery of Art",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 41.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Federal Housing Finance Agency Office of Inspector General",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Consumer Financial Protection Bureau",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 0.5,
+      "HTML Attribute Errors": 0,
+      "Agency": "National Credit Union Administration",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 4.5,
+      "Average Errors per Page": 5.0
+    },
+    {
+      "Color Contrast Errors": 3.5,
+      "HTML Attribute Errors": 0,
+      "Agency": "Denali Commission",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 4,
+      "Average Errors per Page": 7.5
+    },
+    {
+      "Color Contrast Errors": 3.5,
+      "HTML Attribute Errors": 0.5,
+      "Agency": "Farm Credit Administration",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 4.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Occupational Safety & Health Review Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1,
+      "Average Errors per Page": 1.0
+    },
+    {
+      "Color Contrast Errors": 7,
+      "HTML Attribute Errors": 3,
+      "Agency": "Federal Mediation and Conciliation Service",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 10.0
+    },
+    {
+      "Color Contrast Errors": 4,
+      "HTML Attribute Errors": 0,
+      "Agency": "Institute of Museum and Library Services",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 4.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Merit Systems Protection Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 10.93,
+      "HTML Attribute Errors": 0.14,
+      "Agency": "Office of Personnel Management",
+      "pages_count": 14,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.36,
+      "Average Errors per Page": 11.43
+    },
+    {
+      "Color Contrast Errors": 17,
+      "HTML Attribute Errors": 1,
+      "Agency": "Federal Mine Safety and Health Review Company",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 18.0
+    },
+    {
+      "Color Contrast Errors": 7.5,
+      "HTML Attribute Errors": 5.25,
+      "Agency": "Court Services and Offender Supervision",
+      "pages_count": 4,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 12.75
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 2,
+      "Agency": "National Endowment for the Arts",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1,
+      "Average Errors per Page": 3.0
+    },
+    {
+      "Color Contrast Errors": 1,
+      "HTML Attribute Errors": 1,
+      "Agency": "Social Security Advisory Board",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3,
+      "Average Errors per Page": 5.0
+    },
+    {
+      "Color Contrast Errors": 10,
+      "HTML Attribute Errors": 7,
+      "Agency": "Council of Inspector General on Integrity and Efficiency",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 1,
+      "Average Errors per Page": 18.0
+    },
+    {
+      "Color Contrast Errors": 0.5,
+      "HTML Attribute Errors": 4,
+      "Agency": "U. S. Postal Service",
+      "pages_count": 2,
+      "Form Errors": 0,
+      "Alt Tag Errors": 4.5,
+      "Average Errors per Page": 9.0
+    },
+    {
+      "Color Contrast Errors": 3.5,
+      "HTML Attribute Errors": 0.67,
+      "Agency": "Federal Reserve System",
+      "pages_count": 6,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0.17,
+      "Average Errors per Page": 4.33
+    },
+    {
+      "Color Contrast Errors": 4,
+      "HTML Attribute Errors": 0,
+      "Agency": "Medical Payment Advisory Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 4.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0,
+      "Agency": "Pension Benefit Guaranty Corporation",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.0
+    },
+    {
+      "Color Contrast Errors": 2.9,
+      "HTML Attribute Errors": 0.84,
+      "Agency": "General Services Administration",
+      "pages_count": 62,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2.42,
+      "Average Errors per Page": 6.16
+    },
+    {
+      "Color Contrast Errors": 3.22,
+      "HTML Attribute Errors": 1.83,
+      "Agency": "Department of Homeland Security",
+      "pages_count": 18,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3.17,
+      "Average Errors per Page": 8.22
+    },
+    {
+      "Color Contrast Errors": 2,
+      "HTML Attribute Errors": 14,
+      "Agency": "International Broadcasting Bureau",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 3,
+      "Average Errors per Page": 19.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 6,
+      "Agency": "Delta Regional Authority",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 22,
+      "Average Errors per Page": 28.0
+    },
+    {
+      "Color Contrast Errors": 20,
+      "HTML Attribute Errors": 0,
+      "Agency": "Federal Maritime Commission",
+      "pages_count": 1,
+      "Form Errors": 0,
+      "Alt Tag Errors": 2,
+      "Average Errors per Page": 22.0
+    },
+    {
+      "Color Contrast Errors": 0,
+      "HTML Attribute Errors": 0.5,
+      "Agency": "Department of Housing And Urban Development",
+      "pages_count": 4,
+      "Form Errors": 0,
+      "Alt Tag Errors": 0,
+      "Average Errors per Page": 0.5
+    },
+    {
+      "Color Contrast Errors": 6.8,
+      "HTML Attribute Errors": 5,
+      "Agency": "Consumer Product Safety Commission",
+      "pages_count": 5,
+      "Form Errors": 0,
+      "Alt Tag Errors": 4.2,
+      "Average Errors per Page": 16.0
     }
   ]
 }
