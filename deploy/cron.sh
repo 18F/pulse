@@ -18,7 +18,7 @@ source $HOME/.bashrc
 git pull
 
 # run the relevant env-specific data update path
-# Takes ~25 hours
+# Takes ~40 hours
 make update_$PULSE_ENV
 
 # scan data was turned into db.json,
