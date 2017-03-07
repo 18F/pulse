@@ -14,6 +14,9 @@ cd $PULSE_HOME
 # Load environment
 source $HOME/.bashrc
 
+# Update one's own code (TODO: devops)
+git pull
+
 # run the relevant env-specific data update path
 make update_$PULSE_ENV
 
