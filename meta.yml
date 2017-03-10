@@ -16,6 +16,6 @@ data:
   analytics_url: "https://analytics.usa.gov/data/live/second-level-domains.csv"
 
   # DAP URL where we source public .gov subdomains from.
-  analytics_subdomains_url: "https://analytics.usa.gov/data/live/sites.csv"
+  analytics_subdomains_url: "https://analytics.usa.gov/data/live/sites-extended.csv"
 
 bucket: cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084
