@@ -7,11 +7,11 @@ How the .gov domain space is doing at best practices and federal requirements.
 
 | Documentation  |  Other Links |
 |---|---|
-| [Setup and Deploy Instructions](https://github.com/18F/pulse/blob/master/docs/setup.md)  | [Backlog of feature requests and ideas](https://github.com/18F/pulse/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abacklog) |
-| [Ongoing Work](https://github.com/18F/pulse/blob/master/docs/project-outline.md) | [Ideas for new sections to add to the site](https://github.com/18F/pulse/blob/master/docs/other-sections.md) |
-| [ATO artifacts](https://github.com/18F/pulse/blob/master/docs/ato.md) | [Open Source Reuse of the site](https://github.com/18F/pulse/blob/master/docs/reuse.md)  | 
-|  [Project Information](https://github.com/18F/pulse/blob/master/.about.yml)   |  |
-|  [System Security Plan](https://github.com/18F/pulse/blob/master/system-security-plan.yml) |  |
+| [Setup and Deploy Instructions](https://github.com/18F/pulse/blob/master/docs/setup.md)  |  [System Security Plan](https://github.com/18F/pulse/blob/master/system-security-plan.yml) |
+| [a11y scan process](https://github.com/18F/pulse/blob/master/docs/a11y-instructions.md)  | [Ideas for new sections to add to the site](https://github.com/18F/pulse/blob/master/docs/other-sections.md) |
+| [Ongoing Work](https://github.com/18F/pulse/blob/master/docs/project-outline.md) | [Backlog of feature requests and ideas](https://github.com/18F/pulse/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abacklog)  | 
+|  [ATO artifacts](https://github.com/18F/pulse/blob/master/docs/ato.md)  | [Open Source Reuse of the site](https://github.com/18F/pulse/blob/master/docs/reuse.md) |
+| [Project Information](https://github.com/18F/pulse/blob/master/.about.yml)  |  |
 
 
 ### Public domain
