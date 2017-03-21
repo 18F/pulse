@@ -13,17 +13,17 @@ $(document).ready(function () {
 
       columns: [
         {
-          data: "Agency",
+          data: "agency",
           cellType: "th"
         },
         {
-          data: "Color Contrast Errors"
+          data: "Color Contrast - Initial Findings"
         },
         {
-          data: "HTML Attribute Errors"
+          data: "HTML Attribute - Initial Findings"
         },
         {
-          data: "Alt Tag Errors"
+          data: "Missing Image Descriptions"
         }
       ],
 
