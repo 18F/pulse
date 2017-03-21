@@ -12,6 +12,7 @@ This project is an initial pass - there is much more information that can be rep
   * Test the deeper config options that the DAP snippet should be employing, such as IP anonymization, Event tracking, Demographics turned off, and ?????.  (Possibly using headless browser)
 * Does the site require “www”? Does it require not using “www”?
 * Load time (server-side)
+* What the domain is CNAMED to, e.g. wordpress.com, github.io.  Consider 'DNS scanning using something like the `dig` CLI command to look for common services that .gov domains are CNAME'd to and then maybe to look at their FedRAMP status.'
 * More of the scans in [observatory.mozilla.org](https://observatory.mozilla.org)
 * [Scan for SPF records](https://github.com/18F/pulse/issues/424)
 * Mobile friendliness (poss. using Google's [Mobile Friendly Test](http://www.nextgov.com/mobile/2015/04/here-are-agency-websites-google-doesnt-think-are-mobile-friendly/110812/?oref=ng-relatedstories))
