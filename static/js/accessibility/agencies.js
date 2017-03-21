@@ -13,7 +13,7 @@ $(document).ready(function () {
 
       columns: [
         {
-          data: "Agency",
+          data: "agency",
           cellType: "th"
         },
         {
