@@ -14,10 +14,18 @@ cd $PULSE_HOME
 # Load environment
 source $HOME/.bashrc
 
+# Update one's own code (TODO: devops)
+git pull
+
 # run the relevant env-specific data update path
+# Takes ~40 hours
 make update_$PULSE_ENV
 
-# scan data was turned into db.json, and all data has been uploaded to S3.
+# scan data was turned into db.json,
+# and all data has been uploaded to S3.
+
+# Update one's own code again before deploy (TODO: devops)
+git pull
 
 # Finally, deploy the production website.
 make cg_production_autodeploy
