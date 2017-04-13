@@ -1,0 +1,49 @@
+{  
+   "data":[  
+      {  
+         "name":"Administrative Conference of the United States",
+         "slug":"administrative-conference-of-the-united-states",
+         "branch":"executive",
+         "customer-satisfaction":{  
+            "participating":0,
+            "eligible":1
+         },
+         "third-party":{  
+            "services":6,
+            "page_count":1,
+            "average_services_per_page":6
+         },
+         "total_domains":1
+      },
+      {  
+         "name":"Advisory Council on Historic Preservation",
+         "slug":"advisory-council-on-historic-preservation",
+         "branch":"executive",
+         "customer-satisfaction":{  
+            "participating":1,
+            "eligible":2
+         },
+         "third-party":{  
+            "services":11,
+            "page_count":2,
+            "average_services_per_page":5.5
+         },
+         "total_domains":2
+      },
+      {  
+         "name":"US Interagency Council on Homelessness",
+         "slug":"us-interagency-council-on-homelessness",
+         "branch":"executive",
+         "customer-satisfaction":{  
+            "participating":0,
+            "eligible":1
+         },
+         "third-party":{  
+            "services":9,
+            "page_count":1,
+            "average_services_per_page":9
+         },
+         "total_domains":1
+      }
+   ]
+}
