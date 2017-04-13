@@ -1,0 +1,162 @@
+{
+  "data": [
+    {
+      "domain": "acus.gov",
+      "branch": "executive",
+      "https": {
+        "preloaded": 0,
+        "hsts": 2,
+        "hsts_age": 63072000,
+        "rc4": false,
+        "grade": 6,
+        "fs": 4,
+        "uses": 2,
+        "enforces": 3,
+        "tls12": true,
+        "sig": "SHA256withRSA",
+        "ssl3": false
+      },
+      "canonical": "https://acus.gov",
+      "live": true,
+      "agency_slug": "administrative-conference-of-the-united-states",
+      "exclude": {
+        "analytics": false
+      },
+      "redirect": false,
+      "agency_name": "Administrative Conference of the United States",
+      "customer-satisfaction": {
+        "participating": false
+      },
+      "third-party": {
+      	"services":6,
+      	"service-list": {
+      		"Brightcove",
+      		"Google Analytics",
+      		"Digital Analytics Program",
+      		"AddThis",
+      		"Crazyegg",
+      		"MixPanel"
+      	}
+      }
+    },
+    {
+      "domain": "achp.gov",
+      "branch": "executive",
+      "https": {
+        "preloaded": 0,
+        "hsts": 2,
+        "hsts_age": 31536000,
+        "rc4": false,
+        "grade": 6,
+        "fs": 2,
+        "uses": 2,
+        "enforces": 3,
+        "tls12": true,
+        "sig": "SHA256withRSA",
+        "ssl3": false
+      },
+      "canonical": "https://www.achp.gov",
+      "live": true,
+      "agency_slug": "advisory-council-on-historic-preservation",
+      "exclude": {
+        "analytics": false
+      },
+      "redirect": false,
+      "agency_name": "Advisory Council on Historic Preservation",
+      "customer-satisfaction": {
+        "participating": true
+      },
+      "third-party": {
+      	"services":5,
+      	"service-list": {
+      		"Foresee",
+      		"Google Analytics",
+      		"Digital Analytics Program",
+      		"AddThis",
+      		"MixPanel"
+      	}
+      }
+    },
+    {
+      "domain": "preserveamerica.gov",
+      "branch": "executive",
+      "https": {
+        "preloaded": 0,
+        "hsts": 2,
+        "hsts_age": 63072000,
+        "rc4": false,
+        "grade": 6,
+        "fs": 4,
+        "uses": 2,
+        "enforces": 3,
+        "tls12": true,
+        "sig": "SHA256withRSA",
+        "ssl3": false
+      },
+      "canonical": "https://preserveamerica.gov",
+      "live": true,
+      "agency_slug": "advisory-council-on-historic-preservation",
+      "exclude": {
+        "analytics": false
+      },
+      "redirect": false,
+      "agency_name": "Advisory Council on Historic Preservation",
+      "customer-satisfaction": {
+        "participating": false
+      },
+      "third-party": {
+      	"services":6,
+      	"service-list": {
+      		"Brightcove",
+      		"Google Analytics",
+      		"Digital Analytics Program",
+      		"Optimizely",
+      		"Facebook", 
+      		"Flickr"
+      	}
+      }
+    },
+    {
+      "domain": "usich.gov",
+      "branch": "executive",
+      "https": {
+        "preloaded": 0,
+        "hsts": -1,
+        "hsts_age": null,
+        "rc4": null,
+        "grade": -1,
+        "fs": null,
+        "uses": -1,
+        "enforces": 0,
+        "tls12": null,
+        "sig": null,
+        "ssl3": null
+      },
+      "canonical": "http://usich.gov",
+      "live": true,
+      "agency_slug": "us-interagency-council-on-homelessness",
+      "exclude": {
+        "analytics": false
+      },
+      "redirect": false,
+      "agency_name": "US Interagency Council on Homelessness",
+      "customer-satisfaction": {
+        "participating": false
+      },
+      "third-party": {
+      	"services":9,
+      	"service-list": {
+      		"Vimeo",
+      		"Google Analytics",
+      		"CoreMetrics",
+      		"AddThis",
+      		"WebTrends",
+      		"YouTube",
+      		"Cloudflare",
+      		"Statuspage",
+      		"AdobeDTM"
+      	}
+      }
+    }
+  ]
+}
