@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block page_id %}analytics{% endblock %}
+{% block title %}Digital Analytics Program (DAP) - Pulse{% endblock %}
+{% block description %}Which federal government domains are participating in the Digital Analytics Program.{% endblock %}
+
+{% block content %}
+
+{% include 'includes/analytics/header.html' %}
+
+<section id="main-content" class="white-bkg">
+
+  <nav class="tab-menu" role="tablist">
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Domain</span>
+    <a href="/analytics/agencies/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Agency</a>
+    <a href="/analytics/guidance/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
+  </nav>
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
+    <table class="domain responsive analytics">
+      <caption>Participation in the Digital Analytics Program (DAP) By Domain. Table is sortable via first row table headers. Each row contains a domain and related attributes.</caption>
+      <thead>
+        <tr>
+          <th class="all" scope="col">Domain</th>
+          <th class="never" scope="col">Canonical</th>
+          <th class="all" scope="col">Agency</th>
+          <th class="min-tablet" scope="col">Participates in DAP?</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</section>
+
+<script src="/static/js/analytics/domains.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
+
+{% endblock %}
