@@ -75,15 +75,15 @@ def register(app):
         return render_template("analytics/guide.html")
     
     @app.route("/customer-satisfaction/domains/")
-    def customer-satisfaction_domains():
+    def customersatisfaction_domains():
         return render_template("customer-satisfaction/domains.html")
 
     @app.route("/customer-satisfaction/agencies/")
-    def customer-satisfaction_agencies():
+    def customersatisfaction_agencies():
         return render_template("customer-satisfaction/agencies.html")
 
     @app.route("/customer-satisfaction/guidance/")
-    def customer-satisfaction_guide():
+    def customersatisfaction_guide():
         return render_template("customer-satisfaction/guide.html")
 
     @app.route("/agency/<slug>")
