@@ -49,8 +49,8 @@ components:
 - https://github.com/18F/domain-scan
 
 # these will be the same unless your architecture is especially complex
-system-diagram: https://docs.google.com/drawings/d/1wlwzZQXzbLsTD_NPZGaVjDv40rTead1xA6Fs5EsFPCI/edit
-network-diagram: https://docs.google.com/drawings/d/1wlwzZQXzbLsTD_NPZGaVjDv40rTead1xA6Fs5EsFPCI/edit
+system-diagram: https://docs.google.com/drawings/d/1OkVId9g_COcNNX7OhftRIEqjLAQZeEyn2mlpjy9uc0k/edit
+network-diagram: https://docs.google.com/drawings/d/1OkVId9g_COcNNX7OhftRIEqjLAQZeEyn2mlpjy9uc0k/edit
 
 environments:
 - Cloud Foundry
