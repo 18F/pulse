@@ -15,7 +15,7 @@ $(document).ready(function () {
   */
 
   var names = {
-    dap: {
+    custsat: {
       false: "No",
       true: "Yes"
     }
@@ -51,8 +51,8 @@ $(document).ready(function () {
         {data: "canonical"},
         {data: "agency_name"},
         {
-          data: "analytics.participating",
-          render: display(names.dap)
+          data: "customer-satisfaction.participating",
+          render: display(names.custsat)
         }
       ],
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/data/domains/analytics.csv",
+      csv: "/data/domains/customer-satisfaction.csv",
 
       dom: 'LCftrip'
 
