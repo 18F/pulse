@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("https://pulse.cio.gov/data/domains/analytics.json", function(data) {
+  $.get("https://raw.githubusercontent.com/18F/pulse/draft-data/static/data/3rd_party_services-domains.json", function(data) {
     renderTable(data.data);
   });
 
