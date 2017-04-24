@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("https://raw.githubusercontent.com/18F/pulse/draft-data/static/data/3rd_party_services-domains.json", function(data) {
+  $.get("/static/data/tables/customer-satisfaction/domains.json", function(data) {
     renderTable(data.data);
   });
 
