@@ -18,11 +18,11 @@ $(document).ready(function () {
           cellType: "th"
         },
         {
-          data: "analytics.eligible",
+          data: "eligible",
           render: Utils.filterAgency("analytics")
         },
         {
-          data: "analytics.participating",
+          data: "participating",
         }
       ],
 
@@ -40,7 +40,7 @@ $(document).ready(function () {
         {
           render: function(data, type, row) {
             var percent = Utils.percent(
-              row.analytics.participating, row.analytics.eligible
+              row.participating, row.eligible
             )
             if (type == "sort")
               return percent;
