@@ -51,7 +51,7 @@ $(document).ready(function () {
         {data: "canonical"},
         {data: "agency_name"},
         {
-          data: "customer-satisfaction.participating",
+          data: "participating",
           render: display(names.custsat)
         }
       ],
