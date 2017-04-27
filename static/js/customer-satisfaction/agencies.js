@@ -19,7 +19,7 @@ $(document).ready(function () {
         },
         {
           data: "eligible",
-          render: Utils.filterAgency("analytics")
+          render: Utils.filterAgency("customer-satisfaction")
         },
         {
           data: "participating",
