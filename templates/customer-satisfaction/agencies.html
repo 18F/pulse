@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block page_id %}analytics{% endblock %}
+{% block title %}Customer Satisfaction Tools - Pulse{% endblock %}
+{% block description %}Which federal government domains are using Customer Satisfaction surveys.  {% endblock %}
+
+{% block content %}
+
+{% include 'includes/customer-satisfaction//header.html' %}
+
+<section id="main-content" class="white-bkg">
+
+  <nav class="tab-menu" role="tablist">
+    <a href="/customer-satisfaction/domains/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">By Agency</span>
+    <a href="/customer-satisfaction/guidance/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">Guidance</a>
+  </nav>
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
+    <table class="agency responsive analytics">
+      <caption>Use of customer satisfaction survey tools by agency. Table is sortable via first row table headers. Each row contains an agency and related attributes.</caption>
+      <thead>
+        <th class="all" scope="col">Agency</th>
+        <th class="all" scope="col">Number of Domains</th>
+        <th class="min-tablet" scope="col">Utilize Customer Satisfaction Tools</th>
+      </thead>
+    </table>
+  </div>
+</section>
+
+<script src="/static/js/customer-satisfaction/agencies.js?{{ now() | date("%Y%m%j%H%M%S") }}"></script>
+
+{% endblock %}

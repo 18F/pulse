@@ -1,0 +1,20 @@
+<header class="chart">
+
+  <div class="donut">
+    <div class="dap_chart"></div>
+    {% include 'includes/analytics/donut.html' %}
+  </div>
+
+  <div class="description">
+    <h2>Customer Satisfaction Tools</h2>
+    <h3>Last updated <strong>{{ scan_date | date("%B %d, %Y") }}</strong></h3>
+    <p>
+      Lorem ipsum dolor sit amet, <a href="">consectetur adipiscing</a> elit. Duis ut nunc dui. Nam vel rutrum est, quis dictum lorem. Integer euismod mollis purus sed convallis. Ut aliquet turpis ligula, non ultrices metus aliquam sit amet. Nullam facilisis finibus rhoncus. Donec mattis et metus nec vulputate..
+    </p>
+
+    <p>
+      Use of customer satisfaction tools was last measured on <strong>{{ scan_date | date("%B %d, %Y") }}</strong>.
+    </p>
+  </div>
+
+</header>

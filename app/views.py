@@ -74,6 +74,21 @@ def register(app):
     def analytics_guide():
         return render_template("analytics/guide.html")
 
+    hide_cust_sat = (os.getenv("HIDE_CUSTOMER_SATISFACTION", "false").lower() == "true")
+
+    if not hide_cust_sat:
+        @app.route("/customer-satisfaction/domains/")
+        def customersatisfaction_domains():
+            return render_template("customer-satisfaction/domains.html")
+
+        @app.route("/customer-satisfaction/agencies/")
+        def customersatisfaction_agencies():
+            return render_template("customer-satisfaction/agencies.html")
+
+        @app.route("/customer-satisfaction/guidance/")
+        def customersatisfaction_guide():
+            return render_template("customer-satisfaction/guide.html")
+
     @app.route("/agency/<slug>")
     def agency(slug=None):
         agency = models.Agency.find(slug)

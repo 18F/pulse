@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_id %}analytics{% endblock %}
+{% block title %}Customer Satisfaction Tools - Pulse{% endblock %}
+{% block description %}Which federal government domains are using customer satisfaction surveys.{% endblock %}
+
+{% block content %}
+
+{% include 'includes/analytics/header.html' %}
+
+<section id="main-content" class="white-bkg">
+
+  <nav class="tab-menu" role="tablist">
+    <a href="/customer-satisfaction/domains/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Domain</a>
+    <a href="/customer-satisfaction/agencies/" class="tab" class="tab" role="tab" aria-controls="tab-panel" aria-selected="false">By Agency</a>
+    <span class="tab" role="tab" aria-controls="tab-panel" aria-selected="true">Guidance</span>
+  </nav>
+
+  <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
+
+    <div class="guide">
+
+      <h3>Below you will find some helpful tips to help guide you towards getting a better score on Pulse for your domain or agency. For any further questions, please visit our <a href="/about/">frequently asked questions</a>.</h3>
+
+      <article>
+
+        <h4>What domains are measured?</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nunc dui. Nam vel rutrum est, quis dictum lorem.
+        </p>
+
+        <p>
+          Sed ullamcorper metus nunc, scelerisque pretium lorem gravida eu..
+        </p>
+
+      </article>
+
+      <article>
+
+        <h4>How to participate</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nunc dui. Nam vel rutrum est, quis dictum lorem. Integer euismod mollis purus sed convallis.
+        </p>
+
+        <p>
+          Maecenas laoreet arcu dui. Maecenas mi justo, mattis nec lorem et, tempus placerat tortor. Sed ullamcorper metus nunc, scelerisque pretium lorem gravida eu..
+        </p>
+
+      </article>
+
+      <article>
+
+        <h4>Fields</h4>
+
+        <ul>
+          <li><strong>Utilizes Customer Satisfaction Tools</strong></li>
+          <li>
+            <strong>Values:</strong> No,Yes
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nunc dui. Nam vel rutrum est, quis dictum lorem. Integer euismod mollis purus sed convallis. Ut aliquet turpis ligula, non ultrices metus aliquam sit amet. Nullam facilisis finibus rhoncus. Donec mattis et metus nec vulputate. Nulla scelerisque, tellus dignissim vulputate consequat, dui enim mollis turpis, ut tempus felis orci id ex. Maecenas et ante turpis. Mauris in sapien elit. Maecenas laoreet arcu dui. Maecenas mi justo, mattis nec lorem et, tempus placerat tortor. Sed ullamcorper metus nunc, scelerisque pretium lorem gravida eu..
+          </li>
+        </ul>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}
