@@ -74,7 +74,7 @@ def register(app):
     def analytics_guide():
         return render_template("analytics/guide.html")
 
-    hide_cust_sat = (os.getenv("HIDE_CUSTOMER_SATISFACTION", "true").lower() == "true")
+    hide_cust_sat = (os.getenv("HIDE_CUSTOMER_SATISFACTION", "false").lower() == "true")
 
     if not hide_cust_sat:
         @app.route("/customer-satisfaction/domains/")
