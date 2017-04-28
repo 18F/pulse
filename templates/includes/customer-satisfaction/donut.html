@@ -35,7 +35,7 @@
             location.href = "/analytics/domains/";
         });
 
-    d3.json("/data/reports/analytics.json", function (error, data) {
+    d3.json("/data/reports/customer-satisfaction.json", function (error, data) {
 
         // calculate % client-side
         var participating = Math.round((data.participating / data.eligible) * 100);
@@ -84,7 +84,7 @@
             .attr("fill", "white")
             .attr("dy", "1.9em")
             .text(function (d) {
-            return "PARTICIPATE IN THE";
+            return "USE ONLINE";
         });
 
         g.append("text")
@@ -93,7 +93,7 @@
             .attr("fill", "white")
             .attr("dy", "3em")
             .text(function (d) {
-            return "DIGITAL ANALYTICS";
+            return "SATISFACTION";
         });
 
         g.append("text")
@@ -102,7 +102,7 @@
             .attr("fill", "white")
             .attr("dy", "4em")
             .text(function (d) {
-            return "PROGRAM";
+            return "SURVEYS";
         });
     });
 })();
