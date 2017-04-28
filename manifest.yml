@@ -8,6 +8,8 @@ applications:
   memory: 128M
   instances: 1
   buildpack: python_buildpack
+  env:
+      HIDE_CUSTOMER_SATISFACTION: false
 services:
   - pulse-creds-prod
 env:
