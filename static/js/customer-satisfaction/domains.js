@@ -53,6 +53,10 @@ $(document).ready(function () {
         {
           data: "participating",
           render: display(names.custsat)
+        },
+        {
+          data:"service-list",
+          render: Utils.custSatList
         }
       ],
 
@@ -78,9 +82,16 @@ $(document).ready(function () {
       dom: 'LCftrip'
 
     });
+
+    $('table tbody').on('click', 'td:not(.sorting_1)', function(e) {
+      $(this).siblings("th.sorting_1").click();
+    });
+
+    Utils.detailsKeyboardCtrl();
     Utils.updatePagination();
     table.on("draw.dt",function(){
-      Utils.updatePagination();
+       Utils.detailsKeyboardCtrl();
+       Utils.updatePagination();
     });
   };
 
