@@ -65,6 +65,22 @@ var Utils = {
     }
   },
 
+  custSatList: function(data, type, row) {
+    var custSatListOutput = "";
+
+    $.each(data, function(key, value) {
+      if (value) {
+        custSatListOutput += "<li><a href=\"" + value + "\">" + key + "</a></li>";
+      }
+    });
+
+    if (!custSatListOutput) {
+      return "</hr><span class=\"noErrors\">No customer satisfaction tools used.</span>";
+    } else {
+      return "</hr><ul class=\"errorList\">" + custSatListOutput + "</ul></hr>";
+    }
+  },
+
   detailsKeyboardCtrl: function(){
     $('table tbody tr th:first-child').each(function(){
       var content = $(this).parent().find("a").html();

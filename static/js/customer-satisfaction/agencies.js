@@ -47,6 +47,7 @@ $(document).ready(function () {
             return Utils.progressBar(percent);
           },
           targets: 2,
+          type: "html-num-fmt"
         }
       ],
 
