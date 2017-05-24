@@ -1,1 +1,1 @@
-web: newrelic-admin run-python pulse.py
+web: python pulse.py

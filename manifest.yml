@@ -6,14 +6,17 @@ applications:
   buildpack: python_buildpack
   env:
     HIDE_CUSTOMER_SATISFACTION: true
+    NEW_RELIC_APP_NAME: Pulse | Prod
+    NEW_RELIC_ENV: production
 - name: pulse-staging
   memory: 128M
   instances: 1
   buildpack: python_buildpack
   env:
     HIDE_CUSTOMER_SATISFACTION: false
+    NEW_RELIC_APP_NAME: Pulse | Staging
+    NEW_RELIC_ENV: staging
 services:
   - pulse-creds-prod
 env:
   NEW_RELIC_CONFIG_FILE: newrelic.ini
-  NEW_RELIC_APP_NAME: Pulse
