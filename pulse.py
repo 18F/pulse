@@ -29,8 +29,8 @@ license_key = env.get_credential('NEW_RELIC_LICENSE_KEY')
 
 if app_name and license_key:
     nr_settings = newrelic.agent.global_settings()
-    nr.settings.app_name = app_name
-    nr.settings.license_key = license_key
+    nr_settings.app_name = app_name
+    nr_settings.license_key = license_key
     newrelic.agent.initialize()
 
 if __name__ == "__main__":
