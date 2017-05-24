@@ -5,7 +5,7 @@ import os
 from flask import Flask
 from waitress import serve
 
-import newrelic.agency_report
+import newrelic.agent
 from cfenv import AppEnv()
 
 app = Flask(__name__)
