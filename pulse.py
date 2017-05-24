@@ -6,7 +6,7 @@ from flask import Flask
 from waitress import serve
 
 import newrelic.agent
-from cfenv import AppEnv()
+from cfenv import AppEnv
 
 app = Flask(__name__)
 
