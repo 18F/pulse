@@ -1,6 +1,10 @@
 
-1. Download the domain scan repo locally.  
-2. Switch to the `make-lambda-optional` branch.  
+1. Download the domain scan repo locally.  Ensure there's a .env file.  
+2. Copy the [DAP data file](https://pulse.cio.gov/data/domains/analytics.csv), rename it to domains.csv and place it in the domain-scan.  Remove the unnecessary columns in the spreadsheet.  
+3. Start docker. 
+4. Install pshtt. 
+4. In terminal, ` cd ~/Documents/GitHub/domain-scan`, then `docker-compose run scan domains.csv --scan=pshtt --debug`.  
+5. ...
 
 
 ======================
