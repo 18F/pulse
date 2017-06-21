@@ -21,6 +21,8 @@ import slugify
 import datetime
 import subprocess
 
+from statistics import mean
+
 this_dir = os.path.dirname(__file__)
 
 META = yaml.safe_load(open(os.path.join(this_dir, "../meta.yml")))
@@ -36,6 +38,13 @@ SUBDOMAIN_AGENCY_OUTPUT = os.path.join(this_dir, "./output/subdomains/agencies/"
 # Maps domain-scan names to specific sources,
 # and whitelists which sources we know how to process.
 SUBDOMAIN_SOURCES = {'censys': 'censys', 'url': 'dap'}
+
+A11Y_ERRORS = {
+  '1_1': 'Missing Image Descriptions',
+  '1_3': 'Form - Initial Findings',
+  '1_4': 'Color Contrast - Initial Findings',
+  '4_1': 'HTML Attribute - Initial Findings'
+}
 
 ###
 # Main task flow.
@@ -269,6 +278,27 @@ def load_scan_data(domains):
 
       scan_data[domain]['analytics'] = dict_row
 
+  # And a11y! Only try to load it if it exists, since scan is not yet automated.
+  if os.path.isfile(os.path.join(INPUT_SCAN_DATA, "a11y.csv")):
+    headers = []
+    with open(os.path.join(INPUT_SCAN_DATA, "a11y.csv"), newline='') as csvfile:
+      for row in csv.reader(csvfile):
+        if (row[0].lower() == "domain"):
+          headers = row
+          continue
+
+        domain = row[0].lower()
+        if not domains.get(domain):
+          continue
+
+        dict_row = {}
+        for i, cell in enumerate(row):
+          dict_row[headers[i]] = cell
+        if not scan_data[domain].get('a11y'):
+          scan_data[domain]['a11y'] = [dict_row]
+        else:
+          scan_data[domain]['a11y'].append(dict_row)
+
   # Next, load in subdomain pshtt data (if present).
   subdomain_dirs = glob.glob("%s/*" % SUBDOMAIN_SCAN_DATA)
   for scan_dir in subdomain_dirs:
@@ -320,7 +350,8 @@ def process_domains(domains, agencies, scan_data):
 
   reports = {
     'analytics': {},
-    'https': {}
+    'https': {},
+    'a11y': {}
   }
 
   # Used to generate per-agency rolled-up subdomain downloads.
@@ -340,6 +371,11 @@ def process_domains(domains, agencies, scan_data):
     if eligible_for_https(domains[domain_name]):
       reports['https'][domain_name] = https_report_for(
         domain_name, domains[domain_name], scan_data, subdomain_reports
+      )
+
+    if eligible_for_a11y(domains[domain_name]):
+      reports['a11y'][domain_name] = a11y_report_for(
+        domain_name, domains[domain_name], scan_data
       )
 
   return reports, subdomain_reports
@@ -380,6 +416,34 @@ def update_agency_totals():
     print("[%s][%s] Adding report." % (agency['slug'], 'https'))
     Agency.add_report(agency['slug'], 'https', agency_report)
 
+    # A11Y
+    eligible = Domain.eligible_for_agency(agency['slug'], 'a11y')
+    pages_count = len(eligible)
+    errors = {e:0 for e in A11Y_ERRORS.values()}
+    for domain in eligible:
+      a11y = domain['a11y']
+      for error in a11y['errorlist']:
+        errors[error] += a11y['errorlist'][error]
+    total_errors = sum(errors.values())
+    avg_errors_per_page = (
+      'n/a' if pages_count == 0 else round(float(total_errors) / pages_count, 2)
+    )
+    agency_report = {
+      'pages_count': pages_count,
+      'Average Errors per Page': avg_errors_per_page
+    }
+    if pages_count:
+      averages = ({
+        e: round(mean([d['a11y']['errorlist'][e] for d in eligible]), 2)
+        for e in A11Y_ERRORS.values()
+      })
+    else:
+      averages = {e: 'n/a' for e in A11Y_ERRORS.values()}
+    agency_report.update(averages)
+
+    print("[%s][%s] Adding report." % (agency['slug'], 'a11y'))
+    Agency.add_report(agency['slug'], 'a11y', agency_report)
+
 
 # TODO: A domain can also be eligible if it has eligible subdomains.
 #       Has display ramifications.
@@ -395,6 +459,13 @@ def eligible_for_analytics(domain):
     (domain["exclude"]["analytics"] == False)
   )
 
+def eligible_for_a11y(domain):
+  return (
+    (domain["live"] == True) and
+    (domain["redirect"] == False) and
+    (domain["branch"] == "executive")
+  )
+
 
 # Analytics conclusions for a domain based on analytics domain-scan data.
 def analytics_report_for(domain_name, domain, scan_data):
@@ -404,6 +475,29 @@ def analytics_report_for(domain_name, domain, scan_data):
   return {
     'participating': boolean_for(analytics['Participates in Analytics'])
   }
+
+def a11y_report_for(domain_name, domain, scan_data):
+  a11y_report = {
+    'errors': 0,
+    'errorlist': {e:0 for e in A11Y_ERRORS.values()},
+    'error_details': {e:[] for e in A11Y_ERRORS.values()}
+  }
+  if scan_data[domain_name].get('a11y'):
+    a11y = scan_data[domain_name]['a11y']
+    for error in a11y:
+      if not error['code']:
+        continue
+      a11y_report['errors'] += 1
+      category = get_a11y_error_category(error['code'])
+      a11y_report['errorlist'][category] += 1
+      details = {k: error[k] for k in ['code', 'typeCode', 'message',
+                                        'context', 'selector']}
+      a11y_report['error_details'][category].append(details)
+  return a11y_report
+
+def get_a11y_error_category(code):
+  error_id = code.split('.')[2].split('Guideline')[1]
+  return A11Y_ERRORS.get(error_id, 'Other Errors')
 
 # Given a pshtt report, fill in a dict with the conclusions.
 def https_behavior_for(pshtt):
@@ -712,7 +806,12 @@ def latest_reports():
     }
   }
 
-  return [https_report, analytics_report]
+  a11y_domains = Domain.eligible('a11y')
+  a11y_report = {'a11y': {}}
+  for domain in a11y_domains:
+    a11y_report['a11y'][domain['domain']] = domain['a11y']['error_details']
+
+  return [https_report, analytics_report, a11y_report]
 
 # Hacky helper - print out the %'s after the command finishes.
 def print_report():
@@ -720,7 +819,8 @@ def print_report():
 
   report = Report.latest()
   for report_type in report.keys():
-    if report_type == "report_date":
+    # The a11y report has a very different use than the others
+    if report_type == "report_date" or report_type == "a11y":
       continue
 
     print("[%s]" % report_type)
