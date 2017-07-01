@@ -65,7 +65,7 @@ GATHERERS = [
   ["url", "--url=%s" % GATHER_ANALYTICS_URL]
 ]
 SUBDOMAIN_SCAN_TARGET = os.path.join(this_dir, "./output/subdomains/scan")
-SUBDOMAIN_SCANNERS = "pshtt,sslyze"
+SUBDOMAIN_SCANNERS = "pshtt"
 
 
 # Options:
