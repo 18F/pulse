@@ -430,6 +430,7 @@ def update_agency_totals():
     )
     agency_report = {
       'pages_count': pages_count,
+      'eligible': pages_count,
       'Average Errors per Page': avg_errors_per_page
     }
     if pages_count:
