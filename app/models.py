@@ -200,7 +200,7 @@ class Agency:
   # An agency which had at least 1 eligible domain.
   def eligible(report_name):
     return db.table('agencies').search(
-      (Query()[report_name]['eligible'] > 0)
+      Query()[report_name]['eligible'] > 0
     )
 
   # Create a new Agency record with a given name, slug, and total domain count.
