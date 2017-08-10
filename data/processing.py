@@ -575,7 +575,7 @@ def https_behavior_for(pshtt):
   else:
 
     # HSTS is present for the canonical endpoint.
-    if (pshtt["HSTS"] == "True"):
+    if (pshtt["HSTS"] == "True") and hsts_age:
 
       # Say No for too-short max-age's, and note in the extended details.
       if hsts_age >= 31536000:
