@@ -46,6 +46,35 @@ A11Y_ERRORS = {
   '4_1': 'HTML Attribute - Initial Findings'
 }
 
+CUSTOMER_SATISFACTION_TOOLS = {
+    'iperceptions01.azureedge.net': 'iPerceptions',
+    'ips-invite.iperceptions.com': 'iPerceptions',
+    'universal.iperceptions.com': 'iPerceptions',
+    'api.iperceptions.com': 'iPerceptions',
+    'health.foresee.com': 'Foresee',
+    'events.foreseeresults.com': 'Foresee',
+    'script.hotjar.com': 'Hotjar',
+    'static.hotjar.com': 'Hotjar',
+    'vars.hotjar.com': 'Hotjar',
+    'js.hs-analytics.net': 'HHS Voice of Customer Tool',
+    'api.mixpanel.com': 'Mixpanel',
+    'siteintercept.qualtrics.com': 'Qualtrics',
+    'assets01.surveymonkey.com': 'SurveyMonkey',
+    'secure.surveymonkey.com': 'SurveyMonkey',
+    'by2.uservoice.com': 'UserVoice'
+}
+
+CUSTOMER_SATISFACTION_URLS = {
+    'iPerceptions': 'https://www.iperceptions.com',
+    'Foresee': 'https://www.foresee.com',
+    'Hotjar': 'https://www.hotjar.com',
+    'HHS Voice of Customer Tool': 'https://www.hhs.gov',
+    'Mixpanel': 'https://mixpanel.com',
+    'Qualtrics': 'https://www.qualtrics.com',
+    'SurveyMonkey': 'https://www.surveymonkey.com',
+    'UserVoice': 'https://www.uservoice.com'
+}
+
 ###
 # Main task flow.
 
@@ -299,6 +328,26 @@ def load_scan_data(domains):
         else:
           scan_data[domain]['a11y'].append(dict_row)
 
+  # Customer satisfaction, as well. Same as a11y, only load if it exists
+  if os.path.isfile(os.path.join(INPUT_SCAN_DATA, "third_parties.csv")):
+    headers = []
+    with open(os.path.join(INPUT_SCAN_DATA, "third_parties.csv"), newline='') as csvfile:
+      for row in csv.reader(csvfile):
+        if (row[0].lower() == "domain"):
+          headers = row
+          continue
+
+        domain = row[0].lower()
+        if not domains.get(domain):
+          continue
+
+        dict_row = {}
+        for i, cell in enumerate(row):
+          dict_row[headers[i]] = cell
+
+        scan_data[domain]['cust_sat'] = dict_row
+
+
   # Next, load in subdomain pshtt data (if present).
   subdomain_dirs = glob.glob("%s/*" % SUBDOMAIN_SCAN_DATA)
   for scan_dir in subdomain_dirs:
@@ -351,7 +400,8 @@ def process_domains(domains, agencies, scan_data):
   reports = {
     'analytics': {},
     'https': {},
-    'a11y': {}
+    'a11y': {},
+    'cust_sat': {}
   }
 
   # Used to generate per-agency rolled-up subdomain downloads.
@@ -375,6 +425,11 @@ def process_domains(domains, agencies, scan_data):
 
     if eligible_for_a11y(domains[domain_name]):
       reports['a11y'][domain_name] = a11y_report_for(
+        domain_name, domains[domain_name], scan_data
+      )
+
+    if eligible_for_cust_sat(domains[domain_name]):
+      reports['cust_sat'][domain_name] = cust_sat_report_for(
         domain_name, domains[domain_name], scan_data
       )
 
@@ -445,6 +500,17 @@ def update_agency_totals():
     print("[%s][%s] Adding report." % (agency['slug'], 'a11y'))
     Agency.add_report(agency['slug'], 'a11y', agency_report)
 
+    # Customer satisfaction
+    eligible = Domain.eligible_for_agency(agency['slug'], 'cust_sat')
+    agency_report = {
+      'eligible': len(eligible),
+      'participating': 0
+    }
+    agency_report['participating'] += len([d for d in eligible if
+                                           d['cust_sat']['participating']])
+    print("[%s][%s] Adding report." % (agency['slug'], 'cust_sat'))
+    Agency.add_report(agency['slug'], 'cust_sat', agency_report)
+
 
 # TODO: A domain can also be eligible if it has eligible subdomains.
 #       Has display ramifications.
@@ -467,6 +533,12 @@ def eligible_for_a11y(domain):
     (domain["branch"] == "executive")
   )
 
+def eligible_for_cust_sat(domain):
+  return (
+    (domain["live"] == True) and
+    (domain["redirect"] == False) and
+    (domain["branch"] == "executive")
+  )
 
 # Analytics conclusions for a domain based on analytics domain-scan data.
 def analytics_report_for(domain_name, domain, scan_data):
@@ -499,6 +571,24 @@ def a11y_report_for(domain_name, domain, scan_data):
 def get_a11y_error_category(code):
   error_id = code.split('.')[2].split('Guideline')[1]
   return A11Y_ERRORS.get(error_id, 'Other Errors')
+
+def cust_sat_report_for(domain_name, domain, scan_data):
+  cust_sat_report = {
+    'service_list': {},
+    'participating': False
+  }
+  if scan_data[domain_name].get('cust_sat'):
+    cust_sat = scan_data[domain_name]['cust_sat']
+    print(cust_sat)
+    externals = [d.strip() for d in cust_sat['All External Domains'].split(',')]
+    cust_sat_tools = [CUSTOMER_SATISFACTION_TOOLS[x] for
+                      x in externals if
+                      x in CUSTOMER_SATISFACTION_TOOLS]
+    cust_sat_report['service_list'] = {s:CUSTOMER_SATISFACTION_URLS[s] for
+                                     s in cust_sat_tools}
+    cust_sat_report['participating'] = len(cust_sat_tools) > 0
+
+  return cust_sat_report
 
 # Given a pshtt report, fill in a dict with the conclusions.
 def https_behavior_for(pshtt):
@@ -812,7 +902,21 @@ def latest_reports():
   for domain in a11y_domains:
     a11y_report['a11y'][domain['domain']] = domain['a11y']['error_details']
 
-  return [https_report, analytics_report, a11y_report]
+  cust_sat_domains = Domain.eligible('cust_sat')
+  total = len(cust_sat_domains)
+  participating = 0
+  for domain in cust_sat_domains:
+    if domain['cust_sat']['participating']:
+      participating += 1
+
+  cust_sat_report = {
+    'cust_sat': {
+      'eligible': total,
+      'participating': participating
+    }
+  }
+
+  return [https_report, analytics_report, a11y_report, cust_sat_report]
 
 # Hacky helper - print out the %'s after the command finishes.
 def print_report():
