@@ -3,3 +3,4 @@
 # Currently, they take ~40 hours with single-threaded SSL Labs API requests
 # to 500+ domains, and subdomain gathering and scanning.
 0 0 * * 1,3,5 PULSE_ENV=production /bin/bash /opt/scan/pulse/deploy/cron.sh > /opt/logs/pulse/cron.log 2>&1
+0 0 1 * * SCANNERS=pshtt,a11y,third_parties /bin/bash /opt/scan/pulse/deploy/cron.sh > /opt/logs/pulse/cron.log 2>&1
