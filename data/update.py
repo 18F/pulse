@@ -51,7 +51,7 @@ BUCKET_NAME = META['bucket']
 # domain-scan information
 SCAN_TARGET = os.path.join(this_dir, "./output/scan")
 SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
-SCANNERS = os.environ.get("SCANNERS", "pshtt,analytics,tls")
+SCANNERS = os.environ.get("SCANNERS", "pshtt,analytics,tls,ally,third_parties")
 ANALYTICS_URL = os.environ.get("ANALYTICS_URL", META["data"]["analytics_url"])
 
 # subdomain gathering/scanning information
