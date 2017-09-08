@@ -175,7 +175,7 @@ def scan(options):
 
   full_command =[
     SCAN_COMMAND, DOMAINS,
-    scanners, analytics, output, a11y_config, a11y_redirects
+    scanners, analytics, output, a11y_config, a11y_redirects,
     "--debug",
     "--sort"
   ]
