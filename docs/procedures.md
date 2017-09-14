@@ -25,7 +25,7 @@ These accounts are created for developers that need access to contribute code an
 
 ### GitHub Access 
 
-The System owner and current project developers need commit rights to pulse.cio.gov project repositories ([here](https://github.com/18F/domain) and [here](https://github.com/18f/domain-scan).  The system owner manages this access, granting access to new project developers when they come onboard and removing access when they leave.  
+The System owner and current project developers need commit rights to pulse.cio.gov project repositories ([here](https://github.com/18F/pulse) and [here](https://github.com/18f/domain-scan).  The system owner manages this access, granting access to new project developers when they come onboard and removing access when they leave.  
 
 Specifically, current developers are managed as the `pulse.cio.gov` team in the 18F GitHub organization.   
 
