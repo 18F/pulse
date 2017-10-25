@@ -92,20 +92,15 @@ from app.data import LABELS
 # This method blows away the database and rebuilds it from the given data.
 
 # options (for debugging)
-# --wipe - wipe the database and rebuild agencies/domains
-#          defaults to true, set to false to keep them
 
 def run(date, options):
   if date is None:
     date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
 
-  wipe = options.get("wipe", True)
-
   # Reset the database.
-  if wipe:
-    print("Clearing the database.")
-    models.clear_database()
-    Report.create(date)
+  print("Clearing the database.")
+  models.clear_database()
+  Report.create(date)
 
   # Read in domains and agencies from domains.csv.
   # Returns dicts of values ready for saving as Domain and Agency objects.
@@ -150,13 +145,10 @@ def run(date, options):
   sorted_agencies = list(agencies.keys())
   sorted_agencies.sort()
 
-  if wipe:
-    print("Creating all domains.")
-    Domain.create_all(domains[domain_name] for domain_name in sorted_domains)
-    print("Creating all agencies.")
-    Agency.create_all(agencies[agency_name] for agency_name in sorted_agencies)
-
-  exit(1)
+  print("Creating all domains.")
+  Domain.create_all(domains[domain_name] for domain_name in sorted_domains)
+  print("Creating all agencies.")
+  Agency.create_all(agencies[agency_name] for agency_name in sorted_agencies)
 
   # Calculate high-level per-domain conclusions for each report.
   domain_reports, subdomain_reports = process_domains(domains, subdomains, agencies, parent_scan_data, subdomain_scan_data)
