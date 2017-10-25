@@ -16,6 +16,7 @@ db = TinyDB(os.path.join(this_dir, '../data/db.json'))
 def clear_database():
   db.purge_tables()
 
+q = Query()
 
 class Report:
   # report_date (string, YYYY-MM-DD)
@@ -55,22 +56,30 @@ class Report:
 class Domain:
   # domain (string)
   # agency_slug (string)
+  # is_parent (boolean)
+  #
   # agency_name (string)
   # branch (string, legislative/judicial/executive)
+  #
+  # parent_domain (string)
+  # sources (array of strings)
   #
   # live? (boolean)
   # redirect? (boolean)
   # canonical (string, URL)
   #
   # https: {
-  #   [many things],
+  #   uses:
+  #   enforces:
+  #   hsts
+  #   modern
+  #
   #   subdomains: {
-  #     [censys, url, etc.] {
-  #       eligible,
-  #       uses,
-  #       enforces,
-  #       hsts
-  #     }
+  #     eligible (int)
+  #     uses (int)
+  #     enforces (int)
+  #     hsts (int)
+  #     modern (int)
   #   }
   # },
   # analytics: {
@@ -83,6 +92,7 @@ class Domain:
 
   def create_all(iterable):
     return db.table('domains').insert_multiple(iterable)
+
 
   def update(domain_name, data):
     return db.table('domains').update(
@@ -99,11 +109,7 @@ class Domain:
     )
 
   def find(domain_name):
-    domains = db.table('domains').search(where('domain') == domain_name)
-    if len(domains) > 0:
-      return domains[0]
-    else:
-      return None
+    return db.table('domains').get(q.domain == domain_name)
 
   def eligible(report_name):
     return db.table('domains').search(
@@ -119,6 +125,8 @@ class Domain:
   def db():
     return db
 
+  def all():
+    return db.table('domains').all()
 
   def to_csv(domains, report_type):
     output = io.StringIO()
@@ -174,7 +182,6 @@ class Domain:
     return output.getvalue()
 
 
-
 class Agency:
   # agency_slug (string)
   # agency_name (string)
@@ -186,13 +193,8 @@ class Agency:
   #   uses (number)
   #   enforces (number)
   #   hsts (number)
-  #   grade (number, >= A-)
-  #   subdomains {
-  #     eligible (number)
-  #     uses (number)
-  #     enforces (number)
-  #     hsts (number)
-  #   }
+  #   modern (number)
+  #   preloaded (number)
   # }
   # analytics {
   #   eligible (number)

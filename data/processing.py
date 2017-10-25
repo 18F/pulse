@@ -104,10 +104,13 @@ def run(date, options):
 
   # Read in domains and agencies from domains.csv.
   # Returns dicts of values ready for saving as Domain and Agency objects.
-  domains, agencies, subdomains = load_domain_data()
+  #
+  # Also returns gathered subdomains, which need more filtering to be useful.
+  domains, agencies, gathered_subdomains = load_domain_data()
 
   # Read in domain-scan CSV data.
-  parent_scan_data, subdomain_scan_data = load_scan_data(domains, subdomains)
+  parent_scan_data = load_parent_scan_data(domains)
+  subdomains, subdomain_scan_data = load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains)
 
   # Load in some manual exclusion data.
   analytics_ineligible = yaml.safe_load(open(os.path.join(this_dir, "ineligible/analytics.yml")))
@@ -115,13 +118,16 @@ def run(date, options):
   for domain in analytics_ineligible:
     analytics_ineligible_map[domain] = True
 
-  # Pull out a few pshtt.csv fields as general domain-level metadata.
+  # Capture manual exclusions and pull out some high-level data from pshtt.
   for domain_name in parent_scan_data.keys():
+
+    # mark manual ineligiblity for analytics if present
     analytics = parent_scan_data[domain_name].get('analytics', None)
     if analytics:
       ineligible = analytics_ineligible_map.get(domain_name, False)
       domains[domain_name]['exclude']['analytics'] = ineligible
 
+    # Pull out a few pshtt.csv fields as general domain-level metadata.
     pshtt = parent_scan_data[domain_name].get('pshtt', None)
     if pshtt is None:
       # generally means scan was on different domains.csv, but
@@ -137,18 +143,30 @@ def run(date, options):
       domains[domain_name]['redirect'] = boolean_for(pshtt['Redirect'])
       domains[domain_name]['canonical'] = pshtt['Canonical URL']
 
+  # Prepare subdomains the same way
+  for subdomain_name in subdomain_scan_data.keys():
+    pshtt = subdomain_scan_data[subdomain_name].get('pshtt')
+    subdomains[subdomain_name]['live'] = boolean_for(pshtt['Live'])
+    subdomains[subdomain_name]['redirect'] = boolean_for(pshtt['Redirect'])
+    subdomains[subdomain_name]['canonical'] = pshtt['Canonical URL']
 
   # Save what we've got to the database so far.
 
   sorted_domains = list(domains.keys())
   sorted_domains.sort()
+  sorted_subdomains = list(subdomains.keys())
+  sorted_subdomains.sort()
   sorted_agencies = list(agencies.keys())
   sorted_agencies.sort()
 
   print("Creating all domains.")
   Domain.create_all(domains[domain_name] for domain_name in sorted_domains)
+  print("Creating all subdomains.")
+  Domain.create_all(subdomains[subdomain_name] for subdomain_name in sorted_subdomains)
   print("Creating all agencies.")
   Agency.create_all(agencies[agency_name] for agency_name in sorted_agencies)
+
+  exit(1)
 
   # Calculate high-level per-domain conclusions for each report.
   domain_reports, subdomain_reports = process_domains(domains, subdomains, agencies, parent_scan_data, subdomain_scan_data)
@@ -186,7 +204,7 @@ def load_domain_data():
 
   domain_map = {}
   agency_map = {}
-  subdomain_map = {}
+  gathered_subdomain_map = {}
 
   # if domains.csv wasn't cached, download it anew
 
@@ -224,6 +242,7 @@ def load_domain_data():
           'agency_name': agency_name,
           'agency_slug': agency_slug,
           'branch': branch,
+          'is_parent': True,
           'exclude': {}
         }
 
@@ -246,29 +265,26 @@ def load_domain_data():
       subdomain_name = row[0].lower().strip()
       base_domain = row[1].lower().strip()
 
-      if subdomain_name not in subdomain_map:
+      if subdomain_name not in gathered_subdomain_map:
         # check each source
         sources = []
         for i, source in enumerate(GATHERER_NAMES):
           if boolean_for(row[i+2]):
             sources.append(source)
 
-        subdomain_map[subdomain_name] = sources
+        gathered_subdomain_map[subdomain_name] = sources
 
 
-  return domain_map, agency_map, subdomain_map
+  return domain_map, agency_map, gathered_subdomain_map
 
 
 # Load in data from the CSVs produced by domain-scan.
 # The 'domains' map is used to ignore any untracked domains.
-def load_scan_data(domains, subdomains):
+def load_parent_scan_data(domains):
 
   parent_scan_data = {}
   for domain_name in domains.keys():
     parent_scan_data[domain_name] = {}
-
-  # we'll only create entries if they are in pshtt and "live"
-  subdomain_scan_data = {}
 
   headers = []
   with open(os.path.join(PARENT_RESULTS, "pshtt.csv"), newline='') as csvfile:
@@ -352,6 +368,16 @@ def load_scan_data(domains, subdomains):
 
         parent_scan_data[domain]['cust_sat'] = dict_row
 
+  return parent_scan_data
+
+
+def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
+
+  # we'll only create entries if they are in pshtt and "live"
+  subdomain_scan_data = {}
+
+  # These will be entries in the Domain table.
+  subdomains = {}
 
   # Next, load in subdomain pshtt data. While we also scan subdomains
   # for sslyze, pshtt is the data backbone for subdomains.
@@ -365,13 +391,17 @@ def load_scan_data(domains, subdomains):
         continue
 
       subdomain = row[0].lower()
-      domain = row[1].lower()
+      parent_domain = row[1].lower()
 
-      if not domains.get(domain):
+      if subdomain not in gathered_subdomains:
+        # print("[%s] Skipping, not a gathered subdomain." % subdomain)
+        continue
+
+      if not domains.get(parent_domain):
         # print("[%s] Skipping, not a subdomain of a tracked domain." % (subdomain))
         continue
 
-      if domains[domain]['branch'] != 'executive':
+      if domains[parent_domain]['branch'] != 'executive':
         # print("[%s] Skipping, not displaying data on subdomains of legislative or judicial domains." % (subdomain))
         continue
 
@@ -383,13 +413,21 @@ def load_scan_data(domains, subdomains):
       if boolean_for(dict_row['Live']):
 
         # Initialize subdomains obj if this is its first one.
-        if parent_scan_data[domain].get('subdomains') is None:
-          parent_scan_data[domain]['subdomains'] = []
+        if parent_scan_data[parent_domain].get('subdomains') is None:
+          parent_scan_data[parent_domain]['subdomains'] = []
 
-        parent_scan_data[domain]['subdomains'].append(subdomain)
+        parent_scan_data[parent_domain]['subdomains'].append(subdomain)
 
         # if there are dupes for some reason, they'll be overwritten
         subdomain_scan_data[subdomain] = {'pshtt': dict_row}
+
+        subdomains[subdomain] = {
+          'domain': subdomain,
+          'parent_domain': parent_domain,
+          'agency_slug': domains[parent_domain]['agency_slug'],
+          'is_parent': False,
+          'sources': gathered_subdomains[subdomain]
+        }
 
   # Load in sslyze subdomain data.
   # Note: if we ever add more subdomain scanners, this loop
@@ -417,7 +455,7 @@ def load_scan_data(domains, subdomains):
       subdomain_scan_data[subdomain]['sslyze'] = dict_row
 
 
-  return parent_scan_data, subdomain_scan_data
+  return subdomains, subdomain_scan_data
 
 # Given the domain data loaded in from CSVs, draw conclusions,
 # and filter/transform data into form needed for display.
