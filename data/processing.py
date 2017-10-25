@@ -6,6 +6,7 @@
 #
 # * pshtt.csv - domain-scan, based on pshtt
 # * tls.csv - domain-scan, based on ssllabs-scan
+# * sslyze.csv - domain-scan, based on sslyze
 # * analytics.csv - domain-scan, based on analytics.usa.gov data
 #
 ###
@@ -37,6 +38,9 @@ SUBDOMAIN_SCAN_DATA = os.path.join(this_dir, "./output/subdomains/scan")
 SUBDOMAIN_AGENCY_OUTPUT = os.path.join(this_dir, "./output/subdomains/agencies/")
 # Maps domain-scan names to specific sources,
 # and whitelists which sources we know how to process.
+
+# TODO: add EOT, or make this dynamic (new things for dotgov-scanning
+#   should make this easy to do dynamically, via dap.csv)
 SUBDOMAIN_SOURCES = {'censys': 'censys', 'url': 'dap'}
 
 A11Y_ERRORS = {
