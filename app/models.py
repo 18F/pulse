@@ -81,6 +81,9 @@ class Domain:
   def create(data):
     return db.table('domains').insert(data)
 
+  def create_all(iterable):
+    return db.table('domains').insert_multiple(iterable)
+
   def update(domain_name, data):
     return db.table('domains').update(
       data,
@@ -206,6 +209,9 @@ class Agency:
   # Create a new Agency record with a given name, slug, and total domain count.
   def create(data):
     return db.table('agencies').insert(data)
+
+  def create_all(iterable):
+    return db.table('agencies').insert_multiple(iterable)
 
   # For a given agency, add a report.
   def add_report(slug, report_name, report):

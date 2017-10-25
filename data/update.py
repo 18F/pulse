@@ -8,11 +8,13 @@
 import subprocess
 import datetime
 import os
-import sys
-import yaml
 import ujson
 import logging
 
+# Import all the constants from data/env.py.
+from data.env import *
+
+# Import processing just for the function call.
 import data.processing
 
 # Orchestrate the overall regular Pulse update process.
@@ -34,51 +36,6 @@ import data.processing
 #    - Depends on the AWS CLI and access credentials already being configured.
 #    - TODO: Consider moving from aws CLI to Python library.
 
-this_dir = os.path.dirname(__file__)
-
-# App-level metadata.
-META = yaml.safe_load(open(os.path.join(this_dir, "../meta.yml")))
-DOMAINS = os.environ.get("DOMAINS", META["data"]["domains_url"])
-
-# domain-scan paths (MUST be set in env)
-SCAN_COMMAND = os.environ.get("DOMAIN_SCAN_PATH", None)
-GATHER_COMMAND = os.environ.get("DOMAIN_GATHER_PATH", None)
-
-
-# post-processing and uploading information
-PARENTS_DATA = os.path.join(this_dir, "./output/parents")
-ALL_DATA = os.path.join(this_dir, "./output/all")
-ALL_DATA_GATHERED = os.path.join(this_dir, "./output/all/gather")
-ALL_DATA_SCANNED = os.path.join(this_dir, "./output/all/scan")
-
-DB_DATA = os.path.join(this_dir, "./db.json")
-BUCKET_NAME = META['bucket']
-
-# DAP source data
-ANALYTICS_URL = META["data"]["analytics_url"]
-
-# a11y source data
-A11Y_CONFIG = META["a11y"]["config"]
-A11Y_REDIRECTS = META["a11y"]["redirects"]
-
-### Parent domain scanning information
-#
-SCANNERS = os.environ.get("SCANNERS", "pshtt,analytics,a11y,third_parties")
-
-### subdomain gathering/scanning information
-GATHER_SUFFIX = ".gov"
-
-# names and options must be in corresponding order
-GATHERER_NAMES = ["censys", "dap", "eot2016", "parents"]
-GATHERER_OPTIONS = [
-  "--export",
-  "--dap=%s" % META["data"]["analytics_subdomains_url"],
-  "--eot2016=%s" % META["data"]["eot_subdomains_url"],
-  "--parents=%s" % DOMAINS
-]
-
-# Run these scanners over *all* (which is a lot) discovered subdomains.
-SUBDOMAIN_SCANNERS = "pshtt,sslyze"
 
 
 # Options:
@@ -122,12 +79,12 @@ def run(options):
     print("Downloading latest production scan data from S3.")
     print()
     live_scanned = "s3://%s/live/scan/" % (BUCKET_NAME)
-    shell_out(["aws", "s3", "sync", live_scanned, SCANNED_DATA])
+    shell_out(["aws", "s3", "sync", live_scanned, PARENTS_RESULTS])
     print()
     print("Download complete.")
 
   # Sanity check to make sure we have what we need.
-  if not os.path.exists(os.path.join(SCANNED_DATA, "meta.json")):
+  if not os.path.exists(os.path.join(PARENTS_RESULTS, "meta.json")):
     print("No scan metadata downloaded, aborting.")
     exit()
 
@@ -143,7 +100,7 @@ def run(options):
   # 2. Process and load data into Pulse's database.
   print("[%s] Loading data into Pulse." % the_date)
   print()
-  data.processing.run(the_date)
+  data.processing.run(the_date, options)
   print()
   print("[%s] Data now loaded into Pulse." % the_date)
 
@@ -272,27 +229,6 @@ def shell_out(command, env=None):
         logging.warn("Error running %s." % (str(command)))
         exit(1)
         return None
-
-# Quick and dirty CLI options parser.
-def options():
-  options = {}
-  for arg in sys.argv[1:]:
-    if arg.startswith("--"):
-
-      if "=" in arg:
-        key, value = arg.split('=')
-      else:
-        key, value = arg, "true"
-
-      key = key.split("--")[1]
-      key = key.lower()
-      value = value.lower()
-
-      if value == 'true': value = True
-      elif value == 'false': value = False
-      options[key] = value
-
-  return options
 
 
 ### Run when executed.
