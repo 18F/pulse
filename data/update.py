@@ -159,7 +159,7 @@ def scan_parents(options):
     full_command += ["--serial"]
 
   # In real mode, ignore cached data, and parallelize.
-  else:
+  elif not options.get("cache"):
     full_command += ["--force"]
 
   shell_out(full_command)
