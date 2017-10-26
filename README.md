@@ -15,7 +15,7 @@ How the .gov domain space is doing at best practices and federal requirements.
 
 ## Setup
 
-Pulse is a [Flask](http://flask.pocoo.org/) app written in **Python 3**. We recommend [pyenv](https://github.com/yyuu/pyenv) for easy Python version management.
+Pulse is a [Flask](http://flask.pocoo.org/) app written for **Python 3.5 and up**. We recommend [pyenv](https://github.com/yyuu/pyenv) for easy Python version management.
 
 * Install dependencies:
 

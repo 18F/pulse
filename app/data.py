@@ -8,7 +8,7 @@ LABELS = {
   'redirect': 'Redirect',
   'agency_name': 'Agency',
   'base': 'Base Domain',
-  'source': 'Source',
+  'source': 'Sources',
 
   'total_domains': 'Number of Domains',
 
@@ -17,13 +17,12 @@ LABELS = {
     'enforces': 'Enforces HTTPS',
     'hsts': 'Strict Transport Security (HSTS)',
     'preloaded': 'Preloaded (recommended)',
-    'grade': 'SSL Labs Grade',
+    'bod_crypto': 'BOD 18-01 Requirements',
 
     'hsts_age': 'HSTS max-age',
-    'grade_agencies': 'SSL Labs (A- or higher)',
-    'fs': 'Forward Secrecy',
+    'bod_agencies': 'BOD 18-01 Requirements',
+    '3des': '3DES',
     'rc4': 'RC4',
-    'sig': 'Signature Algorithm',
     'ssl3': 'SSLv3',
     'tls12': 'TLSv1.2',
   },
@@ -70,15 +69,10 @@ FIELD_MAPPING = {
       2: "Yes"  # Yes
     },
 
-    'grade': {
+    'bod_crypto': {
       -1: "",
-      0: "F",
-      1: "T",
-      2: "C",
-      3: "B",
-      4: "A-",
-      5: "A",
-      6: "A+"
+      0: "No",
+      1: "Yes"
     }
   },
 
@@ -91,12 +85,7 @@ FIELD_MAPPING = {
 }
 
 CSV_FIELDS = {
-  'common': ['domain', 'canonical', 'branch', 'agency_name', 'redirect'],
-  'https': ['uses',  'enforces', 'hsts', 'preloaded', 'grade'],
+  'common': ['domain', 'base', 'canonical', 'agency_name', 'sources'],
+  'https': ['uses', 'enforces', 'hsts', 'preloaded', 'bod_crypto'],
   'analytics': ['participating']
-}
-
-CSV_FIELDS_SUBDOMAINS = {
-  'common': ['domain', 'base', 'agency_name', 'source'],
-  'https': ['uses', 'enforces', 'hsts']
 }

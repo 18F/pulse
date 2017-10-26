@@ -16,9 +16,9 @@ GATHER_COMMAND = os.environ.get("DOMAIN_GATHER_PATH", None)
 # post-processing and uploading information
 PARENTS_DATA = os.path.join(this_dir, "./output/parents")
 PARENTS_RESULTS = os.path.join(this_dir, "./output/parents/results")
-ALL_DATA = os.path.join(this_dir, "./output/all")
-ALL_DATA_GATHERED = os.path.join(this_dir, "./output/all/gather")
-ALL_DATA_SCANNED = os.path.join(this_dir, "./output/all/scan")
+SUBDOMAIN_DATA = os.path.join(this_dir, "./output/subdomains")
+SUBDOMAIN_DATA_GATHERED = os.path.join(this_dir, "./output/subdomains/gather")
+SUBDOMAIN_DATA_SCANNED = os.path.join(this_dir, "./output/subdomains/scan")
 
 DB_DATA = os.path.join(this_dir, "./db.json")
 BUCKET_NAME = META['bucket']

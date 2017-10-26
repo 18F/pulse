@@ -3,7 +3,7 @@ import os
 import io
 import datetime
 import csv
-from app.data import CSV_FIELDS, CSV_FIELDS_SUBDOMAINS, FIELD_MAPPING, LABELS
+from app.data import CSV_FIELDS, FIELD_MAPPING, LABELS
 
 this_dir = os.path.dirname(__file__)
 db = TinyDB(os.path.join(this_dir, '../data/db.json'))
@@ -16,6 +16,7 @@ db = TinyDB(os.path.join(this_dir, '../data/db.json'))
 def clear_database():
   db.purge_tables()
 
+# convenience
 q = Query()
 
 class Report:
@@ -24,8 +25,7 @@ class Report:
   # https.uses (number)
   # https.enforces (number)
   # https.hsts (number)
-  # https.subdomains_eligible
-  # https.subdomains_uses
+  # https.bod (number)
   # analytics.eligible (number)
   # analytics.participates (number)
 
@@ -69,19 +69,17 @@ class Domain:
   # canonical (string, URL)
   #
   # https: {
-  #   uses:
-  #   enforces:
-  #   hsts
-  #   modern
+  #   [many things]
   #
-  #   subdomains: {
+  #   totals: {
   #     eligible (int)
   #     uses (int)
   #     enforces (int)
   #     hsts (int)
-  #     modern (int)
+  #     bod_crypto (int)
   #   }
-  # },
+  # }
+  #
   # analytics: {
   #   participating? (boolean)
   # }
@@ -113,12 +111,17 @@ class Domain:
 
   def eligible(report_name):
     return db.table('domains').search(
-      Query()[report_name].exists()
+      Query()[report_name]['eligible']
+    )
+
+  def eligible_parents(report_name):
+    return db.table('domains').search(
+      Query()[report_name]['eligible_zone']
     )
 
   def eligible_for_agency(agency_slug, report_name):
     return db.table('domains').search(
-      (Query()[report_name].exists()) &
+      (Query()[report_name]['eligible']) &
       (where("agency_slug") == agency_slug)
     )
 
@@ -148,34 +151,6 @@ class Domain:
         else:
           row.append(domain[field])
       for field in CSV_FIELDS[report_type]:
-        row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
-      writer.writerow(row)
-
-    return output.getvalue()
-
-  # Given an array of straight subdomain results,
-  def subdomains_to_csv(subdomains):
-    output = io.StringIO()
-    writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC)
-
-    report_type = "https"
-
-    # initialize with a header row
-    header = []
-    for field in CSV_FIELDS_SUBDOMAINS['common']:
-      header.append(LABELS[field])
-    for field in CSV_FIELDS_SUBDOMAINS[report_type]:
-      header.append(LABELS[report_type][field])
-    writer.writerow(header)
-
-    for domain in subdomains:
-      row = []
-      for field in CSV_FIELDS_SUBDOMAINS['common']:
-        if FIELD_MAPPING.get(field):
-          row.append(FIELD_MAPPING[field][domain[field]])
-        else:
-          row.append(domain[field])
-      for field in CSV_FIELDS_SUBDOMAINS[report_type]:
         row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
       writer.writerow(row)
 

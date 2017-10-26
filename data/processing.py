@@ -3,11 +3,12 @@
 # Given, in the data/output/parents/results directory:
 #
 # * pshtt.csv - domain-scan, based on pshtt
+# * sslyze.csv - domain-scan, based on sslyze.
 # * analytics.csv - domain-scan, based on analytics.usa.gov data
 # * a11y.csv (optional) - pa11y scan data
 # * third_parties.csv (optional) - third party scan data
 #
-# And, in the data/output/all directory:
+# And, in the data/output/subdomains directory:
 #
 # * gather/results/gathered.csv - all gathered .gov hostnames
 # * scan/results/pshtt.csv - pshtt scan for all hostnames
@@ -39,8 +40,8 @@ PARENT_CACHE = os.path.join(PARENTS_DATA, "./cache")
 PARENT_DOMAINS_CSV = os.path.join(PARENT_CACHE, "domains.csv")
 
 # Base directory for scanned subdomain data.
-ALL_DATA_AGENCIES = os.path.join(ALL_DATA, "./agencies")
-ALL_DOMAINS_CSV = os.path.join(ALL_DATA_GATHERED, "results", "gathered.csv")
+SUBDOMAIN_DATA_AGENCIES = os.path.join(SUBDOMAIN_DATA, "./agencies")
+SUBDOMAIN_DOMAINS_CSV = os.path.join(SUBDOMAIN_DATA_GATHERED, "results", "gathered.csv")
 
 A11Y_ERRORS = {
   '1_1': 'Missing Image Descriptions',
@@ -96,11 +97,6 @@ from app.data import LABELS
 def run(date, options):
   if date is None:
     date = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
-
-  # Reset the database.
-  print("Clearing the database.")
-  models.clear_database()
-  Report.create(date)
 
   # Read in domains and agencies from domains.csv.
   # Returns dicts of values ready for saving as Domain and Agency objects.
@@ -159,6 +155,20 @@ def run(date, options):
   sorted_agencies = list(agencies.keys())
   sorted_agencies.sort()
 
+  # Calculate high-level per-domain conclusions for each report.
+  # Overwrites `domains` and `subdomains` in-place.
+  process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_scan_data)
+
+  # Reset the database.
+  print("Clearing the database.")
+  models.clear_database()
+
+  # Calculate agency-level summaries. Updates `agencies` in-place.
+  update_agency_totals(agencies, domains, subdomains)
+
+  # Calculate government-wide summaries.
+  report = full_report(domains, subdomains)
+
   print("Creating all domains.")
   Domain.create_all(domains[domain_name] for domain_name in sorted_domains)
   print("Creating all subdomains.")
@@ -166,37 +176,12 @@ def run(date, options):
   print("Creating all agencies.")
   Agency.create_all(agencies[agency_name] for agency_name in sorted_agencies)
 
-  exit(1)
-
-  # Calculate high-level per-domain conclusions for each report.
-  domain_reports, subdomain_reports = process_domains(domains, subdomains, agencies, parent_scan_data, subdomain_scan_data)
-
-  # Convenience: write out full subdomain reports, including sources
-  # - CSVs per-agency
-  # - One big CSV for everything
-  save_subdomain_reports(subdomain_reports)
-
-  # Save them in the database.
-  sorted_types = list(domain_reports.keys())
-  sorted_types.sort()
-  for report_type in sorted_types:
-
-    sorted_reports = list(domain_reports[report_type].keys())
-    sorted_reports.sort()
-
-    for domain_name in sorted_reports:
-      print("[%s][%s] Adding report." % (report_type, domain_name))
-      Domain.add_report(domain_name, report_type, domain_reports[report_type][domain_name])
-
-  # Calculate agency-level summaries.
-  update_agency_totals()
-
   # Create top-level summaries.
-  reports = latest_reports()
-  for report in reports:
-    Report.update(report)
+  print("Creating government-wide totals.")
+  Report.create(report)
 
-  print_report()
+  # Print and exit
+  print_report(report)
 
 
 # Reads in input CSVs (domain list).
@@ -257,7 +242,7 @@ def load_domain_data():
       else:
         agency_map[agency_slug]['total_domains'] += 1
 
-  with open(ALL_DOMAINS_CSV, newline='') as csvfile:
+  with open(SUBDOMAIN_DOMAINS_CSV, newline='') as csvfile:
     for row in csv.reader(csvfile):
       if row[0].lower().startswith("domain"):
         continue
@@ -302,6 +287,23 @@ def load_parent_scan_data(domains):
       for i, cell in enumerate(row):
         dict_row[headers[i]] = cell
       parent_scan_data[domain]['pshtt'] = dict_row
+
+  headers = []
+  with open(os.path.join(PARENT_RESULTS, "sslyze.csv"), newline='') as csvfile:
+    for row in csv.reader(csvfile):
+      if (row[0].lower() == "domain"):
+        headers = row
+        continue
+
+      domain = row[0].lower()
+      if not domains.get(domain):
+        # print("[sslyze] Skipping %s, not a federal domain from domains.csv." % domain)
+        continue
+
+      dict_row = {}
+      for i, cell in enumerate(row):
+        dict_row[headers[i]] = cell
+      parent_scan_data[domain]['sslyze'] = dict_row
 
   # Now, analytics measurement.
 
@@ -381,7 +383,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
 
   # Next, load in subdomain pshtt data. While we also scan subdomains
   # for sslyze, pshtt is the data backbone for subdomains.
-  pshtt_subdomains_csv = os.path.join(ALL_DATA_SCANNED, "results", "pshtt.csv")
+  pshtt_subdomains_csv = os.path.join(SUBDOMAIN_DATA_SCANNED, "results", "pshtt.csv")
 
   headers = []
   with open(pshtt_subdomains_csv, newline='') as csvfile:
@@ -425,6 +427,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
           'domain': subdomain,
           'parent_domain': parent_domain,
           'agency_slug': domains[parent_domain]['agency_slug'],
+          'branch': domains[parent_domain]['branch'],
           'is_parent': False,
           'sources': gathered_subdomains[subdomain]
         }
@@ -432,7 +435,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
   # Load in sslyze subdomain data.
   # Note: if we ever add more subdomain scanners, this loop
   # could be genericized and iterated over really easily.
-  sslyze_subdomains_csv = os.path.join(ALL_DATA_SCANNED, "results", "sslyze.csv")
+  sslyze_subdomains_csv = os.path.join(SUBDOMAIN_DATA_SCANNED, "results", "sslyze.csv")
 
   headers = []
   with open(sslyze_subdomains_csv, newline='') as csvfile:
@@ -461,131 +464,190 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
 # and filter/transform data into form needed for display.
 def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_scan_data):
 
-  reports = {
-    # includes ample subdomain data
-    'https': {},
-
-    # focused on parent domains only
-    'analytics': {},
-    'a11y': {},
-    'cust_sat': {}
-  }
-
-  # Used to generate per-agency rolled-up subdomain downloads.
-  subdomain_reports = {
-    'https': {}
-  }
-
   # For each domain, determine eligibility and, if eligible,
   # use the scan data to draw conclusions.
   for domain_name in domains.keys():
 
+    ### HTTPS
+    #
+    # For HTTPS, we calculate individual reports for every subdomain.
+
+    https_parent = {
+      'eligible': False, # domain eligible itself (is it live?)
+      'eligible_zone': False, # zone eligible (itself or any live subdomains?)
+    }
+    eligible_children = []
+    eligible_zone = False
+
+    for subdomain_name in parent_scan_data[domain_name].get('subdomains', []):
+
+      if eligible_for_https(subdomains[subdomain_name]):
+        eligible_children.append(subdomain_name)
+        subdomains[subdomain_name]['https'] = https_behavior_for(
+            subdomain_name,
+            subdomain_scan_data[subdomain_name]['pshtt'],
+            subdomain_scan_data[subdomain_name].get('sslyze', None)
+        )
+
+    # ** syntax merges dicts, available in 3.5+
+    if eligible_for_https(domains[domain_name]):
+      https_parent = {**https_parent, **https_behavior_for(
+        domain_name,
+        parent_scan_data[domain_name]['pshtt'],
+        parent_scan_data[domain_name].get('sslyze', None)
+      )}
+      https_parent['eligible_zone'] = True
+    # if eligible only for subdomains, initialize the dict
+    elif len(eligible_children) > 0:
+      https_parent['eligible_zone'] = True
+
+    # Put together eligible subdomains, and parent domain if eligible.
+    eligible_reports = [subdomains[name]['https'] for name in eligible_children]
+    if https_parent['eligible']:
+      eligible_reports = [https_parent] + eligible_reports
+
+    https_parent['totals'] = total_https_report(eligible_reports)
+
+    domains[domain_name]['https'] = https_parent
+
+
+    ### Everything else
+    #
+    # For other reports, we still focus only on parent domains.
     if eligible_for_analytics(domains[domain_name]):
-      reports['analytics'][domain_name] = analytics_report_for(
+      domains[domain_name]['analytics'] = analytics_report_for(
         domain_name, domains[domain_name], parent_scan_data
       )
 
-    if eligible_for_https(domains[domain_name]):
-      reports['https'][domain_name] = https_report_for(
-        domain_name, domains[domain_name], parent_scan_data, subdomain_reports
-      )
-
     if eligible_for_a11y(domains[domain_name]):
-      reports['a11y'][domain_name] = a11y_report_for(
+      domains[domain_name]['a11y'] = a11y_report_for(
         domain_name, domains[domain_name], parent_scan_data
       )
 
     if eligible_for_cust_sat(domains[domain_name]):
-      reports['cust_sat'][domain_name] = cust_sat_report_for(
+      domains[domain_name]['cust_sat'] = cust_sat_report_for(
         domain_name, domains[domain_name], parent_scan_data
       )
 
-  return reports, subdomain_reports
+# Given a list of domains or subdomains, quick filter to which
+# are eligible for this report, optionally for an agency.
+def eligible_for(report, hosts, agency=None):
+  return [host[report] for hostname, host in hosts.items() if (host.get(report) and host[report]['eligible'] and ((agency is None) or (host['agency_slug'] == agency['slug'])))]
 
 # Go through each report type and add agency totals for each type.
-def update_agency_totals():
-  all_agencies = Agency.all()
+def update_agency_totals(agencies, domains, subdomains):
 
   # For each agency, update their report counts for every domain they have.
-  for agency in all_agencies:
+  for agency_slug in agencies.keys():
+    agency = agencies[agency_slug]
 
-    # TODO: Do direct DB queries for answers, rather than iterating.
+    # HTTPS. Parent and subdomains.
+    print("[%s][%s] Totalling report." % (agency['slug'], 'https'))
+    eligible = eligible_for('https', domains, agency) + eligible_for('https', subdomains, agency)
+    agency['https'] = total_https_report(eligible)
 
-    # Analytics
 
-    eligible = Domain.eligible_for_agency(agency['slug'], 'analytics')
-
-    agency_report = {
+    # Analytics. Parent domains.
+    print("[%s][%s] Totalling report." % (agency['slug'], 'analytics'))
+    eligible = eligible_for('analytics', domains, agency)
+    totals = {
       'eligible': len(eligible),
       'participating': 0
     }
-
-    for domain in eligible:
-      report = domain['analytics']
+    for report in eligible:
       if report['participating'] == True:
-        agency_report['participating'] += 1
-
-    print("[%s][%s] Adding report." % (agency['slug'], 'analytics'))
-    Agency.add_report(agency['slug'], 'analytics', agency_report)
+        totals['participating'] += 1
+    agency['analytics'] = totals
 
 
-    # HTTPS
-    eligible = Domain.eligible_for_agency(agency['slug'], 'https')
-    eligible_https = list(map(lambda w: w['https'], eligible))
-    agency_report = total_https_report(eligible_https)
-    # agency_report['subdomains'] = total_https_subdomain_report(eligible)
-
-    print("[%s][%s] Adding report." % (agency['slug'], 'https'))
-    Agency.add_report(agency['slug'], 'https', agency_report)
-
-
-    # A11Y
-    eligible = Domain.eligible_for_agency(agency['slug'], 'a11y')
+    # Accessibility. Parent domains.
+    print("[%s][%s] Totalling report." % (agency['slug'], 'a11y'))
+    eligible = eligible_for('a11y', domains, agency)
     pages_count = len(eligible)
     errors = {e:0 for e in A11Y_ERRORS.values()}
-    for domain in eligible:
-      a11y = domain['a11y']
+    for a11y in eligible:
       for error in a11y['errorlist']:
         errors[error] += a11y['errorlist'][error]
     total_errors = sum(errors.values())
     avg_errors_per_page = (
       'n/a' if pages_count == 0 else round(float(total_errors) / pages_count, 2)
     )
-    agency_report = {
-      'pages_count': pages_count,
+    totals = {
       'eligible': pages_count,
+      'pages_count': pages_count,
       'Average Errors per Page': avg_errors_per_page
     }
     if pages_count:
       averages = ({
-        e: round(mean([d['a11y']['errorlist'][e] for d in eligible]), 2)
+        e: round(mean([report['errorlist'][e] for report in eligible]), 2)
         for e in A11Y_ERRORS.values()
       })
     else:
       averages = {e: 'n/a' for e in A11Y_ERRORS.values()}
-    agency_report.update(averages)
-
-    print("[%s][%s] Adding report." % (agency['slug'], 'a11y'))
-    Agency.add_report(agency['slug'], 'a11y', agency_report)
+    totals.update(averages)
+    agency['a11y'] = totals
 
 
-
-    # Customer satisfaction
-    eligible = Domain.eligible_for_agency(agency['slug'], 'cust_sat')
-    agency_report = {
+    # Customer satisfaction. Parent domains.
+    print("[%s][%s] Totalling report." % (agency['slug'], 'cust_sat'))
+    eligible = eligible_for('cust_sat', domains, agency)
+    agency['cust_sat'] = {
       'eligible': len(eligible),
-      'participating': 0
+      'participating': len([report for report in eligible if report['participating']])
     }
-    agency_report['participating'] += len([d for d in eligible if
-                                           d['cust_sat']['participating']])
-    print("[%s][%s] Adding report." % (agency['slug'], 'cust_sat'))
-    Agency.add_report(agency['slug'], 'cust_sat', agency_report)
+
+# Create a Report about each tracked stat.
+def full_report(domains, subdomains):
+
+  full = {}
+
+  # HTTPS. Parent and subdomains.
+  print("[https] Totalling full report.")
+  eligible = eligible_for('https', domains) + eligible_for('https', subdomains)
+  full['https'] = total_https_report(eligible)
+
+  # Analytics. Parent domains only.
+  print("[analytics] Totalling full report.")
+  eligible = eligible_for('analytics', domains)
+  participating = 0
+  for report in eligible:
+    if report['participating'] == True:
+      participating += 1
+  full['analytics'] = {
+    'eligible': len(eligible),
+    'participating': participating
+  }
 
 
-# TODO: A domain can also be eligible if it has eligible subdomains.
-#       Has display ramifications.
+  # a11y report. Parent domains.
+  # Constructed very differently.
+  print("[a11y] Totalling full report.")
+  eligible_domains = [host for hostname, host in domains.items() if (host.get('a11y') and host['a11y']['eligible'])]
+  full['a11y'] = {}
+  for domain in eligible_domains:
+    full['a11y'][domain['domain']] = domain['a11y']['error_details']
+
+
+  # Customer satisfaction report. Parent domains.
+  print("[cust_sat] Totalling full report.")
+  eligible = eligible_for('cust_sat', domains)
+  participating = 0
+  for report in eligible:
+    if report['participating']:
+      participating += 1
+  full['cust_sat'] = {
+    'eligible': len(eligible),
+    'participating': participating
+  }
+
+  return full
+
+
 def eligible_for_https(domain):
-  return (domain["live"] == True)
+  return (
+    (domain["live"] == True) and
+    (domain["branch"] == "executive")
+  )
 
 def eligible_for_analytics(domain):
   return (
@@ -616,11 +678,13 @@ def analytics_report_for(domain_name, domain, parent_scan_data):
   pshtt = parent_scan_data[domain_name]['pshtt']
 
   return {
+    'eligible': True,
     'participating': boolean_for(analytics['Participates in Analytics'])
   }
 
 def a11y_report_for(domain_name, domain, parent_scan_data):
   a11y_report = {
+    'eligible': True,
     'errors': 0,
     'errorlist': {e:0 for e in A11Y_ERRORS.values()},
     'error_details': {e:[] for e in A11Y_ERRORS.values()}
@@ -644,6 +708,7 @@ def get_a11y_error_category(code):
 
 def cust_sat_report_for(domain_name, domain, parent_scan_data):
   cust_sat_report = {
+    'eligible': True,
     'service_list': {},
     'participating': False
   }
@@ -660,9 +725,12 @@ def cust_sat_report_for(domain_name, domain, parent_scan_data):
 
   return cust_sat_report
 
-# Given a pshtt report, fill in a dict with the conclusions.
-def https_behavior_for(pshtt):
-  report = {}
+# Given a pshtt report and (optional) sslyze report,
+# fill in a dict with the conclusions.
+def https_behavior_for(name, pshtt, sslyze):
+  report = {
+    'eligible': True
+  }
 
   # assumes that HTTPS would be technically present, with or without issues
   if (pshtt["Downgrades HTTPS"] == "True"):
@@ -761,6 +829,47 @@ def https_behavior_for(pshtt):
   report['hsts_age'] = hsts_age
   report['preloaded'] = preloaded
 
+  ###
+  # Get cipher/protocol data via sslyze for a host.
+
+  ssl2 = None
+  ssl3 = None
+  any_rc4 = None
+  any_3des = None
+
+  # values: unknown or N/A (-1), No (0), Yes (1)
+  bod_crypto = None
+
+  # N/A if no HTTPS
+  if (report['uses'] <= 0):
+    bod_crypto = -1 # N/A
+
+  elif sslyze is None:
+    # print("[https][%s] No sslyze scan data found." % name)
+    bod_crypto = -1 # Unknown
+
+  else:
+    ###
+    # BOD 18-01 (cyber.dhs.gov) cares about SSLv2, SSLv3, RC4, and 3DES.
+    any_rc4 = boolean_for(sslyze["Any RC4"])
+    # todo: kill conditional once everything is synced
+    if sslyze.get("Any 3DES"):
+      any_3des = boolean_for(sslyze["Any 3DES"])
+    ssl2 = boolean_for(sslyze["SSLv2"])
+    ssl3 = boolean_for(sslyze["SSLv3"])
+
+    if any_rc4 or any_3des or ssl2 or ssl3:
+      bod_crypto = 0
+    else:
+      bod_crypto = 1
+
+  report['bod_crypto'] = bod_crypto
+  report['rc4'] = any_rc4
+  report['3des'] = any_3des
+  report['ssl2'] = ssl2
+  report['ssl3'] = ssl3
+
+
   return report
 
 # 'eligible' should be a list of dicts with https report data.
@@ -770,7 +879,7 @@ def total_https_report(eligible):
     'uses': 0,
     'enforces': 0,
     'hsts': 0,
-    'grade': 0
+    'bod_crypto': 0
   }
 
   for report in eligible:
@@ -787,212 +896,16 @@ def total_https_report(eligible):
     if report['hsts'] >= 2:
       total_report['hsts'] += 1
 
-    # Needs to be A- or above
-    if (report.get('grade') is not None) and (report['grade'] >= 4):
-      total_report['grade'] += 1
+    # Needs to be a Yes
+    if report['bod_crypto'] == 1:
+      total_report['bod_crypto'] += 1
 
   return total_report
-
-# Total up the number of eligible subdomains.
-# Ignore preloaded domains.
-def total_https_subdomain_report(eligible):
-  total_report = {
-    'eligible': 0,
-    'uses': 0,
-    'enforces': 0,
-    'hsts': 0
-  }
-
-  for domain in eligible:
-    if domain['https']['preloaded'] == 2:
-      print("[%s] Skipping subdomain calculation, preloaded." % domain['domain'])
-      continue
-
-    subdomains = domain['https'].get('subdomains')
-    if subdomains:
-      for source in SUBDOMAIN_SOURCES:
-        source_data = subdomains.get(source)
-        if source_data:
-          total_report['eligible'] += source_data['eligible']
-          total_report['uses'] += source_data['uses']
-          total_report['enforces'] += source_data['enforces']
-          total_report['hsts'] += source_data['hsts']
-
-  return total_report
-
-
-# HTTPS conclusions for a domain based on pshtt/tls domain-scan data.
-# Modified subdomain_reports in place.
-def https_report_for(domain_name, domain, parent_scan_data, subdomain_reports):
-  pshtt = parent_scan_data[domain_name]['pshtt']
-
-  # Initialize to the value of the pshtt report.
-  # (Moved to own method to make it reusable for subdomains.)
-  report = https_behavior_for(pshtt)
-
-  ###
-  # Include the SSL Labs grade for a domain.
-
-  # We may not have gotten any scan data from SSL Labs - it happens.
-  tls = parent_scan_data[domain_name].get('tls', None)
-
-  fs = None
-  sig = None
-  ssl3 = None
-  tls12 = None
-  rc4 = None
-
-  # Not relevant if no HTTPS
-  if (report['uses'] <= 0):
-    grade = -1 # N/A
-
-  elif tls is None:
-    # print("[https][%s] No TLS scan data found." % domain)
-    grade = -1 # N/A
-
-  else:
-
-    grade = {
-      "F": 0,
-      "T": 1,
-      "C": 2,
-      "B": 3,
-      "A-": 4,
-      "A": 5,
-      "A+": 6
-    }[tls["Grade"]]
-
-    ###
-    # Construct a sentence about the domain's TLS config.
-    #
-    # Consider SHA-1, FS, SSLv3, and TLSv1.2 data.
-
-    fs = int(tls["Forward Secrecy"])
-    sig = tls["Signature Algorithm"]
-    rc4 = boolean_for(tls["RC4"])
-    ssl3 = boolean_for(tls["SSLv3"])
-    tls12 = boolean_for(tls["TLSv1.2"])
-
-  report['grade'] = grade
-
-  report['fs'] = fs
-  report['sig'] = sig
-  report['rc4'] = rc4
-  report['ssl3'] = ssl3
-  report['tls12'] = tls12
-
-  # Initialize subdomain report gatherer if needed.
-  agency = domain['agency_slug']
-  if subdomain_reports['https'].get(agency) is None:
-    subdomain_reports['https'][agency] = []
-
-  # Now load the pshtt data from subdomains, for each source.
-  if parent_scan_data[domain_name].get('subdomains'):
-    report['subdomains'] = {}
-    for source in parent_scan_data[domain_name]['subdomains']:
-      print("[%s][%s] Aggregating subdomain data." % (domain_name, source))
-
-      subdomains = parent_scan_data[domain_name]['subdomains'][source]
-      eligible = []
-
-      for subdomain in subdomains:
-        behavior = https_behavior_for(subdomain)
-        eligible.append(behavior)
-
-        # Store the subdomain CSV fields referenced in app/data.py.
-        subdomain_reports['https'][agency].append({
-          'domain': subdomain['Domain'],
-          'base': subdomain['Base Domain'],
-          'agency_name': domain['agency_name'],
-          'source': source,
-          'https': behavior
-        })
-
-      subtotals = total_https_report(eligible)
-      del subtotals['grade']  # not measured for subdomains
-      report['subdomains'][source] = subtotals
-
-  return report
-
-
-# Create a Report about each tracked stat.
-def latest_reports():
-
-  https_domains = Domain.eligible('https')
-
-  total = len(https_domains)
-  uses = 0
-  enforces = 0
-  hsts = 0
-  for domain in https_domains:
-    report = domain['https']
-    # HTTPS needs to be enabled.
-    # It's okay if it has a bad chain.
-    # However, it's not okay if HTTPS is downgraded.
-    if (
-      (report['uses'] >= 1) and
-      (report['enforces'] >= 1)
-    ):
-      uses += 1
-
-    # Needs to be Default or Strict to be 'Yes'
-    if report['enforces'] >= 2:
-      enforces += 1
-
-    # Needs to be present with >= 1 year max-age on canonical endpoint
-    if report['hsts'] >= 2:
-      hsts += 1
-
-  https_report = {
-    'https': {
-      'eligible': total,
-      'uses': uses,
-      'enforces': enforces,
-      'hsts': hsts
-    }
-  }
-
-  analytics_domains = Domain.eligible('analytics')
-  total = len(analytics_domains)
-  participating = 0
-  for domain in analytics_domains:
-    report = domain['analytics']
-    if report['participating'] == True:
-      participating += 1
-
-  analytics_report = {
-    'analytics': {
-      'eligible': total,
-      'participating': participating
-    }
-  }
-
-  a11y_domains = Domain.eligible('a11y')
-  a11y_report = {'a11y': {}}
-  for domain in a11y_domains:
-    a11y_report['a11y'][domain['domain']] = domain['a11y']['error_details']
-
-  cust_sat_domains = Domain.eligible('cust_sat')
-  total = len(cust_sat_domains)
-  participating = 0
-  for domain in cust_sat_domains:
-    if domain['cust_sat']['participating']:
-      participating += 1
-
-  cust_sat_report = {
-    'cust_sat': {
-      'eligible': total,
-      'participating': participating
-    }
-  }
-
-  return [https_report, analytics_report, a11y_report, cust_sat_report]
 
 # Hacky helper - print out the %'s after the command finishes.
-def print_report():
+def print_report(report):
   print()
 
-  report = Report.latest()
   for report_type in report.keys():
     # The a11y report has a very different use than the others
     if report_type == "report_date" or report_type == "a11y":
@@ -1002,18 +915,10 @@ def print_report():
     eligible = report[report_type]["eligible"]
     for key in report[report_type].keys():
       if key == "eligible":
-        continue
-      print("%s: %i" % (key, percent(report[report_type][key], eligible)))
+        print("%s: %i" % (key, report[report_type][key]))
+      else:
+        print("%s: %i%% (%i)" % (key, percent(report[report_type][key], eligible), report[report_type][key]))
     print()
-
-# Convenience: save CSV reports of subdomains per-agency.
-def save_subdomain_reports(subdomain_reports):
-  # Only works for HTTPS right now.
-  for agency in subdomain_reports['https']:
-    print("[https][csv][%s] Saving CSV of agency subdomains." % agency)
-    output = Domain.subdomains_to_csv(subdomain_reports['https'][agency])
-    output_path = os.path.join(ALL_DATA_AGENCIES, agency, "https.csv")
-    write(output, output_path)
 
 
 ### utilities
