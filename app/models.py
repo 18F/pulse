@@ -30,8 +30,8 @@ class Report:
   # analytics.participates (number)
 
   # Initialize a report with a given date.
-  def create(report_date):
-    db.table('reports').insert({'report_date': report_date})
+  def create(data):
+    db.table('reports').insert(data)
 
   def report_time(report_date):
     return datetime.datetime.strptime(report_date, "%Y-%m-%d")
@@ -44,14 +44,6 @@ class Report:
     else:
       return None
 
-  # Update latest report's 'https' or 'analytics' value
-  # with the values
-  def update(data):
-
-    # TODO: can't figure out how to match on all! Workaround.
-    db.table('reports').update(data,
-      where('report_date').exists()
-    )
 
 class Domain:
   # domain (string)
@@ -68,21 +60,13 @@ class Domain:
   # redirect? (boolean)
   # canonical (string, URL)
   #
-  # https: {
-  #   [many things]
-  #
-  #   totals: {
-  #     eligible (int)
-  #     uses (int)
-  #     enforces (int)
-  #     hsts (int)
-  #     bod_crypto (int)
-  #   }
+  # totals: {
+  #   https: { ... }
+  #   crypto: { ... }
   # }
   #
-  # analytics: {
-  #   participating? (boolean)
-  # }
+  # https: { ... }
+  # analytics: { ... }
   #
 
   def create(data):

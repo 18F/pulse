@@ -168,6 +168,7 @@ def run(date, options):
 
   # Calculate government-wide summaries.
   report = full_report(domains, subdomains)
+  report['report_date'] = date
 
   print("Creating all domains.")
   Domain.create_all(domains[domain_name] for domain_name in sorted_domains)
@@ -488,9 +489,9 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
       if eligible_for_https(subdomains[subdomain_name]):
         eligible_children.append(subdomain_name)
         subdomains[subdomain_name]['https'] = https_behavior_for(
-            subdomain_name,
-            subdomain_scan_data[subdomain_name]['pshtt'],
-            subdomain_scan_data[subdomain_name].get('sslyze', None)
+          subdomain_name,
+          subdomain_scan_data[subdomain_name]['pshtt'],
+          subdomain_scan_data[subdomain_name].get('sslyze', None)
         )
 
     # ** syntax merges dicts, available in 3.5+
@@ -505,15 +506,25 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
     elif len(eligible_children) > 0:
       https_parent['eligible_zone'] = True
 
-    # Put together eligible subdomains, and parent domain if eligible.
+    domains[domain_name]['https'] = https_parent
+
+    # Totals based on summing up eligible reports within this domain.
+    totals = {}
+
+    # For HTTPS/HSTS, pshtt-eligible parent + subdomains.
     eligible_reports = [subdomains[name]['https'] for name in eligible_children]
     if https_parent['eligible']:
       eligible_reports = [https_parent] + eligible_reports
+    totals['https'] = total_https_report(eligible_reports)
 
-    https_parent['totals'] = total_https_report(eligible_reports)
+    # For SSLv2/SSLv3/RC4/3DES, sslyze-eligible parent + subdomains.
+    subdomain_names = parent_scan_data[domain_name].get('subdomains', [])
+    eligible_reports = [subdomains[name]['https'] for name in subdomain_names if subdomains[subdomain_name].get('https') and subdomains[subdomain_name]['https'].get('rc4') is not None]
+    if https_parent and https_parent.get('rc4') is not None:
+      eligible_reports = [https_parent] + eligible_reports
+    totals['crypto'] = total_crypto_report(eligible_reports)
 
-    domains[domain_name]['https'] = https_parent
-
+    domains[domain_name]['totals'] = totals
 
     ### Everything else
     #
@@ -550,8 +561,15 @@ def update_agency_totals(agencies, domains, subdomains):
     eligible = eligible_for('https', domains, agency) + eligible_for('https', subdomains, agency)
     agency['https'] = total_https_report(eligible)
 
+    # Separate report for crypto, for sslyze-scanned domains.
+    # print("[%s][%s] Totalling report." % (agency['slug'], 'crypto'))
+    eligible = [domain['https'] for name, domain in domains.items() if (domain['agency_slug'] == agency['slug']) and domain.get('https') and (domain['https'].get('rc4') is not None)]
+    eligible = eligible + [subdomain['https'] for name, subdomain in subdomains.items() if (subdomain['agency_slug'] == agency['slug']) and subdomain.get('https') and (subdomain['https'].get('rc4') is not None)]
+    agency['crypto'] = total_crypto_report(eligible)
+
     # Special separate report for preloaded parent domains.
     # All parent domains, whether they use HTTP or not, are eligible.
+    # print("[%s][%s] Totalling report." % (agency['slug'], 'preloading'))
     eligible = [host['https'] for hostname, host in domains.items() if host['agency_slug'] == agency_slug]
     agency['preloading'] = total_preloading_report(eligible)
 
@@ -615,8 +633,14 @@ def full_report(domains, subdomains):
   eligible = eligible_for('https', domains) + eligible_for('https', subdomains)
   full['https'] = total_https_report(eligible)
 
+  print("[crypto] Totalling full report.")
+  eligible = [domain['https'] for name, domain in domains.items() if domain.get('https') and (domain['https'].get('rc4') is not None)]
+  eligible = eligible + [subdomain['https'] for name, subdomain in subdomains.items() if subdomain.get('https') and (subdomain['https'].get('rc4') is not None)]
+  full['crypto'] = total_crypto_report(eligible)
+
   # Special separate report for preloaded parent domains.
   # All parent domains, whether they use HTTP or not, are eligible.
+  print("[preloading] Totalling full report.")
   eligible = [host['https'] for hostname, host in domains.items()]
   full['preloading'] = total_preloading_report(eligible)
 
@@ -846,8 +870,8 @@ def https_behavior_for(name, pshtt, sslyze):
   ###
   # Get cipher/protocol data via sslyze for a host.
 
-  ssl2 = None
-  ssl3 = None
+  sslv2 = None
+  sslv3 = None
   any_rc4 = None
   any_3des = None
 
@@ -869,10 +893,10 @@ def https_behavior_for(name, pshtt, sslyze):
     # todo: kill conditional once everything is synced
     if sslyze.get("Any 3DES"):
       any_3des = boolean_for(sslyze["Any 3DES"])
-    ssl2 = boolean_for(sslyze["SSLv2"])
-    ssl3 = boolean_for(sslyze["SSLv3"])
+    sslv2 = boolean_for(sslyze["SSLv2"])
+    sslv3 = boolean_for(sslyze["SSLv3"])
 
-    if any_rc4 or any_3des or ssl2 or ssl3:
+    if any_rc4 or any_3des or sslv2 or sslv3:
       bod_crypto = 0
     else:
       bod_crypto = 1
@@ -880,8 +904,8 @@ def https_behavior_for(name, pshtt, sslyze):
   report['bod_crypto'] = bod_crypto
   report['rc4'] = any_rc4
   report['3des'] = any_3des
-  report['ssl2'] = ssl2
-  report['ssl3'] = ssl3
+  report['sslv2'] = sslv2
+  report['sslv3'] = sslv3
 
 
   return report
@@ -892,8 +916,7 @@ def total_https_report(eligible):
     'eligible': len(eligible),
     'uses': 0,
     'enforces': 0,
-    'hsts': 0,
-    'bod_crypto': 0,
+    'hsts': 0
   }
 
   for report in eligible:
@@ -910,10 +933,35 @@ def total_https_report(eligible):
     if report['hsts'] >= 2:
       total_report['hsts'] += 1
 
+  return total_report
+
+def total_crypto_report(eligible):
+  total_report = {
+    'eligible': len(eligible),
+    'bod_crypto': 0,
+    'rc4': 0,
+    '3des': 0,
+    'sslv2': 0,
+    'sslv3': 0
+  }
+
+  for report in eligible:
+    if report.get('bod_crypto') is None:
+      continue
+
     # Needs to be a Yes
     if report['bod_crypto'] == 1:
       total_report['bod_crypto'] += 1
 
+    # Tracking separately, may not display separately
+    if report['rc4']:
+      total_report['rc4'] += 1
+    if report['3des']:
+      total_report['3des'] += 1
+    if report['sslv2']:
+      total_report['sslv2'] += 1
+    if report['sslv3']:
+      total_report['sslv3'] += 1
 
   return total_report
 
