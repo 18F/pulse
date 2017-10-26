@@ -35,7 +35,7 @@ A11Y_REDIRECTS = META["a11y"]["redirects"]
 SCANNERS = os.environ.get("SCANNERS", "pshtt,sslyze,analytics,a11y,third_parties")
 
 ### subdomain gathering/scanning information
-GATHER_SUFFIX = ".gov"
+GATHER_SUFFIX = os.environ.get("GATHER_SUFFIX", ".gov")
 
 # names and options must be in corresponding order
 GATHERER_NAMES = ["censys", "dap", "eot2016", "parents"]
