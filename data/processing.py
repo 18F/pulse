@@ -221,6 +221,10 @@ def load_domain_data():
       if branch == "non-federal":
         continue
 
+      # Exclude non-federal branches. (Sigh.)
+      if branch != "executive":
+        continue
+
       if domain_name not in domain_map:
         domain_map[domain_name] = {
           'domain': domain_name,
@@ -280,7 +284,7 @@ def load_parent_scan_data(domains):
 
       domain = row[0].lower()
       if not domains.get(domain):
-        print("[pshtt] Skipping %s, not a federal domain from domains.csv." % domain)
+        # print("[pshtt] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       dict_row = {}
@@ -542,13 +546,18 @@ def update_agency_totals(agencies, domains, subdomains):
     agency = agencies[agency_slug]
 
     # HTTPS. Parent and subdomains.
-    print("[%s][%s] Totalling report." % (agency['slug'], 'https'))
+    # print("[%s][%s] Totalling report." % (agency['slug'], 'https'))
     eligible = eligible_for('https', domains, agency) + eligible_for('https', subdomains, agency)
     agency['https'] = total_https_report(eligible)
 
+    # Special separate report for preloaded parent domains.
+    # All parent domains, whether they use HTTP or not, are eligible.
+    eligible = [host['https'] for hostname, host in domains.items() if host['agency_slug'] == agency_slug]
+    agency['preloading'] = total_preloading_report(eligible)
+
 
     # Analytics. Parent domains.
-    print("[%s][%s] Totalling report." % (agency['slug'], 'analytics'))
+    # print("[%s][%s] Totalling report." % (agency['slug'], 'analytics'))
     eligible = eligible_for('analytics', domains, agency)
     totals = {
       'eligible': len(eligible),
@@ -561,7 +570,7 @@ def update_agency_totals(agencies, domains, subdomains):
 
 
     # Accessibility. Parent domains.
-    print("[%s][%s] Totalling report." % (agency['slug'], 'a11y'))
+    # print("[%s][%s] Totalling report." % (agency['slug'], 'a11y'))
     eligible = eligible_for('a11y', domains, agency)
     pages_count = len(eligible)
     errors = {e:0 for e in A11Y_ERRORS.values()}
@@ -589,7 +598,7 @@ def update_agency_totals(agencies, domains, subdomains):
 
 
     # Customer satisfaction. Parent domains.
-    print("[%s][%s] Totalling report." % (agency['slug'], 'cust_sat'))
+    # print("[%s][%s] Totalling report." % (agency['slug'], 'cust_sat'))
     eligible = eligible_for('cust_sat', domains, agency)
     agency['cust_sat'] = {
       'eligible': len(eligible),
@@ -605,6 +614,11 @@ def full_report(domains, subdomains):
   print("[https] Totalling full report.")
   eligible = eligible_for('https', domains) + eligible_for('https', subdomains)
   full['https'] = total_https_report(eligible)
+
+  # Special separate report for preloaded parent domains.
+  # All parent domains, whether they use HTTP or not, are eligible.
+  eligible = [host['https'] for hostname, host in domains.items()]
+  full['preloading'] = total_preloading_report(eligible)
 
   # Analytics. Parent domains only.
   print("[analytics] Totalling full report.")
@@ -879,7 +893,7 @@ def total_https_report(eligible):
     'uses': 0,
     'enforces': 0,
     'hsts': 0,
-    'bod_crypto': 0
+    'bod_crypto': 0,
   }
 
   for report in eligible:
@@ -899,6 +913,28 @@ def total_https_report(eligible):
     # Needs to be a Yes
     if report['bod_crypto'] == 1:
       total_report['bod_crypto'] += 1
+
+
+  return total_report
+
+def total_preloading_report(eligible):
+  total_report = {
+    'eligible': len(eligible),
+    'preloaded': 0,
+    'preload_ready': 0
+  }
+
+  # Tally preloaded and preload-ready
+  for report in eligible:
+    # We consider *every* domain eligible for preloading,
+    # so there may be no pshtt data for some.
+    if report.get('preloaded') is None:
+      continue
+
+    if report['preloaded'] == 1:
+      total_report['preload_ready'] += 1
+    elif report['preloaded'] == 2:
+      total_report['preloaded'] += 1
 
   return total_report
 
@@ -924,16 +960,16 @@ def print_report(report):
 ### utilities
 
 def shell_out(command, env=None):
-    try:
-        print("[cmd] %s" % str.join(" ", command))
-        response = subprocess.check_output(command, shell=False, env=env)
-        output = str(response, encoding='UTF-8')
-        print(output)
-        return output
-    except subprocess.CalledProcessError:
-        logging.warn("Error running %s." % (str(command)))
-        exit(1)
-        return None
+  try:
+    print("[cmd] %s" % str.join(" ", command))
+    response = subprocess.check_output(command, shell=False, env=env)
+    output = str(response, encoding='UTF-8')
+    print(output)
+    return output
+  except subprocess.CalledProcessError:
+    logging.warn("Error running %s." % (str(command)))
+    exit(1)
+    return None
 
 def percent(num, denom):
   return round((num / denom) * 100)
@@ -941,23 +977,23 @@ def percent(num, denom):
 # mkdir -p in python, from:
 # https://stackoverflow.com/questions/600268/mkdir-p-functionality-in-python
 def mkdir_p(path):
-    try:
-        os.makedirs(path)
-    except OSError as exc:  # Python >2.5
-        if exc.errno == errno.EEXIST:
-            pass
-        else:
-            raise
+  try:
+    os.makedirs(path)
+  except OSError as exc:  # Python >2.5
+    if exc.errno == errno.EEXIST:
+      pass
+    else:
+      raise
 
 def write(content, destination, binary=False):
-    mkdir_p(os.path.dirname(destination))
+  mkdir_p(os.path.dirname(destination))
 
-    if binary:
-        f = open(destination, 'bw')
-    else:
-        f = open(destination, 'w', encoding='utf-8')
-    f.write(content)
-    f.close()
+  if binary:
+    f = open(destination, 'bw')
+  else:
+    f = open(destination, 'w', encoding='utf-8')
+  f.write(content)
+  f.close()
 
 
 def boolean_for(string):
