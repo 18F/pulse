@@ -693,7 +693,11 @@ def eligible_for_analytics(domain):
     (domain["redirect"] == False) and
     (domain["branch"] == "executive") and
     # managed in data/ineligible/analytics.yml
-    (domain["exclude"]["analytics"] == False)
+    (
+      (domain.get("exclude") is None) or
+      (domain["exclude"].get("analytics") is None) or
+      (domain["exclude"]["analytics"] == False)
+    )
   )
 
 def eligible_for_a11y(domain):
@@ -712,6 +716,9 @@ def eligible_for_cust_sat(domain):
 
 # Analytics conclusions for a domain based on analytics domain-scan data.
 def analytics_report_for(domain_name, domain, parent_scan_data):
+  if parent_scan_data[domain_name].get('analytics') is None:
+    return None
+
   analytics = parent_scan_data[domain_name]['analytics']
   pshtt = parent_scan_data[domain_name]['pshtt']
 
@@ -721,6 +728,9 @@ def analytics_report_for(domain_name, domain, parent_scan_data):
   }
 
 def a11y_report_for(domain_name, domain, parent_scan_data):
+  if parent_scan_data[domain_name].get('a11y') is None:
+    return None
+
   a11y_report = {
     'eligible': True,
     'errors': 0,
@@ -745,6 +755,9 @@ def get_a11y_error_category(code):
   return A11Y_ERRORS.get(error_id, 'Other Errors')
 
 def cust_sat_report_for(domain_name, domain, parent_scan_data):
+  if parent_scan_data[domain_name].get('cust_sat_report') is None:
+    return None
+
   cust_sat_report = {
     'eligible': True,
     'service_list': {},
@@ -1020,6 +1033,7 @@ def shell_out(command, env=None):
     return None
 
 def percent(num, denom):
+  if denom == 0: return 0 # for shame!
   return round((num / denom) * 100)
 
 # mkdir -p in python, from:
