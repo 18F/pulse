@@ -140,12 +140,9 @@ table caption {
       border: none;
     }
 
-    &.domain {
-
-      td.odd:first-child,
-      td.even:first-child {
-        white-space: nowrap;
-      }
+    td.odd:first-child,
+    td.even:first-child {
+      white-space: nowrap;
     }
 
     &.dtr-inline.collapsed {
@@ -201,7 +198,9 @@ table caption {
           &:first-child:before { top: 15px !important; }
         }
       }
+    }
 
+    &.agency, &.domain {
       .progress-bar-indication {
         background-color: #CCC;
         border-radius: 20px;
