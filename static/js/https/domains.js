@@ -15,12 +15,6 @@ $(document).ready(function () {
   */
 
   var names = {
-    uses: {
-      "-1": "No",
-      0: "No",  // Downgrades HTTPS -> HTTP
-      1: "Yes", // (with certificate chain issues)
-      2: "Yes"
-    },
 
     enforces: {
       0: "", // N/A (no HTTPS)
@@ -40,6 +34,12 @@ $(document).ready(function () {
       0: "",  // No (don't display, since it's optional)
       1: "Ready",  // Preload-ready
       2: "Yes"  // Yes
+    },
+
+    bod_crypto: {
+      "-1": "",
+      0: "No",
+      1: "Yes"
     }
   };
 
@@ -215,6 +215,25 @@ $(document).ready(function () {
     return "<strong class=\"neutral\">" + text + "</strong>";
   }
 
+  // report: e.g. 'https', or 'crypto'
+  // field: e.g. 'uses' or 'rc4'
+  var percentBar = function(report, field) {
+    return function(data, type, row) {
+      var percent = Utils.percent(
+        row.totals[report][field], row.totals[report].eligible
+      );
+
+      if (type == "sort") return percent;
+      else return Utils.progressBar(percent);
+    };
+  };
+
+  var eligibleServices = function(data, type, row) {
+    var services = row.totals.https.eligible;
+    if (type == "sort") return services;
+    return "<a href=\"#\"><b>" + services + "</b> services</a>";
+  };
+
   var renderTable = function(data) {
     var table = $("table").DataTable({
 
@@ -239,17 +258,25 @@ $(document).ready(function () {
         {data: "canonical"}, // why is this here?
         {data: "agency_name"}, // here for filtering/sorting
         {
-          data: "https.enforces",
-          render: display(names.enforces)
+          data: "totals.https.eligible",
+          render: eligibleServices
         },
         {
-          data: "https.hsts",
-          render: display(names.hsts)
+          data: "totals.https.enforces",
+          render: percentBar("https", "enforces")
+        },
+        {
+          data: "totals.https.hsts",
+          render: percentBar("https", "hsts")
+        },
+        {
+          data: "totals.crypto.bod_crypto",
+          render: percentBar("crypto", "bod_crypto")
         },
         {
           data: "https.preloaded",
           render: display(names.preloaded)
-        }
+        },
       ],
 
       columnDefs: [
