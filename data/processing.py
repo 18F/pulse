@@ -229,6 +229,7 @@ def load_domain_data():
       if domain_name not in domain_map:
         domain_map[domain_name] = {
           'domain': domain_name,
+          'base_domain': domain_name,
           'agency_name': agency_name,
           'agency_slug': agency_slug,
           'branch': branch,
@@ -430,7 +431,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
 
         subdomains[subdomain] = {
           'domain': subdomain,
-          'parent_domain': parent_domain,
+          'base_domain': parent_domain,
           'agency_slug': domains[parent_domain]['agency_slug'],
           'branch': domains[parent_domain]['branch'],
           'is_parent': False,

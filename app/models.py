@@ -93,20 +93,22 @@ class Domain:
   def find(domain_name):
     return db.table('domains').get(q.domain == domain_name)
 
+  # unused?
   def eligible(report_name):
     return db.table('domains').search(
-      Query()[report_name]['eligible']
+      Query()[report_name]['eligible'] == True
     )
 
   def eligible_parents(report_name):
     return db.table('domains').search(
-      Query()[report_name]['eligible_zone']
+      (Query()[report_name]['eligible_zone'] == True) &
+      (where("is_parent") == True)
     )
 
-  def eligible_for_agency(agency_slug, report_name):
+  def eligible_for_domain(domain, report_name):
     return db.table('domains').search(
-      (Query()[report_name]['eligible']) &
-      (where("agency_slug") == agency_slug)
+      (Query()[report_name]['eligible'] == True) &
+      (where("base_domain") == domain)
     )
 
   def db():

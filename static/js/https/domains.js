@@ -40,17 +40,6 @@ $(document).ready(function () {
       0: "",  // No (don't display, since it's optional)
       1: "Ready",  // Preload-ready
       2: "Yes"  // Yes
-    },
-
-    grade: {
-      "-1": "",
-      0: "F",
-      1: "T",
-      2: "C",
-      3: "B",
-      4: "A-",
-      5: "A",
-      6: "A+"
     }
   };
 
@@ -90,7 +79,7 @@ $(document).ready(function () {
       pct = Utils.percent(row.https.subdomains.censys.enforces, row.https.subdomains.censys.eligible);
       message = n("" + pct + "%") + " of " +
         row.https.subdomains.censys.eligible + " public sites "
-        + l(censysUrlFor(row.domain), "known to Censys") +
+        + "known to Censys" +
         " enforce HTTPS.";
       sources.push(message);
     }
@@ -99,7 +88,7 @@ $(document).ready(function () {
       pct = Utils.percent(row.https.subdomains.dap.enforces, row.https.subdomains.dap.eligible);
       sources.push(n("" + pct + "%") + " of " +
         row.https.subdomains.dap.eligible + " public sites " +
-        l(links.dap_data, "known to the Digital Analytics Program") +
+        "known to the Digital Analytics Program" +
         " enforce HTTPS.")
     }
 
@@ -111,29 +100,6 @@ $(document).ready(function () {
 
     var p = "<p class=\"indents\">";
     return n("Known public subdomains: ") + p + sources.join("</p>" + p) + "</p>";
-  };
-
-  var linkGrade = function(data, type, row) {
-    var grade = display(names.grade)(data, type);
-    if (type == "sort")
-      return grade;
-    else if (grade == "")
-      return ""
-    else
-      return "" +
-        "<a href=\"" + labsUrlFor(row.canonical) + "\" target=\"blank\">" +
-          grade +
-        "</a>";
-  };
-
-  var labsUrlFor = function(domain) {
-    return "https://www.ssllabs.com/ssltest/analyze.html?d=" + domain;
-  };
-
-  var censysUrlFor = function(domain) {
-    return "https://censys.io/certificates?q=" +
-      "parsed.subject.common_name:%22" + domain +
-      "%22%20or%20parsed.extensions.subject_alt_name.dns_names:%22" + domain + "%22";
   };
 
   var agencyDownloadFor = function(row) {
@@ -151,62 +117,17 @@ $(document).ready(function () {
     var hsts = row.https.hsts;
     var hsts_age = row.https.hsts_age;
     var preloaded = row.https.preloaded;
-    var grade = row.https.grade;
-
-    var tls = [];
-
-    // If an SSL Labs grade exists at all...
-    if (row.https.grade >= 0) {
-
-      if (row.https.sig == "SHA1withRSA")
-        tls.push("Certificate uses a " + l("sha1", "weak SHA-1 signature"));
-
-      if (row.https.ssl3 == true)
-        tls.push("Supports the " + l("ssl3", "insecure SSLv3 protocol"));
-
-      if (row.https.tls12 == false)
-        tls.push("Lacks support for the " + l("tls12", "most recent version of TLS"));
-    }
-
-    // Though not found through SSL Labs, this is a TLS issue.
-    if (https == 1)
-      tls.push("Certificate chain not valid for all public clients. See " + l(labsUrlFor(row.canonical), "SSL Labs") + " for details.");
-
-    // Non-urgent TLS details.
-    var tlsDetails = "";
-    if (grade >= 0) {
-      if (tls.length > 0)
-        tlsDetails += tls.join(". ") + ".";
-    }
-
-    // Principles of message crafting:
-    //
-    // * Only grant "perfect score!" if TLS quality issues are gone.
-    // * Don't show TLS quality issues when pushing to preload.
-    // * All flagged TLS quality issues should be reflected in the
-    //   SSL Labs grade, so that agencies have fair warning of issues
-    //   even before we show them.
-    // * Don't speak explicitly about M-15-13, since not all domains
-    //   are subject to OMB requirements.
+    var crypto = row.https.bod_crypto;
 
     var details;
-    // By default, if it's an F grade, *always* give TLS details.
-    var urgent = (grade == 0);
 
     // CASE: Perfect score!
     // HSTS max-age is allowed to be weak, because client enforcement means that
     // the max-age is effectively overridden in modern browsers.
     if (
         (https >= 1) && (behavior >= 2) &&
-        (hsts >= 1) && (preloaded == 2) &&
-        (tls.length == 0) && (grade == 6))
-      details = g("Perfect score! HTTPS is strictly enforced throughout the zone.");
-
-    // CASE: Only issue is TLS quality issues.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
         (hsts == 2) && (preloaded == 2)) {
-      details = g("Excellent! HTTPS is strictly enforced throughout the zone.");
+      details = g("Perfect score! HTTPS is strictly enforced throughout the zone.");
     }
 
     // CASE: HSTS preloaded, but HSTS header is missing.
@@ -241,7 +162,7 @@ $(document).ready(function () {
 
     // CASE: HTTPS w/invalid chain supported and enforced, no HSTS.
     else if ((https == 1) && (behavior >= 2) && (hsts < 2))
-      details = n("Almost:") + " Domain is missing " + l("hsts", "HSTS") + ", but the presented certificate chain may not be valid for all public clients. HSTS prevents users from clicking through certificate warnings. See " + l(labsUrlFor(row.canonical), "the SSL Labs report") + " for details.";
+      details = n("Almost:") + " Domain is missing " + l("hsts", "HSTS") + ", but the presented certificate chain may not be valid for all public clients. HSTS prevents users from clicking through certificate warnings.";
 
     // CASE: HTTPS supported, not enforced, no HSTS.
     else if ((https >= 1) && (behavior < 2) && (hsts < 2))
@@ -260,12 +181,7 @@ $(document).ready(function () {
     else
       details = "";
 
-    // If there's an F grade, and TLS details weren't already included,
-    // add an urgent warning.
-    if (urgent)
-      return details + " " + w("Warning: ") + l(labsUrlFor(row.canonical), "review SSL Labs report") + " to resolve TLS quality issues."
-    else
-      return details;
+    return details;
   };
 
   var links = {
@@ -279,8 +195,8 @@ $(document).ready(function () {
     preload: "https://https.cio.gov/hsts/#hsts-preloading",
     subdomains: "/https/guidance/#subdomains",
     preloading_compliance: "https://https.cio.gov/guide/#options-for-hsts-compliance",
-    stay_preloaded: "https://hstspreload.appspot.com/#continued-requirements",
-    submit: "https://hstspreload.appspot.com"
+    stay_preloaded: "https://hstspreload.org/#continued-requirements",
+    submit: "https://hstspreload.org"
   };
 
   var l = function(slug, text) {
@@ -320,12 +236,8 @@ $(document).ready(function () {
           cellType: "th",
           render: Utils.linkDomain
         },
-        {data: "canonical"},
-        {data: "agency_name"},
-        {
-          data: "https.uses",
-          render: display(names.uses)
-        },
+        {data: "canonical"}, // why is this here?
+        {data: "agency_name"}, // here for filtering/sorting
         {
           data: "https.enforces",
           render: display(names.enforces)
@@ -337,18 +249,6 @@ $(document).ready(function () {
         {
           data: "https.preloaded",
           render: display(names.preloaded)
-        },
-        {
-          data: "https.grade",
-          render: linkGrade
-        },
-        {
-          data: "",
-          render: httpDetails
-        },
-        {
-          data: "",
-          render: subdomains
         }
       ],
 
