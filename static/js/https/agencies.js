@@ -4,42 +4,34 @@ $(document).ready(function () {
     renderTable(data.data);
   });
 
-  var percentBar = function(field) {
-    return function(data, type, row) {
-      var percent = Utils.percent(
-        row.https[field], row.https.eligible
-      );
+  var eligibleHttps = function(data, type, row) {
+    var services = row.https.eligible;
+    var domains = row.total_domains;
+    if (type == "sort") return services;
 
-      if (type == "sort")
-        return percent;
-      return Utils.progressBar(percent);
-    };
+    var link = function(text) {
+      return "" +
+        "<a href=\"/https/domains/#" +
+          QueryString.stringify({q: row["name"]}) + "\">" +
+           text +
+        "</a>";
+    }
+
+    return "<b>" + services + "</b> services" + "<br/>in " + link("" + domains + " domains");
   };
 
-  // var enforcesSubdomains = function(data, type, row) {
-  //   if (row.https.subdomains && row.https.subdomains.eligible > 0) {
-  //     var percent = Utils.percent(
-  //       row.https.subdomains.enforces, row.https.subdomains.eligible
-  //     );
-  //     if (type == "sort")
-  //       return percent;
-  //     return Utils.progressBar(percent);
-  //   } else {
-  //     if (type == "sort")
-  //       return 0;
-  //     return "";
-  //   }
-  // };
+  // report: e.g. 'https', or 'crypto'
+  // field: e.g. 'uses' or 'rc4'
+  var percentBar = function(report, field) {
+    return function(data, type, row) {
+      var percent = Utils.percent(
+        row[report][field], row[report].eligible
+      );
 
-  // var subdomains = function(data, type, row) {
-  //   if (type == "sort") return null;
-
-  //   if (!row.https.subdomains.eligible || row.https.subdomains.eligible <= 0)
-  //     return "";
-
-  //   var pct = Utils.percent(row.https.subdomains.enforces, row.https.subdomains.eligible);
-  //   return "" + pct;
-  // };
+      if (type == "sort") return percent;
+      else return Utils.progressBar(percent);
+    };
+  };
 
   var renderTable = function(data) {
     var table = $("table").DataTable({
@@ -54,45 +46,43 @@ $(document).ready(function () {
 
       data: data,
 
-      columns: [
-        {data: "name"},
-        {
-          data: "https.eligible",
-          render: Utils.filterAgency("https")
-        },
-        {data: "https.uses"},
-        {data: "https.enforces"},
-        {data: "https.hsts"},
-        {data: "https.grade"}
-      ],
-
       // order by number of domains
       order: [[1, "desc"]],
 
       columnDefs: [
         {
-          targets: 0,
           cellType: "th",
           createdCell: function (td) {
             td.scope = "row";
-          }
+          },
+          data: "name",
+          targets: 0
         },
         {
-          render: percentBar("uses"),
+          data: "https.eligible", // sort on this, but
+          render: eligibleHttps,
+          targets: 1,
+        },
+        {
+          data: "https.enforces",
+          render: percentBar("https", "enforces"),
           targets: 2,
         },
         {
-          render: percentBar("enforces"),
+          data: "https.hsts",
+          render: percentBar("https", "hsts"),
           targets: 3,
         },
         {
-          render: percentBar("hsts"),
+          data: "crypto.bod_crypto",
+          render: percentBar("crypto", "bod_crypto"),
           targets: 4,
         },
         {
-          render: percentBar("grade"),
+          data: "preloading.preloaded",
+          render: percentBar("preloading", "preloaded"),
           targets: 5,
-        },
+        }
       ],
 
       "oLanguage": {
