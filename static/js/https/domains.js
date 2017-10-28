@@ -33,16 +33,16 @@ $(document).ready(function () {
       2: "Yes" // Yes, HSTS for >= 1 year (for canonical endpoint)
     },
 
-    preloaded: {
-      0: "No",  // No
-      1: "Ready",  // Preload-ready
-      2: "Yes"  // Yes
-    },
-
     bod_crypto: {
       "-1": "--", // No HTTPS
       0: "No",
       1: "Yes"
+    },
+
+    preloaded: {
+      0: "No",  // No
+      1: "Ready",  // Preload-ready
+      2: "<strong>Yes</strong>"  // Yes
     }
   };
 
@@ -67,6 +67,8 @@ $(document).ready(function () {
   // Describe what's going on with this domain's subdomains.
   var showDetails = function(data, type, row) {
     if (type == "sort") return null;
+    if (loneDomain(row)) return null;
+
     var eligible = row.totals.https.eligible;
     var services = (eligible == 1 ? "service" : "services");
     return "Load details for " + n("" + eligible + " " + services) + " on this domain. &raquo;";
@@ -102,7 +104,7 @@ $(document).ready(function () {
       all.push(details);
     }
 
-    row.child(all, "child");
+    row.child(all, "child").show();
   };
 
   // Construct a sentence explaining the HTTP situation.
@@ -152,6 +154,154 @@ $(document).ready(function () {
     return details;
   };
 
+  var loneDomain = function(row) {
+    return (row.totals.https.eligible == 1 && row.https.eligible);
+  };
+
+  var smartDomain = function(data, type, row) {
+    if (type == "sort") return row.domain;
+
+    if (loneDomain(row))
+      return Utils.linkDomain(data, type, row);
+
+    return n(row.domain) + " (" + l("#", "" + row.totals.https.eligible + " services") + ")";
+  };
+
+  var smartEnforces = function(data, type, row) {
+    if (type == "sort") return row.totals.https.enforces;
+
+    if (loneDomain(row))
+      return display(names.enforces)(data, type, row);
+    else
+      return percentBar("https", "enforces")(data, type, row);
+  };
+
+  var smartHSTS = function(data, type, row) {
+    if (type == "sort") return row.totals.https.hsts;
+
+    if (loneDomain(row))
+      return display(names.hsts)(data, type, row);
+    else
+      return percentBar("https", "hsts")(data, type, row);
+  };
+
+  var smartCrypto = function(data, type, row) {
+    if (type == "sort") return row.totals.crypto.bod_crypto;
+
+    if (loneDomain(row))
+      return display(names.bod_crypto)(data, type, row);
+    else
+      return percentBar("crypto", "bod_crypto")(data, type, row);
+  };
+
+  var initExpansions = function() {
+    $('table.domain').on('click', 'tbody tr.odd, tbody tr.even', function() {
+      var row = table.row(this);
+
+      if (row.data() == undefined)
+        row = table.row(this.previousElementSibling);
+      if (row.data() == undefined) return;
+
+      var data = row.data();
+      var was_expanded = data.expanded;
+      data.expanded = true;
+      var base_domain = data.base_domain;
+
+      if (!loneDomain(data) && !was_expanded) {
+        console.log("Fetching data for " + base_domain + "...");
+        $.ajax({
+          url: "/data/hosts/" + base_domain + "/https.json",
+          success: function(response) {
+            loadSubdomainData(row, base_domain, response);
+          },
+          error: function() {
+            console.log("Error loading data for " + base_domain);
+          }
+        });
+      }
+
+      else if (!loneDomain(data) && was_expanded){
+        data.expanded = false;
+        row.child.hide();
+      }
+
+      return false;
+    });
+  };
+
+  var renderTable = function(data) {
+    table = $("table").DataTable({
+
+      data: data,
+
+      responsive: {
+          details: {
+              type: "column",
+              display: $.fn.dataTable.Responsive.display.childRow
+          }
+      },
+
+      initComplete: function() {
+        Utils.searchLinks(this);
+        initExpansions(this);
+      },
+
+      columns: [
+        {
+          className: 'control',
+          orderable: false,
+          data: "",
+          render: function() {return ""},
+          visible: false
+        },
+        {
+          data: "domain",
+          width: "240px",
+          cellType: "td",
+          render: smartDomain,
+
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        },
+        {data: "agency_name"}, // here for filtering/sorting
+        {
+          data: "totals.https.enforces",
+          render: smartEnforces
+        },
+        {
+          data: "totals.https.hsts",
+          render: smartHSTS
+        },
+        {
+          data: "totals.crypto.bod_crypto",
+          render: smartCrypto
+        },
+        {
+          data: "https.preloaded",
+          render: display(names.preloaded)
+        },
+        {
+          data: "",
+          render: showDetails,
+        }
+      ],
+
+      "oLanguage": {
+        "oPaginate": {
+          "sPrevious": "<<",
+          "sNext": ">>"
+        }
+      },
+
+      csv: "/data/domains/https.csv",
+
+      dom: 'LCftrip'
+
+    });
+
+  };
+
   var links = {
     dap: "https://analytics.usa.gov",
     dap_data: "https://analytics.usa.gov/data/live/sites.csv",
@@ -195,107 +345,5 @@ $(document).ready(function () {
       else return Utils.progressBar(percent);
     };
   };
-
-  var initExpansions = function() {
-    $('table.domain').on('click', 'tbody tr.parent, tbody tr.child', function() {
-      var row = table.row(this);
-
-      if (row.data() == undefined)
-        row = table.row(this.previousElementSibling);
-      if (row.data() == undefined) return;
-
-      var data = row.data();
-      var was_expanded = data.expanded;
-      data.expanded = true;
-      var base_domain = data.base_domain;
-
-      if (!was_expanded) {
-        $.ajax({
-          url: "/data/hosts/" + base_domain + "/https.json",
-          success: function(response) {
-            loadSubdomainData(row, base_domain, response);
-          },
-          error: function() {
-            console.log("Error loading data for " + base_domain);
-          }
-        });
-      }
-
-      return false;
-    });
-  };
-
-  var renderTable = function(data) {
-    table = $("table").DataTable({
-
-      data: data,
-
-      responsive: {
-          details: {
-              type: "column",
-              display: $.fn.dataTable.Responsive.display.childRowImmediate
-          }
-      },
-
-      initComplete: function() {
-        Utils.searchLinks(this);
-        initExpansions(this);
-      },
-
-      columns: [
-        {
-          className: 'control',
-          orderable: false,
-          data: "",
-          render: function() {return ""},
-          visible: false
-        },
-        {
-          data: "domain",
-          width: "240px",
-          cellType: "td",
-          render: Utils.linkDomain,
-
-          createdCell: function (td) {
-            td.scope = "row";
-          }
-        },
-        {data: "agency_name"}, // here for filtering/sorting
-        {
-          data: "totals.https.enforces",
-          render: percentBar("https", "enforces")
-        },
-        {
-          data: "totals.https.hsts",
-          render: percentBar("https", "hsts")
-        },
-        {
-          data: "totals.crypto.bod_crypto",
-          render: percentBar("crypto", "bod_crypto")
-        },
-        {
-          data: "https.preloaded",
-          render: display(names.preloaded)
-        },
-        {
-          data: "",
-          render: showDetails
-        }
-      ],
-
-      "oLanguage": {
-        "oPaginate": {
-          "sPrevious": "<<",
-          "sNext": ">>"
-        }
-      },
-
-      csv: "/data/domains/https.csv",
-
-      dom: 'LCftrip'
-
-    });
-
-  }
 
 })
