@@ -55,27 +55,19 @@ $(document).ready(function () {
     }
   };
 
-  var showNotes = function(data, type, row) {
-    if (type == "sort") return null;
+  var displayCrypto = function(row) {
+    // if it's all good, then great
+    if (row.https.bod_crypto != 0)
+      return names.bod_crypto[row.https.bod_crypto];
 
-    if (row.https.preloaded)
-      return "Preloaded";
-    else
-      return "Not yet preloaded.";
-  }
+    var problems = [];
+    // if not, what are the problems?
+    if (row.https.rc4) problems.push("RC4");
+    if (row.https['3des']) problems.push("3DES");
+    if (row.https.sslv2) problems.push("SSLv2");
+    if (row.https.sslv3) problems.push("SSLv3");
 
-  // Describe what's going on with this domain's subdomains.
-  var showDetails = function(data, type, row) {
-    if (type == "sort") return null;
-    if (loneDomain(row)) return null;
-
-    var eligible = row.totals.https.eligible;
-    var services = (eligible == 1 ? "service" : "services");
-    return "Load details for " + n("" + eligible + " " + services) + " on this domain. &raquo;";
-  };
-
-  var agencyDownloadFor = function(row) {
-    return "https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/agencies/" + row["agency_slug"] + "/https.csv";
+    return "No, uses " + problems.join(", ");
   };
 
   var loadSubdomainData = function(row, base_domain, response) {
@@ -95,7 +87,7 @@ $(document).ready(function () {
       var hsts = names.hsts[subdomain.https.hsts];
       details.append($("<td/>").html(hsts));
 
-      var crypto = names.bod_crypto[subdomain.https.bod_crypto];
+      var crypto = displayCrypto(subdomain);
       details.append($("<td/>").html(crypto));
 
       // blank
@@ -107,89 +99,42 @@ $(document).ready(function () {
     row.child(all, "child").show();
   };
 
-  // Construct a sentence explaining the HTTP situation.
-  var zoneDetails = function(data, type, row) {
-
-    if (type == "sort")
-      return null;
-
-    var https = row.https.uses;
-    var behavior = row.https.enforces;
-    var hsts = row.https.hsts;
-    var hsts_age = row.https.hsts_age;
-    var preloaded = row.https.preloaded;
-    var crypto = row.https.bod_crypto;
-
-    var details;
-
-    // CASE: HSTS, but HTTPS not enforced.
-    if ((https >= 1) && (behavior < 2) && (hsts == 2))
-      details = "Domain uses " + l("hsts", "HSTS") + ", but is not redirecting clients to HTTPS.";
-
-    // CASE: HTTPS w/valid chain supported and enforced, weak/no HSTS.
-    else if ((https == 2) && (behavior >= 2) && (hsts < 2)) {
-      if (hsts == 0)
-        details = n("Almost:") + " Enable " + l("hsts", "HSTS") + " so that clients can enforce HTTPS.";
-      else if (hsts == 1)
-        details = n("Almost:") + " The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
-    }
-
-    // CASE: HTTPS supported, not enforced, no HSTS.
-    else if ((https >= 1) && (behavior < 2) && (hsts < 2))
-      details = "HTTPS supported, but not enforced.";
-
-    // CASE: HTTPS downgrades.
-    else if (https == 0)
-      details = "Visitors are redirected from HTTPS down to HTTP."
-
-    // CASE: HTTPS isn't supported at all.
-    else if (https == -1)
-      // TODO SUBCASE: It's a "redirect domain".
-      // SUBCASE: Everything else.
-      details = "No support for HTTPS."
-
-    else
-      details = "";
-
-    return details;
-  };
-
   var loneDomain = function(row) {
     return (row.totals.https.eligible == 1 && row.https.eligible);
   };
 
-  var smartDomain = function(data, type, row) {
+  var showDomain = function(data, type, row) {
     if (type == "sort") return row.domain;
 
     if (loneDomain(row))
       return Utils.linkDomain(data, type, row);
 
-    return n(row.domain) + " (" + l("#", "" + row.totals.https.eligible + " services") + ")";
+    return n(row.domain) + " (" + l("#", "show " + row.totals.https.eligible + " services") + ")";
   };
 
-  var smartEnforces = function(data, type, row) {
+  var showEnforces = function(data, type, row) {
     if (type == "sort") return row.totals.https.enforces;
 
     if (loneDomain(row))
-      return display(names.enforces)(data, type, row);
+      return names.enforces[row.https.enforces];
     else
       return percentBar("https", "enforces")(data, type, row);
   };
 
-  var smartHSTS = function(data, type, row) {
+  var showHSTS = function(data, type, row) {
     if (type == "sort") return row.totals.https.hsts;
 
     if (loneDomain(row))
-      return display(names.hsts)(data, type, row);
+      return names.hsts[row.https.hsts];
     else
       return percentBar("https", "hsts")(data, type, row);
   };
 
-  var smartCrypto = function(data, type, row) {
+  var showCrypto = function(data, type, row) {
     if (type == "sort") return row.totals.crypto.bod_crypto;
 
     if (loneDomain(row))
-      return display(names.bod_crypto)(data, type, row);
+      return displayCrypto(row);
     else
       return percentBar("crypto", "bod_crypto")(data, type, row);
   };
@@ -261,7 +206,7 @@ $(document).ready(function () {
           data: "domain",
           width: "240px",
           cellType: "td",
-          render: smartDomain,
+          render: showDomain,
 
           createdCell: function (td) {
             td.scope = "row";
@@ -270,15 +215,15 @@ $(document).ready(function () {
         {data: "agency_name"}, // here for filtering/sorting
         {
           data: "totals.https.enforces",
-          render: smartEnforces
+          render: showEnforces
         },
         {
           data: "totals.https.hsts",
-          render: smartHSTS
+          render: showHSTS
         },
         {
           data: "totals.crypto.bod_crypto",
-          render: smartCrypto
+          render: showCrypto
         },
         {
           data: "https.preloaded",
@@ -286,7 +231,7 @@ $(document).ready(function () {
         },
         {
           data: "",
-          render: showDetails,
+          render: function() {return "";},
         }
       ],
 
