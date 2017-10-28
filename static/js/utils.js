@@ -12,12 +12,19 @@ var Utils = {
       '</div>';
   },
 
+  truncate: function (string, length) {
+    if (string.length > length)
+      return string.substring(0, length) + "...";
+    else
+      return string;
+  },
+
   linkDomain: function(data, type, row) {
     if (type == "sort")
       return data;
     else
       return "" +
-        "<a href=\"" + row['canonical'] + "\" target=\"blank\">" +
+        "<a href=\"" + row.canonical + "\" target=\"blank\">" +
           data +
         "</a>";
   },
@@ -36,8 +43,8 @@ var Utils = {
     };
   },
 
-  searchLinks: function() {
-    var api = this.api();
+  searchLinks: function(table) {
+    var api = table.api();
     var query = QueryString.parse(location.hash).q;
 
     if (query) {

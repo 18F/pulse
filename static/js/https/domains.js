@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+  // referenced in a few places
+  var table;
+
   $.get("/data/domains/https.json", function(data) {
     renderTable(data.data);
   });
@@ -17,27 +20,27 @@ $(document).ready(function () {
   var names = {
 
     enforces: {
-      0: "", // N/A (no HTTPS)
+      0: "No", // No (no HTTPS)
       1: "No", // Present, not default
       2: "Yes", // Defaults eventually to HTTPS
       3: "Yes" // Defaults eventually + redirects immediately
     },
 
     hsts: {
-      "-1": "", // N/A
+      "-1": "No", // No (no HTTPS)
       0: "No",  // No
       1: "No", // No, HSTS with short max-age (for canonical endpoint)
       2: "Yes" // Yes, HSTS for >= 1 year (for canonical endpoint)
     },
 
     preloaded: {
-      0: "",  // No (don't display, since it's optional)
+      0: "No",  // No
       1: "Ready",  // Preload-ready
       2: "Yes"  // Yes
     },
 
     bod_crypto: {
-      "-1": "",
+      "-1": "--", // No HTTPS
       0: "No",
       1: "Yes"
     }
@@ -52,62 +55,58 @@ $(document).ready(function () {
     }
   };
 
-  // Describe what's going on with this domain's subdomains.
-  var subdomains = function(data, type, row) {
+  var showNotes = function(data, type, row) {
     if (type == "sort") return null;
 
-    // If the domain is preloaded, responsibilities are absolved.
-    if (row.https.preloaded == 2)
-      return "All subdomains automatically protected through preloading.";
+    if (row.https.preloaded)
+      return "Preloaded";
+    else
+      return "Not yet preloaded.";
+  }
 
-    if (row.https.preloaded == 1)
-      return "All subdomains will be protected when preloading is complete.";
-
-    if (!row.https.subdomains) {
-      if (row.https.uses >= 1)
-        return "No public subdomains found. " + l("preload", "Consider preloading.");
-      else
-        return "No public subdomains found.";
-    }
-
-    var sources = [],
-        message = "",
-        pct = null;
-
-    // TODO: make this a function.
-    if (row.https.subdomains.censys) {
-      pct = Utils.percent(row.https.subdomains.censys.enforces, row.https.subdomains.censys.eligible);
-      message = n("" + pct + "%") + " of " +
-        row.https.subdomains.censys.eligible + " public sites "
-        + "known to Censys" +
-        " enforce HTTPS.";
-      sources.push(message);
-    }
-
-    if (row.https.subdomains.dap) {
-      pct = Utils.percent(row.https.subdomains.dap.enforces, row.https.subdomains.dap.eligible);
-      sources.push(n("" + pct + "%") + " of " +
-        row.https.subdomains.dap.eligible + " public sites " +
-        "known to the Digital Analytics Program" +
-        " enforce HTTPS.")
-    }
-
-    if (sources.length == 0)
-      return "";
-
-    sources.push("For more details, " + l(links.subdomains, "read our methodology") +
-      ", or " + l(agencyDownloadFor(row), "download subdomain data for this agency") + ".");
-
-    var p = "<p class=\"indents\">";
-    return n("Known public subdomains: ") + p + sources.join("</p>" + p) + "</p>";
+  // Describe what's going on with this domain's subdomains.
+  var showDetails = function(data, type, row) {
+    if (type == "sort") return null;
+    var eligible = row.totals.https.eligible;
+    var services = (eligible == 1 ? "service" : "services");
+    return "Load details for " + n("" + eligible + " " + services) + " on this domain. &raquo;";
   };
 
   var agencyDownloadFor = function(row) {
     return "https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/agencies/" + row["agency_slug"] + "/https.csv";
   };
 
+  var loadSubdomainData = function(row, base_domain, response) {
+    var subdomains = response.data;
+    var all = [];
+
+    for (i=0; i<subdomains.length; i++) {
+      var subdomain = subdomains[i];
+      var details = $("<tr/>").addClass("subdomain");
+
+      var link = "<a href=\"" + subdomain.canonical + "\" target=\"blank\">" + Utils.truncate(subdomain.domain, 35) + "</a>";
+      details.append($("<td/>").addClass("link").html(link));
+
+      var https = names.enforces[subdomain.https.enforces];
+      details.append($("<td/>").html(https));
+
+      var hsts = names.hsts[subdomain.https.hsts];
+      details.append($("<td/>").html(hsts));
+
+      var crypto = names.bod_crypto[subdomain.https.bod_crypto];
+      details.append($("<td/>").html(crypto));
+
+      // blank
+      details.append($("<td/>"));
+
+      all.push(details);
+    }
+
+    row.child(all, "child");
+  };
+
   // Construct a sentence explaining the HTTP situation.
-  var httpDetails = function(data, type, row) {
+  var zoneDetails = function(data, type, row) {
 
     if (type == "sort")
       return null;
@@ -121,36 +120,9 @@ $(document).ready(function () {
 
     var details;
 
-    // CASE: Perfect score!
-    // HSTS max-age is allowed to be weak, because client enforcement means that
-    // the max-age is effectively overridden in modern browsers.
-    if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts == 2) && (preloaded == 2)) {
-      details = g("Perfect score! HTTPS is strictly enforced throughout the zone.");
-    }
-
-    // CASE: HSTS preloaded, but HSTS header is missing.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts < 1) && (preloaded == 2))
-      details = n("Caution:") + " Domain is preloaded, but HSTS header is missing. This may " + l("stay_preloaded", "cause the domain to be un-preloaded") + ".";
-
-    // CASE: HTTPS+HSTS, preload-ready but not preloaded.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts == 2) && (preloaded == 1))
-      details = g("Almost there! ") + "Domain is ready to be " + l("submit", "submitted to the HSTS preload list") + ".";
-
-    // CASE: HTTPS+HSTS (M-15-13 compliant), but no preloading.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts == 2) && (preloaded == 0))
-      details = g("HTTPS enforced. ") + n(l("preload", "Consider preloading this domain")) + " to enforce HTTPS across the entire zone.";
-
     // CASE: HSTS, but HTTPS not enforced.
-    else if ((https >= 1) && (behavior < 2) && (hsts == 2))
-      details = n("Caution:") + " Domain uses " + l("hsts", "HSTS") + ", but is not redirecting clients to HTTPS.";
+    if ((https >= 1) && (behavior < 2) && (hsts == 2))
+      details = "Domain uses " + l("hsts", "HSTS") + ", but is not redirecting clients to HTTPS.";
 
     // CASE: HTTPS w/valid chain supported and enforced, weak/no HSTS.
     else if ((https == 2) && (behavior >= 2) && (hsts < 2)) {
@@ -159,10 +131,6 @@ $(document).ready(function () {
       else if (hsts == 1)
         details = n("Almost:") + " The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
     }
-
-    // CASE: HTTPS w/invalid chain supported and enforced, no HSTS.
-    else if ((https == 1) && (behavior >= 2) && (hsts < 2))
-      details = n("Almost:") + " Domain is missing " + l("hsts", "HSTS") + ", but the presented certificate chain may not be valid for all public clients. HSTS prevents users from clicking through certificate warnings.";
 
     // CASE: HTTPS supported, not enforced, no HSTS.
     else if ((https >= 1) && (behavior < 2) && (hsts < 2))
@@ -228,39 +196,71 @@ $(document).ready(function () {
     };
   };
 
-  var eligibleServices = function(data, type, row) {
-    var services = row.totals.https.eligible;
-    if (type == "sort") return services;
-    return "<a href=\"#\"><b>" + services + "</b> services</a>";
+  var initExpansions = function() {
+    $('table.domain').on('click', 'tbody tr.parent, tbody tr.child', function() {
+      var row = table.row(this);
+
+      if (row.data() == undefined)
+        row = table.row(this.previousElementSibling);
+      if (row.data() == undefined) return;
+
+      var data = row.data();
+      var was_expanded = data.expanded;
+      data.expanded = true;
+      var base_domain = data.base_domain;
+
+      if (!was_expanded) {
+        $.ajax({
+          url: "/data/hosts/" + base_domain + "/https.json",
+          success: function(response) {
+            loadSubdomainData(row, base_domain, response);
+          },
+          error: function() {
+            console.log("Error loading data for " + base_domain);
+          }
+        });
+      }
+
+      return false;
+    });
   };
 
   var renderTable = function(data) {
-    var table = $("table").DataTable({
+    table = $("table").DataTable({
 
       data: data,
 
       responsive: {
           details: {
-              type: "",
+              type: "column",
               display: $.fn.dataTable.Responsive.display.childRowImmediate
           }
       },
 
-      initComplete: Utils.searchLinks,
+      initComplete: function() {
+        Utils.searchLinks(this);
+        initExpansions(this);
+      },
 
       columns: [
         {
-          data: "domain",
-          width: "210px",
-          cellType: "th",
-          render: Utils.linkDomain
+          className: 'control',
+          orderable: false,
+          data: "",
+          render: function() {return ""},
+          visible: false
         },
-        {data: "canonical"}, // why is this here?
-        {data: "agency_name"}, // here for filtering/sorting
         {
-          data: "totals.https.eligible",
-          render: eligibleServices
+          data: "domain",
+          width: "240px",
+          cellType: "td",
+          render: Utils.linkDomain,
+
+          createdCell: function (td) {
+            td.scope = "row";
+          }
         },
+        {data: "agency_name"}, // here for filtering/sorting
         {
           data: "totals.https.enforces",
           render: percentBar("https", "enforces")
@@ -277,15 +277,9 @@ $(document).ready(function () {
           data: "https.preloaded",
           render: display(names.preloaded)
         },
-      ],
-
-      columnDefs: [
         {
-          targets: 0,
-          cellType: "td",
-          createdCell: function (td) {
-            td.scope = "row";
-          }
+          data: "",
+          render: showDetails
         }
       ],
 

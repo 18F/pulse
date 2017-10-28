@@ -963,11 +963,13 @@ table caption {
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed th:first-child:before {
       top: 9px;
       background-color: #3399ff; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child td.child {
+      padding-top: 0px; }
     .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
       border-bottom: none;
-      padding: 0 0 3px 0; }
+      padding: 0 0 0px 0; }
     .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
-      min-width: 50px; }
+      min-width: 0px; }
     .dataTables_wrapper table.dataTable.https.domain tbody tr.parent td {
       border-bottom: none !important; }
     .dataTables_wrapper table.dataTable.https.domain tbody tr:hover {
@@ -975,6 +977,10 @@ table caption {
       cursor: pointer; }
       .dataTables_wrapper table.dataTable.https.domain tbody tr:hover + .child {
         background-color: #EEE; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.child:hover span.dtr-data {
+      text-decoration: underline; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.subdomain td.link {
+      padding-left: 60px; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 15px 40px !important; }
       @media screen and (max-width: 1024px) {
