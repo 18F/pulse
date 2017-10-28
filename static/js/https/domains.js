@@ -241,6 +241,9 @@ $(document).ready(function () {
           }
       },
 
+      lengthChange: false,
+      pageLength: 100,
+
       initComplete: function() {
         Utils.searchLinks(this);
         initExpansions(this);
@@ -296,7 +299,7 @@ $(document).ready(function () {
 
       csv: "/data/domains/https.csv",
 
-      dom: 'LCftrip'
+      dom: 'pCftrip'
 
     });
 
