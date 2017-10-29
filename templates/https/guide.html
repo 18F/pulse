@@ -109,9 +109,11 @@
 
         <ul id="uses-hsts">
           <li><strong>HSTS</strong></li>
-          <li><strong>Values:</strong> No, Yes</li>
+          <li><strong>Values:</strong>"No", "Yes", "Yes, preloaded"</li>
           <li>Whether a domain has implemented <a href="https://https.cio.gov/hsts/">HTTP Strict Transport Security</a>, which ensures that modern web browsers will only ever communicate with a domain over HTTPS (even if the user clicks or types in a plain HTTP link).</li>
+          <li>"Yes, preloaded" means that the subdomain is <a href="https://https.cio.gov/guide/#options-for-hsts-compliance">considered to be HSTS-compliant</a> due to its parent domain having been preloaded in modern browsers.</li>
           <li>"Yes" means that a valid <code>Strict-Transport-Security</code> header with a <code>max-age</code> value (in seconds) of at least <strong>1 year</strong> (31536000) is present on the domain's default endpoint.</li>
+          <li>"No" means that the HSTS header is either missing, or using a <code>max-age</code> of less than 1 year.</li>
         </ul>
 
         <ul id="known-weak-crypto">
