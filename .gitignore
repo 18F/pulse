@@ -1,4 +1,5 @@
 /data/output
+/data/backup
 /data/*.json
 /data/*.env
 db.json
