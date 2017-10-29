@@ -17,7 +17,7 @@ $(document).ready(function () {
         "</a>";
     }
 
-    return "<b>" + services + "</b> services" + "<br/>in " + link("" + domains + " domains");
+    return link("" + services + " services");
   };
 
   // report: e.g. 'https', or 'crypto'
@@ -62,6 +62,7 @@ $(document).ready(function () {
           data: "https.eligible", // sort on this, but
           render: eligibleHttps,
           targets: 1,
+          type: "num"
         },
         {
           data: "https.enforces",

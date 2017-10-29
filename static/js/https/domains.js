@@ -31,7 +31,7 @@ $(document).ready(function () {
       0: "No",  // No
       1: "No", // No, HSTS with short max-age (for canonical endpoint)
       2: "Yes", // Yes, HSTS for >= 1 year (for canonical endpoint)
-      3: "Yes, preloaded" // Yes, via preloading (subdomains only)
+      3: "Preloaded" // Yes, via preloading (subdomains only)
     },
 
     bod_crypto: {
@@ -102,7 +102,7 @@ $(document).ready(function () {
   };
 
   var loneDomain = function(row) {
-    return (row.totals.https.eligible == 1 && row.https.eligible);
+    return (row.is_parent && row.totals.https.eligible == 1 && row.https.eligible);
   };
 
   var showDomain = function(data, type, row) {
