@@ -1,2 +1,11 @@
 ./data/output
 todo.txt
+system-security-plan.yml
+CONTRIBUTING.md
+LICENSE.md
+README.md
+.scss-lint.yml
+.codeclimate.yml
+.about.yml
+.env
+.gitignore
