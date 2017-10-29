@@ -285,12 +285,16 @@ $(document).ready(function () {
   // field: e.g. 'uses' or 'rc4'
   var percentBar = function(report, field) {
     return function(data, type, row) {
-      var percent = Utils.percent(
-        row.totals[report][field], row.totals[report].eligible
-      );
-
-      if (type == "sort") return percent;
-      else return Utils.progressBar(percent);
+      var eligible = row.totals[report].eligible;
+      if (eligible == 0) {
+        if (type == "sort") return 100; // shrug
+        else return "--";
+      }
+      else {
+        var percent = Utils.percent(row.totals[report][field], eligible);
+        if (type == "sort") return percent;
+        else return Utils.progressBar(percent);
+      }
     };
   };
 
