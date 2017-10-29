@@ -38,16 +38,16 @@
     d3.json("/data/reports/https.json", function (error, data) {
 
         // calculate % client-side
-        var uses = Math.round((data.uses / data.eligible) * 100);
+        var enforces = Math.round((data.enforces / data.eligible) * 100);
 
         // just abort and leave it blank if something's wrong
         // (instead of showing "NaN%" visually)
-        if (isNaN(uses))
+        if (isNaN(enforces))
             return;
 
         var pie_data = [
-            {status: 'active', value: uses},
-            {status: 'inactive', value: (100-uses)},
+            {status: 'active', value: enforces},
+            {status: 'inactive', value: (100-enforces)},
         ]
 
         var g = chart.selectAll(".arc")
@@ -85,7 +85,7 @@
             .attr("dy", "2.5em")
             .attr("fill", "white")
             .text(function(d) {
-                return "USE HTTPS";
+                return "ENFORCE HTTPS";
         });
 
 

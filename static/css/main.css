@@ -366,6 +366,13 @@ a#skipnav {
       #accessibility #content > header.chart .description:last-child,
       #about #content > header.chart .description:last-child {
         margin-right: 0; }
+      #https #content > header.chart .description a,
+      #domain #content > header.chart .description a,
+      #agency #content > header.chart .description a,
+      #analytics #content > header.chart .description a,
+      #accessibility #content > header.chart .description a,
+      #about #content > header.chart .description a {
+        text-decoration: underline; }
       @media screen and (max-width: 767px) {
         #https #content > header.chart .description,
         #domain #content > header.chart .description,
