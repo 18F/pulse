@@ -27,11 +27,11 @@
         <h4 id="what-domains-are-measured">What domains are measured?</h4>
 
         <p>
-          Pulse measures the presence, enforcement, and quality of HTTPS for <strong>publicly accessible <code>.gov</code> domains</strong> in the federal government's <strong>executive, legislative, and judicial branches</strong>. Domains which do nothing but redirect to other websites <strong>are measured</strong>.
+          Pulse measures the deployment of HTTPS and HSTS for <strong>publicly accessible <code>.gov</code> domains</strong> in the federal government's <strong>executive branch</strong>. Domains which do nothing but redirect to other websites <strong>are measured</strong>.
         </p>
 
         <p>
-          This currently amounts to around 1,200 domains.
+          This currently amounts to around 1,200 domains. Official <code>.gov</code> domain data can be downloaded <a href="https://home.dotgov.gov/data/">from the DotGov program</a>.
         </p>
 
       </article>
@@ -40,14 +40,17 @@
         <h4 id="subdomains">What subdomains are measured?</h4>
 
         <p>
-          Pulse currently measures <strong><code>.gov</code> subdomains that are publicly accessible over HTTP</strong> that belong to any of the measured parent domains, that are discovered from <strong>already public sources</strong>.
+          Pulse currently measures <strong><code>.gov</code> subdomains that are publicly accessible over HTTP</strong> that belong to any of the measured parent <code>.gov</code> domains. These subdomains are discovered from <strong>existing public sources</strong>:
         </p>
 
         <ul>
-          <li>Pulse currently draws from two public sources:</li>
           <li>
             <strong><a href="https://censys.io">Censys</a>:</strong>
-            Censys publishes a large dataset of <a href="https://censys.io/certificates">observed and issued certificates</a>, updated nightly. This includes all certificates observed on the public internet from daily scans of the IPv4 space, as well as all certificates submitted to public <a href="https://https.cio.gov/certificates/#certificate-transparency">Certificate Transparency</a> logs.
+            Censys publishes a large dataset of <a href="https://censys.io/certificates">observed and issued certificates</a>, updated nightly. This includes all certificates observed on the public internet from daily scans of the IPv4 space, as well as all certificates submitted to public Certificate Transparency logs.
+          </li>
+          <li>
+            <strong><a href="http://eotarchive.cdlib.org/2016.html">End of Term Web Archive</a>:</strong>
+            The End of Term Web Archive is a collaboration between the Library of Congress, the Government Publishing Office, the <a href="https://archive.org">Internet Archive</a>, and others, to extensively crawl and archive federal government websites at the conclusion of every presidential term. We pull hostname information from their published 2016 dataset.
           </li>
           <li>
             <strong><a href="https://analytics.usa.gov">Digital Analytics Program</a>:</strong>
@@ -69,7 +72,7 @@
         </p>
 
         <p>
-          Agencies working on deploying HTTPS are encouraged to consult <a href="https://https.cio.gov">https.cio.gov</a> for detailed best practices and technical guidance. <a href="https://https.cio.gov">https.cio.gov</a> is <a href="https://github.com/gsa/https">open source</a>, and agencies are also very much encouraged to contribute their own expertise and case studies.
+          Agencies working on deploying HTTPS are encouraged to consult <a href="https://https.cio.gov">https.cio.gov</a> for detailed best practices and technical guidance. <a href="https://https.cio.gov">https.cio.gov</a> is <a href="https://github.com/gsa/https">open source</a>, and agencies are very much encouraged to contribute their own expertise and case studies.
         </p>
 
       </article>
@@ -79,11 +82,17 @@
         <h4 id="measuring">Measuring HTTPS</h4>
 
         <p>
-          Pulse analyzes the behavior of four "endpoints" of every domain: <code>http://</code>, <code>http://www</code>, <code>https://</code>, and <code>https://www</code>. Data from these endpoints is used to characterize the overall behavior of a domain.
-        </p>
+          Pulse analyzes the behavior of four "endpoints" of every domain and subdomain: <code>http://</code>, <code>http://www</code>, <code>https://</code>, and <code>https://www</code>. Data from these endpoints is used to characterize the overall behavior of a domain or subdomain. These measurements are performed using open source tools:
 
-        <p>
-          These measurements are performed using <a href="https://github.com/dhs-ncats/pshtt">open source</a> <a href="https://github.com/18F/domain-scan">tools</a> and the <a href="https://www.ssllabs.com">SSL Labs</a> <a href="https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md">API</a>.
+          <ul>
+            <li><a href="https://github.com/dhs-ncats/pshtt">pshtt</a>, a Python-based HTTPS and HSTS scanning tool maintained by the Department of Homeland Security as an <a href="https://18f.gsa.gov/2017/01/06/open-source-collaboration-across-agencies-to-improve-https-deployment/">open source collaboration</a> between DHS, the General Services Administration, Lawrence Livermore National Laboratory, <a href="https://18f.gsa.gov/2017/05/25/from-launch-to-landing-how-nasa-took-control-of-its-https-mission/">NASA</a>, and <a href="https://github.com/dhs-ncats/pshtt/graphs/contributors">other contributors</a>.</li>
+
+            <li><a href="https://github.com/18F/domain-scan">domain-scan</a>, a Python-based tool used for hostname discovery and scanner orchestration. The domain-scan tool is used to discover public subdomains from various sources, and to efficiently coordinate and parallelize pshtt, sslyze, and other tools for large batch scans. The domain-scan tool is maintained by the General Services Administration, and receives use and contributions by the <a href="https://github.com/18f/domain-scan/graphs/contributors">Department of Homeland Security and others</a>.</li>
+
+            <li><a href="https://github.com/nabla-c0d3/sslyze">SSLyze</a>, a Python-based tool used for analyzing the TLS/SSL configuration of a given hostname. SSLyze is maintained by an <a href="https://github.com/nabla-c0d3">independent author</a>.</li>
+          </ul>
+
+          While Pulse uses these tools to scan publicly accessible services, agencies can easily make use of these tools themselves in order to scan their internal services.
         </p>
 
       </article>
@@ -92,38 +101,32 @@
 
         <h4 id="fields">Fields</h4>
 
-        <ul id="uses-https">
-          <li><strong>Uses HTTPS</strong></li>
-          <li><strong>Values:</strong> No, Yes</li>
-          <li>Whether a site can be used over HTTPS, on either its bare domain or its <code>www</code> subdomain. Sites that appear to redirect "down" from HTTPS to HTTP are considered a "No".</li>
-        </ul>
-
         <ul id="enforces-https">
           <li><strong>Enforces HTTPS</strong></li>
           <li><strong>Values:</strong> No, Yes</li>
-          <li>Whether a domain appears to "default" to using HTTPS. This can be done either by redirecting its HTTP endpoints to HTTPS, or by only being available over HTTPS.</li>
+          <li>Whether a service uses and enforces HTTPS by default. This can be done by redirecting a service's HTTP endpoints to HTTPS, or by only being available over HTTPS.</li>
         </ul>
 
         <ul id="uses-hsts">
-          <li><strong>Strict Transport Security (HSTS)</strong></li>
+          <li><strong>HSTS</strong></li>
           <li><strong>Values:</strong> No, Yes</li>
-          <li>Whether a domain has implemented <a href="https://https.cio.gov/hsts/">HTTP Strict Transport Security</a>, which ensures that <a href="http://caniuse.com/#feat=stricttransportsecurity">supporting browsers</a> will only ever communicate with a domain over HTTPS (even if the user clicks or types in a plain HTTP link).</li>
+          <li>Whether a domain has implemented <a href="https://https.cio.gov/hsts/">HTTP Strict Transport Security</a>, which ensures that modern web browsers will only ever communicate with a domain over HTTPS (even if the user clicks or types in a plain HTTP link).</li>
           <li>"Yes" means that a valid <code>Strict-Transport-Security</code> header with a <code>max-age</code> value (in seconds) of at least <strong>1 year</strong> (31536000) is present on the domain's default endpoint.</li>
         </ul>
 
-        <ul id="uses-preloading">
-          <li><strong>Preloaded (recommended)</strong></li>
-          <li><strong>Values:</strong> Ready, Yes</li>
-          <li>"Ready" means that the domain has implemented a strong HSTS header on its <strong>bare domain</strong> whose policy covers all subdomains, and has indicated consent to <a href="https://hstspreload.appspot.com">preloading by all major browsers</a> as HTTPS-only.</li>
-          <li>"Yes" means that the domain is actually in the publicly versioned <a href="https://chromium.googlesource.com/chromium/src/+/master/net/http/transport_security_state_static.json">Chrome preload list</a>, and has the <code>include_subdomains</code> flag enabled in that list. Reaching this step effectively means that a domain's namespace is permanently and fully committed to HTTPS.</li>
+        <ul id="known-weak-crypto">
+          <li><strong>Free of RC4/3DES and SSLv2/SSLv3</strong></li>
+          <li><strong>Values:</strong> "Yes", "No, uses [...]"</li>
+          <li>"Yes" means that the service's primary endpoint does not use the RC4 or 3DES ciphers, and has disabled the SSLv2 and SSLv3 protocols. Disabling these ciphers and protocols is a requirement of the Department of Homeland Security's <a href="https://cyber.dhs.gov/https/#moving-ahead">Binding Operational Directive 18-01</a>.</li>
+          <li>"No, uses [...]" will show what known-weak ciphers and protocols are still in use. Examples include "No, uses SSLv2", or "No, uses 3DES, RC4", etc.</li>
         </ul>
 
-        <ul id="ssl-labs-grade">
-          <li><strong>SSL Labs Grade</strong></li>
-          <li><strong>Values:</strong> T, F, C, B, A-, A, A+</li>
-          <li>A grade measuring the <em>quality</em> of HTTPS configuration, as calculated by <a href="https://www.ssllabs.com">SSL Labs</a>. SSL Labs operates a free and universally referenced benchmarking service.</li>
-          <li>Grades are calculated using a <a href="https://www.ssllabs.com/downloads/SSL_Server_Rating_Guide.pdf">detailed methodology</a> that looks at the strength of cryptographic keys, choices of ciphers, supported protocols, and other relevant standards (such as HSTS).</li>
-          <li>Grades are hyperlinked to detailed reports for each domain on SSL Labs. As an example, view the <a href="https://www.ssllabs.com/ssltest/analyze.html?d=pulse.cio.gov">SSL Labs report for Pulse itself</a>.</li>
+        <ul id="uses-preloading">
+          <li><strong>Preloaded</strong></li>
+          <li><strong>Values:</strong> No, Ready, Yes</li>
+          <li>"Yes" means that the domain is actually in the publicly versioned <a href="https://chromium.googlesource.com/chromium/src/+/master/net/http/transport_security_state_static.json">Chrome preload list</a>, and has the <code>include_subdomains</code> flag enabled in that list. Reaching this step effectively means that a domain's namespace is permanently and fully committed to HTTPS. <strong>Note:</strong> All domains can be preloaded, even those that don't serve a website. If you want to preload your domain but can't or don't wish to serve HTTP headers there, <a href="mailto:dotgov@gsa.gov">contact the DotGov program</a> to have them preload your domain with browsers directly.</li>
+          <li>"Ready" means that the domain has implemented a strong HSTS policy on its <strong>bare domain</strong> whose policy covers all subdomains, and has indicated consent to <a href="https://hstspreload.org">preloading by all major browsers</a> as HTTPS-only. If the domain can be safely preloaded, the domain owner should <a href="https://hstspreload.org">visit the preloading form and submit their domain</a>.</li>
+          <li>"No" means the domain has not been preloaded, and there is no HSTS policy indicating consent to be preloaded.
         </ul>
 
       </article>
