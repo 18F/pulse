@@ -46,6 +46,9 @@ $(document).ready(function () {
 
       data: data,
 
+      lengthChange: false,
+      pageLength: 150,
+
       // order by number of domains
       order: [[1, "desc"]],
 
@@ -93,7 +96,7 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'Lftrip'
+      dom: 'ftri'
 
     });
 
