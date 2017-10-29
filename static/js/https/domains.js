@@ -30,7 +30,8 @@ $(document).ready(function () {
       "-1": "No", // No (no HTTPS)
       0: "No",  // No
       1: "No", // No, HSTS with short max-age (for canonical endpoint)
-      2: "Yes" // Yes, HSTS for >= 1 year (for canonical endpoint)
+      2: "Yes", // Yes, HSTS for >= 1 year (for canonical endpoint)
+      3: "Yes, preloaded" // Yes, via preloading (subdomains only)
     },
 
     bod_crypto: {
@@ -39,6 +40,7 @@ $(document).ready(function () {
       1: "Yes"
     },
 
+    // Parent domains only
     preloaded: {
       0: "No",  // No
       1: "Ready",  // Preload-ready

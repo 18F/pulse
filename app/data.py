@@ -16,11 +16,11 @@ LABELS = {
     'uses': 'Uses HTTPS',
     'enforces': 'Enforces HTTPS',
     'hsts': 'Strict Transport Security (HSTS)',
-    'preloaded': 'Preloaded (recommended)',
-    'bod_crypto': 'BOD 18-01 Requirements',
+    'preloaded': 'Preloaded',
+    'bod_crypto': 'Free of RC4/3DES and SSLv2/SSLv3',
 
     'hsts_age': 'HSTS max-age',
-    'bod_agencies': 'BOD 18-01 Requirements',
+    'bod_agencies': 'Free of RC4/3DES and SSLv2/SSLv3',
     '3des': '3DES',
     'rc4': 'RC4',
     'ssl3': 'SSLv3',
@@ -50,21 +50,22 @@ FIELD_MAPPING = {
     },
 
     'enforces': {
-      0: "",  # N/A (no HTTPS)
+      0: "No",  # N/A (no HTTPS)
       1: "No",  # Present, not default
       2: "Yes",  # Defaults eventually to HTTPS
       3: "Yes"  # Defaults eventually + redirects immediately
     },
 
     'hsts': {
-      -1: "",  # N/A
+      -1: "No",  # N/A
       0: "No",  # No
       1: "No",  # No, HSTS with short max-age (for canonical endpoint)
       2: "Yes",  # Yes, HSTS for >= 1 year (for canonical endpoint)
+      3: "Yes, preloaded" # Yes, via preloading (subdomains only)
     },
 
     'preloaded': {
-      0: "",  # No (leave blank, since not required)
+      0: "No",  # No
       1: "Ready",  # Preload-ready
       2: "Yes"  # Yes
     },
@@ -86,6 +87,6 @@ FIELD_MAPPING = {
 
 CSV_FIELDS = {
   'common': ['domain', 'base', 'canonical', 'agency_name', 'sources'],
-  'https': ['uses', 'enforces', 'hsts', 'preloaded', 'bod_crypto'],
+  'https': ['enforces', 'hsts', 'bod_crypto', '3des', 'rc4', 'sslv2', 'sslv3', 'preloaded'],
   'analytics': ['participating']
 }

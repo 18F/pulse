@@ -485,6 +485,14 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
     eligible_children = []
     eligible_zone = False
 
+    # No matter what, put the preloaded state onto the parent,
+    # since even an unused domain can always be preloaded.
+    https_parent['preloaded'] = preloaded_or_not(
+      parent_scan_data[domain_name]['pshtt']
+    )
+
+    # Tally subdomains first, so we know if the parent zone is
+    # definitely eligible as a zone even if not as a website
     for subdomain_name in parent_scan_data[domain_name].get('subdomains', []):
 
       if eligible_for_https(subdomains[subdomain_name]):
@@ -492,7 +500,8 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
         subdomains[subdomain_name]['https'] = https_behavior_for(
           subdomain_name,
           subdomain_scan_data[subdomain_name]['pshtt'],
-          subdomain_scan_data[subdomain_name].get('sslyze', None)
+          subdomain_scan_data[subdomain_name].get('sslyze', None),
+          parent_preloaded=https_parent['preloaded']
         )
 
     # ** syntax merges dicts, available in 3.5+
@@ -503,17 +512,15 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
         parent_scan_data[domain_name].get('sslyze', None)
       )}
       https_parent['eligible_zone'] = True
-    # if eligible only for subdomains, initialize the dict
-    else:
-      # no matter what, put the preloaded state onto the parent
-      # since even an unused domain can always be preloaded
-      https_parent['preloaded'] = preloaded_or_not(
-        parent_scan_data[domain_name]['pshtt']
-      )
 
-      # And if the zone has children, the zone is eligible
-      if len(eligible_children) > 0:
+    # even if not eligible directly, can be eligible via subdomains
+    elif len(eligible_children) > 0:
         https_parent['eligible_zone'] = True
+
+    # If the parent zone is preloaded, make sure that each subdomain
+    # is considered to have HSTS in place. If HSTS is yes on its own,
+    # leave it, but if not, then grant it the minimum level.
+    # TODO:
 
     domains[domain_name]['https'] = https_parent
 
@@ -787,7 +794,7 @@ def cust_sat_report_for(domain_name, domain, parent_scan_data):
 
 # Given a pshtt report and (optional) sslyze report,
 # fill in a dict with the conclusions.
-def https_behavior_for(name, pshtt, sslyze):
+def https_behavior_for(name, pshtt, sslyze, parent_preloaded=None):
   report = {
     'eligible': True
   }
@@ -856,8 +863,13 @@ def https_behavior_for(name, pshtt, sslyze):
   else:
     hsts_age = None
 
-  # Without HTTPS there can be no HSTS.
-  if (https <= 0):
+  # If this is a subdomain, it can be considered as having HSTS, via
+  # the preloading of its parent.
+  if parent_preloaded:
+    hsts = 3 # Yes, via preloading
+
+  # Otherwise, without HTTPS there can be no HSTS for the domain directly.
+  elif (https <= 0):
     hsts = -1  # N/A (considered 'No')
 
   else:
@@ -867,7 +879,7 @@ def https_behavior_for(name, pshtt, sslyze):
 
       # Say No for too-short max-age's, and note in the extended details.
       if hsts_age >= 31536000:
-        hsts = 2  # Yes
+        hsts = 2  # Yes, directly
       else:
         hsts = 1  # No
 
@@ -912,7 +924,7 @@ def https_behavior_for(name, pshtt, sslyze):
     ###
     # BOD 18-01 (cyber.dhs.gov) cares about SSLv2, SSLv3, RC4, and 3DES.
     any_rc4 = boolean_for(sslyze["Any RC4"])
-    # todo: kill conditional once everything is synced
+    # TODO: kill conditional once everything is synced
     if sslyze.get("Any 3DES"):
       any_3des = boolean_for(sslyze["Any 3DES"])
     sslv2 = boolean_for(sslyze["SSLv2"])
@@ -959,7 +971,8 @@ def total_https_report(eligible):
     if report['enforces'] >= 2:
       total_report['enforces'] += 1
 
-    # Needs to be present with >= 1 year max-age for canonical endpoint
+    # Needs to be present with >= 1 year max-age for canonical endpoint,
+    # or preloaded via its parent zone.
     if report['hsts'] >= 2:
       total_report['hsts'] += 1
 
