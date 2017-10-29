@@ -504,8 +504,16 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
       )}
       https_parent['eligible_zone'] = True
     # if eligible only for subdomains, initialize the dict
-    elif len(eligible_children) > 0:
-      https_parent['eligible_zone'] = True
+    else:
+      # no matter what, put the preloaded state onto the parent
+      # since even an unused domain can always be preloaded
+      https_parent['preloaded'] = preloaded_or_not(
+        parent_scan_data[domain_name]['pshtt']
+      )
+
+      # And if the zone has children, the zone is eligible
+      if len(eligible_children) > 0:
+        https_parent['eligible_zone'] = True
 
     domains[domain_name]['https'] = https_parent
 
@@ -923,6 +931,14 @@ def https_behavior_for(name, pshtt, sslyze):
 
 
   return report
+
+# Just returns a 0 or 2 for inactive (not live) zones, where
+# we still may care about preloaded state.
+def preloaded_or_not(pshtt):
+  if pshtt["HSTS Preloaded"] == "True":
+    return 2  # Yes
+  else:
+    return 0 # No
 
 # 'eligible' should be a list of dicts with https report data.
 def total_https_report(eligible):
