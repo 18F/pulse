@@ -941,6 +941,21 @@ def https_behavior_for(name, pshtt, sslyze, parent_preloaded=None):
   report['sslv2'] = sslv2
   report['sslv3'] = sslv3
 
+  # Final calculation: is the service compliant with all of M-15-13
+  # (HTTPS+HSTS) and BOD 18-01 (that + RC4/3DES/SSLv2/SSLv3)?
+
+  # For M-15-13 compliance, the service has to enforce HTTPS,
+  # and has to have strong HSTS in place (can be via preloading).
+  m1513 = (behavior >= 2) and (hsts >= 2)
+
+  # For BOD compliance, only ding if we have scan data:
+  # * If our scanner dropped, give benefit of the doubt.
+  # * If they have no HTTPS, this will fix itself once HTTPS comes on.
+  bod1801 = m1513 and (bod_crypto != 0)
+
+  # Phew!
+  report['m1513'] = m1513
+  report['bod1801'] = bod1801 # equivalent, since BOD is a superset
 
   return report
 
@@ -958,7 +973,11 @@ def total_https_report(eligible):
     'eligible': len(eligible),
     'uses': 0,
     'enforces': 0,
-    'hsts': 0
+    'hsts': 0,
+
+    # compliance roll-ups
+    'm1513': 0,
+    'bod1801': 0
   }
 
   for report in eligible:
@@ -975,6 +994,11 @@ def total_https_report(eligible):
     # or preloaded via its parent zone.
     if report['hsts'] >= 2:
       total_report['hsts'] += 1
+
+    # Factors in crypto score, but treats ineligible services as passing.
+    for field in ['m1513', 'bod1801']:
+      if report[field]:
+        total_report[field] += 1
 
   return total_report
 
