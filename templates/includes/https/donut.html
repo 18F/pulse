@@ -38,16 +38,16 @@
     d3.json("/data/reports/https.json", function (error, data) {
 
         // calculate % client-side
-        var enforces = Math.round((data.enforces / data.eligible) * 100);
+        var compliant = Math.round((data.compliant / data.eligible) * 100);
 
         // just abort and leave it blank if something's wrong
         // (instead of showing "NaN%" visually)
-        if (isNaN(enforces))
+        if (isNaN(compliant))
             return;
 
         var pie_data = [
-            {status: 'active', value: enforces},
-            {status: 'inactive', value: (100-enforces)},
+            {status: 'active', value: compliant},
+            {status: 'inactive', value: (100-compliant)},
         ]
 
         var g = chart.selectAll(".arc")
@@ -73,7 +73,7 @@
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-value")
-            .attr("dy", "0.2em")
+            .attr("dy", "-0.2em")
             .attr("fill", "white")
             .text(function(d){
                 return "" + pie_data[0].value + "%";
@@ -82,10 +82,26 @@
         g.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "total-desc")
-            .attr("dy", "2.5em")
+            .attr("dy", "1.7em")
             .attr("fill", "white")
             .text(function(d) {
-                return "ENFORCE HTTPS";
+                return "COMPLIANT WITH";
+        });
+        g.append("text")
+            .attr("text-anchor", "middle")
+            .attr("class", "total-desc")
+            .attr("dy", "3.0em")
+            .attr("fill", "white")
+            .text(function(d) {
+                return "M-15-13 AND";
+        });
+        g.append("text")
+            .attr("text-anchor", "middle")
+            .attr("class", "total-desc")
+            .attr("dy", "4.3em")
+            .attr("fill", "white")
+            .text(function(d) {
+                return "BOD 18-01";
         });
 
 
