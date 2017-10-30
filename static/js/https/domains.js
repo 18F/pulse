@@ -77,9 +77,16 @@ $(document).ready(function () {
     return "No, uses " + problems.join(", ");
   };
 
-  var loadSubdomainData = function(row, base_domain, response) {
+  var loadSubdomainData = function(row, base_domain, number, response) {
     var subdomains = response.data;
     var all = [];
+
+    var csv = "#";
+    var discoveryLink = l("subdomains", "publicly discoverable services");
+    var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
+    link += l(csv, "Download as a CSV") + ".";
+    var download = $("<tr></tr>").addClass("subdomain").html("<td colspan=6>" + link + "</td>");
+    all.push(download);
 
     for (i=0; i<subdomains.length; i++) {
       var subdomain = subdomains[i];
@@ -176,7 +183,7 @@ $(document).ready(function () {
         $.ajax({
           url: "/data/hosts/" + base_domain + "/https.json",
           success: function(response) {
-            loadSubdomainData(row, base_domain, response);
+            loadSubdomainData(row, base_domain, data.totals.https.eligible, response);
           },
           error: function() {
             console.log("Error loading data for " + base_domain);
