@@ -17,7 +17,7 @@ $(document).ready(function () {
         "</a>";
     }
 
-    return link("" + services + " services");
+    return link("" + services);
   };
 
   // report: e.g. 'https', or 'crypto'
