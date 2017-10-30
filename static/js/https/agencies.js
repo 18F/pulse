@@ -35,7 +35,10 @@ $(document).ready(function () {
 
   var renderTable = function(data) {
     var table = $("table").DataTable({
-      initComplete: Utils.searchLinks,
+
+      initComplete: function() {
+        Utils.searchLinks(this);
+      },
 
       responsive: {
           details: {
