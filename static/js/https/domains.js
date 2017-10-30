@@ -45,6 +45,11 @@ $(document).ready(function () {
       0: "No",  // No
       1: "Ready",  // Preload-ready
       2: "<strong>Yes</strong>"  // Yes
+    },
+
+    compliant: {
+      false: "No",
+      true: "Yes"
     }
   };
 
@@ -83,6 +88,9 @@ $(document).ready(function () {
       var link = "<a href=\"" + subdomain.canonical + "\" target=\"blank\">" + Utils.truncate(subdomain.domain, 35) + "</a>";
       details.append($("<td/>").addClass("link").html(link));
 
+      var compliant = names.compliant[subdomain.https.compliant];
+      details.append($("<td class=\"compliant\"/>").html(compliant));
+
       var https = names.enforces[subdomain.https.enforces];
       details.append($("<td/>").html(https));
 
@@ -112,6 +120,15 @@ $(document).ready(function () {
       return Utils.linkDomain(data, type, row);
 
     return n(row.domain) + " (" + l("#", "show " + row.totals.https.eligible + " services") + ")";
+  };
+
+  var showCompliant = function(data, type, row) {
+    if (type == "sort") return row.totals.https.compliant;
+
+    if (loneDomain(row))
+      return names.compliant[row.https.compliant];
+    else
+      return percentBar("https", "compliant")(data, type, row);
   };
 
   var showEnforces = function(data, type, row) {
@@ -216,6 +233,12 @@ $(document).ready(function () {
         },
         {data: "agency_name"}, // here for filtering/sorting
         {
+          data: "totals.https.compliant",
+          render: showCompliant,
+          width: "100px",
+          className: "compliant"
+        },
+        {
           data: "totals.https.enforces",
           render: showEnforces
         },
@@ -233,7 +256,7 @@ $(document).ready(function () {
         },
         {
           data: "",
-          render: function() {return "";},
+          render: function() {return "";}
         }
       ],
 

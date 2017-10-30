@@ -18,6 +18,7 @@ LABELS = {
     'hsts': 'Strict Transport Security (HSTS)',
     'preloaded': 'Preloaded',
     'bod_crypto': 'Free of RC4/3DES and SSLv2/SSLv3',
+    'compliant': 'Compliant with M-15-13 and BOD 18-01',
 
     'hsts_age': 'HSTS max-age',
     'bod_agencies': 'Free of RC4/3DES and SSLv2/SSLv3',
@@ -74,6 +75,11 @@ FIELD_MAPPING = {
       -1: "",
       0: "No",
       1: "Yes"
+    },
+
+    'compliant': {
+      False: "No",
+      True: "Yes"
     }
   },
 
@@ -87,6 +93,6 @@ FIELD_MAPPING = {
 
 CSV_FIELDS = {
   'common': ['domain', 'base', 'canonical', 'agency_name', 'sources'],
-  'https': ['enforces', 'hsts', 'bod_crypto', '3des', 'rc4', 'sslv2', 'sslv3', 'preloaded'],
+  'https': ['compliant', 'enforces', 'hsts', 'bod_crypto', '3des', 'rc4', 'sslv2', 'sslv3', 'preloaded'],
   'analytics': ['participating']
 }

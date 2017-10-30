@@ -957,6 +957,11 @@ table caption {
       padding: 8px 0 8px 40px; }
     .dataTables_wrapper table.dataTable td:first {
       padding: 8px 0 8px 30px !important; }
+    .dataTables_wrapper table.dataTable td.compliant {
+      border-left: 0px solid black;
+      border-right: 0px solid black;
+      font-weight: bold;
+      background-color: #eee; }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
       background-position: 20px center; }
     .dataTables_wrapper table.dataTable.no-footer {

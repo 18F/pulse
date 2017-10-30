@@ -955,7 +955,7 @@ def https_behavior_for(name, pshtt, sslyze, parent_preloaded=None):
 
   # Phew!
   report['m1513'] = m1513
-  report['bod1801'] = bod1801 # equivalent, since BOD is a superset
+  report['compliant'] = bod1801 # equivalent, since BOD is a superset
 
   return report
 
@@ -977,7 +977,7 @@ def total_https_report(eligible):
 
     # compliance roll-ups
     'm1513': 0,
-    'bod1801': 0
+    'compliant': 0
   }
 
   for report in eligible:
@@ -996,7 +996,7 @@ def total_https_report(eligible):
       total_report['hsts'] += 1
 
     # Factors in crypto score, but treats ineligible services as passing.
-    for field in ['m1513', 'bod1801']:
+    for field in ['m1513', 'compliant']:
       if report[field]:
         total_report[field] += 1
 

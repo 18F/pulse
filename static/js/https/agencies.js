@@ -52,40 +52,40 @@ $(document).ready(function () {
       // order by number of domains
       order: [[1, "desc"]],
 
-      columnDefs: [
+      columns: [
         {
           cellType: "th",
           createdCell: function (td) {
             td.scope = "row";
           },
-          data: "name",
-          targets: 0
+          data: "name"
         },
         {
           data: "https.eligible", // sort on this, but
           render: eligibleHttps,
-          targets: 1,
           type: "num"
         },
         {
-          data: "https.enforces",
+          data: "https.compliant",
           render: percentBar("https", "enforces"),
-          targets: 2,
+          className: "compliant",
+          width: "100px"
+        },
+        {
+          data: "https.enforces",
+          render: percentBar("https", "enforces")
         },
         {
           data: "https.hsts",
-          render: percentBar("https", "hsts"),
-          targets: 3,
+          render: percentBar("https", "hsts")
         },
         {
           data: "crypto.bod_crypto",
-          render: percentBar("crypto", "bod_crypto"),
-          targets: 4,
+          render: percentBar("crypto", "bod_crypto")
         },
         {
           data: "preloading.preloaded",
-          render: percentBar("preloading", "preloaded"),
-          targets: 5,
+          render: percentBar("preloading", "preloaded")
         }
       ],
 

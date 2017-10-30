@@ -130,6 +130,13 @@ table caption {
       padding: 8px 0 8px 30px !important;
     }
 
+    td.compliant {
+      border-left: 0px solid black;
+      border-right: 0px solid black;
+      font-weight: bold;
+      background-color: #eee;
+    }
+
     thead {
       .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
         background-position: 20px center;
