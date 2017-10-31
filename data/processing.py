@@ -434,6 +434,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
           'domain': subdomain,
           'base_domain': parent_domain,
           'agency_slug': domains[parent_domain]['agency_slug'],
+          'agency_name': domains[parent_domain]['agency_name'],
           'branch': domains[parent_domain]['branch'],
           'is_parent': False,
           'sources': gathered_subdomains[subdomain]
