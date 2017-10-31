@@ -740,6 +740,7 @@ def analytics_report_for(domain_name, domain, parent_scan_data):
 
   return {
     'eligible': True,
+    'eligible_zone': True,
     'participating': boolean_for(analytics['Participates in Analytics'])
   }
 
@@ -749,6 +750,7 @@ def a11y_report_for(domain_name, domain, parent_scan_data):
 
   a11y_report = {
     'eligible': True,
+    'eligible_zone': True,
     'errors': 0,
     'errorlist': {e:0 for e in A11Y_ERRORS.values()},
     'error_details': {e:[] for e in A11Y_ERRORS.values()}
@@ -776,6 +778,7 @@ def cust_sat_report_for(domain_name, domain, parent_scan_data):
 
   cust_sat_report = {
     'eligible': True,
+    'eligible_zone': True,
     'service_list': {},
     'participating': False
   }
