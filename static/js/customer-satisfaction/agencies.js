@@ -8,6 +8,9 @@ $(document).ready(function () {
     var table = $("table").DataTable({
       responsive: true,
 
+      lengthChange: false,
+      pageLength: 150,
+
       data: data,
 
       initComplete: function() {
@@ -60,7 +63,7 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'Lftrip'
+      dom: 'ftri'
 
     });
 

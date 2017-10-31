@@ -10,6 +10,9 @@ $(document).ready(function () {
 
       data: data,
 
+      lengthChange: false,
+      pageLength: 150,
+
       initComplete: function() {
         Utils.searchLinks(this);
       },
@@ -61,7 +64,7 @@ $(document).ready(function () {
 
       csv: "/data/hosts/analytics.csv",
 
-      dom: 'LCftrip'
+      dom: 'Cftri'
 
     });
 

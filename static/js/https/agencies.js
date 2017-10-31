@@ -99,7 +99,8 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'ftri'
+      csv: "/data/hosts/https.csv",
+      dom: 'Cftri'
 
     });
 

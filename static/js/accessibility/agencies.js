@@ -8,6 +8,9 @@ $(document).ready(function () {
     var table = $("table").DataTable({
       responsive: true,
 
+      lengthChange: false,
+      pageLength: 150,
+
       initComplete: function() {
         Utils.searchLinks(this);
       },
@@ -49,7 +52,7 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'Lftrip'
+      dom: 'ftri'
 
     });
 
