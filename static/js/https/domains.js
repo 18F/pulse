@@ -3,6 +3,7 @@ $(document).ready(function () {
   // referenced in a few places
   var table;
 
+  // Populate with parent domain data, expand hosts per-domain
   $.get("/data/domains/https.json", function(data) {
     renderTable(data.data);
   });
@@ -280,7 +281,7 @@ $(document).ready(function () {
         }
       },
 
-      csv: "/data/domains/https.csv",
+      csv: "/data/hosts/https.csv",
 
       dom: 'pCftrip'
 
@@ -290,7 +291,7 @@ $(document).ready(function () {
 
   var links = {
     dap: "https://analytics.usa.gov",
-    dap_data: "https://analytics.usa.gov/data/live/sites.csv",
+    dap_data: "https://analytics.usa.gov/data/live/sites-extended.csv",
     censys: "https://censys.io",
     hsts: "https://https.cio.gov/hsts/",
     sha1: "https://https.cio.gov/technical-guidelines/#signature-algorithms",
