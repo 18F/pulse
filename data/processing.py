@@ -47,7 +47,8 @@ A11Y_ERRORS = {
   '1_1': 'Missing Image Descriptions',
   '1_3': 'Form - Initial Findings',
   '1_4': 'Color Contrast - Initial Findings',
-  '4_1': 'HTML Attribute - Initial Findings'
+  '4_1': 'HTML Attribute - Initial Findings',
+  None: 'Other Errors'
 }
 
 CUSTOMER_SATISFACTION_TOOLS = {
@@ -687,6 +688,7 @@ def full_report(domains, subdomains):
   # Customer satisfaction report. Parent domains.
   print("[cust_sat] Totalling full report.")
   eligible = eligible_for('cust_sat', domains)
+
   participating = 0
   for report in eligible:
     if report['participating']:
@@ -773,7 +775,7 @@ def get_a11y_error_category(code):
   return A11Y_ERRORS.get(error_id, 'Other Errors')
 
 def cust_sat_report_for(domain_name, domain, parent_scan_data):
-  if parent_scan_data[domain_name].get('cust_sat_report') is None:
+  if parent_scan_data[domain_name].get('cust_sat') is None:
     return None
 
   cust_sat_report = {
@@ -783,7 +785,6 @@ def cust_sat_report_for(domain_name, domain, parent_scan_data):
   }
   if parent_scan_data[domain_name].get('cust_sat'):
     cust_sat = parent_scan_data[domain_name]['cust_sat']
-    print(cust_sat)
     externals = [d.strip() for d in cust_sat['All External Domains'].split(',')]
     cust_sat_tools = [CUSTOMER_SATISFACTION_TOOLS[x] for
                       x in externals if
