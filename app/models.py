@@ -93,18 +93,24 @@ class Domain:
   def find(domain_name):
     return db.table('domains').get(q.domain == domain_name)
 
-  # unused?
+  # Useful when you want to pull in all domain entries as peers,
+  # such as reports which only look at parent domains, or
+  # a flat CSV of all hostnames that match a report.
   def eligible(report_name):
     return db.table('domains').search(
       Query()[report_name]['eligible'] == True
     )
 
+  # Useful when you have mixed parent/subdomain reporting,
+  # used for HTTPS but not yet others.
   def eligible_parents(report_name):
     return db.table('domains').search(
       (Query()[report_name]['eligible_zone'] == True) &
       (where("is_parent") == True)
     )
 
+  # Useful when you want to pull down subdomains of a particular
+  # parent domain. Used for HTTPS expanded reports.
   def eligible_for_domain(domain, report_name):
     return db.table('domains').search(
       (Query()[report_name]['eligible'] == True) &
@@ -132,12 +138,28 @@ class Domain:
     for domain in domains:
       row = []
       for field in CSV_FIELDS['common']:
+
+        # Map some values, e.g. 1 -> "Yes", etc.
         if FIELD_MAPPING.get(field):
           row.append(FIELD_MAPPING[field][domain[field]])
+
+        # Otherwise just use the raw value
         else:
-          row.append(domain[field])
+          value = domain[field]
+
+          # if it's a list, convert it to a list of strings and join
+          if type(value) is list:
+            value = [str(x) for x in value]
+            value = ", ".join(value)
+
+          row.append(value)
+
+      # Currently, all report-specific fields use a mapping
       for field in CSV_FIELDS[report_type]:
-        row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
+        value = domain[report_type][field]
+        mapped_value = FIELD_MAPPING[report_type][field][value]
+        row.append(mapped_value)
+
       writer.writerow(row)
 
     return output.getvalue()
