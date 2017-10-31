@@ -127,38 +127,48 @@ class Domain:
     output = io.StringIO()
     writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC)
 
+    def value_for(value):
+      # if it's a list, convert it to a list of strings and join
+      if type(value) is list:
+        value = [str(x) for x in value]
+        value = ", ".join(value)
+      elif type(value) is bool:
+        value = {True: 'Yes', False: 'No'}[value]
+      return value
+
     # initialize with a header row
     header = []
-    for field in CSV_FIELDS['common']:
-      header.append(LABELS[field])
-    for field in CSV_FIELDS[report_type]:
-      header.append(LABELS[report_type][field])
+
+    # Common fields, and report-specific fields
+    for category in ['common', report_type]:
+      for field in CSV_FIELDS[category]:
+        header.append(LABELS[category][field])
     writer.writerow(header)
 
     for domain in domains:
       row = []
-      for field in CSV_FIELDS['common']:
 
-        # Map some values, e.g. 1 -> "Yes", etc.
-        if FIELD_MAPPING.get(field):
-          row.append(FIELD_MAPPING[field][domain[field]])
+      # Common fields, and report-specific fields
+      for category in ['common', report_type]:
 
-        # Otherwise just use the raw value
-        else:
-          value = domain[field]
+        # Currently, all report-specific fields use a mapping
+        for field in CSV_FIELDS[category]:
 
-          # if it's a list, convert it to a list of strings and join
-          if type(value) is list:
-            value = [str(x) for x in value]
-            value = ", ".join(value)
+          # common fields are top-level on Domain objects
+          if category == 'common':
+            value = domain.get(field)
+          else:
+            value = domain[report_type].get(field)
 
-          row.append(value)
+          # If a mapping exists e.g. 1 -> "Yes", etc.
+          if (
+              FIELD_MAPPING.get(category) and
+              FIELD_MAPPING[category].get(field) and
+              (FIELD_MAPPING[category][field].get(value) is not None)
+            ):
+            value = FIELD_MAPPING[category][field][value]
 
-      # Currently, all report-specific fields use a mapping
-      for field in CSV_FIELDS[report_type]:
-        value = domain[report_type][field]
-        mapped_value = FIELD_MAPPING[report_type][field][value]
-        row.append(mapped_value)
+          row.append(value_for(value))
 
       writer.writerow(row)
 

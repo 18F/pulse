@@ -2,15 +2,17 @@
 # Mapping report/domain/agency field names to display names.
 LABELS = {
   # used in export CSVs
-  'domain': 'Domain',
-  'canonical': 'URL',
-  'branch': 'Branch',
-  'redirect': 'Redirect',
-  'agency_name': 'Agency',
-  'base_domain': 'Base Domain',
-  'sources': 'Sources',
+  'common': {
+    'domain': 'Domain',
+    'canonical': 'URL',
+    'branch': 'Branch',
+    'redirect': 'Redirect',
+    'agency_name': 'Agency',
+    'base_domain': 'Base Domain',
+    'sources': 'Sources',
 
-  'total_domains': 'Number of Domains',
+    'total_domains': 'Number of Domains'
+  },
 
   'https': {
     'uses': 'Uses HTTPS',
@@ -24,8 +26,8 @@ LABELS = {
     'bod_agencies': 'Free of RC4/3DES and SSLv2/SSLv3',
     '3des': '3DES',
     'rc4': 'RC4',
-    'ssl3': 'SSLv3',
-    'tls12': 'TLSv1.2',
+    'sslv2': 'SSLv2',
+    'sslv3': 'SSLv3'
   },
 
   'analytics': {
@@ -36,9 +38,11 @@ LABELS = {
 
 FIELD_MAPPING = {
 
-  'redirect': {
-    False: "No",
-    True: "Yes"
+  'common': {
+    'redirect': {
+      False: "No",
+      True: "Yes"
+    }
   },
 
   'https': {
@@ -75,18 +79,6 @@ FIELD_MAPPING = {
       -1: "",
       0: "No",
       1: "Yes"
-    },
-
-    'compliant': {
-      False: "No",
-      True: "Yes"
-    }
-  },
-
-  'analytics': {
-    'participating': {
-      False: "No",
-      True: "Yes"
     }
   }
 }
