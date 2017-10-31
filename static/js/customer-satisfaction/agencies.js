@@ -10,7 +10,9 @@ $(document).ready(function () {
 
       data: data,
 
-      initComplete: Utils.searchLinks,
+      initComplete: function() {
+        Utils.searchLinks(this);
+      },
 
       columns: [
         {

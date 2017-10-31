@@ -7,7 +7,10 @@ $(document).ready(function () {
   var renderTable = function(data) {
     var table = $("table").DataTable({
       responsive: true,
-      initComplete: Utils.searchLinks,
+
+      initComplete: function() {
+        Utils.searchLinks(this);
+      },
 
       data: data,
 
@@ -55,5 +58,5 @@ $(document).ready(function () {
       Utils.updatePagination();
     });
   };
-  
+
 });
