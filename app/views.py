@@ -44,7 +44,7 @@ def register(app):
         return response
 
     # Detailed data per-host for a given report.
-    @app.route("/data/domains/<report_name>.<ext>")
+    @app.route("/data/hosts/<report_name>.<ext>")
     def hostname_report(report_name, ext):
         domains = models.Domain.eligible(report_name)
 
