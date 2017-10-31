@@ -59,6 +59,8 @@ update_development:
 # cg-72ce4caf-d81b-4771-9b96-3624b5554587
 data_init:
 	mkdir -p data/output/parents/results/
+	mkdir -p data/output/subdomains/scan/results/
+	mkdir -p data/output/subdomains/gather/results/
 	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/analytics.csv > data/output/parents/results/analytics.csv
 	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/pshtt.csv > data/output/parents/results/pshtt.csv
 	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/sslyze.csv > data/output/parents/results/sslyze.csv
