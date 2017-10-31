@@ -57,7 +57,9 @@ $(document).ready(function () {
         }
       },
 
-      dom: 'Lftrip'
+      csv: "/data/hosts/analytics.csv",
+
+      dom: 'LCftrip'
 
     });
 
