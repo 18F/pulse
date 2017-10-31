@@ -7,8 +7,8 @@ LABELS = {
   'branch': 'Branch',
   'redirect': 'Redirect',
   'agency_name': 'Agency',
-  'base': 'Base Domain',
-  'source': 'Sources',
+  'base_domain': 'Base Domain',
+  'sources': 'Sources',
 
   'total_domains': 'Number of Domains',
 
@@ -92,7 +92,7 @@ FIELD_MAPPING = {
 }
 
 CSV_FIELDS = {
-  'common': ['domain', 'base', 'canonical', 'agency_name', 'sources'],
+  'common': ['domain', 'base_domain', 'canonical', 'agency_name', 'sources'],
   'https': ['compliant', 'enforces', 'hsts', 'bod_crypto', '3des', 'rc4', 'sslv2', 'sslv3', 'preloaded'],
   'analytics': ['participating']
 }
