@@ -77,7 +77,7 @@ $(document).ready(function () {
     return "No, uses " + problems.join(", ");
   };
 
-  var loadSubdomainData = function(row, base_domain, number, response) {
+  var loadSubdomainData = function(tr, base_domain, number, response) {
     var subdomains = response.data;
     var all = [];
 
@@ -85,7 +85,7 @@ $(document).ready(function () {
     var discoveryLink = l("subdomains", "publicly discoverable services");
     var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
     link += l(csv, "Download as a CSV") + ".";
-    var download = $("<tr></tr>").addClass("subdomain").html("<td colspan=6>" + link + "</td>");
+    var download = $("<tr></tr>").addClass("subdomain").html("<td class=\"link\" colspan=6>" + link + "</td>");
     all.push(download);
 
     for (i=0; i<subdomains.length; i++) {
@@ -113,7 +113,7 @@ $(document).ready(function () {
       all.push(details);
     }
 
-    row.child(all, "child").show();
+    tr.child(all, "child").show();
   };
 
   var loneDomain = function(row) {
@@ -126,7 +126,11 @@ $(document).ready(function () {
     if (loneDomain(row))
       return Utils.linkDomain(data, type, row);
 
-    return n(row.domain) + " (" + l("#", "show " + row.totals.https.eligible + " services") + ")";
+    return n(row.domain) + " (" + l("#", showHideText(true, row), "onclick=\"return false\" data-domain=\"" + row.domain + "\"") + ")";
+  };
+
+  var showHideText = function(show, row) {
+    return (show ? "show" : "hide") + " " + row.totals.https.eligible + " services"
   };
 
   var showCompliant = function(data, type, row) {
@@ -184,6 +188,7 @@ $(document).ready(function () {
           url: "/data/hosts/" + base_domain + "/https.json",
           success: function(response) {
             loadSubdomainData(row, base_domain, data.totals.https.eligible, response);
+            $("a[data-domain='" + base_domain + "']").html(showHideText(false, data));
           },
           error: function() {
             console.log("Error loading data for " + base_domain);
@@ -194,6 +199,7 @@ $(document).ready(function () {
       else if (!loneDomain(data) && was_expanded){
         data.expanded = false;
         row.child.hide();
+        $("a[data-domain='" + base_domain + "']").html(showHideText(true, data));
       }
 
       return false;
@@ -297,8 +303,8 @@ $(document).ready(function () {
     submit: "https://hstspreload.org"
   };
 
-  var l = function(slug, text) {
-    return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\">" + text + "</a>";
+  var l = function(slug, text, extra) {
+    return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\" " + extra + ">" + text + "</a>";
   };
 
   var g = function(text) {
