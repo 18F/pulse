@@ -82,10 +82,10 @@ $(document).ready(function () {
     var subdomains = response.data;
     var all = [];
 
-    var csv = "#";
+    var csv = "/data/hosts/" + base_domain + "/https.csv";
     var discoveryLink = l("subdomains", "publicly discoverable services");
     var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
-    link += l(csv, "Download as a CSV") + ".";
+    link += l(csv, "Download all " + base_domain + " data as a CSV") + ".";
     var download = $("<tr></tr>").addClass("subdomain").html("<td class=\"link\" colspan=6>" + link + "</td>");
     all.push(download);
 
