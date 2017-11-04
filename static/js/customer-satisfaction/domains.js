@@ -3,8 +3,6 @@ $(function() {
   $.get("/static/data/tables/customer-satisfaction/domains.json", function(data) {
     var table = Tables.init(data.data, {
 
-      csv: "/data/domains/cust_sat.csv",
-
       columns: [
         {
           data: "domain",
