@@ -39,7 +39,9 @@ $(document).ready(function () {
 
       data: data,
 
-      initComplete: Utils.searchLinks,
+      initComplete: function() {
+        Utils.searchLinks(this);
+      },
 
       columns: [
         {
@@ -78,6 +80,7 @@ $(document).ready(function () {
       dom: 'LCftrip'
 
     });
+
     Utils.updatePagination();
     table.on("draw.dt",function(){
       Utils.updatePagination();
