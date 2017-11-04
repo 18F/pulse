@@ -1,58 +1,24 @@
-$(document).ready(function () {
+$(function () {
 
   $.get("/static/data/tables/accessibility/domains.json", function(data) {
-    renderTable(data.data);
-  });
-
-
-  var renderTable = function(data) {
-    var table = $("table").DataTable({
-
-      responsive: true,
-
-      data: data,
-
-      initComplete: function() {
-        Utils.searchLinks(this);
-      },
-
+    var table = Tables.init(data.data, {
       columns: [
         {
           data: "domain",
           width: "210px",
           cellType: "th",
-          render: Utils.linkDomain
+          createdCell: function (td) {td.scope = "row";}
         },
         {
           data: "errors",
           width: "60px",
-          },
+        },
         {data: "agency"},
         {
           data: "errorlist",
-          render: Utils.a11yErrorList
+          render: a11yErrorList
         }
-      ],
-
-      columnDefs: [
-        {
-          targets: 0,
-          cellType: "td",
-          createdCell: function (td) {
-            td.scope = "row";
-          }
-        }
-      ],
-
-      "oLanguage": {
-        "oPaginate": {
-          "sPrevious": "<<",
-          "sNext": ">>"
-        }
-      },
-
-      dom: 'LCftrip'
-
+      ]
     });
 
 
@@ -72,13 +38,27 @@ $(document).ready(function () {
       $(this).siblings("th.sorting_1").click();
     });
 
-    //Adds keyboard control to first cell of table
+    // TODO: move this to Tables.js.
+    // Adds keyboard control to first cell of table
     Utils.detailsKeyboardCtrl();
-    Utils.updatePagination();
     table.on("draw.dt",function(){
        Utils.detailsKeyboardCtrl();
-       Utils.updatePagination();
     });
 
+  });
+
+  var a11yErrorList = function(data, type, row) {
+    var errorListOutput = "";
+
+    $.each(data, function(key, value) {
+      if (value)
+        errorListOutput += "<li><a href=\"/a11y/domain/" + row['domain'].replace(/http:\/\//i, '') + "#" + key.replace(/\s/g, '').replace(/\//i, '') + "\" target=\"_blank\">" + key + ": " + value + "</a></li>";
+    });
+
+    if (!errorListOutput)
+      return "</hr><span class=\"noErrors\">No errors found.</span>";
+    else
+      return "</hr><ul class=\"errorList\">" + errorListOutput + "</ul></hr>";
   };
+
 });

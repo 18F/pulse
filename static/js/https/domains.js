@@ -1,11 +1,70 @@
-$(document).ready(function () {
+$(function () {
 
   // referenced in a few places
   var table;
 
   // Populate with parent domain data, expand hosts per-domain
   $.get("/data/domains/https.json", function(data) {
-    renderTable(data.data);
+    table = Tables.init(data.data, {
+
+      csv: "/data/hosts/https.csv",
+
+      responsive: {
+          details: {
+              type: "column",
+              display: $.fn.dataTable.Responsive.display.childRow
+          }
+      },
+
+      initComplete: initExpansions,
+
+      columns: [
+        {
+          className: 'control',
+          orderable: false,
+          data: "",
+          render: Tables.noop,
+          visible: false
+        },
+        {
+          data: "domain",
+          width: "240px",
+          cellType: "td",
+          render: showDomain,
+
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        },
+        {data: "agency_name"}, // here for filtering/sorting
+        {
+          data: "totals.https.compliant",
+          render: showCompliant,
+          width: "100px",
+          className: "compliant"
+        },
+        {
+          data: "totals.https.enforces",
+          render: showEnforces
+        },
+        {
+          data: "totals.https.hsts",
+          render: showHSTS
+        },
+        {
+          data: "totals.crypto.bod_crypto",
+          render: showCrypto
+        },
+        {
+          data: "https.preloaded",
+          render: display(names.preloaded)
+        },
+        {
+          data: "",
+          render: Tables.noop
+        }
+      ]
+    });
   });
 
   /**
@@ -125,7 +184,7 @@ $(document).ready(function () {
     if (type == "sort") return row.domain;
 
     if (loneDomain(row))
-      return Utils.linkDomain(data, type, row);
+      return Tables.canonical(data, type, row);
 
     return n(row.domain) + " (" + l("#", showHideText(true, row), "onclick=\"return false\" data-domain=\"" + row.domain + "\"") + ")";
   };
@@ -207,88 +266,6 @@ $(document).ready(function () {
     });
   };
 
-  var renderTable = function(data) {
-    table = $("table").DataTable({
-
-      data: data,
-
-      responsive: {
-          details: {
-              type: "column",
-              display: $.fn.dataTable.Responsive.display.childRow
-          }
-      },
-
-      lengthChange: false,
-      pageLength: 100,
-
-      initComplete: function() {
-        Utils.searchLinks(this);
-        initExpansions(this);
-      },
-
-      columns: [
-        {
-          className: 'control',
-          orderable: false,
-          data: "",
-          render: function() {return ""},
-          visible: false
-        },
-        {
-          data: "domain",
-          width: "240px",
-          cellType: "td",
-          render: showDomain,
-
-          createdCell: function (td) {
-            td.scope = "row";
-          }
-        },
-        {data: "agency_name"}, // here for filtering/sorting
-        {
-          data: "totals.https.compliant",
-          render: showCompliant,
-          width: "100px",
-          className: "compliant"
-        },
-        {
-          data: "totals.https.enforces",
-          render: showEnforces
-        },
-        {
-          data: "totals.https.hsts",
-          render: showHSTS
-        },
-        {
-          data: "totals.crypto.bod_crypto",
-          render: showCrypto
-        },
-        {
-          data: "https.preloaded",
-          render: display(names.preloaded)
-        },
-        {
-          data: "",
-          render: function() {return "";}
-        }
-      ],
-
-      "oLanguage": {
-        "oPaginate": {
-          "sPrevious": "<<",
-          "sNext": ">>"
-        }
-      },
-
-      csv: "/data/hosts/https.csv",
-
-      dom: 'pCftrip'
-
-    });
-
-  };
-
   var links = {
     dap: "https://analytics.usa.gov",
     dap_data: "https://analytics.usa.gov/data/live/sites-extended.csv",
@@ -332,7 +309,7 @@ $(document).ready(function () {
       else {
         var percent = Utils.percent(row.totals[report][field], eligible);
         if (type == "sort") return percent;
-        else return Utils.progressBar(percent);
+        else return Tables.percentBar(percent);
       }
     };
   };
