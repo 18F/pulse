@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $.get("/data/domains/analytics.json", function(data) {
+  $.get("/data/hosts/analytics.json", function(data) {
     renderTable(data.data);
   });
 
