@@ -6,7 +6,6 @@ LABELS = {
     'domain': 'Domain',
     'canonical': 'URL',
     'branch': 'Branch',
-    'redirect': 'Redirect',
     'agency_name': 'Agency',
     'base_domain': 'Base Domain',
     'sources': 'Sources',
@@ -38,12 +37,7 @@ LABELS = {
 
 FIELD_MAPPING = {
 
-  'common': {
-    'redirect': {
-      False: "No",
-      True: "Yes"
-    }
-  },
+  'common': {},
 
   'https': {
 
