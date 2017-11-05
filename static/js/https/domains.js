@@ -49,7 +49,7 @@ $(function () {
         },
         {
           data: "totals.https.hsts",
-          render: Tables.percentTotals("https", "enforces")
+          render: Tables.percentTotals("https", "hsts")
         },
         {
           data: "totals.crypto.bod_crypto",
