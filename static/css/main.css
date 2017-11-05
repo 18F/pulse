@@ -952,6 +952,9 @@ table caption {
         font-weight: normal !important; }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
+    .dataTables_wrapper table.dataTable a.loading {
+      text-decoration: none !important;
+      color: black !important; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 40px; }

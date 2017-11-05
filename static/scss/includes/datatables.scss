@@ -121,6 +121,11 @@ table caption {
       text-decoration: underline;
     }
 
+    a.loading {
+      text-decoration: none !important;
+      color: black !important;
+    }
+
     th, td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 40px;

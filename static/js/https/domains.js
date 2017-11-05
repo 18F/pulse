@@ -244,11 +244,15 @@ $(function () {
 
       if (!loneDomain(data) && !was_expanded) {
         console.log("Fetching data for " + base_domain + "...");
+
+        var link = $("a[data-domain='" + base_domain + "']");
+        link.addClass("loading").html("Loading " + base_domain + " services...");
+
         $.ajax({
           url: "/data/hosts/" + base_domain + "/https.json",
           success: function(response) {
             loadSubdomainData(row, base_domain, data.totals.https.eligible, response);
-            $("a[data-domain='" + base_domain + "']").html(showHideText(false, data));
+            link.removeClass("loading").html(showHideText(false, data));
           },
           error: function() {
             console.log("Error loading data for " + base_domain);
