@@ -80,14 +80,29 @@ var Tables = {
   // common pattern for percent bars:
   // given row[report] and row[report][field], will
   // compare against row[report].eligible
-  percent: function(report, field) {
+  percent: function(report, field, totals) {
+    if (!totals) totals = false; // be explicit
+
     return function(data, type, row) {
-      var numerator = row[report][field];
-      var denominator = row[report].eligible;
+      var set = totals ? row.totals : row;
+      var numerator = set[report][field];
+      var denominator = set[report].eligible;
+
+      // don't divide by 0!
+      if (denominator == 0) {
+        if (type == "sort") return -1; // shrug?
+        else return "--";
+      }
+
       var percent = Utils.percent(numerator, denominator);
       if (type == "sort") return percent;
       return Tables.percentBar(percent);
     }
+  },
+
+  // helpful for reports where parent domains have totals for subdomains
+  percentTotals: function(report, field) {
+    return Tables.percent(report, field, true);
   },
 
   // common rendering function for agency service/domain counts

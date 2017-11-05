@@ -994,7 +994,7 @@ table caption {
         background-color: #EEE; }
     .dataTables_wrapper table.dataTable.https.domain tbody tr.child:hover span.dtr-data {
       text-decoration: underline; }
-    .dataTables_wrapper table.dataTable.https.domain tbody tr.subdomain td.link {
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.host td.link {
       padding-left: 60px; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 15px 40px !important; }

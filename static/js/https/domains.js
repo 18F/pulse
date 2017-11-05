@@ -39,21 +39,21 @@ $(function () {
         {data: "agency_name"}, // here for filtering/sorting
         {
           data: "totals.https.compliant",
-          render: showCompliant,
+          render: Tables.percentTotals("https", "compliant"),
           width: "100px",
           className: "compliant"
         },
         {
           data: "totals.https.enforces",
-          render: showEnforces
+          render: Tables.percentTotals("https", "enforces")
         },
         {
           data: "totals.https.hsts",
-          render: showHSTS
+          render: Tables.percentTotals("https", "enforces")
         },
         {
           data: "totals.crypto.bod_crypto",
-          render: showCrypto
+          render: Tables.percentTotals("crypto", "bod_crypto")
         },
         {
           data: "https.preloaded",
@@ -137,34 +137,36 @@ $(function () {
     return "No, uses " + problems.join(", ");
   };
 
-  var loadSubdomainData = function(tr, base_domain, number, response) {
-    var subdomains = response.data;
+  var loadHostData = function(tr, base_domain, hosts) {
     var all = [];
+    var number = hosts.length;
 
-    var csv = "/data/hosts/" + base_domain + "/https.csv";
-    var discoveryLink = l("subdomains", "publicly discoverable services");
-    var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
-    link += l(csv, "Download all " + base_domain + " data as a CSV") + ".";
-    var download = $("<tr></tr>").addClass("subdomain").html("<td class=\"link\" colspan=6>" + link + "</td>");
-    all.push(download);
+    if (number > 1) {
+      var csv = "/data/hosts/" + base_domain + "/https.csv";
+      var discoveryLink = l("/https/guidance/#subdomains", "publicly discoverable services");
+      var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
+      link += l(csv, "Download all " + base_domain + " data as a CSV") + ".";
+      var download = $("<tr></tr>").addClass("subdomain").html("<td class=\"link\" colspan=6>" + link + "</td>");
+      all.push(download);
+    }
 
-    for (i=0; i<subdomains.length; i++) {
-      var subdomain = subdomains[i];
-      var details = $("<tr/>").addClass("subdomain");
+    for (i=0; i<hosts.length; i++) {
+      var host = hosts[i];
+      var details = $("<tr/>").addClass("host");
 
-      var link = "<a href=\"" + subdomain.canonical + "\" target=\"blank\">" + Utils.truncate(subdomain.domain, 35) + "</a>";
+      var link = "<a href=\"" + host.canonical + "\" target=\"blank\">" + Utils.truncate(host.domain, 35) + "</a>";
       details.append($("<td/>").addClass("link").html(link));
 
-      var compliant = names.compliant[subdomain.https.compliant];
+      var compliant = names.compliant[host.https.compliant];
       details.append($("<td class=\"compliant\"/>").html(compliant));
 
-      var https = names.enforces[subdomain.https.enforces];
+      var https = names.enforces[host.https.enforces];
       details.append($("<td/>").html(https));
 
-      var hsts = names.hsts[subdomain.https.hsts];
+      var hsts = names.hsts[host.https.hsts];
       details.append($("<td/>").html(hsts));
 
-      var crypto = displayCrypto(subdomain);
+      var crypto = displayCrypto(host);
       details.append($("<td/>").html(crypto));
 
       // blank
@@ -173,7 +175,7 @@ $(function () {
       all.push(details);
     }
 
-    tr.child(all, "child").show();
+    tr.child(all, "child");
   };
 
   var loneDomain = function(row) {
@@ -183,84 +185,79 @@ $(function () {
   var showDomain = function(data, type, row) {
     if (type == "sort") return row.domain;
 
-    if (loneDomain(row))
-      return Tables.canonical(data, type, row);
+    // determines whether remote fetching has to happen
+    var fetch = !(loneDomain(row));
 
-    return n(row.domain) + " (" + l("#", showHideText(true, row), "onclick=\"return false\" data-domain=\"" + row.domain + "\"") + ")";
+    return n(row.domain) + " (" + l("#", showHideText(true, row), "onclick=\"return false\" data-fetch=\"" + fetch + "\" data-domain=\"" + row.domain + "\"") + ")";
   };
 
   var showHideText = function(show, row) {
-    return (show ? "show" : "hide") + " " + row.totals.https.eligible + " services"
-  };
-
-  var showCompliant = function(data, type, row) {
-    if (type == "sort") return row.totals.https.compliant;
-
     if (loneDomain(row))
-      return names.compliant[row.https.compliant];
+      return (show ? "show" : "hide") + " details";
     else
-      return percentBar("https", "compliant")(data, type, row);
-  };
-
-  var showEnforces = function(data, type, row) {
-    if (type == "sort") return row.totals.https.enforces;
-
-    if (loneDomain(row))
-      return names.enforces[row.https.enforces];
-    else
-      return percentBar("https", "enforces")(data, type, row);
-  };
-
-  var showHSTS = function(data, type, row) {
-    if (type == "sort") return row.totals.https.hsts;
-
-    if (loneDomain(row))
-      return names.hsts[row.https.hsts];
-    else
-      return percentBar("https", "hsts")(data, type, row);
-  };
-
-  var showCrypto = function(data, type, row) {
-    if (type == "sort") return row.totals.crypto.bod_crypto;
-
-    if (loneDomain(row))
-      return displayCrypto(row);
-    else
-      return percentBar("crypto", "bod_crypto")(data, type, row);
+      return (show ? "show" : "hide") + " " + row.totals.https.eligible + " services";
   };
 
   var initExpansions = function() {
     $('table.domain').on('click', 'tbody tr.odd, tbody tr.even', function() {
       var row = table.row(this);
 
+      // zero in on the parent row, whichever was clicked
       if (row.data() == undefined)
         row = table.row(this.previousElementSibling);
       if (row.data() == undefined) return;
 
       var data = row.data();
       var was_expanded = data.expanded;
-      data.expanded = true;
       var base_domain = data.base_domain;
 
-      if (!loneDomain(data) && !was_expanded) {
-        console.log("Fetching data for " + base_domain + "...");
+      if (!was_expanded) {
+        data.expanded = true;
 
+        // link's data-fetch will tell us whether data has to be fetched
         var link = $("a[data-domain='" + base_domain + "']");
-        link.addClass("loading").html("Loading " + base_domain + " services...");
+        var fetch = link.data("fetch");
 
-        $.ajax({
-          url: "/data/hosts/" + base_domain + "/https.json",
-          success: function(response) {
-            loadSubdomainData(row, base_domain, data.totals.https.eligible, response);
-            link.removeClass("loading").html(showHideText(false, data));
-          },
-          error: function() {
-            console.log("Error loading data for " + base_domain);
-          }
-        });
+        if (fetch) {
+          console.log("Fetching data for " + base_domain + "...");
+          link.addClass("loading").html("Loading " + base_domain + " services...");
+
+          $.ajax({
+            url: "/data/hosts/" + base_domain + "/https.json",
+            success: function(response) {
+              loadHostData(row, base_domain, response.data);
+
+              // show the data right away
+              row.child.show()
+
+              // set it to just show/hide from now on without fetching
+              link.data("fetch", false);
+
+              // disable loading styles
+              link.removeClass("loading");
+
+              // show the "hide" text
+              link.html(showHideText(false, data));
+            },
+            error: function() {
+              console.log("Error loading data for " + base_domain);
+            }
+          });
+        } else {
+          // if it's a lone domain, just refill the data every time
+          // instead of making this function's logic even more elaborate
+          if (loneDomain(data))
+            loadHostData(row, base_domain, [data]);
+
+          // show the "hide" text
+          link.html(showHideText(false, data));
+
+          row.child.show();
+        }
+
       }
 
-      else if (!loneDomain(data) && was_expanded){
+      else { // was_expanded == true
         data.expanded = false;
         row.child.hide();
         $("a[data-domain='" + base_domain + "']").html(showHideText(true, data));
@@ -270,52 +267,12 @@ $(function () {
     });
   };
 
-  var links = {
-    dap: "https://analytics.usa.gov",
-    dap_data: "https://analytics.usa.gov/data/live/sites-extended.csv",
-    censys: "https://censys.io",
-    hsts: "https://https.cio.gov/hsts/",
-    sha1: "https://https.cio.gov/technical-guidelines/#signature-algorithms",
-    ssl3: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
-    tls12: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
-    preload: "https://https.cio.gov/hsts/#hsts-preloading",
-    subdomains: "/https/guidance/#subdomains",
-    preloading_compliance: "https://https.cio.gov/guide/#options-for-hsts-compliance",
-    stay_preloaded: "https://hstspreload.org/#continued-requirements",
-    submit: "https://hstspreload.org"
-  };
-
-  var l = function(slug, text, extra) {
-    return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\" " + extra + ">" + text + "</a>";
-  };
-
-  var g = function(text) {
-    return "<strong class=\"success\">" + text + "</strong>";
-  };
-
-  var w = function(text) {
-    return "<strong class=\"warning\">" + text + "</strong>";
+  var l = function(href, text, extra) {
+    return "<a href=\"" + href + "\" target=\"blank\" " + extra + ">" + text + "</a>";
   };
 
   var n = function(text) {
     return "<strong class=\"neutral\">" + text + "</strong>";
   }
-
-  // report: e.g. 'https', or 'crypto'
-  // field: e.g. 'uses' or 'rc4'
-  var percentBar = function(report, field) {
-    return function(data, type, row) {
-      var eligible = row.totals[report].eligible;
-      if (eligible == 0) {
-        if (type == "sort") return 100; // shrug
-        else return "--";
-      }
-      else {
-        var percent = Utils.percent(row.totals[report][field], eligible);
-        if (type == "sort") return percent;
-        else return Tables.percentBar(percent);
-      }
-    };
-  };
 
 })
