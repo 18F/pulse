@@ -18,7 +18,7 @@ $(document).ready(function () {
         },
         {
           data: "https.compliant",
-          render: Tables.percent("https", "enforces"),
+          render: Tables.percent("https", "compliant"),
           className: "compliant",
           width: "100px"
         },
