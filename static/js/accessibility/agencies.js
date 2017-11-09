@@ -3,7 +3,6 @@ $(document).ready(function () {
   // break caching
   var time = (new Date()).getTime();
 
-
   $.get("/static/data/tables/accessibility/agencies.json?" + time, function(data) {
     Tables.initAgency(data.data, {
       columns: [
