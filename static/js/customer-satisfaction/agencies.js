@@ -1,6 +1,9 @@
 $(function () {
 
-  $.get("/static/data/tables/customer-satisfaction/agencies.json", function(data) {
+  // break caching
+  var time = (new Date()).getTime();
+
+  $.get("/static/data/tables/customer-satisfaction/agencies.json?" + time, function(data) {
     Tables.initAgency(data.data, {
 
       columns: [

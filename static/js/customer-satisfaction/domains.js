@@ -1,6 +1,10 @@
 $(function() {
 
-  $.get("/static/data/tables/customer-satisfaction/domains.json", function(data) {
+  // break caching
+  var time = (new Date()).getTime();
+
+
+  $.get("/static/data/tables/customer-satisfaction/domains.json?" + time, function(data) {
     var table = Tables.init(data.data, {
 
       columns: [
