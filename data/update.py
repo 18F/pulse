@@ -179,6 +179,7 @@ def gather_subdomains(options):
   full_command += [
     "--output=%s" % SUBDOMAIN_DATA_GATHERED,
     "--suffix=%s" % GATHER_SUFFIX,
+    "--ignore-www",
     "--sort",
     "--debug"
   ]
