@@ -150,6 +150,7 @@ def scan_parents(options):
     scanners,
     analytics, a11y_config, a11y_redirects,
     output,
+    "--sslyze-no-certs", # ugh, temporary
     "--debug",
     "--sort"
   ]
@@ -200,6 +201,7 @@ def scan_subdomains(options):
     subdomains,
     "--scan=%s" % SUBDOMAIN_SCANNERS,
     "--output=%s" % SUBDOMAIN_DATA_SCANNED,
+    "--sslyze-no-certs", # ugh, temporary
     "--debug",
     "--sort"
   ]
