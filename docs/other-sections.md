@@ -34,3 +34,4 @@ This project is an initial pass - there is much more information that can be rep
 * What else can we get from Verisign?
 * Ideas from the [GDS effort](https://www.ncsc.gov.uk/blog-post/web-check-helping-you-secure-your-public-sector-websites).
 * [Several good ideas here](https://github.com/18F/pulse/issues/733#issue-262290981).  
+* [plain language/readability](https://github.com/18F/pulse/issues/594#issuecomment-262977287)
