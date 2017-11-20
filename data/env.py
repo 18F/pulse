@@ -49,6 +49,9 @@ GATHERER_OPTIONS = [
 # Run these scanners over *all* (which is a lot) discovered subdomains.
 SUBDOMAIN_SCANNERS = "pshtt,sslyze"
 
+# Used if --lambda is enabled during the scan.
+LAMBDA_WORKERS = 900
+
 # Quick and dirty CLI options parser.
 def options():
   options = {}

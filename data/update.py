@@ -150,18 +150,25 @@ def scan_parents(options):
     scanners,
     analytics, a11y_config, a11y_redirects,
     output,
-    "--sslyze-no-certs", # ugh, temporary
-    "--debug",
+    "--sslyze-certs=false", # ugh, temporary
+    # "--debug", # always capture full output
     "--sort"
   ]
 
-  # In debug mode, use cached data, and allow easy Ctrl-C.
-  if options.get("debug"):
-    full_command += ["--serial"]
+  # Allow some options passed to python -m data.update to go
+  # through to domain-scan.
+  for flag in ["cache", "serial"]:  # , "lambda"]:
+    if options.get(flag):
+      full_command += ["--%s" % flag]
 
-  # In real mode, ignore cached data, and parallelize.
-  elif not options.get("cache"):
-    full_command += ["--force"]
+  if options.get("workers"):
+    full_command += ["--workers=%s" % str(options.get("workers"))]
+
+  # Can't yet use Lambda with parents, since Lambda only works
+  # with a set of scanners that all use Lambda.
+  # If Lambda mode is on, use way more workers.
+  # if options.get("lambda"):
+  #   full_command += ["--workers=%i" % LAMBDA_WORKERS]
 
   shell_out(full_command)
 
@@ -178,15 +185,17 @@ def gather_subdomains(options):
   # --parents gets auto-included as its own gatherer source.
   full_command += [
     "--output=%s" % SUBDOMAIN_DATA_GATHERED,
-    "--suffix=%s" % GATHER_SUFFIX,
+    "--suffix=%s" % GATHER_SUFFIXES,
     "--ignore-www",
     "--sort",
-    "--debug"
+    "--debug" # always capture full output
   ]
 
-  # In debug mode, allow cached data.
-  if (not options.get("debug")) and (not options.get("cache")):
-    full_command += ["--force"]
+  # Allow some options passed to python -m data.update to go
+  # through to domain-scan.
+  for flag in ["cache"]:
+    if options.get(flag):
+      full_command += ["--%s" % flag]
 
   shell_out(full_command)
 
@@ -202,18 +211,20 @@ def scan_subdomains(options):
     subdomains,
     "--scan=%s" % SUBDOMAIN_SCANNERS,
     "--output=%s" % SUBDOMAIN_DATA_SCANNED,
-    "--sslyze-no-certs", # ugh, temporary
-    "--debug",
+    "--sslyze-certs=false", # ugh, temporary
+    # "--debug", # always capture full output
     "--sort"
   ]
 
-  # In debug mode, use cached data, and allow easy Ctrl-C.
-  if options.get("debug"):
-    full_command += ["--serial"]
+  # Allow some options passed to python -m data.update to go
+  # through to domain-scan.
+  for flag in ["cache", "serial", "lambda"]:
+    if options.get(flag):
+      full_command += ["--%s" % flag]
 
-  # In real mode, ignore cached data, and parallelize.
-  elif not options.get("cache"):
-    full_command += ["--force"]
+  # If Lambda mode is on, use way more workers.
+  if options.get("lambda"):
+    full_command += ["--workers=%i" % LAMBDA_WORKERS]
 
   shell_out(full_command)
 
