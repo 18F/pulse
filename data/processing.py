@@ -227,7 +227,21 @@ def load_domain_data():
       if branch != "executive":
         continue
 
+      # One-off exclusion for "fed.us", which is improperly included
+      # in current-federal.csv, despite being a public suffix and not
+      # a registerable domain.
+      if domain_name == "fed.us":
+        continue
+
       if domain_name not in domain_map:
+
+        # By assuming the domain name is the base domain if it appears
+        # in current-federal.csv, we automatically treat fed.us domains
+        # as base domains, without explicitly incorporating the Public
+        # Suffix List.
+        #
+        # And since we excluded "fed.us" itself above, this should
+        # cover all the bases.
         domain_map[domain_name] = {
           'domain': domain_name,
           'base_domain': domain_name,
