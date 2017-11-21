@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 
 {% block page_id %}https{% endblock %}
-{% block title %}Secure HTTP (HTTPS) - Pulse{% endblock %}
-{% block description %}How federal government domains are doing at deploying HTTPS.{% endblock %}
+{% block title %}HTTPS (M-15-13 and BOD 18-01) - Pulse{% endblock %}
+{% block description %}How federal government domains are doing at deploying HTTPS and HSTS.{% endblock %}
 
 {% block content %}
 
@@ -21,15 +21,14 @@
       <caption>Secure HTTP(S) By Domain. Table is sortable via first row table headers. Each row contains a domain and related attributes.</caption>
       <thead>
         <tr>
+          <th class="never"></th>
           <th class="all">Domain</th>
-          <th class="never">Canonical</th>
           <th class="never">Agency</th>
-          <th class="min-tablet">Uses HTTPS</th>
+          <th class="min-tablet">Compliant with M-15-13 and BOD 18-01</th>
           <th class="min-tablet">Enforces HTTPS</th>
-          <th class="min-tablet-l">Strict Transport Security (HSTS)</th>
-          <th class="min-tablet-l">Preloaded (recommended)</th>
-          <th class="min-tablet-l">SSL Labs Grade</th>
-          <th class="none" scope="col"></th>
+          <th class="min-tablet">HSTS</th>
+          <th class="min-tablet-l">Free of RC4/3DES and SSLv2/SSLv3</th>
+          <th class="min-tablet-l">Preloaded</th>
           <th class="none" scope="col"></th>
         </tr>
       </thead>

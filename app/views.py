@@ -29,10 +29,10 @@ def register(app):
         response.headers['Content-Type'] = 'application/json'
         return response
 
-    # Detailed data per-domain, used to power the data tables.
+    # Detailed data per-parent-domain.
     @app.route("/data/domains/<report_name>.<ext>")
     def domain_report(report_name, ext):
-        domains = models.Domain.eligible(report_name)
+        domains = models.Domain.eligible_parents(report_name)
         domains = sorted(domains, key=lambda k: k['domain'])
 
         if ext == "json":
@@ -41,6 +41,40 @@ def register(app):
         elif ext == "csv":
           response = Response(models.Domain.to_csv(domains, report_name))
           response.headers['Content-Type'] = 'text/csv'
+        return response
+
+    # Detailed data per-host for a given report.
+    @app.route("/data/hosts/<report_name>.<ext>")
+    def hostname_report(report_name, ext):
+        domains = models.Domain.eligible(report_name)
+
+        # sort by base domain, but subdomain within them
+        domains = sorted(domains, key=lambda k: k['domain'])
+        domains = sorted(domains, key=lambda k: k['base_domain'])
+
+        if ext == "json":
+          response = Response(ujson.dumps({'data': domains}))
+          response.headers['Content-Type'] = 'application/json'
+        elif ext == "csv":
+          response = Response(models.Domain.to_csv(domains, report_name))
+          response.headers['Content-Type'] = 'text/csv'
+        return response
+
+    # Detailed data for all subdomains of a given parent domain, for a given report.
+    @app.route("/data/hosts/<domain>/<report_name>.<ext>")
+    def hostname_report_for_domain(domain, report_name, ext):
+        domains = models.Domain.eligible_for_domain(domain, report_name)
+
+        # sort by hostname, but put the parent at the top if it exist
+        domains = sorted(domains, key=lambda k: k['domain'])
+        domains = sorted(domains, key=lambda k: k['is_parent'], reverse=True)
+
+        if ext == "json":
+            response = Response(ujson.dumps({'data': domains}))
+            response.headers['Content-Type'] = 'application/json'
+        elif ext == "csv":
+            response = Response(models.Domain.to_csv(domains, report_name))
+            response.headers['Content-Type'] = 'text/csv'
         return response
 
     @app.route("/data/agencies/<report_name>.json")

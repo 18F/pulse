@@ -154,7 +154,11 @@ a#skipnav {
 
         .description {
           @include span-columns(8);
+
           padding-top: 30px;
+
+          a {text-decoration: underline;}
+
           @include media($medium) {
             @include span-columns(12);
             padding: 40px 20px 20px 20px;

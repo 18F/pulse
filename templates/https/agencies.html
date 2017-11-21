@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 
 {% block page_id %}https{% endblock %}
-{% block title %}Secure HTTP (HTTPS) - Pulse{% endblock %}
-{% block description %}How federal government domains are doing at deploying HTTPS.{% endblock %}
+{% block title %}HTTPS (M-15-13 and BOD 18-01) - Pulse{% endblock %}
+{% block description %}How federal government domains are doing at deploying HTTPS and HSTS.{% endblock %}
 
 {% block content %}
 
@@ -18,15 +18,16 @@
 
   <div id="tab-panel" class="wrapper" role="tabpanel" aria-hidden="false">
     <table class="agency responsive https">
-      <caption>Secure HTTP(S) By Agency. Table is sortable via first row table headers. Each row contains an agency and related attributes.</caption>
+      <caption>HTTPS by agency. Table is sortable via first row table headers. Each row contains an agency and related attributes.</caption>
       <thead>
         <tr>
           <th class="all" scope="col">Agency</th>
-          <th class="all" scope="col">No. of Domains</th>
-          <th class="min-tablet" scope="col">Uses HTTPS</th>
+          <th class="all" scope="col">Services</th>
+          <th class="min-tablet" scope="col">Compliant with M-15-13 and BOD 18-01</th>
           <th class="min-tablet" scope="col">Enforces HTTPS</th>
-          <th class="desktop" scope="col">Strict Transport Security (HSTS)</th>
-          <th class="desktop" scope="col">SSL Labs (A- or higher)</th>
+          <th class="desktop" scope="col">HSTS</th>
+          <th class="desktop" scope="col">Free of RC4/3DES and SSLv2/SSLv3</th>
+          <th class="desktop" scope="col">Preloaded Domains</th>
         </tr>
       </thead>
     </table>

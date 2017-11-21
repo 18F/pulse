@@ -121,6 +121,11 @@ table caption {
       text-decoration: underline;
     }
 
+    a.loading {
+      text-decoration: none !important;
+      color: black !important;
+    }
+
     th, td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 40px;
@@ -128,6 +133,13 @@ table caption {
 
     td:first {
       padding: 8px 0 8px 30px !important;
+    }
+
+    td.compliant {
+      border-left: 0px solid black;
+      border-right: 0px solid black;
+      font-weight: bold;
+      background-color: #eee;
     }
 
     thead {
@@ -140,12 +152,9 @@ table caption {
       border: none;
     }
 
-    &.domain {
-
-      td.odd:first-child,
-      td.even:first-child {
-        white-space: nowrap;
-      }
+    td.odd:first-child,
+    td.even:first-child {
+      white-space: nowrap;
     }
 
     &.dtr-inline.collapsed {
@@ -161,12 +170,17 @@ table caption {
 
     > tbody {
       > tr.child {
+
+        td.child {
+          padding-top: 0px;
+        }
+
         ul li {
           border-bottom: none;
-          padding: 0 0 3px 0;
+          padding: 0 0 0px 0;
         }
         span.dtr-title {
-          min-width: 50px;
+          min-width: 0px;
         }
       }
     }
@@ -185,6 +199,18 @@ table caption {
             }
           }
         }
+
+        tr.child {
+          &:hover {
+            span.dtr-data {text-decoration: underline;}
+          }
+        }
+
+        tr.host {
+          td.link {
+            padding-left: 60px;
+          }
+        }
       }
     }
 
@@ -201,7 +227,9 @@ table caption {
           &:first-child:before { top: 15px !important; }
         }
       }
+    }
 
+    &.agency, &.domain {
       .progress-bar-indication {
         background-color: #CCC;
         border-radius: 20px;

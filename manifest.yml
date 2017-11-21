@@ -9,7 +9,7 @@ applications:
     NEW_RELIC_APP_NAME: Pulse | Prod
     NEW_RELIC_ENV: production
 - name: pulse-staging
-  memory: 128M
+  memory: 512M
   instances: 1
   buildpack: python_buildpack
   env:

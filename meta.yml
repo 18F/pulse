@@ -10,12 +10,19 @@ description: "How federal government domains are meeting best practices on the w
 # Data sources. These URLs should have their content updated in-place.
 data:
   # URL where we download the .gov domain list from.
-  domains_url: "https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/current-federal.csv"
+  domains_url: "https://github.com/GSA/data/raw/master/dotgov-domains/current-federal.csv"
 
   # URL where we download the participating DAP .gov list from.
   analytics_url: "https://analytics.usa.gov/data/live/second-level-domains.csv"
 
   # DAP URL where we source public .gov subdomains from.
   analytics_subdomains_url: "https://analytics.usa.gov/data/live/sites-extended.csv"
+
+  # Preprocessed CSV where we source End of Term Archive data from.
+  eot_subdomains_url: https://github.com/GSA/data/raw/master/end-of-term-archive-csv/eot-2016-seeds.csv
+
+a11y:
+  config: https://github.com/18F/pulse/raw/master/data/a11y_config/pa11y_config.json
+  redirects: https://github.com/18F/pulse/raw/master/data/a11y_config/a11y_redirects.yml
 
 bucket: cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084

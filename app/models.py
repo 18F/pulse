@@ -3,7 +3,7 @@ import os
 import io
 import datetime
 import csv
-from app.data import CSV_FIELDS, CSV_FIELDS_SUBDOMAINS, FIELD_MAPPING, LABELS
+from app.data import CSV_FIELDS, FIELD_MAPPING, LABELS
 
 this_dir = os.path.dirname(__file__)
 db = TinyDB(os.path.join(this_dir, '../data/db.json'))
@@ -16,6 +16,8 @@ db = TinyDB(os.path.join(this_dir, '../data/db.json'))
 def clear_database():
   db.purge_tables()
 
+# convenience
+q = Query()
 
 class Report:
   # report_date (string, YYYY-MM-DD)
@@ -23,14 +25,13 @@ class Report:
   # https.uses (number)
   # https.enforces (number)
   # https.hsts (number)
-  # https.subdomains_eligible
-  # https.subdomains_uses
+  # https.bod (number)
   # analytics.eligible (number)
   # analytics.participates (number)
 
   # Initialize a report with a given date.
-  def create(report_date):
-    db.table('reports').insert({'report_date': report_date})
+  def create(data):
+    db.table('reports').insert(data)
 
   def report_time(report_date):
     return datetime.datetime.strptime(report_date, "%Y-%m-%d")
@@ -43,43 +44,37 @@ class Report:
     else:
       return None
 
-  # Update latest report's 'https' or 'analytics' value
-  # with the values
-  def update(data):
-
-    # TODO: can't figure out how to match on all! Workaround.
-    db.table('reports').update(data,
-      where('report_date').exists()
-    )
 
 class Domain:
   # domain (string)
   # agency_slug (string)
+  # is_parent (boolean)
+  #
   # agency_name (string)
   # branch (string, legislative/judicial/executive)
+  #
+  # parent_domain (string)
+  # sources (array of strings)
   #
   # live? (boolean)
   # redirect? (boolean)
   # canonical (string, URL)
   #
-  # https: {
-  #   [many things],
-  #   subdomains: {
-  #     [censys, url, etc.] {
-  #       eligible,
-  #       uses,
-  #       enforces,
-  #       hsts
-  #     }
-  #   }
-  # },
-  # analytics: {
-  #   participating? (boolean)
+  # totals: {
+  #   https: { ... }
+  #   crypto: { ... }
   # }
+  #
+  # https: { ... }
+  # analytics: { ... }
   #
 
   def create(data):
     return db.table('domains').insert(data)
+
+  def create_all(iterable):
+    return db.table('domains').insert_multiple(iterable)
+
 
   def update(domain_name, data):
     return db.table('domains').update(
@@ -96,80 +91,88 @@ class Domain:
     )
 
   def find(domain_name):
-    domains = db.table('domains').search(where('domain') == domain_name)
-    if len(domains) > 0:
-      return domains[0]
-    else:
-      return None
+    return db.table('domains').get(q.domain == domain_name)
 
+  # Useful when you want to pull in all domain entries as peers,
+  # such as reports which only look at parent domains, or
+  # a flat CSV of all hostnames that match a report.
   def eligible(report_name):
     return db.table('domains').search(
-      Query()[report_name].exists()
+      Query()[report_name]['eligible'] == True
     )
 
-  def eligible_for_agency(agency_slug, report_name):
+  # Useful when you have mixed parent/subdomain reporting,
+  # used for HTTPS but not yet others.
+  def eligible_parents(report_name):
     return db.table('domains').search(
-      (Query()[report_name].exists()) &
-      (where("agency_slug") == agency_slug)
+      (Query()[report_name]['eligible_zone'] == True) &
+      (where("is_parent") == True)
+    )
+
+  # Useful when you want to pull down subdomains of a particular
+  # parent domain. Used for HTTPS expanded reports.
+  def eligible_for_domain(domain, report_name):
+    return db.table('domains').search(
+      (Query()[report_name]['eligible'] == True) &
+      (where("base_domain") == domain)
     )
 
   def db():
     return db
 
+  def all():
+    return db.table('domains').all()
 
   def to_csv(domains, report_type):
     output = io.StringIO()
     writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC)
 
+    def value_for(value):
+      # if it's a list, convert it to a list of strings and join
+      if type(value) is list:
+        value = [str(x) for x in value]
+        value = ", ".join(value)
+      elif type(value) is bool:
+        value = {True: 'Yes', False: 'No'}[value]
+      return value
+
     # initialize with a header row
     header = []
-    for field in CSV_FIELDS['common']:
-      header.append(LABELS[field])
-    for field in CSV_FIELDS[report_type]:
-      header.append(LABELS[report_type][field])
+
+    # Common fields, and report-specific fields
+    for category in ['common', report_type]:
+      for field in CSV_FIELDS[category]:
+        header.append(LABELS[category][field])
     writer.writerow(header)
 
     for domain in domains:
       row = []
-      for field in CSV_FIELDS['common']:
-        if FIELD_MAPPING.get(field):
-          row.append(FIELD_MAPPING[field][domain[field]])
-        else:
-          row.append(domain[field])
-      for field in CSV_FIELDS[report_type]:
-        row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
+
+      # Common fields, and report-specific fields
+      for category in ['common', report_type]:
+
+        # Currently, all report-specific fields use a mapping
+        for field in CSV_FIELDS[category]:
+
+          # common fields are top-level on Domain objects
+          if category == 'common':
+            value = domain.get(field)
+          else:
+            value = domain[report_type].get(field)
+
+          # If a mapping exists e.g. 1 -> "Yes", etc.
+          if (
+              FIELD_MAPPING.get(category) and
+              FIELD_MAPPING[category].get(field) and
+              (FIELD_MAPPING[category][field].get(value) is not None)
+            ):
+            value = FIELD_MAPPING[category][field][value]
+
+          row.append(value_for(value))
+
       writer.writerow(row)
 
     return output.getvalue()
-
-  # Given an array of straight subdomain results,
-  def subdomains_to_csv(subdomains):
-    output = io.StringIO()
-    writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC)
-
-    report_type = "https"
-
-    # initialize with a header row
-    header = []
-    for field in CSV_FIELDS_SUBDOMAINS['common']:
-      header.append(LABELS[field])
-    for field in CSV_FIELDS_SUBDOMAINS[report_type]:
-      header.append(LABELS[report_type][field])
-    writer.writerow(header)
-
-    for domain in subdomains:
-      row = []
-      for field in CSV_FIELDS_SUBDOMAINS['common']:
-        if FIELD_MAPPING.get(field):
-          row.append(FIELD_MAPPING[field][domain[field]])
-        else:
-          row.append(domain[field])
-      for field in CSV_FIELDS_SUBDOMAINS[report_type]:
-        row.append(FIELD_MAPPING[report_type][field][domain[report_type][field]])
-      writer.writerow(row)
-
-    return output.getvalue()
-
 
 
 class Agency:
@@ -183,13 +186,8 @@ class Agency:
   #   uses (number)
   #   enforces (number)
   #   hsts (number)
-  #   grade (number, >= A-)
-  #   subdomains {
-  #     eligible (number)
-  #     uses (number)
-  #     enforces (number)
-  #     hsts (number)
-  #   }
+  #   modern (number)
+  #   preloaded (number)
   # }
   # analytics {
   #   eligible (number)
@@ -206,6 +204,9 @@ class Agency:
   # Create a new Agency record with a given name, slug, and total domain count.
   def create(data):
     return db.table('agencies').insert(data)
+
+  def create_all(iterable):
+    return db.table('agencies').insert_multiple(iterable)
 
   # For a given agency, add a report.
   def add_report(slug, report_name, report):

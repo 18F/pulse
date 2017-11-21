@@ -11,14 +11,13 @@ export PULSE_HOME=/opt/scan/pulse
 # Go to pulse environment home
 cd $PULSE_HOME
 
-# Load environment
+# Load local non-versioned secrets, and low-level system env
 source $HOME/.bashrc
 
 # Update one's own code (TODO: devops)
 git pull
 
 # run the relevant env-specific data update path
-# Takes ~40 hours
 make update_$PULSE_ENV
 
 # scan data was turned into db.json,

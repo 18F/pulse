@@ -310,8 +310,8 @@ a#skipnav {
   #about #content > header .donut {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
     #https #content > header .donut:last-child,
     #domain #content > header .donut:last-child,
     #agency #content > header .donut:last-child,
@@ -356,8 +356,8 @@ a#skipnav {
     #about #content > header.chart .description {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
       padding-top: 30px; }
       #https #content > header.chart .description:last-child,
       #domain #content > header.chart .description:last-child,
@@ -366,6 +366,13 @@ a#skipnav {
       #accessibility #content > header.chart .description:last-child,
       #about #content > header.chart .description:last-child {
         margin-right: 0; }
+      #https #content > header.chart .description a,
+      #domain #content > header.chart .description a,
+      #agency #content > header.chart .description a,
+      #analytics #content > header.chart .description a,
+      #accessibility #content > header.chart .description a,
+      #about #content > header.chart .description a {
+        text-decoration: underline; }
       @media screen and (max-width: 767px) {
         #https #content > header.chart .description,
         #domain #content > header.chart .description,
@@ -375,7 +382,7 @@ a#skipnav {
         #about #content > header.chart .description {
           float: left;
           display: block;
-          margin-right: 2.35765%;
+          margin-right: 2.3576515979%;
           width: 100%;
           padding: 40px 20px 20px 20px; }
           #https #content > header.chart .description:last-child,
@@ -509,16 +516,16 @@ a#skipnav {
       font-weight: 300;
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%; }
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%; }
       .site-header > nav #main-nav h1#branding:last-child {
         margin-right: 0; }
       @media screen and (max-width: 767px) {
         .site-header > nav #main-nav h1#branding {
           float: left;
           display: block;
-          margin-right: 2.35765%;
-          width: 74.41059%; }
+          margin-right: 2.3576515979%;
+          width: 74.4105871005%; }
           .site-header > nav #main-nav h1#branding:last-child {
             margin-right: 0; } }
     .site-header > nav #main-nav ul {
@@ -543,8 +550,8 @@ a#skipnav {
       margin-top: 6px;
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%; }
+      margin-right: 2.3576515979%;
+      width: 23.2317613015%; }
       .site-header #menu-btn:last-child {
         margin-right: 0; } }
 .site-header #menu-content {
@@ -606,9 +613,9 @@ a#skipnav {
   text-align: center;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%; }
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%; }
   #home .hero:last-child {
     margin-right: 0; }
   #home .hero h2 {
@@ -622,9 +629,9 @@ a#skipnav {
   padding: 40px 0;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%; }
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%; }
   #home #results:last-child {
     margin-right: 0; }
   #home #results .https, #home #results .dap {
@@ -632,8 +639,8 @@ a#skipnav {
     text-align: center;
     float: left;
     display: block;
-    margin-right: 3.57866%;
-    width: 48.21067%;
+    margin-right: 3.5786636068%;
+    width: 48.2106681966%;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -804,7 +811,7 @@ a#skipnav {
 #accessibility #content > header.chart .description {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 2.3576515979%;
   width: 100%; }
   #accessibility #content > header.chart .description:last-child {
     margin-right: 0; }
@@ -945,29 +952,39 @@ table caption {
         font-weight: normal !important; }
     .dataTables_wrapper table.dataTable a {
       text-decoration: underline; }
+    .dataTables_wrapper table.dataTable a.loading {
+      text-decoration: none !important;
+      color: black !important; }
     .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td {
       border-bottom: 2px solid #EEE !important;
       padding: 8px 0 8px 40px; }
     .dataTables_wrapper table.dataTable td:first {
       padding: 8px 0 8px 30px !important; }
+    .dataTables_wrapper table.dataTable td.compliant {
+      border-left: 0px solid black;
+      border-right: 0px solid black;
+      font-weight: bold;
+      background-color: #eee; }
     .dataTables_wrapper table.dataTable thead .sorting, .dataTables_wrapper table.dataTable thead .sorting_asc, .dataTables_wrapper table.dataTable thead .sorting_desc, .dataTables_wrapper table.dataTable thead .sorting_asc_disabled, .dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
       background-position: 20px center; }
     .dataTables_wrapper table.dataTable.no-footer {
       border: none; }
-    .dataTables_wrapper table.dataTable.domain td.odd:first-child,
-    .dataTables_wrapper table.dataTable.domain td.even:first-child {
+    .dataTables_wrapper table.dataTable td.odd:first-child,
+    .dataTables_wrapper table.dataTable td.even:first-child {
       white-space: nowrap; }
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed td:first-child:before {
       top: 9px;
-      background-color: #003366; }
+      background-color: #3399ff; }
     .dataTables_wrapper table.dataTable.dtr-inline.collapsed th:first-child:before {
       top: 9px;
-      background-color: #003366; }
+      background-color: #3399ff; }
+    .dataTables_wrapper table.dataTable > tbody > tr.child td.child {
+      padding-top: 0px; }
     .dataTables_wrapper table.dataTable > tbody > tr.child ul li {
       border-bottom: none;
-      padding: 0 0 3px 0; }
+      padding: 0 0 0px 0; }
     .dataTables_wrapper table.dataTable > tbody > tr.child span.dtr-title {
-      min-width: 50px; }
+      min-width: 0px; }
     .dataTables_wrapper table.dataTable.https.domain tbody tr.parent td {
       border-bottom: none !important; }
     .dataTables_wrapper table.dataTable.https.domain tbody tr:hover {
@@ -975,6 +992,10 @@ table caption {
       cursor: pointer; }
       .dataTables_wrapper table.dataTable.https.domain tbody tr:hover + .child {
         background-color: #EEE; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.child:hover span.dtr-data {
+      text-decoration: underline; }
+    .dataTables_wrapper table.dataTable.https.domain tbody tr.host td.link {
+      padding-left: 60px; }
     .dataTables_wrapper table.dataTable.agency td {
       padding: 15px 0 15px 40px !important; }
       @media screen and (max-width: 1024px) {
@@ -985,11 +1006,11 @@ table caption {
       @media screen and (max-width: 767px) {
         .dataTables_wrapper table.dataTable.agency td:first-child:before {
           top: 15px !important; } }
-    .dataTables_wrapper table.dataTable.agency .progress-bar-indication {
+    .dataTables_wrapper table.dataTable.agency .progress-bar-indication, .dataTables_wrapper table.dataTable.domain .progress-bar-indication {
       background-color: #CCC;
       border-radius: 20px;
       width: 70%; }
-      .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter {
+      .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter, .dataTables_wrapper table.dataTable.domain .progress-bar-indication > .meter {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -1001,15 +1022,15 @@ table caption {
         display: block;
         height: 100%;
         width: 60%; }
-        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width100 {
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width100, .dataTables_wrapper table.dataTable.domain .progress-bar-indication > .meter.width100 {
           border-radius: 20px; }
-        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width1 {
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width1, .dataTables_wrapper table.dataTable.domain .progress-bar-indication > .meter.width1 {
           background-color: transparent; }
-        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width2 {
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width2, .dataTables_wrapper table.dataTable.domain .progress-bar-indication > .meter.width2 {
           background-color: transparent; }
-        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width3 {
+        .dataTables_wrapper table.dataTable.agency .progress-bar-indication > .meter.width3, .dataTables_wrapper table.dataTable.domain .progress-bar-indication > .meter.width3 {
           background-color: transparent; }
-      .dataTables_wrapper table.dataTable.agency .progress-bar-indication p {
+      .dataTables_wrapper table.dataTable.agency .progress-bar-indication p, .dataTables_wrapper table.dataTable.domain .progress-bar-indication p {
         font-weight: 900;
         font-size: 0.875em;
         position: relative;

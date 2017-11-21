@@ -6,17 +6,13 @@
   </div>
 
   <div class="description">
-    <h2>Secure HTTP (HTTPS)</h2>
+    <h2>HTTPS</h2>
     <h3>Last updated <strong>{{ scan_date | date("%B %d, %Y") }}</strong></h3>
     <p>
-       This data measures whether federal domains support the HTTPS protocol (<code>https://</code>), and the strength of that support. HTTPS provides a secure connection across the internet between websites and their visitors, and is becoming the new baseline for public web services. As part of this shift, the U.S. federal government is in the process of transitioning <a href="https://https.cio.gov">entirely to HTTPS</a>.
+       This data measures how well federal web services support the HTTPS protocol (<code>https://</code>). HTTPS provides a secure connection across the internet between web services and their users. Federal agencies are required to enforce HTTPS and use <a href="https://https.cio.gov/guide/#options-for-hsts-compliance">HSTS</a> (HTTP Strict Transport Security) as part of the White House Office of Management and Budget's <a href="https://https.cio.gov">M-15-13</a> and the Department of Homeland Security's <a href="https://cyber.dhs.gov">Binding Operational Directive 18-01</a>. BOD 18-01 also requires that agencies <a href="https://cyber.dhs.gov/https/#moving-ahead">remove support for known-weak cryptography</a> by disabling the RC4 and 3DES ciphers, and the SSLv2 and SSLv3 protocols.
     </p>
     <p>
-      Note that HTTPS generally <strong>does not affect</strong> whether a website is vulnerable to hacking. For more information on what HTTPS does (and doesn't do), <a href="https://https.cio.gov/faq/">visit the HTTPS FAQ</a>.
-    </p>
-
-    <p>
-      HTTPS and TLS data was last collected through a scan of the public internet on <strong>{{ scan_date | date("%B %d, %Y") }}</strong>.
+      All data below is collected from <strong><a href="/https/guidance/#subdomains">publicly available data sources</a></strong> on <strong>{{ scan_date | date("%B %d, %Y") }}</strong>, and must be considered public. See <a href="/https/guidance/">the technical guidance</a> for more information on how this data is collected and measured.
     </p>
   </div>
 

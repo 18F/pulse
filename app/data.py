@@ -2,30 +2,31 @@
 # Mapping report/domain/agency field names to display names.
 LABELS = {
   # used in export CSVs
-  'domain': 'Domain',
-  'canonical': 'URL',
-  'branch': 'Branch',
-  'redirect': 'Redirect',
-  'agency_name': 'Agency',
-  'base': 'Base Domain',
-  'source': 'Source',
+  'common': {
+    'domain': 'Domain',
+    'canonical': 'URL',
+    'branch': 'Branch',
+    'agency_name': 'Agency',
+    'base_domain': 'Base Domain',
+    'sources': 'Sources',
 
-  'total_domains': 'Number of Domains',
+    'total_domains': 'Number of Domains'
+  },
 
   'https': {
     'uses': 'Uses HTTPS',
     'enforces': 'Enforces HTTPS',
     'hsts': 'Strict Transport Security (HSTS)',
-    'preloaded': 'Preloaded (recommended)',
-    'grade': 'SSL Labs Grade',
+    'preloaded': 'Preloaded',
+    'bod_crypto': 'Free of RC4/3DES and SSLv2/SSLv3',
+    'compliant': 'Compliant with M-15-13 and BOD 18-01',
 
     'hsts_age': 'HSTS max-age',
-    'grade_agencies': 'SSL Labs (A- or higher)',
-    'fs': 'Forward Secrecy',
+    'bod_agencies': 'Free of RC4/3DES and SSLv2/SSLv3',
+    '3des': '3DES',
     'rc4': 'RC4',
-    'sig': 'Signature Algorithm',
-    'ssl3': 'SSLv3',
-    'tls12': 'TLSv1.2',
+    'sslv2': 'SSLv2',
+    'sslv3': 'SSLv3'
   },
 
   'analytics': {
@@ -36,10 +37,7 @@ LABELS = {
 
 FIELD_MAPPING = {
 
-  'redirect': {
-    False: "No",
-    True: "Yes"
-  },
+  'common': {},
 
   'https': {
 
@@ -51,52 +49,36 @@ FIELD_MAPPING = {
     },
 
     'enforces': {
-      0: "",  # N/A (no HTTPS)
+      0: "No",  # N/A (no HTTPS)
       1: "No",  # Present, not default
       2: "Yes",  # Defaults eventually to HTTPS
       3: "Yes"  # Defaults eventually + redirects immediately
     },
 
     'hsts': {
-      -1: "",  # N/A
+      -1: "No",  # N/A
       0: "No",  # No
       1: "No",  # No, HSTS with short max-age (for canonical endpoint)
       2: "Yes",  # Yes, HSTS for >= 1 year (for canonical endpoint)
+      3: "Preloaded" # Yes, via preloading (subdomains only)
     },
 
     'preloaded': {
-      0: "",  # No (leave blank, since not required)
+      0: "No",  # No
       1: "Ready",  # Preload-ready
       2: "Yes"  # Yes
     },
 
-    'grade': {
+    'bod_crypto': {
       -1: "",
-      0: "F",
-      1: "T",
-      2: "C",
-      3: "B",
-      4: "A-",
-      5: "A",
-      6: "A+"
-    }
-  },
-
-  'analytics': {
-    'participating': {
-      False: "No",
-      True: "Yes"
+      0: "No",
+      1: "Yes"
     }
   }
 }
 
 CSV_FIELDS = {
-  'common': ['domain', 'canonical', 'branch', 'agency_name', 'redirect'],
-  'https': ['uses',  'enforces', 'hsts', 'preloaded', 'grade'],
+  'common': ['domain', 'base_domain', 'canonical', 'agency_name', 'sources'],
+  'https': ['compliant', 'enforces', 'hsts', 'bod_crypto', '3des', 'rc4', 'sslv2', 'sslv3', 'preloaded'],
   'analytics': ['participating']
-}
-
-CSV_FIELDS_SUBDOMAINS = {
-  'common': ['domain', 'base', 'agency_name', 'source'],
-  'https': ['uses', 'enforces', 'hsts']
 }

@@ -1,7 +1,70 @@
-$(document).ready(function () {
+$(function () {
 
+  // referenced in a few places
+  var table;
+
+  // Populate with parent domain data, expand hosts per-domain
   $.get("/data/domains/https.json", function(data) {
-    renderTable(data.data);
+    table = Tables.init(data.data, {
+
+      csv: "/data/hosts/https.csv",
+
+      responsive: {
+          details: {
+              type: "column",
+              display: $.fn.dataTable.Responsive.display.childRow
+          }
+      },
+
+      initComplete: initExpansions,
+
+      columns: [
+        {
+          className: 'control',
+          orderable: false,
+          data: "",
+          render: Tables.noop,
+          visible: false
+        },
+        {
+          data: "domain",
+          width: "240px",
+          cellType: "td",
+          render: showDomain,
+
+          createdCell: function (td) {
+            td.scope = "row";
+          }
+        },
+        {data: "agency_name"}, // here for filtering/sorting
+        {
+          data: "totals.https.compliant",
+          render: Tables.percentTotals("https", "compliant"),
+          width: "100px",
+          className: "compliant"
+        },
+        {
+          data: "totals.https.enforces",
+          render: Tables.percentTotals("https", "enforces")
+        },
+        {
+          data: "totals.https.hsts",
+          render: Tables.percentTotals("https", "hsts")
+        },
+        {
+          data: "totals.crypto.bod_crypto",
+          render: Tables.percentTotals("crypto", "bod_crypto")
+        },
+        {
+          data: "https.preloaded",
+          render: display(names.preloaded)
+        },
+        {
+          data: "",
+          render: Tables.noop
+        }
+      ]
+    });
   });
 
   /**
@@ -15,42 +78,38 @@ $(document).ready(function () {
   */
 
   var names = {
-    uses: {
-      "-1": "No",
-      0: "No",  // Downgrades HTTPS -> HTTP
-      1: "Yes", // (with certificate chain issues)
-      2: "Yes"
-    },
 
     enforces: {
-      0: "", // N/A (no HTTPS)
+      0: "No", // No (no HTTPS)
       1: "No", // Present, not default
       2: "Yes", // Defaults eventually to HTTPS
       3: "Yes" // Defaults eventually + redirects immediately
     },
 
     hsts: {
-      "-1": "", // N/A
+      "-1": "No", // No (no HTTPS)
       0: "No",  // No
       1: "No", // No, HSTS with short max-age (for canonical endpoint)
-      2: "Yes" // Yes, HSTS for >= 1 year (for canonical endpoint)
+      2: "Yes", // Yes, HSTS for >= 1 year (for canonical endpoint)
+      3: "Preloaded" // Yes, via preloading (subdomains only)
     },
 
+    bod_crypto: {
+      "-1": "--", // No HTTPS
+      0: "No",
+      1: "Yes"
+    },
+
+    // Parent domains only
     preloaded: {
-      0: "",  // No (don't display, since it's optional)
+      0: "No",  // No
       1: "Ready",  // Preload-ready
-      2: "Yes"  // Yes
+      2: "<strong>Yes</strong>"  // Yes
     },
 
-    grade: {
-      "-1": "",
-      0: "F",
-      1: "T",
-      2: "C",
-      3: "B",
-      4: "A-",
-      5: "A",
-      6: "A+"
+    compliant: {
+      false: "No",
+      true: "Yes"
     }
   };
 
@@ -63,318 +122,157 @@ $(document).ready(function () {
     }
   };
 
-  // Describe what's going on with this domain's subdomains.
-  var subdomains = function(data, type, row) {
-    if (type == "sort") return null;
+  var displayCrypto = function(row) {
+    // if it's all good, then great
+    if (row.https.bod_crypto != 0)
+      return names.bod_crypto[row.https.bod_crypto];
 
-    // If the domain is preloaded, responsibilities are absolved.
-    if (row.https.preloaded == 2)
-      return "All subdomains automatically protected through preloading.";
+    var problems = [];
+    // if not, what are the problems?
+    if (row.https.rc4) problems.push("RC4");
+    if (row.https['3des']) problems.push("3DES");
+    if (row.https.sslv2) problems.push("SSLv2");
+    if (row.https.sslv3) problems.push("SSLv3");
 
-    if (row.https.preloaded == 1)
-      return "All subdomains will be protected when preloading is complete.";
-
-    if (!row.https.subdomains) {
-      if (row.https.uses >= 1)
-        return "No public subdomains found. " + l("preload", "Consider preloading.");
-      else
-        return "No public subdomains found.";
-    }
-
-    var sources = [],
-        message = "",
-        pct = null;
-
-    // TODO: make this a function.
-    if (row.https.subdomains.censys) {
-      pct = Utils.percent(row.https.subdomains.censys.enforces, row.https.subdomains.censys.eligible);
-      message = n("" + pct + "%") + " of " +
-        row.https.subdomains.censys.eligible + " public sites "
-        + l(censysUrlFor(row.domain), "known to Censys") +
-        " enforce HTTPS.";
-      sources.push(message);
-    }
-
-    if (row.https.subdomains.dap) {
-      pct = Utils.percent(row.https.subdomains.dap.enforces, row.https.subdomains.dap.eligible);
-      sources.push(n("" + pct + "%") + " of " +
-        row.https.subdomains.dap.eligible + " public sites " +
-        l(links.dap_data, "known to the Digital Analytics Program") +
-        " enforce HTTPS.")
-    }
-
-    if (sources.length == 0)
-      return "";
-
-    sources.push("For more details, " + l(links.subdomains, "read our methodology") +
-      ", or " + l(agencyDownloadFor(row), "download subdomain data for this agency") + ".");
-
-    var p = "<p class=\"indents\">";
-    return n("Known public subdomains: ") + p + sources.join("</p>" + p) + "</p>";
+    return "No, uses " + problems.join(", ");
   };
 
-  var linkGrade = function(data, type, row) {
-    var grade = display(names.grade)(data, type);
-    if (type == "sort")
-      return grade;
-    else if (grade == "")
-      return ""
+  var loadHostData = function(tr, base_domain, hosts) {
+    var all = [];
+    var number = hosts.length;
+
+    if (number > 1) {
+      var csv = "/data/hosts/" + base_domain + "/https.csv";
+      var discoveryLink = l("/https/guidance/#subdomains", "publicly discoverable services");
+      var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
+      link += l(csv, "Download all " + base_domain + " data as a CSV") + ".";
+      var download = $("<tr></tr>").addClass("subdomain").html("<td class=\"link\" colspan=6>" + link + "</td>");
+      all.push(download);
+    }
+
+    for (i=0; i<hosts.length; i++) {
+      var host = hosts[i];
+      var details = $("<tr/>").addClass("host");
+
+      var link = "<a href=\"" + host.canonical + "\" target=\"blank\">" + Utils.truncate(host.domain, 35) + "</a>";
+      details.append($("<td/>").addClass("link").html(link));
+
+      var compliant = names.compliant[host.https.compliant];
+      details.append($("<td class=\"compliant\"/>").html(compliant));
+
+      var https = names.enforces[host.https.enforces];
+      details.append($("<td/>").html(https));
+
+      var hsts = names.hsts[host.https.hsts];
+      details.append($("<td/>").html(hsts));
+
+      var crypto = displayCrypto(host);
+      details.append($("<td/>").html(crypto));
+
+      // blank
+      details.append($("<td/>"));
+
+      all.push(details);
+    }
+
+    tr.child(all, "child");
+  };
+
+  var loneDomain = function(row) {
+    return (row.is_parent && row.totals.https.eligible == 1 && row.https.eligible);
+  };
+
+  var showDomain = function(data, type, row) {
+    if (type == "sort") return row.domain;
+
+    // determines whether remote fetching has to happen
+    var fetch = !(loneDomain(row));
+
+    return n(row.domain) + " (" + l("#", showHideText(true, row), "onclick=\"return false\" data-fetch=\"" + fetch + "\" data-domain=\"" + row.domain + "\"") + ")";
+  };
+
+  var showHideText = function(show, row) {
+    if (loneDomain(row))
+      return (show ? "show" : "hide") + " details";
     else
-      return "" +
-        "<a href=\"" + labsUrlFor(row.canonical) + "\" target=\"blank\">" +
-          grade +
-        "</a>";
+      return (show ? "show" : "hide") + " " + row.totals.https.eligible + " services";
   };
 
-  var labsUrlFor = function(domain) {
-    return "https://www.ssllabs.com/ssltest/analyze.html?d=" + domain;
+  var initExpansions = function() {
+    $('table.domain').on('click', 'tbody tr.odd, tbody tr.even', function() {
+      var row = table.row(this);
+
+      // zero in on the parent row, whichever was clicked
+      if (row.data() == undefined)
+        row = table.row(this.previousElementSibling);
+      if (row.data() == undefined) return;
+
+      var data = row.data();
+      var was_expanded = data.expanded;
+      var base_domain = data.base_domain;
+
+      if (!was_expanded) {
+        data.expanded = true;
+
+        // link's data-fetch will tell us whether data has to be fetched
+        var link = $("a[data-domain='" + base_domain + "']");
+        var fetch = link.data("fetch");
+
+        if (fetch) {
+          console.log("Fetching data for " + base_domain + "...");
+          link.addClass("loading").html("Loading " + base_domain + " services...");
+
+          $.ajax({
+            url: "/data/hosts/" + base_domain + "/https.json",
+            success: function(response) {
+              loadHostData(row, base_domain, response.data);
+
+              // show the data right away
+              row.child.show()
+
+              // set it to just show/hide from now on without fetching
+              link.data("fetch", false);
+
+              // disable loading styles
+              link.removeClass("loading");
+
+              // show the "hide" text
+              link.html(showHideText(false, data));
+            },
+            error: function() {
+              console.log("Error loading data for " + base_domain);
+            }
+          });
+        } else {
+          // if it's a lone domain, just refill the data every time
+          // instead of making this function's logic even more elaborate
+          if (loneDomain(data))
+            loadHostData(row, base_domain, [data]);
+
+          // show the "hide" text
+          link.html(showHideText(false, data));
+
+          row.child.show();
+        }
+
+      }
+
+      else { // was_expanded == true
+        data.expanded = false;
+        row.child.hide();
+        $("a[data-domain='" + base_domain + "']").html(showHideText(true, data));
+      }
+
+      return false;
+    });
   };
 
-  var censysUrlFor = function(domain) {
-    return "https://censys.io/certificates?q=" +
-      "parsed.subject.common_name:%22" + domain +
-      "%22%20or%20parsed.extensions.subject_alt_name.dns_names:%22" + domain + "%22";
-  };
-
-  var agencyDownloadFor = function(row) {
-    return "https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/agencies/" + row["agency_slug"] + "/https.csv";
-  };
-
-  // Construct a sentence explaining the HTTP situation.
-  var httpDetails = function(data, type, row) {
-
-    if (type == "sort")
-      return null;
-
-    var https = row.https.uses;
-    var behavior = row.https.enforces;
-    var hsts = row.https.hsts;
-    var hsts_age = row.https.hsts_age;
-    var preloaded = row.https.preloaded;
-    var grade = row.https.grade;
-
-    var tls = [];
-
-    // If an SSL Labs grade exists at all...
-    if (row.https.grade >= 0) {
-
-      if (row.https.sig == "SHA1withRSA")
-        tls.push("Certificate uses a " + l("sha1", "weak SHA-1 signature"));
-
-      if (row.https.ssl3 == true)
-        tls.push("Supports the " + l("ssl3", "insecure SSLv3 protocol"));
-
-      if (row.https.tls12 == false)
-        tls.push("Lacks support for the " + l("tls12", "most recent version of TLS"));
-    }
-
-    // Though not found through SSL Labs, this is a TLS issue.
-    if (https == 1)
-      tls.push("Certificate chain not valid for all public clients. See " + l(labsUrlFor(row.canonical), "SSL Labs") + " for details.");
-
-    // Non-urgent TLS details.
-    var tlsDetails = "";
-    if (grade >= 0) {
-      if (tls.length > 0)
-        tlsDetails += tls.join(". ") + ".";
-    }
-
-    // Principles of message crafting:
-    //
-    // * Only grant "perfect score!" if TLS quality issues are gone.
-    // * Don't show TLS quality issues when pushing to preload.
-    // * All flagged TLS quality issues should be reflected in the
-    //   SSL Labs grade, so that agencies have fair warning of issues
-    //   even before we show them.
-    // * Don't speak explicitly about M-15-13, since not all domains
-    //   are subject to OMB requirements.
-
-    var details;
-    // By default, if it's an F grade, *always* give TLS details.
-    var urgent = (grade == 0);
-
-    // CASE: Perfect score!
-    // HSTS max-age is allowed to be weak, because client enforcement means that
-    // the max-age is effectively overridden in modern browsers.
-    if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts >= 1) && (preloaded == 2) &&
-        (tls.length == 0) && (grade == 6))
-      details = g("Perfect score! HTTPS is strictly enforced throughout the zone.");
-
-    // CASE: Only issue is TLS quality issues.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts == 2) && (preloaded == 2)) {
-      details = g("Excellent! HTTPS is strictly enforced throughout the zone.");
-    }
-
-    // CASE: HSTS preloaded, but HSTS header is missing.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts < 1) && (preloaded == 2))
-      details = n("Caution:") + " Domain is preloaded, but HSTS header is missing. This may " + l("stay_preloaded", "cause the domain to be un-preloaded") + ".";
-
-    // CASE: HTTPS+HSTS, preload-ready but not preloaded.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts == 2) && (preloaded == 1))
-      details = g("Almost there! ") + "Domain is ready to be " + l("submit", "submitted to the HSTS preload list") + ".";
-
-    // CASE: HTTPS+HSTS (M-15-13 compliant), but no preloading.
-    else if (
-        (https >= 1) && (behavior >= 2) &&
-        (hsts == 2) && (preloaded == 0))
-      details = g("HTTPS enforced. ") + n(l("preload", "Consider preloading this domain")) + " to enforce HTTPS across the entire zone.";
-
-    // CASE: HSTS, but HTTPS not enforced.
-    else if ((https >= 1) && (behavior < 2) && (hsts == 2))
-      details = n("Caution:") + " Domain uses " + l("hsts", "HSTS") + ", but is not redirecting clients to HTTPS.";
-
-    // CASE: HTTPS w/valid chain supported and enforced, weak/no HSTS.
-    else if ((https == 2) && (behavior >= 2) && (hsts < 2)) {
-      if (hsts == 0)
-        details = n("Almost:") + " Enable " + l("hsts", "HSTS") + " so that clients can enforce HTTPS.";
-      else if (hsts == 1)
-        details = n("Almost:") + " The " + l("hsts", "HSTS") + " max-age (" + hsts_age + " seconds) is too short, and should be increased to at least 1 year (31536000 seconds).";
-    }
-
-    // CASE: HTTPS w/invalid chain supported and enforced, no HSTS.
-    else if ((https == 1) && (behavior >= 2) && (hsts < 2))
-      details = n("Almost:") + " Domain is missing " + l("hsts", "HSTS") + ", but the presented certificate chain may not be valid for all public clients. HSTS prevents users from clicking through certificate warnings. See " + l(labsUrlFor(row.canonical), "the SSL Labs report") + " for details.";
-
-    // CASE: HTTPS supported, not enforced, no HSTS.
-    else if ((https >= 1) && (behavior < 2) && (hsts < 2))
-      details = "HTTPS supported, but not enforced.";
-
-    // CASE: HTTPS downgrades.
-    else if (https == 0)
-      details = "Visitors are redirected from HTTPS down to HTTP."
-
-    // CASE: HTTPS isn't supported at all.
-    else if (https == -1)
-      // TODO SUBCASE: It's a "redirect domain".
-      // SUBCASE: Everything else.
-      details = "No support for HTTPS."
-
-    else
-      details = "";
-
-    // If there's an F grade, and TLS details weren't already included,
-    // add an urgent warning.
-    if (urgent)
-      return details + " " + w("Warning: ") + l(labsUrlFor(row.canonical), "review SSL Labs report") + " to resolve TLS quality issues."
-    else
-      return details;
-  };
-
-  var links = {
-    dap: "https://analytics.usa.gov",
-    dap_data: "https://analytics.usa.gov/data/live/sites.csv",
-    censys: "https://censys.io",
-    hsts: "https://https.cio.gov/hsts/",
-    sha1: "https://https.cio.gov/technical-guidelines/#signature-algorithms",
-    ssl3: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
-    tls12: "https://https.cio.gov/technical-guidelines/#ssl-and-tls",
-    preload: "https://https.cio.gov/hsts/#hsts-preloading",
-    subdomains: "/https/guidance/#subdomains",
-    preloading_compliance: "https://https.cio.gov/guide/#options-for-hsts-compliance",
-    stay_preloaded: "https://hstspreload.appspot.com/#continued-requirements",
-    submit: "https://hstspreload.appspot.com"
-  };
-
-  var l = function(slug, text) {
-    return "<a href=\"" + (links[slug] || slug) + "\" target=\"blank\">" + text + "</a>";
-  };
-
-  var g = function(text) {
-    return "<strong class=\"success\">" + text + "</strong>";
-  };
-
-  var w = function(text) {
-    return "<strong class=\"warning\">" + text + "</strong>";
+  var l = function(href, text, extra) {
+    return "<a href=\"" + href + "\" target=\"blank\" " + extra + ">" + text + "</a>";
   };
 
   var n = function(text) {
     return "<strong class=\"neutral\">" + text + "</strong>";
-  }
-
-  var renderTable = function(data) {
-    var table = $("table").DataTable({
-
-      data: data,
-
-      responsive: {
-          details: {
-              type: "",
-              display: $.fn.dataTable.Responsive.display.childRowImmediate
-          }
-      },
-
-      initComplete: Utils.searchLinks,
-
-      columns: [
-        {
-          data: "domain",
-          width: "210px",
-          cellType: "th",
-          render: Utils.linkDomain
-        },
-        {data: "canonical"},
-        {data: "agency_name"},
-        {
-          data: "https.uses",
-          render: display(names.uses)
-        },
-        {
-          data: "https.enforces",
-          render: display(names.enforces)
-        },
-        {
-          data: "https.hsts",
-          render: display(names.hsts)
-        },
-        {
-          data: "https.preloaded",
-          render: display(names.preloaded)
-        },
-        {
-          data: "https.grade",
-          render: linkGrade
-        },
-        {
-          data: "",
-          render: httpDetails
-        },
-        {
-          data: "",
-          render: subdomains
-        }
-      ],
-
-      columnDefs: [
-        {
-          targets: 0,
-          cellType: "td",
-          createdCell: function (td) {
-            td.scope = "row";
-          }
-        }
-      ],
-
-      "oLanguage": {
-        "oPaginate": {
-          "sPrevious": "<<",
-          "sNext": ">>"
-        }
-      },
-
-      csv: "/data/domains/https.csv",
-
-      dom: 'LCftrip'
-
-    });
-
   }
 
 })
