@@ -47,6 +47,11 @@ import data.processing
 # --upload: upload scan data and resulting db.json anything to S3
 
 def run(options):
+  # If this is just being used to download production data, do that.
+  if options.get("just-download", False):
+    download_s3()
+    return
+
   # Definitive scan date for the run.
   today = datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d")
 
@@ -61,15 +66,15 @@ def run(options):
     print("Subdomain gathering complete.")
     print()
 
-    # 1b. Run (limited) scanning on these subdomains.
-    print("Scanning subdomains with: %s" % SUBDOMAIN_SCANNERS)
+    # 1b. Scan subdomains for some types of things.
+    print("Scanning subdomains.")
     print()
     scan_subdomains(options)
     print()
     print("Subdomain scanning complete")
     print()
 
-    # 1c. Run (broad) scanning on parent domains.
+    # 1c. Scan parent domains for all types of things.
     print("Scanning parent domains.")
     print()
     scan_parents(options)
@@ -78,8 +83,7 @@ def run(options):
   elif scan_mode == "download":
     print("Downloading latest production scan data from S3.")
     print()
-    live_scanned = "s3://%s/live/scan/" % (BUCKET_NAME)
-    shell_out(["aws", "s3", "sync", live_scanned, PARENTS_RESULTS])
+    download_s3()
     print()
     print("Download complete.")
 
@@ -108,7 +112,7 @@ def run(options):
   if options.get("upload", False):
     print("[%s] Syncing scan data and database to S3." % the_date)
     print()
-    upload(the_date)
+    upload_s3(the_date)
     print()
     print("[%s] Scan data and database now in S3." % the_date)
 
@@ -116,7 +120,7 @@ def run(options):
 
 
 # Upload the scan + processed data to /live/ and /archive/ locations by date.
-def upload(date):
+def upload_s3(date):
   acl = "--acl=public-read"
 
   live_parents = "s3://%s//live/parents/" % BUCKET_NAME
@@ -134,10 +138,53 @@ def upload(date):
   shell_out(["aws", "s3", "sync", live, archive, acl])
 
 
+# Makes use of the public URLs so that this can be run in a dev
+# environment that doesn't have write credentials to the bucket.
+def download_s3():
+
+  def download(src, dest):
+    # remote sources relative to bucket
+    url = "https://s3-us-gov-west-1.amazonaws.com/%s/%s" % (BUCKET_NAME, src)
+
+    # local destinations are relative to data/
+    path = os.path.join(DATA_DIR, dest)
+
+    shell_out(["curl", url, "--output", path])
+
+  # Ensure the destination directories are present.
+  os.makedirs(os.path.join(PARENTS_DATA, "results"))
+  os.makedirs(os.path.join(SUBDOMAIN_DATA_GATHERED, "results"))
+  os.makedirs(os.path.join(SUBDOMAIN_DATA_SCANNED, "results"))
+
+  # Use cURL to download files.
+  # Don't rely on aws being configured, and surface any permission issues.
+  #
+  # Just grab results, not all the cached data.
+
+  # Results of parent domain scanning.
+  for scanner in SCANNERS:
+    download("live/parents/results/%s.csv" % scanner, "output/parents/results/%s.csv" % scanner)
+  download("live/parents/results/meta.json", "output/parents/results/meta.json")
+
+  # Results of subdomain scanning.
+  for scanner in SUBDOMAIN_SCANNERS:
+    download("live/subdomains/scan/results/%s.csv" % scanner, "output/subdomains/scan/results/%s.csv" % scanner)
+  download("live/subdomains/scan/results/meta.json", "output/subdomains/scan/results/meta.json")
+
+  # Results of subdomain gathering.
+  download("live/subdomains/gather/results/gathered.csv", "output/subdomains/gather/results/gathered.csv")
+  download("live/subdomains/gather/results/meta.json", "output/subdomains/gather/results/meta.json")
+
+  # Also download the latest compiled DB.
+  # This will be overwritten immediately if this is being used in
+  # the context of a full data load/processing.
+  download("live/db/db.json", "db.json")
+
+
 # Use domain-scan to scan .gov domains from the set domain URL.
 # Drop the output into data/output/parents/results.
 def scan_parents(options):
-  scanners = "--scan=%s" % SCANNERS
+  scanners = "--scan=%s" % (str.join(",", SCANNERS))
   analytics = "--analytics=%s" % ANALYTICS_URL
   output = "--output=%s" % PARENTS_DATA
   a11y_redirects = "--a11y_redirects=%s" % A11Y_REDIRECTS
@@ -207,7 +254,7 @@ def scan_subdomains(options):
   full_command = [
     SCAN_COMMAND,
     subdomains,
-    "--scan=%s" % SUBDOMAIN_SCANNERS,
+    "--scan=%s" % str.join(",", SUBDOMAIN_SCANNERS),
     "--output=%s" % SUBDOMAIN_DATA_SCANNED,
     "--sslyze-certs=false", # ugh, temporary
     # "--debug", # always capture full output

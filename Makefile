@@ -58,18 +58,4 @@ update_development:
 # Pending cloud.gov backup bucket:
 # cg-72ce4caf-d81b-4771-9b96-3624b5554587
 data_init:
-	mkdir -p data/output/parents/results/
-	mkdir -p data/output/subdomains/scan/results/
-	mkdir -p data/output/subdomains/gather/results/
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/analytics.csv > data/output/parents/results/analytics.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/pshtt.csv > data/output/parents/results/pshtt.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/sslyze.csv > data/output/parents/results/sslyze.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/third_parties.csv > data/output/parents/results/third_parties.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/a11y.csv > data/output/parents/results/a11y.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/parents/meta.json > data/output/parents/results/meta.json
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/gather/gathered.csv > data/output/subdomains/gather/results/gathered.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/gather/meta.json > data/output/subdomains/gather/results/meta.json
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/scan/pshtt.csv > data/output/subdomains/scan/results/pshtt.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/scan/sslyze.csv > data/output/subdomains/scan/results/sslyze.csv
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/subdomains/scan/meta.json > data/output/subdomains/scan/results/meta.json
-	curl https://s3-us-gov-west-1.amazonaws.com/cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084/live/db/db.json > data/db.json
+	python -m data.update --just-download
