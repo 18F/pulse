@@ -117,23 +117,21 @@ def run(options):
 
 # Upload the scan + processed data to /live/ and /archive/ locations by date.
 def upload(date):
-  live_parents = "s3://%s/live/parents/" % (BUCKET_NAME)
-  live_subdomains = "s3://%s/live/subdomains/" % (BUCKET_NAME)
-  live_db = "s3://%s/live/db/" % (BUCKET_NAME)
-  archive_subdomains = "s3://%s/archive/%s/subdomains/" % (BUCKET_NAME, date)
-  archive_parents = "s3://%s/archive/%s/parents/" % (BUCKET_NAME, date)
-  archive_db = "s3://%s/archive/%s/db/" % (BUCKET_NAME, date)
-
   acl = "--acl=public-read"
 
-  shell_out(["aws", "s3", "sync", PARENTS_DATA, live_scanned, acl])
+  live_parents = "s3://%s//live/parents/" % BUCKET_NAME
+  live_subdomains = "s3://%s/live/subdomains/" % BUCKET_NAME
+  live_db = "s3://%s/live/db/" % BUCKET_NAME
+
+  shell_out(["aws", "s3", "sync", PARENTS_DATA, live_parents, acl])
   shell_out(["aws", "s3", "sync", SUBDOMAIN_DATA, live_subdomains, acl])
   shell_out(["aws", "s3", "cp", DB_DATA, live_db, acl])
 
-  # Ask S3 to do the copying, to save on time and bandwidth
-  shell_out(["aws", "s3", "sync", live_scanned, archive_scanned, acl])
-  shell_out(["aws", "s3", "sync", live_subdomains, archive_subdomains, acl])
-  shell_out(["aws", "s3", "sync", live_db, archive_db, acl])
+  # Then copy the entire live directory to a dated archive.
+  # Ask S3 to do the copying, to save on time and bandwidth.
+  live = "s3://%s/live/" % (BUCKET_NAME)
+  archive = "s3://%s/archive/%s/" % (BUCKET_NAME, date)
+  shell_out(["aws", "s3", "sync", live, archive, acl])
 
 
 # Use domain-scan to scan .gov domains from the set domain URL.
