@@ -121,14 +121,18 @@ def run(options):
 
 # Upload the scan + processed data to /live/ and /archive/ locations by date.
 def upload_s3(date):
+  # Used for all operations.
   acl = "--acl=public-read"
+
+  # Used when uploading to the live/ dir.
+  delete = "--delete"
 
   live_parents = "s3://%s/live/parents/" % BUCKET_NAME
   live_subdomains = "s3://%s/live/subdomains/" % BUCKET_NAME
   live_db = "s3://%s/live/db/" % BUCKET_NAME
 
-  shell_out(["aws", "s3", "sync", PARENTS_DATA, live_parents, acl])
-  shell_out(["aws", "s3", "sync", SUBDOMAIN_DATA, live_subdomains, acl])
+  shell_out(["aws", "s3", "sync", PARENTS_DATA, live_parents, acl, delete])
+  shell_out(["aws", "s3", "sync", SUBDOMAIN_DATA, live_subdomains, acl, delete])
   shell_out(["aws", "s3", "cp", DB_DATA, live_db, acl])
 
   # Then copy the entire live directory to a dated archive.
