@@ -123,7 +123,7 @@ def run(options):
 def upload_s3(date):
   acl = "--acl=public-read"
 
-  live_parents = "s3://%s//live/parents/" % BUCKET_NAME
+  live_parents = "s3://%s/live/parents/" % BUCKET_NAME
   live_subdomains = "s3://%s/live/subdomains/" % BUCKET_NAME
   live_db = "s3://%s/live/db/" % BUCKET_NAME
 
