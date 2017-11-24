@@ -156,9 +156,9 @@ def download_s3():
     shell_out(["curl", url, "--output", path])
 
   # Ensure the destination directories are present.
-  os.makedirs(os.path.join(PARENTS_DATA, "results"))
-  os.makedirs(os.path.join(SUBDOMAIN_DATA_GATHERED, "results"))
-  os.makedirs(os.path.join(SUBDOMAIN_DATA_SCANNED, "results"))
+  os.makedirs(os.path.join(PARENTS_DATA, "results"), exist_ok=True)
+  os.makedirs(os.path.join(SUBDOMAIN_DATA_GATHERED, "results"), exist_ok=True)
+  os.makedirs(os.path.join(SUBDOMAIN_DATA_SCANNED, "results"), exist_ok=True)
 
   # Use cURL to download files.
   # Don't rely on aws being configured, and surface any permission issues.
