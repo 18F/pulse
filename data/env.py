@@ -22,6 +22,7 @@ SUBDOMAIN_DATA_SCANNED = os.path.join(DATA_DIR, "./output/subdomains/scan")
 
 DB_DATA = os.path.join(DATA_DIR, "./db.json")
 BUCKET_NAME = META['bucket']
+AWS_REGION = META['aws_region']
 
 # DAP source data
 ANALYTICS_URL = META["data"]["analytics_url"]

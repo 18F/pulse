@@ -148,7 +148,7 @@ def download_s3():
 
   def download(src, dest):
     # remote sources relative to bucket
-    url = "https://s3-us-gov-west-1.amazonaws.com/%s/%s" % (BUCKET_NAME, src)
+    url = "https://s3-%s.amazonaws.com/%s/%s" % (AWS_REGION, BUCKET_NAME, src)
 
     # local destinations are relative to data/
     path = os.path.join(DATA_DIR, dest)

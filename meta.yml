@@ -26,3 +26,4 @@ a11y:
   redirects: https://github.com/18F/pulse/raw/master/data/a11y_config/a11y_redirects.yml
 
 bucket: cg-4adefb86-dadb-4ecf-be3e-f1c7b4f6d084
+aws_region: us-gov-west-1
