@@ -2,10 +2,10 @@ import os
 import sys
 import yaml
 
-this_dir = os.path.dirname(__file__)
+DATA_DIR = os.path.dirname(__file__)
 
 # App-level metadata.
-META = yaml.safe_load(open(os.path.join(this_dir, "../meta.yml")))
+META = yaml.safe_load(open(os.path.join(DATA_DIR, "../meta.yml")))
 DOMAINS = os.environ.get("DOMAINS", META["data"]["domains_url"])
 
 # domain-scan paths (MUST be set in env)
@@ -14,13 +14,13 @@ GATHER_COMMAND = os.environ.get("DOMAIN_GATHER_PATH", None)
 
 
 # post-processing and uploading information
-PARENTS_DATA = os.path.join(this_dir, "./output/parents")
-PARENTS_RESULTS = os.path.join(this_dir, "./output/parents/results")
-SUBDOMAIN_DATA = os.path.join(this_dir, "./output/subdomains")
-SUBDOMAIN_DATA_GATHERED = os.path.join(this_dir, "./output/subdomains/gather")
-SUBDOMAIN_DATA_SCANNED = os.path.join(this_dir, "./output/subdomains/scan")
+PARENTS_DATA = os.path.join(DATA_DIR, "./output/parents")
+PARENTS_RESULTS = os.path.join(DATA_DIR, "./output/parents/results")
+SUBDOMAIN_DATA = os.path.join(DATA_DIR, "./output/subdomains")
+SUBDOMAIN_DATA_GATHERED = os.path.join(DATA_DIR, "./output/subdomains/gather")
+SUBDOMAIN_DATA_SCANNED = os.path.join(DATA_DIR, "./output/subdomains/scan")
 
-DB_DATA = os.path.join(this_dir, "./db.json")
+DB_DATA = os.path.join(DATA_DIR, "./db.json")
 BUCKET_NAME = META['bucket']
 
 # DAP source data
@@ -32,7 +32,7 @@ A11Y_REDIRECTS = META["a11y"]["redirects"]
 
 ### Parent domain scanning information
 #
-SCANNERS = os.environ.get("SCANNERS", "pshtt,sslyze,analytics,a11y,third_parties")
+SCANNERS = os.environ.get("SCANNERS", ["pshtt", "sslyze", "analytics", "a11y", "third_parties"])
 
 ### subdomain gathering/scanning information
 GATHER_SUFFIXES = os.environ.get("GATHER_SUFFIXES", ".gov,.fed.us")
@@ -47,7 +47,7 @@ GATHERER_OPTIONS = [
 ]
 
 # Run these scanners over *all* (which is a lot) discovered subdomains.
-SUBDOMAIN_SCANNERS = "pshtt,sslyze"
+SUBDOMAIN_SCANNERS = ["pshtt", "sslyze"]
 
 # Used if --lambda is enabled during the scan.
 LAMBDA_WORKERS = 900
