@@ -53,37 +53,6 @@ make data_init
 
 This will download (using `curl`) the current live production database and scan data to the local `data/` directory.
 
-## Deploying the site
-
-The site can be easily deployed (by someone with credentials to the right server) through [Fabric](https://github.com/fabric/fabric), which requires Python 2.
-
-The Fabric script will expect a defined `ssh` configuration called `pulse`, which you should already have defined in your SSH configuration with the right hostname and key.
-
-To deploy to staging, switch to a Python 2 virtualenv with `fabric` installed, and run:
-
-```
-make staging
-```
-
-This will `cd` into `deploy/` and run `fab deploy`.
-
-To deploy to production, activate Python 2 and `fabric` and run:
-
-```
-make production
-```
-
-This will run the fabric command to deploy to production.
-
-## Updating the data in Pulse
-
-The command to update the data in Pulse and publish it to production is simple:
-
-```
-python -m data.update
-```
-
-**But you will need to do some setup first.**
 
 ### Install domain-scan and dependencies
 
