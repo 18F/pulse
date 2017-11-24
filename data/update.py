@@ -45,6 +45,9 @@ import data.processing
 #     download: download scan data from S3
 #     here: run the default full scan
 # --upload: upload scan data and resulting db.json anything to S3
+# --gather=[skip,here]
+#     skip: skip gathering, assume CSVs are locally cached
+#     here: run the default full gather
 
 def run(options):
   # If this is just being used to download production data, do that.
@@ -57,14 +60,22 @@ def run(options):
 
   # 1. Download scan data, do a new scan, or skip altogether.
   scan_mode = options.get("scan", "skip")
+
+  # Whether to gather domains (defaults to doing so).
+  gather_mode = options.get("gather", "here")
+
   if scan_mode == "here":
     # 1a. Gather .gov federal subdomains.
-    print("Gathering subdomains.")
-    print()
-    gather_subdomains(options)
-    print()
-    print("Subdomain gathering complete.")
-    print()
+    if gather_mode == "here":
+      print("Gathering subdomains.")
+      print()
+      gather_subdomains(options)
+      print()
+      print("Subdomain gathering complete.")
+      print()
+    elif gather_mode == "skip":
+      print("Skipping subdomain gathering.")
+      print()
 
     # 1b. Scan subdomains for some types of things.
     print("Scanning subdomains.")
