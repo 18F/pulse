@@ -6,7 +6,11 @@ import csv
 from app.data import CSV_FIELDS, FIELD_MAPPING, LABELS
 
 this_dir = os.path.dirname(__file__)
-db = TinyDB(os.path.join(this_dir, '../data/db.json'))
+
+try:
+  db = TinyDB(os.path.join(this_dir, '../data/db.json'))
+except ValueError:
+  print("Couldn't load TinyDB. Things may not work as expected.")
 
 # These functions are meant to be the only ones that access the db
 # directly. If we ever decide to migrate from tinydb, that can all be
