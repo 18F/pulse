@@ -9,6 +9,7 @@ This project is an initial pass - there is much more information that can be rep
   * Page Status (e.g. 200, 404, etc) of all of the required urls in the [OMB website memo](https://www.whitehouse.gov/sites/default/files/omb/memoranda/2017/m-17-06.pdf).  
     * Potentially including subcomponents such as robots.txt
   * Number or list of subdomains from a domain reporting into DAP
+  * More ideas from [this report](https://itif.org/publications/2017/11/27/benchmarking-us-government-websites?mc_cid=11d85030ec&mc_eid=5f89fe1949)
   * Test the deeper config options that the DAP snippet should be employing, such as IP anonymization, Event tracking, Demographics turned off, and ?????.  (Possibly using headless browser)
 * Does the site require “www”? Does it require not using “www”?
 * Load time (server-side)
