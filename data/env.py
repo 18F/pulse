@@ -45,8 +45,8 @@ GATHERER_NAMES = [
   "dap", "eot2016", "parents"
 ]
 GATHERER_OPTIONS = [
-  "--censys-snapshot" % META["data"]["censys_snapshot_url"],
-  "--rdns-snapshot" % META["data"]["rdns_snapshot_url"],
+  "--censys-snapshot=%s" % META["data"]["censys_snapshot_url"],
+  "--rdns-snapshot=%s" % META["data"]["rdns_snapshot_url"],
   "--dap=%s" % META["data"]["analytics_subdomains_url"],
   "--eot2016=%s" % META["data"]["eot_subdomains_url"],
   "--parents=%s" % DOMAINS
