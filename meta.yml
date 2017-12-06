@@ -21,6 +21,15 @@ data:
   # Preprocessed CSV where we source End of Term Archive data from.
   eot_subdomains_url: https://github.com/GSA/data/raw/master/end-of-term-archive-csv/eot-2016-seeds.csv
 
+  # Snapshot of Censys.io data from late November 2017, interim while we
+  # re-establish use of their APIs.
+  censys_snapshot_url: https://github.com/GSA/data/raw/master/dotgov-websites/censys-federal-snapshot.csv
+
+  # Snapshot of Rapid7 Reverse DNS data from Scans.io in late 2017. The data
+  # is too big to automatically process each time with our current infrastructure,
+  # so this is relying on occasional snapshots which can be updated in-place in the repo.
+  rdns_snapshot_url: https://github.com/GSA/data/raw/master/dotgov-websites/rdns-federal-snapshot.csv
+
 a11y:
   config: https://github.com/18F/pulse/raw/master/data/a11y_config/pa11y_config.json
   redirects: https://github.com/18F/pulse/raw/master/data/a11y_config/a11y_redirects.yml
