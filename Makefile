@@ -37,8 +37,9 @@ clean:
 # Production data update process:
 #
 # Run a fresh scan, update the database, and upload data to S3.
+# Enable Lambda mode, using Lambda AWS profile set up in production.
 update_production:
-	python -m data.update --scan=here --upload
+	python -m data.update --scan=here --upload --lambda --lambda-profile=lambda
 
 # Staging data update process:
 #
