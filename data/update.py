@@ -287,7 +287,7 @@ def scan_subdomains(options):
       full_command += ["--%s=%s" % (flag, str(value))]
 
   # If Lambda mode is on, use way more workers.
-  if options.get("lambda"):
+  if options.get("lambda") and (options.get("serial", None) is None):
     full_command += ["--workers=%i" % LAMBDA_WORKERS]
 
   shell_out(full_command)
