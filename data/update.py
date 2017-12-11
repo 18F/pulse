@@ -217,18 +217,21 @@ def scan_parents(options):
 
   # Allow some options passed to python -m data.update to go
   # through to domain-scan.
-  for flag in ["cache", "serial"]:  # , "lambda"]:
-    if options.get(flag):
-      full_command += ["--%s" % flag]
+  for flag in ["cache", "serial", "lambda", "lambda-profile"]:
+    value = options.get(flag)
+    if value:
+      full_command += ["--%s=%s" % (flag, str(value))]
 
-  if options.get("workers"):
-    full_command += ["--workers=%s" % str(options.get("workers"))]
+  # Until third_parties and a11y are moved to Lambda, can't
+  # do Lambda-sized worker count. Stick with default (10).
+  # if options.get("workers"):
+  #   full_command += ["--workers=%s" % str(options.get("workers"))]
 
   # Can't yet use Lambda with parents, since Lambda only works
   # with a set of scanners that all use Lambda.
   # If Lambda mode is on, use way more workers.
-  # if options.get("lambda"):
-  #   full_command += ["--workers=%i" % LAMBDA_WORKERS]
+  if options.get("lambda"):
+    full_command += ["--workers=%i" % LAMBDA_WORKERS]
 
   shell_out(full_command)
 
@@ -278,9 +281,10 @@ def scan_subdomains(options):
 
   # Allow some options passed to python -m data.update to go
   # through to domain-scan.
-  for flag in ["cache", "serial", "lambda"]:
-    if options.get(flag):
-      full_command += ["--%s" % flag]
+  for flag in ["cache", "serial", "lambda", "lambda-profile"]:
+    value = options.get(flag)
+    if value:
+      full_command += ["--%s=%s" % (flag, str(value))]
 
   # If Lambda mode is on, use way more workers.
   if options.get("lambda"):
