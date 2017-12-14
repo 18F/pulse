@@ -477,6 +477,12 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
       for i, cell in enumerate(row):
         dict_row[headers[i]] = cell
 
+      # If the scan was invalid, most fields will be empty strings.
+      # It'd be nice to make this more semantic on the domain-scan side.
+      if dict_row["Scanned Hostname"] == "":
+        # print("[%s] Skipping, scan data was invalid." % subdomain)
+        continue
+
       # if there are dupes for some reason, they'll be overwritten
       subdomain_scan_data[subdomain]['sslyze'] = dict_row
 
