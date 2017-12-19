@@ -484,11 +484,9 @@ a#skipnav {
     .site-header .disclaimer {
       font-size: 0.8em;
       padding: 10px 20px; } }
-  .site-header .disclaimer .us-official {
-    margin-left: 177px; }
-    @media screen and (max-width: 1024px) {
-      .site-header .disclaimer .us-official {
-        margin: 0; } }
+  @media screen and (max-width: 1024px) {
+    .site-header .disclaimer .us-official {
+      margin: 0; } }
   .site-header .disclaimer .stage {
     float: right; }
     @media screen and (max-width: 1024px) {
