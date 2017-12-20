@@ -328,18 +328,18 @@ def load_parent_scan_data(domains):
       parent_scan_data[domain]['sslyze'] = dict_row
 
   # Now, analytics measurement.
+  if os.path.isfile(os.path.join(PARENT_RESULTS, "analytics.csv")):
+    headers = []
+    with open(os.path.join(PARENT_RESULTS, "analytics.csv"), newline='') as csvfile:
+      for row in csv.reader(csvfile):
+        if (row[0].lower() == "domain"):
+          headers = row
+          continue
 
-  headers = []
-  with open(os.path.join(PARENT_RESULTS, "analytics.csv"), newline='') as csvfile:
-    for row in csv.reader(csvfile):
-      if (row[0].lower() == "domain"):
-        headers = row
-        continue
-
-      domain = row[0].lower()
-      if not domains.get(domain):
+        domain = row[0].lower()
+        if not domains.get(domain):
         # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
-        continue
+          continue
 
       # If it didn't appear in the pshtt data, skip it, we need this.
       # if not domains[domain].get('pshtt'):
