@@ -325,6 +325,13 @@ def load_parent_scan_data(domains):
       dict_row = {}
       for i, cell in enumerate(row):
         dict_row[headers[i]] = cell
+
+      # If the scan was invalid, most fields will be empty strings.
+      # It'd be nice to make this more semantic on the domain-scan side.
+      if dict_row["Scanned Hostname"] == "":
+        # print("[%s] Skipping, scan data was invalid." % subdomain)
+        continue
+
       parent_scan_data[domain]['sslyze'] = dict_row
 
   # Now, analytics measurement.
