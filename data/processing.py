@@ -348,16 +348,16 @@ def load_parent_scan_data(domains):
         # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
           continue
 
-      # If it didn't appear in the pshtt data, skip it, we need this.
-      # if not domains[domain].get('pshtt'):
-      #   print("[analytics] Skipping %s, did not appear in pshtt.csv." % domain)
-      #   continue
+        # If it didn't appear in the pshtt data, skip it, we need this.
+        # if not domains[domain].get('pshtt'):
+        #   print("[analytics] Skipping %s, did not appear in pshtt.csv." % domain)
+        #   continue
 
-      dict_row = {}
-      for i, cell in enumerate(row):
-        dict_row[headers[i]] = cell
+        dict_row = {}
+        for i, cell in enumerate(row):
+          dict_row[headers[i]] = cell
 
-      parent_scan_data[domain]['analytics'] = dict_row
+        parent_scan_data[domain]['analytics'] = dict_row
 
   # And a11y! Only try to load it if it exists, since scan is not yet automated.
   if os.path.isfile(os.path.join(PARENT_RESULTS, "a11y.csv")):
