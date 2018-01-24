@@ -328,7 +328,7 @@ def load_parent_scan_data(domains):
 
       # If the scan was invalid, most fields will be empty strings.
       # It'd be nice to make this more semantic on the domain-scan side.
-      if dict_row["Scanned Hostname"] == "":
+      if dict_row["SSLv2"] == "":
         # print("[%s] Skipping, scan data was invalid." % subdomain)
         continue
 
@@ -486,7 +486,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
 
       # If the scan was invalid, most fields will be empty strings.
       # It'd be nice to make this more semantic on the domain-scan side.
-      if dict_row["Scanned Hostname"] == "":
+      if dict_row["SSLv2"] == "":
         # print("[%s] Skipping, scan data was invalid." % subdomain)
         continue
 
