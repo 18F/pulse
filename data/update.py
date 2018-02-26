@@ -211,7 +211,8 @@ def scan_parents(options):
     analytics, a11y_config, a11y_redirects,
     output,
     # "--debug", # always capture full output
-    "--sort"
+    "--sort",
+    "--meta"
   ]
 
   # Allow some options passed to python -m data.update to go
@@ -268,7 +269,8 @@ def scan_subdomains(options):
     "--scan=%s" % str.join(",", SUBDOMAIN_SCANNERS),
     "--output=%s" % SUBDOMAIN_DATA_SCANNED,
     # "--debug", # always capture full output
-    "--sort"
+    "--sort",
+    "--meta"
   ]
 
   # Allow some options passed to python -m data.update to go
