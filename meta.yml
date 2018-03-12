@@ -30,6 +30,9 @@ data:
   # so this is relying on occasional snapshots which can be updated in-place in the repo.
   rdns_snapshot_url: https://github.com/GSA/data/raw/master/dotgov-websites/rdns-federal-snapshot.csv
 
+  # Some other websites, collected and curated by GSA and DHS.
+  other_subdomains_url: https://github.com/GSA/data/raw/master/dotgov-websites/other-websites.csv
+
 a11y:
   config: https://github.com/18F/pulse/raw/master/data/a11y_config/pa11y_config.json
   redirects: https://github.com/18F/pulse/raw/master/data/a11y_config/a11y_redirects.yml
