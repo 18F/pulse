@@ -146,6 +146,7 @@ $(function () {
       var discoveryLink = l("/https/guidance/#subdomains", "publicly discoverable services");
       var link = "Showing data for " + number + " " + discoveryLink + " within " + base_domain + ".&nbsp;&nbsp;";
       link += l(csv, "Download all " + base_domain + " data as a CSV") + ".";
+      link += " Email " + l("mailto:pulse@cio.gov", "pulse@cio.gov") + " with questions.";
       var download = $("<tr></tr>").addClass("subdomain").html("<td class=\"link\" colspan=6>" + link + "</td>");
       all.push(download);
     }
