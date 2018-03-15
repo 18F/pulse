@@ -360,44 +360,44 @@ def load_parent_scan_data(domains):
         parent_scan_data[domain]['analytics'] = dict_row
 
   # And a11y! Only try to load it if it exists, since scan is not yet automated.
-  if os.path.isfile(os.path.join(PARENT_RESULTS, "a11y.csv")):
-    headers = []
-    with open(os.path.join(PARENT_RESULTS, "a11y.csv"), newline='') as csvfile:
-      for row in csv.reader(csvfile):
-        if (row[0].lower() == "domain"):
-          headers = row
-          continue
+  # if os.path.isfile(os.path.join(PARENT_RESULTS, "a11y.csv")):
+  #   headers = []
+  #   with open(os.path.join(PARENT_RESULTS, "a11y.csv"), newline='') as csvfile:
+  #     for row in csv.reader(csvfile):
+  #       if (row[0].lower() == "domain"):
+  #         headers = row
+  #         continue
 
-        domain = row[0].lower()
-        if not domains.get(domain):
-          continue
+  #       domain = row[0].lower()
+  #       if not domains.get(domain):
+  #         continue
 
-        dict_row = {}
-        for i, cell in enumerate(row):
-          dict_row[headers[i]] = cell
-        if not parent_scan_data[domain].get('a11y'):
-          parent_scan_data[domain]['a11y'] = [dict_row]
-        else:
-          parent_scan_data[domain]['a11y'].append(dict_row)
+  #       dict_row = {}
+  #       for i, cell in enumerate(row):
+  #         dict_row[headers[i]] = cell
+  #       if not parent_scan_data[domain].get('a11y'):
+  #         parent_scan_data[domain]['a11y'] = [dict_row]
+  #       else:
+  #         parent_scan_data[domain]['a11y'].append(dict_row)
 
-  # Customer satisfaction, as well. Same as a11y, only load if it exists
-  if os.path.isfile(os.path.join(PARENT_RESULTS, "third_parties.csv")):
-    headers = []
-    with open(os.path.join(PARENT_RESULTS, "third_parties.csv"), newline='') as csvfile:
-      for row in csv.reader(csvfile):
-        if (row[0].lower() == "domain"):
-          headers = row
-          continue
+  # # Customer satisfaction, as well. Same as a11y, only load if it exists
+  # if os.path.isfile(os.path.join(PARENT_RESULTS, "third_parties.csv")):
+  #   headers = []
+  #   with open(os.path.join(PARENT_RESULTS, "third_parties.csv"), newline='') as csvfile:
+  #     for row in csv.reader(csvfile):
+  #       if (row[0].lower() == "domain"):
+  #         headers = row
+  #         continue
 
-        domain = row[0].lower()
-        if not domains.get(domain):
-          continue
+  #       domain = row[0].lower()
+  #       if not domains.get(domain):
+  #         continue
 
-        dict_row = {}
-        for i, cell in enumerate(row):
-          dict_row[headers[i]] = cell
+  #       dict_row = {}
+  #       for i, cell in enumerate(row):
+  #         dict_row[headers[i]] = cell
 
-        parent_scan_data[domain]['cust_sat'] = dict_row
+  #       parent_scan_data[domain]['cust_sat'] = dict_row
 
   return parent_scan_data
 
@@ -580,15 +580,15 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
         domain_name, domains[domain_name], parent_scan_data
       )
 
-    if eligible_for_a11y(domains[domain_name]):
-      domains[domain_name]['a11y'] = a11y_report_for(
-        domain_name, domains[domain_name], parent_scan_data
-      )
+    # if eligible_for_a11y(domains[domain_name]):
+    #   domains[domain_name]['a11y'] = a11y_report_for(
+    #     domain_name, domains[domain_name], parent_scan_data
+    #   )
 
-    if eligible_for_cust_sat(domains[domain_name]):
-      domains[domain_name]['cust_sat'] = cust_sat_report_for(
-        domain_name, domains[domain_name], parent_scan_data
-      )
+    # if eligible_for_cust_sat(domains[domain_name]):
+    #   domains[domain_name]['cust_sat'] = cust_sat_report_for(
+    #     domain_name, domains[domain_name], parent_scan_data
+    #   )
 
 # Given a list of domains or subdomains, quick filter to which
 # are eligible for this report, optionally for an agency.
@@ -635,39 +635,39 @@ def update_agency_totals(agencies, domains, subdomains):
 
     # Accessibility. Parent domains.
     # print("[%s][%s] Totalling report." % (agency['slug'], 'a11y'))
-    eligible = eligible_for('a11y', domains, agency)
-    pages_count = len(eligible)
-    errors = {e:0 for e in A11Y_ERRORS.values()}
-    for a11y in eligible:
-      for error in a11y['errorlist']:
-        errors[error] += a11y['errorlist'][error]
-    total_errors = sum(errors.values())
-    avg_errors_per_page = (
-      'n/a' if pages_count == 0 else round(float(total_errors) / pages_count, 2)
-    )
-    totals = {
-      'eligible': pages_count,
-      'pages_count': pages_count,
-      'Average Errors per Page': avg_errors_per_page
-    }
-    if pages_count:
-      averages = ({
-        e: round(mean([report['errorlist'][e] for report in eligible]), 2)
-        for e in A11Y_ERRORS.values()
-      })
-    else:
-      averages = {e: 'n/a' for e in A11Y_ERRORS.values()}
-    totals.update(averages)
-    agency['a11y'] = totals
+    # eligible = eligible_for('a11y', domains, agency)
+    # pages_count = len(eligible)
+    # errors = {e:0 for e in A11Y_ERRORS.values()}
+    # for a11y in eligible:
+    #   for error in a11y['errorlist']:
+    #     errors[error] += a11y['errorlist'][error]
+    # total_errors = sum(errors.values())
+    # avg_errors_per_page = (
+    #   'n/a' if pages_count == 0 else round(float(total_errors) / pages_count, 2)
+    # )
+    # totals = {
+    #   'eligible': pages_count,
+    #   'pages_count': pages_count,
+    #   'Average Errors per Page': avg_errors_per_page
+    # }
+    # if pages_count:
+    #   averages = ({
+    #     e: round(mean([report['errorlist'][e] for report in eligible]), 2)
+    #     for e in A11Y_ERRORS.values()
+    #   })
+    # else:
+    #   averages = {e: 'n/a' for e in A11Y_ERRORS.values()}
+    # totals.update(averages)
+    # agency['a11y'] = totals
 
 
     # Customer satisfaction. Parent domains.
     # print("[%s][%s] Totalling report." % (agency['slug'], 'cust_sat'))
-    eligible = eligible_for('cust_sat', domains, agency)
-    agency['cust_sat'] = {
-      'eligible': len(eligible),
-      'participating': len([report for report in eligible if report['participating']])
-    }
+    # eligible = eligible_for('cust_sat', domains, agency)
+    # agency['cust_sat'] = {
+    #   'eligible': len(eligible),
+    #   'participating': len([report for report in eligible if report['participating']])
+    # }
 
 # Create a Report about each tracked stat.
 def full_report(domains, subdomains):
@@ -705,25 +705,25 @@ def full_report(domains, subdomains):
 
   # a11y report. Parent domains.
   # Constructed very differently.
-  print("[a11y] Totalling full report.")
-  eligible_domains = [host for hostname, host in domains.items() if (host.get('a11y') and host['a11y']['eligible'])]
-  full['a11y'] = {}
-  for domain in eligible_domains:
-    full['a11y'][domain['domain']] = domain['a11y']['error_details']
+  # print("[a11y] Totalling full report.")
+  # eligible_domains = [host for hostname, host in domains.items() if (host.get('a11y') and host['a11y']['eligible'])]
+  # full['a11y'] = {}
+  # for domain in eligible_domains:
+  #   full['a11y'][domain['domain']] = domain['a11y']['error_details']
 
 
   # Customer satisfaction report. Parent domains.
-  print("[cust_sat] Totalling full report.")
-  eligible = eligible_for('cust_sat', domains)
+  # print("[cust_sat] Totalling full report.")
+  # eligible = eligible_for('cust_sat', domains)
 
-  participating = 0
-  for report in eligible:
-    if report['participating']:
-      participating += 1
-  full['cust_sat'] = {
-    'eligible': len(eligible),
-    'participating': participating
-  }
+  # participating = 0
+  # for report in eligible:
+  #   if report['participating']:
+  #     participating += 1
+  # full['cust_sat'] = {
+  #   'eligible': len(eligible),
+  #   'participating': participating
+  # }
 
   return full
 
