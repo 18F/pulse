@@ -33,7 +33,7 @@ A11Y_REDIRECTS = META["a11y"]["redirects"]
 
 ### Parent domain scanning information
 #
-scanner_string = os.environ.get("SCANNERS", "pshtt,sslyze,analytics,a11y,third_parties")
+scanner_string = os.environ.get("SCANNERS", "pshtt,sslyze,analytics")
 SCANNERS = scanner_string.split(",")
 
 ### subdomain gathering/scanning information
