@@ -54,8 +54,9 @@ var Tables = {
 
   // common render function for displaying booleans as Yes/No
   boolean: function(data, type) {
-    if (type == "sort") return data;
-    else return {false: "No", true: "Yes"}[data];
+    // Note: return "No"/"Yes" for sorting as well,
+    // as sorting by raw boolean values doesn't seem to work right.
+    return {false: "No", true: "Yes"}[data];
   },
 
   // common render function for linking domains to canonical URLs
