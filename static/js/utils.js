@@ -3,6 +3,11 @@ var Utils = {
     return Math.round((num / denom) * 100);
   },
 
+  // used to append a cachebusting URL
+  cacheBust: function() {
+    return "?" + (new Date()).getTime();
+  },
+
   truncate: function (string, length) {
     if (string.length > length)
       return string.substring(0, length) + "...";
