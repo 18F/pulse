@@ -243,6 +243,7 @@ def gather_subdomains(options):
   full_command += [
     "--output=%s" % SUBDOMAIN_DATA_GATHERED,
     "--suffix=%s" % GATHER_SUFFIXES,
+    "--parents=%s" % DOMAINS,
     "--ignore-www",
     "--sort",
     "--debug" # always capture full output
