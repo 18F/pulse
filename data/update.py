@@ -217,7 +217,14 @@ def scan_parents(options):
 
   # Allow some options passed to python -m data.update to go
   # through to domain-scan.
-  for flag in ["cache", "serial", "lambda", "lambda-profile"]:
+  # Boolean flags.
+  for flag in ["cache", "serial", "lambda"]:
+    value = options.get(flag)
+    if value:
+      full_command += ["--%s" % flag]
+
+  # Flags with values.
+  for flag in ["lambda-profile"]:
     value = options.get(flag)
     if value:
       full_command += ["--%s=%s" % (flag, str(value))]
@@ -276,10 +283,18 @@ def scan_subdomains(options):
 
   # Allow some options passed to python -m data.update to go
   # through to domain-scan.
-  for flag in ["cache", "serial", "lambda", "lambda-profile"]:
+  # Boolean flags.
+  for flag in ["cache", "serial", "lambda"]:
+    value = options.get(flag)
+    if value:
+      full_command += ["--%s" % flag]
+
+  # Flags with values.
+  for flag in ["lambda-profile"]:
     value = options.get(flag)
     if value:
       full_command += ["--%s=%s" % (flag, str(value))]
+
 
   # If Lambda mode is on, use way more workers.
   if options.get("lambda") and (options.get("serial", None) is None):
