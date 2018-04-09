@@ -202,8 +202,8 @@ def scan_parents(options):
   scanners = "--scan=%s" % (str.join(",", SCANNERS))
   analytics = "--analytics=%s" % ANALYTICS_URL
   output = "--output=%s" % PARENTS_DATA
-  a11y_redirects = "--a11y_redirects=%s" % A11Y_REDIRECTS
-  a11y_config = "--a11y_config=%s" % A11Y_CONFIG
+  a11y_redirects = "--a11y-redirects=%s" % A11Y_REDIRECTS
+  a11y_config = "--a11y-config=%s" % A11Y_CONFIG
 
   full_command =[
     SCAN_COMMAND, DOMAINS,
