@@ -17,6 +17,7 @@ applications:
     NEW_RELIC_APP_NAME: Pulse | Staging
     NEW_RELIC_ENV: staging
 services:
-  - pulse-creds-prod
+- pulse-creds-prod
 env:
   NEW_RELIC_CONFIG_FILE: newrelic.ini
+  PULSE_ENV: prod
