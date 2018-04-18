@@ -1,0 +1,33 @@
+jobs:
+  data:
+    docker:
+      - image: "circleci/python:3.6.1"
+    steps:
+      - checkout:
+          path: ~/repo
+      - restore_cache:
+          key: "deps1-{{ .Branch }}-{{ checksum \"requirements.txt\" }}"
+      - run:
+          command: |
+              python3 -m venv .env
+              . .env/bin/activate
+              pip install -r requirements.txt
+              pip install -e .[development]
+          name: "Installing dependencies"
+      - save_cache:
+          key: "deps1-{{ .Branch }}-{{ checksum \"requirements.txt\" }}"
+          paths:
+            - .env
+      - run:
+          command: |
+              . .env/bin/activate
+              # pylint src tests -- Major overhaul needed to not fail linting, not including linting in tests for now
+              # mypy src tests
+              pytest --cov=data tests
+          name: "Running tests"
+    working_directory: ~/repo
+workflows:
+  version: 2
+  pulse:
+    jobs:
+      - data 
