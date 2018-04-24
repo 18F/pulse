@@ -29,8 +29,12 @@ import subprocess
 
 # Import all the constants from data/env.py.
 from data.env import *
+from data import logger
 
 from statistics import mean
+
+
+LOGGER = logger.get_logger(__name__)
 
 this_dir = os.path.dirname(__file__)
 
@@ -129,13 +133,13 @@ def run(date, options):
     if pshtt is None:
       # generally means scan was on different domains.csv, but
       # invalid domains can hit this.
-      print("[%s][WARNING] No pshtt data for domain!" % domain_name)
+      LOGGER.warning("[%s] No pshtt data for domain!" % domain_name)
 
       # Remove the domain from further consideration.
       # Destructive, so have this done last.
       del domains[domain_name]
     else:
-      # print("[%s] Updating with pshtt metadata." % domain_name)
+      # LOGGER.info("[%s] Updating with pshtt metadata." % domain_name)
       domains[domain_name]['live'] = boolean_for(pshtt['Live'])
       domains[domain_name]['redirect'] = boolean_for(pshtt['Redirect'])
       domains[domain_name]['canonical'] = pshtt['Canonical URL']
@@ -161,7 +165,7 @@ def run(date, options):
   process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_scan_data)
 
   # Reset the database.
-  print("Clearing the database.")
+  LOGGER.info("Clearing the database.")
   models.clear_database()
 
   # Calculate agency-level summaries. Updates `agencies` in-place.
@@ -171,15 +175,15 @@ def run(date, options):
   report = full_report(domains, subdomains)
   report['report_date'] = date
 
-  print("Creating all domains.")
+  LOGGER.info("Creating all domains.")
   Domain.create_all(domains[domain_name] for domain_name in sorted_domains)
-  print("Creating all subdomains.")
+  LOGGER.info("Creating all subdomains.")
   Domain.create_all(subdomains[subdomain_name] for subdomain_name in sorted_subdomains)
-  print("Creating all agencies.")
+  LOGGER.info("Creating all agencies.")
   Agency.create_all(agencies[agency_name] for agency_name in sorted_agencies)
 
   # Create top-level summaries.
-  print("Creating government-wide totals.")
+  LOGGER.info("Creating government-wide totals.")
   Report.create(report)
 
   # Print and exit
@@ -196,12 +200,12 @@ def load_domain_data():
   # if domains.csv wasn't cached, download it anew
 
   if not os.path.exists(PARENT_DOMAINS_CSV):
-    print("Downloading domains.csv...")
+    LOGGER.info("Downloading domains.csv...")
     mkdir_p(PARENT_CACHE)
     shell_out(["wget", DOMAINS, "-O", PARENT_DOMAINS_CSV])
 
   if not os.path.exists(PARENT_DOMAINS_CSV):
-    print("Couldn't download domains.csv")
+    LOGGER.critical("Couldn't download domains.csv")
     exit(1)
 
   with open(PARENT_DOMAINS_CSV, newline='') as csvfile:
@@ -302,7 +306,7 @@ def load_parent_scan_data(domains):
 
       domain = row[0].lower()
       if not domains.get(domain):
-        # print("[pshtt] Skipping %s, not a federal domain from domains.csv." % domain)
+        # LOGGER.info("[pshtt] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       dict_row = {}
@@ -319,7 +323,7 @@ def load_parent_scan_data(domains):
 
       domain = row[0].lower()
       if not domains.get(domain):
-        # print("[sslyze] Skipping %s, not a federal domain from domains.csv." % domain)
+        # LOGGER.info("[sslyze] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
       dict_row = {}
@@ -329,7 +333,7 @@ def load_parent_scan_data(domains):
       # If the scan was invalid, most fields will be empty strings.
       # It'd be nice to make this more semantic on the domain-scan side.
       if dict_row["SSLv2"] == "":
-        # print("[%s] Skipping, scan data was invalid." % subdomain)
+        # LOGGER.info("[%s] Skipping, scan data was invalid." % subdomain)
         continue
 
       parent_scan_data[domain]['sslyze'] = dict_row
@@ -345,12 +349,12 @@ def load_parent_scan_data(domains):
 
         domain = row[0].lower()
         if not domains.get(domain):
-        # print("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
+        # LOGGER.info("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
           continue
 
         # If it didn't appear in the pshtt data, skip it, we need this.
         # if not domains[domain].get('pshtt'):
-        #   print("[analytics] Skipping %s, did not appear in pshtt.csv." % domain)
+        #   LOGGER.info("[analytics] Skipping %s, did not appear in pshtt.csv." % domain)
         #   continue
 
         dict_row = {}
@@ -425,15 +429,15 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
       parent_domain = row[1].lower()
 
       if subdomain not in gathered_subdomains:
-        # print("[%s] Skipping, not a gathered subdomain." % subdomain)
+        # LOGGER.info("[%s] Skipping, not a gathered subdomain." % subdomain)
         continue
 
       if not domains.get(parent_domain):
-        # print("[%s] Skipping, not a subdomain of a tracked domain." % (subdomain))
+        # LOGGER.info("[%s] Skipping, not a subdomain of a tracked domain." % (subdomain))
         continue
 
       if domains[parent_domain]['branch'] != 'executive':
-        # print("[%s] Skipping, not displaying data on subdomains of legislative or judicial domains." % (subdomain))
+        # LOGGER.info("[%s] Skipping, not displaying data on subdomains of legislative or judicial domains." % (subdomain))
         continue
 
       dict_row = {}
@@ -477,7 +481,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
       subdomain = row[0].lower()
 
       if not subdomain_scan_data.get(subdomain):
-        # print("[%s] Skipping, we didn't save pshtt data for this." % (subdomain))
+        # LOGGER.info("[%s] Skipping, we didn't save pshtt data for this." % (subdomain))
         continue
 
       dict_row = {}
@@ -487,7 +491,7 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
       # If the scan was invalid, most fields will be empty strings.
       # It'd be nice to make this more semantic on the domain-scan side.
       if dict_row["SSLv2"] == "":
-        # print("[%s] Skipping, scan data was invalid." % subdomain)
+        # LOGGER.info("[%s] Skipping, scan data was invalid." % subdomain)
         continue
 
       # if there are dupes for some reason, they'll be overwritten
@@ -603,25 +607,25 @@ def update_agency_totals(agencies, domains, subdomains):
     agency = agencies[agency_slug]
 
     # HTTPS. Parent and subdomains.
-    # print("[%s][%s] Totalling report." % (agency['slug'], 'https'))
+    # LOGGER.info("[%s][%s] Totalling report." % (agency['slug'], 'https'))
     eligible = eligible_for('https', domains, agency) + eligible_for('https', subdomains, agency)
     agency['https'] = total_https_report(eligible)
 
     # Separate report for crypto, for sslyze-scanned domains.
-    # print("[%s][%s] Totalling report." % (agency['slug'], 'crypto'))
+    # LOGGER.info("[%s][%s] Totalling report." % (agency['slug'], 'crypto'))
     eligible = [domain['https'] for name, domain in domains.items() if (domain['agency_slug'] == agency['slug']) and domain.get('https') and (domain['https'].get('rc4') is not None)]
     eligible = eligible + [subdomain['https'] for name, subdomain in subdomains.items() if (subdomain['agency_slug'] == agency['slug']) and subdomain.get('https') and (subdomain['https'].get('rc4') is not None)]
     agency['crypto'] = total_crypto_report(eligible)
 
     # Special separate report for preloaded parent domains.
     # All parent domains, whether they use HTTP or not, are eligible.
-    # print("[%s][%s] Totalling report." % (agency['slug'], 'preloading'))
+    # LOGGER.info("[%s][%s] Totalling report." % (agency['slug'], 'preloading'))
     eligible = [host['https'] for hostname, host in domains.items() if host['agency_slug'] == agency_slug]
     agency['preloading'] = total_preloading_report(eligible)
 
 
     # Analytics. Parent domains.
-    # print("[%s][%s] Totalling report." % (agency['slug'], 'analytics'))
+    # LOGGER.info("[%s][%s] Totalling report." % (agency['slug'], 'analytics'))
     eligible = eligible_for('analytics', domains, agency)
     totals = {
       'eligible': len(eligible),
@@ -634,7 +638,7 @@ def update_agency_totals(agencies, domains, subdomains):
 
 
     # Accessibility. Parent domains.
-    # print("[%s][%s] Totalling report." % (agency['slug'], 'a11y'))
+    # LOGGER.info("[%s][%s] Totalling report." % (agency['slug'], 'a11y'))
     # eligible = eligible_for('a11y', domains, agency)
     # pages_count = len(eligible)
     # errors = {e:0 for e in A11Y_ERRORS.values()}
@@ -662,7 +666,7 @@ def update_agency_totals(agencies, domains, subdomains):
 
 
     # Customer satisfaction. Parent domains.
-    # print("[%s][%s] Totalling report." % (agency['slug'], 'cust_sat'))
+    # LOGGER.info("[%s][%s] Totalling report." % (agency['slug'], 'cust_sat'))
     # eligible = eligible_for('cust_sat', domains, agency)
     # agency['cust_sat'] = {
     #   'eligible': len(eligible),
@@ -675,23 +679,23 @@ def full_report(domains, subdomains):
   full = {}
 
   # HTTPS. Parent and subdomains.
-  print("[https] Totalling full report.")
+  LOGGER.info("[https] Totalling full report.")
   eligible = eligible_for('https', domains) + eligible_for('https', subdomains)
   full['https'] = total_https_report(eligible)
 
-  print("[crypto] Totalling full report.")
+  LOGGER.info("[crypto] Totalling full report.")
   eligible = [domain['https'] for name, domain in domains.items() if domain.get('https') and (domain['https'].get('rc4') is not None)]
   eligible = eligible + [subdomain['https'] for name, subdomain in subdomains.items() if subdomain.get('https') and (subdomain['https'].get('rc4') is not None)]
   full['crypto'] = total_crypto_report(eligible)
 
   # Special separate report for preloaded parent domains.
   # All parent domains, whether they use HTTP or not, are eligible.
-  print("[preloading] Totalling full report.")
+  LOGGER.info("[preloading] Totalling full report.")
   eligible = [host['https'] for hostname, host in domains.items()]
   full['preloading'] = total_preloading_report(eligible)
 
   # Analytics. Parent domains only.
-  print("[analytics] Totalling full report.")
+  LOGGER.info("[analytics] Totalling full report.")
   eligible = eligible_for('analytics', domains)
   participating = 0
   for report in eligible:
@@ -705,7 +709,7 @@ def full_report(domains, subdomains):
 
   # a11y report. Parent domains.
   # Constructed very differently.
-  # print("[a11y] Totalling full report.")
+  # LOGGER.info("[a11y] Totalling full report.")
   # eligible_domains = [host for hostname, host in domains.items() if (host.get('a11y') and host['a11y']['eligible'])]
   # full['a11y'] = {}
   # for domain in eligible_domains:
@@ -713,7 +717,7 @@ def full_report(domains, subdomains):
 
 
   # Customer satisfaction report. Parent domains.
-  # print("[cust_sat] Totalling full report.")
+  # LOGGER.info("[cust_sat] Totalling full report.")
   # eligible = eligible_for('cust_sat', domains)
 
   # participating = 0
@@ -947,7 +951,7 @@ def https_behavior_for(name, pshtt, sslyze, parent_preloaded=None):
     bod_crypto = -1 # N/A
 
   elif sslyze is None:
-    # print("[https][%s] No sslyze scan data found." % name)
+    # LOGGER.info("[https][%s] No sslyze scan data found." % name)
     bod_crypto = -1 # Unknown
 
   else:
@@ -1085,34 +1089,32 @@ def total_preloading_report(eligible):
 
 # Hacky helper - print out the %'s after the command finishes.
 def print_report(report):
-  print()
 
   for report_type in report.keys():
     # The a11y report has a very different use than the others
     if report_type == "report_date" or report_type == "a11y":
       continue
 
-    print("[%s]" % report_type)
+    LOGGER.info("[%s]" % report_type)
     eligible = report[report_type]["eligible"]
     for key in report[report_type].keys():
       if key == "eligible":
-        print("%s: %i" % (key, report[report_type][key]))
+        LOGGER.info("%s: %i" % (key, report[report_type][key]))
       else:
-        print("%s: %i%% (%i)" % (key, percent(report[report_type][key], eligible), report[report_type][key]))
-    print()
+        LOGGER.info("%s: %i%% (%i)" % (key, percent(report[report_type][key], eligible), report[report_type][key]))
 
 
 ### utilities
 
 def shell_out(command, env=None):
   try:
-    print("[cmd] %s" % str.join(" ", command))
+    LOGGER.info("[cmd] %s" % str.join(" ", command))
     response = subprocess.check_output(command, shell=False, env=env)
     output = str(response, encoding='UTF-8')
-    print(output)
+    LOGGER.info(output)
     return output
   except subprocess.CalledProcessError:
-    logging.warn("Error running %s." % (str(command)))
+    logging.critical("Error running %s." % (str(command)))
     exit(1)
     return None
 
