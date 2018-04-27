@@ -35,7 +35,7 @@
             location.href = "/analytics/domains/";
         });
 
-    d3.json("/data/reports/analytics.json", function (error, data) {
+    d3.json("/data/reports/analytics.json" + Utils.cacheBust(), function (error, data) {
 
         // calculate % client-side
         var participating = Math.round((data.participating / data.eligible) * 100);

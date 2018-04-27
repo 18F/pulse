@@ -35,7 +35,7 @@
             location.href = "/https/domains/";
         });
 
-    d3.json("/data/reports/https.json", function (error, data) {
+    d3.json("/data/reports/https.json" + Utils.cacheBust(), function (error, data) {
 
         // calculate % client-side
         var compliant = Math.round((data.compliant / data.eligible) * 100);
