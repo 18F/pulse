@@ -208,24 +208,34 @@ def load_domain_data():
     LOGGER.critical("Couldn't download domains.csv")
     exit(1)
 
+  headers = []
   with open(PARENT_DOMAINS_CSV, newline='') as csvfile:
     for row in csv.reader(csvfile):
-      if row[0].lower().startswith("domain"):
+      if row[0].lower().startswith("domain name"):
+        headers = row
         continue
 
-      domain_name = row[0].lower().strip()
-      domain_type = row[1].strip()
-      agency_name = row[2].strip()
+      dict_row = {}
+      for i, cell in enumerate(row):
+        dict_row[headers[i]] = cell
+
+      domain_name = dict_row["Domain Name"].lower().strip()
+      domain_type = dict_row["Domain Type"].strip()
+      agency_name = dict_row["Agency"].strip()
+      org_name = dict_row["Organization"].strip()
       agency_slug = slugify.slugify(agency_name)
-      branch = branch_for(agency_name)
 
       # Exclude cities, counties, tribes, etc.
-      if domain_type != "Federal Agency":
+      if not (domain_type.startswith("Federal Agency")):
         continue
 
-      # There are a few erroneously marked non-federal domains.
-      if branch == "non-federal":
+      # There is one federal domain with an agency of "Non-Federal Agency",
+      # based in Puerto Rico. Ambiguous whether to include it.
+      if agency_name == "Non-Federal Agency":
         continue
+
+      # Extract legislative/judicial/executive from the domain type.
+      branch = branch_for(domain_type)
 
       # Exclude non-federal branches. (Sigh.)
       if branch != "executive":
@@ -270,7 +280,7 @@ def load_domain_data():
 
   with open(SUBDOMAIN_DOMAINS_CSV, newline='') as csvfile:
     for row in csv.reader(csvfile):
-      if row[0].lower().startswith("domain"):
+      if row[0].lower() == "domain":
         continue
 
       subdomain_name = row[0].lower().strip()
@@ -1150,31 +1160,17 @@ def boolean_for(string):
   else:
     return True
 
-def branch_for(agency):
-  if agency in [
-    "Library of Congress",
-    "The Legislative Branch (Congress)",
-    "Government Printing Office",
-    "Government Publishing Office",
-    "Congressional Office of Compliance",
-    "Stennis Center for Public Service",
-    "U.S. Capitol Police",
-    "Architect of the Capitol"
-  ]:
-    return "legislative"
+# Can only be split from federal domain types.
+# Returns None if given a non-federal domain type.
+def branch_for(domain_type):
+  if (not domain_type.startswith("Federal Agency - ")):
+    return None
 
-  if agency in [
-    "The Judicial Branch (Courts)",
-    "The Supreme Court",
-    "U.S Courts"
-  ]:
-    return "judicial"
+  branch = domain_type.replace("Federal Agency - ", "")
+  branch = branch.lower().strip()
 
-  if agency in ["Non-Federal Agency"]:
-    return "non-federal"
+  return branch
 
-  else:
-    return "executive"
 
 ### Run when executed.
 
