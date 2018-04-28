@@ -222,8 +222,10 @@ def load_domain_data():
       domain_name = dict_row["Domain Name"].lower().strip()
       domain_type = dict_row["Domain Type"].strip()
       agency_name = dict_row["Agency"].strip()
-      org_name = dict_row["Organization"].strip()
       agency_slug = slugify.slugify(agency_name)
+
+      # Unused and not stored for now, but noting here.
+      # org_name = dict_row["Organization"].strip()
 
       # Exclude cities, counties, tribes, etc.
       if not (domain_type.startswith("Federal Agency")):
