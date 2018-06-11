@@ -842,6 +842,7 @@ def cust_sat_report_for(domain_name, domain, parent_scan_data):
 # fill in a dict with the conclusions.
 def https_behavior_for(name, pshtt, sslyze, parent_preloaded=None):
   report = {
+    'hostname': name,
     'eligible': True
   }
 
@@ -1159,8 +1160,10 @@ def write(content, destination, binary=False):
 def boolean_for(string):
   if string == "False":
     return False
-  else:
+  elif string == "True":
     return True
+  else:
+    return None
 
 # Can only be split from federal domain types.
 # Returns None if given a non-federal domain type.
