@@ -18,24 +18,29 @@ $(document).ready(function () {
         },
         {
           data: "https.compliant",
+          type: "numeric",
           render: Tables.percent("https", "compliant"),
           className: "compliant",
           width: "100px"
         },
         {
           data: "https.enforces",
+          type: "numeric",
           render: Tables.percent("https", "enforces")
         },
         {
           data: "https.hsts",
+          type: "numeric",
           render: Tables.percent("https", "hsts")
         },
         {
           data: "crypto.bod_crypto",
+          type: "numeric",
           render: Tables.percent("crypto", "bod_crypto")
         },
         {
           data: "preloading.preloaded",
+          type: "numeric",
           render: Tables.percent("preloading", "preloaded")
         }
       ]
