@@ -39,20 +39,24 @@ $(function () {
         {data: "agency_name"}, // here for filtering/sorting
         {
           data: "totals.https.compliant",
+          type: "numeric",
           render: Tables.percentTotals("https", "compliant"),
           width: "100px",
           className: "compliant"
         },
         {
           data: "totals.https.enforces",
+          type: "numeric",
           render: Tables.percentTotals("https", "enforces")
         },
         {
           data: "totals.https.hsts",
+          type: "numeric",
           render: Tables.percentTotals("https", "hsts")
         },
         {
           data: "totals.crypto.bod_crypto",
+          type: "numeric",
           render: Tables.percentTotals("crypto", "bod_crypto")
         },
         {
