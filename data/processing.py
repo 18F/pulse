@@ -581,7 +581,7 @@ def process_domains(domains, agencies, subdomains, parent_scan_data, subdomain_s
 
     # For SSLv2/SSLv3/RC4/3DES, sslyze-eligible parent + subdomains.
     subdomain_names = parent_scan_data[domain_name].get('subdomains', [])
-    eligible_reports = [subdomains[name]['https'] for name in subdomain_names if subdomains[subdomain_name].get('https') and subdomains[subdomain_name]['https'].get('rc4') is not None]
+    eligible_reports = [subdomains[name]['https'] for name in subdomain_names if subdomains[name].get('https') and subdomains[name]['https'].get('rc4') is not None]
     if https_parent and https_parent.get('rc4') is not None:
       eligible_reports = [https_parent] + eligible_reports
     totals['crypto'] = total_crypto_report(eligible_reports)
