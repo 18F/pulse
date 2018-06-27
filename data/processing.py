@@ -460,10 +460,8 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
       if boolean_for(dict_row['Live']):
 
         # Initialize subdomains obj if this is its first one.
-        if parent_scan_data[parent_domain].get('subdomains') is None:
-          parent_scan_data[parent_domain]['subdomains'] = []
-
-        parent_scan_data[parent_domain]['subdomains'].append(subdomain)
+        subdomains = parent_scan_data[parent_domain].setdefault('subdomains', [])
+        subdomains.append(subdomain)
 
         # if there are dupes for some reason, they'll be overwritten
         subdomain_scan_data[subdomain] = {'pshtt': dict_row}
