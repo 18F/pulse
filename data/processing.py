@@ -210,15 +210,7 @@ def load_domain_data():
 
   headers = []
   with open(PARENT_DOMAINS_CSV, newline='') as csvfile:
-    for row in csv.reader(csvfile):
-      if row[0].lower().startswith("domain name"):
-        headers = row
-        continue
-
-      dict_row = {}
-      for i, cell in enumerate(row):
-        dict_row[headers[i]] = cell
-
+    for dict_row in csv.DictReader(csvfile):
       domain_name = dict_row["Domain Name"].lower().strip()
       domain_type = dict_row["Domain Type"].strip()
       agency_name = dict_row["Agency"].strip()
@@ -311,36 +303,21 @@ def load_parent_scan_data(domains):
 
   headers = []
   with open(os.path.join(PARENT_RESULTS, "pshtt.csv"), newline='') as csvfile:
-    for row in csv.reader(csvfile):
-      if (row[0].lower() == "domain"):
-        headers = row
-        continue
-
-      domain = row[0].lower()
+    for dict_row in csv.DictReader(csvfile):
+      domain = dict_row['Domain'].lower()
       if not domains.get(domain):
         # LOGGER.info("[pshtt] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
 
-      dict_row = {}
-      for i, cell in enumerate(row):
-        dict_row[headers[i]] = cell
       parent_scan_data[domain]['pshtt'] = dict_row
 
   headers = []
   with open(os.path.join(PARENT_RESULTS, "sslyze.csv"), newline='') as csvfile:
-    for row in csv.reader(csvfile):
-      if (row[0].lower() == "domain"):
-        headers = row
-        continue
-
-      domain = row[0].lower()
+    for dict_row in csv.DictReader(csvfile):
+      domain = dict_row['Domain'].lower()
       if not domains.get(domain):
         # LOGGER.info("[sslyze] Skipping %s, not a federal domain from domains.csv." % domain)
         continue
-
-      dict_row = {}
-      for i, cell in enumerate(row):
-        dict_row[headers[i]] = cell
 
       # If the scan was invalid, most fields will be empty strings.
       # It'd be nice to make this more semantic on the domain-scan side.
@@ -354,12 +331,8 @@ def load_parent_scan_data(domains):
   if os.path.isfile(os.path.join(PARENT_RESULTS, "analytics.csv")):
     headers = []
     with open(os.path.join(PARENT_RESULTS, "analytics.csv"), newline='') as csvfile:
-      for row in csv.reader(csvfile):
-        if (row[0].lower() == "domain"):
-          headers = row
-          continue
-
-        domain = row[0].lower()
+      for dict_row in csv.DictReader(csvfile):
+        domain = dict_row['Domain'].lower()
         if not domains.get(domain):
         # LOGGER.info("[analytics] Skipping %s, not a federal domain from domains.csv." % domain)
           continue
@@ -368,10 +341,6 @@ def load_parent_scan_data(domains):
         # if not domains[domain].get('pshtt'):
         #   LOGGER.info("[analytics] Skipping %s, did not appear in pshtt.csv." % domain)
         #   continue
-
-        dict_row = {}
-        for i, cell in enumerate(row):
-          dict_row[headers[i]] = cell
 
         parent_scan_data[domain]['analytics'] = dict_row
 
@@ -432,13 +401,9 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
 
   headers = []
   with open(pshtt_subdomains_csv, newline='') as csvfile:
-    for row in csv.reader(csvfile):
-      if (row[0].lower() == "domain"):
-        headers = row
-        continue
-
-      subdomain = row[0].lower()
-      parent_domain = row[1].lower()
+    for dict_row in csv.DictReader(csvfile):
+      subdomain = dict_row['Domain'].lower()
+      parent_domain = dict_row['Base Domain'].lower()
 
       if subdomain not in gathered_subdomains:
         # LOGGER.info("[%s] Skipping, not a gathered subdomain." % subdomain)
@@ -451,10 +416,6 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
       if domains[parent_domain]['branch'] != 'executive':
         # LOGGER.info("[%s] Skipping, not displaying data on subdomains of legislative or judicial domains." % (subdomain))
         continue
-
-      dict_row = {}
-      for i, cell in enumerate(row):
-        dict_row[headers[i]] = cell
 
       # Optimization: only bother storing in memory if Live is True.
       if boolean_for(dict_row['Live']):
@@ -482,20 +443,12 @@ def load_subdomain_scan_data(domains, parent_scan_data, gathered_subdomains):
 
   headers = []
   with open(sslyze_subdomains_csv, newline='') as csvfile:
-    for row in csv.reader(csvfile):
-      if (row[0].lower() == "domain"):
-        headers = row
-        continue
-
-      subdomain = row[0].lower()
+    for dict_row in csv.DictReader(csvfile):
+      subdomain = dict_row['Domain'].lower()
 
       if not subdomain_scan_data.get(subdomain):
         # LOGGER.info("[%s] Skipping, we didn't save pshtt data for this." % (subdomain))
         continue
-
-      dict_row = {}
-      for i, cell in enumerate(row):
-        dict_row[headers[i]] = cell
 
       # If the scan was invalid, most fields will be empty strings.
       # It'd be nice to make this more semantic on the domain-scan side.
