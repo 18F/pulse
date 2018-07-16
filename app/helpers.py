@@ -14,9 +14,10 @@ def register(app):
 
   # Make site metadata available everywhere.
   meta = yaml.safe_load(open("meta.yml"))
+  last_scan_date = scan_date()
   @app.context_processor
   def inject_meta():
-      return dict(site=meta, now=datetime.datetime.utcnow, scan_date=scan_date())
+      return dict(site=meta, now=datetime.datetime.utcnow, scan_date=last_scan_date)
 
   @app.template_filter('date')
   def datetimeformat(value, format='%H:%M / %d-%m-%Y'):
