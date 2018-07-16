@@ -45,4 +45,4 @@ if __name__ == "__main__":
   if environment == "development":
     app.run(port=port)
   else:
-    serve(app, port=port)
+    serve(app, port=port, threads=1)
