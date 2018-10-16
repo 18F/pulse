@@ -7,7 +7,7 @@ $(function () {
   $.get("/data/domains/https.json" + Utils.cacheBust(), function(data) {
     table = Tables.init(data.data, {
 
-      csv: "/data/hosts/https.csv",
+      csv: "/data/hosts/https.csv" + Utils.cacheBust(),
 
       responsive: {
           details: {

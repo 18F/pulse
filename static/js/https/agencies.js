@@ -3,7 +3,7 @@ $(document).ready(function () {
   $.get("/data/agencies/https.json", function(data) {
     Tables.initAgency(data.data, {
 
-      csv: "/data/hosts/https.csv",
+      csv: "/data/hosts/https.csv" + Utils.cacheBust(),
 
       columns: [
         {
