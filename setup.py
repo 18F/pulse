@@ -17,7 +17,7 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        'cfenv==0.5.2',
+        'cfenv==0.5.3',
         'flask==0.12',
         'gunicorn==19.6.0',
         'newrelic==2.86.2.68',
