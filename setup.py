@@ -20,7 +20,7 @@ setuptools.setup(
         'cfenv==0.5.3',
         'flask==0.12',
         'gunicorn==19.6.0',
-        'newrelic==2.86.2.68',
+        'newrelic==2.100.0.84',
         'pyyaml==3.13',
         'python-slugify==1.2.1',
         'tinydb==3.2.1',
