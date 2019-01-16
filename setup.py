@@ -21,7 +21,7 @@ setuptools.setup(
         'flask==0.12',
         'gunicorn==19.6.0',
         'newrelic==2.86.2.68',
-        'pyyaml==3.12',
+        'pyyaml==3.13',
         'python-slugify==1.2.1',
         'tinydb==3.2.1',
         'ujson==1.35',
