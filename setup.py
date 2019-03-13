@@ -18,10 +18,10 @@ setuptools.setup(
     ],
     install_requires=[
         'cfenv==0.5.2',
-        'flask==0.12',
+        'flask>=0.12.3',
         'gunicorn==19.6.0',
         'newrelic==2.86.2.68',
-        'pyyaml==3.12',
+        'pyyaml>=4.2b1',
         'python-slugify==1.2.1',
         'tinydb==3.2.1',
         'ujson==1.35',
