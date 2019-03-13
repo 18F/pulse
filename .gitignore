@@ -16,6 +16,7 @@ logs
 bin
 include
 lib
+env/
 
 /deploy/node_modules
 
