@@ -4,6 +4,7 @@ applications:
   memory: 768M
   instances: 2
   buildpack: python_buildpack
+  stack: cflinuxfs3
   env:
     HIDE_CUSTOMER_SATISFACTION: true
     NEW_RELIC_APP_NAME: Pulse | Prod
@@ -12,6 +13,7 @@ applications:
   memory: 256M
   instances: 1
   buildpack: python_buildpack
+  stack: cflinuxfs3
   env:
     HIDE_CUSTOMER_SATISFACTION: false
     NEW_RELIC_APP_NAME: Pulse | Staging
