@@ -18,7 +18,7 @@ setuptools.setup(
     ],
     install_requires=[
         'cfenv==0.5.3',
-        'flask==0.12.3',
+        'flask==1.0.0',
         'gunicorn==19.6.0',
         'newrelic==2.100.0.84',
         'pyyaml>=4.2b1',
