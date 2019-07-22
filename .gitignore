@@ -31,3 +31,4 @@ pip-selfcheck.json
 .coverage
 
 todo.txt
+.vscode/
