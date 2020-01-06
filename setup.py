@@ -25,7 +25,7 @@ setuptools.setup(
         'python-slugify==1.2.1',
         'tinydb==3.2.1',
         'ujson==1.35',
-        'waitress==1.0.1',
+        'waitress==1.4.2',
         'flask-compress==1.4.0',
     ],
     extras_require={
