@@ -1,6 +1,9 @@
-[![Code Climate](https://codeclimate.com/github/18F/pulse/badges/gpa.svg)](https://codeclimate.com/github/18F/pulse) 
-[![Known Vulnerabilities](https://snyk.io/test/github/18F/pulse/badge.svg)](https://snyk.io/test/github/18F/pulse)
 
+
+# This project was decommissioned by the Office of Government-wide Policy and redirected to digitaldashboard.gov in June of 2020.  
+
+
+=================
 
 ## The pulse of the federal .gov webspace
 
